@@ -1,1122 +1,963 @@
-@prefix : <http://kracr.iiitd.edu.in/ExStreamBench#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ex: <http://kracr.iiitd.edu.in/ExStreamBench#> .
-@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix wot: <http://xmlns.com/wot/0.1/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix event: <http://w3id.org/daselab/onto/event#> .
-@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
-@prefix TwiACE: <http://kracr.iiitd.edu.in/TwiACE#> .
-@prefix OWL2StreamBench: <http://kracr.iiitd.edu.in/OWL2StreamBench#> .
-@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
-@base <http://kracr.iiitd.edu.in/OWL2StreamBench> .
-
-<http://kracr.iiitd.edu.in/OWL2StreamBench> rdf:type owl:Ontology ;
-                                             owl:versionIRI <http://kracr.iiitd.edu.in/OWL2StreamBench/1.0> ;
-                                             rdfs:comment "05/05/2023 16:33" ,
-                                                          "Academic Conference Event Ontology" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isInstantaneous
-OWL2StreamBench:isInstantaneous rdf:type owl:AnnotationProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isStatic
-OWL2StreamBench:isStatic rdf:type owl:AnnotationProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isTimeVarying
-OWL2StreamBench:isTimeVarying rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf
-<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> rdf:type owl:ObjectProperty ,
-                                                                          owl:IrreflexiveProperty ;
-                                                                 rdfs:comment "linked with OWL2Bench" .
-
-
-###  http://kracr.iiitd.edu.in/OWL2Bench#isPartOf
-<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> rdf:type owl:ObjectProperty ,
-                                                        owl:TransitiveProperty ,
-                                                        owl:IrreflexiveProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#attends
-OWL2StreamBench:attends rdf:type owl:ObjectProperty ;
-                        owl:inverseOf OWL2StreamBench:hasAttendee ;
-                        rdfs:range event:Event ;
-                        owl:propertyChainAxiom ( OWL2StreamBench:presents
-                                                 OWL2StreamBench:isPresentedAt
-                                               ) .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesInvitedTalkAt
-OWL2StreamBench:givesInvitedTalkAt rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:givesTalkAt ;
-                                   owl:inverseOf OWL2StreamBench:hasInvitedTalkSpeaker ;
-                                   rdfs:domain OWL2StreamBench:InvitedTalkSpeaker .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesKeynoteTalkAt
-OWL2StreamBench:givesKeynoteTalkAt rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:givesTalkAt ;
-                                   owl:inverseOf OWL2StreamBench:hasKeynoteSpeaker ;
-                                   rdfs:domain OWL2StreamBench:KeynoteSpeaker .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesTalkAt
-OWL2StreamBench:givesTalkAt rdf:type owl:ObjectProperty ;
-                            owl:inverseOf OWL2StreamBench:hasSpeaker ;
-                            rdfs:range event:Event .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAcceptedPaper
-OWL2StreamBench:hasAcceptedPaper rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf OWL2StreamBench:isAuthorOf .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAdvisor
-OWL2StreamBench:hasAdvisor rdf:type owl:ObjectProperty ,
-                                    owl:AsymmetricProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAffiliation
-OWL2StreamBench:hasAffiliation rdf:type owl:ObjectProperty ;
-                               rdfs:range foaf:Organization .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAttendee
-OWL2StreamBench:hasAttendee rdf:type owl:ObjectProperty ;
-                            owl:equivalentProperty OWL2StreamBench:hasParticipant ;
-                            rdfs:domain event:Event .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAuthor
-OWL2StreamBench:hasAuthor rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf owl:topObjectProperty ;
-                          owl:inverseOf OWL2StreamBench:isAuthorOf ;
-                          rdfs:domain OWL2StreamBench:AcademicManuscript .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasChair
-OWL2StreamBench:hasChair rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf owl:topObjectProperty ;
-                         owl:inverseOf OWL2StreamBench:isChairOf ;
-                         owl:propertyDisjointWith OWL2StreamBench:hasVolunteer .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasChairRoleAt
-OWL2StreamBench:hasChairRoleAt rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf OWL2StreamBench:hasOrganizerRoleAt .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasCoAuthor
-OWL2StreamBench:hasCoAuthor rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf OWL2StreamBench:hasCollaborator ;
-                            owl:propertyChainAxiom ( OWL2StreamBench:hasAcceptedPaper
-                                                     OWL2StreamBench:hasAuthor
-                                                   ) ,
-                                                   ( OWL2StreamBench:presents
-                                                     OWL2StreamBench:hasAuthor
-                                                   ) .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasCollaborator
-OWL2StreamBench:hasCollaborator rdf:type owl:ObjectProperty ,
-                                         owl:SymmetricProperty ,
-                                         owl:ReflexiveProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasDemoTrackChair
-OWL2StreamBench:hasDemoTrackChair rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasEventMode
-OWL2StreamBench:hasEventMode rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf OWL2StreamBench:hasMode ;
-                             rdfs:domain event:Event ;
-                             rdfs:range OWL2StreamBench:EventMode .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasGeneralChair
-OWL2StreamBench:hasGeneralChair rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasGeneralChairRoleAt
-OWL2StreamBench:hasGeneralChairRoleAt rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf OWL2StreamBench:hasChairRoleAt .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasInvitedTalk
-OWL2StreamBench:hasInvitedTalk rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf OWL2StreamBench:hasTalk .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasInvitedTalkSpeaker
-OWL2StreamBench:hasInvitedTalkSpeaker rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf OWL2StreamBench:hasSpeaker ;
-                                      rdfs:domain event:Event ;
-                                      owl:propertyChainAxiom ( OWL2StreamBench:hasInvitedTalk
-                                                               OWL2StreamBench:invitedTalkGivenBy
-                                                             ) .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasKeynoteSpeaker
-OWL2StreamBench:hasKeynoteSpeaker rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf OWL2StreamBench:hasSpeaker ;
-                                  rdfs:domain event:Event ;
-                                  rdfs:range OWL2StreamBench:KeynoteSpeaker ;
-                                  owl:propertyChainAxiom ( OWL2StreamBench:hasKeynoteTalk
-                                                           OWL2StreamBench:keynoteTalkGivenBy
-                                                         ) .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasKeynoteTalk
-OWL2StreamBench:hasKeynoteTalk rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf OWL2StreamBench:hasTalk .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasLocalChair
-OWL2StreamBench:hasLocalChair rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasMode
-OWL2StreamBench:hasMode rdf:type owl:ObjectProperty .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasOrganizer
-OWL2StreamBench:hasOrganizer rdf:type owl:ObjectProperty ;
-                             owl:inverseOf OWL2StreamBench:isOrganizerOf ;
-                             rdfs:domain event:Event ;
-                             rdfs:range OWL2StreamBench:Organizer ;
-                             owl:propertyChainAxiom ( OWL2StreamBench:hasPaperTrack
-                                                      OWL2StreamBench:hasChair
-                                                    ) .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasOrganizerRoleAt
-OWL2StreamBench:hasOrganizerRoleAt rdf:type owl:ObjectProperty ;
-                                   owl:equivalentProperty OWL2StreamBench:isOrganizerOf .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasOrganizingCommittee
-OWL2StreamBench:hasOrganizingCommittee rdf:type owl:ObjectProperty ;
-                                       rdfs:domain event:Event ;
-                                       owl:propertyChainAxiom ( OWL2StreamBench:hasOrganizingCommittee
-                                                                OWL2StreamBench:hasOrganizingCommitteeMember
-                                                              ) ;
-                                       rdfs:comment """Example:
+Prefix(:=<http://kracr.iiitd.edu.in/ExStreamBench#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ex:=<http://kracr.iiitd.edu.in/ExStreamBench#>)
+Prefix(ns:=<http://www.w3.org/2003/06/sw-vocab-status/ns#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(wot:=<http://xmlns.com/wot/0.1/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(event:=<http://w3id.org/daselab/onto/event#>)
+Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
+Prefix(TwiACE:=<http://kracr.iiitd.edu.in/TwiACE#>)
+Prefix(OWL2StreamBench:=<http://kracr.iiitd.edu.in/OWL2StreamBench#>)
+Prefix(cpannotationschema:=<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#>)
+
+
+Ontology(<http://kracr.iiitd.edu.in/OWL2StreamBench>
+<http://kracr.iiitd.edu.in/OWL2StreamBench/1.0>
+Annotation(rdfs:comment "05/05/2023 16:33")
+Annotation(rdfs:comment "Academic Conference Event Ontology")
+
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#College>))
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>))
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#University>))
+Declaration(Class(OWL2StreamBench:AcademicEvent))
+Declaration(Class(OWL2StreamBench:AcademicEventTrack))
+Declaration(Class(OWL2StreamBench:AcademicManuscript))
+Declaration(Class(OWL2StreamBench:AcademicOrganization))
+Declaration(Class(OWL2StreamBench:Attendee))
+Declaration(Class(OWL2StreamBench:Author))
+Declaration(Class(OWL2StreamBench:ChairRole))
+Declaration(Class(OWL2StreamBench:ComputerScienceDomain))
+Declaration(Class(OWL2StreamBench:Conference))
+Declaration(Class(OWL2StreamBench:ConferencePaper))
+Declaration(Class(OWL2StreamBench:DemoPaper))
+Declaration(Class(OWL2StreamBench:EditorRole))
+Declaration(Class(OWL2StreamBench:EventMode))
+Declaration(Class(OWL2StreamBench:InvitedTalkSpeaker))
+Declaration(Class(OWL2StreamBench:InvitedTalkSpeakerRole))
+Declaration(Class(OWL2StreamBench:InvitedTalks))
+Declaration(Class(OWL2StreamBench:Journal))
+Declaration(Class(OWL2StreamBench:JournalArticle))
+Declaration(Class(OWL2StreamBench:KeynoteSpeaker))
+Declaration(Class(OWL2StreamBench:KeynoteTalks))
+Declaration(Class(OWL2StreamBench:LightningTalks))
+Declaration(Class(OWL2StreamBench:ManuscriptDomain))
+Declaration(Class(OWL2StreamBench:NonAcademicOrganization))
+Declaration(Class(OWL2StreamBench:NonAuthor))
+Declaration(Class(OWL2StreamBench:Organizer))
+Declaration(Class(OWL2StreamBench:OrganizingCommittee))
+Declaration(Class(OWL2StreamBench:Participant))
+Declaration(Class(OWL2StreamBench:PhDStudent))
+Declaration(Class(OWL2StreamBench:PosterPaper))
+Declaration(Class(OWL2StreamBench:Presentations))
+Declaration(Class(OWL2StreamBench:ResearchPaper))
+Declaration(Class(OWL2StreamBench:ResourcePaper))
+Declaration(Class(OWL2StreamBench:SingleAuthorPaper))
+Declaration(Class(OWL2StreamBench:Student))
+Declaration(Class(OWL2StreamBench:StudentAuthor))
+Declaration(Class(OWL2StreamBench:Talks))
+Declaration(Class(OWL2StreamBench:Volunteer))
+Declaration(Class(OWL2StreamBench:Workshop))
+Declaration(Class(OWL2StreamBench:WorkshopPaper))
+Declaration(Class(<http://purl.org/ontology/bibo/Manuscript>))
+Declaration(Class(event:Event))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
+Declaration(Class(foaf:Organization))
+Declaration(Class(foaf:Person))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
+Declaration(ObjectProperty(OWL2StreamBench:attends))
+Declaration(ObjectProperty(OWL2StreamBench:givesInvitedTalkAt))
+Declaration(ObjectProperty(OWL2StreamBench:givesKeynoteTalkAt))
+Declaration(ObjectProperty(OWL2StreamBench:givesTalkAt))
+Declaration(ObjectProperty(OWL2StreamBench:hasAcceptedPaper))
+Declaration(ObjectProperty(OWL2StreamBench:hasAdvisor))
+Declaration(ObjectProperty(OWL2StreamBench:hasAffiliation))
+Declaration(ObjectProperty(OWL2StreamBench:hasAttendee))
+Declaration(ObjectProperty(OWL2StreamBench:hasAuthor))
+Declaration(ObjectProperty(OWL2StreamBench:hasChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasChairRoleAt))
+Declaration(ObjectProperty(OWL2StreamBench:hasCoAuthor))
+Declaration(ObjectProperty(OWL2StreamBench:hasCollaborator))
+Declaration(ObjectProperty(OWL2StreamBench:hasDemoTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasEventMode))
+Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChairRoleAt))
+Declaration(ObjectProperty(OWL2StreamBench:hasInvitedTalk))
+Declaration(ObjectProperty(OWL2StreamBench:hasInvitedTalkSpeaker))
+Declaration(ObjectProperty(OWL2StreamBench:hasKeynoteSpeaker))
+Declaration(ObjectProperty(OWL2StreamBench:hasKeynoteTalk))
+Declaration(ObjectProperty(OWL2StreamBench:hasLocalChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasMode))
+Declaration(ObjectProperty(OWL2StreamBench:hasOrganizer))
+Declaration(ObjectProperty(OWL2StreamBench:hasOrganizerRoleAt))
+Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommittee))
+Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommitteeMember))
+Declaration(ObjectProperty(OWL2StreamBench:hasPaper))
+Declaration(ObjectProperty(OWL2StreamBench:hasPaperTrack))
+Declaration(ObjectProperty(OWL2StreamBench:hasParticipant))
+Declaration(ObjectProperty(OWL2StreamBench:hasPosterTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasProject))
+Declaration(ObjectProperty(OWL2StreamBench:hasResearchTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasResourceTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasSpeaker))
+Declaration(ObjectProperty(OWL2StreamBench:hasTalk))
+Declaration(ObjectProperty(OWL2StreamBench:hasVolunteer))
+Declaration(ObjectProperty(OWL2StreamBench:hasWorkshopAndTutorialChair))
+Declaration(ObjectProperty(OWL2StreamBench:invitedTalkGivenBy))
+Declaration(ObjectProperty(OWL2StreamBench:isAcceptedAt))
+Declaration(ObjectProperty(OWL2StreamBench:isAuthorOf))
+Declaration(ObjectProperty(OWL2StreamBench:isChairOf))
+Declaration(ObjectProperty(OWL2StreamBench:isOrganizerOf))
+Declaration(ObjectProperty(OWL2StreamBench:isPresentedAt))
+Declaration(ObjectProperty(OWL2StreamBench:isPresentedBy))
+Declaration(ObjectProperty(OWL2StreamBench:keynoteTalkGivenBy))
+Declaration(ObjectProperty(OWL2StreamBench:organizes))
+Declaration(ObjectProperty(OWL2StreamBench:presents))
+Declaration(ObjectProperty(OWL2StreamBench:talkGivenBy))
+Declaration(ObjectProperty(OWL2StreamBench:volunteersFor))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
+Declaration(DataProperty(OWL2StreamBench:givesInvitedTalkOn))
+Declaration(DataProperty(OWL2StreamBench:givesKeynoteTalkOn))
+Declaration(DataProperty(OWL2StreamBench:givesTalkOn))
+Declaration(DataProperty(OWL2StreamBench:hasAuthorId))
+Declaration(DataProperty(OWL2StreamBench:hasConferenceName))
+Declaration(DataProperty(OWL2StreamBench:hasDeadline))
+Declaration(DataProperty(OWL2StreamBench:hasDuration))
+Declaration(DataProperty(OWL2StreamBench:hasEarlyRegistrationDeadline))
+Declaration(DataProperty(OWL2StreamBench:hasEdition))
+Declaration(DataProperty(OWL2StreamBench:hasId))
+Declaration(DataProperty(OWL2StreamBench:hasLocation))
+Declaration(DataProperty(OWL2StreamBench:hasName))
+Declaration(DataProperty(OWL2StreamBench:hasPaperId))
+Declaration(DataProperty(OWL2StreamBench:hasRegistrationDeadline))
+Declaration(DataProperty(OWL2StreamBench:hasStartDate))
+Declaration(DataProperty(OWL2StreamBench:hasStatus))
+Declaration(DataProperty(OWL2StreamBench:hasSubmissionDeadline))
+Declaration(DataProperty(OWL2StreamBench:hasTheme))
+Declaration(DataProperty(OWL2StreamBench:hasTitle))
+Declaration(DataProperty(OWL2StreamBench:hasVenue))
+Declaration(DataProperty(OWL2StreamBench:hasWebsiteURL))
+Declaration(DataProperty(OWL2StreamBench:isRelatedTo))
+Declaration(NamedIndividual(OWL2StreamBench:aiForSocialGood))
+Declaration(NamedIndividual(OWL2StreamBench:applicationsTrack))
+Declaration(NamedIndividual(OWL2StreamBench:artificialIntelligence))
+Declaration(NamedIndividual(OWL2StreamBench:bigData))
+Declaration(NamedIndividual(OWL2StreamBench:blockChain))
+Declaration(NamedIndividual(OWL2StreamBench:cloudComputing))
+Declaration(NamedIndividual(OWL2StreamBench:computerVision))
+Declaration(NamedIndividual(OWL2StreamBench:dataScience))
+Declaration(NamedIndividual(OWL2StreamBench:deepLearning))
+Declaration(NamedIndividual(OWL2StreamBench:demoTrack))
+Declaration(NamedIndividual(OWL2StreamBench:doctoralConsortiumTrack))
+Declaration(NamedIndividual(OWL2StreamBench:generalChair))
+Declaration(NamedIndividual(OWL2StreamBench:hybrid))
+Declaration(NamedIndividual(OWL2StreamBench:internetOfThings))
+Declaration(NamedIndividual(OWL2StreamBench:journalSpecialIssue))
+Declaration(NamedIndividual(OWL2StreamBench:knowledgeGraph))
+Declaration(NamedIndividual(OWL2StreamBench:linkedData))
+Declaration(NamedIndividual(OWL2StreamBench:localChair))
+Declaration(NamedIndividual(OWL2StreamBench:machineLearning))
+Declaration(NamedIndividual(OWL2StreamBench:ml))
+Declaration(NamedIndividual(OWL2StreamBench:naturalLanguageProcessing))
+Declaration(NamedIndividual(OWL2StreamBench:neuralNetworks))
+Declaration(NamedIndividual(OWL2StreamBench:nlp))
+Declaration(NamedIndividual(OWL2StreamBench:offline))
+Declaration(NamedIndividual(OWL2StreamBench:online))
+Declaration(NamedIndividual(OWL2StreamBench:ontology))
+Declaration(NamedIndividual(OWL2StreamBench:posterTrack))
+Declaration(NamedIndividual(OWL2StreamBench:quantumComputing))
+Declaration(NamedIndividual(OWL2StreamBench:remote))
+Declaration(NamedIndividual(OWL2StreamBench:researchTrack))
+Declaration(NamedIndividual(OWL2StreamBench:researchTrackChair))
+Declaration(NamedIndividual(OWL2StreamBench:resourcesTrack))
+Declaration(NamedIndividual(OWL2StreamBench:resourcesTrackChair))
+Declaration(NamedIndividual(OWL2StreamBench:semanticWeb))
+Declaration(NamedIndividual(OWL2StreamBench:trackChair))
+Declaration(NamedIndividual(OWL2StreamBench:tutorialTrack))
+Declaration(NamedIndividual(OWL2StreamBench:tutorialTrackChair))
+Declaration(NamedIndividual(OWL2StreamBench:workshopTrack))
+Declaration(NamedIndividual(OWL2StreamBench:workshopTrackChair))
+Declaration(AnnotationProperty(OWL2StreamBench:isInstantaneous))
+Declaration(AnnotationProperty(OWL2StreamBench:isStatic))
+Declaration(AnnotationProperty(OWL2StreamBench:isTimeVarying))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> "linked with OWL2Bench")
+IrreflexiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
+
+TransitiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
+IrreflexiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
+
+# Object Property: OWL2StreamBench:attends (OWL2StreamBench:attends)
+
+InverseObjectProperties(OWL2StreamBench:attends OWL2StreamBench:hasAttendee)
+ObjectPropertyRange(OWL2StreamBench:attends event:Event)
+
+# Object Property: OWL2StreamBench:givesInvitedTalkAt (OWL2StreamBench:givesInvitedTalkAt)
+
+SubObjectPropertyOf(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:givesTalkAt)
+InverseObjectProperties(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:hasInvitedTalkSpeaker)
+ObjectPropertyDomain(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:InvitedTalkSpeaker)
+
+# Object Property: OWL2StreamBench:givesKeynoteTalkAt (OWL2StreamBench:givesKeynoteTalkAt)
+
+SubObjectPropertyOf(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:givesTalkAt)
+InverseObjectProperties(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:hasKeynoteSpeaker)
+ObjectPropertyDomain(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:KeynoteSpeaker)
+
+# Object Property: OWL2StreamBench:givesTalkAt (OWL2StreamBench:givesTalkAt)
+
+InverseObjectProperties(OWL2StreamBench:givesTalkAt OWL2StreamBench:hasSpeaker)
+ObjectPropertyRange(OWL2StreamBench:givesTalkAt event:Event)
+
+# Object Property: OWL2StreamBench:hasAcceptedPaper (OWL2StreamBench:hasAcceptedPaper)
+
+SubObjectPropertyOf(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:isAuthorOf)
+
+# Object Property: OWL2StreamBench:hasAdvisor (OWL2StreamBench:hasAdvisor)
+
+AsymmetricObjectProperty(OWL2StreamBench:hasAdvisor)
+
+# Object Property: OWL2StreamBench:hasAffiliation (OWL2StreamBench:hasAffiliation)
+
+ObjectPropertyRange(OWL2StreamBench:hasAffiliation foaf:Organization)
+
+# Object Property: OWL2StreamBench:hasAttendee (OWL2StreamBench:hasAttendee)
+
+EquivalentObjectProperties(OWL2StreamBench:hasAttendee OWL2StreamBench:hasParticipant)
+ObjectPropertyDomain(OWL2StreamBench:hasAttendee event:Event)
+
+# Object Property: OWL2StreamBench:hasAuthor (OWL2StreamBench:hasAuthor)
+
+SubObjectPropertyOf(OWL2StreamBench:hasAuthor owl:topObjectProperty)
+InverseObjectProperties(OWL2StreamBench:hasAuthor OWL2StreamBench:isAuthorOf)
+ObjectPropertyDomain(OWL2StreamBench:hasAuthor OWL2StreamBench:AcademicManuscript)
+
+# Object Property: OWL2StreamBench:hasChair (OWL2StreamBench:hasChair)
+
+SubObjectPropertyOf(OWL2StreamBench:hasChair owl:topObjectProperty)
+InverseObjectProperties(OWL2StreamBench:hasChair OWL2StreamBench:isChairOf)
+DisjointObjectProperties(OWL2StreamBench:hasChair OWL2StreamBench:hasVolunteer)
+
+# Object Property: OWL2StreamBench:hasChairRoleAt (OWL2StreamBench:hasChairRoleAt)
+
+SubObjectPropertyOf(OWL2StreamBench:hasChairRoleAt OWL2StreamBench:hasOrganizerRoleAt)
+
+# Object Property: OWL2StreamBench:hasCoAuthor (OWL2StreamBench:hasCoAuthor)
+
+SubObjectPropertyOf(OWL2StreamBench:hasCoAuthor OWL2StreamBench:hasCollaborator)
+
+# Object Property: OWL2StreamBench:hasCollaborator (OWL2StreamBench:hasCollaborator)
+
+SymmetricObjectProperty(OWL2StreamBench:hasCollaborator)
+ReflexiveObjectProperty(OWL2StreamBench:hasCollaborator)
+
+# Object Property: OWL2StreamBench:hasDemoTrackChair (OWL2StreamBench:hasDemoTrackChair)
+
+SubObjectPropertyOf(OWL2StreamBench:hasDemoTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
+
+# Object Property: OWL2StreamBench:hasEventMode (OWL2StreamBench:hasEventMode)
+
+SubObjectPropertyOf(OWL2StreamBench:hasEventMode OWL2StreamBench:hasMode)
+ObjectPropertyDomain(OWL2StreamBench:hasEventMode event:Event)
+ObjectPropertyRange(OWL2StreamBench:hasEventMode OWL2StreamBench:EventMode)
+
+# Object Property: OWL2StreamBench:hasGeneralChair (OWL2StreamBench:hasGeneralChair)
+
+SubObjectPropertyOf(OWL2StreamBench:hasGeneralChair OWL2StreamBench:hasOrganizingCommitteeMember)
+
+# Object Property: OWL2StreamBench:hasGeneralChairRoleAt (OWL2StreamBench:hasGeneralChairRoleAt)
+
+SubObjectPropertyOf(OWL2StreamBench:hasGeneralChairRoleAt OWL2StreamBench:hasChairRoleAt)
+
+# Object Property: OWL2StreamBench:hasInvitedTalk (OWL2StreamBench:hasInvitedTalk)
+
+SubObjectPropertyOf(OWL2StreamBench:hasInvitedTalk OWL2StreamBench:hasTalk)
+
+# Object Property: OWL2StreamBench:hasInvitedTalkSpeaker (OWL2StreamBench:hasInvitedTalkSpeaker)
+
+SubObjectPropertyOf(OWL2StreamBench:hasInvitedTalkSpeaker OWL2StreamBench:hasSpeaker)
+ObjectPropertyDomain(OWL2StreamBench:hasInvitedTalkSpeaker event:Event)
+
+# Object Property: OWL2StreamBench:hasKeynoteSpeaker (OWL2StreamBench:hasKeynoteSpeaker)
+
+SubObjectPropertyOf(OWL2StreamBench:hasKeynoteSpeaker OWL2StreamBench:hasSpeaker)
+ObjectPropertyDomain(OWL2StreamBench:hasKeynoteSpeaker event:Event)
+ObjectPropertyRange(OWL2StreamBench:hasKeynoteSpeaker OWL2StreamBench:KeynoteSpeaker)
+
+# Object Property: OWL2StreamBench:hasKeynoteTalk (OWL2StreamBench:hasKeynoteTalk)
+
+SubObjectPropertyOf(OWL2StreamBench:hasKeynoteTalk OWL2StreamBench:hasTalk)
+
+# Object Property: OWL2StreamBench:hasLocalChair (OWL2StreamBench:hasLocalChair)
+
+SubObjectPropertyOf(OWL2StreamBench:hasLocalChair OWL2StreamBench:hasOrganizingCommitteeMember)
+
+# Object Property: OWL2StreamBench:hasOrganizer (OWL2StreamBench:hasOrganizer)
+
+InverseObjectProperties(OWL2StreamBench:hasOrganizer OWL2StreamBench:isOrganizerOf)
+ObjectPropertyDomain(OWL2StreamBench:hasOrganizer event:Event)
+ObjectPropertyRange(OWL2StreamBench:hasOrganizer OWL2StreamBench:Organizer)
+
+# Object Property: OWL2StreamBench:hasOrganizerRoleAt (OWL2StreamBench:hasOrganizerRoleAt)
+
+EquivalentObjectProperties(OWL2StreamBench:hasOrganizerRoleAt OWL2StreamBench:isOrganizerOf)
+
+# Object Property: OWL2StreamBench:hasOrganizingCommittee (OWL2StreamBench:hasOrganizingCommittee)
+
+AnnotationAssertion(rdfs:comment OWL2StreamBench:hasOrganizingCommittee "Example:
 ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
-ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer""" .
+ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer")
+ObjectPropertyDomain(OWL2StreamBench:hasOrganizingCommittee event:Event)
 
+# Object Property: OWL2StreamBench:hasOrganizingCommitteeMember (OWL2StreamBench:hasOrganizingCommitteeMember)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasOrganizingCommitteeMember
-OWL2StreamBench:hasOrganizingCommitteeMember rdf:type owl:ObjectProperty ;
-                                             rdfs:domain event:Event ;
-                                             rdfs:range OWL2StreamBench:Organizer .
+ObjectPropertyDomain(OWL2StreamBench:hasOrganizingCommitteeMember event:Event)
+ObjectPropertyRange(OWL2StreamBench:hasOrganizingCommitteeMember OWL2StreamBench:Organizer)
 
+# Object Property: OWL2StreamBench:hasPaper (OWL2StreamBench:hasPaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasPaper
-OWL2StreamBench:hasPaper rdf:type owl:ObjectProperty ;
-                         owl:equivalentProperty OWL2StreamBench:isAuthorOf ;
-                         rdfs:range OWL2StreamBench:AcademicManuscript .
+EquivalentObjectProperties(OWL2StreamBench:hasPaper OWL2StreamBench:isAuthorOf)
+ObjectPropertyRange(OWL2StreamBench:hasPaper OWL2StreamBench:AcademicManuscript)
 
+# Object Property: OWL2StreamBench:hasPaperTrack (OWL2StreamBench:hasPaperTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasPaperTrack
-OWL2StreamBench:hasPaperTrack rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf owl:topObjectProperty ;
-                              rdfs:domain OWL2StreamBench:AcademicManuscript ;
-                              rdfs:range OWL2StreamBench:AcademicEventTrack .
+SubObjectPropertyOf(OWL2StreamBench:hasPaperTrack owl:topObjectProperty)
+ObjectPropertyDomain(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicManuscript)
+ObjectPropertyRange(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicEventTrack)
 
+# Object Property: OWL2StreamBench:hasPosterTrackChair (OWL2StreamBench:hasPosterTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasParticipant
-OWL2StreamBench:hasParticipant rdf:type owl:ObjectProperty .
+SubObjectPropertyOf(OWL2StreamBench:hasPosterTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
 
+# Object Property: OWL2StreamBench:hasProject (OWL2StreamBench:hasProject)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasPosterTrackChair
-OWL2StreamBench:hasPosterTrackChair rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
+ObjectPropertyDomain(OWL2StreamBench:hasProject foaf:Organization)
 
+# Object Property: OWL2StreamBench:hasResearchTrackChair (OWL2StreamBench:hasResearchTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasProject
-OWL2StreamBench:hasProject rdf:type owl:ObjectProperty ;
-                           rdfs:domain foaf:Organization .
+SubObjectPropertyOf(OWL2StreamBench:hasResearchTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
 
+# Object Property: OWL2StreamBench:hasResourceTrackChair (OWL2StreamBench:hasResourceTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasResearchTrackChair
-OWL2StreamBench:hasResearchTrackChair rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
+SubObjectPropertyOf(OWL2StreamBench:hasResourceTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
 
+# Object Property: OWL2StreamBench:hasSpeaker (OWL2StreamBench:hasSpeaker)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasResourceTrackChair
-OWL2StreamBench:hasResourceTrackChair rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
+SubObjectPropertyOf(OWL2StreamBench:hasSpeaker owl:topObjectProperty)
 
+# Object Property: OWL2StreamBench:hasWorkshopAndTutorialChair (OWL2StreamBench:hasWorkshopAndTutorialChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasSpeaker
-OWL2StreamBench:hasSpeaker rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf owl:topObjectProperty ;
-                           owl:propertyChainAxiom ( OWL2StreamBench:hasTalk
-                                                    OWL2StreamBench:talkGivenBy
-                                                  ) .
+SubObjectPropertyOf(OWL2StreamBench:hasWorkshopAndTutorialChair OWL2StreamBench:hasOrganizingCommitteeMember)
 
+# Object Property: OWL2StreamBench:invitedTalkGivenBy (OWL2StreamBench:invitedTalkGivenBy)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasTalk
-OWL2StreamBench:hasTalk rdf:type owl:ObjectProperty .
+SubObjectPropertyOf(OWL2StreamBench:invitedTalkGivenBy OWL2StreamBench:talkGivenBy)
 
+# Object Property: OWL2StreamBench:isAcceptedAt (OWL2StreamBench:isAcceptedAt)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasVolunteer
-OWL2StreamBench:hasVolunteer rdf:type owl:ObjectProperty .
+EquivalentObjectProperties(OWL2StreamBench:isAcceptedAt OWL2StreamBench:isPresentedAt)
+ObjectPropertyDomain(OWL2StreamBench:isAcceptedAt OWL2StreamBench:AcademicManuscript)
+ObjectPropertyRange(OWL2StreamBench:isAcceptedAt OWL2StreamBench:AcademicEvent)
 
+# Object Property: OWL2StreamBench:isAuthorOf (OWL2StreamBench:isAuthorOf)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasWorkshopAndTutorialChair
-OWL2StreamBench:hasWorkshopAndTutorialChair rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf OWL2StreamBench:hasOrganizingCommitteeMember .
+ObjectPropertyDomain(OWL2StreamBench:isAuthorOf foaf:Person)
+ObjectPropertyRange(OWL2StreamBench:isAuthorOf OWL2StreamBench:AcademicManuscript)
 
+# Object Property: OWL2StreamBench:isChairOf (OWL2StreamBench:isChairOf)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#invitedTalkGivenBy
-OWL2StreamBench:invitedTalkGivenBy rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:talkGivenBy ;
-                                   owl:propertyChainAxiom ( OWL2StreamBench:hasTalk
-                                                            OWL2StreamBench:invitedTalkGivenBy
-                                                          ) .
+InverseFunctionalObjectProperty(OWL2StreamBench:isChairOf)
 
+# Object Property: OWL2StreamBench:isOrganizerOf (OWL2StreamBench:isOrganizerOf)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isAcceptedAt
-OWL2StreamBench:isAcceptedAt rdf:type owl:ObjectProperty ;
-                             owl:equivalentProperty OWL2StreamBench:isPresentedAt ;
-                             rdfs:domain OWL2StreamBench:AcademicManuscript ;
-                             rdfs:range OWL2StreamBench:AcademicEvent .
+SubObjectPropertyOf(OWL2StreamBench:isOrganizerOf owl:topObjectProperty)
 
+# Object Property: OWL2StreamBench:isPresentedAt (OWL2StreamBench:isPresentedAt)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isAuthorOf
-OWL2StreamBench:isAuthorOf rdf:type owl:ObjectProperty ;
-                           rdfs:domain foaf:Person ;
-                           rdfs:range OWL2StreamBench:AcademicManuscript .
+AnnotationAssertion(rdfs:comment OWL2StreamBench:isPresentedAt "what could be the inverse property of isPresentedAt?")
+SubObjectPropertyOf(OWL2StreamBench:isPresentedAt OWL2StreamBench:isAcceptedAt)
+FunctionalObjectProperty(OWL2StreamBench:isPresentedAt)
 
+# Object Property: OWL2StreamBench:isPresentedBy (OWL2StreamBench:isPresentedBy)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isChairOf
-OWL2StreamBench:isChairOf rdf:type owl:ObjectProperty ,
-                                   owl:InverseFunctionalProperty .
+InverseObjectProperties(OWL2StreamBench:isPresentedBy OWL2StreamBench:presents)
 
+# Object Property: OWL2StreamBench:keynoteTalkGivenBy (OWL2StreamBench:keynoteTalkGivenBy)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isOrganizerOf
-OWL2StreamBench:isOrganizerOf rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf owl:topObjectProperty .
+SubObjectPropertyOf(OWL2StreamBench:keynoteTalkGivenBy OWL2StreamBench:talkGivenBy)
 
+# Object Property: OWL2StreamBench:organizes (OWL2StreamBench:organizes)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isPresentedAt
-OWL2StreamBench:isPresentedAt rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf OWL2StreamBench:isAcceptedAt ;
-                              rdf:type owl:FunctionalProperty ;
-                              rdfs:comment "what could be the inverse property of isPresentedAt?" .
+ObjectPropertyRange(OWL2StreamBench:organizes event:Event)
 
+# Object Property: OWL2StreamBench:presents (OWL2StreamBench:presents)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isPresentedBy
-OWL2StreamBench:isPresentedBy rdf:type owl:ObjectProperty ;
-                              owl:inverseOf OWL2StreamBench:presents .
+SubObjectPropertyOf(OWL2StreamBench:presents OWL2StreamBench:hasAcceptedPaper)
 
+# Object Property: OWL2StreamBench:talkGivenBy (OWL2StreamBench:talkGivenBy)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#keynoteTalkGivenBy
-OWL2StreamBench:keynoteTalkGivenBy rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:talkGivenBy .
+ObjectPropertyDomain(OWL2StreamBench:talkGivenBy OWL2StreamBench:Talks)
 
+# Object Property: OWL2StreamBench:volunteersFor (OWL2StreamBench:volunteersFor)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#organizes
-OWL2StreamBench:organizes rdf:type owl:ObjectProperty ;
-                          rdfs:range event:Event .
+ObjectPropertyRange(OWL2StreamBench:volunteersFor event:Event)
 
+# Object Property: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> (<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#presents
-OWL2StreamBench:presents rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf OWL2StreamBench:hasAcceptedPaper .
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> foaf:Person)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
 
+# Object Property: owl:topObjectProperty (owl:topObjectProperty)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#talkGivenBy
-OWL2StreamBench:talkGivenBy rdf:type owl:ObjectProperty ;
-                            rdfs:domain OWL2StreamBench:Talks .
+ObjectPropertyRange(owl:topObjectProperty OWL2StreamBench:AcademicManuscript)
 
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#volunteersFor
-OWL2StreamBench:volunteersFor rdf:type owl:ObjectProperty ;
-                              rdfs:range event:Event .
+############################
+#   Data Properties
+############################
 
+# Data Property: OWL2StreamBench:givesInvitedTalkOn (OWL2StreamBench:givesInvitedTalkOn)
 
-###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole
-<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:domain foaf:Person ;
-                                                                      rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+SubDataPropertyOf(OWL2StreamBench:givesInvitedTalkOn OWL2StreamBench:givesTalkOn)
+DataPropertyDomain(OWL2StreamBench:givesInvitedTalkOn OWL2StreamBench:InvitedTalkSpeaker)
+DataPropertyRange(OWL2StreamBench:givesInvitedTalkOn xsd:string)
 
+# Data Property: OWL2StreamBench:givesKeynoteTalkOn (OWL2StreamBench:givesKeynoteTalkOn)
 
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:range OWL2StreamBench:AcademicManuscript .
+SubDataPropertyOf(OWL2StreamBench:givesKeynoteTalkOn OWL2StreamBench:givesTalkOn)
+DataPropertyDomain(OWL2StreamBench:givesKeynoteTalkOn OWL2StreamBench:KeynoteSpeaker)
+DataPropertyRange(OWL2StreamBench:givesKeynoteTalkOn xsd:string)
 
+# Data Property: OWL2StreamBench:givesTalkOn (OWL2StreamBench:givesTalkOn)
 
-#################################################################
-#    Data properties
-#################################################################
+DataPropertyDomain(OWL2StreamBench:givesTalkOn foaf:Person)
+DataPropertyRange(OWL2StreamBench:givesTalkOn xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesInvitedTalkOn
-OWL2StreamBench:givesInvitedTalkOn rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:givesTalkOn ;
-                                   rdfs:domain OWL2StreamBench:InvitedTalkSpeaker ;
-                                   rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasAuthorId (OWL2StreamBench:hasAuthorId)
 
+SubDataPropertyOf(OWL2StreamBench:hasAuthorId OWL2StreamBench:hasId)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesKeynoteTalkOn
-OWL2StreamBench:givesKeynoteTalkOn rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf OWL2StreamBench:givesTalkOn ;
-                                   rdfs:domain OWL2StreamBench:KeynoteSpeaker ;
-                                   rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasConferenceName (OWL2StreamBench:hasConferenceName)
 
+SubDataPropertyOf(OWL2StreamBench:hasConferenceName OWL2StreamBench:hasName)
+DataPropertyDomain(OWL2StreamBench:hasConferenceName OWL2StreamBench:Conference)
+DataPropertyRange(OWL2StreamBench:hasConferenceName xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#givesTalkOn
-OWL2StreamBench:givesTalkOn rdf:type owl:DatatypeProperty ;
-                            rdfs:domain foaf:Person ;
-                            rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasDeadline (OWL2StreamBench:hasDeadline)
 
+DataPropertyDomain(OWL2StreamBench:hasDeadline OWL2StreamBench:AcademicEvent)
+DataPropertyRange(OWL2StreamBench:hasDeadline xsd:dateTimeStamp)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasAuthorId
-OWL2StreamBench:hasAuthorId rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf OWL2StreamBench:hasId .
+# Data Property: OWL2StreamBench:hasDuration (OWL2StreamBench:hasDuration)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:hasDuration "An event can go for days, hours, or months.")
+FunctionalDataProperty(OWL2StreamBench:hasDuration)
+DataPropertyDomain(OWL2StreamBench:hasDuration event:Event)
+DataPropertyRange(OWL2StreamBench:hasDuration xsd:string)
+DisjointDataProperties(OWL2StreamBench:hasDuration OWL2StreamBench:hasLocation)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasConferenceName
-OWL2StreamBench:hasConferenceName rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf OWL2StreamBench:hasName ;
-                                  rdfs:domain OWL2StreamBench:Conference ;
-                                  rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasEarlyRegistrationDeadline (OWL2StreamBench:hasEarlyRegistrationDeadline)
 
+SubDataPropertyOf(OWL2StreamBench:hasEarlyRegistrationDeadline OWL2StreamBench:hasRegistrationDeadline)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasDeadline
-OWL2StreamBench:hasDeadline rdf:type owl:DatatypeProperty ;
-                            rdfs:domain OWL2StreamBench:AcademicEvent ;
-                            rdfs:range xsd:dateTimeStamp .
+# Data Property: OWL2StreamBench:hasEdition (OWL2StreamBench:hasEdition)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:hasEdition "3rd or third")
+DataPropertyDomain(OWL2StreamBench:hasEdition OWL2StreamBench:AcademicEvent)
+DataPropertyRange(OWL2StreamBench:hasEdition xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasDuration
-OWL2StreamBench:hasDuration rdf:type owl:DatatypeProperty ,
-                                     owl:FunctionalProperty ;
-                            rdfs:domain event:Event ;
-                            rdfs:range xsd:string ;
-                            owl:propertyDisjointWith OWL2StreamBench:hasLocation ;
-                            rdfs:comment "An event can go for days, hours, or months." .
+# Data Property: OWL2StreamBench:hasId (OWL2StreamBench:hasId)
 
+DataPropertyRange(OWL2StreamBench:hasId xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasEarlyRegistrationDeadline
-OWL2StreamBench:hasEarlyRegistrationDeadline rdf:type owl:DatatypeProperty ;
-                                             rdfs:subPropertyOf OWL2StreamBench:hasRegistrationDeadline .
+# Data Property: OWL2StreamBench:hasLocation (OWL2StreamBench:hasLocation)
 
+EquivalentDataProperties(OWL2StreamBench:hasLocation OWL2StreamBench:hasVenue)
+DataPropertyRange(OWL2StreamBench:hasLocation xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasEdition
-OWL2StreamBench:hasEdition rdf:type owl:DatatypeProperty ;
-                           rdfs:domain OWL2StreamBench:AcademicEvent ;
-                           rdfs:range xsd:string ;
-                           rdfs:comment "3rd or third" .
+# Data Property: OWL2StreamBench:hasName (OWL2StreamBench:hasName)
 
+DataPropertyRange(OWL2StreamBench:hasName xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasId
-OWL2StreamBench:hasId rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasPaperId (OWL2StreamBench:hasPaperId)
 
+SubDataPropertyOf(OWL2StreamBench:hasPaperId OWL2StreamBench:hasId)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasLocation
-OWL2StreamBench:hasLocation rdf:type owl:DatatypeProperty ;
-                            owl:equivalentProperty OWL2StreamBench:hasVenue ;
-                            rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasRegistrationDeadline (OWL2StreamBench:hasRegistrationDeadline)
 
+SubDataPropertyOf(OWL2StreamBench:hasRegistrationDeadline OWL2StreamBench:hasDeadline)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasName
-OWL2StreamBench:hasName rdf:type owl:DatatypeProperty ;
-                        rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasStartDate (OWL2StreamBench:hasStartDate)
 
+DataPropertyDomain(OWL2StreamBench:hasStartDate event:Event)
+DataPropertyRange(OWL2StreamBench:hasStartDate xsd:dateTimeStamp)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasPaperId
-OWL2StreamBench:hasPaperId rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf OWL2StreamBench:hasId .
+# Data Property: OWL2StreamBench:hasStatus (OWL2StreamBench:hasStatus)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:hasStatus "Announced, Approaching, TakingPlace, Over")
+DataPropertyDomain(OWL2StreamBench:hasStatus OWL2StreamBench:AcademicEvent)
+DataPropertyRange(OWL2StreamBench:hasStatus xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasRegistrationDeadline
-OWL2StreamBench:hasRegistrationDeadline rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf OWL2StreamBench:hasDeadline .
+# Data Property: OWL2StreamBench:hasSubmissionDeadline (OWL2StreamBench:hasSubmissionDeadline)
 
+SubDataPropertyOf(OWL2StreamBench:hasSubmissionDeadline OWL2StreamBench:hasDeadline)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasStartDate
-OWL2StreamBench:hasStartDate rdf:type owl:DatatypeProperty ;
-                             rdfs:domain event:Event ;
-                             rdfs:range xsd:dateTimeStamp .
+# Data Property: OWL2StreamBench:hasTheme (OWL2StreamBench:hasTheme)
 
+DataPropertyRange(OWL2StreamBench:hasTheme xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasStatus
-OWL2StreamBench:hasStatus rdf:type owl:DatatypeProperty ;
-                          rdfs:domain OWL2StreamBench:AcademicEvent ;
-                          rdfs:range xsd:string ;
-                          rdfs:comment "Announced, Approaching, TakingPlace, Over" .
+# Data Property: OWL2StreamBench:hasTitle (OWL2StreamBench:hasTitle)
 
+DataPropertyRange(OWL2StreamBench:hasTitle xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasSubmissionDeadline
-OWL2StreamBench:hasSubmissionDeadline rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf OWL2StreamBench:hasDeadline .
+# Data Property: OWL2StreamBench:hasVenue (OWL2StreamBench:hasVenue)
 
+SubDataPropertyOf(OWL2StreamBench:hasVenue owl:topDataProperty)
+DataPropertyRange(OWL2StreamBench:hasVenue xsd:string)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasTheme
-OWL2StreamBench:hasTheme rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:hasWebsiteURL (OWL2StreamBench:hasWebsiteURL)
 
+DataPropertyRange(OWL2StreamBench:hasWebsiteURL xsd:anyURI)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasTitle
-OWL2StreamBench:hasTitle rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:string .
+# Data Property: OWL2StreamBench:isRelatedTo (OWL2StreamBench:isRelatedTo)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:isRelatedTo "Every aacdemic manuscript is related to some topic. For example AI")
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasVenue
-OWL2StreamBench:hasVenue rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
-                         rdfs:range xsd:string .
 
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hasWebsiteURL
-OWL2StreamBench:hasWebsiteURL rdf:type owl:DatatypeProperty ;
-                              rdfs:range xsd:anyURI .
+############################
+#   Classes
+############################
 
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#College> (<http://kracr.iiitd.edu.in/OWL2Bench#College>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#isRelatedTo
-OWL2StreamBench:isRelatedTo rdf:type owl:DatatypeProperty ;
-                            rdfs:comment "Every aacdemic manuscript is related to some topic. For example AI" .
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> OWL2StreamBench:AcademicOrganization)
 
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> (<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>)
 
-#################################################################
-#    Classes
-#################################################################
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> foaf:Organization)
 
-###  http://kracr.iiitd.edu.in/OWL2Bench#College
-<http://kracr.iiitd.edu.in/OWL2Bench#College> rdf:type owl:Class ;
-                                              rdfs:subClassOf OWL2StreamBench:AcademicOrganization .
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#University> (<http://kracr.iiitd.edu.in/OWL2Bench#University>)
 
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> OWL2StreamBench:AcademicOrganization)
 
-###  http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup
-<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> rdf:type owl:Class ;
-                                                    rdfs:subClassOf foaf:Organization .
+# Class: OWL2StreamBench:AcademicEvent (OWL2StreamBench:AcademicEvent)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicEvent "Every academic event has a track")
+EquivalentClasses(OWL2StreamBench:AcademicEvent ObjectSomeValuesFrom(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicEventTrack))
+SubClassOf(OWL2StreamBench:AcademicEvent event:Event)
+SubClassOf(OWL2StreamBench:AcademicEvent ObjectMinCardinality(1 OWL2StreamBench:hasTalk OWL2StreamBench:Talks))
+SubClassOf(OWL2StreamBench:AcademicEvent DataExactCardinality(1 OWL2StreamBench:hasWebsiteURL xsd:anyURI))
 
-###  http://kracr.iiitd.edu.in/OWL2Bench#University
-<http://kracr.iiitd.edu.in/OWL2Bench#University> rdf:type owl:Class ;
-                                                 rdfs:subClassOf OWL2StreamBench:AcademicOrganization .
+# Class: OWL2StreamBench:AcademicEventTrack (OWL2StreamBench:AcademicEventTrack)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicEventTrack "Every Academic Event Track is a subevent of  Academic Event")
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#AcademicEvent
-OWL2StreamBench:AcademicEvent rdf:type owl:Class ;
-                              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                    owl:onProperty OWL2StreamBench:hasPaperTrack ;
-                                                    owl:someValuesFrom OWL2StreamBench:AcademicEventTrack
-                                                  ] ;
-                              rdfs:subClassOf event:Event ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty OWL2StreamBench:hasTalk ;
-                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                owl:onClass OWL2StreamBench:Talks
-                                              ] ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty OWL2StreamBench:hasWebsiteURL ;
-                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                owl:onDataRange xsd:anyURI
-                                              ] ;
-                              rdfs:comment "Every academic event has a track" .
+# Class: OWL2StreamBench:AcademicManuscript (OWL2StreamBench:AcademicManuscript)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:AcademicManuscript "")
+EquivalentClasses(OWL2StreamBench:AcademicManuscript ObjectMinCardinality(1 OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
+SubClassOf(OWL2StreamBench:AcademicManuscript <http://purl.org/ontology/bibo/Manuscript>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#AcademicEventTrack
-OWL2StreamBench:AcademicEventTrack rdf:type owl:Class ;
-                                   rdfs:comment "Every Academic Event Track is a subevent of  Academic Event" .
+# Class: OWL2StreamBench:AcademicOrganization (OWL2StreamBench:AcademicOrganization)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicOrganization "Can be linked to OWL2Bench?")
+SubClassOf(OWL2StreamBench:AcademicOrganization foaf:Organization)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#AcademicManuscript
-OWL2StreamBench:AcademicManuscript rdf:type owl:Class ;
-                                   owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                         owl:onProperty OWL2StreamBench:hasAuthor ;
-                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                         owl:onClass OWL2StreamBench:Author
-                                                       ] ;
-                                   rdfs:subClassOf <http://purl.org/ontology/bibo/Manuscript> ;
-                                   owl:hasKey ( OWL2StreamBench:hasId
-                                              ) ;
-                                   OWL2StreamBench:isInstantaneous "" .
+# Class: OWL2StreamBench:Attendee (OWL2StreamBench:Attendee)
 
+EquivalentClasses(OWL2StreamBench:Attendee OWL2StreamBench:Participant)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#AcademicOrganization
-OWL2StreamBench:AcademicOrganization rdf:type owl:Class ;
-                                     rdfs:subClassOf foaf:Organization ;
-                                     rdfs:comment "Can be linked to OWL2Bench?" .
+# Class: OWL2StreamBench:Author (OWL2StreamBench:Author)
 
+EquivalentClasses(OWL2StreamBench:Author ObjectSomeValuesFrom(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:AcademicManuscript))
+SubClassOf(OWL2StreamBench:Author foaf:Person)
+DisjointClasses(OWL2StreamBench:Author OWL2StreamBench:NonAuthor)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Attendee
-OWL2StreamBench:Attendee rdf:type owl:Class ;
-                         owl:equivalentClass OWL2StreamBench:Participant .
+# Class: OWL2StreamBench:ChairRole (OWL2StreamBench:ChairRole)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:ChairRole "Each track will have a chair")
+SubClassOf(OWL2StreamBench:ChairRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Author
-OWL2StreamBench:Author rdf:type owl:Class ;
-                       owl:equivalentClass [ rdf:type owl:Restriction ;
-                                             owl:onProperty OWL2StreamBench:hasAcceptedPaper ;
-                                             owl:someValuesFrom OWL2StreamBench:AcademicManuscript
-                                           ] ;
-                       rdfs:subClassOf foaf:Person ;
-                       owl:disjointWith OWL2StreamBench:NonAuthor .
+# Class: OWL2StreamBench:ComputerScienceDomain (OWL2StreamBench:ComputerScienceDomain)
 
+SubClassOf(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ManuscriptDomain)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ChairRole
-OWL2StreamBench:ChairRole rdf:type owl:Class ;
-                          rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> ;
-                          rdfs:comment "Each track will have a chair" .
+# Class: OWL2StreamBench:Conference (OWL2StreamBench:Conference)
 
+AnnotationAssertion(OWL2StreamBench:isStatic OWL2StreamBench:Conference "")
+SubClassOf(OWL2StreamBench:Conference OWL2StreamBench:AcademicEvent)
+DisjointClasses(OWL2StreamBench:Conference OWL2StreamBench:Journal)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ComputerScienceDomain
-OWL2StreamBench:ComputerScienceDomain rdf:type owl:Class ;
-                                      rdfs:subClassOf OWL2StreamBench:ManuscriptDomain .
+# Class: OWL2StreamBench:ConferencePaper (OWL2StreamBench:ConferencePaper)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:ConferencePaper "")
+EquivalentClasses(OWL2StreamBench:ConferencePaper ObjectMaxCardinality(1 OWL2StreamBench:isAcceptedAt OWL2StreamBench:Conference))
+SubClassOf(OWL2StreamBench:ConferencePaper OWL2StreamBench:AcademicManuscript)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Conference
-OWL2StreamBench:Conference rdf:type owl:Class ;
-                           rdfs:subClassOf OWL2StreamBench:AcademicEvent ;
-                           owl:disjointWith OWL2StreamBench:Journal ;
-                           OWL2StreamBench:isStatic "" .
+# Class: OWL2StreamBench:DemoPaper (OWL2StreamBench:DemoPaper)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:DemoPaper "")
+SubClassOf(OWL2StreamBench:DemoPaper OWL2StreamBench:ConferencePaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ConferencePaper
-OWL2StreamBench:ConferencePaper rdf:type owl:Class ;
-                                owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                      owl:onProperty OWL2StreamBench:isAcceptedAt ;
-                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      owl:onClass OWL2StreamBench:Conference
-                                                    ] ;
-                                rdfs:subClassOf OWL2StreamBench:AcademicManuscript ;
-                                owl:hasKey ( OWL2StreamBench:hasPaperId
-                                           ) ;
-                                OWL2StreamBench:isInstantaneous "" .
+# Class: OWL2StreamBench:EditorRole (OWL2StreamBench:EditorRole)
 
+SubClassOf(OWL2StreamBench:EditorRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#DemoPaper
-OWL2StreamBench:DemoPaper rdf:type owl:Class ;
-                          rdfs:subClassOf OWL2StreamBench:ConferencePaper ;
-                          owl:hasKey ( OWL2StreamBench:hasPaperId
-                                     ) ;
-                          OWL2StreamBench:isInstantaneous "" .
+# Class: OWL2StreamBench:EventMode (OWL2StreamBench:EventMode)
 
+EquivalentClasses(OWL2StreamBench:EventMode ObjectOneOf(OWL2StreamBench:hybrid OWL2StreamBench:offline OWL2StreamBench:online))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#EditorRole
-OWL2StreamBench:EditorRole rdf:type owl:Class ;
-                           rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> .
+# Class: OWL2StreamBench:InvitedTalkSpeaker (OWL2StreamBench:InvitedTalkSpeaker)
 
+EquivalentClasses(OWL2StreamBench:InvitedTalkSpeaker ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> OWL2StreamBench:InvitedTalkSpeakerRole))
+SubClassOf(OWL2StreamBench:InvitedTalkSpeaker foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#EventMode
-OWL2StreamBench:EventMode rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Class ;
-                                                owl:oneOf ( OWL2StreamBench:hybrid
-                                                            OWL2StreamBench:offline
-                                                            OWL2StreamBench:online
-                                                          )
-                                              ] .
+# Class: OWL2StreamBench:InvitedTalkSpeakerRole (OWL2StreamBench:InvitedTalkSpeakerRole)
 
+SubClassOf(OWL2StreamBench:InvitedTalkSpeakerRole <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#InvitedTalkSpeaker
-OWL2StreamBench:InvitedTalkSpeaker rdf:type owl:Class ;
-                                   owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> ;
-                                                         owl:someValuesFrom OWL2StreamBench:InvitedTalkSpeakerRole
-                                                       ] ;
-                                   rdfs:subClassOf foaf:Person .
+# Class: OWL2StreamBench:InvitedTalks (OWL2StreamBench:InvitedTalks)
 
+EquivalentClasses(OWL2StreamBench:InvitedTalks ObjectSomeValuesFrom(OWL2StreamBench:invitedTalkGivenBy OWL2StreamBench:InvitedTalkSpeaker))
+SubClassOf(OWL2StreamBench:InvitedTalks OWL2StreamBench:Talks)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#InvitedTalkSpeakerRole
-OWL2StreamBench:InvitedTalkSpeakerRole rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+# Class: OWL2StreamBench:Journal (OWL2StreamBench:Journal)
 
+SubClassOf(OWL2StreamBench:Journal OWL2StreamBench:AcademicEvent)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#InvitedTalks
-OWL2StreamBench:InvitedTalks rdf:type owl:Class ;
-                             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                   owl:onProperty OWL2StreamBench:invitedTalkGivenBy ;
-                                                   owl:someValuesFrom OWL2StreamBench:InvitedTalkSpeaker
-                                                 ] ;
-                             rdfs:subClassOf OWL2StreamBench:Talks .
+# Class: OWL2StreamBench:JournalArticle (OWL2StreamBench:JournalArticle)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:JournalArticle "")
+SubClassOf(OWL2StreamBench:JournalArticle OWL2StreamBench:AcademicManuscript)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Journal
-OWL2StreamBench:Journal rdf:type owl:Class ;
-                        rdfs:subClassOf OWL2StreamBench:AcademicEvent .
+# Class: OWL2StreamBench:KeynoteSpeaker (OWL2StreamBench:KeynoteSpeaker)
 
+EquivalentClasses(OWL2StreamBench:KeynoteSpeaker ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
+SubClassOf(OWL2StreamBench:KeynoteSpeaker foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#JournalArticle
-OWL2StreamBench:JournalArticle rdf:type owl:Class ;
-                               rdfs:subClassOf OWL2StreamBench:AcademicManuscript ;
-                               OWL2StreamBench:isInstantaneous "" .
+# Class: OWL2StreamBench:KeynoteTalks (OWL2StreamBench:KeynoteTalks)
 
+EquivalentClasses(OWL2StreamBench:KeynoteTalks ObjectSomeValuesFrom(OWL2StreamBench:keynoteTalkGivenBy OWL2StreamBench:KeynoteSpeaker))
+SubClassOf(OWL2StreamBench:KeynoteTalks OWL2StreamBench:Talks)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#KeynoteSpeaker
-OWL2StreamBench:KeynoteSpeaker rdf:type owl:Class ;
-                               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> ;
-                                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>
-                                                   ] ;
-                               rdfs:subClassOf foaf:Person .
+# Class: OWL2StreamBench:LightningTalks (OWL2StreamBench:LightningTalks)
 
+SubClassOf(OWL2StreamBench:LightningTalks OWL2StreamBench:Talks)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#KeynoteTalks
-OWL2StreamBench:KeynoteTalks rdf:type owl:Class ;
-                             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                   owl:onProperty OWL2StreamBench:keynoteTalkGivenBy ;
-                                                   owl:someValuesFrom OWL2StreamBench:KeynoteSpeaker
-                                                 ] ;
-                             rdfs:subClassOf OWL2StreamBench:Talks .
+# Class: OWL2StreamBench:NonAcademicOrganization (OWL2StreamBench:NonAcademicOrganization)
 
+EquivalentClasses(OWL2StreamBench:NonAcademicOrganization ObjectComplementOf(OWL2StreamBench:AcademicOrganization))
+SubClassOf(OWL2StreamBench:NonAcademicOrganization foaf:Organization)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#LightningTalks
-OWL2StreamBench:LightningTalks rdf:type owl:Class ;
-                               rdfs:subClassOf OWL2StreamBench:Talks .
+# Class: OWL2StreamBench:NonAuthor (OWL2StreamBench:NonAuthor)
 
+EquivalentClasses(OWL2StreamBench:NonAuthor ObjectComplementOf(OWL2StreamBench:Author))
+SubClassOf(OWL2StreamBench:NonAuthor foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ManuscriptDomain
-OWL2StreamBench:ManuscriptDomain rdf:type owl:Class .
+# Class: OWL2StreamBench:Organizer (OWL2StreamBench:Organizer)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:Organizer "I have added")
+EquivalentClasses(OWL2StreamBench:Organizer ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
+SubClassOf(OWL2StreamBench:Organizer foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#NonAcademicOrganization
-OWL2StreamBench:NonAcademicOrganization rdf:type owl:Class ;
-                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                              owl:complementOf OWL2StreamBench:AcademicOrganization
-                                                            ] ;
-                                        rdfs:subClassOf foaf:Organization .
+# Class: OWL2StreamBench:OrganizingCommittee (OWL2StreamBench:OrganizingCommittee)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:OrganizingCommittee "Can be removed")
+EquivalentClasses(OWL2StreamBench:OrganizingCommittee ObjectAllValuesFrom(OWL2StreamBench:hasOrganizingCommitteeMember OWL2StreamBench:Organizer))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#NonAuthor
-OWL2StreamBench:NonAuthor rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Class ;
-                                                owl:complementOf OWL2StreamBench:Author
-                                              ] ;
-                          rdfs:subClassOf foaf:Person .
+# Class: OWL2StreamBench:Participant (OWL2StreamBench:Participant)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:Participant "Attendee could be an equivalent class?")
+SubClassOf(OWL2StreamBench:Participant foaf:Person)
+SubClassOf(OWL2StreamBench:Participant ObjectSomeValuesFrom(OWL2StreamBench:attends OWL2StreamBench:AcademicEvent))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Organizer
-OWL2StreamBench:Organizer rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> ;
-                                                owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>
-                                              ] ;
-                          rdfs:subClassOf foaf:Person ;
-                          rdfs:comment "I have added" .
+# Class: OWL2StreamBench:PhDStudent (OWL2StreamBench:PhDStudent)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:PhDStudent "Define this and include in the table")
+EquivalentClasses(OWL2StreamBench:PhDStudent ObjectSomeValuesFrom(OWL2StreamBench:presents ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:doctoralConsortiumTrack)))
+SubClassOf(OWL2StreamBench:PhDStudent OWL2StreamBench:StudentAuthor)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#OrganizingCommittee
-OWL2StreamBench:OrganizingCommittee rdf:type owl:Class ;
-                                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                          owl:onProperty OWL2StreamBench:hasOrganizingCommitteeMember ;
-                                                          owl:allValuesFrom OWL2StreamBench:Organizer
-                                                        ] ;
-                                    rdfs:comment "Can be removed" .
+# Class: OWL2StreamBench:PosterPaper (OWL2StreamBench:PosterPaper)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:PosterPaper "")
+SubClassOf(OWL2StreamBench:PosterPaper OWL2StreamBench:ConferencePaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Participant
-OWL2StreamBench:Participant rdf:type owl:Class ;
-                            rdfs:subClassOf foaf:Person ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty OWL2StreamBench:attends ;
-                                              owl:someValuesFrom OWL2StreamBench:AcademicEvent
-                                            ] ;
-                            rdfs:comment "Attendee could be an equivalent class?" .
+# Class: OWL2StreamBench:Presentations (OWL2StreamBench:Presentations)
 
+SubClassOf(OWL2StreamBench:Presentations OWL2StreamBench:Talks)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#PhDStudent
-OWL2StreamBench:PhDStudent rdf:type owl:Class ;
-                           owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                 owl:onProperty OWL2StreamBench:presents ;
-                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty OWL2StreamBench:hasPaperTrack ;
-                                                                      owl:hasValue OWL2StreamBench:doctoralConsortiumTrack
-                                                                    ]
-                                               ] ;
-                           rdfs:subClassOf OWL2StreamBench:StudentAuthor ;
-                           rdfs:comment "Define this and include in the table" .
+# Class: OWL2StreamBench:ResearchPaper (OWL2StreamBench:ResearchPaper)
 
+EquivalentClasses(OWL2StreamBench:ResearchPaper ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:researchTrack))
+SubClassOf(OWL2StreamBench:ResearchPaper OWL2StreamBench:ConferencePaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#PosterPaper
-OWL2StreamBench:PosterPaper rdf:type owl:Class ;
-                            rdfs:subClassOf OWL2StreamBench:ConferencePaper ;
-                            owl:hasKey ( OWL2StreamBench:hasPaperId
-                                       ) ;
-                            OWL2StreamBench:isInstantaneous "" .
+# Class: OWL2StreamBench:ResourcePaper (OWL2StreamBench:ResourcePaper)
 
+EquivalentClasses(OWL2StreamBench:ResourcePaper ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:researchTrack))
+SubClassOf(OWL2StreamBench:ResourcePaper OWL2StreamBench:ConferencePaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Presentations
-OWL2StreamBench:Presentations rdf:type owl:Class ;
-                              rdfs:subClassOf OWL2StreamBench:Talks .
+# Class: OWL2StreamBench:SingleAuthorPaper (OWL2StreamBench:SingleAuthorPaper)
 
+EquivalentClasses(OWL2StreamBench:SingleAuthorPaper ObjectExactCardinality(1 OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
+SubClassOf(OWL2StreamBench:SingleAuthorPaper OWL2StreamBench:AcademicManuscript)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ResearchPaper
-OWL2StreamBench:ResearchPaper rdf:type owl:Class ;
-                              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                    owl:onProperty OWL2StreamBench:hasPaperTrack ;
-                                                    owl:hasValue OWL2StreamBench:researchTrack
-                                                  ] ;
-                              rdfs:subClassOf OWL2StreamBench:ConferencePaper ;
-                              owl:hasKey ( OWL2StreamBench:hasPaperId
-                                         ) .
+# Class: OWL2StreamBench:Student (OWL2StreamBench:Student)
 
+AnnotationAssertion(OWL2StreamBench:isTimeVarying OWL2StreamBench:Student "")
+AnnotationAssertion(rdfs:comment OWL2StreamBench:Student "Student may particiate in DC")
+SubClassOf(OWL2StreamBench:Student foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ResourcePaper
-OWL2StreamBench:ResourcePaper rdf:type owl:Class ;
-                              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                    owl:onProperty OWL2StreamBench:hasPaperTrack ;
-                                                    owl:hasValue OWL2StreamBench:researchTrack
-                                                  ] ;
-                              rdfs:subClassOf OWL2StreamBench:ConferencePaper .
+# Class: OWL2StreamBench:StudentAuthor (OWL2StreamBench:StudentAuthor)
 
+EquivalentClasses(OWL2StreamBench:StudentAuthor ObjectIntersectionOf(OWL2StreamBench:Author OWL2StreamBench:Student))
+SubClassOf(OWL2StreamBench:StudentAuthor foaf:Person)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#SingleAuthorPaper
-OWL2StreamBench:SingleAuthorPaper rdf:type owl:Class ;
-                                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                        owl:onProperty OWL2StreamBench:hasAuthor ;
-                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                        owl:onClass OWL2StreamBench:Author
-                                                      ] ;
-                                  rdfs:subClassOf OWL2StreamBench:AcademicManuscript .
+# Class: OWL2StreamBench:Talks (OWL2StreamBench:Talks)
 
+EquivalentClasses(OWL2StreamBench:Talks ObjectUnionOf(OWL2StreamBench:InvitedTalks OWL2StreamBench:KeynoteTalks OWL2StreamBench:LightningTalks OWL2StreamBench:Presentations))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Student
-OWL2StreamBench:Student rdf:type owl:Class ;
-                        rdfs:subClassOf foaf:Person ;
-                        OWL2StreamBench:isTimeVarying "" ;
-                        rdfs:comment "Student may particiate in DC" .
+# Class: OWL2StreamBench:Volunteer (OWL2StreamBench:Volunteer)
 
+AnnotationAssertion(rdfs:comment OWL2StreamBench:Volunteer "is volunteer part of organizing team? or 'has role'?")
+EquivalentClasses(OWL2StreamBench:Volunteer ObjectSomeValuesFrom(OWL2StreamBench:volunteersFor OWL2StreamBench:AcademicEvent))
+SubClassOf(OWL2StreamBench:Volunteer OWL2StreamBench:Participant)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#StudentAuthor
-OWL2StreamBench:StudentAuthor rdf:type owl:Class ;
-                              owl:equivalentClass [ owl:intersectionOf ( OWL2StreamBench:Author
-                                                                         OWL2StreamBench:Student
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ] ;
-                              rdfs:subClassOf foaf:Person .
+# Class: OWL2StreamBench:Workshop (OWL2StreamBench:Workshop)
 
+AnnotationAssertion(OWL2StreamBench:isStatic OWL2StreamBench:Workshop "")
+SubClassOf(OWL2StreamBench:Workshop OWL2StreamBench:AcademicEvent)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Talks
-OWL2StreamBench:Talks rdf:type owl:Class ;
-                      owl:equivalentClass [ rdf:type owl:Class ;
-                                            owl:unionOf ( OWL2StreamBench:InvitedTalks
-                                                          OWL2StreamBench:KeynoteTalks
-                                                          OWL2StreamBench:LightningTalks
-                                                          OWL2StreamBench:Presentations
-                                                        )
-                                          ] .
+# Class: OWL2StreamBench:WorkshopPaper (OWL2StreamBench:WorkshopPaper)
 
+AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:WorkshopPaper "")
+SubClassOf(OWL2StreamBench:WorkshopPaper OWL2StreamBench:ConferencePaper)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Volunteer
-OWL2StreamBench:Volunteer rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                owl:onProperty OWL2StreamBench:volunteersFor ;
-                                                owl:someValuesFrom OWL2StreamBench:AcademicEvent
-                                              ] ;
-                          rdfs:subClassOf OWL2StreamBench:Participant ;
-                          rdfs:comment "is volunteer part of organizing team? or 'has role'?" .
+# Class: <http://purl.org/ontology/bibo/Manuscript> (<http://purl.org/ontology/bibo/Manuscript>)
 
+EquivalentClasses(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#Workshop
-OWL2StreamBench:Workshop rdf:type owl:Class ;
-                         rdfs:subClassOf OWL2StreamBench:AcademicEvent ;
-                         OWL2StreamBench:isStatic "" .
+# Class: event:Event (event:Event)
 
+EquivalentClasses(event:Event ObjectSomeValuesFrom(OWL2StreamBench:hasEventMode OWL2StreamBench:EventMode))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(OWL2StreamBench:hasOrganizingCommittee OWL2StreamBench:OrganizingCommittee))
+SubClassOf(event:Event DataSomeValuesFrom(OWL2StreamBench:hasLocation xsd:string))
+SubClassOf(event:Event DataExactCardinality(1 OWL2StreamBench:hasTitle xsd:string))
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#WorkshopPaper
-OWL2StreamBench:WorkshopPaper rdf:type owl:Class ;
-                              rdfs:subClassOf OWL2StreamBench:ConferencePaper ;
-                              owl:hasKey ( OWL2StreamBench:hasPaperId
-                                         ) ;
-                              OWL2StreamBench:isInstantaneous "" .
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> (Role)
 
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> "Role")
 
-###  http://purl.org/ontology/bibo/Manuscript
-<http://purl.org/ontology/bibo/Manuscript> rdf:type owl:Class ;
-                                           owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty OWL2StreamBench:hasAuthor ;
-                                                                 owl:someValuesFrom OWL2StreamBench:Author
-                                                               ] .
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> (KeyNoteSpeakerRole)
 
+AnnotationAssertion(rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl>)
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> "KeyNoteSpeakerRole"@en)
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
 
-###  http://w3id.org/daselab/onto/event#Event
-event:Event rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty OWL2StreamBench:hasEventMode ;
-                                  owl:someValuesFrom OWL2StreamBench:EventMode
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty OWL2StreamBench:hasOrganizingCommittee ;
-                                  owl:someValuesFrom OWL2StreamBench:OrganizingCommittee
-                                ] ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty OWL2StreamBench:hasLocation ;
-                              owl:someValuesFrom xsd:string
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty OWL2StreamBench:hasTitle ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
-                            ] .
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> (OrganizerRole)
 
+AnnotationAssertion(rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl>)
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> "OrganizerRole"@en)
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
 
-###  http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept
-<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> rdf:type owl:Class ;
-                                                                          rdfs:label "Role" .
+# Class: foaf:Organization (foaf:Organization)
 
+AnnotationAssertion(OWL2StreamBench:isStatic foaf:Organization "")
 
-###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole
-<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> ;
-                                                                                 rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
-                                                                                 rdfs:label "KeyNoteSpeakerRole"@en .
+# Class: foaf:Person (foaf:Person)
 
+SubClassOf(foaf:Person ObjectAllValuesFrom(OWL2StreamBench:hasAffiliation foaf:Organization))
 
-###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer
-<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> ;
-                                                                        rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
-                                                                        rdfs:label "OrganizerRole"@en .
 
+############################
+#   Named Individuals
+############################
 
-###  http://xmlns.com/foaf/0.1/Organization
-foaf:Organization rdf:type owl:Class ;
-                  OWL2StreamBench:isStatic "" .
+# Individual: OWL2StreamBench:aiForSocialGood (OWL2StreamBench:aiForSocialGood)
 
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:aiForSocialGood)
 
-###  http://xmlns.com/foaf/0.1/Person
-foaf:Person rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty OWL2StreamBench:hasAffiliation ;
-                              owl:allValuesFrom foaf:Organization
-                            ] .
+# Individual: OWL2StreamBench:applicationsTrack (OWL2StreamBench:applicationsTrack)
 
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:applicationsTrack)
 
-#################################################################
-#    Individuals
-#################################################################
+# Individual: OWL2StreamBench:artificialIntelligence (OWL2StreamBench:artificialIntelligence)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#aiForSocialGood
-OWL2StreamBench:aiForSocialGood rdf:type owl:NamedIndividual ,
-                                         OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:artificialIntelligence)
 
+# Individual: OWL2StreamBench:bigData (OWL2StreamBench:bigData)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#applicationsTrack
-OWL2StreamBench:applicationsTrack rdf:type owl:NamedIndividual ,
-                                           OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:bigData)
 
+# Individual: OWL2StreamBench:blockChain (OWL2StreamBench:blockChain)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#artificialIntelligence
-OWL2StreamBench:artificialIntelligence rdf:type owl:NamedIndividual ,
-                                                OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:blockChain)
 
+# Individual: OWL2StreamBench:cloudComputing (OWL2StreamBench:cloudComputing)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#bigData
-OWL2StreamBench:bigData rdf:type owl:NamedIndividual ,
-                                 OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:cloudComputing)
 
+# Individual: OWL2StreamBench:computerVision (OWL2StreamBench:computerVision)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#blockChain
-OWL2StreamBench:blockChain rdf:type owl:NamedIndividual ,
-                                    OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:computerVision)
 
+# Individual: OWL2StreamBench:dataScience (OWL2StreamBench:dataScience)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#cloudComputing
-OWL2StreamBench:cloudComputing rdf:type owl:NamedIndividual ,
-                                        OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:dataScience)
 
+# Individual: OWL2StreamBench:deepLearning (OWL2StreamBench:deepLearning)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#computerVision
-OWL2StreamBench:computerVision rdf:type owl:NamedIndividual ,
-                                        OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:deepLearning)
 
+# Individual: OWL2StreamBench:demoTrack (OWL2StreamBench:demoTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#dataScience
-OWL2StreamBench:dataScience rdf:type owl:NamedIndividual ,
-                                     OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:demoTrack)
 
+# Individual: OWL2StreamBench:doctoralConsortiumTrack (OWL2StreamBench:doctoralConsortiumTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#deepLearning
-OWL2StreamBench:deepLearning rdf:type owl:NamedIndividual ,
-                                      OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:doctoralConsortiumTrack)
 
+# Individual: OWL2StreamBench:generalChair (OWL2StreamBench:generalChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#demoTrack
-OWL2StreamBench:demoTrack rdf:type owl:NamedIndividual ,
-                                   OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:generalChair)
 
+# Individual: OWL2StreamBench:hybrid (OWL2StreamBench:hybrid)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#doctoralConsortiumTrack
-OWL2StreamBench:doctoralConsortiumTrack rdf:type owl:NamedIndividual ,
-                                                 OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:hybrid)
 
+# Individual: OWL2StreamBench:internetOfThings (OWL2StreamBench:internetOfThings)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#generalChair
-OWL2StreamBench:generalChair rdf:type owl:NamedIndividual ,
-                                      OWL2StreamBench:ChairRole .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:internetOfThings)
 
+# Individual: OWL2StreamBench:journalSpecialIssue (OWL2StreamBench:journalSpecialIssue)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#hybrid
-OWL2StreamBench:hybrid rdf:type owl:NamedIndividual ,
-                                OWL2StreamBench:EventMode .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:journalSpecialIssue)
 
+# Individual: OWL2StreamBench:knowledgeGraph (OWL2StreamBench:knowledgeGraph)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#internetOfThings
-OWL2StreamBench:internetOfThings rdf:type owl:NamedIndividual ,
-                                          OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:knowledgeGraph)
 
+# Individual: OWL2StreamBench:linkedData (OWL2StreamBench:linkedData)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#journalSpecialIssue
-OWL2StreamBench:journalSpecialIssue rdf:type owl:NamedIndividual ,
-                                             OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:linkedData)
 
+# Individual: OWL2StreamBench:localChair (OWL2StreamBench:localChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#knowledgeGraph
-OWL2StreamBench:knowledgeGraph rdf:type owl:NamedIndividual ,
-                                        OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:localChair)
 
+# Individual: OWL2StreamBench:machineLearning (OWL2StreamBench:machineLearning)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#linkedData
-OWL2StreamBench:linkedData rdf:type owl:NamedIndividual ,
-                                    OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:machineLearning)
+SameIndividual(OWL2StreamBench:machineLearning OWL2StreamBench:ml)
 
+# Individual: OWL2StreamBench:ml (OWL2StreamBench:ml)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#localChair
-OWL2StreamBench:localChair rdf:type owl:NamedIndividual ,
-                                    OWL2StreamBench:ChairRole .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ml)
 
+# Individual: OWL2StreamBench:naturalLanguageProcessing (OWL2StreamBench:naturalLanguageProcessing)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#machineLearning
-OWL2StreamBench:machineLearning rdf:type owl:NamedIndividual ,
-                                         OWL2StreamBench:ComputerScienceDomain ;
-                                owl:sameAs OWL2StreamBench:ml .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:naturalLanguageProcessing)
+SameIndividual(OWL2StreamBench:naturalLanguageProcessing OWL2StreamBench:nlp)
 
+# Individual: OWL2StreamBench:neuralNetworks (OWL2StreamBench:neuralNetworks)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ml
-OWL2StreamBench:ml rdf:type owl:NamedIndividual ,
-                            OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:neuralNetworks)
 
+# Individual: OWL2StreamBench:nlp (OWL2StreamBench:nlp)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#naturalLanguageProcessing
-OWL2StreamBench:naturalLanguageProcessing rdf:type owl:NamedIndividual ,
-                                                   OWL2StreamBench:ComputerScienceDomain ;
-                                          owl:sameAs OWL2StreamBench:nlp .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:nlp)
 
+# Individual: OWL2StreamBench:offline (OWL2StreamBench:offline)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#neuralNetworks
-OWL2StreamBench:neuralNetworks rdf:type owl:NamedIndividual ,
-                                        OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:offline)
 
+# Individual: OWL2StreamBench:online (OWL2StreamBench:online)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#nlp
-OWL2StreamBench:nlp rdf:type owl:NamedIndividual ,
-                             OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:online)
+SameIndividual(OWL2StreamBench:online OWL2StreamBench:remote)
 
+# Individual: OWL2StreamBench:ontology (OWL2StreamBench:ontology)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#offline
-OWL2StreamBench:offline rdf:type owl:NamedIndividual ,
-                                 OWL2StreamBench:EventMode .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ontology)
 
+# Individual: OWL2StreamBench:posterTrack (OWL2StreamBench:posterTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#online
-OWL2StreamBench:online rdf:type owl:NamedIndividual ,
-                                OWL2StreamBench:EventMode ;
-                       owl:sameAs OWL2StreamBench:remote .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:posterTrack)
 
+# Individual: OWL2StreamBench:quantumComputing (OWL2StreamBench:quantumComputing)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#ontology
-OWL2StreamBench:ontology rdf:type owl:NamedIndividual ,
-                                  OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:quantumComputing)
 
+# Individual: OWL2StreamBench:researchTrack (OWL2StreamBench:researchTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#posterTrack
-OWL2StreamBench:posterTrack rdf:type owl:NamedIndividual ,
-                                     OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:researchTrack)
 
+# Individual: OWL2StreamBench:researchTrackChair (OWL2StreamBench:researchTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#quantumComputing
-OWL2StreamBench:quantumComputing rdf:type owl:NamedIndividual ,
-                                          OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:researchTrackChair)
 
+# Individual: OWL2StreamBench:resourcesTrack (OWL2StreamBench:resourcesTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#remote
-OWL2StreamBench:remote rdf:type owl:NamedIndividual .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:resourcesTrack)
 
+# Individual: OWL2StreamBench:resourcesTrackChair (OWL2StreamBench:resourcesTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#researchTrack
-OWL2StreamBench:researchTrack rdf:type owl:NamedIndividual ,
-                                       OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:resourcesTrackChair)
 
+# Individual: OWL2StreamBench:semanticWeb (OWL2StreamBench:semanticWeb)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#researchTrackChair
-OWL2StreamBench:researchTrackChair rdf:type owl:NamedIndividual ,
-                                            OWL2StreamBench:ChairRole .
+ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:semanticWeb)
 
+# Individual: OWL2StreamBench:trackChair (OWL2StreamBench:trackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#resourcesTrack
-OWL2StreamBench:resourcesTrack rdf:type owl:NamedIndividual ,
-                                        OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:trackChair)
 
+# Individual: OWL2StreamBench:tutorialTrack (OWL2StreamBench:tutorialTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#resourcesTrackChair
-OWL2StreamBench:resourcesTrackChair rdf:type owl:NamedIndividual ,
-                                             OWL2StreamBench:ChairRole .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:tutorialTrack)
 
+# Individual: OWL2StreamBench:tutorialTrackChair (OWL2StreamBench:tutorialTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#semanticWeb
-OWL2StreamBench:semanticWeb rdf:type owl:NamedIndividual ,
-                                     OWL2StreamBench:ComputerScienceDomain .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:tutorialTrackChair)
 
+# Individual: OWL2StreamBench:workshopTrack (OWL2StreamBench:workshopTrack)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#trackChair
-OWL2StreamBench:trackChair rdf:type owl:NamedIndividual ,
-                                    OWL2StreamBench:ChairRole .
+ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:workshopTrack)
 
+# Individual: OWL2StreamBench:workshopTrackChair (OWL2StreamBench:workshopTrackChair)
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#tutorialTrack
-OWL2StreamBench:tutorialTrack rdf:type owl:NamedIndividual ,
-                                       OWL2StreamBench:AcademicEventTrack .
+ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:workshopTrackChair)
 
 
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#tutorialTrackChair
-OWL2StreamBench:tutorialTrackChair rdf:type owl:NamedIndividual ,
-                                            OWL2StreamBench:ChairRole .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#workshopTrack
-OWL2StreamBench:workshopTrack rdf:type owl:NamedIndividual ,
-                                       OWL2StreamBench:AcademicEventTrack .
-
-
-###  http://kracr.iiitd.edu.in/OWL2StreamBench#workshopTrackChair
-OWL2StreamBench:workshopTrackChair rdf:type owl:NamedIndividual ,
-                                            OWL2StreamBench:ChairRole .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( OWL2StreamBench:offline
-                        OWL2StreamBench:online
-                      )
-] .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+DifferentIndividuals(OWL2StreamBench:offline OWL2StreamBench:online)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:hasAuthor) OWL2StreamBench:hasCoAuthor)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasInvitedTalk OWL2StreamBench:invitedTalkGivenBy) OWL2StreamBench:hasInvitedTalkSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasKeynoteTalk OWL2StreamBench:keynoteTalkGivenBy) OWL2StreamBench:hasKeynoteSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasOrganizingCommittee OWL2StreamBench:hasOrganizingCommitteeMember) OWL2StreamBench:hasOrganizingCommittee)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasPaperTrack OWL2StreamBench:hasChair) OWL2StreamBench:hasOrganizer)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasTalk OWL2StreamBench:invitedTalkGivenBy) OWL2StreamBench:invitedTalkGivenBy)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasTalk OWL2StreamBench:talkGivenBy) OWL2StreamBench:hasSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:presents OWL2StreamBench:hasAuthor) OWL2StreamBench:hasCoAuthor)
+SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:presents OWL2StreamBench:isPresentedAt) OWL2StreamBench:attends)
+HasKey(OWL2StreamBench:AcademicManuscript () (OWL2StreamBench:hasId))
+HasKey(OWL2StreamBench:ConferencePaper () (OWL2StreamBench:hasPaperId))
+HasKey(OWL2StreamBench:DemoPaper () (OWL2StreamBench:hasPaperId))
+HasKey(OWL2StreamBench:PosterPaper () (OWL2StreamBench:hasPaperId))
+HasKey(OWL2StreamBench:ResearchPaper () (OWL2StreamBench:hasPaperId))
+HasKey(OWL2StreamBench:WorkshopPaper () (OWL2StreamBench:hasPaperId))
+)
