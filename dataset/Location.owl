@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#"
+     xml:base="http://kracr.iiitd.edu.in/OWL2StreamBench/Location"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#isLocatedIn">
+        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasCode"/>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasLatitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasLongitude">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasURL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#City -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#City">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Country -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Country">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#GeographicLocation">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#PhysicalLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Location -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Location"/>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#PhysicalLocation -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#PhysicalLocation">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/OWL2StreamBench/Location#VirtualLocation -->
+
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#VirtualLocation">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/OWL2StreamBench/Location#hasURL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

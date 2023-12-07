@@ -16,53 +16,53 @@ Prefix(OWL2StreamBench:=<http://kracr.iiitd.edu.in/OWL2StreamBench#>)
 Prefix(cpannotationschema:=<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#>)
 
 
-Ontology(<http://kracr.iiitd.edu.in/OWL2StreamBench>
-<http://kracr.iiitd.edu.in/OWL2StreamBench/1.0>
+Ontology(<http://kracr.iiitd.edu.in/AcademicConferenceTwitter>
+<http://kracr.iiitd.edu.in/AcademicConferenceTwitter/1.0>
 Annotation(rdfs:comment "05/05/2023 16:33")
 Annotation(rdfs:comment "Academic Conference Event Ontology")
 
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Attendee>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Author>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Conference>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#DemoPaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#EditorRole>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#EventMode>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeakerRole>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#JournalArticle>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#LightningTalks>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ManuscriptDomain>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#NonAcademicOrganization>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#NonAuthor>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Organizer>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Participant>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#PhDStudent>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#PosterPaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Presentations>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#ResourcePaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Session>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#SingleAuthorPaper>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Student>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Talks>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Volunteer>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#Workshop>))
+Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#College>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#University>))
-Declaration(Class(OWL2StreamBench:AcademicEvent))
-Declaration(Class(OWL2StreamBench:AcademicEventTrack))
-Declaration(Class(OWL2StreamBench:AcademicManuscript))
-Declaration(Class(OWL2StreamBench:AcademicOrganization))
-Declaration(Class(OWL2StreamBench:Attendee))
-Declaration(Class(OWL2StreamBench:Author))
-Declaration(Class(OWL2StreamBench:ChairRole))
-Declaration(Class(OWL2StreamBench:ComputerScienceDomain))
-Declaration(Class(OWL2StreamBench:Conference))
-Declaration(Class(OWL2StreamBench:ConferencePaper))
-Declaration(Class(OWL2StreamBench:DemoPaper))
-Declaration(Class(OWL2StreamBench:EditorRole))
-Declaration(Class(OWL2StreamBench:EventMode))
-Declaration(Class(OWL2StreamBench:InvitedTalkSpeaker))
-Declaration(Class(OWL2StreamBench:InvitedTalkSpeakerRole))
-Declaration(Class(OWL2StreamBench:InvitedTalks))
-Declaration(Class(OWL2StreamBench:Journal))
-Declaration(Class(OWL2StreamBench:JournalArticle))
-Declaration(Class(OWL2StreamBench:KeynoteSpeaker))
-Declaration(Class(OWL2StreamBench:KeynoteTalks))
-Declaration(Class(OWL2StreamBench:LightningTalks))
-Declaration(Class(OWL2StreamBench:ManuscriptDomain))
-Declaration(Class(OWL2StreamBench:NonAcademicOrganization))
-Declaration(Class(OWL2StreamBench:NonAuthor))
-Declaration(Class(OWL2StreamBench:Organizer))
-Declaration(Class(OWL2StreamBench:OrganizingCommittee))
-Declaration(Class(OWL2StreamBench:Participant))
-Declaration(Class(OWL2StreamBench:PhDStudent))
-Declaration(Class(OWL2StreamBench:PosterPaper))
-Declaration(Class(OWL2StreamBench:Presentations))
-Declaration(Class(OWL2StreamBench:ResearchPaper))
-Declaration(Class(OWL2StreamBench:ResourcePaper))
-Declaration(Class(OWL2StreamBench:SingleAuthorPaper))
-Declaration(Class(OWL2StreamBench:Student))
-Declaration(Class(OWL2StreamBench:StudentAuthor))
-Declaration(Class(OWL2StreamBench:Talks))
-Declaration(Class(OWL2StreamBench:Volunteer))
-Declaration(Class(OWL2StreamBench:Workshop))
-Declaration(Class(OWL2StreamBench:WorkshopPaper))
 Declaration(Class(<http://purl.org/ontology/bibo/Manuscript>))
 Declaration(Class(event:Event))
 Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>))
@@ -70,127 +70,360 @@ Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#K
 Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
 Declaration(Class(foaf:Organization))
 Declaration(Class(foaf:Person))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#attends>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAdvisor>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAffiliation>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAttendee>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasChairRoleAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasDemoTrackChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasDomain>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChairRoleAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalk>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteTalk>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasLocalChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasMode>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizerRoleAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasPaper>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperDomain>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasParticipant>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasPosterTrackChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasProject>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasResearchTrackChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasResourceTrackChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasSession>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasTalk>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasVolunteer>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasWorkshopAndTutorialChair>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isChairOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isPartOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isPresentedBy>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#organizes>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#presents>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#volunteersFor>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
-Declaration(ObjectProperty(OWL2StreamBench:attends))
-Declaration(ObjectProperty(OWL2StreamBench:givesInvitedTalkAt))
-Declaration(ObjectProperty(OWL2StreamBench:givesKeynoteTalkAt))
-Declaration(ObjectProperty(OWL2StreamBench:givesTalkAt))
-Declaration(ObjectProperty(OWL2StreamBench:hasAcceptedPaper))
-Declaration(ObjectProperty(OWL2StreamBench:hasAdvisor))
-Declaration(ObjectProperty(OWL2StreamBench:hasAffiliation))
-Declaration(ObjectProperty(OWL2StreamBench:hasAttendee))
-Declaration(ObjectProperty(OWL2StreamBench:hasAuthor))
-Declaration(ObjectProperty(OWL2StreamBench:hasChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasChairRoleAt))
-Declaration(ObjectProperty(OWL2StreamBench:hasCoAuthor))
-Declaration(ObjectProperty(OWL2StreamBench:hasCollaborator))
-Declaration(ObjectProperty(OWL2StreamBench:hasDemoTrackChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasEventMode))
-Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChairRoleAt))
-Declaration(ObjectProperty(OWL2StreamBench:hasInvitedTalk))
-Declaration(ObjectProperty(OWL2StreamBench:hasInvitedTalkSpeaker))
-Declaration(ObjectProperty(OWL2StreamBench:hasKeynoteSpeaker))
-Declaration(ObjectProperty(OWL2StreamBench:hasKeynoteTalk))
-Declaration(ObjectProperty(OWL2StreamBench:hasLocalChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasMode))
-Declaration(ObjectProperty(OWL2StreamBench:hasOrganizer))
-Declaration(ObjectProperty(OWL2StreamBench:hasOrganizerRoleAt))
-Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommittee))
-Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommitteeMember))
-Declaration(ObjectProperty(OWL2StreamBench:hasPaper))
-Declaration(ObjectProperty(OWL2StreamBench:hasPaperTrack))
-Declaration(ObjectProperty(OWL2StreamBench:hasParticipant))
-Declaration(ObjectProperty(OWL2StreamBench:hasPosterTrackChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasProject))
-Declaration(ObjectProperty(OWL2StreamBench:hasResearchTrackChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasResourceTrackChair))
-Declaration(ObjectProperty(OWL2StreamBench:hasSpeaker))
-Declaration(ObjectProperty(OWL2StreamBench:hasTalk))
-Declaration(ObjectProperty(OWL2StreamBench:hasVolunteer))
-Declaration(ObjectProperty(OWL2StreamBench:hasWorkshopAndTutorialChair))
-Declaration(ObjectProperty(OWL2StreamBench:invitedTalkGivenBy))
-Declaration(ObjectProperty(OWL2StreamBench:isAcceptedAt))
-Declaration(ObjectProperty(OWL2StreamBench:isAuthorOf))
-Declaration(ObjectProperty(OWL2StreamBench:isChairOf))
-Declaration(ObjectProperty(OWL2StreamBench:isOrganizerOf))
-Declaration(ObjectProperty(OWL2StreamBench:isPresentedAt))
-Declaration(ObjectProperty(OWL2StreamBench:isPresentedBy))
-Declaration(ObjectProperty(OWL2StreamBench:keynoteTalkGivenBy))
-Declaration(ObjectProperty(OWL2StreamBench:organizes))
-Declaration(ObjectProperty(OWL2StreamBench:presents))
-Declaration(ObjectProperty(OWL2StreamBench:talkGivenBy))
-Declaration(ObjectProperty(OWL2StreamBench:volunteersFor))
 Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
-Declaration(DataProperty(OWL2StreamBench:givesInvitedTalkOn))
-Declaration(DataProperty(OWL2StreamBench:givesKeynoteTalkOn))
-Declaration(DataProperty(OWL2StreamBench:givesTalkOn))
-Declaration(DataProperty(OWL2StreamBench:hasAuthorId))
-Declaration(DataProperty(OWL2StreamBench:hasConferenceName))
-Declaration(DataProperty(OWL2StreamBench:hasDeadline))
-Declaration(DataProperty(OWL2StreamBench:hasDuration))
-Declaration(DataProperty(OWL2StreamBench:hasEarlyRegistrationDeadline))
-Declaration(DataProperty(OWL2StreamBench:hasEdition))
-Declaration(DataProperty(OWL2StreamBench:hasId))
-Declaration(DataProperty(OWL2StreamBench:hasLocation))
-Declaration(DataProperty(OWL2StreamBench:hasName))
-Declaration(DataProperty(OWL2StreamBench:hasPaperId))
-Declaration(DataProperty(OWL2StreamBench:hasRegistrationDeadline))
-Declaration(DataProperty(OWL2StreamBench:hasStartDate))
-Declaration(DataProperty(OWL2StreamBench:hasStatus))
-Declaration(DataProperty(OWL2StreamBench:hasSubmissionDeadline))
-Declaration(DataProperty(OWL2StreamBench:hasTheme))
-Declaration(DataProperty(OWL2StreamBench:hasTitle))
-Declaration(DataProperty(OWL2StreamBench:hasVenue))
-Declaration(DataProperty(OWL2StreamBench:hasWebsiteURL))
-Declaration(DataProperty(OWL2StreamBench:isRelatedTo))
-Declaration(NamedIndividual(OWL2StreamBench:aiForSocialGood))
-Declaration(NamedIndividual(OWL2StreamBench:applicationsTrack))
-Declaration(NamedIndividual(OWL2StreamBench:artificialIntelligence))
-Declaration(NamedIndividual(OWL2StreamBench:bigData))
-Declaration(NamedIndividual(OWL2StreamBench:blockChain))
-Declaration(NamedIndividual(OWL2StreamBench:cloudComputing))
-Declaration(NamedIndividual(OWL2StreamBench:computerVision))
-Declaration(NamedIndividual(OWL2StreamBench:dataScience))
-Declaration(NamedIndividual(OWL2StreamBench:deepLearning))
-Declaration(NamedIndividual(OWL2StreamBench:demoTrack))
-Declaration(NamedIndividual(OWL2StreamBench:doctoralConsortiumTrack))
-Declaration(NamedIndividual(OWL2StreamBench:generalChair))
-Declaration(NamedIndividual(OWL2StreamBench:hybrid))
-Declaration(NamedIndividual(OWL2StreamBench:internetOfThings))
-Declaration(NamedIndividual(OWL2StreamBench:journalSpecialIssue))
-Declaration(NamedIndividual(OWL2StreamBench:knowledgeGraph))
-Declaration(NamedIndividual(OWL2StreamBench:linkedData))
-Declaration(NamedIndividual(OWL2StreamBench:localChair))
-Declaration(NamedIndividual(OWL2StreamBench:machineLearning))
-Declaration(NamedIndividual(OWL2StreamBench:ml))
-Declaration(NamedIndividual(OWL2StreamBench:naturalLanguageProcessing))
-Declaration(NamedIndividual(OWL2StreamBench:neuralNetworks))
-Declaration(NamedIndividual(OWL2StreamBench:nlp))
-Declaration(NamedIndividual(OWL2StreamBench:offline))
-Declaration(NamedIndividual(OWL2StreamBench:online))
-Declaration(NamedIndividual(OWL2StreamBench:ontology))
-Declaration(NamedIndividual(OWL2StreamBench:posterTrack))
-Declaration(NamedIndividual(OWL2StreamBench:quantumComputing))
-Declaration(NamedIndividual(OWL2StreamBench:remote))
-Declaration(NamedIndividual(OWL2StreamBench:researchTrack))
-Declaration(NamedIndividual(OWL2StreamBench:researchTrackChair))
-Declaration(NamedIndividual(OWL2StreamBench:resourcesTrack))
-Declaration(NamedIndividual(OWL2StreamBench:resourcesTrackChair))
-Declaration(NamedIndividual(OWL2StreamBench:semanticWeb))
-Declaration(NamedIndividual(OWL2StreamBench:trackChair))
-Declaration(NamedIndividual(OWL2StreamBench:tutorialTrack))
-Declaration(NamedIndividual(OWL2StreamBench:tutorialTrackChair))
-Declaration(NamedIndividual(OWL2StreamBench:workshopTrack))
-Declaration(NamedIndividual(OWL2StreamBench:workshopTrackChair))
-Declaration(AnnotationProperty(OWL2StreamBench:isInstantaneous))
-Declaration(AnnotationProperty(OWL2StreamBench:isStatic))
-Declaration(AnnotationProperty(OWL2StreamBench:isTimeVarying))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthorId>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasDeadline>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasDuration>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasEarlyRegistrationDeadline>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasEdition>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasId>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasName>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasRegistrationDeadline>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasStartDate>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasStatus>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasSubmissionDeadline>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasTheme>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasTitle>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasVenue>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasWebsiteURL>))
+Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConference#isRelatedTo>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#aiForSocialGood>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#applicationsTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#artificialIntelligence>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#bigData>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#blockChain>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#cloudComputing>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#computerVision>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#dataScience>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#deepLearning>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#demoTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#doctoralConsortiumTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#generalChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#hybrid>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#internetOfThings>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#journalSpecialIssue>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#knowledgeGraph>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#linkedData>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#localChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#machineLearning>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#ml>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#naturalLanguageProcessing>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#neuralNetworks>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#nlp>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#offline>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#online>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#ontology>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#posterTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#quantumComputing>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#remote>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#researchTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#researchTrackChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#resourcesTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#resourcesTrackChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#semanticWeb>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#trackChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#tutorialTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#tutorialTrackChair>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#workshopTrack>))
+Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConference#workshopTrackChair>))
+Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous>))
+Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConference#isStatic>))
+Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConference#isTimeVarying>))
 
 ############################
 #   Object Properties
 ############################
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#attends> (<http://kracr.iiitd.edu.in/AcademicConference#attends>)
+
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#attends> <http://kracr.iiitd.edu.in/AcademicConference#hasAttendee>)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#attends> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt> (<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt>)
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt> (<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt>)
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt> (<http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt>)
+
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt> <http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkAt> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper> (<http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAdvisor> (<http://kracr.iiitd.edu.in/AcademicConference#hasAdvisor>)
+
+AsymmetricObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasAdvisor>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAffiliation> (<http://kracr.iiitd.edu.in/AcademicConference#hasAffiliation>)
+
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasAffiliation> foaf:Organization)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAttendee> (<http://kracr.iiitd.edu.in/AcademicConference#hasAttendee>)
+
+EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasAttendee> <http://kracr.iiitd.edu.in/AcademicConference#hasParticipant>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasAttendee> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> (<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> owl:topObjectProperty)
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasChair> <http://kracr.iiitd.edu.in/AcademicConference#isChairOf>)
+DisjointObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasChair> <http://kracr.iiitd.edu.in/AcademicConference#hasVolunteer>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasChairRoleAt> (<http://kracr.iiitd.edu.in/AcademicConference#hasChairRoleAt>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasChairRoleAt> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizerRoleAt>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor> (<http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor> <http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator> (<http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator>)
+
+SymmetricObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator>)
+ReflexiveObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasCollaborator>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasDemoTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasDemoTrackChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasDemoTrackChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasEventMode> (<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConference#hasMode>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode> event:Event)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConference#EventMode>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChairRoleAt> (<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChairRoleAt>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasGeneralChairRoleAt> <http://kracr.iiitd.edu.in/AcademicConference#hasChairRoleAt>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalk> (<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalk>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalk> <http://kracr.iiitd.edu.in/AcademicConference#hasTalk>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker> (<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker> <http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker> (<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker> <http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker> event:Event)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker> <http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteTalk> (<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteTalk>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteTalk> <http://kracr.iiitd.edu.in/AcademicConference#hasTalk>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasLocalChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasLocalChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasLocalChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer> (<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer>)
+
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer> <http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer> event:Event)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer> <http://kracr.iiitd.edu.in/AcademicConference#Organizer>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizerRoleAt> (<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizerRoleAt>)
+
+EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizerRoleAt> <http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee> (<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee> "Example:
+ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
+ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer")
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember> (<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember> event:Event)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember> <http://kracr.iiitd.edu.in/AcademicConference#Organizer>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasPaper> (<http://kracr.iiitd.edu.in/AcademicConference#hasPaper>)
+
+EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasPaper> <http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf>)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasPaper> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasPaperDomain> (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperDomain>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperDomain> <http://kracr.iiitd.edu.in/AcademicConference#hasDomain>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> owl:topObjectProperty)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasPosterTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasPosterTrackChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasPosterTrackChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasProject> (<http://kracr.iiitd.edu.in/AcademicConference#hasProject>)
+
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasProject> foaf:Organization)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasResearchTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasResearchTrackChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasResearchTrackChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasResourceTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasResourceTrackChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasResourceTrackChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasSession> (<http://kracr.iiitd.edu.in/AcademicConference#hasSession>)
+
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasSession> event:Event)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasSession> <http://kracr.iiitd.edu.in/AcademicConference#Session>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker> (<http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker> owl:topObjectProperty)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#hasWorkshopAndTutorialChair> (<http://kracr.iiitd.edu.in/AcademicConference#hasWorkshopAndTutorialChair>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasWorkshopAndTutorialChair> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt> (<http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt>)
+
+EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt>)
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf> (<http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf>)
+
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf> foaf:Person)
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#isAuthorOf> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isChairOf> (<http://kracr.iiitd.edu.in/AcademicConference#isChairOf>)
+
+InverseFunctionalObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isChairOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf> (<http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#isOrganizerOf> owl:topObjectProperty)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isPartOf> (<http://kracr.iiitd.edu.in/AcademicConference#isPartOf>)
+
+TransitiveObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isPartOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt> (<http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt> "what could be the inverse property of isPresentedAt?")
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt> <http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt>)
+FunctionalObjectProperty(<http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#isPresentedBy> (<http://kracr.iiitd.edu.in/AcademicConference#isPresentedBy>)
+
+InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConference#isPresentedBy> <http://kracr.iiitd.edu.in/AcademicConference#presents>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#organizes> (<http://kracr.iiitd.edu.in/AcademicConference#organizes>)
+
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#organizes> event:Event)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#presents> (<http://kracr.iiitd.edu.in/AcademicConference#presents>)
+
+SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#presents> <http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy>)
+
+ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy> <http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+# Object Property: <http://kracr.iiitd.edu.in/AcademicConference#volunteersFor> (<http://kracr.iiitd.edu.in/AcademicConference#volunteersFor>)
+
+ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#volunteersFor> event:Event)
 
 # Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
 
@@ -202,221 +435,6 @@ IrreflexiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrgan
 TransitiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
 IrreflexiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
 
-# Object Property: OWL2StreamBench:attends (OWL2StreamBench:attends)
-
-InverseObjectProperties(OWL2StreamBench:attends OWL2StreamBench:hasAttendee)
-ObjectPropertyRange(OWL2StreamBench:attends event:Event)
-
-# Object Property: OWL2StreamBench:givesInvitedTalkAt (OWL2StreamBench:givesInvitedTalkAt)
-
-SubObjectPropertyOf(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:givesTalkAt)
-InverseObjectProperties(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:hasInvitedTalkSpeaker)
-ObjectPropertyDomain(OWL2StreamBench:givesInvitedTalkAt OWL2StreamBench:InvitedTalkSpeaker)
-
-# Object Property: OWL2StreamBench:givesKeynoteTalkAt (OWL2StreamBench:givesKeynoteTalkAt)
-
-SubObjectPropertyOf(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:givesTalkAt)
-InverseObjectProperties(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:hasKeynoteSpeaker)
-ObjectPropertyDomain(OWL2StreamBench:givesKeynoteTalkAt OWL2StreamBench:KeynoteSpeaker)
-
-# Object Property: OWL2StreamBench:givesTalkAt (OWL2StreamBench:givesTalkAt)
-
-InverseObjectProperties(OWL2StreamBench:givesTalkAt OWL2StreamBench:hasSpeaker)
-ObjectPropertyRange(OWL2StreamBench:givesTalkAt event:Event)
-
-# Object Property: OWL2StreamBench:hasAcceptedPaper (OWL2StreamBench:hasAcceptedPaper)
-
-SubObjectPropertyOf(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:isAuthorOf)
-
-# Object Property: OWL2StreamBench:hasAdvisor (OWL2StreamBench:hasAdvisor)
-
-AsymmetricObjectProperty(OWL2StreamBench:hasAdvisor)
-
-# Object Property: OWL2StreamBench:hasAffiliation (OWL2StreamBench:hasAffiliation)
-
-ObjectPropertyRange(OWL2StreamBench:hasAffiliation foaf:Organization)
-
-# Object Property: OWL2StreamBench:hasAttendee (OWL2StreamBench:hasAttendee)
-
-EquivalentObjectProperties(OWL2StreamBench:hasAttendee OWL2StreamBench:hasParticipant)
-ObjectPropertyDomain(OWL2StreamBench:hasAttendee event:Event)
-
-# Object Property: OWL2StreamBench:hasAuthor (OWL2StreamBench:hasAuthor)
-
-SubObjectPropertyOf(OWL2StreamBench:hasAuthor owl:topObjectProperty)
-InverseObjectProperties(OWL2StreamBench:hasAuthor OWL2StreamBench:isAuthorOf)
-ObjectPropertyDomain(OWL2StreamBench:hasAuthor OWL2StreamBench:AcademicManuscript)
-
-# Object Property: OWL2StreamBench:hasChair (OWL2StreamBench:hasChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasChair owl:topObjectProperty)
-InverseObjectProperties(OWL2StreamBench:hasChair OWL2StreamBench:isChairOf)
-DisjointObjectProperties(OWL2StreamBench:hasChair OWL2StreamBench:hasVolunteer)
-
-# Object Property: OWL2StreamBench:hasChairRoleAt (OWL2StreamBench:hasChairRoleAt)
-
-SubObjectPropertyOf(OWL2StreamBench:hasChairRoleAt OWL2StreamBench:hasOrganizerRoleAt)
-
-# Object Property: OWL2StreamBench:hasCoAuthor (OWL2StreamBench:hasCoAuthor)
-
-SubObjectPropertyOf(OWL2StreamBench:hasCoAuthor OWL2StreamBench:hasCollaborator)
-
-# Object Property: OWL2StreamBench:hasCollaborator (OWL2StreamBench:hasCollaborator)
-
-SymmetricObjectProperty(OWL2StreamBench:hasCollaborator)
-ReflexiveObjectProperty(OWL2StreamBench:hasCollaborator)
-
-# Object Property: OWL2StreamBench:hasDemoTrackChair (OWL2StreamBench:hasDemoTrackChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasDemoTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasEventMode (OWL2StreamBench:hasEventMode)
-
-SubObjectPropertyOf(OWL2StreamBench:hasEventMode OWL2StreamBench:hasMode)
-ObjectPropertyDomain(OWL2StreamBench:hasEventMode event:Event)
-ObjectPropertyRange(OWL2StreamBench:hasEventMode OWL2StreamBench:EventMode)
-
-# Object Property: OWL2StreamBench:hasGeneralChair (OWL2StreamBench:hasGeneralChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasGeneralChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasGeneralChairRoleAt (OWL2StreamBench:hasGeneralChairRoleAt)
-
-SubObjectPropertyOf(OWL2StreamBench:hasGeneralChairRoleAt OWL2StreamBench:hasChairRoleAt)
-
-# Object Property: OWL2StreamBench:hasInvitedTalk (OWL2StreamBench:hasInvitedTalk)
-
-SubObjectPropertyOf(OWL2StreamBench:hasInvitedTalk OWL2StreamBench:hasTalk)
-
-# Object Property: OWL2StreamBench:hasInvitedTalkSpeaker (OWL2StreamBench:hasInvitedTalkSpeaker)
-
-SubObjectPropertyOf(OWL2StreamBench:hasInvitedTalkSpeaker OWL2StreamBench:hasSpeaker)
-ObjectPropertyDomain(OWL2StreamBench:hasInvitedTalkSpeaker event:Event)
-
-# Object Property: OWL2StreamBench:hasKeynoteSpeaker (OWL2StreamBench:hasKeynoteSpeaker)
-
-SubObjectPropertyOf(OWL2StreamBench:hasKeynoteSpeaker OWL2StreamBench:hasSpeaker)
-ObjectPropertyDomain(OWL2StreamBench:hasKeynoteSpeaker event:Event)
-ObjectPropertyRange(OWL2StreamBench:hasKeynoteSpeaker OWL2StreamBench:KeynoteSpeaker)
-
-# Object Property: OWL2StreamBench:hasKeynoteTalk (OWL2StreamBench:hasKeynoteTalk)
-
-SubObjectPropertyOf(OWL2StreamBench:hasKeynoteTalk OWL2StreamBench:hasTalk)
-
-# Object Property: OWL2StreamBench:hasLocalChair (OWL2StreamBench:hasLocalChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasLocalChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasOrganizer (OWL2StreamBench:hasOrganizer)
-
-InverseObjectProperties(OWL2StreamBench:hasOrganizer OWL2StreamBench:isOrganizerOf)
-ObjectPropertyDomain(OWL2StreamBench:hasOrganizer event:Event)
-ObjectPropertyRange(OWL2StreamBench:hasOrganizer OWL2StreamBench:Organizer)
-
-# Object Property: OWL2StreamBench:hasOrganizerRoleAt (OWL2StreamBench:hasOrganizerRoleAt)
-
-EquivalentObjectProperties(OWL2StreamBench:hasOrganizerRoleAt OWL2StreamBench:isOrganizerOf)
-
-# Object Property: OWL2StreamBench:hasOrganizingCommittee (OWL2StreamBench:hasOrganizingCommittee)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:hasOrganizingCommittee "Example:
-ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
-ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer")
-ObjectPropertyDomain(OWL2StreamBench:hasOrganizingCommittee event:Event)
-
-# Object Property: OWL2StreamBench:hasOrganizingCommitteeMember (OWL2StreamBench:hasOrganizingCommitteeMember)
-
-ObjectPropertyDomain(OWL2StreamBench:hasOrganizingCommitteeMember event:Event)
-ObjectPropertyRange(OWL2StreamBench:hasOrganizingCommitteeMember OWL2StreamBench:Organizer)
-
-# Object Property: OWL2StreamBench:hasPaper (OWL2StreamBench:hasPaper)
-
-EquivalentObjectProperties(OWL2StreamBench:hasPaper OWL2StreamBench:isAuthorOf)
-ObjectPropertyRange(OWL2StreamBench:hasPaper OWL2StreamBench:AcademicManuscript)
-
-# Object Property: OWL2StreamBench:hasPaperTrack (OWL2StreamBench:hasPaperTrack)
-
-SubObjectPropertyOf(OWL2StreamBench:hasPaperTrack owl:topObjectProperty)
-ObjectPropertyDomain(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicManuscript)
-ObjectPropertyRange(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicEventTrack)
-
-# Object Property: OWL2StreamBench:hasPosterTrackChair (OWL2StreamBench:hasPosterTrackChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasPosterTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasProject (OWL2StreamBench:hasProject)
-
-ObjectPropertyDomain(OWL2StreamBench:hasProject foaf:Organization)
-
-# Object Property: OWL2StreamBench:hasResearchTrackChair (OWL2StreamBench:hasResearchTrackChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasResearchTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasResourceTrackChair (OWL2StreamBench:hasResourceTrackChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasResourceTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:hasSpeaker (OWL2StreamBench:hasSpeaker)
-
-SubObjectPropertyOf(OWL2StreamBench:hasSpeaker owl:topObjectProperty)
-
-# Object Property: OWL2StreamBench:hasWorkshopAndTutorialChair (OWL2StreamBench:hasWorkshopAndTutorialChair)
-
-SubObjectPropertyOf(OWL2StreamBench:hasWorkshopAndTutorialChair OWL2StreamBench:hasOrganizingCommitteeMember)
-
-# Object Property: OWL2StreamBench:invitedTalkGivenBy (OWL2StreamBench:invitedTalkGivenBy)
-
-SubObjectPropertyOf(OWL2StreamBench:invitedTalkGivenBy OWL2StreamBench:talkGivenBy)
-
-# Object Property: OWL2StreamBench:isAcceptedAt (OWL2StreamBench:isAcceptedAt)
-
-EquivalentObjectProperties(OWL2StreamBench:isAcceptedAt OWL2StreamBench:isPresentedAt)
-ObjectPropertyDomain(OWL2StreamBench:isAcceptedAt OWL2StreamBench:AcademicManuscript)
-ObjectPropertyRange(OWL2StreamBench:isAcceptedAt OWL2StreamBench:AcademicEvent)
-
-# Object Property: OWL2StreamBench:isAuthorOf (OWL2StreamBench:isAuthorOf)
-
-ObjectPropertyDomain(OWL2StreamBench:isAuthorOf foaf:Person)
-ObjectPropertyRange(OWL2StreamBench:isAuthorOf OWL2StreamBench:AcademicManuscript)
-
-# Object Property: OWL2StreamBench:isChairOf (OWL2StreamBench:isChairOf)
-
-InverseFunctionalObjectProperty(OWL2StreamBench:isChairOf)
-
-# Object Property: OWL2StreamBench:isOrganizerOf (OWL2StreamBench:isOrganizerOf)
-
-SubObjectPropertyOf(OWL2StreamBench:isOrganizerOf owl:topObjectProperty)
-
-# Object Property: OWL2StreamBench:isPresentedAt (OWL2StreamBench:isPresentedAt)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:isPresentedAt "what could be the inverse property of isPresentedAt?")
-SubObjectPropertyOf(OWL2StreamBench:isPresentedAt OWL2StreamBench:isAcceptedAt)
-FunctionalObjectProperty(OWL2StreamBench:isPresentedAt)
-
-# Object Property: OWL2StreamBench:isPresentedBy (OWL2StreamBench:isPresentedBy)
-
-InverseObjectProperties(OWL2StreamBench:isPresentedBy OWL2StreamBench:presents)
-
-# Object Property: OWL2StreamBench:keynoteTalkGivenBy (OWL2StreamBench:keynoteTalkGivenBy)
-
-SubObjectPropertyOf(OWL2StreamBench:keynoteTalkGivenBy OWL2StreamBench:talkGivenBy)
-
-# Object Property: OWL2StreamBench:organizes (OWL2StreamBench:organizes)
-
-ObjectPropertyRange(OWL2StreamBench:organizes event:Event)
-
-# Object Property: OWL2StreamBench:presents (OWL2StreamBench:presents)
-
-SubObjectPropertyOf(OWL2StreamBench:presents OWL2StreamBench:hasAcceptedPaper)
-
-# Object Property: OWL2StreamBench:talkGivenBy (OWL2StreamBench:talkGivenBy)
-
-ObjectPropertyDomain(OWL2StreamBench:talkGivenBy OWL2StreamBench:Talks)
-
-# Object Property: OWL2StreamBench:volunteersFor (OWL2StreamBench:volunteersFor)
-
-ObjectPropertyRange(OWL2StreamBench:volunteersFor event:Event)
-
 # Object Property: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> (<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>)
 
 ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> foaf:Person)
@@ -424,119 +442,119 @@ ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl
 
 # Object Property: owl:topObjectProperty (owl:topObjectProperty)
 
-ObjectPropertyRange(owl:topObjectProperty OWL2StreamBench:AcademicManuscript)
+ObjectPropertyRange(owl:topObjectProperty <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
 
 
 ############################
 #   Data Properties
 ############################
 
-# Data Property: OWL2StreamBench:givesInvitedTalkOn (OWL2StreamBench:givesInvitedTalkOn)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn> (<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn>)
 
-SubDataPropertyOf(OWL2StreamBench:givesInvitedTalkOn OWL2StreamBench:givesTalkOn)
-DataPropertyDomain(OWL2StreamBench:givesInvitedTalkOn OWL2StreamBench:InvitedTalkSpeaker)
-DataPropertyRange(OWL2StreamBench:givesInvitedTalkOn xsd:string)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn> <http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn>)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn> <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#givesInvitedTalkOn> xsd:string)
 
-# Data Property: OWL2StreamBench:givesKeynoteTalkOn (OWL2StreamBench:givesKeynoteTalkOn)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn> (<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn>)
 
-SubDataPropertyOf(OWL2StreamBench:givesKeynoteTalkOn OWL2StreamBench:givesTalkOn)
-DataPropertyDomain(OWL2StreamBench:givesKeynoteTalkOn OWL2StreamBench:KeynoteSpeaker)
-DataPropertyRange(OWL2StreamBench:givesKeynoteTalkOn xsd:string)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn> <http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn>)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn> <http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#givesKeynoteTalkOn> xsd:string)
 
-# Data Property: OWL2StreamBench:givesTalkOn (OWL2StreamBench:givesTalkOn)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn> (<http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn>)
 
-DataPropertyDomain(OWL2StreamBench:givesTalkOn foaf:Person)
-DataPropertyRange(OWL2StreamBench:givesTalkOn xsd:string)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn> foaf:Person)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#givesTalkOn> xsd:string)
 
-# Data Property: OWL2StreamBench:hasAuthorId (OWL2StreamBench:hasAuthorId)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasAuthorId> (<http://kracr.iiitd.edu.in/AcademicConference#hasAuthorId>)
 
-SubDataPropertyOf(OWL2StreamBench:hasAuthorId OWL2StreamBench:hasId)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthorId> <http://kracr.iiitd.edu.in/AcademicConference#hasId>)
 
-# Data Property: OWL2StreamBench:hasConferenceName (OWL2StreamBench:hasConferenceName)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName> (<http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName>)
 
-SubDataPropertyOf(OWL2StreamBench:hasConferenceName OWL2StreamBench:hasName)
-DataPropertyDomain(OWL2StreamBench:hasConferenceName OWL2StreamBench:Conference)
-DataPropertyRange(OWL2StreamBench:hasConferenceName xsd:string)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName> <http://kracr.iiitd.edu.in/AcademicConference#hasName>)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName> <http://kracr.iiitd.edu.in/AcademicConference#Conference>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasConferenceName> xsd:string)
 
-# Data Property: OWL2StreamBench:hasDeadline (OWL2StreamBench:hasDeadline)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasDeadline> (<http://kracr.iiitd.edu.in/AcademicConference#hasDeadline>)
 
-DataPropertyDomain(OWL2StreamBench:hasDeadline OWL2StreamBench:AcademicEvent)
-DataPropertyRange(OWL2StreamBench:hasDeadline xsd:dateTimeStamp)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasDeadline> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasDeadline> xsd:dateTimeStamp)
 
-# Data Property: OWL2StreamBench:hasDuration (OWL2StreamBench:hasDuration)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasDuration> (<http://kracr.iiitd.edu.in/AcademicConference#hasDuration>)
 
-AnnotationAssertion(rdfs:comment OWL2StreamBench:hasDuration "An event can go for days, hours, or months.")
-FunctionalDataProperty(OWL2StreamBench:hasDuration)
-DataPropertyDomain(OWL2StreamBench:hasDuration event:Event)
-DataPropertyRange(OWL2StreamBench:hasDuration xsd:string)
-DisjointDataProperties(OWL2StreamBench:hasDuration OWL2StreamBench:hasLocation)
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#hasDuration> "An event can go for days, hours, or months.")
+FunctionalDataProperty(<http://kracr.iiitd.edu.in/AcademicConference#hasDuration>)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasDuration> event:Event)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasDuration> xsd:string)
+DisjointDataProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasDuration> <http://kracr.iiitd.edu.in/AcademicConference#hasLocation>)
 
-# Data Property: OWL2StreamBench:hasEarlyRegistrationDeadline (OWL2StreamBench:hasEarlyRegistrationDeadline)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasEarlyRegistrationDeadline> (<http://kracr.iiitd.edu.in/AcademicConference#hasEarlyRegistrationDeadline>)
 
-SubDataPropertyOf(OWL2StreamBench:hasEarlyRegistrationDeadline OWL2StreamBench:hasRegistrationDeadline)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasEarlyRegistrationDeadline> <http://kracr.iiitd.edu.in/AcademicConference#hasRegistrationDeadline>)
 
-# Data Property: OWL2StreamBench:hasEdition (OWL2StreamBench:hasEdition)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasEdition> (<http://kracr.iiitd.edu.in/AcademicConference#hasEdition>)
 
-AnnotationAssertion(rdfs:comment OWL2StreamBench:hasEdition "3rd or third")
-DataPropertyDomain(OWL2StreamBench:hasEdition OWL2StreamBench:AcademicEvent)
-DataPropertyRange(OWL2StreamBench:hasEdition xsd:string)
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#hasEdition> "3rd or third")
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasEdition> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasEdition> xsd:string)
 
-# Data Property: OWL2StreamBench:hasId (OWL2StreamBench:hasId)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasId> (<http://kracr.iiitd.edu.in/AcademicConference#hasId>)
 
-DataPropertyRange(OWL2StreamBench:hasId xsd:string)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasId> xsd:string)
 
-# Data Property: OWL2StreamBench:hasLocation (OWL2StreamBench:hasLocation)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasLocation> (<http://kracr.iiitd.edu.in/AcademicConference#hasLocation>)
 
-EquivalentDataProperties(OWL2StreamBench:hasLocation OWL2StreamBench:hasVenue)
-DataPropertyRange(OWL2StreamBench:hasLocation xsd:string)
+EquivalentDataProperties(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation> <http://kracr.iiitd.edu.in/AcademicConference#hasVenue>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation> xsd:string)
 
-# Data Property: OWL2StreamBench:hasName (OWL2StreamBench:hasName)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasName> (<http://kracr.iiitd.edu.in/AcademicConference#hasName>)
 
-DataPropertyRange(OWL2StreamBench:hasName xsd:string)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasName> xsd:string)
 
-# Data Property: OWL2StreamBench:hasPaperId (OWL2StreamBench:hasPaperId)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasPaperId> (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>)
 
-SubDataPropertyOf(OWL2StreamBench:hasPaperId OWL2StreamBench:hasId)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId> <http://kracr.iiitd.edu.in/AcademicConference#hasId>)
 
-# Data Property: OWL2StreamBench:hasRegistrationDeadline (OWL2StreamBench:hasRegistrationDeadline)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasRegistrationDeadline> (<http://kracr.iiitd.edu.in/AcademicConference#hasRegistrationDeadline>)
 
-SubDataPropertyOf(OWL2StreamBench:hasRegistrationDeadline OWL2StreamBench:hasDeadline)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasRegistrationDeadline> <http://kracr.iiitd.edu.in/AcademicConference#hasDeadline>)
 
-# Data Property: OWL2StreamBench:hasStartDate (OWL2StreamBench:hasStartDate)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasStartDate> (<http://kracr.iiitd.edu.in/AcademicConference#hasStartDate>)
 
-DataPropertyDomain(OWL2StreamBench:hasStartDate event:Event)
-DataPropertyRange(OWL2StreamBench:hasStartDate xsd:dateTimeStamp)
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasStartDate> event:Event)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasStartDate> xsd:dateTimeStamp)
 
-# Data Property: OWL2StreamBench:hasStatus (OWL2StreamBench:hasStatus)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasStatus> (<http://kracr.iiitd.edu.in/AcademicConference#hasStatus>)
 
-AnnotationAssertion(rdfs:comment OWL2StreamBench:hasStatus "Announced, Approaching, TakingPlace, Over")
-DataPropertyDomain(OWL2StreamBench:hasStatus OWL2StreamBench:AcademicEvent)
-DataPropertyRange(OWL2StreamBench:hasStatus xsd:string)
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#hasStatus> "Announced, Approaching, TakingPlace, Over")
+DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConference#hasStatus> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasStatus> xsd:string)
 
-# Data Property: OWL2StreamBench:hasSubmissionDeadline (OWL2StreamBench:hasSubmissionDeadline)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasSubmissionDeadline> (<http://kracr.iiitd.edu.in/AcademicConference#hasSubmissionDeadline>)
 
-SubDataPropertyOf(OWL2StreamBench:hasSubmissionDeadline OWL2StreamBench:hasDeadline)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasSubmissionDeadline> <http://kracr.iiitd.edu.in/AcademicConference#hasDeadline>)
 
-# Data Property: OWL2StreamBench:hasTheme (OWL2StreamBench:hasTheme)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasTheme> (<http://kracr.iiitd.edu.in/AcademicConference#hasTheme>)
 
-DataPropertyRange(OWL2StreamBench:hasTheme xsd:string)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasTheme> xsd:string)
 
-# Data Property: OWL2StreamBench:hasTitle (OWL2StreamBench:hasTitle)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasTitle> (<http://kracr.iiitd.edu.in/AcademicConference#hasTitle>)
 
-DataPropertyRange(OWL2StreamBench:hasTitle xsd:string)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasTitle> xsd:string)
 
-# Data Property: OWL2StreamBench:hasVenue (OWL2StreamBench:hasVenue)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasVenue> (<http://kracr.iiitd.edu.in/AcademicConference#hasVenue>)
 
-SubDataPropertyOf(OWL2StreamBench:hasVenue owl:topDataProperty)
-DataPropertyRange(OWL2StreamBench:hasVenue xsd:string)
+SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConference#hasVenue> owl:topDataProperty)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasVenue> xsd:string)
 
-# Data Property: OWL2StreamBench:hasWebsiteURL (OWL2StreamBench:hasWebsiteURL)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#hasWebsiteURL> (<http://kracr.iiitd.edu.in/AcademicConference#hasWebsiteURL>)
 
-DataPropertyRange(OWL2StreamBench:hasWebsiteURL xsd:anyURI)
+DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConference#hasWebsiteURL> xsd:anyURI)
 
-# Data Property: OWL2StreamBench:isRelatedTo (OWL2StreamBench:isRelatedTo)
+# Data Property: <http://kracr.iiitd.edu.in/AcademicConference#isRelatedTo> (<http://kracr.iiitd.edu.in/AcademicConference#isRelatedTo>)
 
-AnnotationAssertion(rdfs:comment OWL2StreamBench:isRelatedTo "Every aacdemic manuscript is related to some topic. For example AI")
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#isRelatedTo> "Every aacdemic manuscript is related to some topic. For example AI")
 
 
 
@@ -544,9 +562,196 @@ AnnotationAssertion(rdfs:comment OWL2StreamBench:isRelatedTo "Every aacdemic man
 #   Classes
 ############################
 
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> (<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> "Every academic event has a track")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> event:Event)
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> ObjectMinCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#hasTalk> <http://kracr.iiitd.edu.in/AcademicConference#Talks>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent> DataExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#hasWebsiteURL> xsd:anyURI))
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> (<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> "Every Academic Event Track is a subevent of  Academic Event")
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript> (<http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript> "")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript> ObjectMinCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConference#Author>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript> <http://purl.org/ontology/bibo/Manuscript>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization> (<http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization> "Can be linked to OWL2Bench?")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization> foaf:Organization)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Attendee> (<http://kracr.iiitd.edu.in/AcademicConference#Attendee>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#Attendee> <http://kracr.iiitd.edu.in/AcademicConference#Participant>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Author> (<http://kracr.iiitd.edu.in/AcademicConference#Author>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#Author> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Author> foaf:Person)
+DisjointClasses(<http://kracr.iiitd.edu.in/AcademicConference#Author> <http://kracr.iiitd.edu.in/AcademicConference#NonAuthor>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#ChairRole> (<http://kracr.iiitd.edu.in/AcademicConference#ChairRole>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#ChairRole> "Each track will have a chair")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> (<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#ManuscriptDomain>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Conference> (<http://kracr.iiitd.edu.in/AcademicConference#Conference>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isStatic> <http://kracr.iiitd.edu.in/AcademicConference#Conference> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Conference> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper> (<http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper> "")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper> ObjectMaxCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConference#Conference>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#DemoPaper> (<http://kracr.iiitd.edu.in/AcademicConference#DemoPaper>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#DemoPaper> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#DemoPaper> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#EditorRole> (<http://kracr.iiitd.edu.in/AcademicConference#EditorRole>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#EditorRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#EventMode> (<http://kracr.iiitd.edu.in/AcademicConference#EventMode>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#EventMode> ObjectOneOf(<http://kracr.iiitd.edu.in/AcademicConference#hybrid> <http://kracr.iiitd.edu.in/AcademicConference#offline> <http://kracr.iiitd.edu.in/AcademicConference#online>))
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker> (<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeakerRole>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeakerRole> (<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeakerRole>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks> (<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConference#InvitedTalkSpeaker>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks> <http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#JournalArticle> (<http://kracr.iiitd.edu.in/AcademicConference#JournalArticle>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#JournalArticle> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#JournalArticle> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker> (<http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks> (<http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConference#KeynoteSpeaker>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks> <http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#LightningTalks> (<http://kracr.iiitd.edu.in/AcademicConference#LightningTalks>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#LightningTalks> <http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#NonAcademicOrganization> (<http://kracr.iiitd.edu.in/AcademicConference#NonAcademicOrganization>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#NonAcademicOrganization> ObjectComplementOf(<http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#NonAcademicOrganization> foaf:Organization)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#NonAuthor> (<http://kracr.iiitd.edu.in/AcademicConference#NonAuthor>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#NonAuthor> ObjectComplementOf(<http://kracr.iiitd.edu.in/AcademicConference#Author>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#NonAuthor> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Organizer> (<http://kracr.iiitd.edu.in/AcademicConference#Organizer>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#Organizer> "I have added")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#Organizer> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Organizer> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee> (<http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee> "Can be removed")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee> ObjectAllValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember> <http://kracr.iiitd.edu.in/AcademicConference#Organizer>))
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Participant> (<http://kracr.iiitd.edu.in/AcademicConference#Participant>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#Participant> "Attendee could be an equivalent class?")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Participant> foaf:Person)
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Participant> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#attends> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>))
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#PhDStudent> (<http://kracr.iiitd.edu.in/AcademicConference#PhDStudent>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#PhDStudent> "Define this and include in the table")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#PhDStudent> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#presents> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#doctoralConsortiumTrack>)))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#PhDStudent> <http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#PosterPaper> (<http://kracr.iiitd.edu.in/AcademicConference#PosterPaper>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#PosterPaper> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#PosterPaper> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Presentations> (<http://kracr.iiitd.edu.in/AcademicConference#Presentations>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Presentations> <http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper> (<http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#researchTrack>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#ResourcePaper> (<http://kracr.iiitd.edu.in/AcademicConference#ResourcePaper>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#ResourcePaper> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#researchTrack>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#ResourcePaper> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#SingleAuthorPaper> (<http://kracr.iiitd.edu.in/AcademicConference#SingleAuthorPaper>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#SingleAuthorPaper> ObjectExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConference#Author>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#SingleAuthorPaper> <http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Student> (<http://kracr.iiitd.edu.in/AcademicConference#Student>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isTimeVarying> <http://kracr.iiitd.edu.in/AcademicConference#Student> "")
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#Student> "Student may particiate in DC")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Student> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor> (<http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor> ObjectIntersectionOf(<http://kracr.iiitd.edu.in/AcademicConference#Author> <http://kracr.iiitd.edu.in/AcademicConference#Student>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#StudentAuthor> foaf:Person)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Talks> (<http://kracr.iiitd.edu.in/AcademicConference#Talks>)
+
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#Talks> ObjectUnionOf(<http://kracr.iiitd.edu.in/AcademicConference#InvitedTalks> <http://kracr.iiitd.edu.in/AcademicConference#KeynoteTalks> <http://kracr.iiitd.edu.in/AcademicConference#LightningTalks> <http://kracr.iiitd.edu.in/AcademicConference#Presentations>))
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Volunteer> (<http://kracr.iiitd.edu.in/AcademicConference#Volunteer>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConference#Volunteer> "is volunteer part of organizing team? or 'has role'?")
+EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConference#Volunteer> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#volunteersFor> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>))
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Volunteer> <http://kracr.iiitd.edu.in/AcademicConference#Participant>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#Workshop> (<http://kracr.iiitd.edu.in/AcademicConference#Workshop>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isStatic> <http://kracr.iiitd.edu.in/AcademicConference#Workshop> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#Workshop> <http://kracr.iiitd.edu.in/AcademicConference#AcademicEvent>)
+
+# Class: <http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper> (<http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper>)
+
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper> "")
+SubClassOf(<http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper> <http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper>)
+
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#College> (<http://kracr.iiitd.edu.in/OWL2Bench#College>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> OWL2StreamBench:AcademicOrganization)
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> <http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization>)
 
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> (<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>)
 
@@ -554,210 +759,20 @@ SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> foaf:Organization
 
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#University> (<http://kracr.iiitd.edu.in/OWL2Bench#University>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> OWL2StreamBench:AcademicOrganization)
-
-# Class: OWL2StreamBench:AcademicEvent (OWL2StreamBench:AcademicEvent)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicEvent "Every academic event has a track")
-EquivalentClasses(OWL2StreamBench:AcademicEvent ObjectSomeValuesFrom(OWL2StreamBench:hasPaperTrack OWL2StreamBench:AcademicEventTrack))
-SubClassOf(OWL2StreamBench:AcademicEvent event:Event)
-SubClassOf(OWL2StreamBench:AcademicEvent ObjectMinCardinality(1 OWL2StreamBench:hasTalk OWL2StreamBench:Talks))
-SubClassOf(OWL2StreamBench:AcademicEvent DataExactCardinality(1 OWL2StreamBench:hasWebsiteURL xsd:anyURI))
-
-# Class: OWL2StreamBench:AcademicEventTrack (OWL2StreamBench:AcademicEventTrack)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicEventTrack "Every Academic Event Track is a subevent of  Academic Event")
-
-# Class: OWL2StreamBench:AcademicManuscript (OWL2StreamBench:AcademicManuscript)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:AcademicManuscript "")
-EquivalentClasses(OWL2StreamBench:AcademicManuscript ObjectMinCardinality(1 OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
-SubClassOf(OWL2StreamBench:AcademicManuscript <http://purl.org/ontology/bibo/Manuscript>)
-
-# Class: OWL2StreamBench:AcademicOrganization (OWL2StreamBench:AcademicOrganization)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:AcademicOrganization "Can be linked to OWL2Bench?")
-SubClassOf(OWL2StreamBench:AcademicOrganization foaf:Organization)
-
-# Class: OWL2StreamBench:Attendee (OWL2StreamBench:Attendee)
-
-EquivalentClasses(OWL2StreamBench:Attendee OWL2StreamBench:Participant)
-
-# Class: OWL2StreamBench:Author (OWL2StreamBench:Author)
-
-EquivalentClasses(OWL2StreamBench:Author ObjectSomeValuesFrom(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:AcademicManuscript))
-SubClassOf(OWL2StreamBench:Author foaf:Person)
-DisjointClasses(OWL2StreamBench:Author OWL2StreamBench:NonAuthor)
-
-# Class: OWL2StreamBench:ChairRole (OWL2StreamBench:ChairRole)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:ChairRole "Each track will have a chair")
-SubClassOf(OWL2StreamBench:ChairRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
-
-# Class: OWL2StreamBench:ComputerScienceDomain (OWL2StreamBench:ComputerScienceDomain)
-
-SubClassOf(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ManuscriptDomain)
-
-# Class: OWL2StreamBench:Conference (OWL2StreamBench:Conference)
-
-AnnotationAssertion(OWL2StreamBench:isStatic OWL2StreamBench:Conference "")
-SubClassOf(OWL2StreamBench:Conference OWL2StreamBench:AcademicEvent)
-DisjointClasses(OWL2StreamBench:Conference OWL2StreamBench:Journal)
-
-# Class: OWL2StreamBench:ConferencePaper (OWL2StreamBench:ConferencePaper)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:ConferencePaper "")
-EquivalentClasses(OWL2StreamBench:ConferencePaper ObjectMaxCardinality(1 OWL2StreamBench:isAcceptedAt OWL2StreamBench:Conference))
-SubClassOf(OWL2StreamBench:ConferencePaper OWL2StreamBench:AcademicManuscript)
-
-# Class: OWL2StreamBench:DemoPaper (OWL2StreamBench:DemoPaper)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:DemoPaper "")
-SubClassOf(OWL2StreamBench:DemoPaper OWL2StreamBench:ConferencePaper)
-
-# Class: OWL2StreamBench:EditorRole (OWL2StreamBench:EditorRole)
-
-SubClassOf(OWL2StreamBench:EditorRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
-
-# Class: OWL2StreamBench:EventMode (OWL2StreamBench:EventMode)
-
-EquivalentClasses(OWL2StreamBench:EventMode ObjectOneOf(OWL2StreamBench:hybrid OWL2StreamBench:offline OWL2StreamBench:online))
-
-# Class: OWL2StreamBench:InvitedTalkSpeaker (OWL2StreamBench:InvitedTalkSpeaker)
-
-EquivalentClasses(OWL2StreamBench:InvitedTalkSpeaker ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> OWL2StreamBench:InvitedTalkSpeakerRole))
-SubClassOf(OWL2StreamBench:InvitedTalkSpeaker foaf:Person)
-
-# Class: OWL2StreamBench:InvitedTalkSpeakerRole (OWL2StreamBench:InvitedTalkSpeakerRole)
-
-SubClassOf(OWL2StreamBench:InvitedTalkSpeakerRole <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
-
-# Class: OWL2StreamBench:InvitedTalks (OWL2StreamBench:InvitedTalks)
-
-EquivalentClasses(OWL2StreamBench:InvitedTalks ObjectSomeValuesFrom(OWL2StreamBench:invitedTalkGivenBy OWL2StreamBench:InvitedTalkSpeaker))
-SubClassOf(OWL2StreamBench:InvitedTalks OWL2StreamBench:Talks)
-
-# Class: OWL2StreamBench:Journal (OWL2StreamBench:Journal)
-
-SubClassOf(OWL2StreamBench:Journal OWL2StreamBench:AcademicEvent)
-
-# Class: OWL2StreamBench:JournalArticle (OWL2StreamBench:JournalArticle)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:JournalArticle "")
-SubClassOf(OWL2StreamBench:JournalArticle OWL2StreamBench:AcademicManuscript)
-
-# Class: OWL2StreamBench:KeynoteSpeaker (OWL2StreamBench:KeynoteSpeaker)
-
-EquivalentClasses(OWL2StreamBench:KeynoteSpeaker ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
-SubClassOf(OWL2StreamBench:KeynoteSpeaker foaf:Person)
-
-# Class: OWL2StreamBench:KeynoteTalks (OWL2StreamBench:KeynoteTalks)
-
-EquivalentClasses(OWL2StreamBench:KeynoteTalks ObjectSomeValuesFrom(OWL2StreamBench:keynoteTalkGivenBy OWL2StreamBench:KeynoteSpeaker))
-SubClassOf(OWL2StreamBench:KeynoteTalks OWL2StreamBench:Talks)
-
-# Class: OWL2StreamBench:LightningTalks (OWL2StreamBench:LightningTalks)
-
-SubClassOf(OWL2StreamBench:LightningTalks OWL2StreamBench:Talks)
-
-# Class: OWL2StreamBench:NonAcademicOrganization (OWL2StreamBench:NonAcademicOrganization)
-
-EquivalentClasses(OWL2StreamBench:NonAcademicOrganization ObjectComplementOf(OWL2StreamBench:AcademicOrganization))
-SubClassOf(OWL2StreamBench:NonAcademicOrganization foaf:Organization)
-
-# Class: OWL2StreamBench:NonAuthor (OWL2StreamBench:NonAuthor)
-
-EquivalentClasses(OWL2StreamBench:NonAuthor ObjectComplementOf(OWL2StreamBench:Author))
-SubClassOf(OWL2StreamBench:NonAuthor foaf:Person)
-
-# Class: OWL2StreamBench:Organizer (OWL2StreamBench:Organizer)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:Organizer "I have added")
-EquivalentClasses(OWL2StreamBench:Organizer ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
-SubClassOf(OWL2StreamBench:Organizer foaf:Person)
-
-# Class: OWL2StreamBench:OrganizingCommittee (OWL2StreamBench:OrganizingCommittee)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:OrganizingCommittee "Can be removed")
-EquivalentClasses(OWL2StreamBench:OrganizingCommittee ObjectAllValuesFrom(OWL2StreamBench:hasOrganizingCommitteeMember OWL2StreamBench:Organizer))
-
-# Class: OWL2StreamBench:Participant (OWL2StreamBench:Participant)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:Participant "Attendee could be an equivalent class?")
-SubClassOf(OWL2StreamBench:Participant foaf:Person)
-SubClassOf(OWL2StreamBench:Participant ObjectSomeValuesFrom(OWL2StreamBench:attends OWL2StreamBench:AcademicEvent))
-
-# Class: OWL2StreamBench:PhDStudent (OWL2StreamBench:PhDStudent)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:PhDStudent "Define this and include in the table")
-EquivalentClasses(OWL2StreamBench:PhDStudent ObjectSomeValuesFrom(OWL2StreamBench:presents ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:doctoralConsortiumTrack)))
-SubClassOf(OWL2StreamBench:PhDStudent OWL2StreamBench:StudentAuthor)
-
-# Class: OWL2StreamBench:PosterPaper (OWL2StreamBench:PosterPaper)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:PosterPaper "")
-SubClassOf(OWL2StreamBench:PosterPaper OWL2StreamBench:ConferencePaper)
-
-# Class: OWL2StreamBench:Presentations (OWL2StreamBench:Presentations)
-
-SubClassOf(OWL2StreamBench:Presentations OWL2StreamBench:Talks)
-
-# Class: OWL2StreamBench:ResearchPaper (OWL2StreamBench:ResearchPaper)
-
-EquivalentClasses(OWL2StreamBench:ResearchPaper ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:researchTrack))
-SubClassOf(OWL2StreamBench:ResearchPaper OWL2StreamBench:ConferencePaper)
-
-# Class: OWL2StreamBench:ResourcePaper (OWL2StreamBench:ResourcePaper)
-
-EquivalentClasses(OWL2StreamBench:ResourcePaper ObjectHasValue(OWL2StreamBench:hasPaperTrack OWL2StreamBench:researchTrack))
-SubClassOf(OWL2StreamBench:ResourcePaper OWL2StreamBench:ConferencePaper)
-
-# Class: OWL2StreamBench:SingleAuthorPaper (OWL2StreamBench:SingleAuthorPaper)
-
-EquivalentClasses(OWL2StreamBench:SingleAuthorPaper ObjectExactCardinality(1 OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
-SubClassOf(OWL2StreamBench:SingleAuthorPaper OWL2StreamBench:AcademicManuscript)
-
-# Class: OWL2StreamBench:Student (OWL2StreamBench:Student)
-
-AnnotationAssertion(OWL2StreamBench:isTimeVarying OWL2StreamBench:Student "")
-AnnotationAssertion(rdfs:comment OWL2StreamBench:Student "Student may particiate in DC")
-SubClassOf(OWL2StreamBench:Student foaf:Person)
-
-# Class: OWL2StreamBench:StudentAuthor (OWL2StreamBench:StudentAuthor)
-
-EquivalentClasses(OWL2StreamBench:StudentAuthor ObjectIntersectionOf(OWL2StreamBench:Author OWL2StreamBench:Student))
-SubClassOf(OWL2StreamBench:StudentAuthor foaf:Person)
-
-# Class: OWL2StreamBench:Talks (OWL2StreamBench:Talks)
-
-EquivalentClasses(OWL2StreamBench:Talks ObjectUnionOf(OWL2StreamBench:InvitedTalks OWL2StreamBench:KeynoteTalks OWL2StreamBench:LightningTalks OWL2StreamBench:Presentations))
-
-# Class: OWL2StreamBench:Volunteer (OWL2StreamBench:Volunteer)
-
-AnnotationAssertion(rdfs:comment OWL2StreamBench:Volunteer "is volunteer part of organizing team? or 'has role'?")
-EquivalentClasses(OWL2StreamBench:Volunteer ObjectSomeValuesFrom(OWL2StreamBench:volunteersFor OWL2StreamBench:AcademicEvent))
-SubClassOf(OWL2StreamBench:Volunteer OWL2StreamBench:Participant)
-
-# Class: OWL2StreamBench:Workshop (OWL2StreamBench:Workshop)
-
-AnnotationAssertion(OWL2StreamBench:isStatic OWL2StreamBench:Workshop "")
-SubClassOf(OWL2StreamBench:Workshop OWL2StreamBench:AcademicEvent)
-
-# Class: OWL2StreamBench:WorkshopPaper (OWL2StreamBench:WorkshopPaper)
-
-AnnotationAssertion(OWL2StreamBench:isInstantaneous OWL2StreamBench:WorkshopPaper "")
-SubClassOf(OWL2StreamBench:WorkshopPaper OWL2StreamBench:ConferencePaper)
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> <http://kracr.iiitd.edu.in/AcademicConference#AcademicOrganization>)
 
 # Class: <http://purl.org/ontology/bibo/Manuscript> (<http://purl.org/ontology/bibo/Manuscript>)
 
-EquivalentClasses(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(OWL2StreamBench:hasAuthor OWL2StreamBench:Author))
+EquivalentClasses(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConference#Author>))
+SubClassOf(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasDomain> <http://kracr.iiitd.edu.in/AcademicConference#ManuscriptDomain>))
 
 # Class: event:Event (event:Event)
 
-EquivalentClasses(event:Event ObjectSomeValuesFrom(OWL2StreamBench:hasEventMode OWL2StreamBench:EventMode))
-EquivalentClasses(event:Event ObjectSomeValuesFrom(OWL2StreamBench:hasOrganizingCommittee OWL2StreamBench:OrganizingCommittee))
-SubClassOf(event:Event DataSomeValuesFrom(OWL2StreamBench:hasLocation xsd:string))
-SubClassOf(event:Event DataExactCardinality(1 OWL2StreamBench:hasTitle xsd:string))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConference#EventMode>))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation> owl:Thing))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee> <http://kracr.iiitd.edu.in/AcademicConference#OrganizingCommittee>))
+SubClassOf(event:Event DataSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation> xsd:string))
+SubClassOf(event:Event DataExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConference#hasTitle> xsd:string))
 
 # Class: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> (Role)
 
@@ -777,187 +792,188 @@ SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organize
 
 # Class: foaf:Organization (foaf:Organization)
 
-AnnotationAssertion(OWL2StreamBench:isStatic foaf:Organization "")
+AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConference#isStatic> foaf:Organization "")
+SubClassOf(foaf:Organization ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasLocation> owl:Thing))
 
 # Class: foaf:Person (foaf:Person)
 
-SubClassOf(foaf:Person ObjectAllValuesFrom(OWL2StreamBench:hasAffiliation foaf:Organization))
+SubClassOf(foaf:Person ObjectAllValuesFrom(<http://kracr.iiitd.edu.in/AcademicConference#hasAffiliation> foaf:Organization))
 
 
 ############################
 #   Named Individuals
 ############################
 
-# Individual: OWL2StreamBench:aiForSocialGood (OWL2StreamBench:aiForSocialGood)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#aiForSocialGood> (<http://kracr.iiitd.edu.in/AcademicConference#aiForSocialGood>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:aiForSocialGood)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#aiForSocialGood>)
 
-# Individual: OWL2StreamBench:applicationsTrack (OWL2StreamBench:applicationsTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#applicationsTrack> (<http://kracr.iiitd.edu.in/AcademicConference#applicationsTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:applicationsTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#applicationsTrack>)
 
-# Individual: OWL2StreamBench:artificialIntelligence (OWL2StreamBench:artificialIntelligence)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#artificialIntelligence> (<http://kracr.iiitd.edu.in/AcademicConference#artificialIntelligence>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:artificialIntelligence)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#artificialIntelligence>)
 
-# Individual: OWL2StreamBench:bigData (OWL2StreamBench:bigData)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#bigData> (<http://kracr.iiitd.edu.in/AcademicConference#bigData>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:bigData)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#bigData>)
 
-# Individual: OWL2StreamBench:blockChain (OWL2StreamBench:blockChain)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#blockChain> (<http://kracr.iiitd.edu.in/AcademicConference#blockChain>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:blockChain)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#blockChain>)
 
-# Individual: OWL2StreamBench:cloudComputing (OWL2StreamBench:cloudComputing)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#cloudComputing> (<http://kracr.iiitd.edu.in/AcademicConference#cloudComputing>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:cloudComputing)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#cloudComputing>)
 
-# Individual: OWL2StreamBench:computerVision (OWL2StreamBench:computerVision)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#computerVision> (<http://kracr.iiitd.edu.in/AcademicConference#computerVision>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:computerVision)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#computerVision>)
 
-# Individual: OWL2StreamBench:dataScience (OWL2StreamBench:dataScience)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#dataScience> (<http://kracr.iiitd.edu.in/AcademicConference#dataScience>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:dataScience)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#dataScience>)
 
-# Individual: OWL2StreamBench:deepLearning (OWL2StreamBench:deepLearning)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#deepLearning> (<http://kracr.iiitd.edu.in/AcademicConference#deepLearning>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:deepLearning)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#deepLearning>)
 
-# Individual: OWL2StreamBench:demoTrack (OWL2StreamBench:demoTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#demoTrack> (<http://kracr.iiitd.edu.in/AcademicConference#demoTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:demoTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#demoTrack>)
 
-# Individual: OWL2StreamBench:doctoralConsortiumTrack (OWL2StreamBench:doctoralConsortiumTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#doctoralConsortiumTrack> (<http://kracr.iiitd.edu.in/AcademicConference#doctoralConsortiumTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:doctoralConsortiumTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#doctoralConsortiumTrack>)
 
-# Individual: OWL2StreamBench:generalChair (OWL2StreamBench:generalChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#generalChair> (<http://kracr.iiitd.edu.in/AcademicConference#generalChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:generalChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#generalChair>)
 
-# Individual: OWL2StreamBench:hybrid (OWL2StreamBench:hybrid)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#hybrid> (<http://kracr.iiitd.edu.in/AcademicConference#hybrid>)
 
-ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:hybrid)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#EventMode> <http://kracr.iiitd.edu.in/AcademicConference#hybrid>)
 
-# Individual: OWL2StreamBench:internetOfThings (OWL2StreamBench:internetOfThings)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#internetOfThings> (<http://kracr.iiitd.edu.in/AcademicConference#internetOfThings>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:internetOfThings)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#internetOfThings>)
 
-# Individual: OWL2StreamBench:journalSpecialIssue (OWL2StreamBench:journalSpecialIssue)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#journalSpecialIssue> (<http://kracr.iiitd.edu.in/AcademicConference#journalSpecialIssue>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:journalSpecialIssue)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#journalSpecialIssue>)
 
-# Individual: OWL2StreamBench:knowledgeGraph (OWL2StreamBench:knowledgeGraph)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#knowledgeGraph> (<http://kracr.iiitd.edu.in/AcademicConference#knowledgeGraph>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:knowledgeGraph)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#knowledgeGraph>)
 
-# Individual: OWL2StreamBench:linkedData (OWL2StreamBench:linkedData)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#linkedData> (<http://kracr.iiitd.edu.in/AcademicConference#linkedData>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:linkedData)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#linkedData>)
 
-# Individual: OWL2StreamBench:localChair (OWL2StreamBench:localChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#localChair> (<http://kracr.iiitd.edu.in/AcademicConference#localChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:localChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#localChair>)
 
-# Individual: OWL2StreamBench:machineLearning (OWL2StreamBench:machineLearning)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#machineLearning> (<http://kracr.iiitd.edu.in/AcademicConference#machineLearning>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:machineLearning)
-SameIndividual(OWL2StreamBench:machineLearning OWL2StreamBench:ml)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#machineLearning>)
+SameIndividual(<http://kracr.iiitd.edu.in/AcademicConference#machineLearning> <http://kracr.iiitd.edu.in/AcademicConference#ml>)
 
-# Individual: OWL2StreamBench:ml (OWL2StreamBench:ml)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#ml> (<http://kracr.iiitd.edu.in/AcademicConference#ml>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ml)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#ml>)
 
-# Individual: OWL2StreamBench:naturalLanguageProcessing (OWL2StreamBench:naturalLanguageProcessing)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#naturalLanguageProcessing> (<http://kracr.iiitd.edu.in/AcademicConference#naturalLanguageProcessing>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:naturalLanguageProcessing)
-SameIndividual(OWL2StreamBench:naturalLanguageProcessing OWL2StreamBench:nlp)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#naturalLanguageProcessing>)
+SameIndividual(<http://kracr.iiitd.edu.in/AcademicConference#naturalLanguageProcessing> <http://kracr.iiitd.edu.in/AcademicConference#nlp>)
 
-# Individual: OWL2StreamBench:neuralNetworks (OWL2StreamBench:neuralNetworks)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#neuralNetworks> (<http://kracr.iiitd.edu.in/AcademicConference#neuralNetworks>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:neuralNetworks)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#neuralNetworks>)
 
-# Individual: OWL2StreamBench:nlp (OWL2StreamBench:nlp)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#nlp> (<http://kracr.iiitd.edu.in/AcademicConference#nlp>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:nlp)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#nlp>)
 
-# Individual: OWL2StreamBench:offline (OWL2StreamBench:offline)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#offline> (<http://kracr.iiitd.edu.in/AcademicConference#offline>)
 
-ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:offline)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#EventMode> <http://kracr.iiitd.edu.in/AcademicConference#offline>)
 
-# Individual: OWL2StreamBench:online (OWL2StreamBench:online)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#online> (<http://kracr.iiitd.edu.in/AcademicConference#online>)
 
-ClassAssertion(OWL2StreamBench:EventMode OWL2StreamBench:online)
-SameIndividual(OWL2StreamBench:online OWL2StreamBench:remote)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#EventMode> <http://kracr.iiitd.edu.in/AcademicConference#online>)
+SameIndividual(<http://kracr.iiitd.edu.in/AcademicConference#online> <http://kracr.iiitd.edu.in/AcademicConference#remote>)
 
-# Individual: OWL2StreamBench:ontology (OWL2StreamBench:ontology)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#ontology> (<http://kracr.iiitd.edu.in/AcademicConference#ontology>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ontology)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#ontology>)
 
-# Individual: OWL2StreamBench:posterTrack (OWL2StreamBench:posterTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#posterTrack> (<http://kracr.iiitd.edu.in/AcademicConference#posterTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:posterTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#posterTrack>)
 
-# Individual: OWL2StreamBench:quantumComputing (OWL2StreamBench:quantumComputing)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#quantumComputing> (<http://kracr.iiitd.edu.in/AcademicConference#quantumComputing>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:quantumComputing)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#quantumComputing>)
 
-# Individual: OWL2StreamBench:researchTrack (OWL2StreamBench:researchTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#researchTrack> (<http://kracr.iiitd.edu.in/AcademicConference#researchTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:researchTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#researchTrack>)
 
-# Individual: OWL2StreamBench:researchTrackChair (OWL2StreamBench:researchTrackChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#researchTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#researchTrackChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:researchTrackChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#researchTrackChair>)
 
-# Individual: OWL2StreamBench:resourcesTrack (OWL2StreamBench:resourcesTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#resourcesTrack> (<http://kracr.iiitd.edu.in/AcademicConference#resourcesTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:resourcesTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#resourcesTrack>)
 
-# Individual: OWL2StreamBench:resourcesTrackChair (OWL2StreamBench:resourcesTrackChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#resourcesTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#resourcesTrackChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:resourcesTrackChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#resourcesTrackChair>)
 
-# Individual: OWL2StreamBench:semanticWeb (OWL2StreamBench:semanticWeb)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#semanticWeb> (<http://kracr.iiitd.edu.in/AcademicConference#semanticWeb>)
 
-ClassAssertion(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:semanticWeb)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConference#semanticWeb>)
 
-# Individual: OWL2StreamBench:trackChair (OWL2StreamBench:trackChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#trackChair> (<http://kracr.iiitd.edu.in/AcademicConference#trackChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:trackChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#trackChair>)
 
-# Individual: OWL2StreamBench:tutorialTrack (OWL2StreamBench:tutorialTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#tutorialTrack> (<http://kracr.iiitd.edu.in/AcademicConference#tutorialTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:tutorialTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#tutorialTrack>)
 
-# Individual: OWL2StreamBench:tutorialTrackChair (OWL2StreamBench:tutorialTrackChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#tutorialTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#tutorialTrackChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:tutorialTrackChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#tutorialTrackChair>)
 
-# Individual: OWL2StreamBench:workshopTrack (OWL2StreamBench:workshopTrack)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#workshopTrack> (<http://kracr.iiitd.edu.in/AcademicConference#workshopTrack>)
 
-ClassAssertion(OWL2StreamBench:AcademicEventTrack OWL2StreamBench:workshopTrack)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#AcademicEventTrack> <http://kracr.iiitd.edu.in/AcademicConference#workshopTrack>)
 
-# Individual: OWL2StreamBench:workshopTrackChair (OWL2StreamBench:workshopTrackChair)
+# Individual: <http://kracr.iiitd.edu.in/AcademicConference#workshopTrackChair> (<http://kracr.iiitd.edu.in/AcademicConference#workshopTrackChair>)
 
-ClassAssertion(OWL2StreamBench:ChairRole OWL2StreamBench:workshopTrackChair)
+ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConference#ChairRole> <http://kracr.iiitd.edu.in/AcademicConference#workshopTrackChair>)
 
 
-DifferentIndividuals(OWL2StreamBench:offline OWL2StreamBench:online)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasAcceptedPaper OWL2StreamBench:hasAuthor) OWL2StreamBench:hasCoAuthor)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasInvitedTalk OWL2StreamBench:invitedTalkGivenBy) OWL2StreamBench:hasInvitedTalkSpeaker)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasKeynoteTalk OWL2StreamBench:keynoteTalkGivenBy) OWL2StreamBench:hasKeynoteSpeaker)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasOrganizingCommittee OWL2StreamBench:hasOrganizingCommitteeMember) OWL2StreamBench:hasOrganizingCommittee)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasPaperTrack OWL2StreamBench:hasChair) OWL2StreamBench:hasOrganizer)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasTalk OWL2StreamBench:invitedTalkGivenBy) OWL2StreamBench:invitedTalkGivenBy)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:hasTalk OWL2StreamBench:talkGivenBy) OWL2StreamBench:hasSpeaker)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:presents OWL2StreamBench:hasAuthor) OWL2StreamBench:hasCoAuthor)
-SubObjectPropertyOf(ObjectPropertyChain(OWL2StreamBench:presents OWL2StreamBench:isPresentedAt) OWL2StreamBench:attends)
-HasKey(OWL2StreamBench:AcademicManuscript () (OWL2StreamBench:hasId))
-HasKey(OWL2StreamBench:ConferencePaper () (OWL2StreamBench:hasPaperId))
-HasKey(OWL2StreamBench:DemoPaper () (OWL2StreamBench:hasPaperId))
-HasKey(OWL2StreamBench:PosterPaper () (OWL2StreamBench:hasPaperId))
-HasKey(OWL2StreamBench:ResearchPaper () (OWL2StreamBench:hasPaperId))
-HasKey(OWL2StreamBench:WorkshopPaper () (OWL2StreamBench:hasPaperId))
+DifferentIndividuals(<http://kracr.iiitd.edu.in/AcademicConference#offline> <http://kracr.iiitd.edu.in/AcademicConference#online>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConference#hasAuthor>) <http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalk> <http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConference#hasInvitedTalkSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteTalk> <http://kracr.iiitd.edu.in/AcademicConference#keynoteTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConference#hasKeynoteSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee> <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommitteeMember>) <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizingCommittee>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConference#hasChair>) <http://kracr.iiitd.edu.in/AcademicConference#hasOrganizer>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasTalk> <http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConference#invitedTalkGivenBy>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#hasTalk> <http://kracr.iiitd.edu.in/AcademicConference#talkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConference#hasSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#presents> <http://kracr.iiitd.edu.in/AcademicConference#hasAuthor>) <http://kracr.iiitd.edu.in/AcademicConference#hasCoAuthor>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConference#presents> <http://kracr.iiitd.edu.in/AcademicConference#isPresentedAt>) <http://kracr.iiitd.edu.in/AcademicConference#attends>)
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#AcademicManuscript> () (<http://kracr.iiitd.edu.in/AcademicConference#hasId>))
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#ConferencePaper> () (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#DemoPaper> () (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#PosterPaper> () (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#ResearchPaper> () (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
+HasKey(<http://kracr.iiitd.edu.in/AcademicConference#WorkshopPaper> () (<http://kracr.iiitd.edu.in/AcademicConference#hasPaperId>))
 )

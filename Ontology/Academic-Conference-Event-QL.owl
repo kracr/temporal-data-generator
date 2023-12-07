@@ -40,7 +40,6 @@ Declaration(Class(OWL2StreamBench:EventMode))
 Declaration(Class(OWL2StreamBench:InvitedTalkSpeaker))
 Declaration(Class(OWL2StreamBench:InvitedTalkSpeakerRole))
 Declaration(Class(OWL2StreamBench:InvitedTalks))
-Declaration(Class(OWL2StreamBench:Journal))
 Declaration(Class(OWL2StreamBench:JournalArticle))
 Declaration(Class(OWL2StreamBench:KeynoteSpeaker))
 Declaration(Class(OWL2StreamBench:KeynoteTalks))
@@ -56,6 +55,7 @@ Declaration(Class(OWL2StreamBench:PosterPaper))
 Declaration(Class(OWL2StreamBench:Presentations))
 Declaration(Class(OWL2StreamBench:ResearchPaper))
 Declaration(Class(OWL2StreamBench:ResourcePaper))
+Declaration(Class(OWL2StreamBench:Session))
 Declaration(Class(OWL2StreamBench:SingleAuthorPaper))
 Declaration(Class(OWL2StreamBench:Student))
 Declaration(Class(OWL2StreamBench:StudentAuthor))
@@ -86,6 +86,7 @@ Declaration(ObjectProperty(OWL2StreamBench:hasChairRoleAt))
 Declaration(ObjectProperty(OWL2StreamBench:hasCoAuthor))
 Declaration(ObjectProperty(OWL2StreamBench:hasCollaborator))
 Declaration(ObjectProperty(OWL2StreamBench:hasDemoTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasDomain))
 Declaration(ObjectProperty(OWL2StreamBench:hasEventMode))
 Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChair))
 Declaration(ObjectProperty(OWL2StreamBench:hasGeneralChairRoleAt))
@@ -100,12 +101,14 @@ Declaration(ObjectProperty(OWL2StreamBench:hasOrganizerRoleAt))
 Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommittee))
 Declaration(ObjectProperty(OWL2StreamBench:hasOrganizingCommitteeMember))
 Declaration(ObjectProperty(OWL2StreamBench:hasPaper))
+Declaration(ObjectProperty(OWL2StreamBench:hasPaperDomain))
 Declaration(ObjectProperty(OWL2StreamBench:hasPaperTrack))
 Declaration(ObjectProperty(OWL2StreamBench:hasParticipant))
 Declaration(ObjectProperty(OWL2StreamBench:hasPosterTrackChair))
 Declaration(ObjectProperty(OWL2StreamBench:hasProject))
 Declaration(ObjectProperty(OWL2StreamBench:hasResearchTrackChair))
 Declaration(ObjectProperty(OWL2StreamBench:hasResourceTrackChair))
+Declaration(ObjectProperty(OWL2StreamBench:hasSession))
 Declaration(ObjectProperty(OWL2StreamBench:hasSpeaker))
 Declaration(ObjectProperty(OWL2StreamBench:hasTalk))
 Declaration(ObjectProperty(OWL2StreamBench:hasVolunteer))
@@ -333,6 +336,10 @@ ObjectPropertyRange(OWL2StreamBench:hasOrganizingCommitteeMember OWL2StreamBench
 EquivalentObjectProperties(OWL2StreamBench:hasPaper OWL2StreamBench:isAuthorOf)
 ObjectPropertyRange(OWL2StreamBench:hasPaper OWL2StreamBench:AcademicManuscript)
 
+# Object Property: OWL2StreamBench:hasPaperDomain (OWL2StreamBench:hasPaperDomain)
+
+SubObjectPropertyOf(OWL2StreamBench:hasPaperDomain OWL2StreamBench:hasDomain)
+
 # Object Property: OWL2StreamBench:hasPaperTrack (OWL2StreamBench:hasPaperTrack)
 
 SubObjectPropertyOf(OWL2StreamBench:hasPaperTrack owl:topObjectProperty)
@@ -354,6 +361,11 @@ SubObjectPropertyOf(OWL2StreamBench:hasResearchTrackChair OWL2StreamBench:hasOrg
 # Object Property: OWL2StreamBench:hasResourceTrackChair (OWL2StreamBench:hasResourceTrackChair)
 
 SubObjectPropertyOf(OWL2StreamBench:hasResourceTrackChair OWL2StreamBench:hasOrganizingCommitteeMember)
+
+# Object Property: OWL2StreamBench:hasSession (OWL2StreamBench:hasSession)
+
+ObjectPropertyDomain(OWL2StreamBench:hasSession event:Event)
+ObjectPropertyRange(OWL2StreamBench:hasSession OWL2StreamBench:Session)
 
 # Object Property: OWL2StreamBench:hasSpeaker (OWL2StreamBench:hasSpeaker)
 
@@ -594,7 +606,6 @@ SubClassOf(OWL2StreamBench:ComputerScienceDomain OWL2StreamBench:ManuscriptDomai
 
 AnnotationAssertion(OWL2StreamBench:isStatic OWL2StreamBench:Conference "")
 SubClassOf(OWL2StreamBench:Conference OWL2StreamBench:AcademicEvent)
-DisjointClasses(OWL2StreamBench:Conference OWL2StreamBench:Journal)
 
 # Class: OWL2StreamBench:ConferencePaper (OWL2StreamBench:ConferencePaper)
 
@@ -624,10 +635,6 @@ SubClassOf(OWL2StreamBench:InvitedTalkSpeakerRole <http://www.ontologydesignpatt
 
 SubClassOf(OWL2StreamBench:InvitedTalks OWL2StreamBench:Talks)
 SubClassOf(OWL2StreamBench:InvitedTalks ObjectSomeValuesFrom(OWL2StreamBench:invitedTalkGivenBy OWL2StreamBench:InvitedTalkSpeaker))
-
-# Class: OWL2StreamBench:Journal (OWL2StreamBench:Journal)
-
-SubClassOf(OWL2StreamBench:Journal OWL2StreamBench:AcademicEvent)
 
 # Class: OWL2StreamBench:JournalArticle (OWL2StreamBench:JournalArticle)
 
