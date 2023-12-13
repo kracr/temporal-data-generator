@@ -1,0 +1,90 @@
+sequentialtemplates_beforeconference:
+
+sequentialtemplates_beforeconference:
+  - template_name: ConferenceAnnouncementTemplate
+    placeholder: Conference
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      We're excited to announce the [n-th] edition of [Conference]! The conference will be held from [Date] at [Location] in [Conf Mode]. The deadlines for submissions, registrations, and other important dates have been announced. Visit our website [ConferenceWebsiteURL] for more details and stay tuned for updates. [Conference Chair]
+
+  - template_name: CallForPapersTemplate
+    placeholder: Conference
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      We extend a warm invitation to researchers and scholars to participate in [Conference] by submitting your papers to the [track]. Share your pioneering research and valuable insights with the academic community. Don't miss this opportunity to make a meaningful contribution to the success of [Conference]! The submission deadline is [Submission Deadline] [Individual Track Chairs]
+
+  - template_name: PaperSubmissionReminderTemplate
+    placeholder: Conference2023
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      Just a reminder, only [insert number] days left to submit your papers for [Conference2023] in the [Track] category. Don't miss out on this opportunity to showcase your research. Please ensure your papers are submitted by [insert date]. [Individual Track Chairs]
+
+  - template_name: AcceptedPaperAnnouncementTemplate
+    placeholder: Conference
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      We're thrilled to announce that our paper titled [PaperTitle] has been accepted in the [PaperTrack] at [Conference]! Heartfelt congratulations to our co-authors [Coauthor1, Coauthor2, …]. We look forward to sharing our research with you at the conference! [Author]
+
+  - template_name: EarlyBirdRegistrationTemplate
+    placeholder: Conference
+    min_duration: 2.5
+    max_duration: 3.5
+    frequency: 0.4
+    body: |
+      Attention all attendees of [Conference]! Early bird registration is now open! Register before [insert date] to enjoy savings of [insert discount amount]. Secure your spot today and take advantage of this special offer. Regular registration will continue until [insert date], but why wait? Register now and be part of this exciting event! [Conference Chair]
+
+  - template_name: ExcitedVolunteerTemplate
+    placeholder: Conference
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      Excited to be a volunteer at [Conference] this year! Looking forward to meeting all the attendees and helping out in any way I can. [Student and (Author or NonAuthor)]
+
+  - template_name: ThankYouSponsorTemplate
+    placeholder: SponsorName
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      A heartfelt thank you to [SponsorName] for their generous support, which enables my attendance at [Conference]. I'm excited to represent [InstituteName] at the conference! [Student and Author]
+
+  - template_name: StudentGrantAnnouncementTemplate
+    placeholder: Conference
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      Exciting news! I've been awarded a student grant to attend [Conference]. Can't wait to learn from all the amazing talks and meet so many incredible researchers at [Conf Location]. Thank you to the [Organizers] for this opportunity. [Student and Author]
+
+  - template_name: KeynoteSpeakerAnnouncementTemplate
+    placeholder: Speaker
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      We're absolutely thrilled to unveil our keynote speaker, [Speaker], who will be headlining the upcoming [Conference]! Get ready for an awe-inspiring experience as [Speaker] takes the stage to share their profound insights and expertise. [Individual Track Chairs or Conference Chair]
+
+  - template_name: LiveStreamingAnnouncementTemplate
+    placeholder: Conference
+    min_duration: 2.5
+    max_duration: 3.5
+    frequency: 0.4
+    body: |
+      Can't make it to [Conference] in person? No worries! We're live-streaming all keynote sessions and selected talks. Tune in from anywhere in the world and be part of the conference experience. Check out the live stream schedule on our website.
+
+  - template_name: ScheduleAvailableTemplate
+    placeholder: Conference
+    min_duration: 2.5
+    max_duration: 3.5
+    frequency: 0.4
+    body: |
+      Attention all attendees of [Conference]! The conference schedule is now available. Plan your sessions ahead of time and ensure you don't miss out on any of the amazing presentations. Remember, regular registration remains open until [insert date], so don't delay—register now to secure your spot! [Conference Chair]

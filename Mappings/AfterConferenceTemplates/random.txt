@@ -1,0 +1,33 @@
+randomtemplates_afterconference:
+
+- template_name: ConferenceSuccessThankYou
+  placeholder: Conference Chair
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  body: |
+    Thank you to all the attendees, speakers, and sponsors who made [Conference] a huge success! We hope you had a great time and learned a lot. See you at the next conference! [Conference Chair]
+
+- template_name: MemorableConferenceExperience
+  placeholder: Attendee
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  body: |
+    Had a great time at [Conference]! The keynote speeches, paper presentations, and networking events were all top-notch. Thanks to everyone who made it a memorable experience! [Attendee]
+
+- template_name: SuccessfulEventCongratulations
+  placeholder: Conference Chair
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  body: |
+    Congratulations to the organizing committee [O1, O2…] of [Conference] for putting together a successful event. Kudos to all the volunteers and sponsors who made it possible! See you all next year at [Future ConfLocation] [Conference Chair]
+
+- template_name: BestPaperTrackAwardAnnouncement
+  placeholder: Author
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  body: |
+    Thrilled to announce that we got the best [PaperTrack-n] award at [Conference-n] for our paper [PaperTitle-n]. [Institute and Author Tags] [Author]

@@ -1,0 +1,24 @@
+randomtemplates_duringconference:
+- template_name: NetworkingExperience
+  placeholder: Attendee
+  min_duration: 1
+  max_duration: 4
+  frequency: 0.6
+  body: |
+    Having a great time networking and meeting new people at [Conference]. So many interesting conversations! [Attendee]
+
+- template_name: PosterSessionExperience
+  placeholder: Attendee
+  min_duration: 1
+  max_duration: 4
+  frequency: 0.6
+  body: |
+    Just got back from a poster session at [Conference]. So many innovative ideas on display! [Attendee]
+
+- template_name: KeynoteSpeechExperience
+  placeholder: Attendee
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  body: |
+    Just attended an amazing keynote speech at [Conference] by [KeynoteSpeaker]. Learned so much about [Topic]! [Attendee]
