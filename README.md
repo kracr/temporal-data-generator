@@ -7,17 +7,25 @@ GenACT, a novel data generator based on academic conference tweets. GenACT consi
 
 2. [ Usage Instructions ](#usage)
 
-   3.1 [ Direct execution using executable jar (with default configurations) ](#exe)
+   2.1 [ Direct execution using executable jar (with default configurations) ](#exe)
    
-   3.2 [ Using Source Code (with or without default configurations) ](#code)
+   2.2 [ Using Source Code (with or without default configurations) ](#code)
 
 <a name="repo"></a>
 ## 2. About the Repository
-The project repository consists of the following directories: **[Generator](https://github.com/kracr/owl2bench/tree/master/OWL2Bench)** and **[Experiments](https://github.com/kracr/owl2bench/tree/master/Experiments)**.
+The project repository consists of the following directories:
 
-[OWL2Bench](https://github.com/kracr/owl2bench/tree/master/OWL2Bench) is a java source code directory of our benchmark that generates the varying size datasets (TBox + ABox) to compare the reasoning and querying performance of OWL 2 Reasoners (see section [ 3.2 ](#code) for source-code usage instructions). 
+[Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 2.2 ](#code) for source-code usage instructions). 
 
-[Experiments](https://github.com/kracr/owl2bench/tree/master/Experiments) directory consists of details about the experiments and results that were reported in our paper accepted at the ISWC'20 Resources Track. 
+[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of 4 Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Twitter Ontology (consisting axioms describing Twitter metadata) and a Location Ontology. Twitter ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
+
+[Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of different twitter template yaml files (Before Conference, During Conference and After Conference) that serve as the starting point for our data generator. The directory also consists of yaml mapping files to generate RDF triples according to the placeholders in each twitter template. 
+
+[StaticData] 
+
+[RunnableJars]
+
+[Streams]
 
 The repository also consists of four different **TBox** for each OWL 2 Profiles (EL, QL, RL and DL): **UNIV-BENCH-OWL2EL.owl**, **UNIV-BENCH-OWL2QL.owl**, **UNIV-BENCH-OWL2RL.owl**, **UNIV-BENCH-OWL2DL.owl**, and a java executable jar file : **[OWL2Bench.jar](https://github.com/kracr/owl2bench/blob/master/OWL2Bench.jar)**.
 
