@@ -1,6 +1,4 @@
-sequentialtemplates_beforeconference:
-
-sequentialtemplates_beforeconference:
+templates_beforeconference:
   - template_name: ConferenceAnnouncementTemplate
     placeholder: Conference
     min_duration: 3

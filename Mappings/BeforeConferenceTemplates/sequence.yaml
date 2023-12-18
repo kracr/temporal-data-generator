@@ -1,0 +1,40 @@
+templates:
+  - template_name: ConferenceAnnouncementTemplate
+    account_type: ConferenceAccount
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      We're excited to announce the n-th edition of [Conference]! The conference will be held from date at [Location] in hybrid mode. The deadlines for submissions, registrations, and other important dates have been announced. Visit our website for more details and stay tuned for updates.
+
+  - template_name: CallForPapersTemplate
+    account_type: ConferenceAccount
+    min_duration: 3
+    max_duration: 3.5
+    frequency: 0.5
+    body: |
+      We extend a warm invitation to researchers and scholars to participate in [Conference] by submitting your papers to different tracks. Share your pioneering research and valuable insights with the academic community. Don't miss this opportunity to make a meaningful contribution to the success of conference! The submission deadline is approaching soon.
+
+  - template_name: PaperSubmissionReminderTemplate
+    account_type: ConferenceAccount
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      Just a reminder, only n days left to submit your papers for [Conference] in the track category. Don't miss out on this opportunity to showcase your research. Please ensure your papers are submitted by insert date.
+
+  - template_name: AcceptedPaperAnnouncementTemplate
+    account_type: PersonAccount
+    min_duration: 2
+    max_duration: 4
+    frequency: 0.3
+    body: |
+      We're thrilled to announce that our paper titled '_____ 'has been accepted in the research track at [Conference]! Heartfelt congratulations to our co-authors @Coauthor1, @Coauthor2. We look forward to sharing our research with you at the conference!
+
+  - template_name: EarlyBirdRegistrationTemplate
+    account_type: ConferenceAccount
+    min_duration: 2.5
+    max_duration: 3.5
+    frequency: 0.4
+    body: |
+      Attention all attendees of [Conference]! Early bird registration is now open!Secure your spot today and take advantage of this special offer. Regular registration will continue until _insert_date_, but why wait? Register now and be part of this exciting event!
