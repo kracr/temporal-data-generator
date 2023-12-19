@@ -1,0 +1,503 @@
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information50b03f57-8ed6-46ba-9d14-0d36f4cc693c>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationf3fd21c8-bc3b-4580-bb1e-cbbf38e43a19>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationa2843097-4047-495c-b3f6-b195d25ce1d8>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information7d7f7f4d-f237-4d87-82c3-965f10639a84>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information8825723e-548c-4deb-97b0-81a5f2a45187>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information0b6a54e6-422c-44c2-88f8-ff8bcbab1518>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationdb61e256-87b5-4560-b3dd-ff9c2ed61795>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasTweetID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information63dd8e3f-2518-4450-abd8-8df8d05b6c4c>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information5cc03aa1-529e-4a44-b370-39a91554679e>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?postinguser> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information5048c87e-e485-4ac8-a81f-cee4975157bc>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasTweetID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information158cdc3d-d594-470f-9261-9a4245a4aa8e>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?postinguser> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationbfb2e37d-046c-4f3b-95b3-2c5e6c11f22f>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationdbee52fc-7807-4ae5-81e8-da1383a084e5>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationf94cd6b7-4f2d-49c7-a96b-41a701ae5e7d>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?postinguser> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationfd106179-5c8a-4176-8889-cfa9febe2970>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationbc6999b9-6089-4eb1-89c6-37c6ad62f08a>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationc856abde-e0b8-48d7-aecb-99714041c6db>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationf5f77f36-154f-4413-88d8-3ac127ba35d1>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information098200d7-d3d2-4f0d-adfd-290b20fce059>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationc51409b7-ee8a-4731-8fbd-eef5edb457b9>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information2d6b65fb-7ef9-4c33-9922-af1a5d6db524>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information54b546ec-75f9-4937-841c-1b7e82ca5a6f>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information7529cd0c-1e00-49cf-9cc5-6c2e96435dce>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?timestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasDateTimestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationb1d535b4-11a8-4b15-8ea6-c4fe3801d362>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information96fb9518-6c7c-4ad1-8606-3bbeb12429e2>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information167fbe2e-76e1-43e8-8907-dc01188549b6>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informatione647781c-f427-4c27-add8-3922f0fb23a9>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?timestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasDateTimestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information1c511ba1-1ec7-4fa9-82a3-9ed5235b56f5>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information599e2bd5-7a73-4397-8f8b-296f7c7e6e49>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information70c20b2a-6c8a-4c21-9cf5-a502c12c7a57>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information50c46804-afc6-4241-aa15-fa8020f9c592>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?username> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserName> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information58c505cc-9b50-4322-86c3-de9bacfe0a3d>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationedcd5daa-df62-4307-b18f-d7aac81176c2>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?hashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasHashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationd1bb8455-e1de-48ce-8a3f-1300f016b69d>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information5213f0cd-2266-4daf-86a4-308eb5223d56>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?username> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserName> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information5efc93df-99c5-4e1f-ac6a-ab1f6b95e24c>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasTweetID> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information70cc532b-d6cc-4989-b21c-1a20c5830ae1>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationd65f7a03-298a-420e-bbfe-0a8d3243b20f>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information97884ed0-f12f-466b-a3d4-623338789d5f>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?username> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasUserName> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information8172415e-1618-422b-8af1-385c8033cfc6>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informatione70d4ac0-32a8-430b-9bfb-10dfd9440bab>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationbb9c5cd6-c983-4ac0-b249-edb47ea6dab8>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationca16de9b-f168-4908-bb93-937d94181c1e>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information96913a34-b466-4743-9794-a1a7b0a73bb2>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information2e65a780-7f8f-4cdf-a862-4c706eac9f83>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information9808077d-1b0c-4e65-92e6-66c287eaad4a>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?organization> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <rdf:type> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?affiliation> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information4635fc8d-1ceb-4cac-9560-4871a02f51bd>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information4200338a-0f93-48a9-a3b3-f2b82b0265c9>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationfdf346ba-520d-4ac8-bf41-a0d3f12696e3>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information73dcef7f-09e0-4e4f-8856-984099de7903>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationd5ffffa7-bf50-4c0e-9fa8-267e7ac724c0>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information64c16442-85ef-419d-9b14-1a94ca8d3b61>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information73dc2732-fb25-48fa-8b4a-9f984a38df07>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?tweet> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <posts> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information5cac2d28-a9ba-4b92-8f63-46c97532ffd1>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationdc4c10f1-7fbe-4f3d-a504-263047be727b>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?otherusers> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <mentions> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information6753d2c3-0ee4-46ab-9f52-6f4b1e867ac6>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?hashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasHashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information1f9e8b6d-9ddf-4b53-9fc4-6348e51b4df7>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationca46da73-4bab-40ea-946d-ed2861bc24e4>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?timestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasDateTimestamp> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#informationf9c3b436-0909-4afa-84b9-018fe5c1da61>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information913761aa-36d5-4958-b696-1be3ce8127d5>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?hashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasHashtag> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information95f4779c-f342-4d0e-b101-c144a9c24241>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?information> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasInformation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information95ab3fe3-56c3-4c5e-b3f7-35f1b7e3d6fa>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?conferenceinstance> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <isAbout> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?tweet> .
+
+<https://kracr.iiitd.edu.in/OWL2StreamBench#information9bfa9b3d-d42f-466c-80be-1499bcc5ca8f>
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+              <?affiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+              <hasAffiliation> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+              <?postinguser> .

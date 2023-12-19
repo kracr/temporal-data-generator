@@ -1,9 +1,5 @@
-#Classes as defined int he ontologies
-#instances start with ? 
-#properties as it is
 templates:
-  - type: PersonAccount
-    triples:
+  - PersonAccount:
       - subject: ?postinguser
         predicate: rdf:type
         object: PersonAccount
@@ -11,11 +7,14 @@ templates:
         predicate: posts
         object: ?tweet
       - subject: ?tweet
+        predicate: hasInformation
+        object: ?information
+      - subject: ?tweet
         predicate: rdf:type
         object: Tweet
       - subject: ?tweet
         predicate: hasDateTimestamp
-        object: ?timestamp
+        object: _timestamp
       - subject: ?tweet
         predicate: isAbout
         object: ?conferenceinstance
@@ -24,13 +23,13 @@ templates:
         object: ?otherusers
       - subject: ?tweet
         predicate: hasHashtag
-        object: ?hashtag
+        object: _hashtag
       - subject: ?tweet
         predicate: hasTweetID
-        object: ?tweet
+        object: _tweet
       - subject: ?postinguser
         predicate: hasUserName
-        object: ?username
+        object: _username
       - subject: ?postinguser
         predicate: hasAffiliation
         object: ?affiliation
@@ -39,9 +38,8 @@ templates:
         object: ?organization       
       - subject: ?postinguser
         predicate: hasUserID
-        object: ?postinguser
-  - type: ConferenceAccount
-    triples:
+        object: _postinguser
+  - ConferenceAccount:
       - subject: ?postinguser
         predicate: rdf:type
         object: ConferenceAccount
@@ -52,6 +50,9 @@ templates:
         predicate: rdf:type
         object: Tweet
       - subject: ?tweet
+        predicate: hasInformation
+        object: ?information
+      - subject: ?tweet
         predicate: hasDateTimestamp
         object: ?timestamp
       - subject: ?tweet
@@ -72,8 +73,7 @@ templates:
       - subject: ?postinguser
         predicate: hasUserID
         object: ?postinguser
-  - type: Conference
-    triples:
+  - Conference:
       - subject: ?conferenceinstance
         predicate: rdf:type
         object: :Conference
@@ -95,12 +95,11 @@ templates:
       - subject: ?conferenceinstance
         predicate: hasLocation
         object: ?location
-  - type: ConferencePaper
-    triples:
+  - ConferencePaper:
       - subject: ?subject
         predicate: rdf:type
         object: ConferencePaper
-       - subject: ?subject
+      - subject: ?subject
         predicate: isAcceptedAt
         object: ?conferenceinstance
       - subject: ?subject
@@ -115,7 +114,7 @@ templates:
       - subject: ?subject
         predicate: isPresentedBy
         object: ?postingAuthor
-       - subject: ?subject
+      - subject: ?subject
         predicate: hasAuthor
         object: ?otherusers  
       - subject: ?otherusers
@@ -130,62 +129,36 @@ templates:
       - subject: ?otherusers
         predicate: hasUserID
         object: ?otherusers        
-  - type: Organization
-    triples:
+  - Organization:
       - subject: ?organization
         predicate: rdf:type
         object: Organization
       - subject: ?subject
         predicate: hasLocation
         object: ?location
-  - type: Organizers
-    triples:
+  - Organizers:
       - subject: ?subject
         predicate: hasRole
         object: ?organizerRole
-  - type: Location
-    triples:
-      - subject: ?location
-        predicate: isPartOf
-        object: ?city
-      - subject: ?city
-        predicate: hasLatitude
-        object: ?latitude
-      - subject: ?location
-        predicate: hasLongitude
-        object: ?longitude   
-      - subject: ?city
-        predicate: isPartOf
-        object: ?country
-      - subject: ?country
-        predicate: hasLatitude
-        object: ?latitude
-      - subject: ?country
-        predicate: hasLongitude
-        object: ?longitude  
-  - type: Attending
-    triples:
+  - Attending:
       - subject: ?postinguser
         predicate: attends
         object: ?conferenceinstance
-  - type: Volunteer
-    triples:
+  - Volunteer:
       - subject: ?postinguser
         predicate: rdf:type
         object: Volunteer
       - subject: ?postinguser
         predicate: attends
         object: ?conferenceinstance        
-  - type: StudentGrant
-    triples:
+  - StudentGrant:
       - subject: ?postinguser
         predicate: rdf:type
         object: Student
       - subject: ?postinguser
         predicate: attends
         object: ?conferenceinstance   
-  - type: Speaker
-    triples:
+  - Speaker:
       - subject: ?otherusers
         predicate: rdf:type
         object: ?speaker
@@ -198,8 +171,3 @@ templates:
       - subject: ?postinguser
         predicate: givesTalkOn
         object: ?topic
-
-        
-#volunteer [Student and (Author or NonAuthor)]
-#Sponsor
-#Organization
