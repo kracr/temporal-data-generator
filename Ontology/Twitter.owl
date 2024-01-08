@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#"/>
+    <owl:Ontology rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter"/>
     
 
 
@@ -21,45 +21,45 @@
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasAffiliation -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasAffiliation -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasAffiliation">
-        <rdfs:subPropertyOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasBio"/>
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasAffiliation">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasBio"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasBio -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasBio -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasBio">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#TwitterUser"/>
-        <rdfs:comment>Sometimes users mention their designations and affiliations in the bio such as Professor@IIITD. We make use of this information by splitting the bio into designation and affiliation</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasBio">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTwitterUser"/>
+        <rdfs:comment xml:lang="IIITD. We make use of this information by splitting the bio into designation and affiliation">Sometimes users mention their designations and affiliations in the bio such as Professor</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDesignation -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDesignation -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDesignation">
-        <rdfs:subPropertyOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasBio"/>
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDesignation">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasBio"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#mentions -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwittermentions -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#mentions">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet"/>
-        <rdfs:range rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#TwitterUser"/>
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwittermentions">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet"/>
+        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTwitterUser"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#posts -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterposts -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#posts">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User"/>
-        <rdfs:range rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet"/>
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterposts">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser"/>
+        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet"/>
     </owl:ObjectProperty>
     
 
@@ -75,66 +75,66 @@
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDateTimeStamp -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDateTimeStamp -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDateTimeStamp">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDateTimeStamp">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDisplayName -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDisplayName -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasDisplayName">
-        <rdfs:subPropertyOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasName"/>
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasDisplayName">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasName"/>
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasHashTag -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasHashTag -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasHashTag">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasHashTag">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasID -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasID -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasID"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasID"/>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasName -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasName -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasName"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasName"/>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasTweetID -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasTweetID -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasTweetID">
-        <rdfs:subPropertyOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasID"/>
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasTweetID">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasID"/>
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserID -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserID -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserID">
-        <rdfs:subPropertyOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasID"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserID">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasID"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserName -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserName -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserName">
-        <rdfs:domain rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User"/>
+    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserName">
+        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -151,55 +151,55 @@
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#ConferenceAccount -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterConferenceAccount -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#ConferenceAccount">
-        <rdfs:subClassOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#UserAccount"/>
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterConferenceAccount">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUserAccount"/>
     </owl:Class>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#PersonAccount -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterPersonAccount -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#PersonAccount">
-        <rdfs:subClassOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#UserAccount"/>
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterPersonAccount">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUserAccount"/>
     </owl:Class>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#Tweet">
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTweet">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasTweetID"/>
+                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasTweetID"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasTweetID"/>
+            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasTweetID"/>
         </owl:hasKey>
     </owl:Class>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#TwitterUser -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterTwitterUser -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#TwitterUser">
-        <rdfs:subClassOf rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User"/>
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterTwitterUser">
+        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserID"/>
+            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserID"/>
         </owl:hasKey>
     </owl:Class>
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#User">
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUser">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#hasUserID"/>
+                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitterhasUserID"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -208,9 +208,9 @@
     
 
 
-    <!-- urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#UserAccount -->
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitterUserAccount -->
 
-    <owl:Class rdf:about="urn:absolute:kracr.iiitd.edu.in/OWL2StreamBench#UserAccount"/>
+    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitterUserAccount"/>
 </rdf:RDF>
 
 

@@ -1,6 +1,6 @@
-randomtemplates_duringconference:
+templates:
 - template_name: NetworkingExperience
-  placeholder: Attendee
+  account_type: PersonAccount
   min_duration: 1
   max_duration: 4
   frequency: 0.6
@@ -8,7 +8,7 @@ randomtemplates_duringconference:
     Having a great time networking and meeting new people at [Conference]. So many interesting conversations! [Attendee]
 
 - template_name: PosterSessionExperience
-  placeholder: Attendee
+  account_type: PersonAccount
   min_duration: 1
   max_duration: 4
   frequency: 0.6
@@ -16,7 +16,7 @@ randomtemplates_duringconference:
     Just got back from a poster session at [Conference]. So many innovative ideas on display! [Attendee]
 
 - template_name: KeynoteSpeechExperience
-  placeholder: Attendee
+  account_type: PersonAccount
   min_duration: 2
   max_duration: 3
   frequency: 0.4

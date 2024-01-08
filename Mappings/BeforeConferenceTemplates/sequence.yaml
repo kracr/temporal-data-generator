@@ -29,7 +29,7 @@ templates:
     max_duration: 4
     frequency: 0.3
     body: |
-      We're thrilled to announce that our paper titled '_____ 'has been accepted in the research track at [Conference]! Heartfelt congratulations to our co-authors @Coauthor1, @Coauthor2. We look forward to sharing our research with you at the conference!
+      We're thrilled to announce that our paper titled [papertitle] has been accepted in the research track at [Conference]! Heartfelt congratulations to our co-authors @Coauthor1, @Coauthor2. We look forward to sharing our research with you at the conference!
 
   - template_name: EarlyBirdRegistrationTemplate
     account_type: ConferenceAccount

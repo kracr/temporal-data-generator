@@ -54,7 +54,7 @@ templates:
         object: ?information
       - subject: ?tweet
         predicate: hasDateTimestamp
-        object: ?timestamp
+        object: _timestamp
       - subject: ?tweet
         predicate: isAbout
         object: ?conferenceinstance
@@ -63,7 +63,7 @@ templates:
         object: ?otherusers
       - subject: ?tweet
         predicate: hasHashtag
-        object: ?hashtag
+        object: ?domain
       - subject: ?tweet
         predicate: hasTweetID
         object: ?tweet
@@ -91,30 +91,33 @@ templates:
         object: ?paperTrack
       - subject: ?conferenceinstance
         predicate: hasWebsiteURL
-        object: ?url
+        object: _url
       - subject: ?conferenceinstance
         predicate: hasLocation
         object: ?location
   - ConferencePaper:
-      - subject: ?subject
+      - subject: ?paper
         predicate: rdf:type
         object: ConferencePaper
-      - subject: ?subject
+      - subject: ?paper
+        predicate: hasID
+        object: ?paper
+      - subject: ?paperid
         predicate: isAcceptedAt
         object: ?conferenceinstance
-      - subject: ?subject
+      - subject: ?paper
         predicate: hasAuthor
         object: ?postinguser
-      - subject: ?subject
+      - subject: ?paper
         predicate: hasTitle
-        object: ?papertitle
-      - subject: ?subject
+        object: _papertitle
+      - subject: ?paper
         predicate: hasPaperDomain
         object: ?paperdomain   
-      - subject: ?subject
+      - subject: ?paper
         predicate: isPresentedBy
-        object: ?postingAuthor
-      - subject: ?subject
+        object: ?postingUser
+      - subject: ?paper
         predicate: hasAuthor
         object: ?otherusers  
       - subject: ?otherusers
@@ -137,7 +140,7 @@ templates:
         predicate: hasLocation
         object: ?location
   - Organizers:
-      - subject: ?subject
+      - subject: ?organizer
         predicate: hasRole
         object: ?organizerRole
   - Attending:
@@ -164,7 +167,7 @@ templates:
         object: ?speaker
       - subject: ?otherusers
         predicate: hasRole
-        object: ?role
+        object: ?speakerrole
       - subject: ?otherusers
         predicate: givesTalk
         object: ?talk
