@@ -34,7 +34,7 @@ The project repository consists of the following directories:
 
 Requirements: The user must have *java and maven* installed in the system. Operating System-Ubuntu
 
-The user needs to provide two inputs, *the number of conferences* and *the number of conference cycles*. 
+The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
 
 <a name="exe"></a>
 ## 3.1. Direct execution using executable jar :
@@ -43,22 +43,21 @@ We have provided a java executable jar **[genact.jar](https://github.com/kracr/)
 
 For eg. : 
 
-java -jar genact.jar 1 5 (where 1 is the number of conferences,  5 is the number of cycles)
+java -jar genact.jar 1 5 C:\GitHub\owl2streambench (where 1 is the number of conferences,  5 is the number of cycles, files_directory_path)
          
 
 
 <a name="code"></a>
 ## 3.2. Using Source Code :
-
-We are also providing the java source code for ABox generation. Using the source code, user can also modify the default configurations (such as generated ontology Format, and density of each node in the generated dataset) in the config.properties file. In order to run the source code, user need download the project repository owl2bench-master. Extract it and save it in a folder. There is a maven project [OWL2Bench](https://github.com/kracr/temporal-data-generator) inside the owl2bench-master directory. Open command line and change to the directory that contains the pom.xml of this OWL2Bench project. Execute the maven command:
+In order to run the source code, user need download the project repository owl2bench-master. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator) inside the temporal-data-generator-master directory. Open command line and change to the directory that contains the pom.xml of this OWL2Bench project. Execute the maven command:
 
 mvn compile
 
 mvn install
 
-Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *Number of Universities, Required OWL 2 Profile and Seed* (same as above) using exec.args. For example-
+Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *the number of conferences* and *the number of conference cycles* (same as above) using exec.args. For example-
 
-mvn exec:java -Dexec.mainClass=ABoxGen.InstanceGenerator.Generator -Dexec.args="1 5"
+mvn exec:java -Dexec.mainClass=ABoxGen.InstanceGenerator.Generator -Dexec.args="2 3 C:\GitHub\owl2streambench"
 
 
 
