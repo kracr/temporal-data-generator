@@ -5,15 +5,8 @@ templates:
   max_duration: 3.5
   frequency: 0.5
   body: |
-    Our research group, [Affiliation], is thrilled to present [n] papers titled [Paper1, Paper2, …] at [Conference] this year. We're excited to share our insights and discoveries with the academic community! [Author]
+    Our research group, [Organization], is thrilled to present [ConferencePaper] titled papertitle at [Conference] this year. We're excited to share our insights and discoveries with the academic community!
 
-- template_name: InteractivePanelSession
-  account_type: PersonAccount
-  min_duration: 2
-  max_duration: 4
-  frequency: 0.3
-  body: |
-    Get ready for an interactive panel session at [Conference]. Our panelists, [Panelists], will share their expertise on [Topic]. Don't miss this opportunity to gain valuable insights and ask your burning questions. See you there!
 
 - template_name: InteractiveSessionReminder
   account_type: PersonAccount
@@ -21,7 +14,7 @@ templates:
   max_duration: 4
   frequency: 0.3
   body: |
-    Ready to participate? Our interactive session on [Topic] is just around the corner at [Time]. Bring your questions, ideas, and enthusiasm for a lively discussion with [Speaker]. Let's make this session engaging and insightful!
+    Ready to participate? Our interactive session is just around the corner. Bring your questions, ideas, and enthusiasm for a lively discussion with [Speaker]. Let's make this session engaging and insightful!
 
 - template_name: StudentPresentation
   account_type: PersonAccount
@@ -29,7 +22,7 @@ templates:
   max_duration: 3
   frequency: 0.4
   body: |
-    Exciting news! My student, [Person], will be representing our team by presenting our work titled [PaperTitle] at [Conference]. Join us in supporting their presentation [Coauthor1, Coauthor2, …]. [Presenter]
+    Exciting news! My student is [Attending] [Conference] and will be representing our team by presenting our [ConferencePaper]. Join us in supporting their presentation.
 
 - template_name: PresenterAnnouncement
   account_type: PersonAccount
@@ -37,5 +30,5 @@ templates:
   max_duration: 3
   frequency: 0.4
   body: |
-    I, [Person], will be presenting our work titled [PaperTitle] at [Conference] [Coauthor1, Coauthor2, …]. [Presenter]
+    I am really excited for [Attending] [Conference] and presenting our work [ConferencePaper].
 

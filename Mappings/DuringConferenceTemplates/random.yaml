@@ -5,7 +5,7 @@ templates:
   max_duration: 4
   frequency: 0.6
   body: |
-    Having a great time networking and meeting new people at [Conference]. So many interesting conversations! [Attendee]
+    Having a great time [Attending], networking and meeting new people at [Conference]. So many interesting conversations!
 
 - template_name: PosterSessionExperience
   account_type: PersonAccount
@@ -13,7 +13,7 @@ templates:
   max_duration: 4
   frequency: 0.6
   body: |
-    Just got back from a poster session at [Conference]. So many innovative ideas on display! [Attendee]
+    Having a great time [Attending] [Conference]. Just got back from a poster session. So many innovative ideas on display!
 
 - template_name: KeynoteSpeechExperience
   account_type: PersonAccount
@@ -21,4 +21,4 @@ templates:
   max_duration: 3
   frequency: 0.4
   body: |
-    Just attended an amazing keynote speech at [Conference] by [KeynoteSpeaker]. Learned so much about [Topic]! [Attendee]
+    Just [Attending] an amazing keynote speech at [Conference] by [Speaker]. Learned so much!
