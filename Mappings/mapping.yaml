@@ -101,8 +101,8 @@ templates:
         object: ConferencePaper
       - subject: ?paper
         predicate: hasID
-        object: ?paper
-      - subject: ?paperid
+        object: ?paperid
+      - subject: ?paper
         predicate: isAcceptedAt
         object: ?conferenceinstance
       - subject: ?paper
@@ -174,3 +174,11 @@ templates:
       - subject: ?postinguser
         predicate: givesTalkOn
         object: ?topic
+  - Award:
+      - subject: ?postinguser
+        predicate: rdf:type
+        object: Author
+      - subject: ?postinguser
+        predicate: hasPaper
+        object: ?paper
+        

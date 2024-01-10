@@ -29,4 +29,4 @@ templates:
   max_duration: 3
   frequency: 0.4
   body: |
-    Thrilled to announce that we got the best [papertrack] award at [Conference] for our [ConferencePaper]. [Organization] Tag.
+    Thrilled to announce that we got the best papertrack [Award] at [Conference] for our [ConferencePaper]. [Organization] Tag.
