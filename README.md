@@ -5,6 +5,10 @@ GenACT is a data generator designed to address challenges in obtaining realistic
 
 1. [ Introduction ](#intro)
 
+   1.1 [ Ontologies based on Academic Conference Twitter (ACT) ](#tbox)
+ 
+   1.2 [ Data Generation ](#abox)
+
 2. [ About the Repository ](#repo)
 
 3. [ Usage Instructions ](#usage)
@@ -59,14 +63,14 @@ The project repository consists of the following directories:
 
 
 <a name="usage"></a>
-## 2. Usage Instructions
+## 3. Usage Instructions
 
 Requirements: The user must have *java 1.8 and maven* installed in the system. Operating System-Ubuntu
 
 The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
 
 <a name="exe"></a>
-## 2.1. Direct execution using executable jar :
+## 3.1. Direct execution using executable jar :
 
 We have provided a java executable jar **[genact.jar](https://drive.google.com/file/d/1ls89Czm-MGsLlgU1BjqykheDhRZLpn4f/view?usp=sharing)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
@@ -77,7 +81,7 @@ java -jar genact.jar 1 5 C:\GitHub\owl2streambench (where 1 is the number of con
 
 
 <a name="code"></a>
-## 2.2. Using Source Code :
+## 3.2. Using Source Code :
 In order to run the source code, user need download the project repository owl2bench-master. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator) inside the temporal-data-generator-master directory. Open command line and change to the directory that contains the pom.xml of this OWL2Bench project. Execute the maven command:
 
 mvn compile
