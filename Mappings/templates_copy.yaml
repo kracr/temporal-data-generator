@@ -1,0 +1,269 @@
+templates:
+- template_number: 1
+  template_name: MainConferenceAnnouncement
+  conference_phase: BeforeConference
+  tweet_category: Announcement
+  order: Sequential
+  sequence: 1
+  body: |
+    We're excited to announce the n-th edition of [Conference]! The conference will be held from date at [Location] in hybrid mode. The deadlines for submissions, registrations, and other important dates have been announced. Visit our website for more details and stay tuned for updates. #conferencehashtag @organizers
+  min_duration: 3
+  max_duration: 3.5
+  frequency: 0.5
+  triples: | 
+    Conference, ConferenceAccount, Location, Organizers
+
+- template_number: 2
+  template_name: CallForPapersAnnouncement
+  conference_phase: BeforeConference
+  tweet_category: Announcement
+  order: Sequential
+  sequence: 2
+  body: |
+    We extend a warm invitation to researchers and scholars to participate in [Conference] by submitting your papers to different tracks. Share your pioneering research and valuable insights with the academic community. Don't miss this opportunity to make a meaningful contribution to the success of conference! The submission deadline is approaching soon. #conferencehashtag @organizers
+  min_duration: 3
+  max_duration: 3.5
+  frequency: 0.5
+  triples: | 
+    Conference, ConferenceAccount, Location, ConferenceTracks, Organizers
+
+- template_number: 3
+  template_name: PaperSubmissionReminderTemplate
+  conference_phase: BeforeConference
+  tweet_category: Reminder
+  order: Sequential
+  sequence: 3
+  body: |
+    Just a reminder, only n days left to submit your papers for [Conference] in the track category. Don't miss out on this opportunity to showcase your research. Please ensure your papers are submitted by insert date.
+  min_duration: 2
+  max_duration: 4
+  frequency: 0.3
+  triples: | 
+    Conference, ConferenceAccount, ConferenceTracks, Location
+
+- template_number: 4
+  template_name: AcceptedPaperAnnouncementTemplate
+  conference_phase: BeforeConference
+  order: Sequential
+  sequence: 4
+  body: |
+    We're thrilled to announce that our paper titled [papertitle] has been accepted in the research track at [Conference]! Heartfelt congratulations to our co-authors @Coauthor1, @Coauthor2. We look forward to sharing our research with you at the conference!
+  min_duration: 2
+  max_duration: 4
+  frequency: 0.3
+  triples: | 
+    Conference, PersonAccount, ConferencePaper, Person
+
+- template_number: 5
+  template_name: EarlyBirdRegistrationTemplate
+  conference_phase: BeforeConference
+  order: Sequential
+  sequence: 5
+  body: |
+    Attention all attendees of [Conference]! Early bird registration is now open!Secure your spot today and take advantage of this special offer. Regular registration will continue until _insert_date_, but why wait? Register now and be part of this exciting event!
+  max_duration: 3.5
+  frequency: 0.4
+  triples: | 
+    Conference, ConferenceAccount, ConferenceTracks, Organizers, Person, Location
+
+- template_number: 6
+  template_name: ResearchGroupPapers
+  conference_phase: DuringConference
+  order: Sequential
+  sequence: 1
+  body: |
+      Our research group, [Organization], is thrilled to present [ConferencePaper] titled papertitle at [Conference] this year. We're excited to share our insights and discoveries with the academic community!
+  min_duration: 3
+  max_duration: 3.5
+  frequency: 0.5
+  triples: | 
+    Conference, PersonAccount, ConferencePaper, Person, Organization, Location
+
+- template_number: 7
+  template_name: InteractiveSessionReminder
+  conference_phase: DuringConference
+  order: Sequential
+  sequence: 2
+  body: |
+      Ready to participate? Our interactive session is just around the corner. Bring your questions, ideas, and enthusiasm for a lively discussion with [Speaker]. Let's make this session engaging and insightful!
+  min_duration: 2
+  max_duration: 4
+  frequency: 0.3
+  triples: | 
+    Conference, PersonAccount, Speaker, Person, Organization, Location 
+
+- template_number: 8
+  template_name: StudentPresentation
+  conference_phase: DuringConference
+  order: Sequential
+  sequence: 3
+  body: |
+      Exciting news! My student is [Attending] [Conference] and will be representing our team by presenting our [ConferencePaper]. Join us in supporting their presentation.
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  triples: | 
+    Conference, PersonAccount, Attendee, ConferencePaper,  Person, Organization, Location 
+
+- template_number: 9
+  template_name: PresenterAnnouncement
+  conference_phase: DuringConference
+  order: Sequential
+  sequence: 4
+  body: |
+      I am really excited for [Attending] [Conference] and presenting our work [ConferencePaper].
+  min_duration: 2
+  max_duration: 3
+  frequency: 0.4
+  triples: | 
+    Conference, PersonAccount, Attendee, ConferencePaper,  Person, Organization, Location
+
+- template_number: 10
+  template_name: VolunteerTemplate
+  conference_phase: BeforeConference
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Excited to be a [Volunteer] at [Conference] this year! Looking forward to meeting all the attendees and helping out in any way I can.
+  triples: |
+    Conference, ConferenceAccount, Volunteer, Person, Organization, Location
+
+- template_number: 11
+  template_name: StudentGrantTemplate
+  conference_phase: BeforeConference   
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Exciting news! I've been awarded a [StudentGrant] to attend [Conference]. Can't wait to learn from all the amazing talks and meet so many incredible researchers. Thank you to the [Organizers] for this opportunity. I'm excited to represent [Organization] at the conference! 
+  triples: |
+    Conference, ConferenceAccount, StudentGrant, Organizers, Person, Organization, Location 
+
+- template_number: 12
+  template_name: KeynoteSpeakerTemplate
+  conference_phase: BeforeConference    
+  order: Random
+  account_type: ConferenceAccount
+  body: |
+    We're absolutely thrilled to unveil our keynote [Speaker], who will be headlining the upcoming [Conference]! Get ready for an awe-inspiring experience as speakers take the stage to share their profound insights and expertise.
+  triples: |
+    Conference, ConferenceAccount, Speaker, Person, Orgnization, Location
+
+- template_number: 13
+  template_name: LiveStreamTemplate
+  conference_phase: BeforeConference    
+  order: Random
+  account_type: ConferenceAccount
+  body: |
+    Can't make it to [Conference] in person? No worries! We're live-streaming all keynote sessions and selected talks. Tune in from anywhere in the world and be part of the conference experience. Check out the live stream schedule on our website.
+  triples: |
+    Conference, ConferenceAccount, Organizers, Person, Organization, Location 
+
+- template_number: 14
+  template_name: ScheduleTemplate
+  conference_phase: BeforeConference   
+  order: Random
+  account_type: ConferenceAccount
+  body: |
+    Attention all attendees of [Conference]! The conference schedule is now available. Plan your sessions ahead of time and ensure you don't miss out on any of the amazing presentations. Remember, regular registration remains open until [date], so don't delay—register now to secure your spot!
+  triples: |
+    Conference, ConferenceAccount, Organizers, Person, Organization, Location 
+
+- template_number: 15
+  template_name: ExcitementTemplate
+  conference_phase: BeforeConference    
+  order: Random
+  account_type: PersonAccount
+  body: |
+    So excited to be [Attending] [Conference]! Can't wait to explore new ideas, connect with fellow researchers, and immerse myself in the conference experience. Ready for an amazing time! #ConferenceExcitement
+  triples: |
+    Conference, ConferenceAccount, Attendee, Person, Organization, Location
+
+- template_number: 16
+  template_name: TrendDiscussionTemplate
+  conference_phase: BeforeConference    
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Discussing possible trends at [Conference]. What do you think will be the hot topics? Share your insights and predictions! Let's make this conference even more exciting by anticipating the groundbreaking discussions. #ConferenceTrends #ResearchInsights
+  triples: |
+    Conference, ConferenceAccount, Person, Organization, Location 
+
+- template_number: 17
+  template_name: NetworkingExperience
+  conference_phase: DuringConference    
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Having a great time [Attending], networking and meeting new people at [Conference]. So many interesting conversations!
+  triples: |
+   Conference, ConferenceAccount, Person, Organization, Location 
+
+- template_number: 18
+  template_name: PosterSessionExperience
+  conference_phase: DuringConference    
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Having a great time [Attending] [Conference]. Just got back from a poster session. So many innovative ideas on display!
+  triples: |
+    Conference, ConferenceAccount
+
+- template_number: 19
+  template_name: KeynoteSpeechExperience
+  conference_phase: DuringConference    
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Just [Attending] an amazing keynote speech at [Conference] by [Speaker]. Learned so much!
+  triples: |
+    Conference, ConferenceAccount
+
+- template_number: 20
+  template_name: ConferenceSuccessThankYou
+  conference_phase: AfterConference 
+  order: Random
+  account_type: ConferenceAccount
+  body: |
+    Thank you to all the attendees, speakers, and sponsors who made [Conference] a huge success! We hope you had a great time and learned a lot. See you at the next conference! [Conference Chair]
+  triples: |
+    Conference, ConferenceAccount
+
+- template_number: 21
+  template_name: MemorableConferenceExperience
+  conference_phase: AfterConference 
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Had a great time at [Conference]! The keynote speeches, paper presentations, and networking events were all top-notch. Thanks to everyone who made it a memorable experience!
+  triples: |
+    Conference, PersonAccount, Person, Organization, Location,
+
+- template_number: 22
+  template_name: SuccessfulEventCongratulations
+  conference_phase: AfterConference 
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Congratulations to the organizing committee [Organizers] of [Conference] for putting together a successful event. Kudos to all the volunteers and sponsors who made it possible! See you all next year.
+  triples: |
+    Conference, ConferenceAccount, Organizers
+
+- template_number: 23
+  template_name: BestPaperTrackAwardAnnouncement
+  conference_phase: AfterConference 
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Thrilled to announce that we got the best paper track [Award] at [Conference] for our [ConferencePaper]. [Organization] Tag.
+  triples: |
+    Conference, PersonAccount, ConferencePaper, ConferenceTracks, Award, Person, Organization, Location
+    
+- template_number: 24
+  template_name: ExcitementAboutTheConferenceAnnouncement
+  conference_phase: BeforeConference 
+  order: Random
+  account_type: PersonAccount
+  body: |
+    Absolutely thrilled about the announcement of [Conference Name]! The lineup looks fantastic, and I can't wait to delve into the latest trends and insights in [Industry/Topic]. Counting down the days until the conference kicks off! #Excited #ConferenceSeason
+  triples: |
+    Conference, PersonAccount, Location

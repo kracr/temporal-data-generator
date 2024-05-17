@@ -17,7 +17,6 @@ import org.apache.jena.riot.RDFFormat;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.RDFNode;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -124,7 +123,7 @@ public class ConferenceData {
 	int conferenceDuration_months;
 	long startTimestampMillis;
 
-	public ConferenceStreams(DataGenerator gen, int confIndex, String confInstance,
+	public void ConferenceStreams(DataGenerator gen, int confIndex, String confInstance,
 			Map<String, Map<String, Object>> papers, long startTimestampMillis, String directoryPath, int confCycle) {
 
 		this.gen = gen;

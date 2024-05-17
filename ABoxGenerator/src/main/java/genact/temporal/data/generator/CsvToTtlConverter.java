@@ -14,10 +14,13 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
+//This file was used to convert actual location data from csv files to location.ttl file, so that it can be used as static background 
+//knowledge. Every city has a latitude, logitude and is a aprt of some country
+//This file can be sued in conjuction with Location.owl file
 public class CsvToTtlConverter {
     public static void main(String[] args) throws CsvValidationException {
-        String csvFilePath = "C:/GitHub/OWL2StreamBench/CSVFiles/worldcities.csv";
-        String ttlFilePath = "C:/GitHub/OWL2StreamBench/staticData/cities.ttl";
+        String csvFilePath = "C:/GitHub/temporal-data-generator/worldcities.csv";
+        String ttlFilePath = "C:/GitHub/temporal-data-generator/Ontology/Location.owl";
         Model model = ModelFactory.createDefaultModel();
         try (CSVReader csvReader = new CSVReader(new FileReader(csvFilePath))) {
             String[] header = csvReader.readNext(); // Skip header row
@@ -32,11 +35,11 @@ public class CsvToTtlConverter {
                 String country = line[3];
 
                 // Convert data to RDF triples or perform desired processing
-                addTriple(model, "https://kracr.iiitd.edu.in/genACT#"+city, "RDF.type", "https://kracr.iiitd.edu.in/genACT#City");
-                addTriple(model, "https://kracr.iiitd.edu.in/genACT#"+city, "https://kracr.iiitd.edu.in/genACT#hasLatitude", lat);
-                addTriple(model, "https://kracr.iiitd.edu.in/genACT#"+city, "https://kracr.iiitd.edu.in/genACT#hasLongitude", lng);
-                addTriple(model, "https://kracr.iiitd.edu.in/genACT#"+city, "https://kracr.iiitd.edu.in/genACT#isPartOf", country);
-                addTriple(model, "https://kracr.iiitd.edu.in/genACT#"+country, "RDF.type", "https://kracr.iiitd.edu.in/genACT#Country");
+                addTriple(model, "https://kracr.iiitd.edu.in/Location#"+city, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "https://kracr.iiitd.edu.in/Location#City");
+                addTriple(model, "https://kracr.iiitd.edu.in/Location#"+city, "https://kracr.iiitd.edu.in/Location#hasLatitude", lat);
+                addTriple(model, "https://kracr.iiitd.edu.in/Location#"+city, "https://kracr.iiitd.edu.in/Location#hasLongitude", lng);
+                addTriple(model, "https://kracr.iiitd.edu.in/Location#"+city, "https://kracr.iiitd.edu.in/Location#isPartOf", country);
+                addTriple(model, "https://kracr.iiitd.edu.in/Location#"+country, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "https://kracr.iiitd.edu.in/Location#Country");
             	}}
             	else {
                     System.err.println("Invalid line format: " + Arrays.toString(line));

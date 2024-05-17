@@ -50,15 +50,14 @@ The project repository consists of the following directories:
 
 [Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 2.2 ](#code) for source-code usage instructions). 
 
-[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of 4 Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Twitter Ontology (consisting axioms describing Twitter metadata) and a Location Ontology. Twitter ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
+[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of 4 Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Twitter Ontology (consisting axioms describing Twitter metadata). Twitter ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
 
 [Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of different twitter template yaml files (Before Conference, During Conference and After Conference) that serve as the starting point for our data generator. The directory also consists of yaml mapping files to generate RDF triples according to the placeholders in each twitter template. 
 
-[StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): RDF files consisting of static data information such as conference names, organization names etc.
-
+[StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with Institutes for user Affiliations). 
 [RunnableJars] (#exe) for usage instructions. 
 
-[Streams] A few files consisting of the data generated using GenACT.
+[Streams] A few files consisting of the data generated using GenACT. TweetMetadata, eventData. 
 
 
 

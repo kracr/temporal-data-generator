@@ -23,6 +23,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -51,15 +52,24 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.formats.*;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
-
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.*;
 public class DataGenerator {
 
 	// The code makes use of: 
 	// -config.properties file to adjust the size of the data generated
 	// -twitter templates and rdf mappings files that are in YAML.
 	// authors.csv, papers.csv, cities.csv, 
-	
+	//Twitter metadata goes to separate file, coz thats not required for answering queries.
+	//this file will only be required to obtain timestamps associated with tweetids. 
+	//the actual event data will be saved with tweetid.ttl
+	//and streamed
+	//To save time, different conferences are saved in different folders
+	//At the time of generation itself, we provide 2 types of streams : Conferences, Users
 	int acceptedPaperCount_min;
 	int acceptedPaperCount_max;
 	int acceptedPaperCount;
@@ -69,6 +79,9 @@ public class DataGenerator {
 	int otherPeopleInvolved_min;
 	int otherPeopleInvolved_max;
 	int otherPeopleInvolved;
+	int usersInvolved_min;
+	int usersInvolved_max;
+	int usersInvolved;
 	int organizationCount_min;
 	int acadOrganizationCount_min;
 	int acadOrganizationCount_max;
@@ -100,23 +113,21 @@ public class DataGenerator {
 	List<String> papersList = new ArrayList<>();
 	List<String> cityList = new ArrayList<>();
 	Map<String, Map<String, Object>> papers;
-	Partition partition;
-
+	File streamsDirectory;
+	//Partition partition;
+	Map<String, Map<String, String>> userData;
+	Map<String, Map<String, Object>> paperData;
 	// these are the instances that have been defined in the ontologies
 	String[] TOKEN_ConferenceEventTrack = new String[] { "applicationsTrack", "demoTrack", "doctoralConsortiumTrack",
 			"posterTrack", "researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack" };
 	String[] TOKEN_EventMode = new String[] { "online", "offline", "hybrid" };
 	String[] TOKEN_ChairRole = new String[] { "generalChair", "localChair", "researchTrackChair", "resourcesTrackChair",
 			"trackChair", "tutorialTrackChair", "workshopTrackChair" };
-	// String[] TOKEN_ConferenceList=new String[] {"MOBICOM", "ASPLOS", "ISCA",
-	// "AAAI", "ISWC", "ESWC", "IJCAI", "CIKM", "ACL", "KDD", "ECCV", "ICCV",
-	// "CVPR", "NeurIPS", "WWW", "UbiComp", "SIGIR", "SIGCOMM", "IJCAR", "ICDE",
-	// "AAMAS", "ACMMM", "CAV", "CRYPTO", "HPCA", "FOGA", "ICDM"};
-	// publish streams on a url
 	String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
 			"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
 			"knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing",
 			"quantumComputing", "semanticWeb" };
+	String[] TOKEN_EventPhases= new String[] { };
 	Model staticModel = ModelFactory.createDefaultModel();
 	// Model streamModel = ModelFactory.createDefaultModel();
 	// OWLOntology o2 = createOWLOntology(pm);
@@ -137,14 +148,15 @@ public class DataGenerator {
 	HashMap<Integer, String> map2 = new HashMap<>();
 	HashMap<Integer, String> map3 = new HashMap<>();
 	long startTimestampMillis;
+	List<String> usersList;
 
 	public DataGenerator() {
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		int confNum = 5;
 		int seed = 1;
-		int confCycle = 1;
+		int confCycle = 3;
 		String currentDirectory = System.getProperty("user.dir");
 		File currentDirFile = new File(currentDirectory);
 		String directoryPath = currentDirFile.getParent();
@@ -178,10 +190,10 @@ public class DataGenerator {
 
 	// data generator starts with selecting the name of the authors, paper,
 	// conferences, organizations, locations randomly
-	// and storing them to a data structure and utilize them for generating the instances
+	// and storing them to a data structure and utilize them for generating the instances in the later part of the code
 	//tracks, authorids and affiliations are assigned randomly 
 	//currently we have data for 27 conferences starting from the year 2000 to 2022
-	public void start(int confNum, int confCycle, String directoryPath, int seed, long startTimestampMillis) {
+	public void start(int confNum, int confCycle, String directoryPath, int seed, long startTimestampMillis) throws IOException {
 	
 		this.directoryPath = directoryPath;
 		this.startTimestampMillis = startTimestampMillis;
@@ -189,7 +201,11 @@ public class DataGenerator {
 		if (!staticDirectory.exists()) {
 			staticDirectory.mkdirs();
 		}
-		//static file consists of static information such as conferences, cities in rdf format. 
+		//static file consists of static information such as conferences, cities in rdf format. There will be
+		// a single static file for each run of the generated data. 
+		//location related details are in a separate owl file
+		//static twitter data is also in a separate static file such as twitter ids associated with different users.
+		//their bios and affiliation can change so they are part of dynamic data streams 
 		
 		this.staticFile_rdf = new File(this.staticDirectory + "/conf.n3");
 
@@ -215,6 +231,11 @@ public class DataGenerator {
 			// this.requiredABoxFormat=prop.getProperty("requiredABoxFormat");
 			this.acceptedPaperCount_min = Integer.parseInt(prop.getProperty("acceptedPaperCount_min"));
 			this.acceptedPaperCount_max = Integer.parseInt(prop.getProperty("acceptedPaperCount_max"));
+
+			this.usersInvolved_min = Integer.parseInt(prop.getProperty("usersInvolved_min"));
+			this.usersInvolved_max = Integer.parseInt(prop.getProperty("usersInvolved_max"));
+			this.usersInvolved=this.random.nextInt(usersInvolved_max - usersInvolved_min + 1)
+					+ usersInvolved_min;
 			this.peopleDirectlyInvolved_min = Integer.parseInt(prop.getProperty("peopleDirectlyInvolved_min"));
 			this.peopleDirectlyInvolved_max = Integer.parseInt(prop.getProperty("peopleDirectlyInvolved_max"));
 			this.otherPeopleInvolved_min = Integer.parseInt(prop.getProperty("otherPeopleInvolved_min"));
@@ -231,6 +252,7 @@ public class DataGenerator {
 			this.conferenceDuration_max_months = Integer.parseInt(prop.getProperty("conferenceDuration_max_months"));
 			this.cityCount_min = Integer.parseInt(prop.getProperty("cityCount_min"));
 			this.cityCount_max = Integer.parseInt(prop.getProperty("cityCount_max"));
+			
 //            this.publicationNum_Min=Integer.parseInt(prop.getProperty("publicationNum_Min"));
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -243,134 +265,183 @@ public class DataGenerator {
 				}
 			}
 		}
+		
+		 int totalUserCount = this.usersInvolved_max * this.confNum * this.confCycle * 10;
+		 int totalPaperCount=this.acceptedPaperCount_max * this.confNum * this.confCycle * 10;
+		// Load display names from authors.csv
+	        List<String> displayNames = loadDisplayNames(this.directoryPath +"/CSVFiles/authors.csv");
+	        List<String> paperTitles = loadDisplayNames(this.directoryPath +"/CSVFiles/papers.csv");
+	        // Load affiliations from Organization.owl
+	        List<String> affiliations = loadAffiliations(this.directoryPath+"/Ontology/Organization.owl");
+
+	        // Generate user data
+	        this.userData = generateUserData(totalUserCount, displayNames, affiliations);
+	        this.paperData = generatePaperData(totalPaperCount, paperTitles, userData);
+	        // Print user data for verification
+	        for (Map.Entry<String, Map<String, String>> entry : this.userData.entrySet()) {
+	            System.out.println("UserID: " + entry.getKey() + ", Data: " + entry.getValue());
+	        }
+
 		this.generate(seed);
 	}
+	private static Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles, Map<String, Map<String, String>> userData) {
+        Map<String, Map<String, Object>> paperData = new HashMap<>();
+        Random random = new Random();
+        String[] conferenceTracks = {"applicationsTrack", "demoTrack", "doctoralConsortiumTrack", "posterTrack", "researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack"};
 
+        List<String> students = userData.entrySet().stream()
+                .filter(entry -> entry.getValue().get("designation").equals("Student") || entry.getValue().get("designation").equals("PhD Student"))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+
+        List<String> professors = userData.entrySet().stream()
+                .filter(entry -> entry.getValue().get("designation").equals("Professor"))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+
+        List<String> otherUsers = userData.entrySet().stream()
+                .filter(entry -> !(entry.getValue().get("designation").equals("Student") || entry.getValue().get("designation").equals("PhD Student") || entry.getValue().get("designation").equals("Professor")))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+
+        for (int i = 0; i < totalPaperCount; i++) {
+            String paperId = "paper" + (i + 1);
+            String paperTitle = paperTitles.get(random.nextInt(paperTitles.size()));
+            String conferenceTrack = conferenceTracks[random.nextInt(conferenceTracks.length)];
+
+            List<String> authorList = new ArrayList<>();
+            authorList.add(students.get(random.nextInt(students.size())));  // First author as a student
+
+            int authorCount = 1 + random.nextInt(7);  // Total authors between 1 and 8
+            for (int j = 1; j < authorCount - 1; j++) {
+                String author = otherUsers.get(random.nextInt(otherUsers.size()));
+                if (!authorList.contains(author)) {
+                    authorList.add(author);
+                }
+            }
+            
+            authorList.add(professors.get(random.nextInt(professors.size())));  // Last author as a professor
+
+            Map<String, Object> paperMetaData = new HashMap<>();
+            paperMetaData.put("PaperTitle", paperTitle);
+            paperMetaData.put("ConferenceTrack", conferenceTrack);
+            paperMetaData.put("AuthorList", authorList);
+
+            paperData.put(paperId, paperMetaData);
+        }
+
+        return paperData;
+    }
+	private static List<String> loadDisplayNames(String filePath) throws IOException {
+        List<String> displayNames = new ArrayList<>();
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = br.readLine()) != null) {
+            displayNames.add(line.split(",")[0]); // Assuming display name is in the first column
+        }
+        br.close();
+        return displayNames;
+    }
+    public static List<String> readPaperTitles(String filePath) throws IOException {
+        List<String> paperTitles = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                // Assuming the paper title is in the first column of the CSV
+                String[] values = line.split(",");
+                if (values.length > 0) {
+                    paperTitles.add(values[0]);
+                }
+            }
+        }
+        return paperTitles;
+    }
+    private static List<String> loadAffiliations(String owlFilePath) {
+        List<String> affiliations = new ArrayList<>();
+        String queryStr = "SELECT ?researchGroup WHERE { ?researchGroup a <https://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> }";
+        Query query = QueryFactory.create(queryStr);
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, ModelFactory.createDefaultModel().read(owlFilePath))) {
+            ResultSet results = qexec.execSelect();
+            while (results.hasNext()) {
+                QuerySolution soln = results.nextSolution();
+                affiliations.add(soln.getResource("researchGroup").getURI());
+            }
+        }
+        return affiliations;
+    }
+
+    private static Map<String, Map<String, String>> generateUserData(int totalUserCount, List<String> displayNames, List<String> affiliations) {
+        Map<String, Map<String, String>> userData = new HashMap<>();
+        Random random = new Random();
+        List<String> designations = Arrays.asList("Student", "PhDStudent", "Professor", "Researcher", "Faculty");
+
+        int studentCount = (int) (totalUserCount * 0.7);
+        int phdStudentCount = Math.min(20, (int) (totalUserCount * 0.1));
+        int remainingCount = totalUserCount - studentCount - phdStudentCount;
+
+        Map<String, Integer> designationCounts = new HashMap<>();
+        designationCounts.put("Student", studentCount);
+        designationCounts.put("PhD Student", phdStudentCount);
+        designationCounts.put("Professor", remainingCount / 3);
+        designationCounts.put("Researcher", remainingCount / 3);
+        designationCounts.put("Faculty", remainingCount - (2 * (remainingCount / 3)));
+
+        for (int i = 0; i < totalUserCount; i++) {
+            String userId = "user" + (i + 1);
+            String userName = userId;
+            String displayName = displayNames.get(random.nextInt(displayNames.size()));
+            String affiliation = affiliations.get(random.nextInt(affiliations.size()));
+
+            String designation = null;
+            while (designation == null) {
+                String potentialDesignation = designations.get(random.nextInt(designations.size()));
+                if (designationCounts.get(potentialDesignation) > 0) {
+                    designation = potentialDesignation;
+                    designationCounts.put(potentialDesignation, designationCounts.get(potentialDesignation) - 1);
+                }
+            }
+
+            Map<String, String> userMetaData = new HashMap<>();
+            userMetaData.put("userName", userName);
+            userMetaData.put("displayName", displayName);
+            userMetaData.put("affiliation", affiliation);
+            userMetaData.put("designation", designation);
+
+            userData.put(userId, userMetaData);
+        }
+
+        return userData;
+    }
 	private void generate(int seed) {
-		this.partition = new Partition();
 		// code for creating organization mappings
-		this.researchGroupCount = random.nextInt(researchGroupCount_max - researchGroupCount_min + 1)
-				+ researchGroupCount_min;
-		this.collegeCount = random.nextInt(collegeCount_max - collegeCount_min + 1) + collegeCount_min;
-		this.acadOrganizationCount = random.nextInt(acadOrganizationCount_max - acadOrganizationCount_min + 1)
-				+ acadOrganizationCount_min;
-		this.nonAcadOrganizationCount = random.nextInt(nonAcadOrganizationCount_max - nonAcadOrganizationCount_min + 1)
-				+ nonAcadOrganizationCount_min;
-		this.peopleDirectlyInvolved = random.nextInt(peopleDirectlyInvolved_max - peopleDirectlyInvolved_min + 1)
-				+ peopleDirectlyInvolved_min;
-		this.otherPeopleInvolved = random.nextInt(otherPeopleInvolved_max - otherPeopleInvolved_min + 1)
-				+ otherPeopleInvolved_min;
-		this.cityCount = random.nextInt(cityCount_max - cityCount_min + 1) + cityCount_min;
-		this.acceptedPaperCount = random.nextInt(acceptedPaperCount_max - acceptedPaperCount_min + 1)
-				+ acceptedPaperCount_min;
-		// also include details for tweet metadata, userid, username, affiliation
-		// then another static data file consisting of locations of the organizations
-		// and different conferences held so far
-		// Create lists to store research groups, colleges, academic organizations, and
-		// non-academic organizations
-		// hence different static files for location related details (for the
-		// conferences held and organizations) and tweetmetadata
-		// also another static file, created from csv, that consists of city names
-		// mapped with countries, their latitude and longitudes
-		List<String> researchGroups = new ArrayList<>();
-		List<String> colleges = new ArrayList<>();
-		List<String> academicOrganizations = new ArrayList<>();
-		List<String> nonAcademicOrganizations = new ArrayList<>();
-		List<String> peopleDirectlyInvolvedList = new ArrayList<>();
-		List<String> otherPeopleInvolvedList = new ArrayList<>();
-		List<String> papersList = new ArrayList<>();
-		List<String> cityList = new ArrayList<>();
 
-		String authorsCsvFilePath = directoryPath +"/CSVFiles/authors.csv";
-		String papersCsvFilePath = directoryPath + "/CSVFiles/papers.csv";
-		String worldCitiesCsvFilePath = directoryPath +"/CSVFiles/worldcities.csv";
+		
+		
+		List<String> researchGroups = new ArrayList<>(); //obtained from organization.owl file using sparql query
+		//List<String> cityList = new ArrayList<>(); //not needed as this info is already part of organization.owl
+		List<String> usersList = new ArrayList<>(); //obtain all the user names from the csv file
+		List<String> papersList = new ArrayList<>(); //obtain all the paper names from the csv file
+		//the above lists are used to create random datastructures for each conference
+		String authorsCsvFilePath = this.directoryPath +"/CSVFiles/authors.csv";
+		String papersCsvFilePath = this.directoryPath + "/CSVFiles/papers.csv";		
+ 
+	
+
+
+	//	String worldCitiesCsvFilePath = this.directoryPath +"/CSVFiles/worldcities.csv";
 
 		// Read first column of authors CSV file
-		this.peopleDirectlyInvolvedList = readFirstColumnRandomly(authorsCsvFilePath, this.peopleDirectlyInvolved);
-		this.otherPeopleInvolvedList = readFirstColumnRandomly(authorsCsvFilePath, this.otherPeopleInvolved);
-		this.papersList = readFirstColumnRandomly(papersCsvFilePath, this.acceptedPaperCount*1000);
-		this.cityList = readFirstColumnRandomly(worldCitiesCsvFilePath, this.cityCount);
-		System.out.println(this.cityList);
+		//this.usersList=readFirstColumnRandomly(authorsCsvFilePath, this.peopleDirectlyInvolved);
+		this.papersList = readFirstColumnRandomly(papersCsvFilePath, this.acceptedPaperCount*1000); //papers cant be repeated in any cnference cycle / across cofnerences
+		//this.cityList = readFirstColumnRandomly(worldCitiesCsvFilePath, this.cityCount);
+		//System.out.println(this.cityList);
 
 		String instance, concept, objectProperty, dataProperty;
 		String subject, predicate, object, city;
+		
+		//use owlapi to find researchgroupds from the organization.owl file
 		// Generate random names for research groups, colleges, academic organizations,
 		// and non-academic organizations
-		for (int i = 1; i <= researchGroupCount; i++) {
-			researchGroups.add("researchGroup" + i);
-			instance = "https://kracr.iiitd.edu.in/OWL2Bench#researchGroup" + i;
-			concept = "https://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup";
-			classAssertion(concept, instance);
-		}
-
-		for (int i = 1; i <= collegeCount; i++) {
-			colleges.add("college" + i);
-			instance = "https://kracr.iiitd.edu.in/OWL2Bench#college" + i;
-			concept = "https://kracr.iiitd.edu.in/OWL2Bench#College";
-			classAssertion(concept, instance);
-		}
-
-		for (int i = 1; i <= acadOrganizationCount; i++) {
-			academicOrganizations.add("academicOrganization" + i);
-			instance = "https://kracr.iiitd.edu.in/OWL2Bench#academicOrganization" + i;
-			concept = "https://kracr.iiitd.edu.in/OWL2Bench#AcademicOrganization";
-			classAssertion(concept, instance);
-
-		}
-
-		for (int i = 1; i <= nonAcadOrganizationCount; i++) {
-			nonAcademicOrganizations.add("nonAcademicOrganization " + i);
-			instance = "https://kracr.iiitd.edu.in/OWL2Bench#noncAcademicOrganization" + i;
-			concept = "https://kracr.iiitd.edu.in/OWL2Bench#NonAcademicOrganization";
-			classAssertion(concept, instance);
-
-		}
-
-		// Map research groups to colleges
-		// Map<String, String> researchGroupToCollegeMap = new HashMap<>();
-		for (String researchGroup : researchGroups) {
-			// Check if the research group should be mapped with a college
-			if (random.nextBoolean()) {
-				String college = getRandomElement(colleges, random);
-				subject = "https://kracr.iiitd.edu.in/OWL2Bench#" + researchGroup;
-				predicate = "https://kracr.iiitd.edu.in/OWL2Bench#isPartOf";
-				object = "https://kracr.iiitd.edu.in/OWL2Bench#" + college;
-				objectPropertyAssertion(subject, predicate, object);
-				// researchGroupToCollegeMap.put(researchGroup, college);
-			}
-		}
-
-		// Map research groups to non-academic organizations
-		// Map<String, String> researchGroupToNonAcadOrganizationMap = new HashMap<>();
-		for (String researchGroup : researchGroups) {
-			// Check if the research group should be mapped with a non-academic organization
-			if (random.nextBoolean()) {
-				String nonAcadOrganization = getRandomElement(nonAcademicOrganizations, random);
-				// objectPropertyAssertion(getOWL2BenchObjectProperty("isPartOf"),getOWL2BenchNamedIndividual(researchGroup),getOWL2BenchNamedIndividual(nonAcadOrganization));
-				subject = "https://kracr.iiitd.edu.in/OWL2Bench#" + researchGroup;
-				predicate = "https://kracr.iiitd.edu.in/OWL2Bench#isPartOf";
-				object = "https://kracr.iiitd.edu.in/OWL2Bench#" + nonAcadOrganization;
-				city = getRandomElement(this.cityList, random);
-				objectPropertyAssertion(subject, predicate, object);
-				objectPropertyAssertion(object, "https://kracr.iiitd.edu.in/genACT#hasLocation", city);
-				// researchGroupToNonAcadOrganizationMap.put(researchGroup,
-				// nonAcadOrganization);
-			}
-		}
-
-		// Map colleges to academic organizations
-		// Map<String, String> collegeToAcadOrganizationMap = new HashMap<>();
-		for (String college : colleges) {
-			String acadOrganization = getRandomElement(academicOrganizations, random);
-			// objectPropertyAssertion(getOWL2BenchObjectProperty("isPartOf"),getOWL2BenchNamedIndividual(college),getOWL2BenchNamedIndividual(acadOrganization));
-			subject = "https://kracr.iiitd.edu.in/OWL2Bench#" + college;
-			predicate = "https://kracr.iiitd.edu.in/OWL2Bench#isPartOf";
-			object = "https://kracr.iiitd.edu.in/OWL2Bench#" + acadOrganization;
-			city = getRandomElement(this.cityList, random);
-			objectPropertyAssertion(subject, predicate, object);
-			objectPropertyAssertion(object, "https://kracr.iiitd.edu.in/genACT#hasLocation", city);
-			// collegeToAcadOrganizationMap.put(college, acadOrganization);
-		}
 
 		// code for finding paper instances from papers.csv file and store them in
 		// availableConferences hash set
@@ -386,9 +457,9 @@ public class DataGenerator {
 		// both affiliation and location will be a map.
 		// such things can be assigned in this part and reused in different
 		// conferences.the map keeps updating
-		File directory = new File(this.directoryPath + "/Streams/");
-		 if (directory.exists() && directory.isDirectory()) {
-	            File[] files = directory.listFiles();
+		this.streamsDirectory = new File(this.directoryPath + "/Streams/");
+		 if (streamsDirectory.exists() && streamsDirectory.isDirectory()) {
+	            File[] files = streamsDirectory.listFiles();
 
 	            // Check if there are any files in the directory
 	            if (files != null) {
@@ -409,7 +480,7 @@ public class DataGenerator {
 	        } else {
 	            System.err.println("Invalid directory path or directory does not exist.");
 	        }
-		this.conferences = new ConferenceStreams[this.confNum];
+//		this.conferences = new ConferenceStreams[this.confNum];
 
 		// Generates conference instances
 		ExecutorService executor = Executors.newFixedThreadPool(confNum);
@@ -417,7 +488,7 @@ public class DataGenerator {
 			final int confIndex = i;
 			Runnable task = () -> {
 				System.out.println("Started Conference Instance " + confIndex);
-				this.conferences[confIndex] = new ConferenceStreams(this, confIndex,this.directoryPath);
+				this.conferences[confIndex] = new ConferenceStreams(this, confIndex);
 			};
 			executor.submit(task);
 		}
@@ -487,55 +558,6 @@ public class DataGenerator {
 		int index = random.nextInt(list.size());
 		return list.get(index);
 	}
-
-//	public Map<String, Map<String, Object>> readCSVFiles(String papersFile, String authorsFile) {
-//		Map<String, Map<String, Object>> paperDetails = new HashMap<>();
-//		// Read the papers.csv file and store the paper titles in a HashMap
-//		try (CSVReader reader = new CSVReader(new FileReader(papersFile))) {
-//			String[] line;
-//			while ((line = reader.readNext()) != null) {
-//				String paperId = sanitizeUri(line[0]);
-//				String title = sanitizeUri(line[1]);
-//
-//				// Check if the paper belongs to the desired venue
-//				Map<String, Object> paperInfo = new HashMap<>();
-//				paperInfo.put("title", title);
-//				paperInfo.put("authors", new ArrayList<String>());
-//				paperDetails.put(paperId, paperInfo);
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//
-//		// Read the authors.csv file and store the author names in a list for each paper
-//		try (CSVReader reader = new CSVReader(new FileReader(authorsFile))) {
-//			String[] line;
-//			while ((line = reader.readNext()) != null) {
-//				String paperId = sanitizeUri(line[0]);
-//				String authorName = sanitizeUri(line[1]);
-//
-//				// Check if the paper belongs to the desired venue and is present in the
-//				// paperDetails map
-//				if (paperDetails.containsKey(paperId)) {
-//					List<String> authorsList = (List<String>) paperDetails.get(paperId).get("authors");
-//					authorsList.add(authorName);
-//				}
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		return paperDetails;
-//	}
-//
-//	private String sanitizeUri(String uri) {
-//		// Replace spaces with underscores
-//		String sanitizedUri = uri.replace(" ", "_");
-//
-//		// Remove characters that may cause issues in URIs
-//		sanitizedUri = sanitizedUri.replaceAll("[^\\w-]", "");
-//
-//		return sanitizedUri;
-//	}
 
 	public void classAssertion(String concept, String instance) {
 		Resource Concept = this.staticModel.createResource(concept);
