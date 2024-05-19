@@ -4,7 +4,8 @@
 
 package genact.temporal.data.generator;
 
-import org.apache.jena.query.ARQ;
+import org.apache.jena.query.ARQ;import java.util.UUID;
+import org.apache.jena.rdf.model.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;

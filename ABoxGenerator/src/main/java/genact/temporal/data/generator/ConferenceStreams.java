@@ -92,6 +92,7 @@ randomly picked a paper to map the last authors in the author list as the keynot
 //for each conference, we can have a start time that's within a range. For the dataset we provide we chose 6 months, users
 //can change it
 public class ConferenceStreams {
+	
 	DataGenerator gen;
 	BeforeConference bc;
 	DuringConference dc;
@@ -118,16 +119,13 @@ public class ConferenceStreams {
 	String[] categories = { "Conference Announcement", "Call for Papers", "Submission Reminder", "Notification",
 			"Registration Reminder", "Before Conference", "During Conference", "After Conference" };
 	long currentTimeMillis;
-	String genACT_URL = "https://kracr.iiitd.edu.in/genACT#";
+	String ACE_URL = "https://kracr.iiitd.edu.in/AcademicConferenceEvent#";
 	String OWL2Bench_URL = "https://kracr.iiitd.edu.in/OWL2Bench#";
-
+	String Location_URL = "https://kracr.iiitd.edu.in/Location#";
+	String Twitter_URL = "https://kracr.iiitd.edu.in/Twitter#";
 	String directoryPath;
 	File streamsDirectory;
-	File tweetFile_n3;
-	File tweetFile_rdf;
-	Property rdfSubject = RDF.subject;
-	Property rdfPredicate = RDF.predicate;
-	Property rdfObject = RDF.object;
+	File confDirectory;
 	int acceptedPaperCount_min;
 	int acceptedPaperCount_max;
 	int peopleDirectlyInvolved_min;
@@ -175,27 +173,116 @@ public class ConferenceStreams {
 	List<String> papersList = new ArrayList<>();
 	List<String> cityList = new ArrayList<>();
 	CountDownLatch latch;
-	private Object usersList;
+	Object usersList;
 	Map<String, Map<String, Object>> conferencePaperList;
-	private static final double RANDOM_TEMPLATE_PROBABILITY = 0.5;
-	 Map<String, List<String>> volunteerAndStudentGrantList;
-	 Map<String, List<String>> organizingCommitteeList;
-	 Map<String, List<String>> speakerList;
-	 
-	public ConferenceStreams(DataGenerator gen, int confIndex) {
+	Map<String, List<String>> volunteerAndStudentGrantList;
+	Map<String, List<String>> organizingCommitteeList;
+	Map<String, List<String>> speakerList;
+	Property rdfSubject,rdfPredicate,rdfObject,rdfType;
+	Property hasGeneralChair,getsStudentGrantFor, hasAuthor, isAuthorOf, hasLocalChair, hasResearchTrackChair, hasResourceTrackChair, posts, hasTweetID, hasUserID, hasDisplayName, volunteersFor, hasHashtag, isAboutEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation, hasDateTimestamp, isAboutEvent, hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName, hasEventMode, hasWebsiteURL, hasLocation, hasEdition, hasPaperTrack, hasTrackChair, hasTitle, hasPaperDomain, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper;
+	File tweetMetaData_n3;
+	File eventData_n3;
+	RDFWriter tweetMetaDataWriter;
+	RDFWriter tweetEventDataWriter;
+	Model tweetMetaProperties = ModelFactory.createDefaultModel();
+	Model eventDataProperties = ModelFactory.createDefaultModel();
+	String[] TOKEN_EventMode;
+	String[] TOKEN_ConferenceEventTrack;
+    Resource PersonAccount = tweetMetaProperties.createResource(Twitter_URL + "PersonAccount");
+    Resource ConferenceAccount = tweetMetaProperties.createResource(Twitter_URL + "ConferenceAccount");
+    Resource OrganizationAccount = tweetMetaProperties.createResource(Twitter_URL + "OrganizationAccount");  
+    Resource Tweet = tweetMetaProperties.createResource(Twitter_URL + "Tweet");
+    Resource City = eventDataProperties.createResource(Location_URL + "City");
+    Resource Conference = eventDataProperties.createResource(ACE_URL + "Conference");
+    Resource ConferenceTracks = eventDataProperties.createResource(ACE_URL + "ConferenceEventTrack");
+    Resource ConferencePaper = eventDataProperties.createResource(ACE_URL + "ConferencePaper");
+    Resource Person = eventDataProperties.createResource("http://xmlns.com/foaf/0.1/" + "Person");
+    Resource Organizers = eventDataProperties.createResource(ACE_URL + "Organizers");
+    Resource Attending = eventDataProperties.createResource(ACE_URL + "Attendee");
+    //Resource Volunteer = eventDataProperties.createResource(ACE_URL + "Volunteer");
+    Resource StudentGrant = eventDataProperties.createResource(ACE_URL + "StudentGrant");
+    Resource Speaker = eventDataProperties.createResource(ACE_URL + "Speaker");
+    Resource Award = eventDataProperties.createResource(ACE_URL + "Award");
+    Resource ResearchGroup = eventDataProperties.createResource(OWL2Bench_URL + "ResearchGroup");
+    Resource PaperTrack = eventDataProperties.createResource(ACE_URL + "PaperTrack");
+    Resource Organization = eventDataProperties.createResource("http://xmlns.com/foaf/0.1/"  + "Organization");
+    Resource Author = eventDataProperties.createResource(ACE_URL + "Author");
+    Resource Student = eventDataProperties.createResource(ACE_URL + "Student");
+    Resource PhDStudent = eventDataProperties.createResource(ACE_URL + "PhDStudent");
+    Resource InvitedTalks = eventDataProperties.createResource(ACE_URL + "InvitedTalks");
+    Resource KeynoteTalks = eventDataProperties.createResource(ACE_URL + "KeynoteTalks");
+    Resource LightningTalks = eventDataProperties.createResource(ACE_URL + "LightningTalks");
+    Resource Presentations = eventDataProperties.createResource(ACE_URL + "Presentations");
+    Resource ComputerScienceDomain = eventDataProperties.createResource(ACE_URL + "ComputerScienceDomain");
+    Resource InvitedTalkSpeakerRole = eventDataProperties.createResource(ACE_URL + "InvitedTalkSpeakerRole");
+    Resource KeynoteSpeakerRole = eventDataProperties.createResource(ACE_URL + "KeynoteTalkSpeakerRole");
+    Resource SpeakerRole = eventDataProperties.createResource(ACE_URL + "SpeakerRole");
+    Resource MainConferenceAnnouncementPhase = eventDataProperties.createResource(ACE_URL + "MainConferenceAnnouncementPhase");
+    Resource CallForPapersAnnouncementPhase = eventDataProperties.createResource(ACE_URL + "CallForPapersAnnouncementPhase");
+    Resource AcceptedPapersNotificationPhase = eventDataProperties.createResource(ACE_URL + "AcceptedPapersNotificationPhase");
+    Resource PaperSubmissionReminderPhase = eventDataProperties.createResource(ACE_URL + "PaperSubmissionReminderPhase");
+    Resource RegistrationReminderPhase = eventDataProperties.createResource(ACE_URL + "RegistrationReminderPhase");
+
+	Map<String, Map<String, String>> userData;
+	Map<String, Map<String, Object>> paperData;
+    public ConferenceStreams(DataGenerator gen, int confIndex) {
+        this.rdfType = RDF.type;
+        this.rdfSubject = RDF.subject;
+        this.rdfPredicate = RDF.predicate;
+        this.rdfObject = RDF.object;
+        this.posts = tweetMetaProperties.createProperty(Twitter_URL + "posts");
+        this.hasTweetID = tweetMetaProperties.createProperty(Twitter_URL + "hasTweetID");
+        this.hasUserID = tweetMetaProperties.createProperty(Twitter_URL + "hasUserID");
+        this.hasDisplayName = tweetMetaProperties.createProperty(Twitter_URL + "hasDisplayName");
+        this.hasHashtag = tweetMetaProperties.createProperty(Twitter_URL + "hasHashtag");
+        this.isAboutEventPhase = tweetMetaProperties.createProperty(Twitter_URL + "isAboutEventPhase");
+        this.hasDateTimestamp = tweetMetaProperties.createProperty(Twitter_URL + "hasDateTimestamp");
+        this.isAboutEvent = tweetMetaProperties.createProperty(Twitter_URL + "isAboutEvent");
+        this.mentionsPerson = tweetMetaProperties.createProperty(Twitter_URL + "mentionsPerson");
+        this.mentionsConference = tweetMetaProperties.createProperty(Twitter_URL + "mentionsConference");
+        this.mentionsOrganization = tweetMetaProperties.createProperty(Twitter_URL + "mentionsOrganization");
+        this.hasUserName = tweetMetaProperties.createProperty(Twitter_URL + "hasUserName");
+        this.hasAffiliation = tweetMetaProperties.createProperty(Twitter_URL + "hasAffiliation");
+        this.hasDesignation = tweetMetaProperties.createProperty(Twitter_URL + "hasDesignation");
+        this.hasId = tweetMetaProperties.createProperty(Twitter_URL + "hasId");
+        this.hasConferenceName = eventDataProperties.createProperty(ACE_URL + "hasConferenceName");
+        this.hasEventMode = eventDataProperties.createProperty(ACE_URL + "hasEventMode");
+        this.hasWebsiteURL = eventDataProperties.createProperty(ACE_URL + "hasWebsiteURL");
+        this.hasLocation = eventDataProperties.createProperty(ACE_URL + "hasLocation");
+        this.hasEdition = eventDataProperties.createProperty(ACE_URL + "hasEdition");
+        this.hasPaperTrack = eventDataProperties.createProperty(ACE_URL + "hasPaperTrack");
+        this.hasTrackChair = eventDataProperties.createProperty(ACE_URL + "hasTrackChair");
+        this.hasTitle = eventDataProperties.createProperty(ACE_URL + "hasTitle");
+        this.hasPaperDomain = eventDataProperties.createProperty(ACE_URL + "hasPaperDomain");
+        this.isPresentedBy = eventDataProperties.createProperty(ACE_URL + "isPresentedBy");
+        this.hasRole = eventDataProperties.createProperty(ACE_URL + "hasRole");
+        this.attends = eventDataProperties.createProperty(ACE_URL + "attends");
+        this.isAcceptedAt = eventDataProperties.createProperty(ACE_URL + "isAcceptedAt");
+        this.givesTalk = eventDataProperties.createProperty(ACE_URL + "givesTalk");
+        this.givesTalkOn = eventDataProperties.createProperty(ACE_URL + "givesTalkOn");
+        this.hasPaper = eventDataProperties.createProperty(ACE_URL + "hasPaper");
+        this.volunteersFor = eventDataProperties.createProperty(ACE_URL + "volunteersFor");
+        this.hasGeneralChair= eventDataProperties.createProperty(ACE_URL + "hasGeneralChair");
+        this.hasLocalChair= eventDataProperties.createProperty(ACE_URL + "hasLocalChair");
+        this.hasResearchTrackChair= eventDataProperties.createProperty(ACE_URL + "hasResearchTrackChair");
+        this.hasResourceTrackChair= eventDataProperties.createProperty(ACE_URL + "hasResourceTrackChair");
+        this.hasAuthor= eventDataProperties.createProperty(ACE_URL + "hasAuthor");
+        this.isAuthorOf= eventDataProperties.createProperty(ACE_URL + "isAuthorOf");
+        this.TOKEN_EventMode=gen.TOKEN_EventMode;
+        this.getsStudentGrantFor=eventDataProperties.createProperty(ACE_URL + "getsStudentGrantFor");
+        this.TOKEN_ConferenceEventTrack=gen.TOKEN_ConferenceEventTrack;
 		this.gen = gen;
 		this.confCycle = gen.confCycle;
 		this.confIndex = confIndex;
 		this.startTimestampMillis = gen.startTimestampMillis;
 		this.year = Integer.parseInt(new SimpleDateFormat("yyyy").format(new Date(startTimestampMillis)));
-
+        this.userData=gen.userData;
 		this.papersList = gen.papersList;
 		this.cityList = gen.cityList;
 		this.usersList = gen.usersList;
 		this.researchGroups = gen.researchGroups;
 		this.acceptedPaperCount = gen.random.nextInt(gen.acceptedPaperCount_max - gen.acceptedPaperCount_min + 1)
 				+ gen.acceptedPaperCount_min;
-
 //		CONFERENCE PAPER LIST
 		generateConferencePaperList(gen.paperData);
 
@@ -260,6 +347,10 @@ public class ConferenceStreams {
 			this.streamsDirectory = gen.streamsDirectory;
 			if (!this.streamsDirectory.exists()) {
 				this.streamsDirectory.mkdirs();
+			}
+			this.confDirectory = new File(this.streamsDirectory+"/confInstance/");
+			if (!this.confDirectory.exists()) {
+				this.confDirectory.mkdirs();
 			}
 			this.bc = new BeforeConference(this, beforeConferenceStartMillis, beforeConferenceEndMillis);
 			this.dc = new DuringConference(this, beforeConferenceEndMillis, duringConferenceEndMillis);

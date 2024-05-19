@@ -7,10 +7,7 @@ mapping:
         predicate: posts
         object: ?tweet
       - subject: ?tweet 
-        predicate: hasInformation
-        object: ?information
-      - subject: ?tweet 
-        predicate: isAbout
+        predicate: isAboutEventPhase
         object: ?eventphase
       - subject: ?tweet
         predicate: rdf:type
@@ -19,7 +16,7 @@ mapping:
         predicate: hasDateTimestamp
         object: _timestamp
       - subject: ?tweet
-        predicate: isAbout
+        predicate: isAboutEvent
         object: ?conferenceinstance
       - subject: ?tweet
         predicate: mentions
@@ -41,13 +38,13 @@ mapping:
         object: ?affiliation
       - subject: ?affiliation
         predicate: rdf:type
-        object: ?organization  
-      - subject: ?organization
-        predicate: hasLocation
-        object: ?location        
+        object: ?ResearchGroup       
       - subject: ?personaccount
         predicate: hasUserID
         object: _personaccount
+      - subject: ?personaccount
+        predicate: hasDisplayName
+        object: _displayName        
   - ConferenceAccount:
       - subject: ?conferenceaccount
         predicate: rdf:type
@@ -59,7 +56,7 @@ mapping:
         predicate: rdf:type
         object: Tweet
       - subject: ?tweet 
-        predicate: isAbout
+        predicate: isAboutEventPhase
         object: ?eventphase
       - subject: ?tweet
         predicate: hasInformation
@@ -68,7 +65,7 @@ mapping:
         predicate: hasDateTimestamp
         object: _timestamp
       - subject: ?tweet
-        predicate: isAbout
+        predicate: isAboutEvent
         object: ?conferenceinstance
       - subject: ?tweet
         predicate: mentions
@@ -85,6 +82,9 @@ mapping:
       - subject: ?conferenceaccount
         predicate: hasUserID
         object: _conferenceaccount
+      - subject: ?conferenceaccount
+        predicate: hasDisplayName
+        object: _displayName        
   - Conference:
       - subject: ?conferenceinstance
         predicate: rdf:type
@@ -169,20 +169,10 @@ mapping:
         object: ?affiliation
       - subject: ?affiliation
         predicate: rdf:type
-        object: ?organization  
-      - subject: ?organization
-        predicate: hasLocation
-        object: ?location        
+        object: ResearchGroup         
       - subject: ?postinguser
         predicate: hasUserID
         object: _postinguser
-  - Organization:
-      - subject: ?organization
-        predicate: rdf:type
-        object: Organization
-      - subject: ?subject
-        predicate: hasLocation
-        object: ?location
   - Organizers:
       - subject: ?organizer
         predicate: hasRole

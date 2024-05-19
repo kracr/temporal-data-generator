@@ -76,6 +76,30 @@ This field may change with time</rdfs:comment>
     
 
 
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsConference -->
+
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsConference">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsOrganization">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsPerson -->
+
+    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentionsPerson">
+        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#mentions"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitter#posts -->
 
     <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#posts">
@@ -146,6 +170,7 @@ This field may change with time</rdfs:comment>
     <!-- http://kracr.iiitd.edu.in/AcademicConferenceTwitter#hasUserID -->
 
     <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#hasUserID">
+        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#hasUserName"/>
         <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#hasID"/>
     </owl:DatatypeProperty>
     

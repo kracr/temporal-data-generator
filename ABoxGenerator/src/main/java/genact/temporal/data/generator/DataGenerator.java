@@ -286,6 +286,8 @@ public class DataGenerator {
 	}
 	private static Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles, Map<String, Map<String, String>> userData) {
         Map<String, Map<String, Object>> paperData = new HashMap<>();
+        String[] TOKEN_Domain = { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData", "blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings", "knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "quantumComputing", "semanticWeb" };
+
         Random random = new Random();
         String[] conferenceTracks = {"applicationsTrack", "demoTrack", "doctoralConsortiumTrack", "posterTrack", "researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack"};
 
@@ -322,10 +324,22 @@ public class DataGenerator {
             
             authorList.add(professors.get(random.nextInt(professors.size())));  // Last author as a professor
 
+         
+            
+            List<String> paperDomains = new ArrayList<>();
+            int domainCount = 1 + random.nextInt(3);  // Total domains between 1 and 3
+            for (int k = 0; k < domainCount; k++) {
+                String domain = TOKEN_Domain[random.nextInt(TOKEN_Domain.length)];
+                if (!paperDomains.contains(domain)) {
+                    paperDomains.add(domain);
+                }
+            }
+
             Map<String, Object> paperMetaData = new HashMap<>();
             paperMetaData.put("PaperTitle", paperTitle);
             paperMetaData.put("ConferenceTrack", conferenceTrack);
             paperMetaData.put("AuthorList", authorList);
+            paperMetaData.put("PaperDomains", paperDomains);
 
             paperData.put(paperId, paperMetaData);
         }
@@ -425,13 +439,6 @@ public class DataGenerator {
 		String authorsCsvFilePath = this.directoryPath +"/CSVFiles/authors.csv";
 		String papersCsvFilePath = this.directoryPath + "/CSVFiles/papers.csv";		
  
-	
-
-
-	//	String worldCitiesCsvFilePath = this.directoryPath +"/CSVFiles/worldcities.csv";
-
-		// Read first column of authors CSV file
-		//this.usersList=readFirstColumnRandomly(authorsCsvFilePath, this.peopleDirectlyInvolved);
 		this.papersList = readFirstColumnRandomly(papersCsvFilePath, this.acceptedPaperCount*1000); //papers cant be repeated in any cnference cycle / across cofnerences
 		//this.cityList = readFirstColumnRandomly(worldCitiesCsvFilePath, this.cityCount);
 		//System.out.println(this.cityList);
@@ -443,20 +450,6 @@ public class DataGenerator {
 		// Generate random names for research groups, colleges, academic organizations,
 		// and non-academic organizations
 
-		// code for finding paper instances from papers.csv file and store them in
-		// availableConferences hash set
-//		String papersFile = "papers.csv"; // path to the papers.csv file
-//		String authorsFile = "authors.csv"; // path to the authors.csv file
-		// papers = readCSVFiles(papersFile, authorsFile);
-		// adjust this part here
-		// papers authors to be saved somewhere
-		// locations also to be saved: conferences will have different locations.
-		// different organizations have a certain location
-		// similarly people have a certain affiliation that also changes with some
-		// probability.
-		// both affiliation and location will be a map.
-		// such things can be assigned in this part and reused in different
-		// conferences.the map keeps updating
 		this.streamsDirectory = new File(this.directoryPath + "/Streams/");
 		 if (streamsDirectory.exists() && streamsDirectory.isDirectory()) {
 	            File[] files = streamsDirectory.listFiles();
@@ -582,64 +575,3 @@ public class DataGenerator {
 
 }
 
-//this.conferences = new ConferenceStreams[this.confNum];
-////Random random = new Random(seed); // Set a fixed seed for reproducibility
-//
-//for (int i = 0; i < this.confNum; ++i) {
-//    final int confIndex = i;
-//
-//    long randomOffsetMillis = (long) (random.nextDouble() * sixMonthsInMillis);
-//    long conferenceStartMillis = startTimestampMillis + randomOffsetMillis;
-//    //System.out.println(conferenceStartMillis);
-//    try {
-//        Thread.sleep((long) (random.nextDouble() * 2000)); // Introduce a random delay of up to 2 seconds
-//    } catch (InterruptedException e) {
-//        e.printStackTrace();
-//    }
-//
-//    System.out.println("Started Conference Instance " + confIndex);
-//    this.conferences[confIndex] = new ConferenceStreams(this, confIndex, "conf" + confIndex, papers, conferenceStartMillis, this.directoryPath);
-//}
-//public Map<String, Map<String, Object>> readCSVFiles(String papersFile, String authorsFile)
-//{
-//	Map<String, Map<String, Object>> paperDetails = new HashMap<>();
-//	 // Read the papers.csv file and store the paper titles in a HashMap
-//  try (CSVReader reader = new CSVReader(new FileReader(papersFile))) {
-//      String[] line;
-//      while ((line = reader.readNext()) != null) {
-//          String paperId = line[0];
-//          String title = line[1];
-//          //String venueName = line[2];
-//
-//          // Check if the paper belongs to the desired venue
-//          //if (venueName.equals(venue)) {
-//              Map<String, Object> paperInfo = new HashMap<>();
-//              paperInfo.put("title", title);
-//              paperInfo.put("authors", new ArrayList<String>());
-//              paperDetails.put(paperId, paperInfo);
-////              System.out.println("here"+ paperDetails);
-//         // }
-//      }
-//  } catch (Exception e) {
-//      e.printStackTrace();
-//  }
-//
-//	// Read the authors.csv file and store the author names in a list for each paper
-//	try (CSVReader reader = new CSVReader(new FileReader(authorsFile))) {
-//		String[] line;
-//		while ((line = reader.readNext()) != null) {
-//			String paperId = line[0];
-//			String authorName = line[1];
-//			// Check if the paper belongs to the desired venue and is present in the
-//			// paperDetails map
-//			if (paperDetails.containsKey(paperId)) {
-//				List<String> authorsList = (List<String>) paperDetails.get(paperId).get("authors");
-//				authorsList.add(authorName);
-//			}
-//		}
-//	} catch (Exception e) {
-//		e.printStackTrace();
-//	}
-//	return paperDetails;
-//}
-//
