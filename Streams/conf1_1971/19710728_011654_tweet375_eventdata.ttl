@@ -1,0 +1,41 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user67352>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39179>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2471>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/Location#wittenberg>
+        a       <https://kracr.iiitd.edu.in/Location#City> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50670>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#online> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "https://kracr.iiitd.edu.in/conf1_1971.com" , "www.conf1_1971.com" .

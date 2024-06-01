@@ -1,0 +1,18 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user78948>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11849>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8388> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user78948> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#blockchain> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Memory-Hard Functions from Cryptographic Primitives." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8388>
+        a       <http://xmlns.com/foaf/0.1/Person> .

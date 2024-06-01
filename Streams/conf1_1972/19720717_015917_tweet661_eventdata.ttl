@@ -1,0 +1,18 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user105273>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11855>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64988> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user105273> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "demoTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Quantitative Evaluation of Confidence Measures in a Machine Learning World." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1972> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64988>
+        a       <http://xmlns.com/foaf/0.1/Person> .

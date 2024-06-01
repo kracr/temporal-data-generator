@@ -1,0 +1,43 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user67352>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39179>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/Location#telford>
+        a       <https://kracr.iiitd.edu.in/Location#City> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1970" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#offline> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>
+                <https://kracr.iiitd.edu.in/Location#telford> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1970.com" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2471>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50670>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .

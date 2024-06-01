@@ -1,0 +1,30 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13682>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11852>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user117923> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57106> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57042> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user47152> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13682> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user36774> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "A first evaluation of logic form identification systems." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1972> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user47152>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57106>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57042>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user36774>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user117923>
+        a       <http://xmlns.com/foaf/0.1/Person> .

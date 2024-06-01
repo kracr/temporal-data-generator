@@ -1,0 +1,34 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user100557>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO7RG6" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Ying Feng" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user100557> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet414> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20492>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U98C2RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "He Bai 0003" .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet414>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-04-29T09:21:55.521"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .

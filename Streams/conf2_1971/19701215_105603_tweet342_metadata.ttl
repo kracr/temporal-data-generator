@@ -1,0 +1,74 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2087>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U1C7RG6" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Anna Lisa Gentile" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2087> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet342> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18569>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO71RG7" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Heng Huang" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62661>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U71C7RG2" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Makoto Kogoh" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64104>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U67C9RG4" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "James R. Curran" .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet342>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-12-15T10:56:03.351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user29605>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U19C6RG2" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Peng Wang 0005" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50427>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U39C7RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Takamichi Toda" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39984>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U40C8RG9" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Danuta Ploch" .

@@ -1,0 +1,66 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user19205>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U32C6RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Bing Yin" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user19205> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet360> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user40819>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO13RG3" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Aaron Mueller" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user36073>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U77C9RG6" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Simon Lucey" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user143219>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U33C8RG5" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Xavier Bonnetain" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62290>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U78C5RG9" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Yufei Tang" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet360>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1974-05-04T02:33:46.016"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4360>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U57C6RG4" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Bin Wang 0034" .

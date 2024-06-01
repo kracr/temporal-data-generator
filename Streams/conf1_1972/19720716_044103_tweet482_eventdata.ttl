@@ -1,0 +1,24 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4938>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10522>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user153684> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4938> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user53921> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user29962> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "applicationsTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Stereotypical Motor Movement Detection in Dynamic Feature Space." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1972> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user53921>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user29962>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user153684>
+        a       <http://xmlns.com/foaf/0.1/Person> .

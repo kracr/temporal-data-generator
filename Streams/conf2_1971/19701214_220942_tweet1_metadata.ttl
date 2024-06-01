@@ -1,0 +1,26 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2>
+        a       <https://kracr.iiitd.edu.in/Twitter#ConferenceAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "International Conference on conf2_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet1> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet1>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-12-14T22:09:42.351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf2_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet1> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncementPhase" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsConference>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2> .

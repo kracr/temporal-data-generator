@@ -1,0 +1,69 @@
+<https://kracr.iiitd.edu.in/Location#kegen>
+        a       <https://kracr.iiitd.edu.in/Location#City> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user60764>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20060>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20267>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1970" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#offline> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user60764> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20060> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44222> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>
+                <https://kracr.iiitd.edu.in/Location#kegen> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1970.com" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user729>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2342>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user51845>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet1286>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncementPhase" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user24047>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user42527>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4073>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44749>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44222>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair> .

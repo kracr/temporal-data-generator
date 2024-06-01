@@ -1,0 +1,50 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user35504>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U50C5RG4" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Qingyun Liu" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user41181>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U9C3RG9" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Nicolás D. Rotstein" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet277>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1973-09-02T02:33:46.016"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#blockchain> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user91622>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U60C5RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Teng Xu 0007" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user91622> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet277> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user21953>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U31C2RG6" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Lars R. Knudsen" .

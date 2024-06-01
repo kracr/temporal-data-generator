@@ -1,0 +1,33 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user27139>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user32773>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user124323>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61721>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user14529>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user34481>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user33720>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11851>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user14529> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user124323> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user34481> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user32773> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user33720> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61721> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user27139> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "applicationsTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Top-k graph pattern matching over large graphs." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> .

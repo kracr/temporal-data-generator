@@ -1,0 +1,30 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user65574>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user63015>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user17510>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user95787>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71561>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user5855>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11856>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71561> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user17510> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user65574> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user95787> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user63015> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user5855> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Ungreedy Methods for Chinese Deterministic Dependency Parsing." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1970> .

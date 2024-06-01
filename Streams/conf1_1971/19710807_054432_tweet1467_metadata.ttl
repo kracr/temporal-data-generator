@@ -1,0 +1,147 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44222>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO70RG5" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Carole A. Goble" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user44222" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1>
+        a       <https://kracr.iiitd.edu.in/Twitter#ConferenceAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "International Conference on conf1_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet1467> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet1467>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1971-08-07T05:44:32.521"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf1_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet1467> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncementPhase" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44222> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20060> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44749> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4073> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user51845> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user24047> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20267> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user729> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2342> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user42527> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user60764> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user60764>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U100C1RG7" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Iyad Rahwan" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user60764" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20060>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U45C9RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Zhijie Deng" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user20060" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20267>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U18C1RG10" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Barbara Guidi" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user20267" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user729>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U51C4RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Thomas Minier" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user729" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2342>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U91C10RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Alexander Leitsch" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user2342" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user24047>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U27C9RG6" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Ling Sun 0001" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user24047" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user51845>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U97C5RG7" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Jie Feng" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user51845" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user42527>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U32C4RG1" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Zhongfei Zhang" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user42527" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4073>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U34C6RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Guy Van den Broeck" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user4073" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44749>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U9C8RG4" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Stephen Wan 0001" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user44749" .

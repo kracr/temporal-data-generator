@@ -1,0 +1,28 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4360>
+        a       <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U57C6RG4> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Bin Wang 0034" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user4360> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet382> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet382>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1972-02-19T07:32:37.016"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf0_1972" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet382> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncementPhase" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .

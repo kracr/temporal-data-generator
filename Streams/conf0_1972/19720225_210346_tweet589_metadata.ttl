@@ -1,0 +1,68 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45901>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U64C10RG10" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Yoshiki Mikami" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45901> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user173727>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO50RG7" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Amit Awekar" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user173727> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69750>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U9C1RG5" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Max C. Göbel" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69750> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45891>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U34C2RG2" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Prashant Nalini Vasudevan" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45891> ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45891> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet589> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61020>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U31C2RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Horst Possegger" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61020> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet589>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1972-02-25T21:03:46.016"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .

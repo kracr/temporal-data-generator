@@ -1,0 +1,24 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13531>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10520>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user54965> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13531> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user117349> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user31388> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Compensation based ON/OFF energy saving through dominant sets." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1971> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user54965>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user117349>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user31388>
+        a       <http://xmlns.com/foaf/0.1/Person> .

@@ -1,0 +1,27 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user158905>
+        a       <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <conf1_1970> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrantFor>
+                "conf1_1970" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U61C6RG6> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Heidelinde Hobel" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user158905" ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet334> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet334>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-04-17T03:47:54.521"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf1_1970" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet334> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> .

@@ -1,0 +1,33 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2087>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18569>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62661>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64104>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user29605>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50427>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39984>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11858>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50427> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18569> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39984> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2087> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64104> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user29605> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62661> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "researchTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Abstraction Refinement for Bounded Model Checking." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> .

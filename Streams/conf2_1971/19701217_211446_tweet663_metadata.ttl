@@ -1,0 +1,58 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18215>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U84C6RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Pierpaolo Dondio" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18215> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user68113>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO37RG5" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Nicholas Polson" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user68113> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user126383>
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U37C1RG8" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Blaz Fortuna" ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user126383> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71577>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U48C4RG7" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Peter Knees" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71577> ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71577> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet663> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet663>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-12-17T21:14:46.351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapersNotificationPhase" .

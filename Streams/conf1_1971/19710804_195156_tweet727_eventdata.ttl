@@ -1,0 +1,33 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62626>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user93742>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user33812>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64641>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user47374>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57269>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10514>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user57269> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user93742> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user64641> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user47374> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user33812> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44659> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user62626> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "workshopTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "A Compiler for CPPNs: Transforming Phenotypic Descriptions Into Genotypic Representations." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44659>
+        a       <http://xmlns.com/foaf/0.1/Person> .

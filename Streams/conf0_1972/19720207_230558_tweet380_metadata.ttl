@@ -1,0 +1,27 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user25709>
+        a       <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <conf0_1972> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrantFor>
+                "conf0_1972" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U2C9RG10> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "John Fields" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user25709" ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet380> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet380>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1972-02-07T23:05:58.016"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf0_1972" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet380> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1972> .

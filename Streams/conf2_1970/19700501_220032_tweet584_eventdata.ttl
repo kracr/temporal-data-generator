@@ -1,0 +1,24 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11848>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44803> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user693> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user827> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user32311> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "demoTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Jointly Leveraging Intent and Interaction Signals to Predict User Satisfaction with Slate Recommendations." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user827>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user693>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user32311>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44803>
+        a       <http://xmlns.com/foaf/0.1/Person> .

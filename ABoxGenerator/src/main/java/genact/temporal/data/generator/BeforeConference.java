@@ -11,17 +11,16 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.RDFWriter;
+
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.riot.RDFDataMgr;
 import java.time.temporal.ChronoUnit;
-import org.apache.jena.rdf.model.RDFWriter;
-import org.apache.jena.rdf.model.RDFWriterF;
+
 import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.datatypes.xsd.XSDDatatype;
-import org.apache.jena.rdf.model.Literal;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -29,102 +28,122 @@ import java.util.ArrayList;
 public class BeforeConference {
 	ConferenceStreams conf;
 	Random random;
-	Property rdfSubject = RDF.subject;
 	Property rdfPredicate = RDF.predicate;
-	Property rdfObject = RDF.object;
-	File tweetMetaData_n3;
-	File eventData_n3;
+	File tweetMetaData;
+	File eventData;
 	RDFWriter tweetMetaDataWriter;
 	RDFWriter tweetEventDataWriter;
 	Model tweetMetaDataModel;
 	Model eventDataModel;
-	// Define properties
 
 	public BeforeConference(ConferenceStreams conf, long startTime, long endTime) {
+		this.conf = conf;
 		this.random = conf.random;
 
-		// Convert timestamps to LocalDateTime
+		// Convert timestamps from long to LocalDateTime such as 2007-12-03T10:15:30.
 		LocalDateTime conferenceStart = LocalDateTime.ofInstant(new Date(startTime).toInstant(),
 				ZoneId.systemDefault());
 		LocalDateTime beforeConferenceEnd = LocalDateTime.ofInstant(new Date(endTime).toInstant(),
 				ZoneId.systemDefault());
-
-		// Display timestamps for each phase
-		System.out.println("Cycle " + conf.confCycle);
-		System.out.println("Before Conference Start: " + conferenceStart);
-
 		LocalDateTime mainConfAnnouncementTime = conferenceStart;
-		MainConferenceAnnouncement(mainConfAnnouncementTime);
+		LocalDateTime midConferenceTime = mainConfAnnouncementTime
+				.plusDays(mainConfAnnouncementTime.until(beforeConferenceEnd, ChronoUnit.DAYS) / 2); // Calculate
+																										// mid-conference
+																										// time
+		LocalDateTime acceptedPaperNotificationTime = midConferenceTime;
 
-		LocalDateTime callForPapersTime = conferenceStart.plusDays(this.random.nextInt(2))
+		EarlyConferenceAnnouncement(mainConfAnnouncementTime, beforeConferenceEnd);
+
+		for (int i = 0; i < ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+			LocalDateTime excitementAnnouncementTime = getRandomTimestamp(
+					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(7, 14)),
+					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(22, 30)));
+			ExcitementAboutTheConferenceAnnouncement(excitementAnnouncementTime);
+		}
+
+		// Reminders for paper submissions
+		LocalDateTime paperSubmissionReminderTime = conferenceStart.plusWeeks(2);
+		while (paperSubmissionReminderTime.isBefore(midConferenceTime.minusDays(45))) {
+			PaperSubmissionReminder(paperSubmissionReminderTime);
+			paperSubmissionReminderTime = paperSubmissionReminderTime
+					.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize the interval
+		}
+
+		// Notification Peak
+		// Announcements about accepted papers and insights based on them
+		for (int i = 0; i < conf.notification_peak; i++) {
+			AcceptedPaperNotification(acceptedPaperNotificationTime);
+			acceptedPaperNotificationTime = acceptedPaperNotificationTime
+					.plusDays(ThreadLocalRandom.current().nextInt(2, 5)); // Randomize the interval
+		}
+
+		for (int i = 0; i < ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+			LocalDateTime insightsTime = getRandomTimestamp(midConferenceTime,
+					midConferenceTime.plusDays(ThreadLocalRandom.current().nextInt(1, 7)));
+			InsightsBasedOnAcceptedPapers(insightsTime);
+		}
+
+		// Registration reminders
+		LocalDateTime regReminderTime = midConferenceTime.plusWeeks(1);
+		while (regReminderTime.isBefore(beforeConferenceEnd)) {
+			RegistrationReminder(regReminderTime);
+			regReminderTime = regReminderTime.plusDays(ThreadLocalRandom.current().nextInt(7, 14)); // Randomize the
+																									// interval
+		}
+
+		LocalDateTime last15DaysBeforeConference = beforeConferenceEnd.minusDays(15);
+		BeforeTheConference(last15DaysBeforeConference, beforeConferenceEnd);
+
+	}
+
+	public void EarlyConferenceAnnouncement(LocalDateTime mainConfAnnouncementTime, LocalDateTime beforeConferenceEnd) {
+
+		// Initialize important timestamps for various announcements and reminders
+
+		LocalDateTime callForPapersTime = mainConfAnnouncementTime.plusDays(conf.random.nextInt(2))
 				.plusHours(ThreadLocalRandom.current().nextLong(24))
 				.plusMinutes(ThreadLocalRandom.current().nextLong(60))
 				.plusSeconds(ThreadLocalRandom.current().nextLong(60));
+		// Main conference announcement
+
+		MainConferenceAnnouncement(mainConfAnnouncementTime);
+		// Call for papers announcement
 		CallForPapersAnnouncement(callForPapersTime);
-		LocalDateTime midConferenceTime = conferenceStart
-				.plusDays(conferenceStart.until(beforeConferenceEnd, ChronoUnit.DAYS) / 2); // Adjust conferenceDuration
 
-		LocalDateTime excitementAnnouncementTime = getRandomTimestamp(callForPapersTime, midConferenceTime);
-		ExcitementAboutTheConferenceAnnouncement(excitementAnnouncementTime);
+		// Generate excitement announcements related to the conference
+		// starts after conference announcement and can be posted anytime until 2 weeks
+		for (int i = 0; i < conf.early_announcement_peak; i++) {
+			LocalDateTime excitementAnnouncementTime = getRandomTimestamp(mainConfAnnouncementTime,
+					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(1, 14)));
+			ExcitementAboutTheConferenceAnnouncement(excitementAnnouncementTime);
+		}
+	}
 
-		// Conference phase)
-		LocalDateTime paperSubmissionReminderTime = conferenceStart.plusWeeks(2); // Initial reminder after 2 weeks
-
-		while (paperSubmissionReminderTime.isBefore(mainConfAnnouncementTime.minusWeeks(9))) { // Stop before
-			// notificatons are out
-			// starts
-			// Schedule submission reminder tweet
-			PaperSubmissionReminder(paperSubmissionReminderTime);
-			System.out.println("Paper Submission Reminder Tweet at: " + paperSubmissionReminderTime);
-			paperSubmissionReminderTime = paperSubmissionReminderTime
-					.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize
-			// between
-			// 2-3
-			// weeks
+	public void BeforeTheConference(LocalDateTime last15DaysBeforeConference, LocalDateTime beforeConferenceEnd) {
+		LocalDateTime timestamp;
+		for (int i = 0; i <= conf.random.nextInt(conf.speakerList.size()); i++) {
+			timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
+			KeynotesAndPanelAnnouncement(timestamp);
 		}
 
-		// Timestamp for AcceptedPaperNotification (middle of conference duration)
-		//		midConferenceTime = conferenceStart	.plusDays(conferenceStart.until(beforeConferenceEnd, ChronoUnit.DAYS) / 2); // Adjust conferenceDuration
-		LocalDateTime acceptedPaperNotificationTime = midConferenceTime;
-		LocalDateTime regReminderTime = midConferenceTime.plusWeeks(1);
-		while (acceptedPaperNotificationTime.isBefore(acceptedPaperNotificationTime.plusDays(3))) { // peak about
-			// acceptance
-
-			AcceptedPaperNotification(acceptedPaperNotificationTime);
-			RegistrationReminder(regReminderTime);
-
-			acceptedPaperNotificationTime = acceptedPaperNotificationTime
-					.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize
-			regReminderTime = regReminderTime.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize
-		}
-		LocalDateTime InsightsBasedOnAcceptedPapersTime = getRandomTimestamp(callForPapersTime,
-				acceptedPaperNotificationTime);
-		InsightsBasedOnAcceptedPapers(InsightsBasedOnAcceptedPapersTime);
-
-		LocalDateTime last15DaysBeforeConference = beforeConferenceEnd.minusDays(15);
-
-		LocalDateTime excitementForAttendingTheConferenceTime = getRandomTimestamp(last15DaysBeforeConference,
-				beforeConferenceEnd);
-		while (excitementForAttendingTheConferenceTime.isBefore(beforeConferenceEnd.plusDays(3))) { // peak about
-			// acceptance
-			// starts
-			// Schedule submission reminder tweet
-			KeynotesAndPanelAnnouncement(excitementForAttendingTheConferenceTime);
-			VolunteerandStudentGrantAnnouncement(excitementForAttendingTheConferenceTime);
-
-			ExcitementForAttendingTheConference(excitementForAttendingTheConferenceTime);
-			ScheduleAnnouncement(excitementForAttendingTheConferenceTime);
-
-			excitementForAttendingTheConferenceTime = excitementForAttendingTheConferenceTime
-					.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize
-			// regReminderTime =
-			// regReminderTime.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); //
-			// Randomize
+		// Additional excitement announcements for volunteers and student grants
+		for (int i = 0; i <= conf.random.nextInt(conf.volunteerAndStudentGrantList.size()); i++) {
+			timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
+			VolunteerandStudentGrantAnnouncement(timestamp);
 		}
 
-		// Timestamp for PaperSubmissionReminder (every 2-3 weeks during the Before
+		// General excitement announcements about attending the conference
+		for (int i = 0; i <= ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+			timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
+			ExcitementForAttendingTheConference(timestamp);
+		}
 
-		System.out.println("Before Conference End: " + beforeConferenceEnd);
+		// Schedule announcements leading up to the conference
+		timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
+		while (timestamp.isBefore(beforeConferenceEnd)) {
+			ScheduleAnnouncement(timestamp);
+			timestamp = timestamp.plusDays(ThreadLocalRandom.current().nextInt(5, 7)); // Randomize the interval
+		}
 
 	}
 
@@ -132,10 +151,14 @@ public class BeforeConference {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -144,26 +167,25 @@ public class BeforeConference {
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		eventDataModel.add(tweetId, conf.hasEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-		tweetMetaDataModel.add(tweetId, conf.mentionsConference, confInstance);
-		// mentions can be ignored here
-		// tweetMetaDataModel.add(tweetId, conf.mentions, );
-		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.cities.get(conf.random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -173,35 +195,61 @@ public class BeforeConference {
 		case "online":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		case "hybrid":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
 			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		}
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
+
 	}
 
 	public void CallForPapersAnnouncement(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -210,24 +258,25 @@ public class BeforeConference {
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		eventDataModel.add(tweetId, conf.hasEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-
-		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.cities.get(conf.random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -237,17 +286,16 @@ public class BeforeConference {
 		case "online":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		case "hybrid":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
 			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		}
+
 		for (String track : conf.TOKEN_ConferenceEventTrack) {
 			eventDataModel.add(conferenceInstance, conf.hasPaperTrack,
 					eventDataModel.createResource(conf.ACE_URL + track));
@@ -289,21 +337,48 @@ public class BeforeConference {
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
 	public void RegistrationReminder(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -312,24 +387,25 @@ public class BeforeConference {
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		eventDataModel.add(tweetId, conf.hasEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-
-		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.cities.get(random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -339,17 +415,16 @@ public class BeforeConference {
 		case "online":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		case "hybrid":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
 			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		}
+
 		for (String track : conf.TOKEN_ConferenceEventTrack) {
 			eventDataModel.add(conferenceInstance, conf.hasPaperTrack,
 					eventDataModel.createResource(conf.ACE_URL + track));
@@ -391,26 +466,67 @@ public class BeforeConference {
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
 	public void ExcitementAboutTheConferenceAnnouncement(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		// pick a user from paper list
+		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
+		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
+		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
+		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
+		String someUser = authorList.get(conf.random.nextInt(authorList.size()));
+		String twitterAccount = conf.ACE_URL + someUser;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
-		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
-		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+
+		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
-		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
-		tweetMetaDataModel.add(conferenceAccount, conf.hasDisplayName,
-				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
+		tweetMetaDataModel.add(personAccount, conf.hasUserID, personAccount);
+		Map<String, String> userDetails = conf.userData.get(someUser);
+		eventDataModel.add(personAccount, RDF.type, conf.Person);
+		tweetMetaDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+		eventDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+		tweetMetaDataModel.add(personAccount, conf.hasDisplayName,
+				tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
+		tweetMetaDataModel.add(personAccount, conf.hasDesignation,
+				tweetMetaDataModel.createLiteral(userDetails.get("designation")));
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
@@ -431,7 +547,8 @@ public class BeforeConference {
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -479,35 +596,63 @@ public class BeforeConference {
 				}
 
 				// Add detailed triples about the user
-				Map<String, String> userDetails = conf.userData.get(userId);
+				userDetails = conf.userData.get(userId);
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
 						tweetMetaDataModel.createLiteral(userDetails.get("designation")));
+				eventDataModel.add(userResource, conf.attends, confInstance);
 			}
 		}
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
 	public void KeynotesAndPanelAnnouncement(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -516,24 +661,26 @@ public class BeforeConference {
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
-		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-
 		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+
+		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+//				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+//		eventDataModel.add(tweetId, conf.hasEventPhase,
+//				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+//		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
+		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.cities.get(conf.random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -543,21 +690,16 @@ public class BeforeConference {
 		case "online":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		case "hybrid":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
 			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		}
-		for (String track : conf.TOKEN_ConferenceEventTrack) {
-			eventDataModel.add(conferenceInstance, conf.hasPaperTrack,
-					eventDataModel.createResource(conf.ACE_URL + track));
-		}
+
 		for (Map.Entry<String, List<String>> entry : conf.speakerList.entrySet()) {
 			String type = entry.getKey();
 			List<String> userIds = entry.getValue();
@@ -571,228 +713,193 @@ public class BeforeConference {
 
 				Map<String, String> userDetails = conf.userData.get(userId);
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
 						tweetMetaDataModel.createLiteral(userDetails.get("designation")));
 				tweetMetaDataModel.add(userResource, conf.givesTalkOn,
-						tweetMetaDataModel.createLiteral(userDetails.get("keynoteTitle")));
+						tweetMetaDataModel.createLiteral("keynoteTitle"));
 
 				if (type.equals("Keynote")) {
-					tweetMetaDataModel.add(userResource, conf.hasRole, conf.KeynoteSpeakerRole);
+					eventDataModel.add(userResource, conf.hasRole, conf.KeynoteSpeakerRole);
+					eventDataModel.add(userResource, conf.givesTalkOn, "someKeynoteTalkTitle");
 				} else if (type.equals("InvitedTalk")) {
-					tweetMetaDataModel.add(userResource, conf.hasRole, conf.InvitedTalkSpeakerRole);
+					eventDataModel.add(userResource, conf.givesTalkOn, "someInvitedTalkTitle");
 				} else if (type.equals("Speaker")) {
-					tweetMetaDataModel.add(userResource, conf.hasRole, conf.SpeakerRole);
+					eventDataModel.add(userResource, conf.givesTalkOn, "someTalkTitle");
 				}
+				eventDataModel.add(userResource, conf.attends, confInstance);
 			}
 			tweetMetaDataModel.add(conf.tweetMetaProperties);
 			eventDataModel.add(conf.eventDataProperties);
-			tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-			eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+			tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_"
+					+ tweetId0 + "_metadata" + ".ttl");
+			eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+					+ "_eventdata" + ".ttl");
+
+			try {
+				if (!tweetMetaData.exists()) {
+					tweetMetaData.createNewFile();
+					System.out.println("File created: " + tweetMetaData.getName());
+				} else {
+					System.out.println("File already exists: " + tweetMetaData.getName());
+				}
+
+				if (!eventData.exists()) {
+					eventData.createNewFile();
+					System.out.println("File created: " + eventData.getName());
+				} else {
+					System.out.println("File already exists: " + eventData.getName());
+				}
+
+				// Configure RDF writers to write in Turtle format
+			} catch (IOException e) {
+				System.out.println("An error occurred: " + e.getMessage());
+				e.printStackTrace();
+			}
 			// Writing the models to the files
-			writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-			writeModelToFile(eventDataModel, eventData_n3);
+			writeModelToFile(tweetMetaDataModel, tweetMetaData);
+			writeModelToFile(eventDataModel, eventData);
 		}
 	}
 
 	public void VolunteerandStudentGrantAnnouncement(LocalDateTime timeStamp) {
-		for (Map.Entry<String, List<String>> entry : conf.volunteerAndStudentGrantList.entrySet()) {
-			String type = entry.getKey();
-			List<String> userIds = entry.getValue();
-
-			for (String userId : userIds) {
-				Resource userResource = tweetMetaDataModel.createResource(conf.ACE_URL + userId);
-
-				// Common user triples
-				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
-				tweetMetaDataModel.add(userResource, RDF.type, conf.PersonAccount);
-				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
-
-				Map<String, String> userDetails = conf.userData.get(userId);
-				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
-				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
-						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
-				tweetMetaDataModel.add(userResource, conf.hasDesignation,
-						tweetMetaDataModel.createLiteral(userDetails.get("designation")));
-
-				// Generate a tweet ID and add tweet triples
-				String tweetId0 = UUID.randomUUID().toString();
-				Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
-				tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-				tweetMetaDataModel.add(userResource, conf.posts, tweetId);
-
-				if (type.equals("Volunteer")) {
-					tweetMetaDataModel.add(userResource, conf.volunteersFor, conf.confInstance);
-					tweetMetaDataModel.add(userResource, conf.attends,
-							tweetMetaDataModel.createResource(conf.confInstance));
-				} else if (type.equals("StudentGrant")) {
-					tweetMetaDataModel.add(userResource, conf.getsStudentGrantFor, conf.confInstance);
-				}
-			}
+		tweetMetaDataModel = ModelFactory.createDefaultModel();
+		eventDataModel = ModelFactory.createDefaultModel();
+		String tweetId0 = generateTweetId();
+		
+		// Combine all user IDs into a single list
+		List<String> allUsers = new ArrayList<>();
+		for (List<String> users : conf.volunteerAndStudentGrantList.values()) {
+		    allUsers.addAll(users);
 		}
+
+		// Select a random user ID from the combined list
+		String someUser = allUsers.get(conf.random.nextInt(allUsers.size()));
+		
+		System.out.println(someUser);
+		String twitterAccount = conf.ACE_URL + someUser;
+		Map<String, String> userDetails = conf.userData.get(someUser);
+		System.out.println(userDetails);
+		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
+
+		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+
+		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+
+		eventDataModel.add(personAccount, RDF.type, conf.Person);
+		tweetMetaDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+		eventDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+		tweetMetaDataModel.add(personAccount, conf.hasDisplayName,
+				tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
+		tweetMetaDataModel.add(personAccount, conf.hasDesignation,
+				tweetMetaDataModel.createLiteral(userDetails.get("designation")));
+		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
+				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
+		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		eventDataModel.add(personAccount, conf.attends, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+//				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+//		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
+		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
+
+		eventDataModel.add(confInstance, RDF.type, conf.Conference);
+		eventDataModel.add(confInstance, conf.hasConferenceName,
+				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
+		eventDataModel.add(confInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
+		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
+		// String city_name=;
+		Resource city = eventDataModel.createResource("city_name");
+		eventDataModel.add(city, RDF.type, conf.City);
+		tweetMetaDataModel.add(personAccount, conf.hasUserID, tweetMetaDataModel.createLiteral(someUser));
+
+		// Check if the user is a "Volunteer" or "StudentGrant"
+		if (conf.volunteerAndStudentGrantList.get("Volunteer").contains(someUser)) {
+			tweetMetaDataModel.add(personAccount, conf.volunteersFor, conf.confInstance);
+			tweetMetaDataModel.add(personAccount, conf.attends, tweetMetaDataModel.createResource(conf.confInstance));
+		} else if (conf.volunteerAndStudentGrantList.get("StudentGrant").contains(someUser)) {
+			tweetMetaDataModel.add(personAccount, conf.getsStudentGrantFor, conf.confInstance);
+			tweetMetaDataModel.add(personAccount, conf.attends, tweetMetaDataModel.createResource(conf.confInstance));
+		}
+
+		tweetMetaDataModel.add(conf.tweetMetaProperties);
+		eventDataModel.add(conf.eventDataProperties);
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
+		// Writing the models to the files
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
 	public void ExcitementForAttendingTheConference(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
-		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
-		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		//has to be changed
-
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
-		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.Person);
-		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
-		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
-
-
-		change to person
-		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
-		tweetMetaDataModel.add(conferenceAccount, conf.hasDisplayName,
-				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
-		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
-				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
-		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
-		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-		tweetMetaDataModel.add(tweetId, conf.mentionsConference, confInstance);
-		// mentions can be ignored here
-		// tweetMetaDataModel.add(tweetId, conf.mentions, );
-		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
-		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
-		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
-				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
-		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
-		eventDataModel.add(city, RDF.type, conf.City);
-		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
-		switch (selectedEventMode) {
-		case "offline":
-			eventDataModel.add(conferenceInstance, conf.hasEventMode,
-					eventDataModel.createResource(conf.ACE_URL + "offline"));
-			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			break;
-		case "online":
-			eventDataModel.add(conferenceInstance, conf.hasEventMode,
-					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-			break;
-		case "hybrid":
-			eventDataModel.add(conferenceInstance, conf.hasEventMode,
-					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
-			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-			break;
-		}
-
-		tweetMetaDataModel.add(conf.tweetMetaProperties);
-		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
-		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
-	}
-
-	public void AcceptedPaperNotification(LocalDateTime timeStamp) {
-		tweetMetaDataModel = ModelFactory.createDefaultModel();
-		eventDataModel = ModelFactory.createDefaultModel();
-		String tweetId0 = generateTweetId();
-		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
-		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		// get a random person from paper data, mentions will be the list of additional
-		// authors in the paper list
+		// pick a user from paper list
 		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
 		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
 		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
-
-		// Extract paper details
-		String paperTitle = (String) paperDetails.get("PaperTitle");
-		String conferenceTrack = (String) paperDetails.get("ConferenceTrack");
 		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
-		List<String> paperDomains = (List<String>) paperDetails.get("PaperDomains");
+		String someUser = authorList.get(conf.random.nextInt(authorList.size()));
+		String twitterAccount = conf.ACE_URL + someUser;
 
-		// Create paper resource
-		Resource paperResource = eventDataModel.createResource(conf.ACE_URL + selectedPaperId);
-		eventDataModel.add(paperResource, RDF.type, conf.ConferencePaper);
-		eventDataModel.add(paperResource, conf.hasPaperTrack, eventDataModel.createLiteral(conferenceTrack));
-		eventDataModel.add(paperResource, conf.hasTitle, eventDataModel.createLiteral(paperTitle));
-
-		// Add author triples
-		for (String authorId : authorList) {
-			Resource authorResource = eventDataModel.createResource(conf.ACE_URL + authorId);
-			eventDataModel.add(authorResource, RDF.type, conf.Person);
-			eventDataModel.add(paperResource, conf.hasAuthor, authorResource);
-			Map<String, String> userDetails = conf.userData.get(authorId);
-			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
-			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
-					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
-			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
-					tweetMetaDataModel.createLiteral(userDetails.get("designation")));
-		}
-		for (String paperDomain : paperDomains) {
-			Resource domain = eventDataModel.createResource(conf.ACE_URL + paperDomain);
-			// eventDataModel.add(domain, RDF.type, conf.Person);
-			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
-			tweetMetaDataModel.add(tweetId, conf.hasHashtag, domain);
-		}
-
-		// Randomly select an author to tweet about the paper
-		String tweetingAuthorId = authorList.get(random.nextInt(authorList.size()));
-		// Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL +
-		// generateTweetId());
-		Resource personAccount = tweetMetaDataModel.createResource(conf.ACE_URL + tweetingAuthorId);
-		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
-		tweetMetaDataModel.add(personAccount, RDF.type, conf.Person);
-		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
-		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
-		tweetMetaDataModel.add(personAccount, conf.hasUserID, personAccount);
-		// Add additional tweet metadata
-		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
-		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
-		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
-
-		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
-				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
-
-		// Add hashtags for paper domain
-
-	}
-
-	public void ScheduleAnnouncement(LocalDateTime timeStamp) {
-		tweetMetaDataModel = ModelFactory.createDefaultModel();
-		eventDataModel = ModelFactory.createDefaultModel();
-		String tweetId0 = generateTweetId();
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
-		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
-		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+
+		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
-		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
-		tweetMetaDataModel.add(conferenceAccount, conf.hasDisplayName,
-				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
+		tweetMetaDataModel.add(personAccount, conf.hasUserID, personAccount);
+
+		Map<String, String> userDetails = conf.userData.get(someUser);
+		eventDataModel.add(personAccount, RDF.type, conf.Person);
+		tweetMetaDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+		eventDataModel.add(personAccount, conf.hasAffiliation,
+				tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+
+		tweetMetaDataModel.add(personAccount, conf.hasDisplayName,
+				tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
+		tweetMetaDataModel.add(personAccount, conf.hasDesignation,
+				tweetMetaDataModel.createLiteral(userDetails.get("designation")));
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		eventDataModel.add(personAccount, conf.attends, confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
@@ -809,7 +916,8 @@ public class BeforeConference {
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -835,65 +943,59 @@ public class BeforeConference {
 					eventDataModel.createResource(conf.ACE_URL + track));
 		}
 
-		//		// Add 'mentions' triples
-		for (Map.Entry<String, List<String>> entry : conf.organizingCommitteeList.entrySet()) {
-			String role = entry.getKey();
-			List<String> userIds = entry.getValue();
-			for (String userId : userIds) {
-				Resource userResource = eventDataModel.createResource(conf.ACE_URL + userId);
-				tweetMetaDataModel.add(tweetId, conf.mentionsPerson, userResource);
-				eventDataModel.add(userResource, conf.hasRole, tweetMetaDataModel.createResource(conf.ACE_URL + role));
-				if (role == "generalChair") {
-					eventDataModel.add(conferenceInstance, conf.hasGeneralChair, userResource);
-				}
-				if (role == "localChair") {
-					eventDataModel.add(conferenceInstance, conf.hasLocalChair, userResource);
-				}
-				if (role == "ResearchTrackChair") {
-					eventDataModel.add(conferenceInstance, conf.hasResearchTrackChair, userResource);
-				}
-				if (role == "ResourceTrackChair") {
-					eventDataModel.add(conferenceInstance, conf.hasResourceTrackChair, userResource);
-				}
-
-				// Add detailed triples about the user
-				Map<String, String> userDetails = conf.userData.get(userId);
-				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
-				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
-				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
-				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
-						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
-				tweetMetaDataModel.add(userResource, conf.hasDesignation,
-						tweetMetaDataModel.createLiteral(userDetails.get("designation")));
-			}
-		}
-
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
-	public void InsightsBasedOnAcceptedPapers(LocalDateTime timeStamp) {
+	public void AcceptedPaperNotification(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
-		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
-		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		// get a random person from paper data, mentions will be the list of additional
-		// authors in the paper list
+		// pick a user from paper list
 		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
 		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
 		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
+		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
+		String someUser = authorList.get(random.nextInt(authorList.size()));
+		String twitterAccount = conf.ACE_URL + someUser;
+
+		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
+
+		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
 
 		// Extract paper details
 		String paperTitle = (String) paperDetails.get("PaperTitle");
 		String conferenceTrack = (String) paperDetails.get("ConferenceTrack");
-		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
 		List<String> paperDomains = (List<String>) paperDetails.get("PaperDomains");
 
 		// Create paper resource
@@ -924,9 +1026,8 @@ public class BeforeConference {
 
 		// Randomly select an author to tweet about the paper
 		String tweetingAuthorId = authorList.get(random.nextInt(authorList.size()));
-		// Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL +
-		// generateTweetId());
-		Resource personAccount = tweetMetaDataModel.createResource(conf.ACE_URL + tweetingAuthorId);
+		// Resource personAccount = tweetMetaDataModel.createResource(conf.ACE_URL +
+		// tweetingAuthorId);
 		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(personAccount, RDF.type, conf.Person);
 		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
@@ -943,16 +1044,52 @@ public class BeforeConference {
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
+
+		tweetMetaDataModel.add(conf.tweetMetaProperties);
+		eventDataModel.add(conf.eventDataProperties);
+		// Add hashtags for paper domain
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
+		// Writing the models to the files
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
-	public void PaperSubmissionReminder(LocalDateTime timeStamp) {
+	public void ScheduleAnnouncement(LocalDateTime timeStamp) {
 		tweetMetaDataModel = ModelFactory.createDefaultModel();
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
-		Resource conferenceAccount = tweetMetaDataModel.createResource(conf.ACE_URL + "conf" + conf.confIndex);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -961,24 +1098,25 @@ public class BeforeConference {
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
 		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		eventDataModel.add(tweetId, conf.hasEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
-
-		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
-		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.cities.get(random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
-		String selectedEventMode = conf.TOKEN_EventMode[(int) (Math.random() * conf.TOKEN_EventMode.length)];
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
 		switch (selectedEventMode) {
 		case "offline":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
@@ -988,17 +1126,16 @@ public class BeforeConference {
 		case "online":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "online"));
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		case "hybrid":
 			eventDataModel.add(conferenceInstance, conf.hasEventMode,
 					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
 			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
-			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
-					eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
 			break;
 		}
+
 		for (String track : conf.TOKEN_ConferenceEventTrack) {
 			eventDataModel.add(conferenceInstance, conf.hasPaperTrack,
 					eventDataModel.createResource(conf.ACE_URL + track));
@@ -1040,11 +1177,271 @@ public class BeforeConference {
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
 		eventDataModel.add(conf.eventDataProperties);
-		tweetMetaData_n3 = new File(conf.confDirectory + tweetId0 + "_metadata");
-		eventData_n3 = new File(conf.confDirectory + tweetId0 + "_eventdata");
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
 		// Writing the models to the files
-		writeModelToFile(tweetMetaDataModel, tweetMetaData_n3);
-		writeModelToFile(eventDataModel, eventData_n3);
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
+	}
+
+	public void InsightsBasedOnAcceptedPapers(LocalDateTime timeStamp) {
+		tweetMetaDataModel = ModelFactory.createDefaultModel();
+		eventDataModel = ModelFactory.createDefaultModel();
+		String tweetId0 = generateTweetId();
+		// pick a user from paper list
+		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
+		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
+		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
+		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
+		String someUser = authorList.get(random.nextInt(authorList.size()));
+		String twitterAccount = conf.ACE_URL + someUser;
+
+		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
+
+		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+		// get a random person from paper data, mentions will be the list of additional
+		// authors in the paper list
+
+		// Extract paper details
+		String paperTitle = (String) paperDetails.get("PaperTitle");
+		String conferenceTrack = (String) paperDetails.get("ConferenceTrack");
+		List<String> paperDomains = (List<String>) paperDetails.get("PaperDomains");
+
+		// Create paper resource
+		Resource paperResource = eventDataModel.createResource(conf.ACE_URL + selectedPaperId);
+		eventDataModel.add(paperResource, RDF.type, conf.ConferencePaper);
+		eventDataModel.add(paperResource, conf.hasPaperTrack, eventDataModel.createLiteral(conferenceTrack));
+		eventDataModel.add(paperResource, conf.hasTitle, eventDataModel.createLiteral(paperTitle));
+
+		// Add author triples
+		for (String authorId : authorList) {
+			Resource authorResource = eventDataModel.createResource(conf.ACE_URL + authorId);
+			eventDataModel.add(authorResource, RDF.type, conf.Person);
+			eventDataModel.add(paperResource, conf.hasAuthor, authorResource);
+			Map<String, String> userDetails = conf.userData.get(authorId);
+			tweetMetaDataModel.add(authorResource, conf.mentionsPerson, authorResource);
+			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
+					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
+					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
+			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
+					tweetMetaDataModel.createLiteral(userDetails.get("designation")));
+		}
+		for (String paperDomain : paperDomains) {
+			Resource domain = eventDataModel.createResource(conf.ACE_URL + paperDomain);
+			// eventDataModel.add(domain, RDF.type, conf.Person);
+			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
+			tweetMetaDataModel.add(tweetId, conf.hasHashtag, domain);
+		}
+
+		// Randomly select an author to tweet about the paper
+//		String tweetingAuthorId = authorList.get(random.nextInt(authorList.size()));
+		// Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL +
+		// generateTweetId());
+		// personAccount = tweetMetaDataModel.createResource(conf.ACE_URL +
+		// tweetingAuthorId);
+		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.Person);
+		tweetMetaDataModel.add(personAccount, RDF.type, conf.PersonAccount);
+		tweetMetaDataModel.add(personAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(personAccount, conf.hasUserID, personAccount);
+		// Add additional tweet metadata
+		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
+		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
+		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
+
+		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
+				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
+
+		tweetMetaDataModel.add(conf.tweetMetaProperties);
+		eventDataModel.add(conf.eventDataProperties);
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
+		// Writing the models to the files
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
+	}
+
+	public void PaperSubmissionReminder(LocalDateTime timeStamp) {
+		tweetMetaDataModel = ModelFactory.createDefaultModel();
+		eventDataModel = ModelFactory.createDefaultModel();
+		String tweetId0 = generateTweetId();
+		String twitterAccount = conf.ACE_URL + conf.confAccount;
+
+		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
+		Resource conferenceAccount = tweetMetaDataModel.createResource(twitterAccount);
+
+		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
+		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
+
+		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
+		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
+		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
+		tweetMetaDataModel.add(conferenceAccount, conf.hasDisplayName,
+				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
+		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
+				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
+		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		eventDataModel.add(tweetId, conf.hasEventPhase,
+				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
+		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
+		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
+		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
+		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
+				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
+		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
+		Resource city = eventDataModel.createResource(conf.cities.get(random.nextInt(conf.cities.size())));
+		eventDataModel.add(city, RDF.type, conf.City);
+		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
+				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
+	
+		String selectedEventMode = conf.TOKEN_EventMode[conf.random.nextInt(conf.TOKEN_EventMode.length)];
+
+		switch (selectedEventMode) {
+		case "offline":
+			eventDataModel.add(conferenceInstance, conf.hasEventMode,
+					eventDataModel.createResource(conf.ACE_URL + "offline"));
+			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
+			break;
+		case "online":
+			eventDataModel.add(conferenceInstance, conf.hasEventMode,
+					eventDataModel.createResource(conf.ACE_URL + "online"));
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
+			break;
+		case "hybrid":
+			eventDataModel.add(conferenceInstance, conf.hasEventMode,
+					eventDataModel.createResource(conf.ACE_URL + "hybrid"));
+			eventDataModel.add(conferenceInstance, conf.hasLocation, city);
+			eventDataModel.add(conferenceInstance, conf.hasWebsiteURL, eventDataModel.createLiteral(conf.confURL));
+			break;
+		}
+
+		for (String track : conf.TOKEN_ConferenceEventTrack) {
+			eventDataModel.add(conferenceInstance, conf.hasPaperTrack,
+					eventDataModel.createResource(conf.ACE_URL + track));
+		}
+
+		// Add 'mentions' triples
+		for (Map.Entry<String, List<String>> entry : conf.organizingCommitteeList.entrySet()) {
+			String role = entry.getKey();
+			List<String> userIds = entry.getValue();
+			for (String userId : userIds) {
+				Resource userResource = eventDataModel.createResource(conf.ACE_URL + userId);
+				tweetMetaDataModel.add(tweetId, conf.mentionsPerson, userResource);
+				eventDataModel.add(userResource, conf.hasRole, tweetMetaDataModel.createResource(conf.ACE_URL + role));
+				if (role == "generalChair") {
+					eventDataModel.add(conferenceInstance, conf.hasGeneralChair, userResource);
+				}
+				if (role == "localChair") {
+					eventDataModel.add(conferenceInstance, conf.hasLocalChair, userResource);
+				}
+				if (role == "ResearchTrackChair") {
+					eventDataModel.add(conferenceInstance, conf.hasResearchTrackChair, userResource);
+				}
+				if (role == "ResourceTrackChair") {
+					eventDataModel.add(conferenceInstance, conf.hasResourceTrackChair, userResource);
+				}
+
+				// Add detailed triples about the user
+				Map<String, String> userDetails = conf.userData.get(userId);
+				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
+				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
+				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
+				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
+						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
+				tweetMetaDataModel.add(userResource, conf.hasDesignation,
+						tweetMetaDataModel.createLiteral(userDetails.get("designation")));
+			}
+		}
+
+		tweetMetaDataModel.add(conf.tweetMetaProperties);
+		eventDataModel.add(conf.eventDataProperties);
+		tweetMetaData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_metadata" + ".ttl");
+		eventData = new File(conf.confDirectory + "/" + timeStamp.format(conf.fileNameFormatter) + "_" + tweetId0
+				+ "_eventdata" + ".ttl");
+
+		try {
+			if (!tweetMetaData.exists()) {
+				tweetMetaData.createNewFile();
+				System.out.println("File created: " + tweetMetaData.getName());
+			} else {
+				System.out.println("File already exists: " + tweetMetaData.getName());
+			}
+
+			if (!eventData.exists()) {
+				eventData.createNewFile();
+				System.out.println("File created: " + eventData.getName());
+			} else {
+				System.out.println("File already exists: " + eventData.getName());
+			}
+
+			// Configure RDF writers to write in Turtle format
+		} catch (IOException e) {
+			System.out.println("An error occurred: " + e.getMessage());
+			e.printStackTrace();
+		}
+		// Writing the models to the files
+		writeModelToFile(tweetMetaDataModel, tweetMetaData);
+		writeModelToFile(eventDataModel, eventData);
 	}
 
 	public static LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
@@ -1058,13 +1455,22 @@ public class BeforeConference {
 	}
 
 	public String generateTweetId() {
-		return UUID.randomUUID().toString();
+
+		conf.tweetCount = conf.tweetCount + 1;
+		return "tweet" + Integer.toString(conf.tweetCount);
+		// return UUID.randomUUID().toString();
 	}
 
 	public void writeModelToFile(Model model, File file) {
+		System.out.println("Writing model to file: " + file.getAbsolutePath());
 		try (OutputStream out = new FileOutputStream(file)) {
 			RDFDataMgr.write(out, model, RDFFormat.TURTLE_PRETTY);
+			System.out.println("Model successfully written to file.");
+		} catch (IOException e) {
+			System.err.println("An I/O error occurred while writing to file: " + e.getMessage());
+			e.printStackTrace();
 		} catch (Exception e) {
+			System.err.println("An unexpected error occurred while writing to file: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

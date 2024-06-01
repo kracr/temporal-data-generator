@@ -1,0 +1,21 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user34481>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U22C1RG3> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf2_1971" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#online> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf2_1971.com" .
+
+<city_name>  a  <https://kracr.iiitd.edu.in/Location#City> .

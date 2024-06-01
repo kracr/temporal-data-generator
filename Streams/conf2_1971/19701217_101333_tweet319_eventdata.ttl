@@ -1,0 +1,49 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf2_1971" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#online> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "https://kracr.iiitd.edu.in/conf2_1971.com" , "www.conf2_1971.com" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user19199>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/Location#alpena>
+        a       <https://kracr.iiitd.edu.in/Location#City> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20298>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user30252>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user1829>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRole>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user33960>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .

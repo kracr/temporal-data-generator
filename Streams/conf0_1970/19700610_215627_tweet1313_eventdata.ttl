@@ -1,0 +1,30 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user134227>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69684>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user34211>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user58212>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8455>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10523>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69684> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user34211> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8455> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user134227> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user11669> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user58212> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "demoTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "A Deep Embedding Model for Co-occurrence Learning." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user11669>
+        a       <http://xmlns.com/foaf/0.1/Person> .

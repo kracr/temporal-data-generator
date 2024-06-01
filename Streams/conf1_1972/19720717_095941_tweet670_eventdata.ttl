@@ -1,0 +1,27 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8167>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2754>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user38724>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10517>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18085> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user8167> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2754> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user106373> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user38724> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Towards Space-Time Semantics in Two Frames." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1972> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user18085>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user106373>
+        a       <http://xmlns.com/foaf/0.1/Person> .

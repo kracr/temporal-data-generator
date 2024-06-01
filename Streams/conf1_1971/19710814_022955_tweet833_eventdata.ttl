@@ -1,0 +1,24 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10519>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user121884> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13037> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user9505> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user12972> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "resourcesTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Understanding short texts through semantic enrichment and hashing." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13037>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user121884>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user9505>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user12972>
+        a       <http://xmlns.com/foaf/0.1/Person> .

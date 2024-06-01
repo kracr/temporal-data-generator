@@ -1,0 +1,27 @@
+<https://kracr.iiitd.edu.in/Twitter#tweet377>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1971-07-20T08:16:52.521"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf1_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet377> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user127750>
+        a       <https://kracr.iiitd.edu.in/Twitter#PersonAccount> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <conf1_1971> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor>
+                "conf1_1971" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U81C8RG7> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Student" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Rajesh Krishna Panta" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user127750" ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet377> .

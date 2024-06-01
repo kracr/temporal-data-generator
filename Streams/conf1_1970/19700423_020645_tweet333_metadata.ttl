@@ -1,0 +1,75 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user67352>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U45C2RG6> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Limin Jia 0001" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user67352" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1>
+        a       <https://kracr.iiitd.edu.in/Twitter#ConferenceAccount> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "International Conference on conf1_1970" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1> ;
+        <https://kracr.iiitd.edu.in/Twitter#posts>
+                <https://kracr.iiitd.edu.in/Twitter#tweet333> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet333>
+        a       <https://kracr.iiitd.edu.in/Twitter#Tweet> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDateTimestamp>
+                "1970-04-23T02:06:45.521"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasHashtag>
+                "conf1_1970" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasTweetID>
+                <https://kracr.iiitd.edu.in/Twitter#tweet333> ;
+        <https://kracr.iiitd.edu.in/Twitter#isAboutEvent>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsConference>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1> ;
+        <https://kracr.iiitd.edu.in/Twitter#mentionsPerson>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50670> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2471> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user67352> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39179> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user39179>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U67C2RG1> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Lubomir V. Kolev" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user39179" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user2471>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U73C2RG8> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Dina Kamel" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user2471" .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user50670>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U64C8RG3> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDesignation>
+                "Professor" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasDisplayName>
+                "Jung Hee Cheon" ;
+        <https://kracr.iiitd.edu.in/Twitter#hasUserID>
+                "user50670" .

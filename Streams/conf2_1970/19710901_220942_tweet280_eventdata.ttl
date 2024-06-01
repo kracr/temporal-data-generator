@@ -1,0 +1,30 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper10526>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44978> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user42363> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user30083> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user5351> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13491> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71558> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Know You at One Glance: A Compact Vector Representation for Low-Shot Learning." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf2_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13491>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user5351>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user42363>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user44978>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user30083>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user71558>
+        a       <http://xmlns.com/foaf/0.1/Person> .

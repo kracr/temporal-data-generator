@@ -1,0 +1,27 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45901>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user173727>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11854>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69750> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61020> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45891> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45901> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user173727> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "researchTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Unsupervised feature optimization (UFO): Simultaneous selection of multiple features with their detection parameters." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user69750>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user45891>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user61020>
+        a       <http://xmlns.com/foaf/0.1/Person> .

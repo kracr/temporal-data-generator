@@ -1,0 +1,24 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user35504>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user41181>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11853>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user35504> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user21953> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user41181> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user91622> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#blockchain> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "Topic Model based Privacy Protection in Personalized Web Search." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1971> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user91622>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user21953>
+        a       <http://xmlns.com/foaf/0.1/Person> .

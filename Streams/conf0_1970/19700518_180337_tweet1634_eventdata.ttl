@@ -1,0 +1,21 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11859>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13852> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user46973> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user87925> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "On the Security of the SPEKE Password-Authenticated Key Exchange Protocol." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf0_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user87925>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user13852>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user46973>
+        a       <http://xmlns.com/foaf/0.1/Person> .

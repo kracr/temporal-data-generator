@@ -1,0 +1,15 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user127750>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1971> ;
+        <https://kracr.iiitd.edu.in/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U81C8RG7> .
+
+<city_name>  a  <https://kracr.iiitd.edu.in/Location#City> .

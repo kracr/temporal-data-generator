@@ -1,0 +1,18 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user100557>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#paper11857>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20492> , <https://kracr.iiitd.edu.in/AcademicConferenceEvent#user100557> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>
+                "On the Limits of Leakage Power Reduction in Caches." ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1970> .
+
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#user20492>
+        a       <http://xmlns.com/foaf/0.1/Person> .

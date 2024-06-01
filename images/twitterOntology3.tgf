@@ -1,0 +1,33 @@
+1 twitter:UserAccount
+2 twitter:Tweet
+3 xsd:string
+4 xsd:string
+5 xsd:dateTimeStamp
+6 xsd:string
+7 xsd:string
+8 xsd:string
+9 twitter:ConferenceAccount
+10 twitter:PersonAccount
+11 twitter:OrganizationAccount
+12 
+13 owl2bench:Organization
+14 act:Event
+15 location:City
+16 location:Country
+#
+1 2 twitter:posts
+2 1 twitter:mentions
+2 3 twitter:hasTweedID
+2 5 twitter:hasDateTimeStamp
+2 4 twitter:hasHashtag
+1 6 twitter:hasUserID
+1 7 twitter:hasUserName
+1 8 twitter:hasBio
+9 1 rdfs:subclassOf
+10 1 rdfs:subclassOf
+11 1 rdfs:subclassOf
+1 13 twitter:hasAffiliation
+2 14 twitter:isAbout
+15 16 location:isPartOf
+14 15 act:hasLocation
+13 15 owl2bench:hasLocation

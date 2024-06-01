@@ -1,0 +1,19 @@
+<https://kracr.iiitd.edu.in/AcademicConferenceEvent#conf1_1972>
+        a       <https://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1972" ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>
+                <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>
+                <https://kracr.iiitd.edu.in/Location#concorezzo> ;
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>
+                "https://kracr.iiitd.edu.in/conf1_1972.com" , "www.conf1_1972.com" .
+
+<https://kracr.iiitd.edu.in/Location#concorezzo>
+        a       <https://kracr.iiitd.edu.in/Location#City> .
+
+<https://kracr.iiitd.edu.in/Twitter#tweet1>
+        <https://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventPhase>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncementPhase" .
