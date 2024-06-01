@@ -104,8 +104,8 @@ public class DuringConference {
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
-//		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAbout,
 //				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
 //		eventDataModel.add(tweetId, conf.hasEventPhase,
 //				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
@@ -267,9 +267,9 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+		tweetMetaDataModel.add(tweetId, conf.isAbout,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
@@ -375,9 +375,9 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+		tweetMetaDataModel.add(tweetId, conf.isAbout,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
@@ -482,9 +482,9 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEvent, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.isAboutEventPhase,
+		tweetMetaDataModel.add(tweetId, conf.isAbout,
 				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel

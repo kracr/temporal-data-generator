@@ -25,12 +25,15 @@ Declaration(Class(:AcceptedPapersNotificationPhase))
 Declaration(Class(:AnnouncementPhase))
 Declaration(Class(:Attendee))
 Declaration(Class(:Author))
+Declaration(Class(:Awardee))
+Declaration(Class(:BestPaperAwardee))
 Declaration(Class(:CallForPapersAnnouncementPhase))
 Declaration(Class(:ChairRole))
 Declaration(Class(:ComputerScienceDomain))
 Declaration(Class(:Conference))
 Declaration(Class(:ConferenceEventPhases))
 Declaration(Class(:ConferencePaper))
+Declaration(Class(:ConferenceTrack))
 Declaration(Class(:DemoPaper))
 Declaration(Class(:EarlyAnnouncementPhase))
 Declaration(Class(:EarlyRegistrationReminderPhase))
@@ -66,6 +69,7 @@ Declaration(Class(:Speaker))
 Declaration(Class(:SpeakerRole))
 Declaration(Class(:Student))
 Declaration(Class(:StudentAuthor))
+Declaration(Class(:StudentGrantAwardee))
 Declaration(Class(:Talks))
 Declaration(Class(:Volunteer))
 Declaration(Class(:Workshop))
@@ -81,6 +85,9 @@ Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#O
 Declaration(Class(foaf:Organization))
 Declaration(Class(foaf:Person))
 Declaration(ObjectProperty(:attends))
+Declaration(ObjectProperty(:getsAward))
+Declaration(ObjectProperty(:getsBestPaperAward))
+Declaration(ObjectProperty(:getsStudentGrant))
 Declaration(ObjectProperty(:givesInvitedTalkAt))
 Declaration(ObjectProperty(:givesKeynoteTalkAt))
 Declaration(ObjectProperty(:givesTalkAt))
@@ -104,7 +111,6 @@ Declaration(ObjectProperty(:hasInvitedTalkSpeaker))
 Declaration(ObjectProperty(:hasKeynoteSpeaker))
 Declaration(ObjectProperty(:hasKeynoteTalk))
 Declaration(ObjectProperty(:hasLocalChair))
-Declaration(ObjectProperty(:hasLocation))
 Declaration(ObjectProperty(:hasMode))
 Declaration(ObjectProperty(:hasOrganizer))
 Declaration(ObjectProperty(:hasOrganizerRoleAt))
@@ -137,6 +143,7 @@ Declaration(ObjectProperty(:organizes))
 Declaration(ObjectProperty(:presents))
 Declaration(ObjectProperty(:talkGivenBy))
 Declaration(ObjectProperty(:volunteersFor))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/Location#hasLocation>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
 Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
@@ -164,6 +171,7 @@ Declaration(DataProperty(:hasVenue))
 Declaration(DataProperty(:hasWebsiteURL))
 Declaration(DataProperty(:isRelatedTo))
 Declaration(NamedIndividual(:aiForSocialGood))
+Declaration(NamedIndividual(:announcement))
 Declaration(NamedIndividual(:applicationsTrack))
 Declaration(NamedIndividual(:artificialIntelligence))
 Declaration(NamedIndividual(:bigData))
@@ -176,6 +184,7 @@ Declaration(NamedIndividual(:demoTrack))
 Declaration(NamedIndividual(:doctoralConsortiumTrack))
 Declaration(NamedIndividual(:generalChair))
 Declaration(NamedIndividual(:hybrid))
+Declaration(NamedIndividual(:insights))
 Declaration(NamedIndividual(:internetOfThings))
 Declaration(NamedIndividual(:journalSpecialIssue))
 Declaration(NamedIndividual(:knowledgeGraph))
@@ -186,11 +195,14 @@ Declaration(NamedIndividual(:ml))
 Declaration(NamedIndividual(:naturalLanguageProcessing))
 Declaration(NamedIndividual(:neuralNetworks))
 Declaration(NamedIndividual(:nlp))
+Declaration(NamedIndividual(:notification))
 Declaration(NamedIndividual(:offline))
 Declaration(NamedIndividual(:online))
 Declaration(NamedIndividual(:ontology))
 Declaration(NamedIndividual(:posterTrack))
 Declaration(NamedIndividual(:quantumComputing))
+Declaration(NamedIndividual(:randomCategory))
+Declaration(NamedIndividual(:reminder))
 Declaration(NamedIndividual(:remote))
 Declaration(NamedIndividual(:researchTrack))
 Declaration(NamedIndividual(:researchTrackChair))
@@ -209,6 +221,14 @@ Declaration(AnnotationProperty(:isTimeVarying))
 ############################
 #   Object Properties
 ############################
+
+# Object Property: :getsBestPaperAward (:getsBestPaperAward)
+
+SubObjectPropertyOf(:getsBestPaperAward :getsAward)
+
+# Object Property: :getsStudentGrant (:getsStudentGrant)
+
+SubObjectPropertyOf(:getsStudentGrant :getsAward)
 
 # Object Property: :givesInvitedTalkAt (:givesInvitedTalkAt)
 
@@ -330,8 +350,7 @@ SubObjectPropertyOf(:hasPaperDomain :hasDomain)
 # Object Property: :hasPaperTrack (:hasPaperTrack)
 
 SubObjectPropertyOf(:hasPaperTrack owl:topObjectProperty)
-ObjectPropertyDomain(:hasPaperTrack :AcademicManuscript)
-ObjectPropertyRange(:hasPaperTrack :AcademicEventTrack)
+ObjectPropertyRange(:hasPaperTrack :ConferenceTrack)
 
 # Object Property: :hasPosterTrackChair (:hasPosterTrackChair)
 
@@ -547,17 +566,13 @@ AnnotationAssertion(rdfs:comment :isRelatedTo "Every aacdemic manuscript is rela
 # Class: :AcademicEvent (:AcademicEvent)
 
 AnnotationAssertion(rdfs:comment :AcademicEvent "Every academic event has a track")
-EquivalentClasses(:AcademicEvent ObjectSomeValuesFrom(:hasPaperTrack :AcademicEventTrack))
+EquivalentClasses(:AcademicEvent ObjectSomeValuesFrom(:hasPaperTrack :ConferenceTrack))
 SubClassOf(:AcademicEvent event:Event)
 SubClassOf(:AcademicEvent DataSomeValuesFrom(:hasWebsiteURL xsd:anyURI))
 
 # Class: :AcademicEventPhases (:AcademicEventPhases)
 
 SubClassOf(:AcademicEventPhases :EventPhases)
-
-# Class: :AcademicEventTrack (:AcademicEventTrack)
-
-AnnotationAssertion(rdfs:comment :AcademicEventTrack "Every Academic Event Track is a subevent of  Academic Event")
 
 # Class: :AcademicManuscript (:AcademicManuscript)
 
@@ -587,6 +602,15 @@ EquivalentClasses(:Author ObjectSomeValuesFrom(:hasAcceptedPaper :AcademicManusc
 SubClassOf(:Author foaf:Person)
 DisjointClasses(:Author :NonAuthor)
 
+# Class: :Awardee (:Awardee)
+
+SubClassOf(:Awardee foaf:Person)
+
+# Class: :BestPaperAwardee (:BestPaperAwardee)
+
+EquivalentClasses(:BestPaperAwardee ObjectSomeValuesFrom(:getsBestPaperAward owl:Thing))
+SubClassOf(:BestPaperAwardee :Awardee)
+
 # Class: :CallForPapersAnnouncementPhase (:CallForPapersAnnouncementPhase)
 
 SubClassOf(:CallForPapersAnnouncementPhase :EarlyAnnouncementPhase)
@@ -614,6 +638,11 @@ SubClassOf(:ConferenceEventPhases :AcademicEventPhases)
 AnnotationAssertion(:isInstantaneous :ConferencePaper "")
 EquivalentClasses(:ConferencePaper ObjectSomeValuesFrom(:isAcceptedAt :Conference))
 SubClassOf(:ConferencePaper :AcademicManuscript)
+
+# Class: :ConferenceTrack (:ConferenceTrack)
+
+AnnotationAssertion(rdfs:comment :ConferenceTrack "Every Academic Event Track is a subevent of  Academic Event")
+SubClassOf(:ConferenceTrack :AcademicEventTrack)
 
 # Class: :DemoPaper (:DemoPaper)
 
@@ -760,6 +789,11 @@ SubClassOf(:Student foaf:Person)
 EquivalentClasses(:StudentAuthor ObjectIntersectionOf(:Author :Student))
 SubClassOf(:StudentAuthor foaf:Person)
 
+# Class: :StudentGrantAwardee (:StudentGrantAwardee)
+
+EquivalentClasses(:StudentGrantAwardee ObjectSomeValuesFrom(:getsStudentGrant owl:Thing))
+SubClassOf(:StudentGrantAwardee :Awardee)
+
 # Class: :Volunteer (:Volunteer)
 
 AnnotationAssertion(rdfs:comment :Volunteer "is volunteer part of organizing team? or 'has role'?")
@@ -834,7 +868,7 @@ ClassAssertion(:ComputerScienceDomain :aiForSocialGood)
 
 # Individual: :applicationsTrack (:applicationsTrack)
 
-ClassAssertion(:AcademicEventTrack :applicationsTrack)
+ClassAssertion(:ConferenceTrack :applicationsTrack)
 
 # Individual: :artificialIntelligence (:artificialIntelligence)
 
@@ -866,11 +900,11 @@ ClassAssertion(:ComputerScienceDomain :deepLearning)
 
 # Individual: :demoTrack (:demoTrack)
 
-ClassAssertion(:AcademicEventTrack :demoTrack)
+ClassAssertion(:ConferenceTrack :demoTrack)
 
 # Individual: :doctoralConsortiumTrack (:doctoralConsortiumTrack)
 
-ClassAssertion(:AcademicEventTrack :doctoralConsortiumTrack)
+ClassAssertion(:ConferenceTrack :doctoralConsortiumTrack)
 
 # Individual: :generalChair (:generalChair)
 
@@ -886,7 +920,7 @@ ClassAssertion(:ComputerScienceDomain :internetOfThings)
 
 # Individual: :journalSpecialIssue (:journalSpecialIssue)
 
-ClassAssertion(:AcademicEventTrack :journalSpecialIssue)
+ClassAssertion(:ConferenceTrack :journalSpecialIssue)
 
 # Individual: :knowledgeGraph (:knowledgeGraph)
 
@@ -937,7 +971,7 @@ ClassAssertion(:ComputerScienceDomain :ontology)
 
 # Individual: :posterTrack (:posterTrack)
 
-ClassAssertion(:AcademicEventTrack :posterTrack)
+ClassAssertion(:ConferenceTrack :posterTrack)
 
 # Individual: :quantumComputing (:quantumComputing)
 
@@ -945,7 +979,7 @@ ClassAssertion(:ComputerScienceDomain :quantumComputing)
 
 # Individual: :researchTrack (:researchTrack)
 
-ClassAssertion(:AcademicEventTrack :researchTrack)
+ClassAssertion(:ConferenceTrack :researchTrack)
 
 # Individual: :researchTrackChair (:researchTrackChair)
 
@@ -953,7 +987,7 @@ ClassAssertion(:ChairRole :researchTrackChair)
 
 # Individual: :resourcesTrack (:resourcesTrack)
 
-ClassAssertion(:AcademicEventTrack :resourcesTrack)
+ClassAssertion(:ConferenceTrack :resourcesTrack)
 
 # Individual: :resourcesTrackChair (:resourcesTrackChair)
 
@@ -969,7 +1003,7 @@ ClassAssertion(:ChairRole :trackChair)
 
 # Individual: :tutorialTrack (:tutorialTrack)
 
-ClassAssertion(:AcademicEventTrack :tutorialTrack)
+ClassAssertion(:ConferenceTrack :tutorialTrack)
 
 # Individual: :tutorialTrackChair (:tutorialTrackChair)
 
@@ -977,7 +1011,7 @@ ClassAssertion(:ChairRole :tutorialTrackChair)
 
 # Individual: :workshopTrack (:workshopTrack)
 
-ClassAssertion(:AcademicEventTrack :workshopTrack)
+ClassAssertion(:ConferenceTrack :workshopTrack)
 
 # Individual: :workshopTrackChair (:workshopTrackChair)
 
@@ -994,7 +1028,7 @@ SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :invitedTalkGivenBy) :invitedTa
 SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :talkGivenBy) :hasSpeaker)
 SubObjectPropertyOf(ObjectPropertyChain(:presents :hasAuthor) :hasCoAuthor)
 SubObjectPropertyOf(ObjectPropertyChain(:presents :isPresentedAt) :attends)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> :hasLocation) :hasLocation)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://kracr.iiitd.edu.in/Location#hasLocation>) <http://kracr.iiitd.edu.in/Location#hasLocation>)
 HasKey(:AcademicManuscript () (:hasId))
 HasKey(:ConferencePaper () (:hasPaperId))
 HasKey(:DemoPaper () (:hasPaperId))

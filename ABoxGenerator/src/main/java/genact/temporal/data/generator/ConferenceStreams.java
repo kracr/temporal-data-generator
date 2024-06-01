@@ -177,8 +177,8 @@ public class ConferenceStreams {
 	Property rdfSubject, rdfPredicate, rdfObject, rdfType;
 	Property hasGeneralChair, getsStudentGrantFor, hasAuthor, isAuthorOf, hasLocalChair, hasResearchTrackChair,
 			hasResourceTrackChair, posts, hasTweetID, hasUserID, hasDisplayName, volunteersFor, hasHashtag,
-			isAboutEventPhase,hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation,
-			hasDateTimestamp, isAboutEvent, hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName,
+			isAbout,hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation,
+			hasDateTimestamp, hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName,
 			hasEventMode, hasWebsiteURL, hasLocation, hasEdition, hasPaperTrack, hasTrackChair, hasTitle,
 			hasPaperDomain, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper;
 	File tweetMetaData_n3;
@@ -246,9 +246,8 @@ public class ConferenceStreams {
 		this.hasUserID = tweetMetaProperties.createProperty(Twitter_URL + "hasUserID");
 		this.hasDisplayName = tweetMetaProperties.createProperty(Twitter_URL + "hasDisplayName");
 		this.hasHashtag = tweetMetaProperties.createProperty(Twitter_URL + "hasHashtag");
-		this.isAboutEventPhase = tweetMetaProperties.createProperty(Twitter_URL + "isAboutEventPhase");
+		this.isAbout = tweetMetaProperties.createProperty(Twitter_URL + "isAbout");
 		this.hasDateTimestamp = tweetMetaProperties.createProperty(Twitter_URL + "hasDateTimestamp");
-		this.isAboutEvent = tweetMetaProperties.createProperty(Twitter_URL + "isAboutEvent");
 		this.mentionsPerson = tweetMetaProperties.createProperty(Twitter_URL + "mentionsPerson");
 		this.mentionsConference = tweetMetaProperties.createProperty(Twitter_URL + "mentionsConference");
 		this.mentionsOrganization = tweetMetaProperties.createProperty(Twitter_URL + "mentionsOrganization");
