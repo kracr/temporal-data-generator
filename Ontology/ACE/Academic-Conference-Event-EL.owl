@@ -1,4 +1,4 @@
-Prefix(:=<http://kracr.iiitd.edu.in/AcademicConferenceEvent#>)
+Prefix(:=<http://anonymous.com/AcademicConferenceEvent#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(ns:=<http://www.w3.org/2003/06/sw-vocab-status/ns#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -12,7 +12,8 @@ Prefix(event:=<http://w3id.org/daselab/onto/event#>)
 Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
 
 
-Ontology(<http://kracr.iiitd.edu.in/AcademicConferenceEvent>
+Ontology(<http://anonymous.com/AcademicConferenceEvent>
+<http://anonymous.com/AcademicConferenceEvent/1.0.0>
 Annotation(rdfs:comment "05/05/2023 16:33")
 Annotation(rdfs:comment "Academic Conference Event Ontology")
 
@@ -143,7 +144,7 @@ Declaration(ObjectProperty(:organizes))
 Declaration(ObjectProperty(:presents))
 Declaration(ObjectProperty(:talkGivenBy))
 Declaration(ObjectProperty(:volunteersFor))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/Location#hasLocation>))
+Declaration(ObjectProperty(<http://anonymous.com/Location#hasLocation>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
 Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
@@ -1028,7 +1029,7 @@ SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :invitedTalkGivenBy) :invitedTa
 SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :talkGivenBy) :hasSpeaker)
 SubObjectPropertyOf(ObjectPropertyChain(:presents :hasAuthor) :hasCoAuthor)
 SubObjectPropertyOf(ObjectPropertyChain(:presents :isPresentedAt) :attends)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://kracr.iiitd.edu.in/Location#hasLocation>) <http://kracr.iiitd.edu.in/Location#hasLocation>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://anonymous.com/Location#hasLocation>) <http://anonymous.com/Location#hasLocation>)
 HasKey(:AcademicManuscript () (:hasId))
 HasKey(:ConferencePaper () (:hasPaperId))
 HasKey(:DemoPaper () (:hasPaperId))

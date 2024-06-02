@@ -16,56 +16,56 @@ Prefix(OWL2StreamBench:=<http://kracr.iiitd.edu.in/OWL2StreamBench#>)
 Prefix(cpannotationschema:=<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#>)
 
 
-Ontology(<http://kracr.iiitd.edu.in/AcademicConferenceEvent>
-<http://kracr.iiitd.edu.in/AcademicConferenceEvent/1.0>
+Ontology(<http://anonymous.com/AcademicConferenceEvent>
+<http://anonymous.com/AcademicConferenceEvent/1.0>
 Annotation(rdfs:comment "24/04/2024 15:20")
 Annotation(rdfs:comment "Academic Conference Event Ontology")
 
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventTrack>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Session>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker>))
-Declaration(Class(<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#AcademicEvent>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#AcademicOrganization>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Attendee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Author>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Awardee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ChairRole>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Conference>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ConferencePaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#DemoPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#EditorRole>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#EventMode>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#JournalArticle>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#LightningTalks>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#NonAuthor>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Organizer>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Participant>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#PhDStudent>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#PosterPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Presentations>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ResearchPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ResourcePaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Session>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Student>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#StudentAuthor>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Talks>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Volunteer>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Workshop>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#WorkshopPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEventEvent#Speaker>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#College>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>))
 Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#University>))
@@ -76,392 +76,392 @@ Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#K
 Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
 Declaration(Class(foaf:Organization))
 Declaration(Class(foaf:Person))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasMode>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasParticipant>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVolunteer>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor>))
-Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/Location#hasLocation>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#attends>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#getsAward>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#getsStudentGrant>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#givesTalkAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAccount>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAdvisor>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAffiliation>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAttendee>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAuthor>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasCoAuthor>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasCollaborator>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasDomain>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasEventMode>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasGeneralChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasLocalChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasMode>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasOrganizer>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPaper>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPaperDomain>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasParticipant>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasProject>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasSession>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasSpeaker>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasTalk>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasVolunteer>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isAuthorOf>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isChairOf>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isOrganizerOf>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isPresentedAt>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isPresentedBy>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#organizes>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#presents>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#talkGivenBy>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#volunteersFor>))
+Declaration(ObjectProperty(<http://anonymous.com/Location#hasLocation>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
 Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
 Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEndDate>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>))
-Declaration(DataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#acceptedPapers>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#announcement>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#callForPapers>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#insights>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#mainConferenceAnnouncement>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#notification>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#online>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#paperSubmissionReminder>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#randomCategory>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#registrationReminder>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#reminder>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#remote>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack>))
-Declaration(NamedIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair>))
-Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous>))
-Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic>))
-Declaration(AnnotationProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isTimeVarying>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#givesTalkOn>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasAuthorId>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasConferenceName>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasDeadline>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasDuration>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasEdition>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasEndDate>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasId>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasLocation>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasName>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasStartDate>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasStatus>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasTheme>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasTitle>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasVenue>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>))
+Declaration(DataProperty(<http://anonymous.com/AcademicConferenceEvent#isRelatedTo>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#acceptedPapers>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#aiForSocialGood>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#announcement>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#applicationsTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#artificialIntelligence>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#bigData>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#blockChain>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#callForPapers>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#cloudComputing>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#computerVision>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#dataScience>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#deepLearning>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#demoTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#generalChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#hybrid>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#insights>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#internetOfThings>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#knowledgeGraph>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#linkedData>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#localChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#machineLearning>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#mainConferenceAnnouncement>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#ml>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#neuralNetworks>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#nlp>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#notification>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#offline>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#online>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#ontology>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#paperSubmissionReminder>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#posterTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#quantumComputing>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#randomCategory>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#registrationReminder>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#reminder>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#remote>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#researchTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#researchTrackChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#resourcesTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#semanticWeb>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#trackChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#tutorialTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#workshopTrack>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#workshopTrackChair>))
+Declaration(AnnotationProperty(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous>))
+Declaration(AnnotationProperty(<http://anonymous.com/AcademicConferenceEvent#isStatic>))
+Declaration(AnnotationProperty(<http://anonymous.com/AcademicConferenceEvent#isTimeVarying>))
 
 ############################
 #   Object Properties
 ############################
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#attends> (<http://anonymous.com/AcademicConferenceEvent#attends>)
 
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee>)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends> event:Event)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#attends> <http://anonymous.com/AcademicConferenceEvent#hasAttendee>)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#attends> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward> (<http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward> <http://anonymous.com/AcademicConferenceEvent#getsAward>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#getsStudentGrant> (<http://anonymous.com/AcademicConferenceEvent#getsStudentGrant>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#getsStudentGrant> <http://anonymous.com/AcademicConferenceEvent#getsAward>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt> (<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt>)
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt> <http://anonymous.com/AcademicConferenceEvent#givesTalkAt>)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt> <http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt> <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt> (<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt>)
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt> <http://anonymous.com/AcademicConferenceEvent#givesTalkAt>)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt> <http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt> <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#givesTalkAt> (<http://anonymous.com/AcademicConferenceEvent#givesTalkAt>)
 
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt> event:Event)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#givesTalkAt> <http://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#givesTalkAt> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper> (<http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper> <http://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAccount> (<http://anonymous.com/AcademicConferenceEvent#hasAccount>)
 
-ReflexiveObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount> foaf:Person)
+ReflexiveObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAccount>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasAccount> foaf:Person)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAdvisor> (<http://anonymous.com/AcademicConferenceEvent#hasAdvisor>)
 
-AsymmetricObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor>)
+AsymmetricObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasAdvisor>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAffiliation> (<http://anonymous.com/AcademicConferenceEvent#hasAffiliation>)
 
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation> foaf:Organization)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasAffiliation> foaf:Organization)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAttendee> (<http://anonymous.com/AcademicConferenceEvent#hasAttendee>)
 
-EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasParticipant>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee> event:Event)
+EquivalentObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasAttendee> <http://anonymous.com/AcademicConferenceEvent#hasParticipant>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasAttendee> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasAuthor> (<http://anonymous.com/AcademicConferenceEvent#hasAuthor>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> owl:topObjectProperty)
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasAuthor> owl:topObjectProperty)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasAuthor> <http://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasAuthor> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasChair> (<http://anonymous.com/AcademicConferenceEvent#hasChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf>)
-DisjointObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVolunteer>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasChair> <http://anonymous.com/AcademicConferenceEvent#isChairOf>)
+DisjointObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasChair> <http://anonymous.com/AcademicConferenceEvent#hasVolunteer>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt> (<http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt> <http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasCoAuthor> (<http://anonymous.com/AcademicConferenceEvent#hasCoAuthor>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasCoAuthor> <http://anonymous.com/AcademicConferenceEvent#hasCollaborator>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasCollaborator> (<http://anonymous.com/AcademicConferenceEvent#hasCollaborator>)
 
-SymmetricObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator>)
-ReflexiveObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator>)
+SymmetricObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasCollaborator>)
+ReflexiveObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasCollaborator>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair> (<http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasEventMode> (<http://anonymous.com/AcademicConferenceEvent#hasEventMode>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasMode>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode> event:Event)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasEventMode> <http://anonymous.com/AcademicConferenceEvent#hasMode>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasEventMode> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasEventMode> <http://anonymous.com/AcademicConferenceEvent#EventMode>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasGeneralChair> (<http://anonymous.com/AcademicConferenceEvent#hasGeneralChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasGeneralChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt> (<http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt> <http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk> (<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk> <http://anonymous.com/AcademicConferenceEvent#hasTalk>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker> (<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker> event:Event)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker> <http://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker> (<http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker> event:Event)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker> <http://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker> <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk> (<http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk> <http://anonymous.com/AcademicConferenceEvent#hasTalk>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasLocalChair> (<http://anonymous.com/AcademicConferenceEvent#hasLocalChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasLocalChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasOrganizer> (<http://anonymous.com/AcademicConferenceEvent#hasOrganizer>)
 
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer> event:Event)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer>)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasOrganizer> <http://anonymous.com/AcademicConferenceEvent#isOrganizerOf>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasOrganizer> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasOrganizer> <http://anonymous.com/AcademicConferenceEvent#Organizer>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt> (<http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt>)
 
-EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf>)
+EquivalentObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt> <http://anonymous.com/AcademicConferenceEvent#isOrganizerOf>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> (<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee> "Example:
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> "Example:
 ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
 ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer")
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee> event:Event)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember> (<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember> event:Event)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember> <http://anonymous.com/AcademicConferenceEvent#Organizer>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasPaper> (<http://anonymous.com/AcademicConferenceEvent#hasPaper>)
 
-EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf>)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+EquivalentObjectProperties(<http://anonymous.com/AcademicConferenceEvent#hasPaper> <http://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasPaper> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasPaperDomain> (<http://anonymous.com/AcademicConferenceEvent#hasPaperDomain>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasPaperDomain> <http://anonymous.com/AcademicConferenceEvent#hasDomain>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> (<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> owl:topObjectProperty)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> owl:topObjectProperty)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#ConferenceTrack>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair> (<http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasProject> (<http://anonymous.com/AcademicConferenceEvent#hasProject>)
 
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject> foaf:Organization)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasProject> foaf:Organization)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair> (<http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair> (<http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasSession> (<http://anonymous.com/AcademicConferenceEvent#hasSession>)
 
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession> event:Event)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Session>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasSession> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasSession> <http://anonymous.com/AcademicConferenceEvent#Session>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount> (<http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount> <http://anonymous.com/AcademicConferenceEvent#hasAccount>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasSpeaker> (<http://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker> owl:topObjectProperty)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasSpeaker> owl:topObjectProperty)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount> (<http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount> <http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair> (<http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy> (<http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy> <http://anonymous.com/AcademicConferenceEvent#talkGivenBy>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> (<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt>)
 
-EquivalentObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt>)
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
+EquivalentObjectProperties(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isAuthorOf> (<http://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
 
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf> foaf:Person)
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#isAuthorOf> foaf:Person)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#isAuthorOf> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isChairOf> (<http://anonymous.com/AcademicConferenceEvent#isChairOf>)
 
-InverseFunctionalObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf>)
+InverseFunctionalObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isChairOf>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isOrganizerOf> (<http://anonymous.com/AcademicConferenceEvent#isOrganizerOf>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf> owl:topObjectProperty)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#isOrganizerOf> owl:topObjectProperty)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isPresentedAt> (<http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt> "what could be the inverse property of isPresentedAt?")
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt>)
-FunctionalObjectProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#isPresentedAt> "what could be the inverse property of isPresentedAt?")
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#isPresentedAt> <http://anonymous.com/AcademicConferenceEvent#isAcceptedAt>)
+FunctionalObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#isPresentedBy> (<http://anonymous.com/AcademicConferenceEvent#isPresentedBy>)
 
-InverseObjectProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents>)
+InverseObjectProperties(<http://anonymous.com/AcademicConferenceEvent#isPresentedBy> <http://anonymous.com/AcademicConferenceEvent#presents>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy> (<http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy> <http://anonymous.com/AcademicConferenceEvent#talkGivenBy>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#organizes> (<http://anonymous.com/AcademicConferenceEvent#organizes>)
 
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#organizes> event:Event)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#presents> (<http://anonymous.com/AcademicConferenceEvent#presents>)
 
-SubObjectPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper>)
+SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#presents> <http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#talkGivenBy> (<http://anonymous.com/AcademicConferenceEvent#talkGivenBy>)
 
-ObjectPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#talkGivenBy> <http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-# Object Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor>)
+# Object Property: <http://anonymous.com/AcademicConferenceEvent#volunteersFor> (<http://anonymous.com/AcademicConferenceEvent#volunteersFor>)
 
-ObjectPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor> event:Event)
+ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#volunteersFor> event:Event)
 
 # Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
 
@@ -479,119 +479,119 @@ ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl
 
 # Object Property: owl:topObjectProperty (owl:topObjectProperty)
 
-ObjectPropertyRange(owl:topObjectProperty <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+ObjectPropertyRange(owl:topObjectProperty <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
 
 ############################
 #   Data Properties
 ############################
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn> (<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>)
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn> xsd:string)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn> <http://anonymous.com/AcademicConferenceEvent#givesTalkOn>)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn> <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn> (<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>)
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn> xsd:string)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn> <http://anonymous.com/AcademicConferenceEvent#givesTalkOn>)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn> <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#givesTalkOn> (<http://anonymous.com/AcademicConferenceEvent#givesTalkOn>)
 
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn> foaf:Person)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn> xsd:string)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#givesTalkOn> foaf:Person)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#givesTalkOn> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasAuthorId> (<http://anonymous.com/AcademicConferenceEvent#hasAuthorId>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId>)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasAuthorId> <http://anonymous.com/AcademicConferenceEvent#hasId>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasConferenceName> (<http://anonymous.com/AcademicConferenceEvent#hasConferenceName>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName>)
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName> xsd:string)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasConferenceName> <http://anonymous.com/AcademicConferenceEvent#hasName>)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasConferenceName> <http://anonymous.com/AcademicConferenceEvent#Conference>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasConferenceName> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasDeadline> (<http://anonymous.com/AcademicConferenceEvent#hasDeadline>)
 
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline> xsd:dateTimeStamp)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasDeadline> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasDeadline> xsd:dateTimeStamp)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasDuration> (<http://anonymous.com/AcademicConferenceEvent#hasDuration>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration> "An event can go for days, hours, or months.")
-FunctionalDataProperty(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration>)
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration> event:Event)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration> xsd:string)
-DisjointDataProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#hasDuration> "An event can go for days, hours, or months.")
+FunctionalDataProperty(<http://anonymous.com/AcademicConferenceEvent#hasDuration>)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasDuration> event:Event)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasDuration> xsd:string)
+DisjointDataProperties(<http://anonymous.com/AcademicConferenceEvent#hasDuration> <http://anonymous.com/AcademicConferenceEvent#hasLocation>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline> (<http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline>)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline> <http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasEdition> (<http://anonymous.com/AcademicConferenceEvent#hasEdition>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition> "3rd or third")
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition> xsd:string)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#hasEdition> "3rd or third")
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasEdition> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasEdition> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasId> (<http://anonymous.com/AcademicConferenceEvent#hasId>)
 
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId> xsd:string)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasId> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasLocation> (<http://anonymous.com/AcademicConferenceEvent#hasLocation>)
 
-EquivalentDataProperties(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation> xsd:string)
+EquivalentDataProperties(<http://anonymous.com/AcademicConferenceEvent#hasLocation> <http://anonymous.com/AcademicConferenceEvent#hasVenue>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasLocation> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasName> (<http://anonymous.com/AcademicConferenceEvent#hasName>)
 
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName> xsd:string)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasName> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasPaperId> (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId>)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasPaperId> <http://anonymous.com/AcademicConferenceEvent#hasId>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline> (<http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline>)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline> <http://anonymous.com/AcademicConferenceEvent#hasDeadline>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasStartDate> (<http://anonymous.com/AcademicConferenceEvent#hasStartDate>)
 
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate> event:Event)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate> xsd:dateTimeStamp)
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasStartDate> event:Event)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasStartDate> xsd:dateTimeStamp)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasStatus> (<http://anonymous.com/AcademicConferenceEvent#hasStatus>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus> "Announced, Approaching, TakingPlace, Over")
-DataPropertyDomain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus> xsd:string)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#hasStatus> "Announced, Approaching, TakingPlace, Over")
+DataPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#hasStatus> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasStatus> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline> (<http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline>)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline> <http://anonymous.com/AcademicConferenceEvent#hasDeadline>)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasTheme> (<http://anonymous.com/AcademicConferenceEvent#hasTheme>)
 
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme> xsd:string)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasTheme> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasTitle> (<http://anonymous.com/AcademicConferenceEvent#hasTitle>)
 
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle> xsd:string)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasTitle> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasVenue> (<http://anonymous.com/AcademicConferenceEvent#hasVenue>)
 
-SubDataPropertyOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue> owl:topDataProperty)
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue> xsd:string)
+SubDataPropertyOf(<http://anonymous.com/AcademicConferenceEvent#hasVenue> owl:topDataProperty)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasVenue> xsd:string)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL> (<http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>)
 
-DataPropertyRange(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL> xsd:anyURI)
+DataPropertyRange(<http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL> xsd:anyURI)
 
-# Data Property: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo>)
+# Data Property: <http://anonymous.com/AcademicConferenceEvent#isRelatedTo> (<http://anonymous.com/AcademicConferenceEvent#isRelatedTo>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo> "Every aacdemic manuscript is related to some topic. For example AI")
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#isRelatedTo> "Every aacdemic manuscript is related to some topic. For example AI")
 
 
 
@@ -599,219 +599,219 @@ AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEv
 #   Classes
 ############################
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#AcademicEvent> (<http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> "Every academic event has a track")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> event:Event)
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> ObjectMinCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent> DataExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL> xsd:anyURI))
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#AcademicEvent> "Every academic event has a track")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#AcademicEvent> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#ConferenceTrack>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#AcademicEvent> event:Event)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#AcademicEvent> ObjectMinCardinality(1 <http://anonymous.com/AcademicConferenceEvent#hasTalk> <http://anonymous.com/AcademicConferenceEvent#Talks>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#AcademicEvent> DataExactCardinality(1 <http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL> xsd:anyURI))
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript> (<http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript> "")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript> ObjectMinCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript> <http://purl.org/ontology/bibo/Manuscript>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript> "")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#AcademicManuscript> ObjectMinCardinality(1 <http://anonymous.com/AcademicConferenceEvent#hasAuthor> <http://anonymous.com/AcademicConferenceEvent#Author>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#AcademicManuscript> <http://purl.org/ontology/bibo/Manuscript>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#AcademicOrganization> (<http://anonymous.com/AcademicConferenceEvent#AcademicOrganization>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization> "Can be linked to OWL2Bench?")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization> foaf:Organization)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#AcademicOrganization> "Can be linked to OWL2Bench?")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#AcademicOrganization> foaf:Organization)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Attendee> (<http://anonymous.com/AcademicConferenceEvent#Attendee>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#Attendee> <http://anonymous.com/AcademicConferenceEvent#Participant>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Author> (<http://anonymous.com/AcademicConferenceEvent#Author>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author> foaf:Person)
-DisjointClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#Author> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Author> foaf:Person)
+DisjointClasses(<http://anonymous.com/AcademicConferenceEvent#Author> <http://anonymous.com/AcademicConferenceEvent#NonAuthor>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Awardee> (<http://anonymous.com/AcademicConferenceEvent#Awardee>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee> foaf:Person)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Awardee> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> (<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward> owl:Thing))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward> owl:Thing))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> <http://anonymous.com/AcademicConferenceEvent#Awardee>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ChairRole> (<http://anonymous.com/AcademicConferenceEvent#ChairRole>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> "Each track will have a chair")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#ChairRole> "Each track will have a chair")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> (<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Conference> (<http://anonymous.com/AcademicConferenceEvent#Conference>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isStatic> <http://anonymous.com/AcademicConferenceEvent#Conference> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Conference> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ConferencePaper> (<http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> "")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> ObjectMaxCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper> "")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#ConferencePaper> ObjectMaxCardinality(1 <http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#Conference>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ConferencePaper> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> (<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> "Every Academic Event Track is a subevent of  Academic Event")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventTrack>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> "Every Academic Event Track is a subevent of  Academic Event")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#DemoPaper> (<http://anonymous.com/AcademicConferenceEvent#DemoPaper>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#DemoPaper> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#DemoPaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#EditorRole> (<http://anonymous.com/AcademicConferenceEvent#EditorRole>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#EditorRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#EventMode> (<http://anonymous.com/AcademicConferenceEvent#EventMode>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode> ObjectOneOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#online>))
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#EventMode> ObjectOneOf(<http://anonymous.com/AcademicConferenceEvent#hybrid> <http://anonymous.com/AcademicConferenceEvent#offline> <http://anonymous.com/AcademicConferenceEvent#online>))
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker> (<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker> <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker> <http://anonymous.com/AcademicConferenceEventEvent#Speaker>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole> (<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole> <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole> <http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#InvitedTalks> (<http://anonymous.com/AcademicConferenceEvent#InvitedTalks>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy> <http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks> <http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#JournalArticle> (<http://anonymous.com/AcademicConferenceEvent#JournalArticle>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#JournalArticle> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#JournalArticle> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> (<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker> <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> <http://anonymous.com/AcademicConferenceEventEvent#Speaker>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#KeynoteTalks> (<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy> <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks> <http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#LightningTalks> (<http://anonymous.com/AcademicConferenceEvent#LightningTalks>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#LightningTalks> <http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> (<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization> ObjectComplementOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization> foaf:Organization)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> ObjectComplementOf(<http://anonymous.com/AcademicConferenceEvent#AcademicOrganization>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> foaf:Organization)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#NonAuthor> (<http://anonymous.com/AcademicConferenceEvent#NonAuthor>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor> ObjectComplementOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor> foaf:Person)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#NonAuthor> ObjectComplementOf(<http://anonymous.com/AcademicConferenceEvent#Author>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#NonAuthor> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Organizer> (<http://anonymous.com/AcademicConferenceEvent#Organizer>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer> "I have added")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer> foaf:Person)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#Organizer> "I have added")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#Organizer> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Organizer> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee> (<http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee> "Can be removed")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee> ObjectAllValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer>))
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee> "Can be removed")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee> ObjectAllValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember> <http://anonymous.com/AcademicConferenceEvent#Organizer>))
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Participant> (<http://anonymous.com/AcademicConferenceEvent#Participant>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant> "Attendee could be an equivalent class?")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant> foaf:Person)
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>))
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#Participant> "Attendee could be an equivalent class?")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Participant> foaf:Person)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Participant> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#attends> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>))
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#PhDStudent> (<http://anonymous.com/AcademicConferenceEvent#PhDStudent>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent> "Define this and include in the table")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack>)))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#PhDStudent> "Define this and include in the table")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#PhDStudent> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#presents> ObjectHasValue(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack>)))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#PhDStudent> <http://anonymous.com/AcademicConferenceEvent#StudentAuthor>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#PosterPaper> (<http://anonymous.com/AcademicConferenceEvent#PosterPaper>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#PosterPaper> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#PosterPaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Presentations> (<http://anonymous.com/AcademicConferenceEvent#Presentations>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Presentations> <http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ResearchPaper> (<http://anonymous.com/AcademicConferenceEvent#ResearchPaper>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#ResearchPaper> ObjectHasValue(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#researchTrack>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ResearchPaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#ResourcePaper> (<http://anonymous.com/AcademicConferenceEvent#ResourcePaper>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper> ObjectHasValue(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#ResourcePaper> ObjectHasValue(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#resourcesTrack>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#ResourcePaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper> (<http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper> ObjectExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper> ObjectExactCardinality(1 <http://anonymous.com/AcademicConferenceEvent#hasAuthor> <http://anonymous.com/AcademicConferenceEvent#Author>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Student> (<http://anonymous.com/AcademicConferenceEvent#Student>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isTimeVarying> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student> "")
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student> "Student may particiate in DC")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student> foaf:Person)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isTimeVarying> <http://anonymous.com/AcademicConferenceEvent#Student> "")
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#Student> "Student may particiate in DC")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Student> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#StudentAuthor> (<http://anonymous.com/AcademicConferenceEvent#StudentAuthor>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor> ObjectIntersectionOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor> foaf:Person)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#StudentAuthor> ObjectIntersectionOf(<http://anonymous.com/AcademicConferenceEvent#Author> <http://anonymous.com/AcademicConferenceEvent#Student>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#StudentAuthor> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee> (<http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant> owl:Thing))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee>)
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#getsStudentGrant> owl:Thing))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee> <http://anonymous.com/AcademicConferenceEvent#Awardee>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Talks> (<http://anonymous.com/AcademicConferenceEvent#Talks>)
 
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks> ObjectUnionOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations>))
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#Talks> ObjectUnionOf(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks> <http://anonymous.com/AcademicConferenceEvent#KeynoteTalks> <http://anonymous.com/AcademicConferenceEvent#LightningTalks> <http://anonymous.com/AcademicConferenceEvent#Presentations>))
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Volunteer> (<http://anonymous.com/AcademicConferenceEvent#Volunteer>)
 
-AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer> "is volunteer part of organizing team? or 'has role'?")
-EquivalentClasses(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>))
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant>)
+AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#Volunteer> "is volunteer part of organizing team? or 'has role'?")
+EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#Volunteer> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#volunteersFor> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>))
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Volunteer> <http://anonymous.com/AcademicConferenceEvent#Participant>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#Workshop> (<http://anonymous.com/AcademicConferenceEvent#Workshop>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isStatic> <http://anonymous.com/AcademicConferenceEvent#Workshop> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Workshop> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper>)
+# Class: <http://anonymous.com/AcademicConferenceEvent#WorkshopPaper> (<http://anonymous.com/AcademicConferenceEvent#WorkshopPaper>)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper> "")
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper>)
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#WorkshopPaper> "")
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#WorkshopPaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker> (<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker>)
+# Class: <http://anonymous.com/AcademicConferenceEventEvent#Speaker> (<http://anonymous.com/AcademicConferenceEventEvent#Speaker>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#Speaker> foaf:Person)
+SubClassOf(<http://anonymous.com/AcademicConferenceEventEvent#Speaker> foaf:Person)
 
-# Class: <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole> (<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole>)
+# Class: <http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole> (<http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
+SubClassOf(<http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
 
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#College> (<http://kracr.iiitd.edu.in/OWL2Bench#College>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization>)
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> <http://anonymous.com/AcademicConferenceEvent#AcademicOrganization>)
 
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> (<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>)
 
@@ -819,20 +819,20 @@ SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> foaf:Organization
 
 # Class: <http://kracr.iiitd.edu.in/OWL2Bench#University> (<http://kracr.iiitd.edu.in/OWL2Bench#University>)
 
-SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization>)
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> <http://anonymous.com/AcademicConferenceEvent#AcademicOrganization>)
 
 # Class: <http://purl.org/ontology/bibo/Manuscript> (<http://purl.org/ontology/bibo/Manuscript>)
 
-EquivalentClasses(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author>))
-SubClassOf(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain>))
+EquivalentClasses(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasAuthor> <http://anonymous.com/AcademicConferenceEvent#Author>))
+SubClassOf(<http://purl.org/ontology/bibo/Manuscript> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasDomain> <http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>))
 
 # Class: event:Event (event:Event)
 
-EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode>))
-EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee>))
-EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/Location#hasLocation> owl:Thing))
-SubClassOf(event:Event DataSomeValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation> xsd:string))
-SubClassOf(event:Event DataExactCardinality(1 <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle> xsd:string))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasEventMode> <http://anonymous.com/AcademicConferenceEvent#EventMode>))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> <http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee>))
+EquivalentClasses(event:Event ObjectSomeValuesFrom(<http://anonymous.com/Location#hasLocation> owl:Thing))
+SubClassOf(event:Event DataSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasLocation> xsd:string))
+SubClassOf(event:Event DataExactCardinality(1 <http://anonymous.com/AcademicConferenceEvent#hasTitle> xsd:string))
 
 # Class: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> (Role)
 
@@ -842,7 +842,7 @@ AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/cla
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl>)
 AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> "KeyNoteSpeakerRole"@en)
-SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://kracr.iiitd.edu.in/AcademicConferenceEventEvent#SpeakerRole>)
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://anonymous.com/AcademicConferenceEventEvent#SpeakerRole>)
 
 # Class: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> (OrganizerRole)
 
@@ -852,189 +852,189 @@ SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organize
 
 # Class: foaf:Organization (foaf:Organization)
 
-AnnotationAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic> foaf:Organization "")
-SubClassOf(foaf:Organization ObjectSomeValuesFrom(<http://kracr.iiitd.edu.in/Location#hasLocation> owl:Thing))
+AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isStatic> foaf:Organization "")
+SubClassOf(foaf:Organization ObjectSomeValuesFrom(<http://anonymous.com/Location#hasLocation> owl:Thing))
 
 # Class: foaf:Person (foaf:Person)
 
-SubClassOf(foaf:Person ObjectAllValuesFrom(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation> foaf:Organization))
+SubClassOf(foaf:Person ObjectAllValuesFrom(<http://anonymous.com/AcademicConferenceEvent#hasAffiliation> foaf:Organization))
 
 
 ############################
 #   Named Individuals
 ############################
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#aiForSocialGood> (<http://anonymous.com/AcademicConferenceEvent#aiForSocialGood>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#aiForSocialGood>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#applicationsTrack> (<http://anonymous.com/AcademicConferenceEvent#applicationsTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#applicationsTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#artificialIntelligence> (<http://anonymous.com/AcademicConferenceEvent#artificialIntelligence>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#artificialIntelligence>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#bigData> (<http://anonymous.com/AcademicConferenceEvent#bigData>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#bigData>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#blockChain> (<http://anonymous.com/AcademicConferenceEvent#blockChain>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#blockChain>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#cloudComputing> (<http://anonymous.com/AcademicConferenceEvent#cloudComputing>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#cloudComputing>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#computerVision> (<http://anonymous.com/AcademicConferenceEvent#computerVision>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#computerVision>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#dataScience> (<http://anonymous.com/AcademicConferenceEvent#dataScience>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#dataScience>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#deepLearning> (<http://anonymous.com/AcademicConferenceEvent#deepLearning>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#deepLearning>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#demoTrack> (<http://anonymous.com/AcademicConferenceEvent#demoTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#demoTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> (<http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#generalChair> (<http://anonymous.com/AcademicConferenceEvent#generalChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#generalChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#hybrid> (<http://anonymous.com/AcademicConferenceEvent#hybrid>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#EventMode> <http://anonymous.com/AcademicConferenceEvent#hybrid>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#internetOfThings> (<http://anonymous.com/AcademicConferenceEvent#internetOfThings>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#internetOfThings>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue> (<http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#knowledgeGraph> (<http://anonymous.com/AcademicConferenceEvent#knowledgeGraph>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#knowledgeGraph>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#linkedData> (<http://anonymous.com/AcademicConferenceEvent#linkedData>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#linkedData>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#localChair> (<http://anonymous.com/AcademicConferenceEvent#localChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#localChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#machineLearning> (<http://anonymous.com/AcademicConferenceEvent#machineLearning>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning>)
-SameIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#machineLearning>)
+SameIndividual(<http://anonymous.com/AcademicConferenceEvent#machineLearning> <http://anonymous.com/AcademicConferenceEvent#ml>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#ml> (<http://anonymous.com/AcademicConferenceEvent#ml>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#ml>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> (<http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing>)
-SameIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing>)
+SameIndividual(<http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <http://anonymous.com/AcademicConferenceEvent#nlp>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#neuralNetworks> (<http://anonymous.com/AcademicConferenceEvent#neuralNetworks>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#neuralNetworks>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#nlp> (<http://anonymous.com/AcademicConferenceEvent#nlp>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#nlp>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#offline> (<http://anonymous.com/AcademicConferenceEvent#offline>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#EventMode> <http://anonymous.com/AcademicConferenceEvent#offline>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#online> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#online>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#online> (<http://anonymous.com/AcademicConferenceEvent#online>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#online>)
-SameIndividual(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#online> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#remote>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#EventMode> <http://anonymous.com/AcademicConferenceEvent#online>)
+SameIndividual(<http://anonymous.com/AcademicConferenceEvent#online> <http://anonymous.com/AcademicConferenceEvent#remote>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#ontology> (<http://anonymous.com/AcademicConferenceEvent#ontology>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#ontology>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#posterTrack> (<http://anonymous.com/AcademicConferenceEvent#posterTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#posterTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#quantumComputing> (<http://anonymous.com/AcademicConferenceEvent#quantumComputing>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#quantumComputing>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#researchTrack> (<http://anonymous.com/AcademicConferenceEvent#researchTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#researchTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#researchTrackChair> (<http://anonymous.com/AcademicConferenceEvent#researchTrackChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#researchTrackChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#resourcesTrack> (<http://anonymous.com/AcademicConferenceEvent#resourcesTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#resourcesTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> (<http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#semanticWeb> (<http://anonymous.com/AcademicConferenceEvent#semanticWeb>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#semanticWeb>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#trackChair> (<http://anonymous.com/AcademicConferenceEvent#trackChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#trackChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#tutorialTrack> (<http://anonymous.com/AcademicConferenceEvent#tutorialTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#tutorialTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> (<http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#workshopTrack> (<http://anonymous.com/AcademicConferenceEvent#workshopTrack>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#workshopTrack>)
 
-# Individual: <http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair> (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair>)
+# Individual: <http://anonymous.com/AcademicConferenceEvent#workshopTrackChair> (<http://anonymous.com/AcademicConferenceEvent#workshopTrackChair>)
 
-ClassAssertion(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair>)
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ChairRole> <http://anonymous.com/AcademicConferenceEvent#workshopTrackChair>)
 
 
-DifferentIndividuals(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#online>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents> <http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt>) <http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://kracr.iiitd.edu.in/Location#hasLocation>) <http://kracr.iiitd.edu.in/Location#hasLocation>)
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId>))
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
-HasKey(<http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper> () (<http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId>))
+DifferentIndividuals(<http://anonymous.com/AcademicConferenceEvent#offline> <http://anonymous.com/AcademicConferenceEvent#online>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper> <http://anonymous.com/AcademicConferenceEvent#hasAuthor>) <http://anonymous.com/AcademicConferenceEvent#hasCoAuthor>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk> <http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>) <http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk> <http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy>) <http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>) <http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack> <http://anonymous.com/AcademicConferenceEvent#hasChair>) <http://anonymous.com/AcademicConferenceEvent#hasOrganizer>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasTalk> <http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>) <http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#hasTalk> <http://anonymous.com/AcademicConferenceEvent#talkGivenBy>) <http://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#presents> <http://anonymous.com/AcademicConferenceEvent#hasAuthor>) <http://anonymous.com/AcademicConferenceEvent#hasCoAuthor>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://anonymous.com/AcademicConferenceEvent#presents> <http://anonymous.com/AcademicConferenceEvent#isPresentedAt>) <http://anonymous.com/AcademicConferenceEvent#attends>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://anonymous.com/Location#hasLocation>) <http://anonymous.com/Location#hasLocation>)
+HasKey(<http://anonymous.com/AcademicConferenceEvent#AcademicManuscript> () (<http://anonymous.com/AcademicConferenceEvent#hasId>))
+HasKey(<http://anonymous.com/AcademicConferenceEvent#ConferencePaper> () (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
+HasKey(<http://anonymous.com/AcademicConferenceEvent#DemoPaper> () (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
+HasKey(<http://anonymous.com/AcademicConferenceEvent#PosterPaper> () (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
+HasKey(<http://anonymous.com/AcademicConferenceEvent#ResearchPaper> () (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
+HasKey(<http://anonymous.com/AcademicConferenceEvent#WorkshopPaper> () (<http://anonymous.com/AcademicConferenceEvent#hasPaperId>))
 )

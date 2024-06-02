@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://kracr.iiitd.edu.in/ExStreamBench#"
-     xml:base="http://kracr.iiitd.edu.in/ExStreamBench"
+<rdf:RDF xmlns="http://anonymous.com/AcademicConferenceEvent#"
+     xml:base="http://anonymous.com/AcademicConferenceEvent"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ex="http://kracr.iiitd.edu.in/ExStreamBench#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,12 +12,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:event="http://w3id.org/daselab/onto/event#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:TwiACE="http://kracr.iiitd.edu.in/TwiACE#"
-     xmlns:OWL2StreamBench="http://kracr.iiitd.edu.in/OWL2StreamBench#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:AcademicConferenceEvent="http://kracr.iiitd.edu.in/AcademicConferenceEvent#"
-     xmlns:AcademicConferenceTwitter="http://kracr.iiitd.edu.in/AcademicConferenceTwitter#">
-    <owl:Ontology rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent">
+     xmlns:AcademicConferenceEvent="http://anonymous.com/AcademicConferenceEvent#">
+    <owl:Ontology rdf:about="http://anonymous.com/AcademicConferenceEvent">
+        <owl:versionIRI rdf:resource="http://anonymous.com/AcademicConferenceEvent/1.0.0"/>
         <rdfs:comment>05/05/2023 16:33</rdfs:comment>
         <rdfs:comment>Academic Conference Event Ontology</rdfs:comment>
     </owl:Ontology>
@@ -36,21 +33,21 @@
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isInstantaneous -->
 
-    <owl:AnnotationProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isInstantaneous"/>
+    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isInstantaneous"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isStatic -->
 
-    <owl:AnnotationProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isStatic"/>
+    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isStatic"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isTimeVarying -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isTimeVarying -->
 
-    <owl:AnnotationProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isTimeVarying"/>
+    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isTimeVarying"/>
     
 
 
@@ -65,287 +62,287 @@
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#attends -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends">
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#attends">
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAttendee"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#presents"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#getsAward -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#getsStudentGrant -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsStudentGrant">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkAt">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt"/>
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkAt">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt"/>
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkAt">
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesTalkAt">
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAccount -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAccount"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAdvisor -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAdvisor">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAdvisor">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAffiliation -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAffiliation">
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAttendee -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAttendee">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAttendee">
+        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAuthor -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChair">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf"/>
-        <owl:propertyDisjointWith rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVolunteer"/>
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isChairOf"/>
+        <owl:propertyDisjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasCoAuthor -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCoAuthor">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasCoAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasCollaborator"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#presents"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasCollaborator -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasCollaborator">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasCollaborator">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDemoTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasDomain -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDomain"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasEventMode -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasMode"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEventMode">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasMode"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasGeneralChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasGeneralChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasGeneralChairRoleAt">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChairRoleAt"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalkSpeaker">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasInvitedTalk"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteSpeaker">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasKeynoteTalk">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasLocalChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocalChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasLocalChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasMode -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasMode -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasMode"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasMode"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizer -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizer">
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizer">
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasChair"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChair"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizerRoleAt">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt">
+        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>Example:
 ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
@@ -354,247 +351,247 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaper -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaper">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaper">
+        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperDomain -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperDomain">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDomain"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperDomain">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDomain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperTrack -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasParticipant -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasParticipant -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPosterTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasProject -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasProject">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasProject">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResearchTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasResourceTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasSession -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSession">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSession">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Session"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAccount"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSpeaker">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSpeaker">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasTalk -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTwitterAccount">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSocialMediaAccount"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVolunteer -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasVolunteer -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVolunteer"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWorkshopAndTutorialChair">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isAcceptedAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt">
+        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isAuthorOf -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAuthorOf">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isAuthorOf">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isChairOf -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isChairOf">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isChairOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isOrganizerOf -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isOrganizerOf">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isPresentedAt -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedAt">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedAt">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>what could be the inverse property of isPresentedAt?</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isPresentedBy -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isPresentedBy">
-        <owl:inverseOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedBy">
+        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#presents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#organizes -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#organizes">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#organizes">
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#presents -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#presents">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#talkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#talkGivenBy">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#talkGivenBy">
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#volunteersFor -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#volunteersFor">
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Location#hasLocation -->
+    <!-- http://anonymous.com/Location#hasLocation -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Location#hasLocation">
+    <owl:ObjectProperty rdf:about="http://anonymous.com/Location#hasLocation">
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#isPartOf"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/Location#hasLocation"/>
+            <rdf:Description rdf:about="http://anonymous.com/Location#hasLocation"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -629,7 +626,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </rdf:Description>
     
 
@@ -645,202 +642,202 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesInvitedTalkOn">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesKeynoteTalkOn">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#givesTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#givesTalkOn">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesTalkOn">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasAuthorId -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthorId">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthorId">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasId"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasConferenceName -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasConferenceName">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasConferenceName">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasName"/>
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#Conference"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDeadline">
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasDuration -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDuration">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDuration">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <owl:propertyDisjointWith rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation"/>
+        <owl:propertyDisjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasLocation"/>
         <rdfs:comment>An event can go for days, hours, or months.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEarlyRegistrationDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasEdition -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEdition">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEdition">
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>3rd or third</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEndDate -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasEndDate -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEndDate"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEndDate"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasId -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasId">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasLocation -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasLocation">
+        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasVenue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasName">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperId -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasId"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasRegistrationDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasStartDate -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStartDate">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasStartDate">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasStatus -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasStatus">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasStatus">
+        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Announced, Approaching, TakingPlace, Over</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasSubmissionDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasDeadline"/>
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline">
+        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasTheme -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTheme">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTheme">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasTitle -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTitle">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasVenue -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasVenue">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasVenue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#isRelatedTo -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isRelatedTo">
+    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isRelatedTo">
         <rdfs:comment>Every aacdemic manuscript is related to some topic. For example AI</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -857,338 +854,338 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEvent -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEvent">
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:comment>Every academic event has a track</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventPhases -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventPhases">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventTrack"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicManuscript -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasId"/>
         </owl:hasKey>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicOrganization -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment>Can be linked to OWL2Bench?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcceptedPapersNotificationPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcceptedPapersNotificationPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#NotificationPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#NotificationPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#AnnouncementPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Attendee -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Attendee">
-        <owl:equivalentClass rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Attendee">
+        <owl:equivalentClass rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Author -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Author">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <owl:disjointWith rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor"/>
+        <owl:disjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#NonAuthor"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Awardee -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Awardee">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Awardee"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#CallForPapersAnnouncementPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#CallForPapersAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ChairRole -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ChairRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
         <rdfs:comment>Each track will have a chair</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Conference -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
-        <AcademicConferenceEvent:isStatic></AcademicConferenceEvent:isStatic>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Conference">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <isStatic></isStatic>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceEventPhases -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceEventPhases">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ConferencePaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferencePaper">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#isAcceptedAt"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Conference"/>
+                <owl:onClass rdf:resource="http://anonymous.com/AcademicConferenceEvent#Conference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ConferenceTrack -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEventTrack"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
         <rdfs:comment>Every Academic Event Track is a subevent of  Academic Event</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#DemoPaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#DemoPaper">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyAnnouncementPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AnnouncementPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyRegistrationReminderPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyRegistrationReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#RegistrationReminderPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#EditorRole -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EditorRole">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EditorRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#EventMode -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventPhases -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#EventPhases -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EventPhases"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Speaker"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Speaker"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#SpeakerRole"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalks -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalks">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#JournalArticle -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#JournalArticle">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#JournalArticle">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Speaker"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Speaker"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteTalks -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#LightningTalks -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#LightningTalks">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#MainConferenceAnnouncementPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#MainConferenceAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAcademicOrganization">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:subClassOf>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization"/>
+                <owl:complementOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#NonAuthor -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#NonAuthor">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NonAuthor">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:subClassOf>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author"/>
+                <owl:complementOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#NotificationPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#NotificationPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#NotificationPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NotificationPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Organizer -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Organizer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment>I have added</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
-                <owl:allValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+                <owl:allValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Can be removed</rdfs:comment>
@@ -1196,187 +1193,187 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#PaperSubmissionReminderPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#PaperSubmissionReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ReminderPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Participant -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Participant">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment>Attendee could be an equivalent class?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#PhDStudent -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PhDStudent">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
         <rdfs:comment>Define this and include in the table</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#PosterPaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#PosterPaper">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PosterPaper">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Presentations -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Presentations">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#RegistrationReminderPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#RegistrationReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ReminderPhase"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ReminderPhase -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ReminderPhase -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ReminderPhase">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ResearchPaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResearchPaper">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ResearchPaper">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#researchTrack"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ResourcePaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ResourcePaper">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ResourcePaper">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#researchTrack"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Session -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Session -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Session"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Session"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#SingleAuthorPaper">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Speaker -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Speaker -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Speaker">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Speaker">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#SpeakerRole -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#SpeakerRole -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#SpeakerRole">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#SpeakerRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Student -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Student">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <AcademicConferenceEvent:isTimeVarying></AcademicConferenceEvent:isTimeVarying>
+        <isTimeVarying></isTimeVarying>
         <rdfs:comment>Student may particiate in DC</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#StudentAuthor -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor">
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#StudentAuthor">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Awardee"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Awardee"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Talks -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Volunteer -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Volunteer">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
         <rdfs:comment>is volunteer part of organizing team? or &apos;has role&apos;?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#Workshop -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Workshop">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
-        <AcademicConferenceEvent:isStatic></AcademicConferenceEvent:isStatic>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Workshop">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <isStatic></isStatic>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#WorkshopPaper -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#WorkshopPaper">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#WorkshopPaper">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
-        <AcademicConferenceEvent:isInstantaneous></AcademicConferenceEvent:isInstantaneous>
+        <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
@@ -1384,7 +1381,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#College -->
 
     <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#College">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
     </owl:Class>
     
 
@@ -1400,7 +1397,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#University -->
 
     <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#University">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicOrganization"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
     </owl:Class>
     
 
@@ -1428,7 +1425,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#SpeakerRole"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"/>
         <rdfs:label xml:lang="en">KeyNoteSpeakerRole</rdfs:label>
     </owl:Class>
@@ -1448,7 +1445,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <AcademicConferenceEvent:isStatic></AcademicConferenceEvent:isStatic>
+        <isStatic></isStatic>
     </owl:Class>
     
 
@@ -1458,7 +1455,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAffiliation"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAffiliation"/>
                 <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1477,345 +1474,345 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#aiForSocialGood -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#aiForSocialGood">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#aiForSocialGood">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#announcement -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#announcement -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#announcement"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#announcement"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#applicationsTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#applicationsTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#applicationsTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#artificialIntelligence -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#artificialIntelligence">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#artificialIntelligence">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#bigData -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#bigData">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#bigData">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#blockChain -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#blockChain">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#blockChain">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#cloudComputing -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#cloudComputing">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#cloudComputing">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#computerVision -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#computerVision">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#computerVision">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#dataScience -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#dataScience">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#dataScience">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#deepLearning -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#deepLearning">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#deepLearning">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#demoTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#demoTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#demoTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#generalChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#generalChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#generalChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#hybrid -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#hybrid">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#insights -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#insights -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#insights"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#insights"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#internetOfThings -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#internetOfThings">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#internetOfThings">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#journalSpecialIssue">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#knowledgeGraph -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#knowledgeGraph">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#knowledgeGraph">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#linkedData -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#linkedData">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#linkedData">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#localChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#localChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#localChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#machineLearning -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#machineLearning">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
-        <owl:sameAs rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#machineLearning">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#ml"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ml -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ml">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#ml">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#naturalLanguageProcessing">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
-        <owl:sameAs rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#nlp"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#neuralNetworks -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#neuralNetworks">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#neuralNetworks">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#nlp -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#nlp">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#nlp">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#notification -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#notification -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#notification"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#notification"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#offline -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#offline">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#online -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#online -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#online">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
-        <owl:sameAs rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#remote"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#online">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#remote"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#ontology -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ontology">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#ontology">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#posterTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#posterTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#posterTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#quantumComputing -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#quantumComputing">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#quantumComputing">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#randomCategory -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#randomCategory -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#randomCategory"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#randomCategory"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#reminder -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#reminder -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#reminder"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#reminder"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#remote -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#remote -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#remote"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#remote"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#researchTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#researchTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#researchTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#researchTrackChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#researchTrackChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#resourcesTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#resourcesTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#resourcesTrackChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#semanticWeb -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#semanticWeb">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#semanticWeb">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#trackChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#trackChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#trackChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#tutorialTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#tutorialTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#tutorialTrackChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#workshopTrack -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrack">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#workshopTrack">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair -->
+    <!-- http://anonymous.com/AcademicConferenceEvent#workshopTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#workshopTrackChair">
-        <rdf:type rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#workshopTrackChair">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
@@ -1830,138 +1827,138 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
 
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Student"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Author"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Student"/>
         </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentAuthor"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
     </owl:Class>
     <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#LightningTalks"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Presentations"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#LightningTalks"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Presentations"/>
         </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hybrid"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#online"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hybrid"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#offline"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#online"/>
         </owl:oneOf>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:Class>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#attends"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Participant"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#attends"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsBestPaperAward"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#BestPaperAwardee"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#getsStudentGrant"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsStudentGrant"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#StudentGrantAwardee"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAcceptedPaper"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicManuscript"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasAuthor"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Author"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasEventMode"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#EventMode"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasEventMode"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasOrganizingCommittee"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#OrganizingCommittee"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#ConferenceTrack"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTalk"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Talks"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#invitedTalkGivenBy"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalks"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#keynoteTalkGivenBy"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteTalks"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#presents"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#presents"/>
         <owl:someValuesFrom>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#doctoralConsortiumTrack"/>
+                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack"/>
             </owl:Restriction>
         </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#PhDStudent"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#PhDStudent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#volunteersFor"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Volunteer"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#volunteersFor"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Volunteer"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
-        <owl:someValuesFrom rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeakerRole"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
         <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
         <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#Organizer"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasLocation"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasLocation"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasTitle"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTitle"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#hasWebsiteURL"/>
+        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#offline"/>
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/AcademicConferenceEvent#online"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#offline"/>
+            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#online"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>

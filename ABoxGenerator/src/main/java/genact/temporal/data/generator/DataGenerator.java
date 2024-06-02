@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.ZoneId;
+
 import com.opencsv.CSVReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Random;
+import java.util.Date;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.RDFWriter;
@@ -31,160 +33,140 @@ import java.util.*;
  */
 public class DataGenerator {
 
-    // Configuration parameters
-    int acceptedPaperCount_min;
-    int acceptedPaperCount_max;
-    int acceptedPaperCount;
-    int peopleDirectlyInvolved_min;
-    int peopleDirectlyInvolved_max;
-    int peopleDirectlyInvolved;
-    int otherPeopleInvolved_min;
-    int otherPeopleInvolved_max;
-    int otherPeopleInvolved;
-    int usersInvolved_min;
-    int usersInvolved_max;
-    int usersInvolved;
-    int organizationCount_min;
-    int acadOrganizationCount_min;
-    int acadOrganizationCount_max;
-    int acadOrganizationCount;
-    int nonAcadOrganizationCount_min;
-    int nonAcadOrganizationCount_max;
-    int nonAcadOrganizationCount;
-    int researchGroupCount_min;
-    int researchGroupCount_max;
-    int researchGroupCount;
-    int collegeCount_min;
-    int collegeCount_max;
-    int collegeCount;
-    int conferenceDuration_min_months;
-    int conferenceDuration_max_months;
-    int conferenceDuration_months;
-    int nextConferenceCycleStartsIn_min;
-    int nextConferenceCycleStartsIn_max;
-    int nextConferenceCycleStartsIn;
-    int cityCount_min;
-    int cityCount_max;
-    int cityCount;
-    int early_announcement_peak_min;
-    int early_announcement_peak_max;
-    int notification_peak_min;
-    int notification_peak_max;
-    int during_conference_peak_min;
-    int during_conference_peak_max;
-    int after_conference_peak_min;
-    int after_conference_peak_max;
-    int during_conference_days_max;
-    int during_conference_days_min;
-    int after_conference_days_max;
-    int after_conference_days_min;
-    int random_tweets_min;
-    int random_tweets_max;
+	// Configuration parameters
+	int acceptedPaperCount_min;
+	int acceptedPaperCount_max;
+	int acceptedPaperCount;
+	int peopleDirectlyInvolved_min;
+	int peopleDirectlyInvolved_max;
+	int peopleDirectlyInvolved;
+	int otherPeopleInvolved_min;
+	int otherPeopleInvolved_max;
+	int otherPeopleInvolved;
+	int usersInvolved_min;
+	int usersInvolved_max;
+	int usersInvolved;
+	int organizationCount_min;
+	int acadOrganizationCount_min;
+	int acadOrganizationCount_max;
+	int acadOrganizationCount;
+	int nonAcadOrganizationCount_min;
+	int nonAcadOrganizationCount_max;
+	int nonAcadOrganizationCount;
+	int researchGroupCount_min;
+	int researchGroupCount_max;
+	int researchGroupCount;
+	int collegeCount_min;
+	int collegeCount_max;
+	int collegeCount;
+	int conferenceDuration_min_months;
+	int conferenceDuration_max_months;
+	int conferenceDuration_months;
+	int nextConferenceCycleStartsIn_min;
+	int nextConferenceCycleStartsIn_max;
+	int nextConferenceCycleStartsIn;
+	int cityCount_min;
+	int cityCount_max;
+	int cityCount;
+	int early_announcement_peak_min;
+	int early_announcement_peak_max;
+	int notification_peak_min;
+	int notification_peak_max;
+	int during_conference_peak_min;
+	int during_conference_peak_max;
+	int after_conference_peak_min;
+	int after_conference_peak_max;
+	int during_conference_days_max;
+	int during_conference_days_min;
+	int after_conference_days_max;
+	int after_conference_days_min;
+	int random_tweets_min;
+	int random_tweets_max;
+	List<String> researchGroups = new ArrayList<>();
+	List<String> cities = new ArrayList<>();
+	Map<String, Map<String, Object>> papers;
+	File streamsDirectory;
+	// Partition partition;
+	Map<String, Map<String, String>> userData;
+	Map<String, Map<String, Object>> paperData;
+	// these are the instances that have been defined in the ontologies
+	String[] TOKEN_ConferenceEventTrack = new String[] { "applicationsTrack", "demoTrack", "doctoralConsortiumTrack",
+			"posterTrack", "researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack" };
+	String[] TOKEN_EventMode = new String[] { "online", "offline", "hybrid" };
+	String[] TOKEN_ChairRole = new String[] { "generalChair", "localChair", "researchTrackChair", "resourcesTrackChair",
+			"trackChair", "tutorialTrackChair", "workshopTrackChair" };
+	String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
+			"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
+			"knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing",
+			"quantumComputing", "semanticWeb" };
+	String[] TOKEN_EventPhases = new String[] {};
 
-    // Lists to hold research groups and cities
-    List<String> researchGroups = new ArrayList<>();
-    List<String> cities = new ArrayList<>();
+	int confNum; // user specifies the number of conferences required such as if user wants 4:
+					// ESWC, ISWC, AAAI, WWW.
+	int confCycle; // user specifies the number of conference cycles needed such as ESWC21. ESWC22,
+					// ESWC23...
+	File staticDirectory;
+	String profile;
+	String confInstance;
+	String directoryPath;
+	ConferenceStreams[] conferences;
+	Random random = new Random();
+	HashMap<Integer, String> map1 = new HashMap<>();
+	HashMap<Integer, String> map2 = new HashMap<>();
+	HashMap<Integer, String> map3 = new HashMap<>();
+	LocalDateTime dateTime;
+	long startTimestampMillis;
+	List<String> usersList;
 
-    // Maps to hold paper data and user data
-    Map<String, Map<String, Object>> papers;
-    Map<String, Map<String, String>> userData;
-    Map<String, Map<String, Object>> paperData;
+	public DataGenerator() {
+	}
 
-    // Directory for streams
-    File streamsDirectory;
+	public static void main(String[] args) throws IOException {
+		int confNum = 5;
+		int seed = 1;
+		int confCycle = 1;
+		String currentDirectory = System.getProperty("user.dir");
+		File currentDirFile = new File(currentDirectory);
+		String directoryPath = currentDirFile.getParent();
+		if (args.length == 4) {
+			confNum = Integer.parseInt(args[0]);
+			confCycle = Integer.parseInt(args[1]);
+			directoryPath = args[2];
+			seed = Integer.parseInt(args[3]);
+		}
+		if (args.length == 3) {
+			confNum = Integer.parseInt(args[0]);
+			confCycle = Integer.parseInt(args[1]);
+			directoryPath = args[2];
+		}
 
-    // Instances defined in the ontologies
-    String[] TOKEN_ConferenceEventTrack = new String[] { "applicationsTrack", "demoTrack", "doctoralConsortiumTrack", "posterTrack", "researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack" };
-    String[] TOKEN_EventMode = new String[] { "online", "offline", "hybrid" };
-    String[] TOKEN_ChairRole = new String[] { "generalChair", "localChair", "researchTrackChair", "resourcesTrackChair", "trackChair", "tutorialTrackChair", "workshopTrackChair" };
-    String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData", "blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings", "knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "quantumComputing", "semanticWeb" };
-    String[] TOKEN_EventPhases = new String[] {};
+		else if (args.length == 2) {
+			confNum = Integer.parseInt(args[0]);
+			confCycle = Integer.parseInt(args[1]);
+		} else {
+			System.out.println(
+					"Please give arguments in the following order: No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) ");
+			System.out.println("For example: 2 5 C:/GitHub/OWL2StreamBench 100");
+		}
 
-    // Number of conferences and cycles
-    int confNum;
-    int confCycle;
+		// Universal Time (UTC).
+		new DataGenerator().start(confNum, confCycle, directoryPath, seed);
+	}
 
-    // Directory for static data
-    File staticDirectory;
-    String confInstance;
-
-    // Directory path for data storage
-    String directoryPath;
-
-    // Array of conference streams
-    ConferenceStreams[] conferences;
-
-    // Random number generator
-    Random random = new Random();
-
-    // Timestamp for the start time
-    LocalDateTime dateTime = LocalDateTime.of(1970, Month.JANUARY, 1, 0, 0);
-    long startTimestampMillis = dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
-    // List of users
-    List<String> usersList;
-
-    /**
-     * Constructor for DataGenerator
-     */
-    public DataGenerator() {
-    }
-
-    /**
-     * Main method to run the DataGenerator
-     * 
-     * @param args Command line arguments for the number of conferences, number of cycles, directory path, and seed
-     * @throws IOException If an input or output exception occurs
-     */
-    public static void main(String[] args) throws IOException {
-        int confNum = 3;
-        int seed = 1;
-        int confCycle = 3;
-        String currentDirectory = System.getProperty("user.dir");
-        File currentDirFile = new File(currentDirectory);
-        String directoryPath = currentDirFile.getParent();
-
-        if (args.length == 4) {
-            confNum = Integer.parseInt(args[0]);
-            confCycle = Integer.parseInt(args[1]);
-            directoryPath = args[2];
-            seed = Integer.parseInt(args[3]);
-        } else if (args.length == 3) {
-            confNum = Integer.parseInt(args[0]);
-            confCycle = Integer.parseInt(args[1]);
-            directoryPath = args[2];
-        } else if (args.length == 2) {
-            confNum = Integer.parseInt(args[0]);
-            confCycle = Integer.parseInt(args[1]);
-        } else {
-            System.out.println("Please give arguments in the following order: No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory, DirectoryPath (optional), Seed (optional) ");
-            System.out.println("For example: 2 5 C:/GitHub/OWL2StreamBench 100");
-        }
-
-        // Start the data generation process
-        new DataGenerator().start(confNum, confCycle, directoryPath, seed);
-    }
-
-    /**
-     * Method to start the data generation process
-     * 
-     * @param confNum       Number of conferences
-     * @param confCycle     Number of conference cycles
-     * @param directoryPath Path to the directory for data storage
-     * @param seed          Seed for random number generation
-     * @throws IOException If an input or output exception occurs
-     */
+	// data generator starts with selecting the name of the authors, paper,
+	// conferences, organizations, locations randomly
+	// and storing them to a data structure and utilize them for generating the
+	// instances in the later part of the code
+	// tracks, authorids and affiliations are assigned randomly
+	// currently we have data for 27 conferences starting from the year 2000 to 2022
 	public void start(int confNum, int confCycle, String directoryPath, int seed) throws IOException {
 
 		this.directoryPath = directoryPath;
-		this.staticDirectory = new File(directoryPath + "/StaticData");
-		if (!staticDirectory.exists()) {
-			staticDirectory.mkdirs();
-		}
 		this.confNum = confNum;
 		this.confCycle = confCycle;
 		random.setSeed((long) seed);
-
+		this.dateTime = LocalDateTime.of(1970, Month.JANUARY, 1, 0, 0);
+		this.startTimestampMillis = dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 		Properties prop1 = new Properties();
 		InputStream input1 = null;
 		Properties prop2 = new Properties();
@@ -228,7 +210,7 @@ public class DataGenerator {
 			this.during_conference_days_max = Integer.parseInt(prop2.getProperty("during_conference_days_max"));
 			this.during_conference_days_min = Integer.parseInt(prop2.getProperty("during_conference_days_min"));
 			this.after_conference_days_min = Integer.parseInt(prop2.getProperty("after_conference_days_min"));
-			this.after_conference_days_max = Integer.parseInt(prop2.getProperty("after_conference_peak_max"));
+			this.after_conference_days_max = Integer.parseInt(prop2.getProperty("after_conference_days_max"));
 			this.random_tweets_min = Integer.parseInt(prop2.getProperty("random_tweets_min"));
 			this.random_tweets_max = Integer.parseInt(prop2.getProperty("random_tweets_max"));
 		} catch (IOException ex) {
@@ -260,6 +242,11 @@ public class DataGenerator {
 		this.userData = generateUserData(totalUserCount, displayNames, this.researchGroups);
 		this.paperData = generatePaperData(totalPaperCount, paperTitles, userData);
 		this.cities = readCitiesFromCSV(this.directoryPath + "/CSVFiles/location.csv"); // from location.csv
+
+//	        for (Map.Entry<String, Map<String, String>> entry : this.userData.entrySet()) {
+//	            System.out.println("UserID: " + entry.getKey() + ", Data: " + entry.getValue());
+//	        }
+
 		this.generate(seed);
 	}
 
@@ -416,6 +403,7 @@ public class DataGenerator {
 
 		this.conferences = new ConferenceStreams[this.confNum];
 		for (int i = 0; i < this.confNum; ++i) {
+			System.out.println(this.startTimestampMillis);
 			System.out.println("Started Conference Instance " + i);
 			conferences[i] = new ConferenceStreams(DataGenerator.this, i);
 		}

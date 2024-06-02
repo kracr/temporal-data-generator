@@ -30,7 +30,7 @@ public class AfterConference {
 	RDFWriter tweetEventDataWriter;
 	Model tweetMetaDataModel;
 	Model eventDataModel;
-
+	LocalDateTime timestamp;
 	public AfterConference(ConferenceStreams conf, long startTime, long endTime) {
 		this.conf = conf;
 		this.random = conf.random;
@@ -39,8 +39,10 @@ public class AfterConference {
 		LocalDateTime afterConferenceEnd = LocalDateTime.ofInstant(new Date(endTime).toInstant(),
 				ZoneId.systemDefault());
 
-		LocalDateTime timestamp = getRandomTimestamp(duringConferenceEnd, afterConferenceEnd);
+		
+		
 		for (String track : conf.TOKEN_ConferenceEventTrack) {
+			timestamp = getRandomTimestamp(duringConferenceEnd, afterConferenceEnd);
 			BestPaperTrackAwardAnnouncement(timestamp, track);
 		}
 		// NextConferenceAnnouncement(timestamp);
@@ -53,8 +55,9 @@ public class AfterConference {
 			ConferenceSuccessThankYou(timestamp);
 		}
 
-		while (timestamp.isBefore(conf.nextCycleStart)) {
-			MemorableConferenceExperience(timestamp.plusDays(ThreadLocalRandom.current().nextInt(5, 7)));
+		for (int i = 0; i <=5 ; i++) {
+			timestamp = timestamp.plusDays(ThreadLocalRandom.current().nextInt(5, 7));
+					MemorableConferenceExperience(timestamp);
 		}
 	}
 

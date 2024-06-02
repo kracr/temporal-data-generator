@@ -1,88 +1,28 @@
 
 package genact.temporal.data.generator;
 
-import org.apache.jena.query.ARQ;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-
-import org.apache.jena.query.Dataset;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFFormat;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.RDFNode;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
 import java.util.Map;
-import java.util.Properties;
-import org.yaml.snakeyaml.Yaml;
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFWriterBuilder;
-import org.apache.jena.query.ResultSet;
-import org.apache.jena.rdf.model.*;
-import java.util.UUID;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.apache.jena.vocabulary.RDF;
 import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import java.util.Random;
-import java.util.Set;
-import org.apache.jena.query.DatasetFactory;
-import java.io.OutputStream;
 import org.apache.jena.rdf.model.RDFWriter;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.riot.Lang;
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFLanguages;
-import org.apache.jena.sparql.core.DatasetGraph;
-import org.apache.jena.query.Dataset;
-import org.apache.jena.rdf.model.*;
-import org.apache.jena.util.FileManager;
-import org.apache.jena.vocabulary.*;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-
-import org.apache.jena.query.Dataset;
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.QuerySolution;
-import org.apache.jena.query.ResultSet;
-import org.apache.jena.riot.RDFDataMgr;
 import java.util.concurrent.CountDownLatch;
 
 /*
@@ -104,7 +44,6 @@ public class ConferenceStreams {
 	int seed;
 	int tweetCount;
 	Random random = new Random();
-	Dataset dataset = DatasetFactory.create();
 	int graphCounter = 1;
 	HashSet<String> attendees = new HashSet<>();
 	HashSet<String> nonAttendees = new HashSet<>();
@@ -289,13 +228,16 @@ public class ConferenceStreams {
 		this.userData = gen.userData;
 		this.usersList = gen.usersList;
 		this.researchGroups = gen.researchGroups;
-
-		long maxRandomMillis = ThreadLocalRandom.current().nextInt(1, 4) * 30 * 24 * 60 * 60 * 1000; // 3 months in milliseconds
-		this.startTimestampMillis = ThreadLocalRandom.current().nextLong(gen.startTimestampMillis, gen.startTimestampMillis + maxRandomMillis);
-//        LocalDateTime randomStartTime = LocalDateTime.ofEpochSecond((System.currentTimeMillis() / 1000) + (randomMillis / 1000), 0, ZoneId.systemDefault().getRules().getOffset(LocalDateTime.now()));
+		this.startTimestampMillis=gen.startTimestampMillis;
+		System.out.println(this.startTimestampMillis);
+		long maxRandomMillis = ThreadLocalRandom.current().nextInt(4, 10) * 30L * 24 * 60 * 60 * 1000;
+ // 3 months in milliseconds
+//		this.startTimestampMillis = ThreadLocalRandom.current().nextLong(this.startTimestampMillis, (this.startTimestampMillis + maxRandomMillis));
+		this.startTimestampMillis = this.startTimestampMillis + maxRandomMillis;
+		//        LocalDateTime randomStartTime = LocalDateTime.ofEpochSecond((System.currentTimeMillis() / 1000) + (randomMillis / 1000), 0, ZoneId.systemDefault().getRules().getOffset(LocalDateTime.now()));
 //
 //        this.startTimestampMillis = randomStartTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
+		System.out.println(this.startTimestampMillis);
 		defineDatastructures();
 
 		distributeTimestamps();
@@ -368,18 +310,30 @@ public class ConferenceStreams {
 					+ gen.during_conference_days_min; // Range: 3 to 5 days
 			int afterConferenceDays = this.random
 					.nextInt((gen.after_conference_days_max - gen.after_conference_days_min) + 1)
-					+ gen.after_conference_days_min;
+					+ gen.after_conference_days_min; // Range: 2 to 3 days
 			int beforeConferenceDays = overallDurationMonths * 30 - duringConferenceDays - afterConferenceDays; // Remaining
 																												// days
-
+			System.out.println("overall"+overallDurationMonths);
+			System.out.println("beforeConferenceDays"+beforeConferenceDays);
+			System.out.println("duringConferenceDays"+duringConferenceDays);
+			System.out.println("afterConferenceDays"+afterConferenceDays);
 			// Calculate start timestamps for each phase
 			long beforeConferenceStartMillis = this.startTimestampMillis;
 			long beforeConferenceEndMillis = beforeConferenceStartMillis + beforeConferenceDays * 24 * 60 * 60 * 1000L;
 			long duringConferenceEndMillis = beforeConferenceEndMillis + duringConferenceDays * 24 * 60 * 60 * 1000L;
 			long afterConferenceEndMillis = duringConferenceEndMillis + afterConferenceDays * 24 * 60 * 60 * 1000L;
 
-			this.confAccount = "conf" + this.confIndex; // example conf0 . this account will be fixed for eevry instance
-														// of the conf
+			System.out.println("beforeConferenceStartMillis"+ LocalDateTime.ofInstant(new Date(beforeConferenceStartMillis).toInstant(),
+					ZoneId.systemDefault()));
+			
+			System.out.println("beforeConferenceEndMillis"+LocalDateTime.ofInstant(new Date(beforeConferenceEndMillis).toInstant(),
+					ZoneId.systemDefault()));
+			
+			System.out.println("duringConferenceEndMillis"+LocalDateTime.ofInstant(new Date(duringConferenceEndMillis).toInstant(),
+					ZoneId.systemDefault()));
+			System.out.println("afterConferenceEndMillis"+LocalDateTime.ofInstant(new Date(afterConferenceEndMillis).toInstant(),
+					ZoneId.systemDefault()));
+			this.confAccount = "conf" + this.confIndex; 
 			this.confInstance = "conf" + this.confIndex + "_" + this.year; // year will be a variable
 			System.out.println("Started " + this.confAccount + "for the year " + this.year);
 			this.confName = this.confInstance;

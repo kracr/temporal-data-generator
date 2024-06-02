@@ -6,8 +6,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://kracr.iiitd.edu.in/Tweet">
-        <owl:versionIRI rdf:resource="http://kracr.iiitd.edu.in/Tweet/1.0.0"/>
+    <owl:Ontology rdf:about="http:/anonymous.com/Tweet">
+        <owl:versionIRI rdf:resource="http:/anonymous.com/Tweet/1.0.0"/>
         <rdfs:comment>01-06-2024 09:51</rdfs:comment>
         <rdfs:comment>This ontology captures entities that are involved in a Tweet.</rdfs:comment>
     </owl:Ontology>
@@ -28,7 +28,7 @@
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#hasAffiliation -->
 
     <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#hasAffiliation">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasBio"/>
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#hasBio"/>
         <rdfs:comment>This field may change with time.
 
 Links it with OWL2Bench ontology.</rdfs:comment>
@@ -39,73 +39,73 @@ Links it with OWL2Bench ontology.</rdfs:comment>
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#hasDesignation -->
 
     <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#hasDesignation">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasBio"/>
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#hasBio"/>
         <rdfs:comment>This field may change with time</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasBio -->
+    <!-- http:/anonymous.com/Tweet#hasBio -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasBio">
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#hasBio">
         <rdfs:comment xml:lang="iiitd. we make use of this information by splitting the bio into designation and affiliation">Sometimes users mention their designations and affiliations in the bio such as Professor at IIIT Delhi. This field may change with time but not too frequently. So we make use of this information to model changing user bios.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasTwitterAccount -->
+    <!-- http:/anonymous.com/Tweet#hasTwitterAccount -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasTwitterAccount"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#hasTwitterAccount"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#isAbout -->
+    <!-- http:/anonymous.com/Tweet#isAbout -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#isAbout">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#isAbout">
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
         <rdfs:comment>every tweet is about something - a news event, a conference event, or soemthing else.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#mentions -->
+    <!-- http:/anonymous.com/Tweet#mentions -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#mentions">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#mentions">
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
         <rdfs:comment>every tweet mentions some other useraccount</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#mentionsConference -->
+    <!-- http:/anonymous.com/Tweet#mentionsConference -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#mentionsConference">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#mentions"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#mentionsConference">
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#mentions"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#mentionsOrganization -->
+    <!-- http:/anonymous.com/Tweet#mentionsOrganization -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#mentionsOrganization">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#mentions"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#mentionsOrganization">
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#mentions"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#mentionsPerson -->
+    <!-- http:/anonymous.com/Tweet#mentionsPerson -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#mentionsPerson">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#mentions"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#mentionsPerson">
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#mentions"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#posts -->
+    <!-- http:/anonymous.com/Tweet#posts -->
 
-    <owl:ObjectProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#posts">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#UserAccount"/>
-        <rdfs:range rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+    <owl:ObjectProperty rdf:about="http:/anonymous.com/Tweet#posts">
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#UserAccount"/>
+        <rdfs:range rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
     </owl:ObjectProperty>
     
 
@@ -121,66 +121,66 @@ Links it with OWL2Bench ontology.</rdfs:comment>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasDateTimeStamp -->
+    <!-- http:/anonymous.com/Tweet#hasDateTimeStamp -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasDateTimeStamp">
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasDateTimeStamp">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasDisplayName -->
+    <!-- http:/anonymous.com/Tweet#hasDisplayName -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasDisplayName">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasName"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasDisplayName">
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#hasName"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasHashTag -->
+    <!-- http:/anonymous.com/Tweet#hasHashTag -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasHashTag">
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasHashTag">
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasID -->
+    <!-- http:/anonymous.com/Tweet#hasID -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasID"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasID"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasName -->
+    <!-- http:/anonymous.com/Tweet#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasName"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasName"/>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasTweetID -->
+    <!-- http:/anonymous.com/Tweet#hasTweetID -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasTweetID">
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasID"/>
-        <rdfs:domain rdf:resource="http://kracr.iiitd.edu.in/Tweet#Tweet"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasTweetID">
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#hasID"/>
+        <rdfs:domain rdf:resource="http:/anonymous.com/Tweet#Tweet"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasUserID -->
+    <!-- http:/anonymous.com/Tweet#hasUserID -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasUserID">
-        <owl:equivalentProperty rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasUserName"/>
-        <rdfs:subPropertyOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasID"/>
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasUserID">
+        <owl:equivalentProperty rdf:resource="http:/anonymous.com/Tweet#hasUserName"/>
+        <rdfs:subPropertyOf rdf:resource="http:/anonymous.com/Tweet#hasID"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#hasUserName -->
+    <!-- http:/anonymous.com/Tweet#hasUserName -->
 
-    <owl:DatatypeProperty rdf:about="http://kracr.iiitd.edu.in/Tweet#hasUserName">
+    <owl:DatatypeProperty rdf:about="http:/anonymous.com/Tweet#hasUserName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -197,53 +197,53 @@ Links it with OWL2Bench ontology.</rdfs:comment>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#ConferenceAccount -->
+    <!-- http:/anonymous.com/Tweet#ConferenceAccount -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/Tweet#ConferenceAccount">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#UserAccount"/>
+    <owl:Class rdf:about="http:/anonymous.com/Tweet#ConferenceAccount">
+        <rdfs:subClassOf rdf:resource="http:/anonymous.com/Tweet#UserAccount"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#OrganizationAccount -->
+    <!-- http:/anonymous.com/Tweet#OrganizationAccount -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/Tweet#OrganizationAccount">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#UserAccount"/>
+    <owl:Class rdf:about="http:/anonymous.com/Tweet#OrganizationAccount">
+        <rdfs:subClassOf rdf:resource="http:/anonymous.com/Tweet#UserAccount"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#PersonAccount -->
+    <!-- http:/anonymous.com/Tweet#PersonAccount -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/Tweet#PersonAccount">
-        <rdfs:subClassOf rdf:resource="http://kracr.iiitd.edu.in/Tweet#UserAccount"/>
+    <owl:Class rdf:about="http:/anonymous.com/Tweet#PersonAccount">
+        <rdfs:subClassOf rdf:resource="http:/anonymous.com/Tweet#UserAccount"/>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#Tweet -->
+    <!-- http:/anonymous.com/Tweet#Tweet -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/Tweet#Tweet">
+    <owl:Class rdf:about="http:/anonymous.com/Tweet#Tweet">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasTweetID"/>
+                <owl:onProperty rdf:resource="http:/anonymous.com/Tweet#hasTweetID"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kracr.iiitd.edu.in/Tweet#hasTweetID"/>
+            <rdf:Description rdf:about="http:/anonymous.com/Tweet#hasTweetID"/>
         </owl:hasKey>
         <rdfs:comment>Tweet is posted by some user account</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://kracr.iiitd.edu.in/Tweet#UserAccount -->
+    <!-- http:/anonymous.com/Tweet#UserAccount -->
 
-    <owl:Class rdf:about="http://kracr.iiitd.edu.in/Tweet#UserAccount">
+    <owl:Class rdf:about="http:/anonymous.com/Tweet#UserAccount">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://kracr.iiitd.edu.in/Tweet#hasUserID"/>
+                <owl:onProperty rdf:resource="http:/anonymous.com/Tweet#hasUserID"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>

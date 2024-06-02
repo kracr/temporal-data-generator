@@ -73,8 +73,8 @@ public class BeforeConference {
 		// Announcements about accepted papers and insights based on them
 		for (int i = 0; i < conf.notification_peak; i++) {
 			AcceptedPaperNotification(acceptedPaperNotificationTime);
-			acceptedPaperNotificationTime = acceptedPaperNotificationTime
-					.plusDays(ThreadLocalRandom.current().nextInt(2, 5)); // Randomize the interval
+			acceptedPaperNotificationTime = midConferenceTime
+					.plusDays(ThreadLocalRandom.current().nextInt(1, 4)); // Randomize the interval
 		}
 
 		for (int i = 0; i < ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {

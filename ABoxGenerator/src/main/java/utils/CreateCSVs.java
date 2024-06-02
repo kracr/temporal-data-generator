@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.*;
-import java.nio.file.*;
 import java.util.regex.*;
 import java.util.*;
 
@@ -14,7 +13,12 @@ public class CreateCSVs {
 
     public void processDirectories() {
         if (streamsDirectory.exists() && streamsDirectory.isDirectory()) {
-            File[] subdirectories = streamsDirectory.listFiles(File::isDirectory);
+            File[] subdirectories = streamsDirectory.listFiles(new FileFilter() {
+                @Override
+                public boolean accept(File file) {
+                    return file.isDirectory();
+                }
+            });
 
             if (subdirectories != null) {
                 for (File subdirectory : subdirectories) {
@@ -29,7 +33,12 @@ public class CreateCSVs {
     }
 
     private void processSubdirectory(File subdirectory) {
-        File[] ttlFiles = subdirectory.listFiles((dir, name) -> name.endsWith(".ttl"));
+        File[] ttlFiles = subdirectory.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return name.endsWith(".ttl");
+            }
+        });
 
         if (ttlFiles != null) {
             List<String> timestamps = new ArrayList<>();
@@ -50,8 +59,9 @@ public class CreateCSVs {
 
     private void saveTimestampsToCsv(String subdirectoryName, List<String> timestamps) {
         File csvFile = new File(streamsDirectory, subdirectoryName + ".csv");
-
-        try (PrintWriter writer = new PrintWriter(new FileWriter(csvFile))) {
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter(new FileWriter(csvFile));
             writer.println("Timestamp");
 
             for (String timestamp : timestamps) {
@@ -62,6 +72,10 @@ public class CreateCSVs {
         } catch (IOException e) {
             System.err.println("Error writing CSV file: " + csvFile.getAbsolutePath());
             e.printStackTrace();
+        } finally {
+            if (writer != null) {
+                writer.close();
+            }
         }
     }
 
