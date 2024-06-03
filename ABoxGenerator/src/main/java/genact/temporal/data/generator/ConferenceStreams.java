@@ -58,10 +58,10 @@ public class ConferenceStreams {
 	String[] categories = { "Conference Announcement", "Call for Papers", "Submission Reminder", "Notification",
 			"Registration Reminder", "Before Conference", "During Conference", "After Conference" };
 	long currentTimeMillis;
-	String ACE_URL = "https://kracr.iiitd.edu.in/AcademicConferenceEvent#";
+	String ACE_URL = "https://anonymous.com/AcademicConferenceEvent#";
 	String OWL2Bench_URL = "https://kracr.iiitd.edu.in/OWL2Bench#";
-	String Location_URL = "https://kracr.iiitd.edu.in/Location#";
-	String Twitter_URL = "https://kracr.iiitd.edu.in/Twitter#";
+	String Location_URL = "https://anonymous.com/Location#";
+	String Twitter_URL = "https://anonymous.com/Twitter#";
 	String directoryPath;
 	File streamsDirectory;
 	File confDirectory;
@@ -229,15 +229,15 @@ public class ConferenceStreams {
 		this.usersList = gen.usersList;
 		this.researchGroups = gen.researchGroups;
 		this.startTimestampMillis=gen.startTimestampMillis;
-		System.out.println(this.startTimestampMillis);
-		long maxRandomMillis = ThreadLocalRandom.current().nextInt(4, 10) * 30L * 24 * 60 * 60 * 1000;
+		//System.out.println(this.startTimestampMillis);
+		long maxRandomMillis = gen.random.nextInt(4, 10) * 30L * 24 * 60 * 60 * 1000;
  // 3 months in milliseconds
 //		this.startTimestampMillis = ThreadLocalRandom.current().nextLong(this.startTimestampMillis, (this.startTimestampMillis + maxRandomMillis));
 		this.startTimestampMillis = this.startTimestampMillis + maxRandomMillis;
 		//        LocalDateTime randomStartTime = LocalDateTime.ofEpochSecond((System.currentTimeMillis() / 1000) + (randomMillis / 1000), 0, ZoneId.systemDefault().getRules().getOffset(LocalDateTime.now()));
 //
 //        this.startTimestampMillis = randomStartTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-		System.out.println(this.startTimestampMillis);
+		//System.out.println(this.startTimestampMillis);
 		defineDatastructures();
 
 		distributeTimestamps();
@@ -313,10 +313,10 @@ public class ConferenceStreams {
 					+ gen.after_conference_days_min; // Range: 2 to 3 days
 			int beforeConferenceDays = overallDurationMonths * 30 - duringConferenceDays - afterConferenceDays; // Remaining
 																												// days
-			System.out.println("overall"+overallDurationMonths);
-			System.out.println("beforeConferenceDays"+beforeConferenceDays);
-			System.out.println("duringConferenceDays"+duringConferenceDays);
-			System.out.println("afterConferenceDays"+afterConferenceDays);
+			//System.out.println("overall"+overallDurationMonths);
+			//System.out.println("beforeConferenceDays"+beforeConferenceDays);
+			//System.out.println("duringConferenceDays"+duringConferenceDays);
+			//System.out.println("afterConferenceDays"+afterConferenceDays);
 			// Calculate start timestamps for each phase
 			long beforeConferenceStartMillis = this.startTimestampMillis;
 			long beforeConferenceEndMillis = beforeConferenceStartMillis + beforeConferenceDays * 24 * 60 * 60 * 1000L;
@@ -339,7 +339,7 @@ public class ConferenceStreams {
 			this.confName = this.confInstance;
 			this.confId = this.confInstance;
 			this.seed = confIndex + 10000 * this.confCycle;
-			this.confURL = "https://kracr.iiitd.edu.in/" + this.confInstance + ".com";
+			this.confURL = "https://anonymous.com/" + this.confInstance + ".com";
 			this.confDirectory = new File(this.streamsDirectory + "/" + this.confInstance + "/");
 			if (!this.confDirectory.exists()) {
 				this.confDirectory.mkdirs();
@@ -407,7 +407,7 @@ public class ConferenceStreams {
 		return this.conferencePaperList;
 	}
 
-	private static Map<String, List<String>> generateVolunteerAndStudentGrantList(
+	public  Map<String, List<String>> generateVolunteerAndStudentGrantList(
 			Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> volunteerAndStudentGrantList = new HashMap<>();
 		List<String> eligibleUsers = new ArrayList<>();
@@ -419,11 +419,11 @@ public class ConferenceStreams {
 			}
 		}
 
-		Random random = new Random();
+		
 		while (!eligibleUsers.isEmpty()) {
-			int index = random.nextInt(eligibleUsers.size());
+			int index =gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
-			String type = random.nextBoolean() ? "Volunteer" : "StudentGrant";
+			String type =gen.random.nextBoolean() ? "Volunteer" : "StudentGrant";
 			if (!volunteerAndStudentGrantList.containsKey(type)) {
 				volunteerAndStudentGrantList.put(type, new ArrayList<String>());
 			}
@@ -434,7 +434,7 @@ public class ConferenceStreams {
 		return volunteerAndStudentGrantList;
 	}
 
-	private static Map<String, List<String>> generateOrganizingCommitteeList(
+public Map<String, List<String>> generateOrganizingCommitteeList(
 			Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> organizingCommitteeList = new HashMap<>();
 		String[] chairRoles = { "generalChair", "localChair", "researchTrackChair", "resourcesTrackChair", "trackChair",
@@ -448,11 +448,11 @@ public class ConferenceStreams {
 			}
 		}
 
-		Random random = new Random();
+		
 		for (String role : chairRoles) {
-			int numberOfUsers = random.nextInt(2) + 1; // Assign 1 or 2 users to each role
+			int numberOfUsers =gen.random.nextInt(2) + 1; // Assign 1 or 2 users to each role
 			for (int i = 0; i < numberOfUsers && !eligibleUsers.isEmpty(); i++) {
-				int index = random.nextInt(eligibleUsers.size());
+				int index =gen.random.nextInt(eligibleUsers.size());
 				String userId = eligibleUsers.get(index);
 				if (!organizingCommitteeList.containsKey(role)) {
 					organizingCommitteeList.put(role, new ArrayList<String>());
@@ -465,7 +465,7 @@ public class ConferenceStreams {
 		return organizingCommitteeList;
 	}
 
-	private static Map<String, List<String>> generateSpeakerList(Map<String, Map<String, String>> userData) {
+public  Map<String, List<String>> generateSpeakerList(Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> speakerList = new HashMap<>();
 		List<String> eligibleUsers = new ArrayList<>();
 
@@ -476,11 +476,11 @@ public class ConferenceStreams {
 			}
 		}
 
-		Random random = new Random();
+	
 		// Assign Keynote speakers
-		int keynoteCount = Math.min(3, random.nextInt(2) + 2); // 2-3 keynote speakers
+		int keynoteCount = Math.min(3,gen.random.nextInt(2) + 2); // 2-3 keynote speakers
 		for (int i = 0; i < keynoteCount && !eligibleUsers.isEmpty(); i++) {
-			int index = random.nextInt(eligibleUsers.size());
+			int index =gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
 			if (!speakerList.containsKey("Keynote")) {
 				speakerList.put("Keynote", new ArrayList<String>());
@@ -490,9 +490,9 @@ public class ConferenceStreams {
 		}
 
 		// Assign Invited Talk speakers
-		int invitedTalkCount = Math.min(3, random.nextInt(2) + 2); // 2-3 invited talk speakers
+		int invitedTalkCount = Math.min(3,gen.random.nextInt(2) + 2); // 2-3 invited talk speakers
 		for (int i = 0; i < invitedTalkCount && !eligibleUsers.isEmpty(); i++) {
-			int index = random.nextInt(eligibleUsers.size());
+			int index =gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
 			if (!speakerList.containsKey("InvitedTalk")) {
 				speakerList.put("InvitedTalk", new ArrayList<String>());
@@ -503,7 +503,7 @@ public class ConferenceStreams {
 
 //		// Assign other speakers
 //		while (!eligibleUsers.isEmpty()) {
-//			int index = random.nextInt(eligibleUsers.size());
+//			int index =gen.random.nextInt(eligibleUsers.size());
 //			String userId = eligibleUsers.get(index);
 //			if (!speakerList.containsKey("Speaker")) {
 //				speakerList.put("Speaker", new ArrayList<String>());

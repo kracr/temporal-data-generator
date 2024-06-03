@@ -1,0 +1,26 @@
+<https://anonymous.com/Twitter#tweet1>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1970-09-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                "conf0_1970" ;
+        <https://anonymous.com/Twitter#hasTweetID>
+                <https://anonymous.com/Twitter#tweet1> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#mainConferenceAnnouncementPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/Twitter#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0>
+        a       <https://anonymous.com/Twitter#ConferenceAccount> ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet1> .

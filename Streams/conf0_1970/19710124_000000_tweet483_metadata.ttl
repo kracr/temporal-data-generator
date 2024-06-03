@@ -1,0 +1,50 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user36452>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U29C6RG2" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Dario Comanducci" .
+
+<https://anonymous.com/Twitter#tweet483>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-01-24T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#acceptedPapersNotificationPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9671>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U18C3RG10" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Sebnem Baydere" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user9671> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet483> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5184>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U71C5RG3" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Ke Gu 0001" .
+
+<https://anonymous.com/AcademicConferenceEvent#user46043>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U5C6RG10" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Joan Ginés i Ametllé" .

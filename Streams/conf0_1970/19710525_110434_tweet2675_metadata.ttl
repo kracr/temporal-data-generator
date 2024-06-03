@@ -1,0 +1,160 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user3325>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U84C10RG1" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Linya Zhu" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user3325" .
+
+<https://anonymous.com/AcademicConferenceEvent#user14422>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U64C6RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Andrew Trotman" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user14422" .
+
+<https://anonymous.com/AcademicConferenceEvent#user14719>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U4C7RG6" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Huan Zhang 0001" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user14719" .
+
+<https://anonymous.com/AcademicConferenceEvent#user9138>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO87RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Alon Ascoli" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user9138" .
+
+<https://anonymous.com/AcademicConferenceEvent#user13320>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U100C1RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Delaram Kahrobaei" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user13320" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0>
+        a       <https://anonymous.com/Twitter#ConferenceAccount> ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet2675> .
+
+<https://anonymous.com/AcademicConferenceEvent#user33164>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U92C6RG10" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Jia Shi" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user33164" .
+
+<https://anonymous.com/Twitter#tweet2675>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-25T11:04:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                "conf0_1970" ;
+        <https://anonymous.com/Twitter#hasTweetID>
+                <https://anonymous.com/Twitter#tweet2675> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#mainConferenceAnnouncementPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/Twitter#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user33164> , <https://anonymous.com/AcademicConferenceEvent#user32281> , <https://anonymous.com/AcademicConferenceEvent#user33259> , <https://anonymous.com/AcademicConferenceEvent#user17205> , <https://anonymous.com/AcademicConferenceEvent#user14719> , <https://anonymous.com/AcademicConferenceEvent#user13320> , <https://anonymous.com/AcademicConferenceEvent#user34821> , <https://anonymous.com/AcademicConferenceEvent#user3325> , <https://anonymous.com/AcademicConferenceEvent#user16697> , <https://anonymous.com/AcademicConferenceEvent#user14422> , <https://anonymous.com/AcademicConferenceEvent#user9138> , <https://anonymous.com/AcademicConferenceEvent#user35301> .
+
+<https://anonymous.com/AcademicConferenceEvent#user33259>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO94RG10" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Pan Wang" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user33259" .
+
+<https://anonymous.com/AcademicConferenceEvent#user32281>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U3C2RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Jamie F. Olson" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user32281" .
+
+<https://anonymous.com/AcademicConferenceEvent#user34821>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U71C10RG8" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Wenxiao Zhang" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user34821" .
+
+<https://anonymous.com/AcademicConferenceEvent#user16697>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U25C8RG9" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Yannick de Kercadio" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user16697" .
+
+<https://anonymous.com/AcademicConferenceEvent#user17205>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U17C3RG8" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Jinquan Dai" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user17205" .
+
+<https://anonymous.com/AcademicConferenceEvent#user35301>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U36C6RG6" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Yan Zhao" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user35301" .

@@ -1,0 +1,28 @@
+<https://anonymous.com/AcademicConferenceEvent#user29457>
+        a       <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U78C1RG7> ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Forest Hughes" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user29457> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet963> .
+
+<https://anonymous.com/Twitter#tweet963>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-06T17:55:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                "conf0_1970" ;
+        <https://anonymous.com/Twitter#hasTweetID>
+                <https://anonymous.com/Twitter#tweet963> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#mainConferenceAnnouncementPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .

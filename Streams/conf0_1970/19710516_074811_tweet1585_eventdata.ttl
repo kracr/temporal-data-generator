@@ -1,0 +1,18 @@
+<https://anonymous.com/AcademicConferenceEvent#user66346>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13918>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4292>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user13918> , <https://anonymous.com/AcademicConferenceEvent#user66346> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#ml> , <https://anonymous.com/AcademicConferenceEvent#deepLearning> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "ClaimLinker: Linking Text to a Knowledge Graph of Fact-checked Claims." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .

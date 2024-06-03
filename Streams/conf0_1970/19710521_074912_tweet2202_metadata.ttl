@@ -1,0 +1,58 @@
+<https://anonymous.com/AcademicConferenceEvent#user1590>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U77C4RG6" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Abhinav Gupta 0001" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user1590> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user1590> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet2202> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user85622>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U10C4RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "André Stork" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user85622> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11606>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U69C3RG8" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Bill Dolan" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user11606> .
+
+<https://anonymous.com/Twitter#tweet2202>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-21T07:49:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                <https://anonymous.com/AcademicConferenceEvent#blockchain> , <https://anonymous.com/AcademicConferenceEvent#ontology> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#acceptedPapersNotificationPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user20850>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U7C10RG9" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Andreas Vlachos 0001" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user20850> .

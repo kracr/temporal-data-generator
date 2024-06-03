@@ -1,0 +1,78 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user21219>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U99C10RG1" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Panuwat Phunsuk" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user21219> .
+
+<https://anonymous.com/AcademicConferenceEvent#user481>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U16C3RG6" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Sean Sirur" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user481> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9537>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U9C5RG1" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Derek Lin" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user9537> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user9537> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet1749> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11943>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U15C1RG6" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Akash Lal" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user11943> .
+
+<https://anonymous.com/AcademicConferenceEvent#user29163>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U2C1RG5" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Paolo Ferraris" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user29163> .
+
+<https://anonymous.com/Twitter#tweet1749>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-18T07:28:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                <https://anonymous.com/AcademicConferenceEvent#nlp> , <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#acceptedPapersNotificationPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user88041>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U43C4RG4" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Patrick Fernandes" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user88041> .

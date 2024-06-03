@@ -1,0 +1,68 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Twitter#tweet1478>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-16T15:41:37"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                <https://anonymous.com/AcademicConferenceEvent#knowledgeGraph> , <https://anonymous.com/AcademicConferenceEvent#ontology> , <https://anonymous.com/AcademicConferenceEvent#ml> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#acceptedPapersNotificationPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user22793>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO67RG9" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Shi Gao" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user22793> .
+
+<https://anonymous.com/AcademicConferenceEvent#user21022>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U94C2RG8" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Xiang Yu" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user21022> .
+
+<https://anonymous.com/AcademicConferenceEvent#user57977>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U82C8RG2" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Abhishek Gattani" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user57977> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user57977> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet1478> .
+
+<https://anonymous.com/AcademicConferenceEvent#user24721>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/AcademicConferenceEvent#NAO40RG4" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Yujie Zhong" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user24721> .
+
+<https://anonymous.com/AcademicConferenceEvent#user20894>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U24C9RG4" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Krishnaprasad Thirunarayan" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user20894> .

@@ -94,7 +94,7 @@ public class AfterConference {
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		Resource city = eventDataModel.createResource(conf.cities.get(random.nextInt(conf.cities.size())));
+		Resource city = eventDataModel.createResource(conf.cities.get(conf.random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
@@ -168,16 +168,16 @@ public class AfterConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				//System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -294,16 +294,16 @@ public class AfterConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				//System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -350,7 +350,7 @@ public class AfterConference {
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
 				tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance));
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
-		Resource city = eventDataModel.createResource(conf.cities.get(random.nextInt(conf.cities.size())));
+		Resource city = eventDataModel.createResource(conf.cities.get(conf.random.nextInt(conf.cities.size())));
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
@@ -424,16 +424,16 @@ public class AfterConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				//System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -499,7 +499,7 @@ public class AfterConference {
 		}
 
 		// Randomly select an author to tweet about the paper
-//		String tweetingAuthorId = authorList.get(random.nextInt(authorList.size()));
+//		String tweetingAuthorId = authorList.get(conf.random.nextInt(authorList.size()));
 		// Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL +
 		// generateTweetId());
 		// personAccount = tweetMetaDataModel.createResource(conf.ACE_URL +
@@ -531,16 +531,16 @@ public class AfterConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				//System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -640,16 +640,16 @@ public class AfterConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				//System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -662,15 +662,16 @@ public class AfterConference {
 		writeModelToFile(eventDataModel, eventData);
 	}
 
-	public static LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
+	public LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
 		long days = start.until(end, ChronoUnit.DAYS);
-		long randomDays = ThreadLocalRandom.current().nextLong(days + 1);
-		long randomHours = ThreadLocalRandom.current().nextLong(24);
-		long randomMinutes = ThreadLocalRandom.current().nextLong(60);
-		long randomSeconds = ThreadLocalRandom.current().nextLong(60);
+        long randomDays = conf.random.nextLong(days + 1);
+        long randomHours = conf.random.nextLong(24);
+        long randomMinutes = conf.random.nextLong(60);
+        long randomSeconds = conf.random.nextLong(60);
 
 		return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
 	}
+
 
 	public String generateTweetId() {
 

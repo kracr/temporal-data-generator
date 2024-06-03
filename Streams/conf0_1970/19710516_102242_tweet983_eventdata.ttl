@@ -1,0 +1,18 @@
+<https://anonymous.com/AcademicConferenceEvent#user29457>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4295>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user9230> , <https://anonymous.com/AcademicConferenceEvent#user29457> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#computerVision> , <https://anonymous.com/AcademicConferenceEvent#knowledgeGraph> , <https://anonymous.com/AcademicConferenceEvent#internetOfThings> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "workshopTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Optimal Pairings." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9230>
+        a       <http://xmlns.com/foaf/0.1/Person> .

@@ -1,0 +1,38 @@
+<https://anonymous.com/AcademicConferenceEvent#user29457>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Twitter#PersonAccount> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U78C1RG7" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Forest Hughes" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user29457> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user29457> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet1677> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9230>
+        <https://anonymous.com/Twitter#hasAffiliation>
+                "https://kracr.iiitd.edu.in/OWL2Bench#U77C8RG8" ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Bernardo David" ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user9230> .
+
+<https://anonymous.com/Twitter#tweet1677>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-19T23:56:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                <https://anonymous.com/AcademicConferenceEvent#computerVision> , <https://anonymous.com/AcademicConferenceEvent#knowledgeGraph> , <https://anonymous.com/AcademicConferenceEvent#internetOfThings> ;
+        <https://anonymous.com/Twitter#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#acceptedPapersNotificationPhase" ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .

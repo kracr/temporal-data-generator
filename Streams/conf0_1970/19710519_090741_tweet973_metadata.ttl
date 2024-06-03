@@ -1,0 +1,75 @@
+<https://anonymous.com/AcademicConferenceEvent#user11574>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U52C1RG9> ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Peter Triantafillou" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user11574" .
+
+<https://anonymous.com/AcademicConferenceEvent#user39221>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U44C6RG8> ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Koichi Hirota" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user39221" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0>
+        a       <https://anonymous.com/Twitter#ConferenceAccount> ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> ;
+        <https://anonymous.com/Twitter#posts>
+                <https://anonymous.com/Twitter#tweet973> .
+
+<https://anonymous.com/AcademicConferenceEvent#user8453>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U7C8RG5> ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "Daphna Weinshall" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user8453" .
+
+<https://anonymous.com/Twitter#tweet973>
+        a       <https://anonymous.com/Twitter#Tweet> ;
+        <https://anonymous.com/Twitter#hasDateTimestamp>
+                "1971-05-19T09:07:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Twitter#hasHashtag>
+                "conf0_1970" ;
+        <https://anonymous.com/Twitter#hasTweetID>
+                <https://anonymous.com/Twitter#tweet973> ;
+        <https://anonymous.com/Twitter#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/Twitter#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> ;
+        <https://anonymous.com/Twitter#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user8453> , <https://anonymous.com/AcademicConferenceEvent#user39221> , <https://anonymous.com/AcademicConferenceEvent#user11574> , <https://anonymous.com/AcademicConferenceEvent#user21865> .
+
+<https://anonymous.com/AcademicConferenceEvent#user21865>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "keynoteTitle" ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U53C2RG8> ;
+        <https://anonymous.com/Twitter#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Twitter#hasDisplayName>
+                "C. Lee Giles" ;
+        <https://anonymous.com/Twitter#hasUserID>
+                "user21865" .

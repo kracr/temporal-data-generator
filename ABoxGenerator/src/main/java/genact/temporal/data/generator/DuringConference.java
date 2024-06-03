@@ -182,16 +182,16 @@ public class DuringConference {
 			try {
 				if (!tweetMetaData.exists()) {
 					tweetMetaData.createNewFile();
-					System.out.println("File created: " + tweetMetaData.getName());
+					// // // System.out.println("File already exists: " + tweetMetaData.getName());
 				} else {
-					System.out.println("File already exists: " + tweetMetaData.getName());
+					//System.out.println("File already exists: " + tweetMetaData.getName());
 				}
 
 				if (!eventData.exists()) {
 					eventData.createNewFile();
-					System.out.println("File created: " + eventData.getName());
+					//System.out.println("File created: " + eventData.getName());
 				} else {
-					System.out.println("File already exists: " + eventData.getName());
+					//System.out.println("File already exists: " + eventData.getName());
 				}
 
 				// Configure RDF writers to write in Turtle format
@@ -286,16 +286,16 @@ public class DuringConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				// System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -393,16 +393,16 @@ public class DuringConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				// System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -500,16 +500,16 @@ public class DuringConference {
 		try {
 			if (!tweetMetaData.exists()) {
 				tweetMetaData.createNewFile();
-				System.out.println("File created: " + tweetMetaData.getName());
+				// // // System.out.println("File created: " + tweetMetaData.getName());
 			} else {
-				System.out.println("File already exists: " + tweetMetaData.getName());
+				// System.out.println("File already exists: " + tweetMetaData.getName());
 			}
 
 			if (!eventData.exists()) {
 				eventData.createNewFile();
-				System.out.println("File created: " + eventData.getName());
+				//System.out.println("File created: " + eventData.getName());
 			} else {
-				System.out.println("File already exists: " + eventData.getName());
+				//System.out.println("File already exists: " + eventData.getName());
 			}
 
 			// Configure RDF writers to write in Turtle format
@@ -522,15 +522,16 @@ public class DuringConference {
 		writeModelToFile(eventDataModel, eventData);
 	}
 
-	public static LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
+	public LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
 		long days = start.until(end, ChronoUnit.DAYS);
-		long randomDays = ThreadLocalRandom.current().nextLong(days + 1);
-		long randomHours = ThreadLocalRandom.current().nextLong(24);
-		long randomMinutes = ThreadLocalRandom.current().nextLong(60);
-		long randomSeconds = ThreadLocalRandom.current().nextLong(60);
+        long randomDays = conf.random.nextLong(days + 1);
+        long randomHours = conf.random.nextLong(24);
+        long randomMinutes = conf.random.nextLong(60);
+        long randomSeconds = conf.random.nextLong(60);
 
 		return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
 	}
+
 
 	public String generateTweetId() {
 

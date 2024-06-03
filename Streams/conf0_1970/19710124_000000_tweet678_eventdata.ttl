@@ -1,0 +1,18 @@
+<https://anonymous.com/AcademicConferenceEvent#user2270>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user85222>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4289>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user2270> , <https://anonymous.com/AcademicConferenceEvent#user85222> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#cloudComputing> , <https://anonymous.com/AcademicConferenceEvent#computerVision> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Tractable Reasoning with Incomplete First-Order Knowledge in Dynamic Systems with Context-Dependent Actions." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .

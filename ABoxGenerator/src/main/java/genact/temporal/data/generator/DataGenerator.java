@@ -125,6 +125,7 @@ public class DataGenerator {
 		int confNum = 5;
 		int seed = 1;
 		int confCycle = 1;
+		
 		String currentDirectory = System.getProperty("user.dir");
 		File currentDirFile = new File(currentDirectory);
 		String directoryPath = currentDirFile.getParent();
@@ -146,7 +147,7 @@ public class DataGenerator {
 		} else {
 			System.out.println(
 					"Please give arguments in the following order: No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) ");
-			System.out.println("For example: 2 5 C:/GitHub/OWL2StreamBench 100");
+			System.out.println("For example: 2 5 C:/GitHub/GenACT 100");
 		}
 
 		// Universal Time (UTC).
@@ -164,9 +165,10 @@ public class DataGenerator {
 		this.directoryPath = directoryPath;
 		this.confNum = confNum;
 		this.confCycle = confCycle;
-		random.setSeed((long) seed);
+		this.random.setSeed((long) seed);
 		this.dateTime = LocalDateTime.of(1970, Month.JANUARY, 1, 0, 0);
 		this.startTimestampMillis = dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+		
 		Properties prop1 = new Properties();
 		InputStream input1 = null;
 		Properties prop2 = new Properties();
@@ -250,7 +252,7 @@ public class DataGenerator {
 		this.generate(seed);
 	}
 
-	private static Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles,
+	public Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles,
 			Map<String, Map<String, String>> userData) {
 		Map<String, Map<String, Object>> paperData = new HashMap<>();
 		String[] TOKEN_Domain = { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
@@ -258,7 +260,7 @@ public class DataGenerator {
 				"knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing",
 				"quantumComputing", "semanticWeb" };
 
-		Random random = new Random();
+		
 		String[] conferenceTracks = { "applicationsTrack", "demoTrack", "doctoralConsortiumTrack", "posterTrack",
 				"researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack" };
 
@@ -281,26 +283,26 @@ public class DataGenerator {
 
 		for (int i = 0; i < totalPaperCount; i++) {
 			String paperId = "paper" + (i + 1);
-			String paperTitle = paperTitles.get(random.nextInt(paperTitles.size()));
-			String conferenceTrack = conferenceTracks[random.nextInt(conferenceTracks.length)];
+			String paperTitle = paperTitles.get(this.random.nextInt(paperTitles.size()));
+			String conferenceTrack = conferenceTracks[this.random.nextInt(conferenceTracks.length)];
 
 			List<String> authorList = new ArrayList<>();
-			authorList.add(students.get(random.nextInt(students.size()))); // First author as a student
+			authorList.add(students.get(this.random.nextInt(students.size()))); // First author as a student
 
-			int authorCount = 1 + random.nextInt(7); // Total authors between 1 and 8
+			int authorCount = 1 + this.random.nextInt(7); // Total authors between 1 and 8
 			for (int j = 1; j < authorCount - 1; j++) {
-				String author = otherUsers.get(random.nextInt(otherUsers.size()));
+				String author = otherUsers.get(this.random.nextInt(otherUsers.size()));
 				if (!authorList.contains(author)) {
 					authorList.add(author);
 				}
 			}
 
-			authorList.add(professors.get(random.nextInt(professors.size()))); // Last author as a professor
+			authorList.add(professors.get(this.random.nextInt(professors.size()))); // Last author as a professor
 
 			List<String> paperDomains = new ArrayList<>();
-			int domainCount = 1 + random.nextInt(3); // Total domains between 1 and 3
+			int domainCount = 1 + this.random.nextInt(3); // Total domains between 1 and 3
 			for (int k = 0; k < domainCount; k++) {
-				String domain = TOKEN_Domain[random.nextInt(TOKEN_Domain.length)];
+				String domain = TOKEN_Domain[this.random.nextInt(TOKEN_Domain.length)];
 				if (!paperDomains.contains(domain)) {
 					paperDomains.add(domain);
 				}
@@ -318,7 +320,7 @@ public class DataGenerator {
 		return paperData;
 	}
 
-	private static List<String> loadDisplayNames(String filePath) throws IOException {
+	public List<String> loadDisplayNames(String filePath) throws IOException {
 		List<String> displayNames = new ArrayList<>();
 		BufferedReader br = new BufferedReader(new FileReader(filePath));
 		String line;
@@ -329,7 +331,7 @@ public class DataGenerator {
 		return displayNames;
 	}
 
-	public static List<String> readPaperTitles(String filePath) throws IOException {
+	public  List<String> readPaperTitles(String filePath) throws IOException {
 		List<String> paperTitles = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 			String line;
@@ -344,10 +346,10 @@ public class DataGenerator {
 		return paperTitles;
 	}
 
-	private static Map<String, Map<String, String>> generateUserData(int totalUserCount, List<String> displayNames,
+	public Map<String, Map<String, String>> generateUserData(int totalUserCount, List<String> displayNames,
 			List<String> affiliations) {
 		Map<String, Map<String, String>> userData = new HashMap<>();
-		Random random = new Random();
+	
 		List<String> designations = Arrays.asList("Student", "PhDStudent", "Professor", "Researcher", "Faculty");
 
 		int studentCount = (int) (totalUserCount * 0.7);
@@ -364,12 +366,12 @@ public class DataGenerator {
 		for (int i = 0; i < totalUserCount; i++) {
 			String userId = "user" + (i + 1);
 			String userName = userId;
-			String displayName = displayNames.get(random.nextInt(displayNames.size()));
-			String affiliation = affiliations.get(random.nextInt(affiliations.size()));
+			String displayName = displayNames.get(this.random.nextInt(displayNames.size()));
+			String affiliation = affiliations.get(this.random.nextInt(affiliations.size()));
 
 			String designation = null;
 			while (designation == null) {
-				String potentialDesignation = designations.get(random.nextInt(designations.size()));
+				String potentialDesignation = designations.get(this.random.nextInt(designations.size()));
 
 				if (designationCounts.get(potentialDesignation) > 0) {
 					designation = potentialDesignation;
@@ -403,7 +405,7 @@ public class DataGenerator {
 
 		this.conferences = new ConferenceStreams[this.confNum];
 		for (int i = 0; i < this.confNum; ++i) {
-			System.out.println(this.startTimestampMillis);
+			//System.out.println(this.startTimestampMillis);
 			System.out.println("Started Conference Instance " + i);
 			conferences[i] = new ConferenceStreams(DataGenerator.this, i);
 		}

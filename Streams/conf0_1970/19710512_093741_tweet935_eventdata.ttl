@@ -1,0 +1,15 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://anonymous.com/AcademicConferenceEvent#user61741>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U57C3RG2> .
+
+<city_name>  a  <https://anonymous.com/Location#City> .

@@ -1,0 +1,71 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasGeneralChair>
+                <https://anonymous.com/AcademicConferenceEvent#user34821> , <https://anonymous.com/AcademicConferenceEvent#user35301> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasLocalChair>
+                <https://anonymous.com/AcademicConferenceEvent#user33259> , <https://anonymous.com/AcademicConferenceEvent#user14719> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf0_1970.com" , "https://anonymous.com/conf0_1970.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user3325>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#workshopTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user14422>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user14719>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#localChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9138>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13320>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user33164>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#trackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user33259>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#localChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user32281>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user34821>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#generalChair> .
+
+<https://kracr.iiitd.edu.in/Location#edemissen>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user16697>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/Twitter#tweet2114>
+        <https://anonymous.com/AcademicConferenceEvent#hasEventPhase>
+                "https://anonymous.com/AcademicConferenceEvent#mainConferenceAnnouncementPhase" .
+
+<https://anonymous.com/AcademicConferenceEvent#user17205>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user35301>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#generalChair> .

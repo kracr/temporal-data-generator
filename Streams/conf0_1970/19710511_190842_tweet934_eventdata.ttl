@@ -1,0 +1,41 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "https://anonymous.com/conf0_1970.com" , "www.conf0_1970.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user11574>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://anonymous.com/AcademicConferenceEvent#user39221>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://kracr.iiitd.edu.in/Location#laspiedras>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user8453>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://anonymous.com/AcademicConferenceEvent#user21865>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
