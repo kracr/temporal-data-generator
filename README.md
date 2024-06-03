@@ -13,17 +13,11 @@ GenACT is a data generator designed to address challenges in obtaining realistic
 
 3. [ Usage Instructions ](#usage)
 
-   3.1 [Event Data Generation](#edg)
-   
-	   3.1.1 [ Direct execution using executable jar (with default configurations) ](#edgexe)
- 
-	   3.1.2 [ Using Source Code (with or without default configurations) ](#edgcode)
+   3.1 [Event Data Generation: Direct execution using executable jar (with default configurations)](#edgexe)
 	   
-	3.2 [Sequence Data Generation](#sdg)
+   3.2 [Sequence Data Generation: Direct execution using executable jar (with default configurations)](#sdgexe)
 
-	   3.2.1 [ Direct execution using executable jar (with default configurations) ](#sdgexe)
- 
-	   3.2.2 [ Using Source Code (with or without default configurations) ](#sdgcode)
+   3.3 [Using Source Code (with or without default configurations) ](#code)
 	   
 <a name="intro"></a>
 ## 1. Introduction
@@ -48,7 +42,7 @@ OWL 2 EL : [Academic-Conference-Event-EL.owl](https://github.com/kracr/temporal-
 <a name="abox"></a>
 ## 1.2 Data Generation
 
-GGenACT generates realistic data based on two user inputs, *the number of conferences* and *the required number of conference cycles*. The instance data that is generated complies with the schema defined in the above mentioned [TBox](#tbox). The size of the instance data for each conference instance depends on several parameters defined in the property (config.properties) file present in the ABoxGenerator directory. Data for each tweet goes to two separate files (metadata.ttl and eventdata.ttl). It allows for a faster execution of SPARQL queries while streaming the data. Also, the naming format of each tweet file includes a timestamp so that in order to replay the generated data at varying speeds, the file reading isn't required.
+As shown in [Figure](https://github.com/kracr/temporal-data-generator/blob/main/images/generator_pipeline.png), the data generation pipeline consists of two steps: Event Data Generation and Sequence Data Generation. The first step generates data for the specified number of conference instances. The second step allows users to create segments of the generated data to simulate different scenarios.
 
 
 <a name="repo"></a>
@@ -57,13 +51,13 @@ The project repository consists of the following directories:
 
 [Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 2.2 ](#code) for source-code usage instructions). 
 
-[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of 4 Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Tweet Ontology (consisting axioms describing Tweet metadata). Tweet ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
+[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of four Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Tweet Ontology (consisting axioms describing Tweet metadata). Tweet ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
 
 [Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of template.yaml and mapping.yaml files that serve as the starting point for our data generator. Mapping files is used to generate RDF triples according to the placeholders in each template file. 
 
 [StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with Institutes for user Affiliations). 
 
-[RunnableJars] (#exe) for usage instructions. 
+[RunnableJars] (#usage) for usage instructions. 
 
 [Streams] A few files consisting of the data generated using GenACT: several tweetMetadata and eventData files. Each file is named as timestamp_tweetid_metadata.ttl nd timestamp_tweetid_eventdata.ttl
 
@@ -73,13 +67,11 @@ The project repository consists of the following directories:
 
 Requirements: The user must have *java 1.7 and maven* installed in the system. 
 
-<a name="edg"></a>
-## 3.1. Event Data Generation :
+<a name="edgexe"></a>
+## 3.1. Event Data Generation (Direct execution using executable jar)
 
 The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
 
-<a name="edgexe"></a>
-### 3.1.1. Direct execution using executable jar :
 
 We have provided a java executable jar **[genact.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
@@ -89,26 +81,11 @@ For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 
 (where the number of conferences--> 1, number of cycles--> 5, files_directory_path--> C:\GitHub\temporal-data-generator, seed --> 100)
 
-
-<a name="edgcode"></a>
-### 3.1.2. Using Source Code :
-In order to run the source code, user need download the project repositor. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator). Open command line and change to the directory that contains the pom.xml of this project. Execute the maven command:
-
-mvn compile
-
-mvn install
-
-Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *the number of conferences* and *the number of conference cycles* (same as above) using exec.args. For example-
-
-mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.DataGenerator -Dexec.args="2 3 C:\GitHub\temporal-data-generator"
-
-<a name="sdg"></a>
-## 3.2. Sequence Data Generation :
+<a name="sdgexe"></a>
+## 3.2. Sequence Data Generation (Direct execution using executable jar)
 
 The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
 
-<a name="sdgexe"></a>
-### 3.2.1. Direct execution using executable jar :
 
 We have provided a java executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
@@ -118,15 +95,14 @@ For eg. : java -jar partition.jar --attribute conference
 
 (where the number of conferences--> 1, number of cycles--> 5, files_directory_path--> C:\GitHub\temporal-data-generator, seed --> 100)
 
-
-<a name="sdgcode"></a>
-### 3.2.2. Using Source Code :
-In order to run the source code, user need download the project repositor. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator). Open command line and change to the directory that contains the pom.xml of this project. Execute the maven command:
+<a name="code"></a>
+### 3.3. Using Source Code :
+In order to run the source code, user need to download the project repository. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator). Open command line and change to the directory that contains the pom.xml of this project. Execute the maven command:
 
 mvn compile
 
 mvn install
 
-Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *the number of conferences* and *the number of conference cycles* (same as above) using exec.args. For example-
+For event data generation: mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.DataGenerator -Dexec.args="2 3 C:\GitHub\temporal-data-generator"
 
-mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.CreatePartitions -Dexec.args="--attribute conference"
+For sequence data generation: mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.CreatePartitions -Dexec.args="--attribute conference"
