@@ -69,7 +69,7 @@ public class CreatePartitions {
 							// Execute SPARQL query based on attribute and shape
 							results = executeSPARQLQuery(queryFilePath, metadataFilePath, type);
 							File eventFile = new File(file.getAbsolutePath(),eventFileName);
-							System.out.println("eventFile "+eventFile);
+							//System.out.println("eventFile "+eventFile);
 							for (String result : results) {
 								// Create new directory in sequences directory
 								String outputDirectory = sequencesDirectory + "/"+"conf0";
@@ -78,7 +78,7 @@ public class CreatePartitions {
 									directory.mkdirs();
 								}
 								try {
-									System.out.println("directory "+directory);
+									//System.out.println("directory "+directory);
 //									String eventDataFile = baseFileName + "_eventdata.ttl";
 //									File sourceFile = new File(metadataDirectory, eventDataFile);
 									File destinationFile = new File(directory.getAbsolutePath(), eventFileName);
@@ -120,21 +120,22 @@ public class CreatePartitions {
 		Query query = QueryFactory.create(queryString);
 
 		// Execute query and store results in a list
-		List<String> results = new ArrayList<String>();
-		QueryExecution qexec = null;
-		try {
-			qexec = QueryExecutionFactory.create(query, model);
-			ResultSet resultSet = qexec.execSelect();
-			while (resultSet.hasNext()) {
-				QuerySolution solution = resultSet.nextSolution();
-				String subject = solution.get("s").toString();
-				results.add(subject);
-			}
-		} finally {
-			if (qexec != null) {
-				qexec.close();
-			}
-		}
+		 List<String> results = new ArrayList<String>();
+	        QueryExecution qexec = null;
+	        try {
+	            //Query query = QueryFactory.create(queryString);
+	            qexec = QueryExecutionFactory.create(query, model);
+	            ResultSet resultSet = qexec.execSelect();
+	            while (resultSet.hasNext()) {
+	                QuerySolution solution = resultSet.nextSolution();
+	                String name = solution.get("name").toString();
+	                results.add(name);
+	            }
+	        } finally {
+	            if (qexec != null) {
+	                qexec.close();
+	            }
+	        }
 
 		return results;
 	}

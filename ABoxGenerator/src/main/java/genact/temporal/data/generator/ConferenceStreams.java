@@ -61,7 +61,7 @@ public class ConferenceStreams {
 	String ACE_URL = "https://anonymous.com/AcademicConferenceEvent#";
 	String OWL2Bench_URL = "https://kracr.iiitd.edu.in/OWL2Bench#";
 	String Location_URL = "https://anonymous.com/Location#";
-	String Twitter_URL = "https://anonymous.com/Twitter#";
+	String Twitter_URL = "https://anonymous.com/Tweet#";
 	String directoryPath;
 	File streamsDirectory;
 	File confDirectory;
