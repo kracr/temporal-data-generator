@@ -397,7 +397,7 @@ public class DataGenerator {
 		// use owlapi to find researchgroupds from the organization.owl file
 		// Generate random names for research groups, colleges, academic organizations,
 		// and non-academic organizations
-		this.streamsDirectory = new File(this.directoryPath + "/EventDataGeneration/");
+		this.streamsDirectory = new File(this.directoryPath + "/EventData/");
 		if (this.streamsDirectory.exists()) {
 			deleteDirectory(this.streamsDirectory);
 		}

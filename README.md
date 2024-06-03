@@ -49,18 +49,21 @@ As shown in [Figure](https://github.com/kracr/temporal-data-generator/blob/main/
 ## 2. About the Repository
 The project repository consists of the following directories:
 
-[Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 2.2 ](#code) for source-code usage instructions). 
+[Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 3 ](#code) for source-code usage instructions). 
 
 [Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of four Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Tweet Ontology (consisting axioms describing Tweet metadata). Tweet ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
 
 [Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of template.yaml and mapping.yaml files that serve as the starting point for our data generator. Mapping files is used to generate RDF triples according to the placeholders in each template file. 
 
-[StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with Institutes for user Affiliations). 
+[StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with instances (cities) from Location ontology). 
 
 [RunnableJars] (#usage) for usage instructions. 
 
-[Streams] A few files consisting of the data generated using GenACT: several tweetMetadata and eventData files. Each file is named as timestamp_tweetid_metadata.ttl nd timestamp_tweetid_eventdata.ttl
+[EventData] Consists of event data generated in separate directories for each conference and each conference cycle: such as ESWC_2023, ESWC_2024. Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
 
+[SequenceData] 
+
+[SparqlQueriesForPartition]
 
 <a name="usage"></a>
 ## 3. Usage Instructions
@@ -70,10 +73,7 @@ Requirements: The user must have *java 1.7 and maven* installed in the system.
 <a name="edgexe"></a>
 ## 3.1. Event Data Generation (Direct execution using executable jar)
 
-The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
-
-
-We have provided a java executable jar **[genact.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
+In order to generate the event data for the required number of conferences, users can directly run the executable jar **[genact.jar](to be updated)** that generates the datasets using the default configurations. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
 No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
 
@@ -84,16 +84,12 @@ For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 <a name="sdgexe"></a>
 ## 3.2. Sequence Data Generation (Direct execution using executable jar)
 
-The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
+In order to generate different sequences from the event data generated in the previous step, users can directly run the executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurationsd. 
 
+In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user_person/user_any/domain/conferencePhase/organization.
 
-We have provided a java executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
-
-No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
-
-For eg. : java -jar partition.jar --attribute conference
-
-(where the number of conferences--> 1, number of cycles--> 5, files_directory_path--> C:\GitHub\temporal-data-generator, seed --> 100)
+In order to create partitions based on shape--> java -jar partition.jar --shape star/chain/tree/other. user can specify the shape they want for their segments
+by writing the query in other.txt file. 
 
 <a name="code"></a>
 ### 3.3. Using Source Code :
