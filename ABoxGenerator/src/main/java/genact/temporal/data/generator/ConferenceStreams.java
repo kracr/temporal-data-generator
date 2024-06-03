@@ -198,7 +198,7 @@ public class ConferenceStreams {
 		this.hasEventMode = eventDataProperties.createProperty(ACE_URL + "hasEventMode");
 		this.hasEventPhase = eventDataProperties.createProperty(ACE_URL + "hasEventPhase");
 		this.hasWebsiteURL = eventDataProperties.createProperty(ACE_URL + "hasWebsiteURL");
-		this.hasLocation = eventDataProperties.createProperty(ACE_URL + "hasLocation");
+		this.hasLocation = eventDataProperties.createProperty(Location_URL + "hasLocation");
 		this.hasEdition = eventDataProperties.createProperty(ACE_URL + "hasEdition");
 		this.hasPaperTrack = eventDataProperties.createProperty(ACE_URL + "hasPaperTrack");
 		this.hasTrackChair = eventDataProperties.createProperty(ACE_URL + "hasTrackChair");

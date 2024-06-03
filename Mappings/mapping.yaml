@@ -7,7 +7,7 @@ mapping:
         predicate: posts
         object: ?tweet
       - subject: ?tweet 
-        predicate: isAboutEventPhase
+        predicate: isAbout
         object: ?eventphase
       - subject: ?tweet
         predicate: rdf:type
@@ -16,7 +16,7 @@ mapping:
         predicate: hasDateTimestamp
         object: _timestamp
       - subject: ?tweet
-        predicate: isAboutEvent
+        predicate: isAbout
         object: ?conferenceinstance
       - subject: ?tweet
         predicate: mentions
@@ -56,7 +56,7 @@ mapping:
         predicate: rdf:type
         object: Tweet
       - subject: ?tweet 
-        predicate: isAboutEventPhase
+        predicate: isAbout
         object: ?eventphase
       - subject: ?tweet
         predicate: hasInformation
@@ -65,7 +65,7 @@ mapping:
         predicate: hasDateTimestamp
         object: _timestamp
       - subject: ?tweet
-        predicate: isAboutEvent
+        predicate: isAbout
         object: ?conferenceinstance
       - subject: ?tweet
         predicate: mentions

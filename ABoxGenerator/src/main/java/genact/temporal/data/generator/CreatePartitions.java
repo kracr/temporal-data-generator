@@ -43,10 +43,10 @@ public class CreatePartitions {
         }
 
         // Directory containing metadata files
-        String metadataDirectory = "C:\\GitHub\\temporal-data-generator\\Streams";
+        String metadataDirectory = "C:\\GitHub\\temporal-data-generator\\EventDataGeneration";
 
         // Create sequences directory if it does not exist
-        String sequencesDirectory = "C:\\GitHub\\temporal-data-generator\\Sequences";
+        String sequencesDirectory = "C:\\GitHub\\temporal-data-generator\\SequenceDataGeneration";
         File sequencesDir = new File(sequencesDirectory);
         if (!sequencesDir.exists()) {
             sequencesDir.mkdirs();

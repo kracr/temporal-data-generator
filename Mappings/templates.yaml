@@ -3,7 +3,7 @@ templates:
   body: |
     We're excited to announce the n-th edition of [Conference]! The conference will be held from date at [] in hybrid mode. The deadlines for submissions, registrations, and other important dates have been announced. Visit our website for more details and stay tuned for updates. #conferencehashtag @organizers
   triples: | 
-    Conference, ConferenceAccount,  Organizers
+    Conference, ConferenceAccount, Organizers
 
 - template_name: CallForPapersAnnouncement
   body: |
@@ -15,7 +15,7 @@ templates:
   body: |
     Just a reminder, only n days left to submit your papers for [Conference] in the track category. Don't miss out on this opportunity to showcase your research. Please ensure your papers are submitted by insert date.
   triples: | 
-    Conference, ConferenceAccount, ConferenceTracks, 
+    Conference, ConferenceAccount, ConferenceTracks
 
 - template_name: AcceptedPaperNotification
   body: |

@@ -13,11 +13,18 @@ GenACT is a data generator designed to address challenges in obtaining realistic
 
 3. [ Usage Instructions ](#usage)
 
-   3.1 [ Direct execution using executable jar (with default configurations) ](#exe)
+   3.1 [Event Data Generation](#edg)
+   
+	   3.1.1 [ Direct execution using executable jar (with default configurations) ](#edgexe)
  
-   3.2 [ Using Source Code (with or without default configurations) ](#code)
+	   3.1.2 [ Using Source Code (with or without default configurations) ](#edgcode)
+	   
+	3.2 [Sequence Data Generation](#sdg)
 
-
+	   3.2.1 [ Direct execution using executable jar (with default configurations) ](#sdgexe)
+ 
+	   3.2.2 [ Using Source Code (with or without default configurations) ](#sdgcode)
+	   
 <a name="intro"></a>
 ## 1. Introduction
 GenACT models data after the Academic Conference Twitter (ACT) domain, chosen for its ability to represent various application types with realistic workload scenarios. The proposed synthetic data for studying KG evolution should be diverse, well-annotated, dynamically changing over time, include temporal constraints, historical data, and temporal dependencies, and consider scalability. GenACT meets these requirements by incorporating four forms of temporality: order, timestamped event data (Tweets), Versioned Data, and interval.
@@ -64,24 +71,27 @@ The project repository consists of the following directories:
 <a name="usage"></a>
 ## 3. Usage Instructions
 
-Requirements: The user must have *java 1.8 and maven* installed in the system. Operating System-Ubuntu
+Requirements: The user must have *java 1.7 and maven* installed in the system. 
+
+<a name="edg"></a>
+## 3.1. Event Data Generation :
 
 The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
 
-<a name="exe"></a>
-## 3.1. Direct execution using executable jar :
+<a name="edgexe"></a>
+### 3.1.1. Direct execution using executable jar :
 
 We have provided a java executable jar **[genact.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
 No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
 
-For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator, 100
+For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 
 (where the number of conferences--> 1, number of cycles--> 5, files_directory_path--> C:\GitHub\temporal-data-generator, seed --> 100)
 
 
-<a name="code"></a>
-## 3.2. Using Source Code :
+<a name="edgcode"></a>
+### 3.1.2. Using Source Code :
 In order to run the source code, user need download the project repositor. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator). Open command line and change to the directory that contains the pom.xml of this project. Execute the maven command:
 
 mvn compile
@@ -90,7 +100,33 @@ mvn install
 
 Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *the number of conferences* and *the number of conference cycles* (same as above) using exec.args. For example-
 
-mvn exec:java -Dexec.mainClass=ABoxGen.InstanceGenerator.Generator -Dexec.args="2 3 C:\GitHub\temporal-data-generator"
+mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.DataGenerator -Dexec.args="2 3 C:\GitHub\temporal-data-generator"
+
+<a name="sdg"></a>
+## 3.2. Sequence Data Generation :
+
+The user needs to provide two mandatory inputs, *the number of conferences* and *the number of conference cycles*. 
+
+<a name="sdgexe"></a>
+### 3.2.1. Direct execution using executable jar :
+
+We have provided a java executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurations that were used for the experiments reported in the paper. In order to execute this Jar file, user need to give the inputs (in the same order):  
+
+No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
+
+For eg. : java -jar partition.jar --attribute conference
+
+(where the number of conferences--> 1, number of cycles--> 5, files_directory_path--> C:\GitHub\temporal-data-generator, seed --> 100)
 
 
+<a name="sdgcode"></a>
+### 3.2.2. Using Source Code :
+In order to run the source code, user need download the project repositor. Extract it and save it in a folder. There is a maven project [ABoxGenerator](https://github.com/kracr/temporal-data-generator). Open command line and change to the directory that contains the pom.xml of this project. Execute the maven command:
 
+mvn compile
+
+mvn install
+
+Now, using maven's exec plugin, run the main class *Generator* and pass the list of arguments *the number of conferences* and *the number of conference cycles* (same as above) using exec.args. For example-
+
+mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.CreatePartitions -Dexec.args="--attribute conference"
