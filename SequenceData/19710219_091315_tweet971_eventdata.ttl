@@ -1,0 +1,18 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user5929  ace:attends  ace:conf1_1970 .
+
+ace:user11901  ace:attends  ace:conf1_1970 .
+
+ace:user13641  ace:attends  ace:conf1_1970 .
+
+ace:conf1_1970  <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#sompeta> .
+
+ace:user15861  ace:attends  ace:conf1_1970 .
+
+ace:user13490  ace:attends  ace:conf1_1970 .
+
+<https://anonymous.com/Location#sompeta>
+        a       <https://anonymous.com/Location#City> .

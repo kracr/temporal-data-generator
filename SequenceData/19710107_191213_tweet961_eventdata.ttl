@@ -1,0 +1,10 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<file:///C:/GitHub/temporal-data-generator/EventData/conf0_1970/city_name>
+        a       <https://anonymous.com/Location#City> .
+
+ace:conf0_1970  <https://anonymous.com/Location#hasLocation>
+                <file:///C:/GitHub/temporal-data-generator/EventData/conf0_1970/city_name> .
+
+ace:user1411  ace:attends  ace:conf0_1970 .

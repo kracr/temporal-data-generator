@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ace: <https://anonymous.com/AcademicConferenceEvent#>
+
+CONSTRUCT {
+  ?root ?p1 ?child1.
+  ?child1 ?p2 ?child2.
+  ?child2 ?p3 ?child3.
+}
+WHERE { 
+  ?root ?p1 ?child1.
+  ?child1 ?p2 ?child2.
+  ?child2 ?p3 ?child3.
+}
