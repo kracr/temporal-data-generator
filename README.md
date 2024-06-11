@@ -86,7 +86,11 @@ For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 
 In order to generate different sequences from the event data generated in the previous step, users can directly run the executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurationsd. 
 
-In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user_person/user_any/domain/conferencePhase/organization.
+In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user/domain/tweet_type/object.
+
+(conference: creates sequences corresponding to different conference instances, user: creates sequences corresponding to different users involved throughout the conference,
+domain: creates segments corresponding to different research domains such as AI, tweetType creates segments based on tweet categories defined in the 
+paper such as Announcement, Insight etc, object: creates partition based on different objects in each [s p o] triple). 
 
 In order to create partitions based on shape--> java -jar partition.jar --shape star/chain/tree/other. user can specify the shape they want for their segments
 by writing the query in other.txt file. 
