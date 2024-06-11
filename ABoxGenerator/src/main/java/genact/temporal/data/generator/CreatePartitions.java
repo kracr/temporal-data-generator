@@ -51,7 +51,7 @@ public class CreatePartitions {
 		}
 		sequencesDirectory.mkdirs();
 		List<String> results;
-
+        if(sequence=="ByAttribute") {
 		File[] files = metadataDirectory.listFiles();
 		if (files != null) {
 			for (File file : files) {
@@ -71,8 +71,9 @@ public class CreatePartitions {
 							File eventFile = new File(file.getAbsolutePath(),eventFileName);
 							//System.out.println("eventFile "+eventFile);
 							for (String result : results) {
+								System.out.println("output is :"+result);
 								// Create new directory in sequences directory
-								String outputDirectory = sequencesDirectory + "/"+"conf0";
+								String outputDirectory = sequencesDirectory + "/"+result;
 								File directory = new File(outputDirectory);
 								if (!directory.exists()) {
 									directory.mkdirs();
@@ -95,19 +96,67 @@ public class CreatePartitions {
 				}
 			}
 		}
-	}
-	private static String readQueryFromFile(String queryFilePath) {
-        StringBuilder queryString = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader(queryFilePath))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                queryString.append(line).append("\n");
-            }
-        } catch (IOException e) {
-            System.err.println("Error reading query file: " + e.getMessage());
         }
-        return queryString.toString();
-    }
+        else if(sequence=="ByShape") {
+        	File[] files = metadataDirectory.listFiles();
+    		if (files != null) {
+    			for (File file : files) {
+    				if (file.isDirectory()) {
+    					// Recursively process subdirectories
+
+    					for (File meta : file.listFiles()) {
+    						if (meta.isFile() && meta.getName().endsWith("eventdata.ttl")) {
+    							//System.out.println(meta);
+    							String metadataFilePath = meta.getAbsolutePath();
+    							//System.out.println("metadataFilePath"+metadataFilePath);
+    							//String timestamp = meta.getName().split("_")[0];
+    							String eventFileName = meta.getName().replace("_metadata.ttl", "_eventdata.ttl");
+    							String queryFilePath=queryDirectory+"/" + type + ".txt";
+    							// Execute SPARQL query based on attribute and shape
+    							results = executeSPARQLQuery(queryFilePath, metadataFilePath, type);
+    							File eventFile = new File(file.getAbsolutePath(),eventFileName);
+    							//System.out.println("eventFile "+eventFile);
+    							for (String result : results) {
+    								// Create new directory in sequences directory
+    								String outputDirectory = sequencesDirectory + "/"+"conf0";
+    								File directory = new File(outputDirectory);
+    								if (!directory.exists()) {
+    									directory.mkdirs();
+    								}
+    								try {
+    									//System.out.println("directory "+directory);
+//    									String eventDataFile = baseFileName + "_eventdata.ttl";
+//    									File sourceFile = new File(metadataDirectory, eventDataFile);
+    									File destinationFile = new File(directory.getAbsolutePath(), eventFileName);
+    									Files.copy(eventFile.toPath(), destinationFile.toPath(),
+    											StandardCopyOption.REPLACE_EXISTING);
+    								} catch (IOException e) {
+    									System.err.println("Error copying file: " + e.getMessage());
+    								}
+    							
+    							}
+    						}
+
+    					}
+    				}
+    			}
+    		}
+        }
+	}
+
+	private static String readQueryFromFile(String queryFilePath) {
+		StringBuilder queryString = new StringBuilder();
+		try (BufferedReader br = new BufferedReader(new FileReader(queryFilePath))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				queryString.append(line).append("\n");
+			}
+		} catch (IOException e) {
+			System.err.println("Error reading query file: " + e.getMessage());
+		}
+		return queryString.toString();
+	}
+
 	public static List<String> executeSPARQLQuery(String queryDirectory, String metadataFile, String type) {
 		// Load RDF model from metadata file
 		Model model = ModelFactory.createDefaultModel();
@@ -116,26 +165,33 @@ public class CreatePartitions {
 		// Construct SPARQL query
 //		String queryString = "SELECT ?s WHERE { ?s ?p ?o }";
 		// Read SPARQL query from file
-        String queryString = readQueryFromFile(queryDirectory);
-		Query query = QueryFactory.create(queryString);
+		String queryString = readQueryFromFile(queryDirectory);
+	//	Query query = QueryFactory.create(queryString);
 
 		// Execute query and store results in a list
-		 List<String> results = new ArrayList<String>();
-	        QueryExecution qexec = null;
-	        try {
-	            //Query query = QueryFactory.create(queryString);
-	            qexec = QueryExecutionFactory.create(query, model);
-	            ResultSet resultSet = qexec.execSelect();
-	            while (resultSet.hasNext()) {
-	                QuerySolution solution = resultSet.nextSolution();
-	                String name = solution.get("name").toString();
-	                results.add(name);
-	            }
-	        } finally {
-	            if (qexec != null) {
-	                qexec.close();
-	            }
-	        }
+		List<String> results = new ArrayList<String>();
+		//QueryExecution qexec = null;
+		
+		
+		Query query = QueryFactory.create(queryString);
+		try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+		    ResultSet resultSet = qexec.execSelect();
+		    while (resultSet.hasNext()) {
+		        QuerySolution solution = resultSet.nextSolution();
+		        RDFNode nameNode = solution.get("name");
+		        if (nameNode != null) {
+		            String name = nameNode.toString();
+		            results.add(name);
+		        } else {
+		            // Handle the case where "name" is not bound
+		            System.out.println("No name found for one of the results.");
+		        }
+		    }
+		} catch (Exception e) {
+		    // Handle the exception
+		    e.printStackTrace();
+		}
+
 
 		return results;
 	}

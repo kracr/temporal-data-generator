@@ -1,4 +1,3 @@
-
 package genact.temporal.data.generator;
 
 import java.util.ArrayList;
@@ -55,8 +54,8 @@ public class ConferenceStreams {
 	int year;
 	Map<String, Map<String, Object>> papers;
 	PrintWriter writer;
-	String[] categories = { "Conference Announcement", "Call for Papers", "Submission Reminder", "Notification",
-			"Registration Reminder", "Before Conference", "During Conference", "After Conference" };
+//	String[] categories = { "Conference Announcement", "Call for Papers", "Submission Reminder", "Notification",
+//			"Registration Reminder", "Before Conference", "During Conference", "After Conference" };
 	long currentTimeMillis;
 	String ACE_URL = "https://anonymous.com/AcademicConferenceEvent#";
 	String OWL2Bench_URL = "https://kracr.iiitd.edu.in/OWL2Bench#";
@@ -184,7 +183,7 @@ public class ConferenceStreams {
 		this.hasTweetID = tweetMetaProperties.createProperty(Twitter_URL + "hasTweetID");
 		this.hasUserID = tweetMetaProperties.createProperty(Twitter_URL + "hasUserID");
 		this.hasDisplayName = tweetMetaProperties.createProperty(Twitter_URL + "hasDisplayName");
-		this.hasHashtag = tweetMetaProperties.createProperty(Twitter_URL + "hasHashtag");
+		this.hasHashtag = tweetMetaProperties.createProperty(Twitter_URL + "hasHashTag");
 		this.isAbout = tweetMetaProperties.createProperty(Twitter_URL + "isAbout");
 		this.hasDateTimestamp = tweetMetaProperties.createProperty(Twitter_URL + "hasDateTimestamp");
 		this.mentionsPerson = tweetMetaProperties.createProperty(Twitter_URL + "mentionsPerson");

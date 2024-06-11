@@ -104,13 +104,13 @@ public class DuringConference {
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		Resource conferenceInstance = eventDataModel.createResource(conf.ACE_URL + conf.confInstance);
 
-		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
-//		tweetMetaDataModel.add(tweetId, conf.isAbout,
-//				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+//		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
+		tweetMetaDataModel.add(tweetId, conf.isAbout,
+				tweetMetaDataModel.createTypedLiteral(conf.ACE_URL + "reminder"));
 //		eventDataModel.add(tweetId, conf.hasEventPhase,
-//				eventDataModel.createTypedLiteral(conf.ACE_URL + "mainConferenceAnnouncementPhase"));
+//				eventDataModel.createTypedLiteral(conf.ACE_URL + "announcement"));
 //		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
-		tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
+	//	tweetMetaDataModel.add(tweetId, conf.hasHashtag, eventDataModel.createLiteral(conf.confInstance));
 		tweetMetaDataModel.add(tweetId, conf.mentionsConference, conferenceAccount);
 		eventDataModel.add(conferenceInstance, RDF.type, conf.Conference);
 		eventDataModel.add(conferenceInstance, conf.hasConferenceName,
@@ -249,9 +249,10 @@ public class DuringConference {
 		}
 		for (String paperDomain : paperDomains) {
 			Resource domain = eventDataModel.createResource(conf.ACE_URL + paperDomain);
+			Resource hashtag = tweetMetaDataModel.createResource(conf.Twitter_URL + paperDomain);
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
-			tweetMetaDataModel.add(tweetId, conf.hasHashtag, domain);
+			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -267,10 +268,10 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.isAbout,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
+				tweetMetaDataModel.createTypedLiteral(conf.ACE_URL + "reminder"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
@@ -355,9 +356,10 @@ public class DuringConference {
 		}
 		for (String paperDomain : paperDomains) {
 			Resource domain = eventDataModel.createResource(conf.ACE_URL + paperDomain);
+			Resource hashtag = tweetMetaDataModel.createResource(conf.Twitter_URL + paperDomain);
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
-			tweetMetaDataModel.add(tweetId, conf.hasHashtag, domain);
+			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -375,10 +377,10 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.isAbout,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
+				tweetMetaDataModel.createTypedLiteral(conf.ACE_URL + "insights"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));
@@ -462,9 +464,10 @@ public class DuringConference {
 		}
 		for (String paperDomain : paperDomains) {
 			Resource domain = eventDataModel.createResource(conf.ACE_URL + paperDomain);
+			Resource hashtag = tweetMetaDataModel.createResource(conf.Twitter_URL + paperDomain);
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
-			tweetMetaDataModel.add(tweetId, conf.hasHashtag, domain);
+			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -482,10 +485,10 @@ public class DuringConference {
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		Resource confInstance = tweetMetaDataModel.createResource(conf.ACE_URL + conf.confInstance);
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
-		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
+//		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
 		tweetMetaDataModel.add(tweetId, conf.isAbout,
-				eventDataModel.createTypedLiteral(conf.ACE_URL + "acceptedPapersNotificationPhase"));
+				tweetMetaDataModel.createTypedLiteral(conf.ACE_URL + "other"));
 
 		tweetMetaDataModel.add(tweetId, conf.hasDateTimestamp, tweetMetaDataModel
 				.createTypedLiteral(timeStamp.format(DateTimeFormatter.ISO_DATE_TIME), XSDDatatype.XSDdateTime));

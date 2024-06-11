@@ -122,7 +122,7 @@ public class DataGenerator {
 	}
 
 	public static void main(String[] args) throws IOException {
-		int confNum = 5;
+		int confNum = 2;
 		int seed = 1;
 		int confCycle = 1;
 		
