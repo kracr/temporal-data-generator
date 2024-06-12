@@ -1,5 +1,6 @@
 # GenACT Documentation
-GenACT is a data generator designed to address challenges in obtaining realistic temporal web data. Inspired by real-world data, GenACT is based on academic conference tweets tailored to provision temporal and static data in a streaming fashion, which is suitable for temporal and stream reasoning applications.
+GenACT is an ongoing project that is designed to address challenges in obtaining realistic temporal web data. 
+Inspired by real-world data, GenACT is based on academic conference tweets tailored to provision temporal and static data in a streaming fashion, which is suitable for temporal and stream reasoning applications.
 
 # Table of Contents
 
