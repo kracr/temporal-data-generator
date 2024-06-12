@@ -61,9 +61,11 @@ The project repository consists of the following directories:
 
 [EventData] Consists of event data generated in separate directories for each conference and each conference cycle: such as ESWC_2023, ESWC_2024. Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
 
-[SequenceData] 
+[SequenceData] The segments generated after partitioning goes to this directory. The files generated are the RDF triple files with associated timestamps hence these files
+ can be streamed as per user requirements. 
 
-[SparqlQueriesForPartition]
+[SparqlQueriesForPartition] This directory consists of two subdirectories: ByAttribute and ByShape. Each of these consists of sparql queries that are
+required for segmenting the event data. Users can add more sparql queries to 'ByShape' folder and generate the partitions as per their requirements.
 
 <a name="usage"></a>
 ## 3. Usage Instructions
