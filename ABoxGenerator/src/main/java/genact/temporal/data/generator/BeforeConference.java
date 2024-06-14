@@ -158,7 +158,6 @@ public class BeforeConference {
 
 		tweetMetaDataModel.add(tweetId, RDF.type, conf.Tweet);
 		tweetMetaDataModel.add(conferenceAccount, RDF.type, conf.ConferenceAccount);
-
 		tweetMetaDataModel.add(conferenceAccount, conf.posts, tweetId);
 		tweetMetaDataModel.add(tweetId, conf.hasTweetID, tweetId);
 		tweetMetaDataModel.add(conferenceAccount, conf.hasUserID, conferenceAccount);
@@ -778,10 +777,10 @@ public class BeforeConference {
 		// Select a random user ID from the combined list
 		String someUser = allUsers.get(conf.random.nextInt(allUsers.size()));
 		
-		System.out.println(someUser);
+//		System.out.println(someUser);
 		String twitterAccount = conf.ACE_URL + someUser;
 		Map<String, String> userDetails = conf.userData.get(someUser);
-		System.out.println(userDetails);
+//		System.out.println(userDetails);
 		Resource tweetId = tweetMetaDataModel.createResource(conf.Twitter_URL + tweetId0);
 		Resource personAccount = tweetMetaDataModel.createResource(twitterAccount);
 

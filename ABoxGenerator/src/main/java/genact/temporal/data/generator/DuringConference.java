@@ -32,7 +32,7 @@ public class DuringConference {
 	RDFWriter tweetEventDataWriter;
 	Model tweetMetaDataModel;
 	Model eventDataModel;
-
+	List<String> announcementList = new ArrayList<>();
 	public DuringConference(ConferenceStreams conf, long startTime, long endTime) {
 		this.conf = conf;
 		this.random = conf.random;
@@ -43,8 +43,8 @@ public class DuringConference {
 				ZoneId.systemDefault());
 
 		// Display timestamps for each phase
-		System.out.println("Cycle " + conf.confCycle);
-		System.out.println("During Conference Start: " + beforeConferenceEnd);
+		//System.out.println("Cycle " + conf.confCycle);
+		//System.out.println("During Conference Start: " + beforeConferenceEnd);
 		// calculate random timestamps
 		// implement a for loop here
 		LocalDateTime timestamp = getRandomTimestamp(beforeConferenceEnd, duringConferenceEnd);
@@ -79,7 +79,7 @@ public class DuringConference {
 												// attendee.
 		}
 
-		System.out.println("During Conference End: " + duringConferenceEnd);
+		//System.out.println("During Conference End: " + duringConferenceEnd);
 	}
 
 	public void SessionReminder(LocalDateTime timeStamp) {
@@ -163,12 +163,15 @@ public class DuringConference {
 						tweetMetaDataModel.createLiteral("keynoteTitle"));
 
 				if (type.equals("Keynote")) {
-					eventDataModel.add(userResource, conf.hasRole, conf.KeynoteSpeakerRole);
-					eventDataModel.add(userResource, conf.givesTalkOn, "someKeynoteTalkTitle");
+					eventDataModel.add(conferenceInstance, conf.hasSession, conf.plenaryKeynote);
+//					eventDataModel.add(userResource, conf.givesTalkOn, "someKeynoteTalkTitle");
+					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_plenaryKeynoteTalk"));
 				} else if (type.equals("InvitedTalk")) {
-					eventDataModel.add(userResource, conf.givesTalkOn, "someInvitedTalkTitle");
+					eventDataModel.add(conferenceInstance, conf.hasSession, conf.invitedKeynote);
+					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_invitedKeynoteTalk"));
 				} else if (type.equals("Speaker")) {
-					eventDataModel.add(userResource, conf.givesTalkOn, "someTalkTitle");
+					eventDataModel.add(conferenceInstance, conf.hasSession, conf.invitedKeynote);
+					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_invitedKeynoteTalk"));
 				}
 				eventDataModel.add(userResource, conf.attends, confInstance);
 			}
@@ -230,6 +233,7 @@ public class DuringConference {
 
 		// Create paper resource
 		Resource paperResource = eventDataModel.createResource(conf.ACE_URL + selectedPaperId);
+	    announcementList.add(selectedPaperId);
 		eventDataModel.add(paperResource, RDF.type, conf.ConferencePaper);
 		eventDataModel.add(paperResource, conf.hasPaperTrack, eventDataModel.createLiteral(conferenceTrack));
 		eventDataModel.add(paperResource, conf.hasTitle, eventDataModel.createLiteral(paperTitle));
@@ -314,8 +318,10 @@ public class DuringConference {
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
 		// pick a user from paper list
-		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
-		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
+		//List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
+		
+		String selectedPaperId = announcementList.get(conf.random.nextInt(announcementList.size()));
+		//String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
 		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
 		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
 		String someUser = authorList.get(conf.random.nextInt(authorList.size()));
@@ -422,8 +428,9 @@ public class DuringConference {
 		eventDataModel = ModelFactory.createDefaultModel();
 		String tweetId0 = generateTweetId();
 		// pick a user from paper list
-		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
-		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
+//		List<String> paperIds = new ArrayList<>(conf.conferencePaperList.keySet());
+//		String selectedPaperId = paperIds.get(conf.random.nextInt(paperIds.size()));
+		String selectedPaperId = announcementList.get(conf.random.nextInt(this.announcementList.size()));
 		Map<String, Object> paperDetails = conf.conferencePaperList.get(selectedPaperId);
 		List<String> authorList = (List<String>) paperDetails.get("AuthorList");
 		String someUser = authorList.get(conf.random.nextInt(authorList.size()));

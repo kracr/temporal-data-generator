@@ -97,7 +97,7 @@ public class DataGenerator {
 			"trackChair", "tutorialTrackChair", "workshopTrackChair" };
 	String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
 			"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
-			"knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing",
+			"knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics","linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "bioTech",
 			"quantumComputing", "semanticWeb" };
 	String[] TOKEN_EventPhases = new String[] {};
 
@@ -124,7 +124,7 @@ public class DataGenerator {
 	public static void main(String[] args) throws IOException {
 		int confNum = 2;
 		int seed = 1;
-		int confCycle = 1;
+		int confCycle = 2;
 		
 		String currentDirectory = System.getProperty("user.dir");
 		File currentDirFile = new File(currentDirectory);
@@ -150,6 +150,10 @@ public class DataGenerator {
 			System.out.println("For example: 2 5 C:/GitHub/GenACT 100");
 		}
 
+		File confDirectory=new File(directoryPath + "/Mappings/");
+		if (!confDirectory.exists()) {
+			System.out.println("Mappings directory is missing.");	
+		}
 		// Universal Time (UTC).
 		new DataGenerator().start(confNum, confCycle, directoryPath, seed);
 	}
@@ -255,9 +259,9 @@ public class DataGenerator {
 	public Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles,
 			Map<String, Map<String, String>> userData) {
 		Map<String, Map<String, Object>> paperData = new HashMap<>();
-		String[] TOKEN_Domain = { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
+		String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
 				"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
-				"knowledgeGraph", "linkedData", "machineLearning", "ontology", "naturalLanguageProcessing",
+				"knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics","linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "bioTech",
 				"quantumComputing", "semanticWeb" };
 
 		
@@ -406,7 +410,7 @@ public class DataGenerator {
 		this.conferences = new ConferenceStreams[this.confNum];
 		for (int i = 0; i < this.confNum; ++i) {
 			//System.out.println(this.startTimestampMillis);
-			System.out.println("Started Conference Instance " + i);
+			//System.out.println("Started Conference Instance " + i);
 			conferences[i] = new ConferenceStreams(DataGenerator.this, i);
 		}
 

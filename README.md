@@ -1,6 +1,9 @@
 # GenACT Documentation
 GenACT is an ongoing project that is designed to address challenges in obtaining realistic temporal web data. 
-Inspired by real-world data, GenACT is based on academic conference tweets tailored to provision temporal and static data in a streaming fashion, which is suitable for temporal and stream reasoning applications.
+Inspired by real-world data, GenACT is based on academic conference tweets tailored to provision temporal and static data in a streaming fashion, 
+which is suitable for studying the Knowledge Graph Evolution as well as evaluating temporal and stream reasoning applications.
+
+Data files generated using GenACT are associated with timestamps which allows users to stream the data at different rates as per their requirements. 
 
 # Table of Contents
 
@@ -22,7 +25,9 @@ Inspired by real-world data, GenACT is based on academic conference tweets tailo
 	   
 <a name="intro"></a>
 ## 1. Introduction
-GenACT models data after the Academic Conference Twitter (ACT) domain, chosen for its ability to represent various application types with realistic workload scenarios. The proposed synthetic data for studying KG evolution should be diverse, well-annotated, dynamically changing over time, include temporal constraints, historical data, and temporal dependencies, and consider scalability. GenACT meets these requirements by incorporating four forms of temporality: order, timestamped event data (Tweets), Versioned Data, and interval.
+GenACT models data after the Academic Conference Tweet (ACT) domain, chosen for its ability to represent various application types with realistic workload 
+scenarios. The synthetic data for studying KG evolution should be diverse, well-annotated, dynamically changing over time, include temporal 
+constraints, historical data, and temporal dependencies, and consider scalability. GenACT meets these requirements by incorporating temporality, timeliness and dynamicity.
 
 
 <a name="tbox"></a>
@@ -76,7 +81,7 @@ Requirements: The user must have *java 1.7 and maven* installed in the system.
 <a name="edgexe"></a>
 ## 3.1. Event Data Generation (Direct execution using executable jar)
 
-In order to generate the event data for the required number of conferences, users can directly run the executable jar **[genact.jar](to be updated)** that generates the datasets using the default configurations. In order to execute this Jar file, user need to give the inputs (in the same order):  
+In order to generate the event data for the required number of conferences, users can directly run the executable jar **[GenACT.jar](https://drive.google.com/file/d/1xxiU2j5swBRF8SCk8WZ43LMhfSd9YqMB/view?usp=sharing)** that generates the datasets using the default configurations. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
 No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
 
@@ -87,7 +92,7 @@ For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 <a name="sdgexe"></a>
 ## 3.2. Sequence Data Generation (Direct execution using executable jar)
 
-In order to generate different sequences from the event data generated in the previous step, users can directly run the executable jar **[partition.jar](to be updated)** that generates the datasets using the default configurationsd. 
+In order to generate different sequences from the event data generated in the previous step, users can directly run the executable jar **[GenACT_partition.jar](https://drive.google.com/file/d/1IXnHdioTIB-vLDYAdT9gecQfyyChEdym/view?usp=sharing)** that generates the datasets using the default configurationsd. 
 
 In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user/domain/tweet_type/object.
 

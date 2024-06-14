@@ -118,7 +118,7 @@ public class ConferenceStreams {
 			isAbout,hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation,
 			hasDateTimestamp, hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName,
 			hasEventMode, hasWebsiteURL, hasLocation, hasEdition, hasPaperTrack, hasTrackChair, hasTitle,
-			hasPaperDomain, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper;
+			hasPaperDomain, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper, hasSession;
 	File tweetMetaData_n3;
 	File eventData_n3;
 	RDFWriter tweetMetaDataWriter;
@@ -155,7 +155,7 @@ public class ConferenceStreams {
 	Resource KeynoteTalks = eventDataProperties.createResource(ACE_URL + "KeynoteTalks");
 	Resource LightningTalks = eventDataProperties.createResource(ACE_URL + "LightningTalks");
 	Resource Presentations = eventDataProperties.createResource(ACE_URL + "Presentations");
-	Resource ComputerScienceDomain = eventDataProperties.createResource(ACE_URL + "ComputerScienceDomain");
+	//Resource ComputerScienceDomain = eventDataProperties.createResource(ACE_URL + "ComputerScienceDomain");
 	Resource InvitedTalkSpeakerRole = eventDataProperties.createResource(ACE_URL + "InvitedTalkSpeakerRole");
 	Resource KeynoteSpeakerRole = eventDataProperties.createResource(ACE_URL + "KeynoteTalkSpeakerRole");
 	Resource SpeakerRole = eventDataProperties.createResource(ACE_URL + "SpeakerRole");
@@ -168,6 +168,8 @@ public class ConferenceStreams {
 	Resource PaperSubmissionReminderPhase = eventDataProperties
 			.createResource(ACE_URL + "PaperSubmissionReminderPhase");
 	Resource RegistrationReminderPhase = eventDataProperties.createResource(ACE_URL + "RegistrationReminderPhase");
+	Resource plenaryKeynote=eventDataProperties.createResource(ACE_URL + "plenaryKeynote");
+	Resource invitedKeynote=eventDataProperties.createResource(ACE_URL + "invitedKeynote");
 	List<String> cities = new ArrayList<>();
 	Map<String, Map<String, String>> userData;
 	Map<String, Map<String, Object>> paperData;
@@ -198,6 +200,7 @@ public class ConferenceStreams {
 		this.hasEventPhase = eventDataProperties.createProperty(ACE_URL + "hasEventPhase");
 		this.hasWebsiteURL = eventDataProperties.createProperty(ACE_URL + "hasWebsiteURL");
 		this.hasLocation = eventDataProperties.createProperty(Location_URL + "hasLocation");
+		this.hasSession = eventDataProperties.createProperty(ACE_URL + "hasSession");
 		this.hasEdition = eventDataProperties.createProperty(ACE_URL + "hasEdition");
 		this.hasPaperTrack = eventDataProperties.createProperty(ACE_URL + "hasPaperTrack");
 		this.hasTrackChair = eventDataProperties.createProperty(ACE_URL + "hasTrackChair");
@@ -322,20 +325,21 @@ public class ConferenceStreams {
 			long duringConferenceEndMillis = beforeConferenceEndMillis + duringConferenceDays * 24 * 60 * 60 * 1000L;
 			long afterConferenceEndMillis = duringConferenceEndMillis + afterConferenceDays * 24 * 60 * 60 * 1000L;
 
-			System.out.println("beforeConferenceStartMillis"+ LocalDateTime.ofInstant(new Date(beforeConferenceStartMillis).toInstant(),
-					ZoneId.systemDefault()));
 			
-			System.out.println("beforeConferenceEndMillis"+LocalDateTime.ofInstant(new Date(beforeConferenceEndMillis).toInstant(),
-					ZoneId.systemDefault()));
 			
-			System.out.println("duringConferenceEndMillis"+LocalDateTime.ofInstant(new Date(duringConferenceEndMillis).toInstant(),
-					ZoneId.systemDefault()));
-			System.out.println("afterConferenceEndMillis"+LocalDateTime.ofInstant(new Date(afterConferenceEndMillis).toInstant(),
-					ZoneId.systemDefault()));
+			//System.out.println("beforeConferenceEndMillis"+LocalDateTime.ofInstant(new Date(beforeConferenceEndMillis).toInstant(),
+					//ZoneId.systemDefault()));
+			
+			//System.out.println("duringConferenceEndMillis"+LocalDateTime.ofInstant(new Date(duringConferenceEndMillis).toInstant(),
+					//ZoneId.systemDefault()));
+			//System.out.println("afterConferenceEndMillis"+LocalDateTime.ofInstant(new Date(afterConferenceEndMillis).toInstant(),
+					//ZoneId.systemDefault()));
 			this.confAccount = "conf" + this.confIndex; 
 			this.confInstance = "conf" + this.confIndex + "_" + this.year; // year will be a variable
-			System.out.println("Started " + this.confAccount + "for the year " + this.year);
-			this.confName = this.confInstance;
+			System.out.println("Cycle for Conference Instance "+confInstance +" starts at "+ LocalDateTime.ofInstant(new Date(beforeConferenceStartMillis).toInstant(),
+					ZoneId.systemDefault()));
+			//System.out.println("Started " + this.confAccount + "for the year " + this.year);
+			this.confName = "International Conference on " + this.confInstance ;
 			this.confId = this.confInstance;
 			this.seed = confIndex + 10000 * this.confCycle;
 			this.confURL = "https://anonymous.com/" + this.confInstance + ".com";
@@ -354,7 +358,7 @@ public class ConferenceStreams {
 			this.nextCycleStart = this.nextCycleStart.plusDays(this.random.nextInt(30) - 30); // Randomly add or
 																								// subtract up to 30
 			// days
-			System.out.println("Next Cycle Start: " + nextCycleStart);
+			//System.out.println("Next Cycle Starts at: " + nextCycleStart);
 			// Update start timestamp for the next cycle
 			startTimestampMillis = nextCycleStart.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 			this.year += 1;

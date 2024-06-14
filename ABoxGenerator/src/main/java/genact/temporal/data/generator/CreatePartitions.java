@@ -27,18 +27,18 @@ public class CreatePartitions {
 
 	public static void main(String[] args) {
 		// Parse command line arguments
-		System.out.println("file");
+		//System.out.println("file");
 
 		String type = null;
 		String sequence = null;
 		if (args[0].equals("--attribute")) {
 			sequence = "ByAttribute";
 			type = args[1];
-			System.out.println(type);
+			//System.out.println(type);
 		} else if (args[0].equals("--shape")) {
 			sequence = "ByShape";
 			type = args[1];
-			System.out.println(type);
+			//System.out.println(type);
 		}
 
 		String currentDirectory = System.getProperty("user.dir");
@@ -74,7 +74,7 @@ public class CreatePartitions {
 								File eventFile = new File(file.getAbsolutePath(), eventFileName);
 								// System.out.println("eventFile "+eventFile);
 								for (String result : results) {
-									System.out.println("output is :" + result);
+									//System.out.println("output is :" + result);
 									// Create new directory in sequences directory
 									String outputDirectory = sequencesDirectory + "/" + result;
 									File directory = new File(outputDirectory);
@@ -163,10 +163,11 @@ public class CreatePartitions {
 				if (nameNode != null) {
 					String name = nameNode.toString();
 					results.add(name);
-				} else {
-					// Handle the case where "name" is not bound
-					System.out.println("No name found for one of the results.");
-				}
+				} 
+//				else {
+//					// Handle the case where "name" is not bound
+//					System.out.println("No name found for one of the results.");
+//				}
 			}
 		} catch (Exception e) {
 			// Handle the exception
@@ -205,9 +206,10 @@ public class CreatePartitions {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else {
-                System.out.println("No triples found, file not created.");
-            }
+            } 
+//			else {
+//                System.out.println("No triples found, file not created.");
+//            }
         } catch (Exception e) {
             // Handle the exception
             e.printStackTrace();
