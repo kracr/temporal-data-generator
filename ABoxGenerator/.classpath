@@ -13,12 +13,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
-		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -45,6 +39,12 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="ignore_optional_problems" value="true"/>
@@ -54,12 +54,5 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/csparql2.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/csparqlengine-0.9.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/esper-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/httpclient-cache-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/javacsv.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/opencsv-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/GitHub/CityBench-CSPARQL2.0/lib/rsp4j.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -63,18 +63,18 @@ The project repository consists of the following directories:
 
 [StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with instances (cities) from Location ontology). 
 
-[RunnableJars] (#usage) for usage instructions. 
+[RunnableJars](https://drive.google.com/drive/folders/1xWfHi9lOZ_OhOmD_VVQuDXW976R4c2HQ?usp=sharing) (#usage) for usage instructions. 
 
-[EventData] Consists of event data generated in separate directories for each conference and each conference cycle: such as ESWC_2023, ESWC_2024. Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
+[EventData](https://github.com/kracr/temporal-data-generator/tree/main/EventData) Consists of event data generated in separate directories for each conference and each conference cycle: such as ESWC_2023, ESWC_2024. Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
 
-[SequenceData] The segments generated after partitioning goes to this directory. The files generated are the RDF triple files with associated timestamps hence these files
+[SequenceData](https://github.com/kracr/temporal-data-generator/tree/main/SequenceData) The segments generated after partitioning goes to this directory. The files generated are the RDF triple files with associated timestamps hence these files
  can be streamed as per user requirements. 
 
-[SparqlQueriesForPartition] This directory consists of two subdirectories: ByAttribute and ByShape. Each of these consists of sparql queries that are
+[SparqlQueriesForPartition](https://github.com/kracr/temporal-data-generator/tree/main/SparqlQueriesForPartition) This directory consists of two subdirectories: ByAttribute and ByShape. Each of these consists of sparql queries that are
 required for segmenting the event data. Users can add more sparql queries to 'ByShape' folder and generate the partitions as per their requirements.
 
 <a name="usage"></a>
-## 3. Usage Instructions
+## 3. Instructions to generate the data
 
 Requirements: The user must have *java 1.7 and maven* installed in the system. 
 
@@ -114,3 +114,11 @@ mvn install
 For event data generation: mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.DataGenerator -Dexec.args="2 3 C:\GitHub\temporal-data-generator"
 
 For sequence data generation: mvn exec:java -Dexec.mainClass=genact.temporal.data.generator.CreatePartitions -Dexec.args="--attribute conference"
+
+
+# 4 Instructions for using the data:
+
+Each file generated inside the SequenceData directory is named in the format timestamp_tweetid_eventdata.ttl. These files can be streamed by sorting them by 
+their names, which arranges them in a sequential order. Once sorted, each file can be streamed at a defined rate.
+
+(As an example, we also provide a python script, process.py,  that processes a year data in a day.)
