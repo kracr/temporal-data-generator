@@ -117,6 +117,7 @@ Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPape
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPaperTrack>))
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasParticipant>))
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair>))
+Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>))
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasProject>))
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair>))
 Declaration(ObjectProperty(<http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair>))
@@ -431,7 +432,6 @@ SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#invitedTalkGiv
 
 EquivalentObjectProperties(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
 ObjectPropertyDomain(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
-ObjectPropertyRange(<http://anonymous.com/AcademicConferenceEvent#isAcceptedAt> <http://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
 
 # Object Property: <http://anonymous.com/AcademicConferenceEvent#isAuthorOf> (<http://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
 
@@ -448,7 +448,6 @@ SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#isOrganizerOf>
 
 # Object Property: <http://anonymous.com/AcademicConferenceEvent#isPresentedAt> (<http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
 
-AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#isPresentedAt> "what could be the inverse property of isPresentedAt?")
 SubObjectPropertyOf(<http://anonymous.com/AcademicConferenceEvent#isPresentedAt> <http://anonymous.com/AcademicConferenceEvent#isAcceptedAt>)
 FunctionalObjectProperty(<http://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
 

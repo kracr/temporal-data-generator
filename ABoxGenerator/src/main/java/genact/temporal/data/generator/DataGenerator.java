@@ -97,8 +97,8 @@ public class DataGenerator {
 			"trackChair", "tutorialTrackChair", "workshopTrackChair" };
 	String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
 			"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
-			"knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics","linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "bioTech",
-			"quantumComputing", "semanticWeb" };
+			"knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics", "linkedData", "machineLearning",
+			"ontology", "naturalLanguageProcessing", "bioTech", "quantumComputing", "semanticWeb" };
 	String[] TOKEN_EventPhases = new String[] {};
 
 	int confNum; // user specifies the number of conferences required such as if user wants 4:
@@ -125,7 +125,7 @@ public class DataGenerator {
 		int confNum = 2;
 		int seed = 1;
 		int confCycle = 2;
-		
+
 		String currentDirectory = System.getProperty("user.dir");
 		File currentDirFile = new File(currentDirectory);
 		String directoryPath = currentDirFile.getParent();
@@ -150,9 +150,9 @@ public class DataGenerator {
 			System.out.println("For example: 2 5 C:/GitHub/GenACT 100");
 		}
 
-		File confDirectory=new File(directoryPath + "/Mappings/");
+		File confDirectory = new File(directoryPath + "/Mappings/");
 		if (!confDirectory.exists()) {
-			System.out.println("Mappings directory is missing.");	
+			System.out.println(directoryPath + "/Mappings/ directory is missing.");
 		}
 		// Universal Time (UTC).
 		new DataGenerator().start(confNum, confCycle, directoryPath, seed);
@@ -172,7 +172,7 @@ public class DataGenerator {
 		this.random.setSeed((long) seed);
 		this.dateTime = LocalDateTime.of(1970, Month.JANUARY, 1, 0, 0);
 		this.startTimestampMillis = dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-		
+
 		Properties prop1 = new Properties();
 		InputStream input1 = null;
 		Properties prop2 = new Properties();
@@ -259,12 +259,12 @@ public class DataGenerator {
 	public Map<String, Map<String, Object>> generatePaperData(int totalPaperCount, List<String> paperTitles,
 			Map<String, Map<String, String>> userData) {
 		Map<String, Map<String, Object>> paperData = new HashMap<>();
-		String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence", "bigData",
-				"blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning", "internetOfThings",
-				"knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics","linkedData", "machineLearning", "ontology", "naturalLanguageProcessing", "bioTech",
-				"quantumComputing", "semanticWeb" };
+		String[] TOKEN_Domain = new String[] { "ai", "ml", "nlp", "aiForSocialGood", "artificialIntelligence",
+				"bigData", "blockchain", "cloudComputing", "computerVision", "dataScience", "deepLearning",
+				"internetOfThings", "knowledgeGraph", "cardiology", "neurology", "oncology", "pediatrics", "linkedData",
+				"machineLearning", "ontology", "naturalLanguageProcessing", "bioTech", "quantumComputing",
+				"semanticWeb" };
 
-		
 		String[] conferenceTracks = { "applicationsTrack", "demoTrack", "doctoralConsortiumTrack", "posterTrack",
 				"researchTrack", "resourcesTrack", "tutorialTrack", "workshopTrack" };
 
@@ -335,7 +335,7 @@ public class DataGenerator {
 		return displayNames;
 	}
 
-	public  List<String> readPaperTitles(String filePath) throws IOException {
+	public List<String> readPaperTitles(String filePath) throws IOException {
 		List<String> paperTitles = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 			String line;
@@ -353,7 +353,7 @@ public class DataGenerator {
 	public Map<String, Map<String, String>> generateUserData(int totalUserCount, List<String> displayNames,
 			List<String> affiliations) {
 		Map<String, Map<String, String>> userData = new HashMap<>();
-	
+
 		List<String> designations = Arrays.asList("Student", "PhDStudent", "Professor", "Researcher", "Faculty");
 
 		int studentCount = (int) (totalUserCount * 0.7);
@@ -409,8 +409,8 @@ public class DataGenerator {
 
 		this.conferences = new ConferenceStreams[this.confNum];
 		for (int i = 0; i < this.confNum; ++i) {
-			//System.out.println(this.startTimestampMillis);
-			//System.out.println("Started Conference Instance " + i);
+			// System.out.println(this.startTimestampMillis);
+			// System.out.println("Started Conference Instance " + i);
 			conferences[i] = new ConferenceStreams(DataGenerator.this, i);
 		}
 

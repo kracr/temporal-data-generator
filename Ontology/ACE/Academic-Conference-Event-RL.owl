@@ -400,6 +400,12 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#hasPresentedPaper -->
+
+    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPresentedPaper"/>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#hasProject -->
 
     <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasProject">

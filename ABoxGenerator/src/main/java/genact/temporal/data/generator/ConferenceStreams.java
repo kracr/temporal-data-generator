@@ -114,11 +114,12 @@ public class ConferenceStreams {
 	Map<String, List<String>> speakerList;
 	Property rdfSubject, rdfPredicate, rdfObject, rdfType;
 	Property hasGeneralChair, getsStudentGrantFor, hasAuthor, isAuthorOf, hasLocalChair, hasResearchTrackChair,
-			hasResourceTrackChair, posts, hasTweetID, hasUserID, hasDisplayName, volunteersFor, hasHashtag,
-			isAbout,hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation,
-			hasDateTimestamp, hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName,
-			hasEventMode, hasWebsiteURL, hasLocation, hasEdition, hasPaperTrack, hasTrackChair, hasTitle,
-			hasPaperDomain, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper, hasSession;
+			hasResourceTrackChair, posts, hasTweetID, hasUserID, hasDisplayName, volunteersFor, hasHashtag, isAbout,
+			hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation, hasDateTimestamp,
+			hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName, hasEventMode, hasWebsiteURL,
+			hasLocation, hasEdition, hasPaperTrack, hasTrackChair, hasTitle, hasPaperDomain, isPartOf, isPresentedAt,
+			hasPresentedPaper, isPresentedBy, hasRole, attends, isAcceptedAt, givesTalk, givesTalkOn, hasPaper,
+			hasSession;
 	File tweetMetaData_n3;
 	File eventData_n3;
 	RDFWriter tweetMetaDataWriter;
@@ -155,7 +156,8 @@ public class ConferenceStreams {
 	Resource KeynoteTalks = eventDataProperties.createResource(ACE_URL + "KeynoteTalks");
 	Resource LightningTalks = eventDataProperties.createResource(ACE_URL + "LightningTalks");
 	Resource Presentations = eventDataProperties.createResource(ACE_URL + "Presentations");
-	//Resource ComputerScienceDomain = eventDataProperties.createResource(ACE_URL + "ComputerScienceDomain");
+	// Resource ComputerScienceDomain = eventDataProperties.createResource(ACE_URL +
+	// "ComputerScienceDomain");
 	Resource InvitedTalkSpeakerRole = eventDataProperties.createResource(ACE_URL + "InvitedTalkSpeakerRole");
 	Resource KeynoteSpeakerRole = eventDataProperties.createResource(ACE_URL + "KeynoteTalkSpeakerRole");
 	Resource SpeakerRole = eventDataProperties.createResource(ACE_URL + "SpeakerRole");
@@ -168,8 +170,10 @@ public class ConferenceStreams {
 	Resource PaperSubmissionReminderPhase = eventDataProperties
 			.createResource(ACE_URL + "PaperSubmissionReminderPhase");
 	Resource RegistrationReminderPhase = eventDataProperties.createResource(ACE_URL + "RegistrationReminderPhase");
-	Resource plenaryKeynote=eventDataProperties.createResource(ACE_URL + "plenaryKeynote");
-	Resource invitedKeynote=eventDataProperties.createResource(ACE_URL + "invitedKeynote");
+	Resource plenaryKeynote = eventDataProperties.createResource(ACE_URL + "plenaryKeynote");
+	Resource paperPresentationSession = eventDataProperties.createResource(ACE_URL + "paperPresentationSession");
+	Resource posterSession = eventDataProperties.createResource(ACE_URL + "posterSession");
+	Resource invitedKeynote = eventDataProperties.createResource(ACE_URL + "invitedKeynote");
 	List<String> cities = new ArrayList<>();
 	Map<String, Map<String, String>> userData;
 	Map<String, Map<String, Object>> paperData;
@@ -207,6 +211,7 @@ public class ConferenceStreams {
 		this.hasTitle = eventDataProperties.createProperty(ACE_URL + "hasTitle");
 		this.hasPaperDomain = eventDataProperties.createProperty(ACE_URL + "hasPaperDomain");
 		this.isPresentedBy = eventDataProperties.createProperty(ACE_URL + "isPresentedBy");
+		this.hasPresentedPaper = eventDataProperties.createProperty(ACE_URL + "hasPresentedPaper");
 		this.hasRole = eventDataProperties.createProperty(ACE_URL + "hasRole");
 		this.attends = eventDataProperties.createProperty(ACE_URL + "attends");
 		this.isAcceptedAt = eventDataProperties.createProperty(ACE_URL + "isAcceptedAt");
@@ -219,6 +224,8 @@ public class ConferenceStreams {
 		this.hasResearchTrackChair = eventDataProperties.createProperty(ACE_URL + "hasResearchTrackChair");
 		this.hasResourceTrackChair = eventDataProperties.createProperty(ACE_URL + "hasResourceTrackChair");
 		this.hasAuthor = eventDataProperties.createProperty(ACE_URL + "hasAuthor");
+		this.isPartOf = eventDataProperties.createProperty(ACE_URL + "isPartOf");
+		this.isPresentedAt = eventDataProperties.createProperty(ACE_URL + "isPresentedAt");
 		this.isAuthorOf = eventDataProperties.createProperty(ACE_URL + "isAuthorOf");
 		this.TOKEN_EventMode = gen.TOKEN_EventMode;
 		this.getsStudentGrantFor = eventDataProperties.createProperty(ACE_URL + "getsStudentGrantFor");
@@ -230,16 +237,21 @@ public class ConferenceStreams {
 		this.userData = gen.userData;
 		this.usersList = gen.usersList;
 		this.researchGroups = gen.researchGroups;
-		this.startTimestampMillis=gen.startTimestampMillis;
-		//System.out.println(this.startTimestampMillis);
-		long maxRandomMillis = gen.random.nextInt(4, 10) * 30L * 24 * 60 * 60 * 1000;
- // 3 months in milliseconds
+		this.startTimestampMillis = gen.startTimestampMillis;
+		// System.out.println(this.startTimestampMillis);
+		int min=4;
+		int max=10;
+		long maxRandomMillis = min+ gen.random.nextInt(max-min) * 30L * 24 * 60 * 60 * 1000;
+		// 3 months in milliseconds
 //		this.startTimestampMillis = ThreadLocalRandom.current().nextLong(this.startTimestampMillis, (this.startTimestampMillis + maxRandomMillis));
 		this.startTimestampMillis = this.startTimestampMillis + maxRandomMillis;
-		//        LocalDateTime randomStartTime = LocalDateTime.ofEpochSecond((System.currentTimeMillis() / 1000) + (randomMillis / 1000), 0, ZoneId.systemDefault().getRules().getOffset(LocalDateTime.now()));
+		// LocalDateTime randomStartTime =
+		// LocalDateTime.ofEpochSecond((System.currentTimeMillis() / 1000) +
+		// (randomMillis / 1000), 0,
+		// ZoneId.systemDefault().getRules().getOffset(LocalDateTime.now()));
 //
 //        this.startTimestampMillis = randomStartTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-		//System.out.println(this.startTimestampMillis);
+		// System.out.println(this.startTimestampMillis);
 		defineDatastructures();
 
 		distributeTimestamps();
@@ -315,31 +327,33 @@ public class ConferenceStreams {
 					+ gen.after_conference_days_min; // Range: 2 to 3 days
 			int beforeConferenceDays = overallDurationMonths * 30 - duringConferenceDays - afterConferenceDays; // Remaining
 																												// days
-			//System.out.println("overall"+overallDurationMonths);
-			//System.out.println("beforeConferenceDays"+beforeConferenceDays);
-			//System.out.println("duringConferenceDays"+duringConferenceDays);
-			//System.out.println("afterConferenceDays"+afterConferenceDays);
+			// System.out.println("overall"+overallDurationMonths);
+			// System.out.println("beforeConferenceDays"+beforeConferenceDays);
+			// System.out.println("duringConferenceDays"+duringConferenceDays);
+			// System.out.println("afterConferenceDays"+afterConferenceDays);
 			// Calculate start timestamps for each phase
 			long beforeConferenceStartMillis = this.startTimestampMillis;
 			long beforeConferenceEndMillis = beforeConferenceStartMillis + beforeConferenceDays * 24 * 60 * 60 * 1000L;
 			long duringConferenceEndMillis = beforeConferenceEndMillis + duringConferenceDays * 24 * 60 * 60 * 1000L;
 			long afterConferenceEndMillis = duringConferenceEndMillis + afterConferenceDays * 24 * 60 * 60 * 1000L;
 
-			
-			
-			//System.out.println("beforeConferenceEndMillis"+LocalDateTime.ofInstant(new Date(beforeConferenceEndMillis).toInstant(),
-					//ZoneId.systemDefault()));
-			
-			//System.out.println("duringConferenceEndMillis"+LocalDateTime.ofInstant(new Date(duringConferenceEndMillis).toInstant(),
-					//ZoneId.systemDefault()));
-			//System.out.println("afterConferenceEndMillis"+LocalDateTime.ofInstant(new Date(afterConferenceEndMillis).toInstant(),
-					//ZoneId.systemDefault()));
-			this.confAccount = "conf" + this.confIndex; 
+			// System.out.println("beforeConferenceEndMillis"+LocalDateTime.ofInstant(new
+			// Date(beforeConferenceEndMillis).toInstant(),
+			// ZoneId.systemDefault()));
+
+			// System.out.println("duringConferenceEndMillis"+LocalDateTime.ofInstant(new
+			// Date(duringConferenceEndMillis).toInstant(),
+			// ZoneId.systemDefault()));
+			// System.out.println("afterConferenceEndMillis"+LocalDateTime.ofInstant(new
+			// Date(afterConferenceEndMillis).toInstant(),
+			// ZoneId.systemDefault()));
+			this.confAccount = "conf" + this.confIndex;
 			this.confInstance = "conf" + this.confIndex + "_" + this.year; // year will be a variable
-			System.out.println("Cycle for Conference Instance "+confInstance +" starts at "+ LocalDateTime.ofInstant(new Date(beforeConferenceStartMillis).toInstant(),
-					ZoneId.systemDefault()));
-			//System.out.println("Started " + this.confAccount + "for the year " + this.year);
-			this.confName = "International Conference on " + this.confInstance ;
+			System.out.println("Cycle for Conference Instance " + confInstance + " starts at " + LocalDateTime
+					.ofInstant(new Date(beforeConferenceStartMillis).toInstant(), ZoneId.systemDefault()));
+			// System.out.println("Started " + this.confAccount + "for the year " +
+			// this.year);
+			this.confName = "International Conference on " + this.confInstance;
 			this.confId = this.confInstance;
 			this.seed = confIndex + 10000 * this.confCycle;
 			this.confURL = "https://anonymous.com/" + this.confInstance + ".com";
@@ -358,7 +372,7 @@ public class ConferenceStreams {
 			this.nextCycleStart = this.nextCycleStart.plusDays(this.random.nextInt(30) - 30); // Randomly add or
 																								// subtract up to 30
 			// days
-			//System.out.println("Next Cycle Starts at: " + nextCycleStart);
+			// System.out.println("Next Cycle Starts at: " + nextCycleStart);
 			// Update start timestamp for the next cycle
 			startTimestampMillis = nextCycleStart.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 			this.year += 1;
@@ -410,8 +424,7 @@ public class ConferenceStreams {
 		return this.conferencePaperList;
 	}
 
-	public  Map<String, List<String>> generateVolunteerAndStudentGrantList(
-			Map<String, Map<String, String>> userData) {
+	public Map<String, List<String>> generateVolunteerAndStudentGrantList(Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> volunteerAndStudentGrantList = new HashMap<>();
 		List<String> eligibleUsers = new ArrayList<>();
 
@@ -422,11 +435,10 @@ public class ConferenceStreams {
 			}
 		}
 
-		
 		while (!eligibleUsers.isEmpty()) {
-			int index =gen.random.nextInt(eligibleUsers.size());
+			int index = gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
-			String type =gen.random.nextBoolean() ? "Volunteer" : "StudentGrant";
+			String type = gen.random.nextBoolean() ? "Volunteer" : "StudentGrant";
 			if (!volunteerAndStudentGrantList.containsKey(type)) {
 				volunteerAndStudentGrantList.put(type, new ArrayList<String>());
 			}
@@ -437,8 +449,7 @@ public class ConferenceStreams {
 		return volunteerAndStudentGrantList;
 	}
 
-public Map<String, List<String>> generateOrganizingCommitteeList(
-			Map<String, Map<String, String>> userData) {
+	public Map<String, List<String>> generateOrganizingCommitteeList(Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> organizingCommitteeList = new HashMap<>();
 		String[] chairRoles = { "generalChair", "localChair", "researchTrackChair", "resourcesTrackChair", "trackChair",
 				"tutorialTrackChair", "workshopTrackChair" };
@@ -451,11 +462,10 @@ public Map<String, List<String>> generateOrganizingCommitteeList(
 			}
 		}
 
-		
 		for (String role : chairRoles) {
-			int numberOfUsers =gen.random.nextInt(2) + 1; // Assign 1 or 2 users to each role
+			int numberOfUsers = gen.random.nextInt(2) + 1; // Assign 1 or 2 users to each role
 			for (int i = 0; i < numberOfUsers && !eligibleUsers.isEmpty(); i++) {
-				int index =gen.random.nextInt(eligibleUsers.size());
+				int index = gen.random.nextInt(eligibleUsers.size());
 				String userId = eligibleUsers.get(index);
 				if (!organizingCommitteeList.containsKey(role)) {
 					organizingCommitteeList.put(role, new ArrayList<String>());
@@ -468,7 +478,7 @@ public Map<String, List<String>> generateOrganizingCommitteeList(
 		return organizingCommitteeList;
 	}
 
-public  Map<String, List<String>> generateSpeakerList(Map<String, Map<String, String>> userData) {
+	public Map<String, List<String>> generateSpeakerList(Map<String, Map<String, String>> userData) {
 		Map<String, List<String>> speakerList = new HashMap<>();
 		List<String> eligibleUsers = new ArrayList<>();
 
@@ -479,11 +489,10 @@ public  Map<String, List<String>> generateSpeakerList(Map<String, Map<String, St
 			}
 		}
 
-	
 		// Assign Keynote speakers
-		int keynoteCount = Math.min(3,gen.random.nextInt(2) + 2); // 2-3 keynote speakers
+		int keynoteCount = Math.min(3, gen.random.nextInt(2) + 2); // 2-3 keynote speakers
 		for (int i = 0; i < keynoteCount && !eligibleUsers.isEmpty(); i++) {
-			int index =gen.random.nextInt(eligibleUsers.size());
+			int index = gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
 			if (!speakerList.containsKey("Keynote")) {
 				speakerList.put("Keynote", new ArrayList<String>());
@@ -493,9 +502,9 @@ public  Map<String, List<String>> generateSpeakerList(Map<String, Map<String, St
 		}
 
 		// Assign Invited Talk speakers
-		int invitedTalkCount = Math.min(3,gen.random.nextInt(2) + 2); // 2-3 invited talk speakers
+		int invitedTalkCount = Math.min(3, gen.random.nextInt(2) + 2); // 2-3 invited talk speakers
 		for (int i = 0; i < invitedTalkCount && !eligibleUsers.isEmpty(); i++) {
-			int index =gen.random.nextInt(eligibleUsers.size());
+			int index = gen.random.nextInt(eligibleUsers.size());
 			String userId = eligibleUsers.get(index);
 			if (!speakerList.containsKey("InvitedTalk")) {
 				speakerList.put("InvitedTalk", new ArrayList<String>());

@@ -664,15 +664,14 @@ public class AfterConference {
 	}
 
 	public LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
-		long days = start.until(end, ChronoUnit.DAYS);
-        long randomDays = conf.random.nextLong(days + 1);
-        long randomHours = conf.random.nextLong(24);
-        long randomMinutes = conf.random.nextLong(60);
-        long randomSeconds = conf.random.nextLong(60);
+	    long days = ChronoUnit.DAYS.between(start.toLocalDate(), end.toLocalDate());
+	    long randomDays = (long) (conf.random.nextDouble() * (days + 1));
+	    long randomHours = (long) (conf.random.nextDouble() * 24);
+	    long randomMinutes = (long) (conf.random.nextDouble() * 60);
+	    long randomSeconds = (long) (conf.random.nextDouble() * 60);
 
-		return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
+	    return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
 	}
-
 
 	public String generateTweetId() {
 

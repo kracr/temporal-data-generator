@@ -163,14 +163,22 @@ public class DuringConference {
 						tweetMetaDataModel.createLiteral("keynoteTitle"));
 
 				if (type.equals("Keynote")) {
-					eventDataModel.add(conferenceInstance, conf.hasSession, conf.plenaryKeynote);
+					eventDataModel.add( conf.plenaryKeynote, conf.isPartOf,confInstance);
+					
+					eventDataModel.add(confInstance, conf.hasSession, conf.plenaryKeynote);
+					//eventDataModel.add(conf.Conference, conf.hasPresentedPaper,paperResource);
+					eventDataModel.add( conf.plenaryKeynote, conf.isPresentedAt, conf.plenaryKeynote);
 //					eventDataModel.add(userResource, conf.givesTalkOn, "someKeynoteTalkTitle");
 					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_plenaryKeynoteTalk"));
 				} else if (type.equals("InvitedTalk")) {
-					eventDataModel.add(conferenceInstance, conf.hasSession, conf.invitedKeynote);
+
+					eventDataModel.add(confInstance, conf.hasSession, conf.invitedKeynote);
+					eventDataModel.add( conf.invitedKeynote, conf.isPartOf,confInstance);
 					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_invitedKeynoteTalk"));
 				} else if (type.equals("Speaker")) {
-					eventDataModel.add(conferenceInstance, conf.hasSession, conf.invitedKeynote);
+					eventDataModel.add( conf.plenaryKeynote, conf.isPartOf,confInstance);
+
+					eventDataModel.add(confInstance, conf.hasSession, conf.plenaryKeynote);
 					eventDataModel.add(userResource, conf.givesTalkOn, eventDataModel.createTypedLiteral(conf.ACE_URL+conf.confInstance+"_invitedKeynoteTalk"));
 				}
 				eventDataModel.add(userResource, conf.attends, confInstance);
@@ -274,6 +282,11 @@ public class DuringConference {
 		eventDataModel.add(paperResource, conf.isAcceptedAt, confInstance);
 //		tweetMetaDataModel.add(tweetId, conf.isAbout, confInstance);
 		tweetMetaDataModel.add(confInstance, RDF.type, conf.Conference);
+		eventDataModel.add(confInstance, conf.hasSession, conf.paperPresentationSession);
+		eventDataModel.add(conf.Conference, conf.hasPresentedPaper,paperResource);
+		eventDataModel.add(conf.paperPresentationSession, conf.isPartOf,confInstance);
+		eventDataModel.add(paperResource, conf.isPresentedAt,conf.paperPresentationSession);
+		//eventDataModel.add(paperResource, conf.hasSession, conf.paperPresentationSession);
 		tweetMetaDataModel.add(tweetId, conf.isAbout,
 				tweetMetaDataModel.createTypedLiteral(conf.ACE_URL + "reminder"));
 
@@ -533,13 +546,13 @@ public class DuringConference {
 	}
 
 	public LocalDateTime getRandomTimestamp(LocalDateTime start, LocalDateTime end) {
-		long days = start.until(end, ChronoUnit.DAYS);
-        long randomDays = conf.random.nextLong(days + 1);
-        long randomHours = conf.random.nextLong(24);
-        long randomMinutes = conf.random.nextLong(60);
-        long randomSeconds = conf.random.nextLong(60);
+	    long days = ChronoUnit.DAYS.between(start.toLocalDate(), end.toLocalDate());
+	    long randomDays = (long) (conf.random.nextDouble() * (days + 1));
+	    long randomHours = (long) (conf.random.nextDouble() * 24);
+	    long randomMinutes = (long) (conf.random.nextDouble() * 60);
+	    long randomSeconds = (long) (conf.random.nextDouble() * 60);
 
-		return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
+	    return start.plusDays(randomDays).plusHours(randomHours).plusMinutes(randomMinutes).plusSeconds(randomSeconds);
 	}
 
 
