@@ -28,6 +28,7 @@ Declaration(Class(:Attendee))
 Declaration(Class(:Author))
 Declaration(Class(:Awardee))
 Declaration(Class(:BestPaperAwardee))
+Declaration(Class(:BioTechnologyDomain))
 Declaration(Class(:CallForPapersAnnouncementPhase))
 Declaration(Class(:ChairRole))
 Declaration(Class(:ComputerScienceDomain))
@@ -45,11 +46,13 @@ Declaration(Class(:InvitedTalkSpeaker))
 Declaration(Class(:InvitedTalkSpeakerRole))
 Declaration(Class(:InvitedTalks))
 Declaration(Class(:JournalArticle))
+Declaration(Class(:KeynoteSession))
 Declaration(Class(:KeynoteSpeaker))
 Declaration(Class(:KeynoteTalks))
 Declaration(Class(:LightningTalks))
 Declaration(Class(:MainConferenceAnnouncementPhase))
 Declaration(Class(:ManuscriptDomain))
+Declaration(Class(:MedicalDomain))
 Declaration(Class(:NonAcademicOrganization))
 Declaration(Class(:NonAuthor))
 Declaration(Class(:NotificationPhase))
@@ -59,6 +62,7 @@ Declaration(Class(:PaperSubmissionReminderPhase))
 Declaration(Class(:Participant))
 Declaration(Class(:PhDStudent))
 Declaration(Class(:PosterPaper))
+Declaration(Class(:PresentationSession))
 Declaration(Class(:Presentations))
 Declaration(Class(:RegistrationReminderPhase))
 Declaration(Class(:ReminderPhase))
@@ -176,7 +180,9 @@ Declaration(NamedIndividual(:announcement))
 Declaration(NamedIndividual(:applicationsTrack))
 Declaration(NamedIndividual(:artificialIntelligence))
 Declaration(NamedIndividual(:bigData))
+Declaration(NamedIndividual(:bioTech))
 Declaration(NamedIndividual(:blockChain))
+Declaration(NamedIndividual(:cardiology))
 Declaration(NamedIndividual(:cloudComputing))
 Declaration(NamedIndividual(:computerVision))
 Declaration(NamedIndividual(:dataScience))
@@ -187,6 +193,7 @@ Declaration(NamedIndividual(:generalChair))
 Declaration(NamedIndividual(:hybrid))
 Declaration(NamedIndividual(:insights))
 Declaration(NamedIndividual(:internetOfThings))
+Declaration(NamedIndividual(:invitedKeynote))
 Declaration(NamedIndividual(:journalSpecialIssue))
 Declaration(NamedIndividual(:knowledgeGraph))
 Declaration(NamedIndividual(:linkedData))
@@ -195,11 +202,17 @@ Declaration(NamedIndividual(:machineLearning))
 Declaration(NamedIndividual(:ml))
 Declaration(NamedIndividual(:naturalLanguageProcessing))
 Declaration(NamedIndividual(:neuralNetworks))
+Declaration(NamedIndividual(:neurology))
 Declaration(NamedIndividual(:nlp))
 Declaration(NamedIndividual(:notification))
 Declaration(NamedIndividual(:offline))
+Declaration(NamedIndividual(:oncology))
 Declaration(NamedIndividual(:online))
 Declaration(NamedIndividual(:ontology))
+Declaration(NamedIndividual(:paperPresentationSession))
+Declaration(NamedIndividual(:pediatrics))
+Declaration(NamedIndividual(:plenaryKeynote))
+Declaration(NamedIndividual(:posterSession))
 Declaration(NamedIndividual(:posterTrack))
 Declaration(NamedIndividual(:quantumComputing))
 Declaration(NamedIndividual(:randomCategory))
@@ -612,6 +625,10 @@ SubClassOf(:Awardee foaf:Person)
 EquivalentClasses(:BestPaperAwardee ObjectSomeValuesFrom(:getsBestPaperAward owl:Thing))
 SubClassOf(:BestPaperAwardee :Awardee)
 
+# Class: :BioTechnologyDomain (:BioTechnologyDomain)
+
+SubClassOf(:BioTechnologyDomain :ManuscriptDomain)
+
 # Class: :CallForPapersAnnouncementPhase (:CallForPapersAnnouncementPhase)
 
 SubClassOf(:CallForPapersAnnouncementPhase :EarlyAnnouncementPhase)
@@ -682,6 +699,10 @@ SubClassOf(:InvitedTalks :Talks)
 AnnotationAssertion(:isInstantaneous :JournalArticle "")
 SubClassOf(:JournalArticle :AcademicManuscript)
 
+# Class: :KeynoteSession (:KeynoteSession)
+
+SubClassOf(:KeynoteSession :Session)
+
 # Class: :KeynoteSpeaker (:KeynoteSpeaker)
 
 EquivalentClasses(:KeynoteSpeaker ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
@@ -699,6 +720,10 @@ SubClassOf(:LightningTalks :Talks)
 # Class: :MainConferenceAnnouncementPhase (:MainConferenceAnnouncementPhase)
 
 SubClassOf(:MainConferenceAnnouncementPhase :EarlyAnnouncementPhase)
+
+# Class: :MedicalDomain (:MedicalDomain)
+
+SubClassOf(:MedicalDomain :ManuscriptDomain)
 
 # Class: :NonAcademicOrganization (:NonAcademicOrganization)
 
@@ -743,6 +768,10 @@ SubClassOf(:PhDStudent :StudentAuthor)
 
 AnnotationAssertion(:isInstantaneous :PosterPaper "")
 SubClassOf(:PosterPaper :ConferencePaper)
+
+# Class: :PresentationSession (:PresentationSession)
+
+SubClassOf(:PresentationSession :Session)
 
 # Class: :Presentations (:Presentations)
 
@@ -879,9 +908,17 @@ ClassAssertion(:ComputerScienceDomain :artificialIntelligence)
 
 ClassAssertion(:ComputerScienceDomain :bigData)
 
+# Individual: :bioTech (:bioTech)
+
+ClassAssertion(:BioTechnologyDomain :bioTech)
+
 # Individual: :blockChain (:blockChain)
 
 ClassAssertion(:ComputerScienceDomain :blockChain)
+
+# Individual: :cardiology (:cardiology)
+
+ClassAssertion(:MedicalDomain :cardiology)
 
 # Individual: :cloudComputing (:cloudComputing)
 
@@ -919,6 +956,10 @@ ClassAssertion(:EventMode :hybrid)
 
 ClassAssertion(:ComputerScienceDomain :internetOfThings)
 
+# Individual: :invitedKeynote (:invitedKeynote)
+
+ClassAssertion(:KeynoteSession :invitedKeynote)
+
 # Individual: :journalSpecialIssue (:journalSpecialIssue)
 
 ClassAssertion(:ConferenceTrack :journalSpecialIssue)
@@ -953,6 +994,10 @@ SameIndividual(:naturalLanguageProcessing :nlp)
 
 ClassAssertion(:ComputerScienceDomain :neuralNetworks)
 
+# Individual: :neurology (:neurology)
+
+ClassAssertion(:MedicalDomain :neurology)
+
 # Individual: :nlp (:nlp)
 
 ClassAssertion(:ComputerScienceDomain :nlp)
@@ -960,6 +1005,10 @@ ClassAssertion(:ComputerScienceDomain :nlp)
 # Individual: :offline (:offline)
 
 ClassAssertion(:EventMode :offline)
+
+# Individual: :oncology (:oncology)
+
+ClassAssertion(:MedicalDomain :oncology)
 
 # Individual: :online (:online)
 
@@ -969,6 +1018,18 @@ SameIndividual(:online :remote)
 # Individual: :ontology (:ontology)
 
 ClassAssertion(:ComputerScienceDomain :ontology)
+
+# Individual: :paperPresentationSession (:paperPresentationSession)
+
+ClassAssertion(:PresentationSession :paperPresentationSession)
+
+# Individual: :pediatrics (:pediatrics)
+
+ClassAssertion(:MedicalDomain :pediatrics)
+
+# Individual: :plenaryKeynote (:plenaryKeynote)
+
+ClassAssertion(:KeynoteSession :plenaryKeynote)
 
 # Individual: :posterTrack (:posterTrack)
 

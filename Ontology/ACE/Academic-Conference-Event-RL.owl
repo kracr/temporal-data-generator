@@ -947,6 +947,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain -->
+
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    </owl:Class>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase -->
 
     <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase">
@@ -1098,6 +1106,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteSession -->
+
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteSession">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
+    </owl:Class>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker -->
 
     <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker">
@@ -1133,6 +1149,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain -->
 
     <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#MedicalDomain -->
+
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#MedicalDomain">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    </owl:Class>
     
 
 
@@ -1227,6 +1251,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
             <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
+    </owl:Class>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#PresentationSession -->
+
+    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PresentationSession">
+        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
     </owl:Class>
     
 
@@ -1512,10 +1544,26 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#bioTech -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#bioTech">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#blockChain -->
 
     <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#blockChain">
         <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#cardiology -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#cardiology">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
     </owl:NamedIndividual>
     
 
@@ -1598,6 +1646,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#invitedKeynote -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedKeynote">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue -->
 
     <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue">
@@ -1664,6 +1720,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#neurology -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#neurology">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#nlp -->
 
     <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#nlp">
@@ -1686,6 +1750,14 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
+    <!-- http://anonymous.com/AcademicConferenceEvent#oncology -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#oncology">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://anonymous.com/AcademicConferenceEvent#online -->
 
     <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#online">
@@ -1700,6 +1772,36 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#ontology">
         <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#paperPresentationSession -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#paperPresentationSession">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#PresentationSession"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#pediatrics -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#pediatrics">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#plenaryKeynote -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#plenaryKeynote">
+        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://anonymous.com/AcademicConferenceEvent#posterSession -->
+
+    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#posterSession"/>
     
 
 

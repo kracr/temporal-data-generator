@@ -29,6 +29,7 @@ Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Attendee>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Author>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Awardee>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ChairRole>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Conference>))
@@ -41,10 +42,12 @@ Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeak
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#JournalArticle>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#KeynoteSession>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#LightningTalks>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#NonAuthor>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Organizer>))
@@ -52,6 +55,7 @@ Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#OrganizingCommit
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Participant>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#PhDStudent>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#PosterPaper>))
+Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#PresentationSession>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#Presentations>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ResearchPaper>))
 Declaration(Class(<http://anonymous.com/AcademicConferenceEvent#ResourcePaper>))
@@ -168,8 +172,10 @@ Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#announ
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#applicationsTrack>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#artificialIntelligence>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#bigData>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#bioTech>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#blockChain>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#callForPapers>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#cardiology>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#cloudComputing>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#computerVision>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#dataScience>))
@@ -180,6 +186,7 @@ Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#genera
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#hybrid>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#insights>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#internetOfThings>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#invitedKeynote>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#knowledgeGraph>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#linkedData>))
@@ -189,12 +196,18 @@ Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#mainCo
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#ml>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#neuralNetworks>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#neurology>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#nlp>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#notification>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#offline>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#oncology>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#online>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#ontology>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#paperPresentationSession>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#paperSubmissionReminder>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#pediatrics>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#plenaryKeynote>))
+Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#posterSession>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#posterTrack>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#quantumComputing>))
 Declaration(NamedIndividual(<http://anonymous.com/AcademicConferenceEvent#randomCategory>))
@@ -637,6 +650,10 @@ SubClassOf(<http://anonymous.com/AcademicConferenceEvent#Awardee> foaf:Person)
 EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> ObjectSomeValuesFrom(<http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward> owl:Thing))
 SubClassOf(<http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> <http://anonymous.com/AcademicConferenceEvent#Awardee>)
 
+# Class: <http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain> (<http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain>)
+
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain> <http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>)
+
 # Class: <http://anonymous.com/AcademicConferenceEvent#ChairRole> (<http://anonymous.com/AcademicConferenceEvent#ChairRole>)
 
 AnnotationAssertion(rdfs:comment <http://anonymous.com/AcademicConferenceEvent#ChairRole> "Each track will have a chair")
@@ -694,6 +711,10 @@ SubClassOf(<http://anonymous.com/AcademicConferenceEvent#InvitedTalks> <http://a
 AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#JournalArticle> "")
 SubClassOf(<http://anonymous.com/AcademicConferenceEvent#JournalArticle> <http://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
 
+# Class: <http://anonymous.com/AcademicConferenceEvent#KeynoteSession> (<http://anonymous.com/AcademicConferenceEvent#KeynoteSession>)
+
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#KeynoteSession> <http://anonymous.com/AcademicConferenceEvent#Session>)
+
 # Class: <http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> (<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
 
 EquivalentClasses(<http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
@@ -707,6 +728,10 @@ SubClassOf(<http://anonymous.com/AcademicConferenceEvent#KeynoteTalks> <http://a
 # Class: <http://anonymous.com/AcademicConferenceEvent#LightningTalks> (<http://anonymous.com/AcademicConferenceEvent#LightningTalks>)
 
 SubClassOf(<http://anonymous.com/AcademicConferenceEvent#LightningTalks> <http://anonymous.com/AcademicConferenceEvent#Talks>)
+
+# Class: <http://anonymous.com/AcademicConferenceEvent#MedicalDomain> (<http://anonymous.com/AcademicConferenceEvent#MedicalDomain>)
+
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain> <http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain>)
 
 # Class: <http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> (<http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization>)
 
@@ -745,6 +770,10 @@ SubClassOf(<http://anonymous.com/AcademicConferenceEvent#PhDStudent> <http://ano
 
 AnnotationAssertion(<http://anonymous.com/AcademicConferenceEvent#isInstantaneous> <http://anonymous.com/AcademicConferenceEvent#PosterPaper> "")
 SubClassOf(<http://anonymous.com/AcademicConferenceEvent#PosterPaper> <http://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
+
+# Class: <http://anonymous.com/AcademicConferenceEvent#PresentationSession> (<http://anonymous.com/AcademicConferenceEvent#PresentationSession>)
+
+SubClassOf(<http://anonymous.com/AcademicConferenceEvent#PresentationSession> <http://anonymous.com/AcademicConferenceEvent#Session>)
 
 # Class: <http://anonymous.com/AcademicConferenceEvent#Presentations> (<http://anonymous.com/AcademicConferenceEvent#Presentations>)
 
@@ -880,9 +909,17 @@ ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDoma
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#bigData>)
 
+# Individual: <http://anonymous.com/AcademicConferenceEvent#bioTech> (<http://anonymous.com/AcademicConferenceEvent#bioTech>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain> <http://anonymous.com/AcademicConferenceEvent#bioTech>)
+
 # Individual: <http://anonymous.com/AcademicConferenceEvent#blockChain> (<http://anonymous.com/AcademicConferenceEvent#blockChain>)
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#blockChain>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#cardiology> (<http://anonymous.com/AcademicConferenceEvent#cardiology>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain> <http://anonymous.com/AcademicConferenceEvent#cardiology>)
 
 # Individual: <http://anonymous.com/AcademicConferenceEvent#cloudComputing> (<http://anonymous.com/AcademicConferenceEvent#cloudComputing>)
 
@@ -920,6 +957,10 @@ ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#EventMode> <http://
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#internetOfThings>)
 
+# Individual: <http://anonymous.com/AcademicConferenceEvent#invitedKeynote> (<http://anonymous.com/AcademicConferenceEvent#invitedKeynote>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#KeynoteSession> <http://anonymous.com/AcademicConferenceEvent#invitedKeynote>)
+
 # Individual: <http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue> (<http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>)
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ConferenceTrack> <http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>)
@@ -954,6 +995,10 @@ SameIndividual(<http://anonymous.com/AcademicConferenceEvent#naturalLanguageProc
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#neuralNetworks>)
 
+# Individual: <http://anonymous.com/AcademicConferenceEvent#neurology> (<http://anonymous.com/AcademicConferenceEvent#neurology>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain> <http://anonymous.com/AcademicConferenceEvent#neurology>)
+
 # Individual: <http://anonymous.com/AcademicConferenceEvent#nlp> (<http://anonymous.com/AcademicConferenceEvent#nlp>)
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#nlp>)
@@ -961,6 +1006,10 @@ ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDoma
 # Individual: <http://anonymous.com/AcademicConferenceEvent#offline> (<http://anonymous.com/AcademicConferenceEvent#offline>)
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#EventMode> <http://anonymous.com/AcademicConferenceEvent#offline>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#oncology> (<http://anonymous.com/AcademicConferenceEvent#oncology>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain> <http://anonymous.com/AcademicConferenceEvent#oncology>)
 
 # Individual: <http://anonymous.com/AcademicConferenceEvent#online> (<http://anonymous.com/AcademicConferenceEvent#online>)
 
@@ -970,6 +1019,22 @@ SameIndividual(<http://anonymous.com/AcademicConferenceEvent#online> <http://ano
 # Individual: <http://anonymous.com/AcademicConferenceEvent#ontology> (<http://anonymous.com/AcademicConferenceEvent#ontology>)
 
 ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> <http://anonymous.com/AcademicConferenceEvent#ontology>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#paperPresentationSession> (<http://anonymous.com/AcademicConferenceEvent#paperPresentationSession>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#PresentationSession> <http://anonymous.com/AcademicConferenceEvent#paperPresentationSession>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#pediatrics> (<http://anonymous.com/AcademicConferenceEvent#pediatrics>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#MedicalDomain> <http://anonymous.com/AcademicConferenceEvent#pediatrics>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#plenaryKeynote> (<http://anonymous.com/AcademicConferenceEvent#plenaryKeynote>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#KeynoteSession> <http://anonymous.com/AcademicConferenceEvent#plenaryKeynote>)
+
+# Individual: <http://anonymous.com/AcademicConferenceEvent#posterSession> (<http://anonymous.com/AcademicConferenceEvent#posterSession>)
+
+ClassAssertion(<http://anonymous.com/AcademicConferenceEvent#PresentationSession> <http://anonymous.com/AcademicConferenceEvent#posterSession>)
 
 # Individual: <http://anonymous.com/AcademicConferenceEvent#posterTrack> (<http://anonymous.com/AcademicConferenceEvent#posterTrack>)
 

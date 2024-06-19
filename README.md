@@ -118,7 +118,17 @@ For sequence data generation: mvn exec:java -Dexec.mainClass=genact.temporal.dat
 
 # 4 Instructions for using the data:
 
-Each file generated inside the SequenceData directory is named in the format timestamp_tweetid_eventdata.ttl. These files can be streamed by sorting them by 
-their names, which arranges them in a sequential order. Once sorted, each file can be streamed at a defined rate.
+Each file generated inside the SequenceData directory is named in the format timestamp_tweetid_eventdata.ttl, where timestamp is in long format which typically represents the number of milliseconds since January 1, 1970, 00:00:00 GMT. For example: 1609459200000. The reason 
+for using this format is the file naming convention. The timestamp can be changed in the appropriate format as per the user requirments, such as 1609459200000 is 2021-01-01 00:00:00 when converted to local date time.
+These files can be streamed by sorting them by  their names, which arranges them in a sequential order. Once sorted, each file can be streamed at a defined rate.
 
-(As an example, we also provide a python script, process.py,  that processes a year data in a day.)
+(As an example, we also provide a python and a java file, process.py and process.java, that processes a year data in a day.)
+
+### Other Details
+
+The instantiation process involves populating the RDF structure with data
+from external sources, such as the Digital Bibliography and Library Project, providing
+information about authors and papers. We synthetically generate complementary
+information to complete the instantiation, ensuring a diverse and
+realistic dataset for subsequent analysis. For instance, we synthetically generate
+Research Groups and organizations, but we map them with real locations. The csv files are present in the repository. 
