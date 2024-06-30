@@ -83,7 +83,7 @@ Requirements: The user must have *java 1.7 and maven* installed in the system.
 
 In order to generate the event data for the required number of conferences, users can directly run the executable jar **[GenACT.jar](https://drive.google.com/file/d/1xxiU2j5swBRF8SCk8WZ43LMhfSd9YqMB/view?usp=sharing)** that generates the datasets using the default configurations. In order to execute this Jar file, user need to give the inputs (in the same order):  
 
-No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (optional), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
+No. of conferences (int)*Mandatory, No. of conference Cycles (int)*Mandatory , DirectoryPath (*Mandatory), Seed (optional) .  DirectoryPath is the path where all the folders (ontologies, queries, streams, csv files, etc) can be found. So, the user needs to provide the correct directory path. 
 
 For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 
@@ -94,14 +94,15 @@ For eg. : java -jar genact.jar 1 5 C:\GitHub\temporal-data-generator 100
 
 In order to generate different sequences from the event data generated in the previous step, users can directly run the executable jar **[GenACT_partition.jar](https://drive.google.com/file/d/1IXnHdioTIB-vLDYAdT9gecQfyyChEdym/view?usp=sharing)** that generates the datasets using the default configurationsd. 
 
-In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user/domain/tweet_type/object.
+In order to create partitions based on attributes--> java -jar partition.jar --attribute conference/user/domain/tweet_type/object DirectoryPath. 
+Example: java -jar partition.jar --attribute conference C:\GitHub\temporal-data-generator
 
 (conference: creates sequences corresponding to different conference instances, user: creates sequences corresponding to different users involved throughout the conference,
 domain: creates segments corresponding to different research domains such as AI, tweetType creates segments based on tweet categories defined in the 
 paper such as Announcement, Insight etc, object: creates partition based on different objects in each [s p o] triple). 
 
-In order to create partitions based on shape--> java -jar partition.jar --shape star/chain/tree/other. user can specify the shape they want for their segments
-by writing the query in other.txt file. 
+In order to create partitions based on shape--> java -jar partition.jar --shape star/chain/tree/other DirectoryPath. user can specify the shape they want for their segments
+by writing the query in other.txt file. Example: java -jar partition.jar --shape star C:\GitHub\temporal-data-generator
 
 <a name="code"></a>
 ### 3.3. Using Source Code :
@@ -118,11 +119,15 @@ For sequence data generation: mvn exec:java -Dexec.mainClass=genact.temporal.dat
 
 # 4 Instructions for using the data:
 
-Each file generated inside the SequenceData directory is named in the format timestamp_tweetid_eventdata.ttl, where timestamp is in long format which typically represents the number of milliseconds since January 1, 1970, 00:00:00 GMT. For example: 1609459200000. The reason 
-for using this format is the file naming convention. The timestamp can be changed in the appropriate format as per the user requirments, such as 1609459200000 is 2021-01-01 00:00:00 when converted to local date time.
-These files can be streamed by sorting them by  their names, which arranges them in a sequential order. Once sorted, each file can be streamed at a defined rate.
+Each file generated inside the SequenceData directory is named in the format timestamp_tweetid_eventdata.ttl, where timestamp is in yymmdd_hhmmss format. The conference tweets start at
+ January 1, 1970, 00:00:00 IST. For example: 20700101_000000. The reason  for using this format is the file naming convention. The timestamp can be changed in the appropriate format as per the user requirments, 
+ such as 2021-01-01 00:00:00 (local date time) is 1609459200000 in long format.  yymmdd_hhmmss format allows to sort the generated files  them by timetamps, which arranges them in a sequential order. 
+ Once sorted, each file can be streamed at a defined rate.
 
-(As an example, we also provide a python and a java file, process.py and process.java, that processes a year data in a day.)
+In order to stream data, the Code repository consists of two java classes- RDFStreamerExample.java and RDFServerExample.java. 
+Users can use them to stream the sequence data generated and use them as per their requirements. 
+
+Users can also modify the property files present in the code repository and generate datasets of varying sizes.
 
 ### Other Details
 

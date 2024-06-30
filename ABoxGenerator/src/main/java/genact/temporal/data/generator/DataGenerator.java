@@ -171,8 +171,7 @@ public class DataGenerator {
 		this.confCycle = confCycle;
 		this.random.setSeed((long) seed);
 		this.dateTime = LocalDateTime.of(1970, Month.JANUARY, 1, 0, 0);
-		this.startTimestampMillis = dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
+		this.startTimestampMillis = dateTime.atZone(ZoneId.of("Asia/Kolkata")).toInstant().toEpochMilli();
 		Properties prop1 = new Properties();
 		InputStream input1 = null;
 		Properties prop2 = new Properties();

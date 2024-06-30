@@ -38,8 +38,6 @@ public class AfterConference {
 				ZoneId.systemDefault());
 		LocalDateTime afterConferenceEnd = LocalDateTime.ofInstant(new Date(endTime).toInstant(),
 				ZoneId.systemDefault());
-
-		
 		
 		for (String track : conf.TOKEN_ConferenceEventTrack) {
 			timestamp = getRandomTimestamp(duringConferenceEnd, afterConferenceEnd);
@@ -219,7 +217,7 @@ public class AfterConference {
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
 		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
 		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.ACE_URL + "city_name");
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
@@ -583,7 +581,7 @@ public class AfterConference {
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
 		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
 		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.ACE_URL + "city_name");
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));

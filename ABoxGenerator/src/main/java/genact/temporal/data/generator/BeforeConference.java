@@ -544,7 +544,7 @@ public class BeforeConference {
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
 		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
 		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.ACE_URL + "city_name");
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));
@@ -820,7 +820,7 @@ public class BeforeConference {
 		eventDataModel.add(confInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
 		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
 		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.ACE_URL + "city_name");
 		eventDataModel.add(city, RDF.type, conf.City);
 		tweetMetaDataModel.add(personAccount, conf.hasUserID, tweetMetaDataModel.createLiteral(someUser));
 
@@ -915,7 +915,7 @@ public class BeforeConference {
 		eventDataModel.add(conferenceInstance, conf.hasEdition, eventDataModel.createTypedLiteral(conf.confCycle));
 		tweetMetaDataModel.createLiteral("International Conference on " + conf.confInstance);
 		// String city_name=;
-		Resource city = eventDataModel.createResource("city_name");
+		Resource city = eventDataModel.createResource(conf.ACE_URL + "city_name");
 		eventDataModel.add(city, RDF.type, conf.City);
 		eventDataModel.add(conferenceInstance, conf.hasWebsiteURL,
 				eventDataModel.createLiteral("www." + conf.confInstance + ".com"));

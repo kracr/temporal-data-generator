@@ -23,32 +23,35 @@ import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.util.FileManager;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+
 public class CreatePartitions {
 
 	public static void main(String[] args) {
 		// Parse command line arguments
-		//System.out.println("file");
+		// System.out.println("file");
 
 		String type = null;
 		String sequence = null;
-		if (args[0].equals("--attribute")) {
-			sequence = "ByAttribute";
-			type = args[1];
-			//System.out.println(type);
-		} else if (args[0].equals("--shape")) {
-			sequence = "ByShape";
-			type = args[1];
-			//System.out.println(type);
-		}
-
 		String currentDirectory = System.getProperty("user.dir");
 		File currentDirFile = new File(currentDirectory);
 		String directoryPath = currentDirFile.getParent();
+		if (args[0].equals("--attribute")) {
+			sequence = "ByAttribute";
+			type = args[1];
+			directoryPath = args[2];
+			// System.out.println(type);
+		} else if (args[0].equals("--shape")) {
+			sequence = "ByShape";
+			type = args[1];
+			directoryPath = args[2];
+			// System.out.println(type);
+		}
+
 		// Directory containing metadata files
 		File metadataDirectory = new File(directoryPath + "/EventData/");
 		String queryDirectory = directoryPath + "/SparqlQueriesForPartition/" + sequence;
 		File sequencesDirectory = new File(directoryPath + "/SequenceData/");
-
+		System.out.println("Started");
 		if (sequencesDirectory.exists()) {
 			deleteDirectory(sequencesDirectory);
 		}
@@ -74,7 +77,7 @@ public class CreatePartitions {
 								File eventFile = new File(file.getAbsolutePath(), eventFileName);
 								// System.out.println("eventFile "+eventFile);
 								for (String result : results) {
-									//System.out.println("output is :" + result);
+									// System.out.println("output is :" + result);
 									// Create new directory in sequences directory
 									String outputDirectory = sequencesDirectory + "/" + result;
 									File directory = new File(outputDirectory);
@@ -112,11 +115,13 @@ public class CreatePartitions {
 								String metadataFilePath = meta.getAbsolutePath();
 								// System.out.println("metadataFilePath"+metadataFilePath);
 								// String timestamp = meta.getName().split("_")[0];
-								//String eventFileName = meta.getName().replace("_metadata.ttl", "_eventdata.ttl");
+								// String eventFileName = meta.getName().replace("_metadata.ttl",
+								// "_eventdata.ttl");
 								String queryFilePath = queryDirectory + "/" + type + ".txt";
 								// Execute SPARQL query based on attribute and shape
-								executeSPARQLQueryForShapes(queryFilePath, metadataFilePath, type, directoryPath + "/SequenceData/"+meta.getName());
-					
+								executeSPARQLQueryForShapes(queryFilePath, metadataFilePath, type,
+										directoryPath + "/SequenceData/" + meta.getName());
+
 							}
 
 						}
@@ -163,7 +168,7 @@ public class CreatePartitions {
 				if (nameNode != null) {
 					String name = nameNode.toString();
 					results.add(name);
-				} 
+				}
 //				else {
 //					// Handle the case where "name" is not bound
 //					System.out.println("No name found for one of the results.");
@@ -177,7 +182,8 @@ public class CreatePartitions {
 		return results;
 	}
 
-	public static void executeSPARQLQueryForShapes(String queryDirectory, String metadataFile, String type, String sequencesDirectory) {
+	public static void executeSPARQLQueryForShapes(String queryDirectory, String metadataFile, String type,
+			String sequencesDirectory) {
 		// Load RDF model from metadata file
 		Model model = ModelFactory.createDefaultModel();
 		FileManager.get().readModel(model, metadataFile);
@@ -192,7 +198,6 @@ public class CreatePartitions {
 		String queryString = readQueryFromFile(queryDirectory);
 		// Query query = QueryFactory.create(queryString);
 
-
 		// QueryExecution qexec = null;
 
 		Query query = QueryFactory.create(queryString);
@@ -200,20 +205,20 @@ public class CreatePartitions {
 			Model constructModel = qexec.execConstruct();
 			// Save the constructed model to a file
 			if (!constructModel.isEmpty()) {
-                // Save the constructed model to a file
-                try (OutputStream out = new FileOutputStream(sequencesDirectory)) {
-                    RDFDataMgr.write(out, constructModel, RDFFormat.TURTLE);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } 
+				// Save the constructed model to a file
+				try (OutputStream out = new FileOutputStream(sequencesDirectory)) {
+					RDFDataMgr.write(out, constructModel, RDFFormat.TURTLE);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
 //			else {
 //                System.out.println("No triples found, file not created.");
 //            }
-        } catch (Exception e) {
-            // Handle the exception
-            e.printStackTrace();
-        }
+		} catch (Exception e) {
+			// Handle the exception
+			e.printStackTrace();
+		}
 	}
 
 	public static void deleteDirectory(File directory) {
