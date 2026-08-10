@@ -1,0 +1,14 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user43852  ace:hasRole  ace:localChair .
+
+<https://anonymous.com/Location#ipojuca>
+        a       <https://anonymous.com/Location#City> .
+
+ace:conf1_1970  ace:hasGeneralChair  ace:user17778 ;
+        ace:hasLocalChair    ace:user43852 ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#ipojuca> .
+
+ace:user17778  ace:hasRole  ace:generalChair .

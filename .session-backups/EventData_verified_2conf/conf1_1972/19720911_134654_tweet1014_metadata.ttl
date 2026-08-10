@@ -1,0 +1,25 @@
+<https://anonymous.com/Tweet#tweet1014>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1972-09-11T13:46:54.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1014> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" .
+
+<https://anonymous.com/AcademicConferenceEvent#user66965>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <conf1_1972> ;
+        <https://anonymous.com/AcademicConferenceEvent#volunteersFor>
+                "conf1_1972" ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C4RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Jae Jun Yoo" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user66965" ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1014> .

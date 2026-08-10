@@ -1,0 +1,25 @@
+<https://anonymous.com/AcademicConferenceEvent#user89991>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <conf1_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#getsStudentGrantFor>
+                "conf1_1971" ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U18C10RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Katherine E. Stange" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user89991" ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1007> .
+
+<https://anonymous.com/Tweet#tweet1007>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-26T08:24:41.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1007> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" .

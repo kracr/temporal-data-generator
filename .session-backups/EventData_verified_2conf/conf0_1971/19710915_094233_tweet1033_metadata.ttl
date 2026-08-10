@@ -1,0 +1,25 @@
+<https://anonymous.com/Tweet#tweet1033>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-15T09:42:33.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1033> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" .
+
+<https://anonymous.com/AcademicConferenceEvent#user11162>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#volunteersFor>
+                "conf0_1971" ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U39C9RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Gordon A. Christie" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user11162" ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1033> .

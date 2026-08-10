@@ -1,0 +1,33 @@
+<https://anonymous.com/AcademicConferenceEvent#user16777>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46296>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user72849>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11572>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper11859>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user16777> , <https://anonymous.com/AcademicConferenceEvent#user72849> , <https://anonymous.com/AcademicConferenceEvent#user22026> , <https://anonymous.com/AcademicConferenceEvent#user46296> , <https://anonymous.com/AcademicConferenceEvent#user27739> , <https://anonymous.com/AcademicConferenceEvent#user23955> , <https://anonymous.com/AcademicConferenceEvent#user11572> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> , <https://anonymous.com/AcademicConferenceEvent#quantumComputing> , <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "workshopTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "A Programmer&apos;s Text Editor for a Logical Theory: The SUMOjEdit Editor (System Description)." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user22026>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user23955>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user27739>
+        a       <http://xmlns.com/foaf/0.1/Person> .

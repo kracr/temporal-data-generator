@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ace: <https://anonymous.com/AcademicConferenceEvent#>
+
+# Star shape (Figure 7): a single hub entity connected to several distinct entities via
+# distinct predicates, e.g. paper -isAcceptedAt-> conference, paper -hasPaperDomain-> domain,
+# paper -hasAuthor-> author.
+CONSTRUCT {
+  ?hub ?p1 ?leaf1.
+  ?hub ?p2 ?leaf2.
+  ?hub ?p3 ?leaf3.
+}
+WHERE {
+  ?hub ?p1 ?leaf1.
+  ?hub ?p2 ?leaf2.
+  ?hub ?p3 ?leaf3.
+  FILTER(?p1 != ?p2 && ?p2 != ?p3 && ?p1 != ?p3)
+  FILTER(?leaf1 != ?leaf2 && ?leaf2 != ?leaf3 && ?leaf1 != ?leaf3)
+}

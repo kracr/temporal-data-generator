@@ -1,0 +1,36 @@
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet2347>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-14T10:16:37.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasHashTag>
+                <https://anonymous.com/Tweet#dataScience> , <https://anonymous.com/Tweet#neurology> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/Tweet#other" .
+
+<https://anonymous.com/AcademicConferenceEvent#user29981>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U81C6RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Hadi Esmaeilzadeh" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user29981> .
+
+<https://anonymous.com/AcademicConferenceEvent#user78643>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U48C9RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Song Chun Zhu" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user78643> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user78643> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet2347> .

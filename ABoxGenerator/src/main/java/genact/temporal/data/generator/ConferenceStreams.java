@@ -113,7 +113,7 @@ public class ConferenceStreams {
 	Map<String, List<String>> organizingCommitteeList;
 	Map<String, List<String>> speakerList;
 	Property rdfSubject, rdfPredicate, rdfObject, rdfType;
-	Property hasGeneralChair, getsStudentGrantFor, hasAuthor, isAuthorOf, hasLocalChair, hasResearchTrackChair,
+	Property hasGeneralChair, getsStudentGrant, hasAuthor, isAuthorOf, hasLocalChair, hasResearchTrackChair,
 			hasResourceTrackChair, posts, hasTweetID, hasUserID, hasDisplayName, volunteersFor, hasHashtag, isAbout,
 			hasEventPhase, mentionsPerson, mentionsOrganization, mentionsConference, hasInformation, hasDateTimestamp,
 			hasUserName, hasAffiliation, hasDesignation, hasId, hasConferenceName, hasEventMode, hasWebsiteURL,
@@ -228,7 +228,7 @@ public class ConferenceStreams {
 		this.isPresentedAt = eventDataProperties.createProperty(ACE_URL + "isPresentedAt");
 		this.isAuthorOf = eventDataProperties.createProperty(ACE_URL + "isAuthorOf");
 		this.TOKEN_EventMode = gen.TOKEN_EventMode;
-		this.getsStudentGrantFor = eventDataProperties.createProperty(ACE_URL + "getsStudentGrantFor");
+		this.getsStudentGrant = eventDataProperties.createProperty(ACE_URL + "getsStudentGrant");
 		this.TOKEN_ConferenceEventTrack = gen.TOKEN_ConferenceEventTrack;
 		this.gen = gen;
 		this.confCycle = gen.confCycle;

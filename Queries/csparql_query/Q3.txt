@@ -1,0 +1,11 @@
+# CQ3: Publication Activities of Organizations. Matches the real, live query registered in
+# CSPARQL-Running-Example-For-Unifying-Interface/configuration.json ("cq3_publication_activity") -
+# this file exists for documentation only and is not read at runtime by the runner harnesses.
+REGISTER QUERY cq3 AS
+select ?paper ?author ?organization
+ from stream <http://localhost:9101/conference> [range 60000ms step 2s]
+where {
+?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .
+?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .
+?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .
+}

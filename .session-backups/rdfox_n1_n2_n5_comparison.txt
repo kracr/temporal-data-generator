@@ -1,0 +1,24 @@
+RDFox real comparison, CQ3-equivalent query (paper -> hasAuthor -> author -> hasAffiliation -> organization)
+Query: SELECT ?paper ?author ?organization WHERE {
+  ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .
+  ?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .
+}
+
+N=1 (genact datastore, 304,182 facts loaded from conf0_1970):
+  bindings: 31
+  latency (5 runs, ms): 160.0, 130.5, 147.2, 137.2, 142.9  -> avg 143.6 ms
+
+N=2 (genact_n2 datastore, 645,578 processed / 94,748 changed facts from conf0+conf1):
+  bindings: 66
+  latency (5 runs, ms): 154.8, 108.9, 113.9, 157.1, 129.7  -> avg 132.9 ms
+
+N=5 (genact_n5 datastore, 1,117,749 processed / 113,922 changed facts from c1..c5):
+  bindings: 66 (IDENTICAL binding set to N=2 -- verified via key-set comparison, not just count)
+  latency (5 runs, ms): 112.9, 125.6, 143.0, 118.0, 162.9  -> avg 132.5 ms
+
+Shared RDFox daemon process memory with all 3 datastores loaded simultaneously: 65.5 MB working set / 68.9 MB private.
+
+Insight: RDFox latency stays flat (~130-145ms) as fact volume grows ~3.7x (304K -> 1.1M facts), consistent
+with an in-memory RETE/datalog engine at this data scale. N=2 and N=5 return the exact same 66 bindings,
+meaning conferences beyond the first two do not introduce new author/organization affiliation triples that
+satisfy this specific two-hop join pattern under the current generator's population reuse.

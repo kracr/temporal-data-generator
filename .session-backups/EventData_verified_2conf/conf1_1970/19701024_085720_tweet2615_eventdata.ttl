@@ -1,0 +1,33 @@
+<https://anonymous.com/AcademicConferenceEvent#user42097>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user2474>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper11848>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user11878> , <https://anonymous.com/AcademicConferenceEvent#user42097> , <https://anonymous.com/AcademicConferenceEvent#user66470> , <https://anonymous.com/AcademicConferenceEvent#user44315> , <https://anonymous.com/AcademicConferenceEvent#user2474> , <https://anonymous.com/AcademicConferenceEvent#user31676> , <https://anonymous.com/AcademicConferenceEvent#user15067> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#semanticWeb> , <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Whole-home gesture recognition using wireless signals." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11878>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user15067>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user66470>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44315>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31676>
+        a       <http://xmlns.com/foaf/0.1/Person> .

@@ -1,0 +1,26 @@
+<https://anonymous.com/AcademicConferenceEvent#conf1_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5877>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO61RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Liang Zhang 0010" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user5877> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet965> .
+
+<https://anonymous.com/Tweet#tweet965>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1970-10-11T16:33:25.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet965> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .

@@ -1,0 +1,43 @@
+<https://anonymous.com/AcademicConferenceEvent#user23240>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://anonymous.com/AcademicConferenceEvent#user8522>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://anonymous.com/AcademicConferenceEvent#user37066>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://anonymous.com/Location#caatiba>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1970" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1970.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#caatiba> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31599>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .

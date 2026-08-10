@@ -1,0 +1,31 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper11848 .
+
+ace:user42097  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user2474  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper11848  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user11878 , ace:user42097 , ace:user66470 , ace:user44315 , ace:user2474 , ace:user31676 , ace:user15067 ;
+        ace:hasPaperDomain  ace:semanticWeb , ace:naturalLanguageProcessing ;
+        ace:hasPaperTrack   "tutorialTrack" ;
+        ace:hasTitle        "Whole-home gesture recognition using wireless signals." ;
+        ace:isAcceptedAt    ace:conf1_1970 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:user15067  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user11878  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1970 .
+
+ace:conf1_1970  ace:hasSession  ace:paperPresentationSession .
+
+ace:user66470  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user44315  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user31676  a  <http://xmlns.com/foaf/0.1/Person> .

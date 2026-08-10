@@ -1,0 +1,47 @@
+<https://anonymous.com/AcademicConferenceEvent#user2945>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user589>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#Conference>
+        <https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>
+                <https://anonymous.com/AcademicConferenceEvent#paper604> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        <https://anonymous.com/AcademicConferenceEvent#hasSession>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5696>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user3505>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13511>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user2564>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user1723>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>
+        <https://anonymous.com/AcademicConferenceEvent#isPartOf>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper604>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user3505> , <https://anonymous.com/AcademicConferenceEvent#user1723> , <https://anonymous.com/AcademicConferenceEvent#user5696> , <https://anonymous.com/AcademicConferenceEvent#user2564> , <https://anonymous.com/AcademicConferenceEvent#user589> , <https://anonymous.com/AcademicConferenceEvent#user2945> , <https://anonymous.com/AcademicConferenceEvent#user13511> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#neurology> , <https://anonymous.com/AcademicConferenceEvent#internetOfThings> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Epistemic Boolean Games Based on a Logic of Visibility and Control." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#isPresentedAt>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .

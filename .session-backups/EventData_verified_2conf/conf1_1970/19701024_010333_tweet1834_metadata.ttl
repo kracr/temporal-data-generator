@@ -1,0 +1,134 @@
+<https://anonymous.com/Tweet#tweet1834>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1970-10-24T01:03:33.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1834> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/Tweet#other" ;
+        <https://anonymous.com/Tweet#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user4551> , <https://anonymous.com/AcademicConferenceEvent#user43852> , <https://anonymous.com/AcademicConferenceEvent#user31996> , <https://anonymous.com/AcademicConferenceEvent#user19679> , <https://anonymous.com/AcademicConferenceEvent#user44344> , <https://anonymous.com/AcademicConferenceEvent#user45541> , <https://anonymous.com/AcademicConferenceEvent#user47277> , <https://anonymous.com/AcademicConferenceEvent#user17778> , <https://anonymous.com/AcademicConferenceEvent#user19158> , <https://anonymous.com/AcademicConferenceEvent#user13499> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43852>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U77C3RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Chunyuan Zhou" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user43852" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19158>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO17RG8> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Eric Portman" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19158" .
+
+<https://anonymous.com/AcademicConferenceEvent#user44344>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U22C6RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Goichiro Hanaoka" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user44344" .
+
+<https://anonymous.com/AcademicConferenceEvent#user13499>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C4RG1> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Akshay Asthana" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user13499" .
+
+<https://anonymous.com/AcademicConferenceEvent#user45541>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U51C7RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Antoine Joux" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user45541" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19679>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C8RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Junjie Lin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19679" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1>
+        a       <https://anonymous.com/Tweet#ConferenceAccount> ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "International Conference on conf1_1970" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1834> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47277>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U100C5RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Luca Breveglieri" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user47277" .
+
+<https://anonymous.com/AcademicConferenceEvent#user4551>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U69C5RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Shojiro Nishio" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user4551" .
+
+<https://anonymous.com/AcademicConferenceEvent#user31996>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U76C3RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Stefano Fumeo" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user31996" .
+
+<https://anonymous.com/AcademicConferenceEvent#user17778>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U88C9RG3> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Xuefan Jin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user17778" .

@@ -1,0 +1,10 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user560  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user41810  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper4282  ace:hasAuthor  ace:user41810 , ace:user2896 , ace:user560 .
+
+ace:user2896  a  <http://xmlns.com/foaf/0.1/Person> .

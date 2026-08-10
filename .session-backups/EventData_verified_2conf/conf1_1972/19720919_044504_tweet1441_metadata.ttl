@@ -1,0 +1,86 @@
+<https://anonymous.com/Tweet#tweet1441>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1972-09-19T04:45:04.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasHashTag>
+                <https://anonymous.com/Tweet#ai> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#other" .
+
+<https://anonymous.com/AcademicConferenceEvent#user4666>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U13C10RG1> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Axel Polleres" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user4666> .
+
+<https://anonymous.com/AcademicConferenceEvent#user91599>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U24C1RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Deli Zhao" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user91599> .
+
+<https://anonymous.com/AcademicConferenceEvent#user30243>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U92C2RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Sheila A. McIlraith" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user30243> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44836>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U22C6RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Cristian Sminchisescu" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user44836> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1972>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user6264>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U74C5RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Janaka Alawatugoda 0001" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user6264> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46809>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U62C6RG3> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Baker Mohammad" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user46809> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user46809> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1441> .
+
+<https://anonymous.com/AcademicConferenceEvent#user32995>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U19C8RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Wei Wei 0002" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user32995> .

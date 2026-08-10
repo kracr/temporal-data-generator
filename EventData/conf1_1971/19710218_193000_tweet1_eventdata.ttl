@@ -1,0 +1,15 @@
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#hybrid> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "https://anonymous.com/conf1_1971.com" , "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#drancy> .
+
+<https://anonymous.com/Location#drancy>
+        a       <https://anonymous.com/Location#City> .

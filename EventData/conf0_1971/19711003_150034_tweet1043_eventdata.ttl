@@ -1,0 +1,49 @@
+<https://anonymous.com/AcademicConferenceEvent#user14400>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://anonymous.com/Location#dunedin>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user25628>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf0_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "https://anonymous.com/conf0_1971.com" , "www.conf0_1971.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user1116>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someKeynoteTalkTitle" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#KeynoteTalkSpeakerRole> .
+
+<https://anonymous.com/AcademicConferenceEvent#user1041>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .
+
+<https://anonymous.com/AcademicConferenceEvent#user15703>
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#givesTalkOn>
+                "someInvitedTalkTitle" .

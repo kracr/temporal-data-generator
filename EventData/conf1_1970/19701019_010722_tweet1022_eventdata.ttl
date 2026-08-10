@@ -1,0 +1,41 @@
+<https://anonymous.com/AcademicConferenceEvent#Conference>
+        <https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>
+                <https://anonymous.com/AcademicConferenceEvent#paper10513> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10513>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user4190> , <https://anonymous.com/AcademicConferenceEvent#user46411> , <https://anonymous.com/AcademicConferenceEvent#user66304> , <https://anonymous.com/AcademicConferenceEvent#user44099> , <https://anonymous.com/AcademicConferenceEvent#user19629> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#dataScience> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "researchTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Dynamic Graph Segmentation for Deep Graph Neural Networks." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#isPresentedAt>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>
+        <https://anonymous.com/AcademicConferenceEvent#isPartOf>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1970>
+        <https://anonymous.com/AcademicConferenceEvent#hasSession>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46411>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19629>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user66304>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44099>
+        a       <http://xmlns.com/foaf/0.1/Person> .

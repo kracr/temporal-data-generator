@@ -1,0 +1,2403 @@
+[
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 51.5677490234375,
+    "timestamp": 1786229926962
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 53.673606872558594,
+    "timestamp": 1786229928676
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.043800354003906,
+    "timestamp": 1786229930692
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.52180480957031,
+    "timestamp": 1786229932693
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.972015380859375,
+    "timestamp": 1786229934703
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.181068420410156,
+    "timestamp": 1786229936703
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.183677673339844,
+    "timestamp": 1786229938708
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.212745666503906,
+    "timestamp": 1786229940704
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.212745666503906,
+    "timestamp": 1786229942708
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.223358154296875,
+    "timestamp": 1786229944731
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.256103515625,
+    "timestamp": 1786229946724
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.24391174316406,
+    "timestamp": 1786229948805
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 57.99565124511719,
+    "timestamp": 1786229950785
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.669960021972656,
+    "timestamp": 1786229952846
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.72843933105469,
+    "timestamp": 1786229954848
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.74147033691406,
+    "timestamp": 1786229956903
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.760276794433594,
+    "timestamp": 1786229958843
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.79734802246094,
+    "timestamp": 1786229960867
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.81285858154297,
+    "timestamp": 1786229962844
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.82325744628906,
+    "timestamp": 1786229964852
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.83061218261719,
+    "timestamp": 1786229966839
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.852020263671875,
+    "timestamp": 1786229968861
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.85704040527344,
+    "timestamp": 1786229970860
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.889625549316406,
+    "timestamp": 1786229972904
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.923614501953125,
+    "timestamp": 1786229974819
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.915069580078125,
+    "timestamp": 1786229976841
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.91216278076172,
+    "timestamp": 1786229978819
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.95574951171875,
+    "timestamp": 1786229980864
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.956321716308594,
+    "timestamp": 1786229982822
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.67621612548828,
+    "timestamp": 1786229984835
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 54.33226013183594,
+    "timestamp": 1786229986669
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 51.94536590576172,
+    "timestamp": 1786229988602
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 50.66022491455078,
+    "timestamp": 1786229990583
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 50.158042907714844,
+    "timestamp": 1786229992579
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.81317901611328,
+    "timestamp": 1786229994567
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.536041259765625,
+    "timestamp": 1786229996563
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.673744201660156,
+    "timestamp": 1786229998561
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.590187072753906,
+    "timestamp": 1786230000671
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 95.9009780883789,
+    "timestamp": 1786230003334
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 124.66187286376953,
+    "timestamp": 1786230006154
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.7432861328125,
+    "timestamp": 1786230008371
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.76988983154297,
+    "timestamp": 1786230010325
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 124.92374420166016,
+    "timestamp": 1786230012132
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.51170349121094,
+    "timestamp": 1786230014075
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.46849060058594,
+    "timestamp": 1786230016160
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.48571014404297,
+    "timestamp": 1786230018173
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.47457122802734,
+    "timestamp": 1786230020030
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.47737121582031,
+    "timestamp": 1786230022132
+  },
+  {
+    "queryId": "cq13_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "https://anonymous.com/conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#hybrid",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#online",
+          "www.conf0_1970.com"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#offline",
+          "www.conf0_1970.com"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.51971435546875,
+    "timestamp": 1786230024168
+  }
+]

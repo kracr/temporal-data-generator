@@ -1,0 +1,34 @@
+<https://anonymous.com/Tweet#tweet411>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1970-05-28T19:30:00.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasHashTag>
+                <https://anonymous.com/Tweet#blockchain> , <https://anonymous.com/Tweet#naturalLanguageProcessing> , <https://anonymous.com/Tweet#bigData> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#notification" ;
+        <https://anonymous.com/Tweet#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf0> .
+
+<https://anonymous.com/AcademicConferenceEvent#user12933>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U16C2RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Ashutosh Trivedi 0001" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user89801>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U89C3RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Xavier Roynard" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user89801> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet411> .

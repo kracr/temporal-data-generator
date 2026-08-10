@@ -1,0 +1,38 @@
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user96199>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U13C2RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Jean-Philippe MÃ©tivier" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user96199> .
+
+<https://anonymous.com/Tweet#tweet3081>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-14T16:58:24.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasHashTag>
+                <https://anonymous.com/Tweet#artificialIntelligence> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/Tweet#other" ;
+        <https://anonymous.com/Tweet#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U63C3RG10> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Marton Havasi" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user43505> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user43505> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet3081> .

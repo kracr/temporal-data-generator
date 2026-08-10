@@ -1,0 +1,32 @@
+<https://anonymous.com/AcademicConferenceEvent#Conference>
+        <https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>
+                <https://anonymous.com/AcademicConferenceEvent#paper10521> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10521>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user15118> , <https://anonymous.com/AcademicConferenceEvent#user47954> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> , <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Mapping Unseen Words to Task-Trained Embedding Spaces." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#isPresentedAt>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1971>
+        <https://anonymous.com/AcademicConferenceEvent#hasSession>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>
+        <https://anonymous.com/AcademicConferenceEvent#isPartOf>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47954>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user15118>
+        a       <http://xmlns.com/foaf/0.1/Person> .

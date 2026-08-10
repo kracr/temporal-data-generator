@@ -1,0 +1,29 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper10529 .
+
+ace:user20603  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user22878  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user3988  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper10529  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user14757 , ace:user23784 , ace:user41488 , ace:user22878 , ace:user3988 , ace:user20603 ;
+        ace:hasPaperDomain  ace:cardiology ;
+        ace:hasPaperTrack   "applicationsTrack" ;
+        ace:hasTitle        "Paid placement strategies for internet search engines." ;
+        ace:isAcceptedAt    ace:conf0_1971 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:conf0_1971  ace:hasSession  ace:paperPresentationSession .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf0_1971 .
+
+ace:user14757  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user41488  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user23784  a  <http://xmlns.com/foaf/0.1/Person> .

@@ -1,0 +1,40 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user47764  ace:attends  ace:conf0_1971 .
+
+ace:user25495  ace:attends  ace:conf0_1971 .
+
+ace:user3645  ace:attends  ace:conf0_1971 .
+
+ace:city_name  a  <https://anonymous.com/Location#City> .
+
+ace:user1650  ace:attends  ace:conf0_1971 ;
+        ace:hasRole  ace:generalChair .
+
+ace:conf0_1971  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf0_1971" ;
+        ace:hasEdition         "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ace:hasEventMode       ace:offline ;
+        ace:hasGeneralChair    ace:user1650 ;
+        ace:hasLocalChair      ace:user9932 , ace:user28505 ;
+        ace:hasPaperTrack      ace:workshopTrack , ace:researchTrack , ace:tutorialTrack , ace:doctoralConsortiumTrack , ace:posterTrack , ace:demoTrack , ace:applicationsTrack , ace:resourcesTrack ;
+        ace:hasWebsiteURL      "www.conf0_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                ace:city_name .
+
+ace:user19345  ace:attends  ace:conf0_1971 .
+
+ace:user22422  ace:attends  ace:conf0_1971 .
+
+ace:user9932  ace:attends  ace:conf0_1971 ;
+        ace:hasRole  ace:localChair .
+
+ace:user29616  ace:attends  ace:conf0_1971 .
+
+ace:user28505  ace:attends  ace:conf0_1971 ;
+        ace:hasRole  ace:localChair .
+
+ace:user7389  ace:attends  ace:conf0_1971 .
+
+ace:user1744  ace:attends  ace:conf0_1971 .

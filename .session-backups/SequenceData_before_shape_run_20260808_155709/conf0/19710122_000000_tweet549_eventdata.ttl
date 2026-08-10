@@ -1,0 +1,24 @@
+<https://anonymous.com/AcademicConferenceEvent#user1590>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4293>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user1590> , <https://anonymous.com/AcademicConferenceEvent#user11606> , <https://anonymous.com/AcademicConferenceEvent#user20850> , <https://anonymous.com/AcademicConferenceEvent#user85622> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#ontology> , <https://anonymous.com/AcademicConferenceEvent#blockchain> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "researchTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "A Causal Framework for Discovering and Removing Direct and Indirect Discrimination." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user85622>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11606>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user20850>
+        a       <http://xmlns.com/foaf/0.1/Person> .

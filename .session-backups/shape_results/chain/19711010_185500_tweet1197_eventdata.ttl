@@ -1,0 +1,29 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user16890  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper11853 .
+
+ace:conf1_1971  ace:hasSession  ace:paperPresentationSession .
+
+ace:user111576  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1971 .
+
+ace:user5877  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user40236  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user43069  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user8723  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper11853  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user5877 , ace:user111576 , ace:user40236 , ace:user43069 , ace:user8723 , ace:user16890 ;
+        ace:hasPaperDomain  ace:deepLearning , ace:artificialIntelligence , ace:ml ;
+        ace:hasPaperTrack   "workshopTrack" ;
+        ace:hasTitle        "Cross-modal Domain Adaptation for Cost-Efficient Visual Reinforcement Learning." ;
+        ace:isAcceptedAt    ace:conf1_1971 ;
+        ace:isPresentedAt   ace:paperPresentationSession .

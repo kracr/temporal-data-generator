@@ -1,0 +1,30 @@
+<https://anonymous.com/AcademicConferenceEvent#user16890>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user111576>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5877>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user40236>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43069>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user8723>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper11853>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user5877> , <https://anonymous.com/AcademicConferenceEvent#user111576> , <https://anonymous.com/AcademicConferenceEvent#user40236> , <https://anonymous.com/AcademicConferenceEvent#user43069> , <https://anonymous.com/AcademicConferenceEvent#user8723> , <https://anonymous.com/AcademicConferenceEvent#user16890> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#deepLearning> , <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> , <https://anonymous.com/AcademicConferenceEvent#ml> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "workshopTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Cross-modal Domain Adaptation for Cost-Efficient Visual Reinforcement Learning." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .

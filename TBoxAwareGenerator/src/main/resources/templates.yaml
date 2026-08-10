@@ -1,0 +1,401 @@
+# Declarative tweet templates for TBoxAwareGenerator.
+#
+# Every `class` and `property` value here is validated at startup (TBoxVocabulary) against the
+# real ACE and Tweet OWL files - a template referencing a class/property that isn't actually
+# declared in those TBoxes fails generation immediately.
+#
+# Coverage: mapped from the real 21 active hardcoded templates in ABoxGenerator's
+# BeforeConference/DuringConference/AfterConference.java (22 methods exist; NextConferenceAnnouncement
+# is commented out/disabled in the real pipeline and is skipped here too). A few near-duplicate
+# original methods are consolidated into one parameterized template rather than copied verbatim.
+# Several places in the original assert an object property's value as a bare literal instead of a
+# resource (hasPaperTrack, volunteersFor, getsStudentGrantFor - which isn't even the TBox's real
+# property name, "getsStudentGrant" is) or assert a fact on the class resource itself instead of an
+# instance (hasPresentedPaper on conf.Conference). Those are real, pre-existing bugs; this file uses
+# the TBox-correct form instead of replicating them.
+#
+# `timingStart`/`timingEnd` place a template within its phase's real time window (see
+# ConferenceTimeline, which mirrors ConferenceStreams.java's actual 6-9 month cycle split), as a
+# fraction 0.0 (phase start) - 1.0 (phase end), derived from the real call-site offsets in the
+# hardcoded pipeline's run() methods.
+#
+# Two conference-name placeholders, deliberately distinct: `{conference}` is the edition-qualified
+# instance identifier (e.g. "ICWE_ed3") - use it wherever an IRI/local name is built
+# (subjectResource.localName, extraResources.localName), so recurring editions of the same series
+# never collide on the conference individual itself. `{seriesName}` is the plain, human-readable
+# series name (e.g. "ICWE") shared across all editions - use it in tweetText, hashtags, and any
+# literal meant for display (hasConferenceName, hasWebsiteURL).
+#
+# `resource` values support:
+#   "@subject"/"@self"  - this template's subjectResource individual (or the conference, if none set)
+#   "@conference"       - the conference individual, always
+#   "@user"             - the user/account individual posting this tweet
+#   "@<extraResources id>" / "@<extraUsers id>" - additional named individuals (see tree-shape template)
+# `subjectRef` picks the RDF subject of a triple the same way: self/conference/user/<extra id>.
+
+templates:
+
+  # ===== Announcements =====
+
+  - id: main_conference_announcement
+    category: Announcements
+    phase: before
+    timingStart: 0.0
+    timingEnd: 0.02
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "International Conference on {seriesName} - Call for Participation!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#{seriesName}" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasConferenceName, literal: "{seriesName}" }
+      - { property: hasEdition, literal: "{edition}" }
+      - { property: hasStartDate, literal: "{startDate}" }
+      - { property: hasEndDate, literal: "{endDate}" }
+      - { property: hasEventMode, resource: "{eventMode}", resourceNs: ace }
+      - { property: hasWebsiteURL, literal: "www.{seriesName}.com" }
+      # Location#hasLocation is real/declared; "City" (the class the hardcoded pipeline types its
+      # location resources with) isn't declared in any .owl file in this repo, so left untyped.
+      - { property: hasLocation, propertyNs: location, resource: "{city}" }
+
+  - id: call_for_papers_announcement
+    category: Announcements
+    phase: before
+    timingStart: 0.0
+    timingEnd: 0.03
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "Call for Papers now open for {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#CallForPapers" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasPaperTrack, resource: "{track}", resourceNs: ace }
+      - { property: hasSubmissionDeadline, literal: "2026-09-30T23:59:59Z" }
+
+  - id: organizing_committee_announcement
+    category: Announcements
+    phase: before
+    timingStart: 0.92
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "Meet the organizing committee for {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#OrganizingCommittee" }
+      - { property: mentionsConference, resource: "@conference" }
+      - { property: mentionsPerson, resource: "@user" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasGeneralChair, resource: "@user" }
+    userInvolvement:
+      role: organizer
+      roleProperty: isOrganizerOf
+      linkTarget: conference
+
+  - id: schedule_announcement
+    category: Announcements
+    phase: before
+    timingStart: 0.92
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "The full schedule for {seriesName} is now live!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#Schedule" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasPaperTrack, resource: "{track}", resourceNs: ace }
+
+  # ===== Reminders =====
+
+  - id: paper_submission_reminder
+    category: Reminders
+    phase: before
+    timingStart: 0.07
+    timingEnd: 0.28
+    frequency: 2
+    account: { class: ConferenceAccount }
+    tweetText: "Reminder: paper submissions for {seriesName} close soon - submit to the {track}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#SubmitNow" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasPaperTrack, resource: "{track}", resourceNs: ace }
+      - { property: hasSubmissionDeadline, literal: "2026-09-30T23:59:59Z" }
+
+  - id: registration_deadline_reminder
+    category: Reminders
+    phase: before
+    timingStart: 0.53
+    timingEnd: 0.95
+    frequency: 2
+    account: { class: ConferenceAccount }
+    tweetText: "Early registration for {seriesName} closes soon!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#RegisterNow" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasRegistrationDeadline, literal: "2026-10-15T23:59:59Z" }
+
+  # ===== Notifications =====
+
+  - id: paper_acceptance_notification
+    category: Notifications
+    phase: before
+    timingStart: 0.48
+    timingEnd: 0.52
+    frequency: 2
+    account: { class: PersonAccount }
+    tweetText: "Excited to share our paper was accepted at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#PaperAccepted" }
+      - { property: isAbout, resource: "@subject" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}_{paperLocalId}", class: ConferencePaper }
+    eventTriples:
+      - { property: hasTitle, literal: "{paperTitle}" }
+      - { property: isAcceptedAt, resource: "@conference" }
+      - { property: hasPaperDomain, resource: "{domain}", resourceNs: ace }
+      - { property: hasAuthor, resource: "@user" }
+    userInvolvement:
+      role: author
+      roleProperty: isAuthorOf
+      linkTarget: subjectResource
+
+  - id: best_paper_award_announcement
+    category: Notifications
+    phase: after
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "Congratulations to the best paper award winner at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#BestPaperAward" }
+      - { property: mentionsConference, resource: "@conference" }
+      - { property: mentionsPerson, resource: "@user" }
+    subjectResource: { ns: ace, localName: "{conference}_{paperLocalId}", class: ConferencePaper }
+    eventTriples:
+      - { property: hasTitle, literal: "{paperTitle}" }
+      - { property: isAcceptedAt, resource: "@conference" }
+    userInvolvement:
+      role: author
+      roleProperty: getsBestPaperAward
+      linkTarget: subjectResource
+
+  # ===== Insights =====
+
+  - id: insights_accepted_papers
+    category: Insights
+    phase: before
+    timingStart: 0.48
+    timingEnd: 0.55
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Interesting trend among the accepted papers at {seriesName} this year."
+    tweetTriples:
+      - { property: hasHashTag, literal: "#ResearchTrends" }
+      - { property: mentionsConference, resource: "@conference" }
+      - { property: isAbout, resource: "@subject" }
+    subjectResource: { ns: ace, localName: "{conference}_{paperLocalId}", class: ConferencePaper }
+    eventTriples:
+      - { property: hasTitle, literal: "{paperTitle}" }
+      - { property: hasPaperDomain, resource: "{domain}", resourceNs: ace }
+      - { property: isAcceptedAt, resource: "@conference" }
+
+  - id: keynote_insight
+    category: Insights
+    phase: during
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Fantastic keynote at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#Keynote" }
+      - { property: mentionsConference, resource: "@conference" }
+    subjectResource: { ns: ace, localName: "{conference}Keynote{paperLocalId}", class: KeynoteTalks }
+    eventTriples:
+      - { property: hasTitle, literal: "Keynote: {paperTitle}" }
+      - { property: talkGivenBy, resource: "@user" }
+      - { property: hasKeynoteTalk, subjectRef: conference, resource: "@subject" }
+    userInvolvement:
+      role: speaker
+      roleProperty: givesKeynoteTalkAt
+      linkTarget: conference
+
+  # Genuine tree shape within a single eventdata.ttl: conference -hasSession-> {session1,session2}
+  # (root branches via the same predicate to two distinct children), session1 -hasSpeaker->
+  # {speakerA,speakerB} (that child itself branches via a second predicate). CreatePartitions runs
+  # ByShape/tree.txt against one eventdata.ttl at a time, so this can't be spread across tweets.
+  - id: session_highlight_insight
+    category: Insights
+    phase: during
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Two great sessions running now at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#NowPresenting" }
+      - { property: mentionsConference, resource: "@conference" }
+    extraResources:
+      - { id: session1, ns: ace, localName: "{conference}SessionA{paperLocalId}", class: PresentationSession }
+      - { id: session2, ns: ace, localName: "{conference}SessionB{paperLocalId}", class: PresentationSession }
+    extraUsers: [speakerA, speakerB]
+    eventTriples:
+      - { property: hasSession, subjectRef: conference, resource: "@session1" }
+      - { property: hasSession, subjectRef: conference, resource: "@session2" }
+      - { property: hasSpeaker, subjectRef: session1, resource: "@speakerA" }
+      - { property: hasSpeaker, subjectRef: session1, resource: "@speakerB" }
+      - { property: hasTitle, subjectRef: session1, literal: "Session A: {paperTitle}" }
+      - { property: hasTitle, subjectRef: session2, literal: "Session B" }
+      - { property: isPartOf, subjectRef: session1, resource: "@conference" }
+      - { property: isPartOf, subjectRef: session2, resource: "@conference" }
+
+  - id: memorable_conference_experience
+    category: Insights
+    phase: after
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 2
+    account: { class: PersonAccount }
+    tweetText: "Looking back at a memorable {seriesName}."
+    tweetTriples:
+      - { property: hasHashTag, literal: "#MemorableMoments" }
+      - { property: mentionsConference, resource: "@conference" }
+    eventTriples:
+      - { property: hasAttendee, subjectRef: conference, resource: "@user" }
+    userInvolvement:
+      role: attendee
+      roleProperty: attends
+      linkTarget: conference
+
+  # ===== Others =====
+
+  - id: early_excitement_announcement
+    category: Others
+    phase: before
+    timingStart: 0.0
+    timingEnd: 0.08
+    frequency: 2
+    account: { class: PersonAccount }
+    tweetText: "So excited for {seriesName} this year!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#Excited" }
+      - { property: mentionsConference, resource: "@conference" }
+    userInvolvement:
+      role: attendee
+      roleProperty: attends
+      linkTarget: conference
+
+  - id: volunteer_student_grant_announcement
+    category: Others
+    phase: before
+    timingStart: 0.92
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Honored to receive a student grant to attend {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#StudentGrant" }
+      - { property: mentionsConference, resource: "@conference" }
+    userInvolvement:
+      role: attendee
+      # The hardcoded pipeline invents an undeclared "getsStudentGrantFor" property here; the TBox's
+      # real, declared property is "getsStudentGrant" (no "For").
+      roleProperty: getsStudentGrant
+      linkTarget: conference
+
+  - id: attendee_excitement
+    category: Others
+    phase: before
+    timingStart: 0.92
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Can't wait to attend {seriesName} next week!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#AlmostThere" }
+      - { property: mentionsConference, resource: "@conference" }
+    userInvolvement:
+      role: attendee
+      roleProperty: attends
+      linkTarget: conference
+
+  - id: networking_experience
+    category: Others
+    phase: during
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Great to connect with fellow researchers at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#Networking" }
+      - { property: mentionsConference, resource: "@conference" }
+      - { property: mentionsPerson, resource: "@newContact" }
+    extraUsers: [newContact]
+    eventTriples:
+      - { property: hasCollaborator, subjectRef: user, resource: "@newContact" }
+    userInvolvement:
+      role: attendee
+      roleProperty: attends
+      linkTarget: conference
+
+  - id: volunteer_shoutout
+    category: Others
+    phase: during
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: PersonAccount }
+    tweetText: "Proud to volunteer at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#Volunteers" }
+      - { property: mentionsConference, resource: "@conference" }
+    eventTriples:
+      - { property: hasVolunteer, subjectRef: conference, resource: "@user" }
+    userInvolvement:
+      role: volunteer
+      roleProperty: volunteersFor
+      linkTarget: conference
+
+  - id: successful_event_congratulations
+    category: Others
+    phase: after
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 2
+    account: { class: PersonAccount }
+    tweetText: "Congratulations to everyone who made {seriesName} a success!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#GreatConference" }
+      - { property: mentionsConference, resource: "@conference" }
+    userInvolvement:
+      role: attendee
+      roleProperty: attends
+      linkTarget: conference
+
+  - id: conference_success_thank_you
+    category: Others
+    phase: after
+    timingStart: 0.0
+    timingEnd: 1.0
+    frequency: 1
+    account: { class: ConferenceAccount }
+    tweetText: "Thank you to our amazing volunteers at {seriesName}!"
+    tweetTriples:
+      - { property: hasHashTag, literal: "#ThankYou" }
+      - { property: mentionsConference, resource: "@conference" }
+      - { property: mentionsPerson, resource: "@user" }
+    subjectResource: { ns: ace, localName: "{conference}", class: Conference }
+    eventTriples:
+      - { property: hasVolunteer, resource: "@user" }

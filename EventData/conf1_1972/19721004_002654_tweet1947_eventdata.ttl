@@ -1,0 +1,18 @@
+<https://anonymous.com/AcademicConferenceEvent#paper11854>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user45561> , <https://anonymous.com/AcademicConferenceEvent#user95981> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#bigData> , <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> , <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "demoTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Recurrent Neural Network based Rule Sequence Model for Statistical Machine Translation." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1972> .
+
+<https://anonymous.com/AcademicConferenceEvent#user45561>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user95981>
+        a       <http://xmlns.com/foaf/0.1/Person> .

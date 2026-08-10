@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.riot.RDFDataMgr;
@@ -54,7 +53,7 @@ public class AfterConference {
 		}
 
 		for (int i = 0; i <=5 ; i++) {
-			timestamp = timestamp.plusDays(ThreadLocalRandom.current().nextInt(5, 7));
+			timestamp = timestamp.plusDays(random.nextInt(5, 7));
 					MemorableConferenceExperience(timestamp);
 		}
 	}
@@ -148,7 +147,7 @@ public class AfterConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -274,7 +273,7 @@ public class AfterConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -404,7 +403,7 @@ public class AfterConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -483,7 +482,7 @@ public class AfterConference {
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.mentionsPerson, authorResource);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -495,6 +494,8 @@ public class AfterConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -621,7 +622,7 @@ public class AfterConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,

@@ -1,0 +1,688 @@
+[
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 52.51957702636719,
+    "timestamp": 1786228609046
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 54.366859436035156,
+    "timestamp": 1786228610726
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 54.82201385498047,
+    "timestamp": 1786228612736
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.361602783203125,
+    "timestamp": 1786228614765
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.76044464111328,
+    "timestamp": 1786228616754
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.03892517089844,
+    "timestamp": 1786228618808
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.01024627685547,
+    "timestamp": 1786228620765
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.044219970703125,
+    "timestamp": 1786228622771
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.04014587402344,
+    "timestamp": 1786228624770
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.04109191894531,
+    "timestamp": 1786228626781
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.071197509765625,
+    "timestamp": 1786228628762
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.07170104980469,
+    "timestamp": 1786228630780
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 57.60303497314453,
+    "timestamp": 1786228632797
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.588050842285156,
+    "timestamp": 1786228634879
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.59257507324219,
+    "timestamp": 1786228636899
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.59796142578125,
+    "timestamp": 1786228638878
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.619850158691406,
+    "timestamp": 1786228640910
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.59095764160156,
+    "timestamp": 1786228642894
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.651824951171875,
+    "timestamp": 1786228644910
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.620452880859375,
+    "timestamp": 1786228646896
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.68103790283203,
+    "timestamp": 1786228648903
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.65070343017578,
+    "timestamp": 1786228650904
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.69390106201172,
+    "timestamp": 1786228652926
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.717185974121094,
+    "timestamp": 1786228654869
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.74006652832031,
+    "timestamp": 1786228656917
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.709999084472656,
+    "timestamp": 1786228658882
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.82263946533203,
+    "timestamp": 1786228660927
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.739051818847656,
+    "timestamp": 1786228662884
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.77323913574219,
+    "timestamp": 1786228664937
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 61.716224670410156,
+    "timestamp": 1786228666875
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 55.2381591796875,
+    "timestamp": 1786228668757
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 51.78416442871094,
+    "timestamp": 1786228670673
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 50.61494445800781,
+    "timestamp": 1786228672639
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 50.11604309082031,
+    "timestamp": 1786228674623
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.73035430908203,
+    "timestamp": 1786228676624
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.628684997558594,
+    "timestamp": 1786228678619
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 49.810264587402344,
+    "timestamp": 1786228680623
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 56.605323791503906,
+    "timestamp": 1786228682722
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 96.57303619384766,
+    "timestamp": 1786228685406
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.35881805419922,
+    "timestamp": 1786228688214
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.92066955566406,
+    "timestamp": 1786228690337
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.98392486572266,
+    "timestamp": 1786228692275
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 125.83509826660156,
+    "timestamp": 1786228694213
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.67273712158203,
+    "timestamp": 1786228696128
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.60160064697266,
+    "timestamp": 1786228698147
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.66160583496094,
+    "timestamp": 1786228700141
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.59197235107422,
+    "timestamp": 1786228702143
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.77439880371094,
+    "timestamp": 1786228704201
+  },
+  {
+    "queryId": "cq2_query",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#conf0_1970",
+          "https://anonymous.com/AcademicConferenceEvent#user1650",
+          "https://anonymous.com/AcademicConferenceEvent#generalChair"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 120.55140686035156,
+    "timestamp": 1786228706131
+  }
+]

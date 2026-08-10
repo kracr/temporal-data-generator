@@ -1,0 +1,76 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5446>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U16C10RG8" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Ahmed Irfan" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user5446> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4502>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U99C2RG3" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Mirjana Ivanovic" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user4502> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4279>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U64C9RG1" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Alexander Nilsson" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user4279> .
+
+<https://anonymous.com/AcademicConferenceEvent#user3141>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U37C8RG5" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Michael L. Scott" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user3141> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9088>
+        a       <http://xmlns.com/foaf/0.1/Person> , <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U78C1RG8" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Zheng Yang 0002" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user9088> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user9088> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1816> .
+
+<https://anonymous.com/Tweet#tweet1816>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1970-12-17T13:02:54.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasHashTag>
+                <https://anonymous.com/Tweet#ontology> , <https://anonymous.com/Tweet#quantumComputing> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#other" .
+
+<https://anonymous.com/AcademicConferenceEvent#user2787>
+        <https://anonymous.com/Tweet#hasAffiliation>
+                "https://anonymous.com/OWL2Bench#U64C3RG8" ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Eujeanne Kim" ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user2787> .

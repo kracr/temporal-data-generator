@@ -1,0 +1,24 @@
+<https://anonymous.com/AcademicConferenceEvent#paper4290>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user9671> , <https://anonymous.com/AcademicConferenceEvent#user36452> , <https://anonymous.com/AcademicConferenceEvent#user5184> , <https://anonymous.com/AcademicConferenceEvent#user46043> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "tutorialTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Towards industrially applicable modeling technique for agent-based systems." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user36452>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9671>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5184>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46043>
+        a       <http://xmlns.com/foaf/0.1/Person> .

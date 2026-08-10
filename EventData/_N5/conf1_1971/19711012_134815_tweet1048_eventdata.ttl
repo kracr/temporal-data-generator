@@ -1,0 +1,32 @@
+<https://anonymous.com/AcademicConferenceEvent#user96199>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#Conference>
+        <https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>
+                <https://anonymous.com/AcademicConferenceEvent#paper4294> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        <https://anonymous.com/AcademicConferenceEvent#hasSession>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>
+        <https://anonymous.com/AcademicConferenceEvent#isPartOf>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4294>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user43505> , <https://anonymous.com/AcademicConferenceEvent#user96199> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Multi-Task Deep Learning for Predicting Poverty From Satellite Images." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/AcademicConferenceEvent#isPresentedAt>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .

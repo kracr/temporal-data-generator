@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://anonymous.com/AcademicConferenceEvent#"
-     xml:base="http://anonymous.com/AcademicConferenceEvent"
+<rdf:RDF xmlns="https://anonymous.com/AcademicConferenceEvent#"
+     xml:base="https://anonymous.com/AcademicConferenceEvent"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,9 +13,9 @@
      xmlns:event="http://w3id.org/daselab/onto/event#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:AcademicConferenceEvent="http://anonymous.com/AcademicConferenceEvent#">
-    <owl:Ontology rdf:about="http://anonymous.com/AcademicConferenceEvent">
-        <owl:versionIRI rdf:resource="http://anonymous.com/AcademicConferenceEvent/1.0.0"/>
+     xmlns:AcademicConferenceEvent="https://anonymous.com/AcademicConferenceEvent#">
+    <owl:Ontology rdf:about="https://anonymous.com/AcademicConferenceEvent">
+        <owl:versionIRI rdf:resource="https://anonymous.com/AcademicConferenceEvent/1.0.0"/>
         <rdfs:comment>05/05/2023 16:33</rdfs:comment>
         <rdfs:comment>Academic Conference Event Ontology</rdfs:comment>
     </owl:Ontology>
@@ -33,21 +33,21 @@
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isInstantaneous -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isInstantaneous -->
 
-    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isInstantaneous"/>
+    <owl:AnnotationProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isInstantaneous"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isStatic -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isStatic -->
 
-    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isStatic"/>
+    <owl:AnnotationProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isStatic"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isTimeVarying -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isTimeVarying -->
 
-    <owl:AnnotationProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isTimeVarying"/>
+    <owl:AnnotationProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isTimeVarying"/>
     
 
 
@@ -62,287 +62,287 @@
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#attends -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#attends -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#attends">
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAttendee"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#attends">
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAttendee"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#presents"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#presents"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#getsAward -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#getsAward -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#getsAward"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#getsBestPaperAward -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#getsBestPaperAward">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#getsAward"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#getsStudentGrant -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#getsStudentGrant -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#getsStudentGrant">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsAward"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#getsStudentGrant">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#getsAward"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#givesTalkAt"/>
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesTalkAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesTalkAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesTalkAt">
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesTalkAt">
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAccount -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAccount -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAccount"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAccount"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAdvisor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAdvisor -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAdvisor">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAdvisor">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAffiliation -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAffiliation -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAffiliation">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAffiliation">
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAttendee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAttendee -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAttendee">
-        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAttendee">
+        <owl:equivalentProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAuthor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAuthor -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAuthor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChair">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasChair">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isChairOf"/>
-        <owl:propertyDisjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#isChairOf"/>
+        <owl:propertyDisjointWith rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasChairRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasChairRoleAt">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasCoAuthor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasCoAuthor -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasCoAuthor">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasCollaborator"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasCoAuthor">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasCollaborator"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#presents"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#presents"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasCollaborator -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasCollaborator -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasCollaborator">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasCollaborator">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasDomain -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDomain"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasDomain"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasEventMode -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasEventMode -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEventMode">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasMode"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasEventMode">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasMode"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasGeneralChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasGeneralChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasGeneralChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasGeneralChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasChairRoleAt"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasChairRoleAt"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasInvitedTalk -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasInvitedTalk">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasInvitedTalk"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasInvitedTalk"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasSpeaker"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasLocalChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasLocalChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasLocalChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasLocalChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasMode -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasMode -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasMode"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasMode"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizer -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasOrganizer -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizer">
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizer">
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#Organizer"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasChair"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasChair"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt">
-        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt">
+        <owl:equivalentProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#isOrganizerOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>Example:
 ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
@@ -351,242 +351,242 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#Organizer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPaper -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaper">
-        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaper">
+        <owl:equivalentProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#isAuthorOf"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPaperDomain -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperDomain">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDomain"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperDomain">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasDomain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPaperTrack -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasParticipant -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasParticipant -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasParticipant"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPresentedPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPresentedPaper"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasProject -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasProject -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasProject">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasProject">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasSession -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasSession -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSession">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasSession">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#Session"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAccount"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasSpeaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasSpeaker -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSpeaker">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasSpeaker">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasTalk -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasTalk -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasTwitterAccount -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTwitterAccount">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTwitterAccount">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasVolunteer -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasVolunteer -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasVolunteer"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isAcceptedAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isAcceptedAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt">
-        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isAcceptedAt">
+        <owl:equivalentProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#isPresentedAt"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isAuthorOf -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isAuthorOf -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isAuthorOf">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isAuthorOf">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isChairOf -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isChairOf -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isChairOf">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isChairOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isOrganizerOf -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isOrganizerOf -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isOrganizerOf">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isOrganizerOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isPresentedAt -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isPresentedAt -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedAt">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isPresentedAt">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>what could be the inverse property of isPresentedAt?</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isPresentedBy -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isPresentedBy -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isPresentedBy">
-        <owl:inverseOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#presents"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isPresentedBy">
+        <owl:inverseOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#presents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#talkGivenBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#organizes -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#organizes -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#organizes">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#organizes">
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#presents -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#presents -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#presents">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#presents">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#talkGivenBy -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#talkGivenBy -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#talkGivenBy">
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#talkGivenBy">
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#volunteersFor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#volunteersFor -->
 
-    <owl:ObjectProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#volunteersFor">
+    <owl:ObjectProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#volunteersFor">
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:ObjectProperty>
     
@@ -632,7 +632,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:range rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:range rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </rdf:Description>
     
 
@@ -648,202 +648,202 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#givesTalkOn"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#givesTalkOn -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#givesTalkOn -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#givesTalkOn">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#givesTalkOn">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasAuthorId -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasAuthorId -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasAuthorId">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasId"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasAuthorId">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasId"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasConferenceName -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasConferenceName -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasConferenceName">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasName"/>
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#Conference"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasConferenceName">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasName"/>
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#Conference"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasDeadline -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDeadline">
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasDeadline">
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasDuration -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasDuration -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasDuration">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasDuration">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <owl:propertyDisjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasLocation"/>
+        <owl:propertyDisjointWith rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasLocation"/>
         <rdfs:comment>An event can go for days, hours, or months.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasEdition -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasEdition -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEdition">
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasEdition">
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>3rd or third</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasEndDate -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasEndDate -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasEndDate"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasEndDate"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasId -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasId -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasId">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasId">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasLocation -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasLocation -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasLocation">
-        <owl:equivalentProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasVenue"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasLocation">
+        <owl:equivalentProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasVenue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasName -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasName">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasPaperId -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasPaperId -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasId"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasId"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasStartDate -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasStartDate -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasStartDate">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasStartDate">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasStatus -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasStatus -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasStatus">
-        <rdfs:domain rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasStatus">
+        <rdfs:domain rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Announced, Approaching, TakingPlace, Over</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline">
-        <rdfs:subPropertyOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline">
+        <rdfs:subPropertyOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasDeadline"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasTheme -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasTheme -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTheme">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTheme">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasTitle -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasTitle -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasTitle">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasTitle">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasVenue -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasVenue -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasVenue">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasVenue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#isRelatedTo -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#isRelatedTo -->
 
-    <owl:DatatypeProperty rdf:about="http://anonymous.com/AcademicConferenceEvent#isRelatedTo">
+    <owl:DatatypeProperty rdf:about="https://anonymous.com/AcademicConferenceEvent#isRelatedTo">
         <rdfs:comment>Every aacdemic manuscript is related to some topic. For example AI</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -860,362 +860,362 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEvent -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcademicEvent -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEvent">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcademicEvent">
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
         <rdfs:comment>Every academic event has a track</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcademicEventPhases -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcademicEventPhases">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcademicEventTrack -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicManuscript -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcademicManuscript -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcademicOrganization -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcademicOrganization -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcademicOrganization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment>Can be linked to OWL2Bench?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#NotificationPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#NotificationPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#AnnouncementPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#AnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Attendee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Attendee -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Attendee">
-        <owl:equivalentClass rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Attendee">
+        <owl:equivalentClass rdf:resource="https://anonymous.com/AcademicConferenceEvent#Participant"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Author -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Author -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Author">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Author">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <owl:disjointWith rdf:resource="http://anonymous.com/AcademicConferenceEvent#NonAuthor"/>
+        <owl:disjointWith rdf:resource="https://anonymous.com/AcademicConferenceEvent#NonAuthor"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Awardee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Awardee -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Awardee">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Awardee">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#BestPaperAwardee -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Awardee"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#BestPaperAwardee">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Awardee"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ChairRole -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ChairRole -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ChairRole">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ChairRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
         <rdfs:comment>Each track will have a chair</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Conference -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Conference -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Conference">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Conference">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <isStatic></isStatic>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ConferencePaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ConferencePaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferencePaper">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ConferencePaper">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#isAcceptedAt"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://anonymous.com/AcademicConferenceEvent#Conference"/>
+                <owl:onClass rdf:resource="https://anonymous.com/AcademicConferenceEvent#Conference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ConferenceTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ConferenceTrack -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEventTrack"/>
         <rdfs:comment>Every Academic Event Track is a subevent of  Academic Event</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#DemoPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#DemoPaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#DemoPaper">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#DemoPaper">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AnnouncementPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#EditorRole -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#EditorRole -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EditorRole">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#EditorRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#EventMode -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#EventMode -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#EventPhases -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#EventPhases -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#EventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#EventPhases"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Speaker"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Speaker"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#InvitedTalks -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#InvitedTalks -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalks">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#InvitedTalks">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#JournalArticle -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#JournalArticle -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#JournalArticle">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#JournalArticle">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteSession -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#KeynoteSession -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteSession">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#KeynoteSession">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Session"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Speaker"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Speaker"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#KeynoteTalks -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#KeynoteTalks -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#KeynoteTalks">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#LightningTalks -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#LightningTalks -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#LightningTalks">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#LightningTalks">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ManuscriptDomain -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#MedicalDomain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#MedicalDomain -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#MedicalDomain">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#MedicalDomain">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ManuscriptDomain"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:subClassOf>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
+                <owl:complementOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#NonAuthor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#NonAuthor -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NonAuthor">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#NonAuthor">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:subClassOf>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
+                <owl:complementOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Author"/>
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#NotificationPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#NotificationPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#NotificationPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#NotificationPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Organizer -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Organizer -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Organizer">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Organizer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment>I have added</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#OrganizingCommittee -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#OrganizingCommittee">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
-                <owl:allValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember"/>
+                <owl:allValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#Organizer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Can be removed</rdfs:comment>
@@ -1223,140 +1223,140 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Participant -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Participant -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Participant">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Participant">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment>Attendee could be an equivalent class?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#PhDStudent -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#PhDStudent -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PhDStudent">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#PhDStudent">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
         <rdfs:comment>Define this and include in the table</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#PosterPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#PosterPaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PosterPaper">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#PosterPaper">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#PresentationSession -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#PresentationSession -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#PresentationSession">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Session"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#PresentationSession">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Session"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Presentations -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Presentations -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Presentations">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Presentations">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ReminderPhase"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ReminderPhase -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ReminderPhase -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ReminderPhase">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ReminderPhase">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ResearchPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ResearchPaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ResearchPaper">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ResearchPaper">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#researchTrack"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="https://anonymous.com/AcademicConferenceEvent#researchTrack"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ResourcePaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ResourcePaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#ResourcePaper">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#ResourcePaper">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#researchTrack"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="https://anonymous.com/AcademicConferenceEvent#researchTrack"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Session -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Session -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Session"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Session"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Speaker -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Speaker -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Speaker">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Speaker">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#SpeakerRole -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#SpeakerRole -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#SpeakerRole">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#SpeakerRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Student -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Student -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Student">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Student">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <isTimeVarying></isTimeVarying>
         <rdfs:comment>Student may particiate in DC</rdfs:comment>
@@ -1364,52 +1364,52 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#StudentAuthor -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#StudentAuthor -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#StudentAuthor">
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#StudentAuthor">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Awardee"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Awardee"/>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Talks -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Talks -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Volunteer -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Volunteer -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Volunteer">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Volunteer">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Participant"/>
         <rdfs:comment>is volunteer part of organizing team? or &apos;has role&apos;?</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#Workshop -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#Workshop -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#Workshop">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#Workshop">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
         <isStatic></isStatic>
     </owl:Class>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#WorkshopPaper -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#WorkshopPaper -->
 
-    <owl:Class rdf:about="http://anonymous.com/AcademicConferenceEvent#WorkshopPaper">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
+    <owl:Class rdf:about="https://anonymous.com/AcademicConferenceEvent#WorkshopPaper">
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferencePaper"/>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hasPaperId"/>
         </owl:hasKey>
         <isInstantaneous></isInstantaneous>
     </owl:Class>
@@ -1419,7 +1419,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#College -->
 
     <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#College">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
     </owl:Class>
     
 
@@ -1435,7 +1435,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://kracr.iiitd.edu.in/OWL2Bench#University -->
 
     <owl:Class rdf:about="http://kracr.iiitd.edu.in/OWL2Bench#University">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicOrganization"/>
     </owl:Class>
     
 
@@ -1463,7 +1463,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole">
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#SpeakerRole"/>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"/>
         <rdfs:label xml:lang="en">KeyNoteSpeakerRole</rdfs:label>
     </owl:Class>
@@ -1493,7 +1493,7 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAffiliation"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAffiliation"/>
                 <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1512,415 +1512,415 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#aiForSocialGood -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#aiForSocialGood -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#aiForSocialGood">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#aiForSocialGood">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#announcement -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#announcement -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#announcement"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#announcement"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#applicationsTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#applicationsTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#applicationsTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#applicationsTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#artificialIntelligence -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#artificialIntelligence -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#artificialIntelligence">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#artificialIntelligence">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#bigData -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#bigData -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#bigData">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#bigData">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#bioTech -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#bioTech -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#bioTech">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#bioTech">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#blockChain -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#blockChain -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#blockChain">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#blockChain">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#cardiology -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#cardiology -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#cardiology">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#cardiology">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#cloudComputing -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#cloudComputing -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#cloudComputing">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#cloudComputing">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#computerVision -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#computerVision -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#computerVision">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#computerVision">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#dataScience -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#dataScience -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#dataScience">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#dataScience">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#deepLearning -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#deepLearning -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#deepLearning">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#deepLearning">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#demoTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#demoTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#demoTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#demoTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#generalChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#generalChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#generalChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#generalChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#hybrid -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#hybrid -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#hybrid">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#hybrid">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#insights -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#insights -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#insights"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#insights"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#internetOfThings -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#internetOfThings -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#internetOfThings">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#internetOfThings">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#invitedKeynote -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#invitedKeynote -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#invitedKeynote">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#invitedKeynote">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#journalSpecialIssue -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#journalSpecialIssue">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#journalSpecialIssue">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#knowledgeGraph -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#knowledgeGraph -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#knowledgeGraph">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#knowledgeGraph">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#linkedData -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#linkedData -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#linkedData">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#linkedData">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#localChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#localChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#localChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#localChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#machineLearning -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#machineLearning -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#machineLearning">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
-        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#ml"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#machineLearning">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+        <owl:sameAs rdf:resource="https://anonymous.com/AcademicConferenceEvent#ml"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ml -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ml -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#ml">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#ml">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
-        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#nlp"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+        <owl:sameAs rdf:resource="https://anonymous.com/AcademicConferenceEvent#nlp"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#neuralNetworks -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#neuralNetworks -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#neuralNetworks">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#neuralNetworks">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#neurology -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#neurology -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#neurology">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#neurology">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#nlp -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#nlp -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#nlp">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#nlp">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#notification -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#notification -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#notification"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#notification"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#offline -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#offline -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#offline">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#offline">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#oncology -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#oncology -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#oncology">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#oncology">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#online -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#online -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#online">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
-        <owl:sameAs rdf:resource="http://anonymous.com/AcademicConferenceEvent#remote"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#online">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
+        <owl:sameAs rdf:resource="https://anonymous.com/AcademicConferenceEvent#remote"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#ontology -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#ontology -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#ontology">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#ontology">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#paperPresentationSession -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#paperPresentationSession -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#paperPresentationSession">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#PresentationSession"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#paperPresentationSession">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#PresentationSession"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#pediatrics -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#pediatrics -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#pediatrics">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#pediatrics">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#MedicalDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#plenaryKeynote -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#plenaryKeynote -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#plenaryKeynote">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#plenaryKeynote">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSession"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#posterSession -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#posterSession -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#posterSession"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#posterSession"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#posterTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#posterTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#posterTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#posterTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#quantumComputing -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#quantumComputing -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#quantumComputing">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#quantumComputing">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#randomCategory -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#randomCategory -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#randomCategory"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#randomCategory"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#reminder -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#reminder -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#reminder"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#reminder"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#remote -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#remote -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#remote"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#remote"/>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#researchTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#researchTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#researchTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#researchTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#researchTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#researchTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#researchTrackChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#researchTrackChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#resourcesTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#resourcesTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#resourcesTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#resourcesTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#resourcesTrackChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#semanticWeb -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#semanticWeb -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#semanticWeb">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#semanticWeb">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#trackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#trackChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#trackChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#trackChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#tutorialTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#tutorialTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#tutorialTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#tutorialTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#tutorialTrackChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#workshopTrack -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#workshopTrack -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#workshopTrack">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#workshopTrack">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://anonymous.com/AcademicConferenceEvent#workshopTrackChair -->
+    <!-- https://anonymous.com/AcademicConferenceEvent#workshopTrackChair -->
 
-    <owl:NamedIndividual rdf:about="http://anonymous.com/AcademicConferenceEvent#workshopTrackChair">
-        <rdf:type rdf:resource="http://anonymous.com/AcademicConferenceEvent#ChairRole"/>
+    <owl:NamedIndividual rdf:about="https://anonymous.com/AcademicConferenceEvent#workshopTrackChair">
+        <rdf:type rdf:resource="https://anonymous.com/AcademicConferenceEvent#ChairRole"/>
     </owl:NamedIndividual>
     
 
@@ -1935,138 +1935,138 @@ ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer</rdfs:co
 
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Author"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Student"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#Author"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#Student"/>
         </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#StudentAuthor"/>
     </owl:Class>
     <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#LightningTalks"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#Presentations"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#LightningTalks"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#Presentations"/>
         </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
     </owl:Class>
     <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#hybrid"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#offline"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#online"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#hybrid"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#offline"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#online"/>
         </owl:oneOf>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
     </owl:Class>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#attends"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Participant"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#attends"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Participant"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsBestPaperAward"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#getsBestPaperAward"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#BestPaperAwardee"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#BestPaperAwardee"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#getsStudentGrant"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#getsStudentGrant"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Author"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#Author"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicManuscript"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Author"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasAuthor"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#Author"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasEventMode"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#EventMode"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasEventMode"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#EventMode"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#OrganizingCommittee"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#OrganizingCommittee"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#ConferenceTrack"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTalk"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#Talks"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasTalk"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#Talks"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalks"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteTalks"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#presents"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#presents"/>
         <owl:someValuesFrom>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
-                <owl:hasValue rdf:resource="http://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack"/>
+                <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasPaperTrack"/>
+                <owl:hasValue rdf:resource="https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack"/>
             </owl:Restriction>
         </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#PhDStudent"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#PhDStudent"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#volunteersFor"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Volunteer"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#volunteersFor"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Volunteer"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
-        <owl:someValuesFrom rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
+        <owl:someValuesFrom rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
         <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
         <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#Organizer"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#Organizer"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasLocation"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasLocation"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasTitle"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasTitle"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/event#Event"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://anonymous.com/AcademicConferenceEvent#hasWebsiteURL"/>
+        <owl:onProperty rdf:resource="https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:subClassOf rdf:resource="http://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
+        <rdfs:subClassOf rdf:resource="https://anonymous.com/AcademicConferenceEvent#AcademicEvent"/>
     </owl:Restriction>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#offline"/>
-            <rdf:Description rdf:about="http://anonymous.com/AcademicConferenceEvent#online"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#offline"/>
+            <rdf:Description rdf:about="https://anonymous.com/AcademicConferenceEvent#online"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>

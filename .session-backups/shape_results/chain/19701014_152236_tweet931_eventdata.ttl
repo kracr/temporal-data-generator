@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://anonymous.com/Location#pastores>
+        a       <https://anonymous.com/Location#City> .
+
+ace:user23240  ace:attends  ace:conf1_1970 .
+
+ace:user8522  ace:attends  ace:conf1_1970 .
+
+ace:user37066  ace:attends  ace:conf1_1970 .
+
+ace:conf1_1970  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf1_1970" ;
+        ace:hasEdition         "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ace:hasEventMode       ace:hybrid ;
+        ace:hasWebsiteURL      "https://anonymous.com/conf1_1970.com" , "www.conf1_1970.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#pastores> .
+
+ace:user31599  ace:attends  ace:conf1_1970 .

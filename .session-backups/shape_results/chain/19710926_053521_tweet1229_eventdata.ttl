@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper10521 .
+
+ace:paper10521  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user15118 , ace:user47954 ;
+        ace:hasPaperDomain  ace:artificialIntelligence , ace:naturalLanguageProcessing ;
+        ace:hasPaperTrack   "tutorialTrack" ;
+        ace:hasTitle        "Mapping Unseen Words to Task-Trained Embedding Spaces." ;
+        ace:isAcceptedAt    ace:conf0_1971 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:conf0_1971  ace:hasSession  ace:paperPresentationSession .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf0_1971 .
+
+ace:user47954  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user15118  a  <http://xmlns.com/foaf/0.1/Person> .

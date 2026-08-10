@@ -1,0 +1,15 @@
+# CQ7: Global Research Focus. Matches the real, live query registered in
+# CSPARQL-Running-Example-For-Unifying-Interface/configuration.json ("cq7_global_research_focus") -
+# this file exists for documentation only and is not read at runtime by the runner harnesses.
+# Previously this file was a mistaken byte-identical copy of Q3.txt, missing CQ7's actual
+# hasLocation join against the static Organization.owl background data.
+REGISTER QUERY cq7 AS
+select ?organization ?location
+ from stream <http://localhost:9102/conference> [range 60000ms step 2s]
+ FROM <file:///D:/temporal-data-generator/StaticData/Organization.owl>
+where {
+?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .
+?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .
+?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .
+?organization <https://kracr.iiitd.edu.in/OWL2Bench#hasLocation> ?location .
+}

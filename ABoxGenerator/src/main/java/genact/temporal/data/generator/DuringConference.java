@@ -253,7 +253,7 @@ public class DuringConference {
 			eventDataModel.add(paperResource, conf.hasAuthor, authorResource);
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -265,6 +265,8 @@ public class DuringConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -367,7 +369,7 @@ public class DuringConference {
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.mentionsPerson, authorResource);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -379,6 +381,8 @@ public class DuringConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 		}
 
 		// Randomly select an author to tweet about the paper
@@ -476,7 +480,7 @@ public class DuringConference {
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.mentionsPerson, authorResource);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -488,6 +492,8 @@ public class DuringConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 		}
 
 		// Randomly select an author to tweet about the paper

@@ -1,0 +1,29 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://anonymous.com/Location#tena>
+        a       <https://anonymous.com/Location#City> .
+
+ace:conf0_1970  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf0_1970" ;
+        ace:hasEdition         "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ace:hasEventMode       ace:hybrid ;
+        ace:hasSession         ace:plenaryKeynote , ace:invitedKeynote ;
+        ace:hasWebsiteURL      "https://anonymous.com/conf0_1970.com" , "www.conf0_1970.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#tena> .
+
+ace:user14400  ace:attends  ace:conf0_1970 .
+
+ace:user25628  ace:attends  ace:conf0_1970 .
+
+ace:user1116  ace:attends  ace:conf0_1970 .
+
+ace:user1041  ace:attends  ace:conf0_1970 .
+
+ace:plenaryKeynote  ace:isPartOf  ace:conf0_1970 ;
+        ace:isPresentedAt  ace:plenaryKeynote .
+
+ace:user15703  ace:attends  ace:conf0_1970 .
+
+ace:invitedKeynote  ace:isPartOf  ace:conf0_1970 .

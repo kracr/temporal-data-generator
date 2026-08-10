@@ -1,0 +1,31 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user4666  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper11849 .
+
+ace:user91599  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user30243  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user44836  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1970 .
+
+ace:user6264  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:conf1_1970  ace:hasSession  ace:paperPresentationSession .
+
+ace:user46809  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper11849  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user44836 , ace:user32995 , ace:user91599 , ace:user6264 , ace:user46809 , ace:user4666 , ace:user30243 ;
+        ace:hasPaperDomain  ace:ai ;
+        ace:hasPaperTrack   "posterTrack" ;
+        ace:hasTitle        "Improved Impossible Differential Attacks against Round-Reduced LBlock." ;
+        ace:isAcceptedAt    ace:conf1_1970 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:user32995  a  <http://xmlns.com/foaf/0.1/Person> .

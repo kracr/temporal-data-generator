@@ -1,0 +1,11 @@
+{
+  "queries": {
+    "cq3_n5_c1": "REGISTER QUERY cq3n5a AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9101/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}",
+    "cq3_n5_c2": "REGISTER QUERY cq3n5b AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9102/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}",
+    "cq3_n5_c3": "REGISTER QUERY cq3n5c AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9103/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}",
+    "cq3_n5_c4": "REGISTER QUERY cq3n5d AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9104/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}",
+    "cq3_n5_c5": "REGISTER QUERY cq3n5e AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9105/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}"
+  },
+  "queryDuplicates": {},
+  "queriesUnsupported": []
+}

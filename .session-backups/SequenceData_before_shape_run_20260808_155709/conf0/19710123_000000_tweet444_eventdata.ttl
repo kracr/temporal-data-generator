@@ -1,0 +1,27 @@
+<https://anonymous.com/AcademicConferenceEvent#user22793>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4294>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user22793> , <https://anonymous.com/AcademicConferenceEvent#user20894> , <https://anonymous.com/AcademicConferenceEvent#user57977> , <https://anonymous.com/AcademicConferenceEvent#user21022> , <https://anonymous.com/AcademicConferenceEvent#user24721> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#knowledgeGraph> , <https://anonymous.com/AcademicConferenceEvent#ml> , <https://anonymous.com/AcademicConferenceEvent#ontology> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "demoTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Demonstration of multi-perspective exploratory search with the Discovery Hub web application." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user21022>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user57977>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user24721>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user20894>
+        a       <http://xmlns.com/foaf/0.1/Person> .

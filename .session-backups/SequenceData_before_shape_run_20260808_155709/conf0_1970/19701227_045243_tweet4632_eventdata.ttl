@@ -1,0 +1,30 @@
+<https://anonymous.com/AcademicConferenceEvent#paper197>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user4279> , <https://anonymous.com/AcademicConferenceEvent#user9088> , <https://anonymous.com/AcademicConferenceEvent#user2787> , <https://anonymous.com/AcademicConferenceEvent#user4502> , <https://anonymous.com/AcademicConferenceEvent#user5446> , <https://anonymous.com/AcademicConferenceEvent#user3141> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#ontology> , <https://anonymous.com/AcademicConferenceEvent#quantumComputing> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Fair Exchange." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5446>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4502>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4279>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user3141>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9088>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user2787>
+        a       <http://xmlns.com/foaf/0.1/Person> .

@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper11854 .
+
+ace:paper11854  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user95981 , ace:user45561 ;
+        ace:hasPaperDomain  ace:bigData , ace:aiForSocialGood , ace:artificialIntelligence ;
+        ace:hasPaperTrack   "demoTrack" ;
+        ace:hasTitle        "Recurrent Neural Network based Rule Sequence Model for Statistical Machine Translation." ;
+        ace:isAcceptedAt    ace:conf1_1970 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:user95981  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1970 .
+
+ace:user45561  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:conf1_1970  ace:hasSession  ace:paperPresentationSession .

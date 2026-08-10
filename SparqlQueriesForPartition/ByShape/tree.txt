@@ -1,0 +1,20 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ace: <https://anonymous.com/AcademicConferenceEvent#>
+
+# Tree shape (Figure 7): a root branching into two distinct children via the same predicate,
+# with at least one of those children itself branching further, e.g. conference -hasSession->
+# {paperPresentation, posterSession}, paperPresentation -presentedPaper-> {paperX, paperY}.
+CONSTRUCT {
+  ?root ?p1 ?child1.
+  ?root ?p1 ?child2.
+  ?child1 ?p2 ?grandchild1.
+  ?child1 ?p2 ?grandchild2.
+}
+WHERE {
+  ?root ?p1 ?child1.
+  ?root ?p1 ?child2.
+  ?child1 ?p2 ?grandchild1.
+  ?child1 ?p2 ?grandchild2.
+  FILTER(?child1 != ?child2)
+  FILTER(?grandchild1 != ?grandchild2)
+}

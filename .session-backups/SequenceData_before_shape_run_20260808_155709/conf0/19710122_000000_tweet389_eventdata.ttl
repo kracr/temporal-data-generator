@@ -1,0 +1,30 @@
+<https://anonymous.com/AcademicConferenceEvent#user21219>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user481>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4251>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user29163> , <https://anonymous.com/AcademicConferenceEvent#user481> , <https://anonymous.com/AcademicConferenceEvent#user11943> , <https://anonymous.com/AcademicConferenceEvent#user21219> , <https://anonymous.com/AcademicConferenceEvent#user9537> , <https://anonymous.com/AcademicConferenceEvent#user88041> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#nlp> , <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "applicationsTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Hybrid approach for reliable floor recognition method." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9537>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user11943>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user29163>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user88041>
+        a       <http://xmlns.com/foaf/0.1/Person> .

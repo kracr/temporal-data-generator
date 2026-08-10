@@ -1,0 +1,27 @@
+<https://anonymous.com/AcademicConferenceEvent#user933>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user762>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper1182>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user762> , <https://anonymous.com/AcademicConferenceEvent#user738> , <https://anonymous.com/AcademicConferenceEvent#user933> , <https://anonymous.com/AcademicConferenceEvent#user9864> , <https://anonymous.com/AcademicConferenceEvent#user4617> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#bigData> , <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "doctoralConsortiumTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Adversarial Point-of-Interest Recommendation." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user9864>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4617>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user738>
+        a       <http://xmlns.com/foaf/0.1/Person> .

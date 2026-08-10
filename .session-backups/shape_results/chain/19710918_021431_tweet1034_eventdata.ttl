@@ -1,0 +1,8 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:conf0_1971  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf0_1971" ;
+        ace:hasEdition         "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+ace:user44703  ace:attends  ace:conf0_1971 .

@@ -1,0 +1,16 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://anonymous.com/Location#jinshi>
+        a       <https://anonymous.com/Location#City> .
+
+ace:user1650  ace:hasRole  ace:generalChair .
+
+ace:conf0_1971  ace:hasGeneralChair  ace:user1650 ;
+        ace:hasLocalChair    ace:user28505 , ace:user9932 ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#jinshi> .
+
+ace:user9932  ace:hasRole  ace:localChair .
+
+ace:user28505  ace:hasRole  ace:localChair .

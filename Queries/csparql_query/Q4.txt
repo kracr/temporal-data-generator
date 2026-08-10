@@ -1,0 +1,21 @@
+# CQ4: Conference Match by Research Interests. Tier 3 (long window) in the paper's Table 1
+# tagging (Temporality=no, Dynamicity=yes, Timeliness=no) - structural/aggregate signal, not tied
+# to the tweet-timing sequence, so it gets 3x CQ3's window (Tier 2) rather than CQ3/CQ7's shared
+# ad hoc 60s baseline. Matches an author's own papers' research domains against conferences that
+# accepted papers in those same domains - "conferences that match this author's research interests".
+# Deliberately NOT using CQ8 (Funding Organizations, also Tier 3 in the paper): traced the real
+# hardcoded pipeline's VolunteerandStudentGrantAnnouncement and found it asserts a made-up property
+# ("getsStudentGrantFor", not the TBox's real "getsStudentGrant") whose object is the conference's
+# plain-string name, not an organization resource - there is no real funding-organization signal in
+# the actual generated data to query, so CQ8 would either be trivially empty or require extending
+# the data generator itself, out of scope here. hasAuthor/hasPaperDomain/isAcceptedAt, by contrast,
+# were confirmed (via grep of BeforeConference.java) to already be asserted correctly as resources.
+REGISTER QUERY cq4 AS
+select ?author ?domain ?conference
+ from stream <http://localhost:9103/conference> [range 180000ms step 6s]
+where {
+?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .
+?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .
+?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain .
+?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference .
+}

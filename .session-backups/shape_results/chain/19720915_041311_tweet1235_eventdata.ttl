@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user96199  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper4294 .
+
+ace:conf1_1972  ace:hasSession  ace:paperPresentationSession .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1972 .
+
+ace:user43505  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper4294  a            ace:ConferencePaper ;
+        ace:hasAuthor       ace:user43505 , ace:user96199 ;
+        ace:hasPaperDomain  ace:artificialIntelligence ;
+        ace:hasPaperTrack   "doctoralConsortiumTrack" ;
+        ace:hasTitle        "Multi-Task Deep Learning for Predicting Poverty From Satellite Images." ;
+        ace:isAcceptedAt    ace:conf1_1972 ;
+        ace:isPresentedAt   ace:paperPresentationSession .

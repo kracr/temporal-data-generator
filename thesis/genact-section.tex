@@ -1,0 +1,1205 @@
+% ============================================================
+\section{Experimental Evaluation}
+\label{sec:genact-evaluation}
+% ============================================================
+
+The objective of this evaluation is to investigate the utility of GenACT as a
+configurable data generator for experiments involving evolving knowledge and
+stream reasoning. In particular, the experiments examine whether the generated
+data can produce workloads with different temporal, structural, and reasoning
+characteristics, and whether these differences are observable when the data are
+processed by existing reasoning systems.
+
+GenACT is designed around three characteristics of evolving knowledge:
+\emph{temporality}, \emph{dynamicity}, and \emph{timeliness}. In addition to
+generating temporally ordered RDF data, it supports partitioning according to
+domain attributes, such as conferences and users, and according to structural
+graph patterns, such as stars, chains, and trees. Furthermore, the ACE ontology
+is available in OWL~2 EL, QL, RL, and DL variants. Consequently, GenACT
+provides several dimensions along which an experimental reasoning workload can
+be configured while retaining a common semantic domain.
+
+The evaluation is guided by the following questions:
+
+\begin{description}
+    \item[RQ1:] Can GenACT generate heterogeneous workloads from the same
+    underlying temporal domain?
+
+    \item[RQ2:] How does increasing the number of simultaneously active
+    conference streams affect continuous-query evaluation?
+
+    \item[RQ3:] Can GenACT expose workload differences arising from query
+    selectivity, joins, static background knowledge, and graph structure?
+
+    \item[RQ4:] Can the generated instance data also be used for
+    ontology-mediated reasoning in addition to continuous RDF stream
+    processing?
+\end{description}
+
+The objective is therefore not to establish that one reasoning system is faster
+than another. Rather, the experiments investigate whether GenACT can provide
+controlled and semantically meaningful workloads that exercise different
+properties of reasoning systems.
+
+
+% ============================================================
+\subsection{Patterns and Peaks Analysis}
+\label{subsec:genact-patterns-peaks}
+% ============================================================
+
+Before evaluating the generated data with reasoning systems, we first examine
+its temporal characteristics. A useful stream-reasoning workload should not
+only vary in size, but should also exhibit changes in event density over time.
+
+Figure~\ref{fig:patternsnpeaks} illustrates the weekly tweet-volume patterns
+generated for five conference streams. Each conference individually exhibits
+characteristic activity peaks associated with important phases of the
+conference lifecycle. These include, for example, early announcements, review
+notifications, and the period during which the conference itself is taking
+place.
+
+When the conference streams are merged, however, these peaks occur at
+different positions in time and overlap with one another. The resulting stream
+therefore exhibits a substantially more heterogeneous distribution of event
+volumes than any individual conference stream.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/owl2stream/peaks.png}
+    \caption{Tweet-volume patterns and peaks for five conferences:
+    individual conference streams (left) and the merged stream (right).}
+    \label{fig:patternsnpeaks}
+\end{figure}
+
+This property is important for the subsequent experiments. Increasing the
+number of active conferences does not simply replicate a uniform input stream.
+Instead, it combines conferences that may be in different stages of their
+lifecycle and therefore contribute different quantities of data at different
+points in time. As a result, a reasoning system is exposed to fluctuating
+workloads and temporally concentrated bursts of information.
+
+Thus, temporal workload intensity represents one configurable dimension of
+GenACT, complementing other dimensions such as the number of concurrent
+conference streams, the selected competency question, graph structure, and
+ontology expressivity.
+
+
+% ============================================================
+\subsection{Selection of Reasoning Systems}
+\label{subsec:genact-reasoners}
+% ============================================================
+
+The evaluation of GenACT presents an additional challenge because continuous
+stream processing and expressive ontology reasoning are not equally supported
+by existing systems. RDF stream processors typically focus on continuous
+SPARQL-style evaluation over windows of incoming data, whereas systems
+supporting more expressive OWL reasoning generally operate over static or
+incrementally maintained knowledge bases.
+
+This distinction is also reflected in existing evaluation frameworks. Highly
+expressive ontology-reasoning benchmarks are predominantly based on static
+datasets, whereas RDF stream-processing benchmarks mainly focus on continuous
+query evaluation. Consequently, there is currently no single mature system
+that simultaneously provides the complete range of stream-processing and OWL
+reasoning capabilities required to exercise all dimensions of GenACT.
+
+Other candidate stream-reasoning systems were also considered during the
+evaluation, but could not be executed reliably within our experimental setup.
+We therefore use two complementary systems: C-SPARQL2 for continuous RDF
+stream processing and RDFox for ontology-mediated reasoning with the OWL~2 RL
+variant of the ACE ontology.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Reasoning systems used to exercise complementary GenACT workloads.}
+    \label{tab:genact-reasoners}
+    \begin{tabular}{p{2.4cm}p{4.2cm}p{7.0cm}}
+        \toprule
+        \textbf{System} &
+        \textbf{Capability used} &
+        \textbf{Role in the evaluation} \\
+        \midrule
+
+        C-SPARQL2 &
+        Continuous SPARQL evaluation over sliding RDF windows &
+        Evaluates temporal workloads generated from multiple conference
+        streams and competency questions. It exercises window-based
+        processing, joins, selectivity, throughput, and increasing stream
+        volume. \\
+
+        \addlinespace
+
+        RDFox &
+        RDF storage and Datalog-based materialisation with support for
+        OWL~2 RL reasoning &
+        Evaluates the ontology-mediated dimension of GenACT by combining
+        generated instance data with the ACE-RL TBox and querying asserted
+        as well as entailed knowledge. \\
+
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+These evaluations are complementary rather than directly comparable.
+C-SPARQL2 repeatedly evaluates queries over changing windows of an RDF stream,
+whereas RDFox can materialise consequences of an ontology over a generated
+knowledge graph. Their purpose is therefore to demonstrate different dimensions
+of the workloads enabled by GenACT.
+
+
+% ============================================================
+\subsection{Evaluation with C-SPARQL2}
+\label{subsec:genact-csparql}
+% ============================================================
+
+We first evaluate GenACT as a source of continuous RDF stream workloads using
+C-SPARQL2. The generated RDF data are replayed directly from GenACT's
+\texttt{.ttl} files over TCP. Consequently, the experiments operate on the
+actual output of the generator rather than on a separately constructed
+benchmark dataset.
+
+The experiments were performed on a machine equipped with an Intel Core
+i7-14650HX processor with 16 cores and 24 threads, 16~GB of memory, and
+Windows~11.
+
+Each competency question is evaluated independently using a dedicated
+C-SPARQL2 instance. Executing several competency questions within one engine
+instance was found to interfere with their individual evaluation frequencies.
+We therefore isolate each query so that its behaviour reflects the corresponding
+GenACT workload rather than contention with unrelated queries.
+
+All thirteen competency questions are evaluated for
+$N\in\{1,2,5\}$ parallel conference streams. The number of conference streams
+therefore provides a common scalability dimension across the complete query
+workload.
+
+
+% ------------------------------------------------------------
+\subsubsection{Window Configuration}
+\label{subsubsec:genact-window-config}
+% ------------------------------------------------------------
+
+The competency questions capture different temporal characteristics and are
+therefore assigned to three window configurations, as shown in
+Table~\ref{tab:genact-window-tiers}.
+
+\begin{table}[htbp]
+\centering
+\caption{Window configurations used for the GenACT competency questions.}
+\label{tab:genact-window-tiers}
+\begin{tabular}{clrr}
+\toprule
+\textbf{Tier} & \textbf{Competency Questions} &
+\textbf{Range (ms)} & \textbf{Step (ms)} \\
+\midrule
+1 -- Short  & CQ1, CQ7, CQ13
+            & 60{,}000  & 2{,}000 \\
+
+2 -- Medium & CQ2, CQ3, CQ5, CQ6, CQ9, CQ10, CQ12
+            & 60{,}000  & 2{,}000 \\
+
+3 -- Long   & CQ4, CQ8, CQ11
+            & 180{,}000 & 6{,}000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The window \emph{range} determines how much stream history is available during
+one evaluation, whereas the \emph{step} determines how frequently the window
+advances and the query is re-evaluated.
+
+The relationship between evaluation latency and the configured step is
+particularly important. A latency value in isolation does not indicate whether
+a stream-processing engine is able to keep pace with the requested evaluation
+frequency. If the average evaluation time becomes larger than the window step,
+the engine requires more time to evaluate a window than the interval at which a
+new evaluation is requested.
+
+
+% ------------------------------------------------------------
+\subsubsection{Evaluation Metrics}
+\label{subsubsec:genact-metrics}
+% ------------------------------------------------------------
+
+For every run, we record four complementary measurements.
+
+\emph{Average latency} denotes the average wall-clock time required by
+C-SPARQL2 to evaluate one window. \emph{Throughput} reports the number of
+completed window evaluations per second of experiment runtime.
+\emph{Average memory} denotes the average JVM heap usage observed during the
+run. Finally, \emph{non-empty windows} reports the percentage of window
+evaluations that produce at least one result satisfying the complete query
+pattern.
+
+The non-empty-window measure provides important context when interpreting the
+performance measurements. An empty window is not an erroneous evaluation; it
+may simply correspond to a temporal interval in which the required combination
+of graph patterns is absent. Hence, reporting query activity together with
+latency and throughput helps distinguish computational cost from query
+selectivity.
+
+
+% ------------------------------------------------------------
+\subsubsection{Results}
+\label{subsubsec:genact-csparql-results}
+% ------------------------------------------------------------
+
+Table~\ref{tab:genact-csparql-results} reports the complete results for all
+thirteen competency questions under $N\in\{1,2,5\}$ parallel conference
+streams. The table provides the exact numerical measurements, while
+Figure~\ref{fig:genact-csparql-performance} provides a visual summary of
+latency, throughput, and memory consumption across the different workloads.
+
+\begin{table*}[htbp]
+\centering
+\caption{C-SPARQL2 results for all thirteen GenACT competency questions under
+$N\in\{1,2,5\}$ parallel conference streams.}
+\label{tab:genact-csparql-results}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cl rrr rrr rrr rrr}
+\toprule
+&
+&
+\multicolumn{3}{c}{\textbf{Latency (ms)}} &
+\multicolumn{3}{c}{\textbf{Throughput (win/s)}} &
+\multicolumn{3}{c}{\textbf{Memory (MB)}} &
+\multicolumn{3}{c}{\textbf{Non-empty (\%)}} \\
+\cmidrule(lr){3-5}
+\cmidrule(lr){6-8}
+\cmidrule(lr){9-11}
+\cmidrule(lr){12-14}
+
+\# & \textbf{Competency Question}
+& $N=1$ & $N=2$ & $N=5$
+& $N=1$ & $N=2$ & $N=5$
+& $N=1$ & $N=2$ & $N=5$
+& $N=1$ & $N=2$ & $N=5$ \\
+\midrule
+
+1 & Trending Topics
+& 814.3 & 683.4 & 1{,}739.2
+& 0.50 & 0.57 & 0.42
+& 73.2 & 72.6 & 112.6
+& 74.0 & 86.2 & 79.1 \\
+
+2 & Active Research Groups
+& 342.4 & 922.3 & 3{,}644.0
+& 0.50 & 0.86 & 0.30
+& 72.4 & 83.6 & 151.6
+& 100.0 & 100.0 & 100.0 \\
+
+3 & Publication Activities
+& 880.6 & 976.7 & 3{,}823.1
+& 0.51 & 0.86 & 0.28
+& 71.0 & 79.6 & 159.6
+& 74.5 & 68.2 & 51.4 \\
+
+4 & Conference Match
+& 1{,}194.1 & 1{,}671.7 & 5{,}330.7
+& 0.17 & 0.31 & 0.20
+& 75.4 & 98.0 & 181.4
+& 75.0 & 73.3 & 60.0 \\
+
+5 & Interdisciplinary Authors
+& 1{,}032.6 & 1{,}212.6 & 5{,}933.2
+& 0.48 & 0.84 & 0.18
+& 69.0 & 77.4 & 155.8
+& 72.9 & 66.7 & 45.5 \\
+
+6 & Session Popularity
+& 802.3 & 925.7 & 3{,}355.2
+& 0.51 & 0.86 & 0.31
+& 70.8 & 80.6 & 157.2
+& 24.0 & 11.6 & 20.0 \\
+
+7 & Global Research Focus
+& 1{,}000.2 & 1{,}108.6 & 3{,}652.7
+& 0.50 & 0.85 & 0.30
+& 93.8 & 103.6 & 168.9
+& 73.5 & 68.2 & 55.6 \\
+
+8 & Funding Organizations
+& 1{,}026.5 & 1{,}535.7 & 3{,}896.3
+& 0.18 & 0.32 & 0.28
+& 75.1 & 97.7 & 168.7
+& 25.0 & 20.0 & 20.6 \\
+
+9 & Networking Opportunities
+& 815.5 & 919.1 & 3{,}209.1
+& 0.51 & 0.86 & 0.34
+& 70.8 & 81.0 & 152.6
+& 100.0 & 100.0 & 97.7 \\
+
+10 & Collaboration Networks
+& 954.4 & 1{,}050.3 & 2{,}395.8
+& 0.49 & 0.84 & 0.46
+& 69.9 & 80.1 & 147.6
+& 73.5 & 69.4 & 56.0 \\
+
+11 & Non-academic Collaborators
+& 3{,}034.7 & 3{,}663.1 & 10{,}814.0
+& 0.16 & 0.28 & 0.09
+& 98.5 & 114.9 & 272.4
+& 76.5 & 66.7 & 68.8 \\
+
+12 & Geographical Distribution
+& 831.0 & 1{,}530.7 & 1{,}802.5
+& 0.51 & 0.68 & 0.59
+& 72.7 & 75.5 & 141.4
+& 100.0 & 100.0 & 90.8 \\
+
+13 & Platform Impact
+& 796.7 & 1{,}528.4 & 1{,}857.8
+& 0.51 & 0.68 & 0.60
+& 72.8 & 79.0 & 142.0
+& 74.0 & 67.1 & 59.4 \\
+
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+
+% ------------------------------------------------------------
+% PERFORMANCE VISUALISATION
+% ------------------------------------------------------------
+
+\begin{figure*}[htbp]
+\centering
+
+\begin{tikzpicture}
+
+\begin{groupplot}[
+    group style={
+        group size=3 by 1,
+        horizontal sep=1.2cm
+    },
+    width=0.34\textwidth,
+    height=0.58\textwidth,
+    enlargelimits=false,
+    axis on top,
+    xtick={0,1,2},
+    xticklabels={$N=1$,$N=2$,$N=5$},
+    ytick={0,1,2,3,4,5,6,7,8,9,10,11,12},
+    yticklabels={
+        CQ1,CQ2,CQ3,CQ4,CQ5,CQ6,CQ7,
+        CQ8,CQ9,CQ10,CQ11,CQ12,CQ13
+    },
+    y dir=reverse,
+    xlabel={Parallel conference streams},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    title style={font=\small\bfseries},
+    colorbar style={
+        tick label style={font=\scriptsize}
+    }
+]
+
+% LATENCY
+\nextgroupplot[
+    title={(a) Average latency},
+    ylabel={Competency question},
+    point meta min=0,
+    point meta max=11000,
+    colorbar,
+    colorbar style={
+        ylabel={Latency (ms)}
+    }
+]
+
+\addplot[
+    matrix plot*,
+    mesh/cols=3,
+    point meta=explicit
+]
+table[meta=value] {
+x y value
+0 0 814.3
+1 0 683.4
+2 0 1739.2
+0 1 342.4
+1 1 922.3
+2 1 3644.0
+0 2 880.6
+1 2 976.7
+2 2 3823.1
+0 3 1194.1
+1 3 1671.7
+2 3 5330.7
+0 4 1032.6
+1 4 1212.6
+2 4 5933.2
+0 5 802.3
+1 5 925.7
+2 5 3355.2
+0 6 1000.2
+1 6 1108.6
+2 6 3652.7
+0 7 1026.5
+1 7 1535.7
+2 7 3896.3
+0 8 815.5
+1 8 919.1
+2 8 3209.1
+0 9 954.4
+1 9 1050.3
+2 9 2395.8
+0 10 3034.7
+1 10 3663.1
+2 10 10814.0
+0 11 831.0
+1 11 1530.7
+2 11 1802.5
+0 12 796.7
+1 12 1528.4
+2 12 1857.8
+};
+
+% THROUGHPUT
+\nextgroupplot[
+    title={(b) Throughput},
+    yticklabels=\empty,
+    point meta min=0,
+    point meta max=0.9,
+    colorbar,
+    colorbar style={
+        ylabel={Windows/s}
+    }
+]
+
+\addplot[
+    matrix plot*,
+    mesh/cols=3,
+    point meta=explicit
+]
+table[meta=value] {
+x y value
+0 0 0.50
+1 0 0.57
+2 0 0.42
+0 1 0.50
+1 1 0.86
+2 1 0.30
+0 2 0.51
+1 2 0.86
+2 2 0.28
+0 3 0.17
+1 3 0.31
+2 3 0.20
+0 4 0.48
+1 4 0.84
+2 4 0.18
+0 5 0.51
+1 5 0.86
+2 5 0.31
+0 6 0.50
+1 6 0.85
+2 6 0.30
+0 7 0.18
+1 7 0.32
+2 7 0.28
+0 8 0.51
+1 8 0.86
+2 8 0.34
+0 9 0.49
+1 9 0.84
+2 9 0.46
+0 10 0.16
+1 10 0.28
+2 10 0.09
+0 11 0.51
+1 11 0.68
+2 11 0.59
+0 12 0.51
+1 12 0.68
+2 12 0.60
+};
+
+% MEMORY
+\nextgroupplot[
+    title={(c) Average memory},
+    yticklabels=\empty,
+    point meta min=60,
+    point meta max=280,
+    colorbar,
+    colorbar style={
+        ylabel={Memory (MB)}
+    }
+]
+
+\addplot[
+    matrix plot*,
+    mesh/cols=3,
+    point meta=explicit
+]
+table[meta=value] {
+x y value
+0 0 73.2
+1 0 72.6
+2 0 112.6
+0 1 72.4
+1 1 83.6
+2 1 151.6
+0 2 71.0
+1 2 79.6
+2 2 159.6
+0 3 75.4
+1 3 98.0
+2 3 181.4
+0 4 69.0
+1 4 77.4
+2 4 155.8
+0 5 70.8
+1 5 80.6
+2 5 157.2
+0 6 93.8
+1 6 103.6
+2 6 168.9
+0 7 75.1
+1 7 97.7
+2 7 168.7
+0 8 70.8
+1 8 81.0
+2 8 152.6
+0 9 69.9
+1 9 80.1
+2 9 147.6
+0 10 98.5
+1 10 114.9
+2 10 272.4
+0 11 72.7
+1 11 75.5
+2 11 141.4
+0 12 72.8
+1 12 79.0
+2 12 142.0
+};
+
+\end{groupplot}
+\end{tikzpicture}
+
+\caption{Visual summary of the C-SPARQL2 performance measurements for the
+thirteen GenACT competency-question workloads under one, two, and five
+parallel conference streams. The panels show average latency, throughput,
+and average JVM memory consumption.}
+\label{fig:genact-csparql-performance}
+
+\end{figure*}
+
+
+% ------------------------------------------------------------
+\subsubsection{Effect of Increasing Conference Streams}
+\label{subsubsec:genact-scaling}
+% ------------------------------------------------------------
+
+Table~\ref{tab:genact-csparql-results} and
+Figure~\ref{fig:genact-csparql-performance} show that increasing the number of
+simultaneously active conference streams creates a substantially more demanding
+workload for C-SPARQL2, particularly for the $N=5$ configuration.
+
+For example, CQ2 (\emph{Active Research Groups}) increases from an average
+latency of 342.4~ms for one conference stream to 3,644.0~ms for five streams.
+CQ3 (\emph{Publication Activities}) increases from 880.6~ms to 3,823.1~ms,
+while CQ5 (\emph{Interdisciplinary Authors}) increases from 1,032.6~ms to
+5,933.2~ms.
+
+The most computationally demanding workload is CQ11
+(\emph{Non-academic Collaborators}), whose average latency increases from
+3,034.7~ms at $N=1$ to 10,814.0~ms at $N=5$.
+
+A similar scaling effect can be observed in memory consumption. For CQ2,
+average memory usage increases from 72.4~MB to 151.6~MB, while CQ11 increases
+from 98.5~MB to 272.4~MB. The $N=5$ configurations generally require
+substantially more memory than their corresponding single-stream workloads.
+
+The results are not strictly monotonic for every metric at every intermediate
+configuration. For example, CQ1 has a lower measured latency for $N=2$ than
+for $N=1$, and several $N=2$ configurations exhibit higher measured throughput
+than the corresponding single-stream run. The relevant observation is therefore
+not that every intermediate measurement increases monotonically, but that the
+larger $N=5$ configuration produces a clear increase in processing pressure
+across the workload as a whole.
+
+
+% ------------------------------------------------------------
+\subsubsection{Workload Heterogeneity}
+\label{subsubsec:genact-workload-heterogeneity}
+% ------------------------------------------------------------
+
+The experiments also show that the number of streams alone does not determine
+the computational characteristics of a GenACT workload. Different competency
+questions exhibit markedly different behaviour even when evaluated using the
+same number of conference streams.
+
+For $N=1$, CQ2 requires an average of only 342.4~ms per evaluation, whereas
+CQ11 requires 3,034.7~ms. At $N=5$, CQ12
+(\emph{Geographical Distribution}) requires 1,802.5~ms, while CQ11 requires
+10,814.0~ms.
+
+The non-empty-window ratios provide further evidence of workload diversity.
+CQ2 produces results in 100\% of its evaluated windows for all three stream
+configurations. CQ9 similarly produces results in 100.0\%, 100.0\%, and
+97.7\% of its windows. By contrast, CQ6 produces non-empty results in only
+24.0\%, 11.6\%, and 20.0\% of the corresponding windows, while CQ8 remains
+around 20--25\%.
+
+Importantly, the increase in processing cost cannot therefore be attributed
+simply to whether a query produces results. CQ2 remains non-empty in every
+window while its average latency increases from 342.4~ms to 3,644.0~ms.
+Similarly, CQ9 remains almost completely non-empty while its latency increases
+from 815.5~ms to 3,209.1~ms.
+
+These differences arise from the semantic and structural characteristics of the
+competency questions. The queries introduce different graph patterns, joins,
+selectivities, and interactions with static background knowledge. Thus, the
+thirteen competency questions form a heterogeneous workload suite derived from
+a common temporal domain rather than thirteen variations of one uniform query.
+
+
+% ------------------------------------------------------------
+\subsubsection{Ability to Maintain the Window Schedule}
+\label{subsubsec:genact-window-pressure}
+% ------------------------------------------------------------
+
+The relationship between latency and the configured window step provides a
+particularly useful interpretation of these results. To make this relationship
+explicit, Figure~\ref{fig:genact-step-normalized-latency} reports the average
+evaluation latency normalized by the step assigned to each competency question:
+
+\[
+\rho =
+\frac{\text{average evaluation latency}}
+     {\text{window step}}.
+\]
+
+A value of $\rho < 1$ means that the average query evaluation completes within
+the interval before the next evaluation is requested. A value of $\rho > 1$
+indicates that evaluation requires more time than the configured step.
+
+\begin{figure}[htbp]
+\centering
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=\textwidth,
+    height=7.2cm,
+    ybar,
+    bar width=2.3pt,
+    ymin=0,
+    ylabel={Latency / window step},
+    xlabel={Competency question},
+    symbolic x coords={
+        CQ1,CQ2,CQ3,CQ4,CQ5,CQ6,CQ7,
+        CQ8,CQ9,CQ10,CQ11,CQ12,CQ13
+    },
+    xtick=data,
+    x tick label style={
+        rotate=45,
+        anchor=east,
+        font=\scriptsize
+    },
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    legend style={
+        at={(0.5,1.12)},
+        anchor=south,
+        legend columns=3,
+        font=\small
+    },
+    enlarge x limits=0.03
+]
+
+% N = 1
+\addplot coordinates {
+(CQ1,0.407)
+(CQ2,0.171)
+(CQ3,0.440)
+(CQ4,0.199)
+(CQ5,0.516)
+(CQ6,0.401)
+(CQ7,0.500)
+(CQ8,0.171)
+(CQ9,0.408)
+(CQ10,0.477)
+(CQ11,0.506)
+(CQ12,0.416)
+(CQ13,0.398)
+};
+
+% N = 2
+\addplot coordinates {
+(CQ1,0.342)
+(CQ2,0.461)
+(CQ3,0.488)
+(CQ4,0.279)
+(CQ5,0.606)
+(CQ6,0.463)
+(CQ7,0.554)
+(CQ8,0.256)
+(CQ9,0.460)
+(CQ10,0.525)
+(CQ11,0.611)
+(CQ12,0.765)
+(CQ13,0.764)
+};
+
+% N = 5
+\addplot coordinates {
+(CQ1,0.870)
+(CQ2,1.822)
+(CQ3,1.912)
+(CQ4,0.888)
+(CQ5,2.967)
+(CQ6,1.678)
+(CQ7,1.826)
+(CQ8,0.649)
+(CQ9,1.605)
+(CQ10,1.198)
+(CQ11,1.802)
+(CQ12,0.901)
+(CQ13,0.929)
+};
+
+% rho = 1 boundary
+\addplot[
+    domain=-1:13,
+    samples=2,
+    dashed,
+    thick
+] {1};
+
+\legend{$N=1$, $N=2$, $N=5$}
+
+\end{axis}
+
+\end{tikzpicture}
+
+\caption{Average C-SPARQL2 evaluation latency normalized by each competency
+question's configured window step. Values above $1$ indicate that an average
+evaluation requires more time than the interval between two successive window
+evaluations.}
+\label{fig:genact-step-normalized-latency}
+
+\end{figure}
+
+For $N=1$ and $N=2$, all competency questions remain below the corresponding
+window-step threshold. At $N=5$, however, CQ2, CQ3, CQ5, CQ6, CQ7, CQ9,
+and CQ10 exceed their 2~s step. CQ11 also exceeds its longer 6~s step,
+reaching an average evaluation latency of 10.814~s.
+
+This observation is more informative than an increase in latency alone. It
+shows that GenACT can produce workloads that move a stream-processing engine
+between different operational regimes: from one in which the requested
+continuous-query schedule can be maintained to one in which the engine begins
+to fall behind the rate at which evaluations are requested.
+
+
+% ============================================================
+\subsection{Structural Workloads}
+\label{subsec:genact-structural-workloads}
+% ============================================================
+
+The number of concurrent conferences represents only one way of varying a
+GenACT workload. The generated data can additionally be partitioned according
+to domain attributes or according to its graph structure.
+
+Attribute-based partitioning can, for example, create individual streams for
+conferences, users, organisations, research domains, or other entities present
+in the generated data. Structural partitioning instead identifies graph
+patterns such as stars, chains, and trees.
+
+These patterns represent different connectivity structures. Star-shaped graphs
+contain a central node connected to several related entities, chain structures
+capture sequences of relations, and tree structures represent hierarchical
+relationships. Such differences may produce different join and reasoning
+characteristics even for datasets of similar size.
+
+To validate this functionality, the structural \texttt{CONSTRUCT} queries were
+executed against the complete production EventData corpus rather than a
+selected sample. The corpus contains 26,834 generated EventData files.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Structural patterns identified in the generated EventData corpus.}
+    \label{tab:genact-shapes}
+    \begin{tabular}{lrr}
+        \toprule
+        \textbf{Shape} &
+        \textbf{Matching Files} &
+        \textbf{Coverage} \\
+        \midrule
+        Star  & 26{,}834 / 26{,}834 & 100.0\% \\
+        Chain & 24{,}966 / 26{,}834 & 93.0\% \\
+        Tree  & 0 / 26{,}834 & 0.0\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+All files satisfy the star-pattern query, while 24,966 files, corresponding to
+approximately 93\% of the corpus, also satisfy the chain pattern. No file
+satisfies the tree pattern. This is not a sampling artefact: the hardcoded
+generator's per-tweet-template design allows one file to assert several
+objects under a single predicate, but no template gives one of those objects a
+further branching relationship within the same file, so a genuine tree is
+structurally unreachable by this pipeline rather than merely rare.
+
+Structural partitioning therefore provides another workload axis that is
+independent of simply increasing the amount of data. A researcher can construct
+streams dominated by particular graph topologies and investigate whether a
+reasoning system behaves differently for highly centralised, sequential, or
+hierarchical input structures.
+
+
+% ============================================================
+\subsection{Ontology-Mediated Workloads with RDFox}
+\label{subsec:genact-rdfox}
+% ============================================================
+
+The C-SPARQL2 experiments demonstrate the utility of GenACT for continuous RDF
+stream processing, but they do not exploit the OWL axioms represented by the
+ACE ontology. C-SPARQL2 evaluates graph patterns over explicitly available
+triples and therefore does not exercise the full ontology-mediated dimension
+of GenACT.
+
+This distinction is important because GenACT provides an ACE ontology for each
+of the OWL~2 EL, QL, RL, and DL profiles. The generated instance data can
+therefore be combined with TBoxes of different expressivity depending on the
+reasoning capabilities of the system under evaluation.
+
+To demonstrate this dimension, we additionally evaluate GenACT using RDFox.
+RDFox supports Datalog-based materialisation and can be used with the OWL~2 RL
+variant of the ACE ontology. The generated ABox can therefore be loaded
+together with the ACE-RL TBox, materialised, and subsequently queried over
+knowledge containing both explicitly asserted and inferred facts.
+
+A preliminary execution without an ontology or rules is insufficient for this
+purpose: in that configuration RDFox behaves essentially as an RDF store.
+The relevant evaluation therefore uses the reasoning capabilities provided by
+materialisation over the ACE-RL ontology.
+
+The RDFox experiment addresses a complementary question to the C-SPARQL2
+experiment. Instead of asking how a system behaves while repeatedly evaluating
+sliding windows, it investigates whether GenACT-generated data can be used to
+construct ontology-mediated workloads in which reasoning produces additional
+entailed knowledge.
+
+The experimental configuration is summarized in
+Table~\ref{tab:genact-rdfox-setup}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Configuration of the RDFox evaluation.}
+    \label{tab:genact-rdfox-setup}
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Parameter} & \textbf{Configuration} \\
+        \midrule
+        Reasoner             & RDFox \\
+        Ontology             & ACE OWL~2 RL \\
+        Instance data        & GenACT-generated conference data \\
+        Reasoning strategy   & Materialisation \\
+        Query semantics      & Asserted and entailed knowledge \\
+        Conference scale     & $N \in \{1, 2, 5\}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+For each scale $N$, the generated ABox was first imported into a fresh,
+rule-less RDFox store to obtain a clean asserted-triple count. The ACE-RL
+TBox was then imported into the same store, which triggers RDFox's real
+incremental Datalog materialisation rather than a plain bulk triple load.
+Table~\ref{tab:genact-rdfox-results} reports the results.
+
+\begin{table}[htbp]
+    \centering
+    \caption{RDFox results over GenACT-generated data using the ACE-RL
+    ontology.}
+    \label{tab:genact-rdfox-results}
+    \begin{tabular}{rrrrr}
+        \toprule
+        \textbf{Scale} &
+        \textbf{Asserted} &
+        \textbf{Materialised} &
+        \textbf{Materialisation} &
+        \textbf{Query} \\
+        &
+        \textbf{Triples} &
+        \textbf{Triples} &
+        \textbf{Time} &
+        \textbf{Latency} \\
+        \midrule
+        $N=1$ & 57{,}382  & 57{,}974  & 0.071\,s & $<$1\,ms \\
+        $N=2$ & 97{,}787  & 98{,}804  & 0.095\,s & $<$1\,ms \\
+        $N=5$ & 153{,}143 & 154{,}537 & 0.084\,s & $<$1\,ms \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Both the asserted and the materialised triple counts scale with $N$ as
+expected. Materialisation time, by contrast, stays under 100~ms throughout and
+does not grow monotonically with corpus size (0.071~s, 0.095~s, and 0.084~s
+for $N=1$, $N=2$, and $N=5$, respectively). Query latency against the
+materialised store is below one millisecond at every scale: the store is
+RAM-resident and remains small enough that materialisation, not querying,
+dominates total cost.
+
+\subsubsection{Windowed Evaluation Across All Competency Questions}
+\label{subsubsec:genact-rdfox-windowed}
+
+The bulk result above loads an entire conference's data once and materialises
+over it, which is not directly comparable to the C-SPARQL2 evaluation's
+repeated per-window evaluation. To obtain a genuine window-for-window
+comparison, all thirteen competency questions were additionally evaluated
+against RDFox using the same sliding-window definitions as
+Table~\ref{tab:genact-window-tiers} (same range and step per tier, and the
+same replay-rate scaling used to pace the C-SPARQL2 streams), but computed
+directly from the real timestamps embedded in the generated files rather than
+from a live TCP replay. This was necessary because the original paper's own
+RDFox streaming harness -- built on an embedded JNI client library from RDFox
+7.1a -- no longer matches the API or native library of the RDFox~7.6
+installation used throughout this thesis, and porting it surfaced a further,
+unrelated defect: the shared TCP replay/receiver code (used by both engines)
+only flushes accumulated window data from inside its read loop, so any data
+received after the last scheduled flush is silently never committed once the
+stream ends. Rather than continue patching 2015-era code three layers deep,
+a new, independent pipeline was built directly on the RDFox~7.6 installation:
+for each window, files whose embedded timestamp falls in that window's range
+are incrementally added to the store, files that have fallen out of range are
+incrementally deleted, and the query is re-evaluated -- with the ACE-RL TBox
+and, where relevant, the static organisation background data loaded once at
+the start of each run, so every window benefits from real, incrementally
+maintained OWL~2~RL materialisation rather than a cold reload. As with
+C-SPARQL2, each of $N=1$, 2, and 5 conference streams is evaluated
+independently and the results aggregated, rather than merging conferences
+onto one timeline; unlike an earlier pass of this experiment, the $N$
+conference streams now run as $N$ genuinely concurrent RDFox processes
+(one real OS process per conference, launched at the same time and awaited
+together), matching how C-SPARQL2's own $N$ parallel engine instances
+actually compete for the same CPU and memory, rather than one conference
+being evaluated after another.
+
+\begin{table*}[htbp]
+\centering
+\caption{RDFox windowed evaluation (with OWL~2~RL materialisation) for all thirteen GenACT competency questions under $N\in\{1,2,5\}$ parallel conference streams. Latency is real query evaluation time reported by RDFox; \emph{$<$1\,ms} values round to 0.000\,s at RDFox's own reporting precision.}
+\label{tab:genact-rdfox-windowed}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cl rrr rrr}
+\toprule
+& & \multicolumn{3}{c}{\textbf{Latency (ms)}} & \multicolumn{3}{c}{\textbf{Non-empty (\%)}} \\
+\cmidrule(lr){3-5}
+\cmidrule(lr){6-8}
+\# & \textbf{Competency Question} & $N=1$ & $N=2$ & $N=5$ & $N=1$ & $N=2$ & $N=5$ \\
+\midrule
+1  & Trending Topics            & 17.5 & 17.8 & 18.5 & 59.3 & 59.3 & 59.0 \\
+2  & Active Research Groups     & 6.6  & 7.2  & 5.5  & 72.9 & 72.9 & 70.0 \\
+3  & Publication Activities     & $<$1 & $<$1 & $<$1 & 30.5 & 30.5 & 25.7 \\
+4  & Conference Match           & 0.8  & 0.7  & 0.8  & 60.0 & 60.0 & 59.6 \\
+5  & Interdisciplinary Authors  & 0.8  & 0.6  & 0.6  & 57.6 & 56.8 & 54.7 \\
+6  & Session Popularity         & $<$1 & $<$1 & $<$1 & 16.9 & 16.9 & 16.3 \\
+7  & Global Research Focus      & $<$1 & $<$1 & $<$1 & 30.5 & 30.5 & 25.7 \\
+8  & Funding Organizations      & $<$1 & $<$1 & $<$1 & 25.0 & 25.0 & 23.1 \\
+9  & Networking Opportunities   & $<$1 & $<$1 & $<$1 & 72.9 & 72.9 & 70.0 \\
+10 & Collaboration Networks     & 0.8  & 0.9  & 0.8  & 57.6 & 57.6 & 55.7 \\
+11 & Non-academic Collaborators & $<$1 & $<$1 & $<$1 & 60.0 & 60.0 & 59.6 \\
+12 & Geographical Distribution  & 26.1 & 45.9 & 32.1 & 72.9 & 72.9 & 70.0 \\
+13 & Platform Impact            & 15.8 & 19.5 & 13.1 & 59.3 & 59.3 & 59.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+Two things stand out against the C-SPARQL2 table
+(Table~\ref{tab:genact-csparql-results}), and both survived moving from
+sequential to genuinely concurrent execution of the $N$ conference streams.
+First, non-empty rates stay exactly flat as $N$ grows within a stream count
+(e.g.\ CQ2: 72.9\,\%~$\to$~72.9\,\%~$\to$~70.0\,\%; CQ9:
+72.9\,\%~$\to$~72.9\,\%~$\to$~70.0\,\%), rather than falling the way
+C-SPARQL2's do -- expected, since non-empty rate is a property of the window
+contents themselves (computed once per conference, independent of how many
+other conferences happen to run alongside it), not of execution timing.
+Second, and less expected: latency does \emph{not} show the same clear,
+monotonic climb with $N$ that C-SPARQL2 exhibits, even now that the $N$
+conference streams are real, concurrently-running RDFox processes competing
+for the same CPU and memory. A few CQs move in the expected direction (CQ1:
+17.5\,ms~$\to$~17.8~$\to$~18.5), but others move the opposite way (CQ2:
+6.6~$\to$~7.2~$\to$~5.5\,ms) or non-monotonically (CQ12: 26.1~$\to$~45.9~$\to$~32.1\,ms).
+The explanation was checked empirically rather than assumed: monitoring a
+single RDFox process's live thread count (via the operating system's process
+table, polled every 50\,ms from launch to exit) showed it using up to 29
+threads on its own -- already \emph{more} than the 24 logical processors this
+machine has, for a single instance. RDFox's own internal parallelism therefore
+already oversubscribes this machine's hardware at $N=1$, before any
+concurrent conference streams are added. Raising $N$ to 2 or 5 multiplies the
+total number of threads contending for the same 24 real ones (up to
+$5\times29=145$ at $N=5$), but since the baseline is already oversubscribed,
+the added contention is not a clean, proportional function of $N$: which run
+happens to get favourable operating-system scheduling on a given pass becomes
+close to non-deterministic, which is consistent with the non-monotonic
+pattern observed above. This is a real property of running RDFox at this
+scale on this hardware, not a flaw in the measurement. Non-empty rates broadly agree with C-SPARQL2's own ranking of
+which competency questions are selective (CQ6, CQ8 sparse; CQ2, CQ9 dense),
+which is expected since both evaluate the same triple patterns against the
+same underlying corpus -- the exact percentages differ because the two
+systems compute window membership differently (live TCP arrival time for
+C-SPARQL2 versus the files' own embedded timestamps here) and because RDFox
+is additionally answering over RL-entailed facts, not only asserted ones.
+
+The purpose of the RDFox evaluation is not to establish that one system is
+faster than the other -- the two use fundamentally different execution models,
+and the windowed comparison above is offered in the same spirit as
+C-SPARQL2's own table, not as a claim of superiority. What the RDFox
+experiments add that C-SPARQL2 cannot is the ontology-mediated dimension: the
+same generated conference data, evaluated under real OWL~2~RL materialisation,
+with results reflecting both explicitly asserted and inferred knowledge.
+
+
+% ============================================================
+\subsection{GenACT as a Configurable Workload Generator}
+\label{subsec:genact-workload-generator}
+% ============================================================
+
+Taken together, the experiments show that GenACT exposes several independent
+dimensions for constructing reasoning workloads.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Principal workload dimensions exposed by GenACT.}
+    \label{tab:genact-workload-dimensions}
+    \begin{tabular}{p{3.2cm}p{4.0cm}p{6.2cm}}
+        \toprule
+        \textbf{Dimension} &
+        \textbf{Configuration} &
+        \textbf{Resulting workload characteristic} \\
+        \midrule
+
+        Stream volume &
+        Number of simultaneous conferences &
+        Amount of temporally active knowledge that must be processed \\
+
+        Temporal behaviour &
+        Event lifecycle, peaks, window range, and step &
+        Event bursts, temporal density, and required evaluation frequency \\
+
+        Query workload &
+        Thirteen competency questions &
+        Different joins, selectivities, and result densities \\
+
+        Static/stream interaction &
+        Background knowledge combined with generated streams &
+        Joins and enrichment across static and evolving knowledge \\
+
+        Entity partitioning &
+        Conference, user, organisation, research domain, etc. &
+        Different numbers and compositions of independent streams \\
+
+        Graph topology &
+        Star, chain, and tree partitions &
+        Different connectivity and join structures \\
+
+        Ontology expressivity &
+        ACE ontologies for OWL~2 EL, QL, RL, and DL &
+        Different ontology-mediated reasoning requirements \\
+
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+This configurability is more significant than any individual latency
+measurement. A workload generator that only increases the number of triples
+primarily varies dataset size. GenACT additionally allows the nature of the
+workload itself to be changed while preserving a coherent domain model.
+
+For example, an experiment may hold the competency question fixed and increase
+the number of concurrently active conference streams. Another may maintain a
+similar data scale but select a different competency question and therefore a
+different join and selectivity pattern. Structural partitioning may be used to
+construct streams with different graph topologies, while ontology profile
+selection allows the generated ABox to participate in reasoning tasks with
+different levels of expressivity.
+
+GenACT therefore provides a common experimental basis for workload dimensions
+that are often studied separately: temporal stream processing, static-background
+enrichment, structural graph variation, and ontology-mediated reasoning.
+
+
+% ============================================================
+\subsection{Discussion}
+\label{subsec:genact-evaluation-discussion}
+% ============================================================
+
+The evaluation demonstrates that GenACT provides both \emph{workload
+scalability} and \emph{workload heterogeneity}.
+
+The C-SPARQL2 experiments show that increasing the number of concurrently active
+conference streams can substantially increase latency and memory consumption.
+For the largest configuration, several competency questions require more time
+for an average evaluation than their configured window step, indicating that
+the engine can no longer maintain the requested continuous-query schedule.
+
+At the same time, workload characteristics differ considerably between
+competency questions even for a fixed number of streams. Some competency
+questions produce matching results in almost every window, whereas others are
+substantially more selective. Their latency and memory characteristics also
+differ markedly. These effects arise from meaningful semantic differences in
+the query workload rather than from arbitrary modifications to RDF triples.
+
+The temporal peak analysis provides another dimension. Multiple conference
+streams are not uniform copies of one another: conferences can be in different
+phases of their lifecycle and therefore contribute different event volumes at
+different times. Merging them results in fluctuating stream intensity and
+temporally concentrated workloads.
+
+Structural partitioning further demonstrates that the generated corpus need not
+be treated as one monolithic stream. Streams may be organised according to
+entities or graph topology, creating alternative workloads from the same
+underlying generated domain.
+
+Finally, the RDFox evaluation complements the stream-processing experiments by
+exercising the ontology-mediated dimension of GenACT. This distinction is
+particularly relevant given the present separation between systems optimised
+for continuous RDF stream processing and systems supporting more expressive OWL
+reasoning. By generating both temporally rich instance data and corresponding
+OWL~2 ontologies, GenACT can support experiments on both sides of this
+landscape.
+
+Consequently, GenACT should not be viewed solely as a mechanism for producing
+synthetic RDF triples. Its contribution lies in providing a configurable
+experimental environment in which stream volume, temporal behaviour, query
+semantics, graph topology, stream composition, and reasoning expressivity can
+be varied while retaining a common and interpretable semantic domain.
+
+
+% ============================================================
+\subsection{Summary}
+\label{subsec:genact-evaluation-summary}
+% ============================================================
+
+The experimental evaluation highlights four properties of GenACT.
+
+First, the generated workloads are \emph{temporally heterogeneous}. Individual
+conference streams exhibit event-driven activity peaks, while combining
+multiple conferences produces changing stream volumes and overlapping bursts.
+
+Second, the workloads are \emph{scalable}. Increasing the number of concurrent
+conference streams substantially increases the processing burden and, for some
+configurations, causes continuous-query evaluation to exceed the configured
+window step.
+
+Third, the workloads are \emph{structurally and semantically diverse}. The
+thirteen competency questions exercise different joins, selectivities, static
+background knowledge, and result densities, while attribute- and shape-based
+partitioning provide additional mechanisms for constructing alternative stream
+structures.
+
+Finally, the generated data support \emph{different levels of reasoning
+expressivity}. C-SPARQL2 demonstrates continuous RDF stream processing over
+GenACT workloads, while the RDFox evaluation uses the ACE OWL~2 RL ontology to
+exercise ontology-mediated materialisation.
+
+Together, these properties demonstrate the usefulness of GenACT as a
+configurable workload generator for studying reasoning over evolving knowledge.

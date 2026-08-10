@@ -1,0 +1,24 @@
+<https://anonymous.com/AcademicConferenceEvent#user13175>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user6035>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4451>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper4293>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user4451> , <https://anonymous.com/AcademicConferenceEvent#user13175> , <https://anonymous.com/AcademicConferenceEvent#user6035> , <https://anonymous.com/AcademicConferenceEvent#user24964> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#bioTech> , <https://anonymous.com/AcademicConferenceEvent#neurology> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "applicationsTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Reverse Nearest Neighbors in Large Graphs." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user24964>
+        a       <http://xmlns.com/foaf/0.1/Person> .

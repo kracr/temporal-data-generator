@@ -1,0 +1,31 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper11859 .
+
+ace:user46296  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user16777  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user72849  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user11572  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper11859  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user16777 , ace:user72849 , ace:user22026 , ace:user46296 , ace:user27739 , ace:user23955 , ace:user11572 ;
+        ace:hasPaperDomain  ace:aiForSocialGood , ace:quantumComputing , ace:artificialIntelligence ;
+        ace:hasPaperTrack   "workshopTrack" ;
+        ace:hasTitle        "A Programmer&apos;s Text Editor for a Logical Theory: The SUMOjEdit Editor (System Description)." ;
+        ace:isAcceptedAt    ace:conf0_1972 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf0_1972 .
+
+ace:user22026  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user23955  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user27739  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:conf0_1972  ace:hasSession  ace:paperPresentationSession .

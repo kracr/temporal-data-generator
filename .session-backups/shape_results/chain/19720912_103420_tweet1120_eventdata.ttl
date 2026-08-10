@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:paper10523  a           ace:ConferencePaper ;
+        ace:hasAuthor       ace:user12933 , ace:user89801 ;
+        ace:hasPaperDomain  ace:bigData , ace:naturalLanguageProcessing , ace:blockchain ;
+        ace:hasPaperTrack   "demoTrack" ;
+        ace:hasTitle        "Integrating Open Sources and Relational Data with SPARQL." ;
+        ace:isAcceptedAt    ace:conf0_1972 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper10523 .
+
+ace:user12933  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user89801  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf0_1972 .
+
+ace:conf0_1972  ace:hasSession  ace:paperPresentationSession .

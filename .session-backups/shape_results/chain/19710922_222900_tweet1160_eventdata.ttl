@@ -1,0 +1,23 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper4282 .
+
+ace:user41810  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user560  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paper4282  a            ace:ConferencePaper ;
+        ace:hasAuthor       ace:user560 , ace:user2896 , ace:user41810 ;
+        ace:hasPaperDomain  ace:ontology , ace:aiForSocialGood , ace:linkedData ;
+        ace:hasPaperTrack   "researchTrack" ;
+        ace:hasTitle        "Comparing and Evaluating Semantic Data Automatically Extracted from Text." ;
+        ace:isAcceptedAt    ace:conf0_1971 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:conf0_1971  ace:hasSession  ace:paperPresentationSession .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf0_1971 .
+
+ace:user2896  a  <http://xmlns.com/foaf/0.1/Person> .

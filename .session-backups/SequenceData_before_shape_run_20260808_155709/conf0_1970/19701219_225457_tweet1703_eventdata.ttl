@@ -1,0 +1,27 @@
+<https://anonymous.com/AcademicConferenceEvent#user323>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13967>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user2454>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper196>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user2454> , <https://anonymous.com/AcademicConferenceEvent#user323> , <https://anonymous.com/AcademicConferenceEvent#user13967> , <https://anonymous.com/AcademicConferenceEvent#user7209> , <https://anonymous.com/AcademicConferenceEvent#user6262> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#quantumComputing> , <https://anonymous.com/AcademicConferenceEvent#nlp> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "researchTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Where are you?: human activity recognition with smartphone sensor data." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user7209>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user6262>
+        a       <http://xmlns.com/foaf/0.1/Person> .

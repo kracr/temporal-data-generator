@@ -1,0 +1,8 @@
+{
+  "queries": {
+    "cq3_publication_activity": "REGISTER QUERY cq3 AS\nselect ?paper ?author ?organization\n from stream <http://localhost:9101/conference> [range 60000ms step 2s]\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n}",
+    "cq7_global_research_focus": "REGISTER QUERY cq7 AS\nselect ?organization ?location\n from stream <http://localhost:9102/conference> [range 60000ms step 2s]\n FROM <file:///D:/temporal-data-generator/StaticData/Organization.owl>\nwhere {\n?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> .\n?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author .\n?author <https://anonymous.com/Tweet#hasAffiliation> ?organization .\n?organization <https://kracr.iiitd.edu.in/OWL2Bench#hasLocation> ?location .\n}"
+  },
+  "queryDuplicates": {},
+  "queriesUnsupported": []
+}

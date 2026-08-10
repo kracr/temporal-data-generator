@@ -1,0 +1,33 @@
+<https://anonymous.com/AcademicConferenceEvent#user4666>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user91599>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user30243>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44836>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user6264>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46809>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper11849>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user44836> , <https://anonymous.com/AcademicConferenceEvent#user32995> , <https://anonymous.com/AcademicConferenceEvent#user91599> , <https://anonymous.com/AcademicConferenceEvent#user6264> , <https://anonymous.com/AcademicConferenceEvent#user46809> , <https://anonymous.com/AcademicConferenceEvent#user4666> , <https://anonymous.com/AcademicConferenceEvent#user30243> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#ai> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "posterTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Improved Impossible Differential Attacks against Round-Reduced LBlock." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1972> .
+
+<https://anonymous.com/AcademicConferenceEvent#user32995>
+        a       <http://xmlns.com/foaf/0.1/Person> .

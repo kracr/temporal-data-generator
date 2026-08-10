@@ -1,0 +1,1724 @@
+[
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 43.42144775390625,
+    "timestamp": 1786221375703
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 44.384674072265625,
+    "timestamp": 1786221381778
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 44.45531463623047,
+    "timestamp": 1786221387657
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 44.52397155761719,
+    "timestamp": 1786221393638
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 45.34368133544922,
+    "timestamp": 1786221399672
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 45.364776611328125,
+    "timestamp": 1786221405654
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 45.53511047363281,
+    "timestamp": 1786221411672
+  },
+  {
+    "queryId": "cq4_k1_u1",
+    "variableBindings": [
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user11878",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user42097",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user66470",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user44315",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user2474",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user31676",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1970"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1972"
+        ]
+      },
+      {
+        "variableValuesAsString": [
+          "https://anonymous.com/AcademicConferenceEvent#user15067",
+          "https://anonymous.com/AcademicConferenceEvent#semanticWeb",
+          "https://anonymous.com/AcademicConferenceEvent#conf1_1971"
+        ]
+      }
+    ],
+    "memoryConsumptionInMB": 46.35021209716797,
+    "timestamp": 1786221417691
+  }
+]

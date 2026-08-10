@@ -9,7 +9,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -54,10 +53,10 @@ public class BeforeConference {
 
 		EarlyConferenceAnnouncement(mainConfAnnouncementTime, beforeConferenceEnd);
 
-		for (int i = 0; i < ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+		for (int i = 0; i < random.nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
 			LocalDateTime excitementAnnouncementTime = getRandomTimestamp(
-					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(7, 14)),
-					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(22, 30)));
+					mainConfAnnouncementTime.plusDays(random.nextInt(7, 14)),
+					mainConfAnnouncementTime.plusDays(random.nextInt(22, 30)));
 			ExcitementAboutTheConferenceAnnouncement(excitementAnnouncementTime);
 		}
 
@@ -66,21 +65,21 @@ public class BeforeConference {
 		while (paperSubmissionReminderTime.isBefore(midConferenceTime.minusDays(45))) {
 			PaperSubmissionReminder(paperSubmissionReminderTime);
 			paperSubmissionReminderTime = paperSubmissionReminderTime
-					.plusDays(ThreadLocalRandom.current().nextInt(14, 22)); // Randomize the interval
+					.plusDays(random.nextInt(14, 22)); // Randomize the interval
 		}
 
 		// Notification Peak
 		// Announcements about accepted papers and insights based on them
 		for (int i = 0; i < conf.notification_peak; i++) {
 			AcceptedPaperNotification(acceptedPaperNotificationTime);
-			acceptedPaperNotificationTime = midConferenceTime.plusDays(ThreadLocalRandom.current().nextInt(1, 4)); // Randomize
+			acceptedPaperNotificationTime = midConferenceTime.plusDays(random.nextInt(1, 4)); // Randomize
 																													// the
 																													// interval
 		}
 
-		for (int i = 0; i < ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+		for (int i = 0; i < random.nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
 			LocalDateTime insightsTime = getRandomTimestamp(midConferenceTime,
-					midConferenceTime.plusDays(ThreadLocalRandom.current().nextInt(1, 7)));
+					midConferenceTime.plusDays(random.nextInt(1, 7)));
 			InsightsBasedOnAcceptedPapers(insightsTime);
 		}
 
@@ -88,7 +87,7 @@ public class BeforeConference {
 		LocalDateTime regReminderTime = midConferenceTime.plusWeeks(1);
 		while (regReminderTime.isBefore(beforeConferenceEnd)) {
 			RegistrationReminder(regReminderTime);
-			regReminderTime = regReminderTime.plusDays(ThreadLocalRandom.current().nextInt(7, 14)); // Randomize the
+			regReminderTime = regReminderTime.plusDays(random.nextInt(7, 14)); // Randomize the
 																									// interval
 		}
 
@@ -102,9 +101,9 @@ public class BeforeConference {
 		// Initialize important timestamps for various announcements and reminders
 
 		LocalDateTime callForPapersTime = mainConfAnnouncementTime.plusDays(conf.random.nextInt(2))
-				.plusHours(ThreadLocalRandom.current().nextLong(24))
-				.plusMinutes(ThreadLocalRandom.current().nextLong(60))
-				.plusSeconds(ThreadLocalRandom.current().nextLong(60));
+				.plusHours(random.nextLong(24))
+				.plusMinutes(random.nextLong(60))
+				.plusSeconds(random.nextLong(60));
 		// Main conference announcement
 
 		MainConferenceAnnouncement(mainConfAnnouncementTime);
@@ -115,7 +114,7 @@ public class BeforeConference {
 		// starts after conference announcement and can be posted anytime until 2 weeks
 		for (int i = 0; i < conf.early_announcement_peak; i++) {
 			LocalDateTime excitementAnnouncementTime = getRandomTimestamp(mainConfAnnouncementTime,
-					mainConfAnnouncementTime.plusDays(ThreadLocalRandom.current().nextInt(1, 14)));
+					mainConfAnnouncementTime.plusDays(random.nextInt(1, 14)));
 			ExcitementAboutTheConferenceAnnouncement(excitementAnnouncementTime);
 		}
 	}
@@ -134,7 +133,7 @@ public class BeforeConference {
 		}
 
 		// General excitement announcements about attending the conference
-		for (int i = 0; i <= ThreadLocalRandom.current().nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
+		for (int i = 0; i <= random.nextInt(conf.random_tweets_min, conf.random_tweets_max); i++) {
 			timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
 			ExcitementForAttendingTheConference(timestamp);
 		}
@@ -143,7 +142,7 @@ public class BeforeConference {
 		timestamp = getRandomTimestamp(last15DaysBeforeConference, beforeConferenceEnd);
 		while (timestamp.isBefore(beforeConferenceEnd)) {
 			ScheduleAnnouncement(timestamp);
-			timestamp = timestamp.plusDays(ThreadLocalRandom.current().nextInt(5, 7)); // Randomize the interval
+			timestamp = timestamp.plusDays(random.nextInt(5, 7)); // Randomize the interval
 		}
 
 	}
@@ -327,7 +326,7 @@ public class BeforeConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -456,7 +455,7 @@ public class BeforeConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -827,10 +826,21 @@ public class BeforeConference {
 		// Check if the user is a "Volunteer" or "StudentGrant"
 		if (conf.volunteerAndStudentGrantList.get("Volunteer").contains(someUser)) {
 			tweetMetaDataModel.add(personAccount, conf.volunteersFor, conf.confInstance);
-			tweetMetaDataModel.add(personAccount, conf.attends, tweetMetaDataModel.createResource(conf.confInstance));
+			// Reuse the already-qualified confInstance resource (conf.ACE_URL + conf.confInstance,
+			// built above) instead of re-wrapping the bare conf.confInstance string: doing that built
+			// a second, differently-IRI'd "conference" (a relative IRI with no namespace), which a
+			// stream-reasoner resolves against its own working directory, producing a bogus
+			// file:///.../conf0_1970 binding alongside the real one for any query joining on attends.
+			tweetMetaDataModel.add(personAccount, conf.attends, confInstance);
 		} else if (conf.volunteerAndStudentGrantList.get("StudentGrant").contains(someUser)) {
-			tweetMetaDataModel.add(personAccount, conf.getsStudentGrantFor, conf.confInstance);
-			tweetMetaDataModel.add(personAccount, conf.attends, tweetMetaDataModel.createResource(conf.confInstance));
+			// getsStudentGrant's real TBox declaration has no fixed range; the funding
+			// organization is modeled as the student's own affiliation (their home
+			// institution funding their conference travel), reusing the same resource
+			// already asserted via hasAffiliation above rather than inventing a separate
+			// funder pool.
+			eventDataModel.add(personAccount, conf.getsStudentGrant,
+					eventDataModel.createResource(userDetails.get("affiliation")));
+			tweetMetaDataModel.add(personAccount, conf.attends, confInstance);
 		}
 
 		tweetMetaDataModel.add(conf.tweetMetaProperties);
@@ -1014,7 +1024,7 @@ public class BeforeConference {
 			eventDataModel.add(paperResource, conf.hasAuthor, authorResource);
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -1026,6 +1036,8 @@ public class BeforeConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 
 		}
 
@@ -1174,7 +1186,7 @@ public class BeforeConference {
 				tweetMetaDataModel.add(userResource, RDF.type, conf.Person);
 				tweetMetaDataModel.add(userResource, conf.hasUserID, tweetMetaDataModel.createLiteral(userId));
 				tweetMetaDataModel.add(userResource, conf.hasAffiliation,
-						tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+						tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 				tweetMetaDataModel.add(userResource, conf.hasDisplayName,
 						tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 				tweetMetaDataModel.add(userResource, conf.hasDesignation,
@@ -1253,7 +1265,7 @@ public class BeforeConference {
 			Map<String, String> userDetails = conf.userData.get(authorId);
 			tweetMetaDataModel.add(authorResource, conf.mentionsPerson, authorResource);
 			tweetMetaDataModel.add(authorResource, conf.hasAffiliation,
-					tweetMetaDataModel.createLiteral(userDetails.get("affiliation")));
+					tweetMetaDataModel.createResource(userDetails.get("affiliation")));
 			tweetMetaDataModel.add(authorResource, conf.hasDisplayName,
 					tweetMetaDataModel.createLiteral(userDetails.get("displayName")));
 			tweetMetaDataModel.add(authorResource, conf.hasDesignation,
@@ -1265,6 +1277,8 @@ public class BeforeConference {
 			// eventDataModel.add(domain, RDF.type, conf.Person);
 			eventDataModel.add(paperResource, conf.hasPaperDomain, domain);
 			tweetMetaDataModel.add(tweetId, conf.hasHashtag, hashtag);
+			tweetMetaDataModel.add(tweetId, conf.mentionsConference,
+					tweetMetaDataModel.createResource(conf.ACE_URL + conf.confAccount));
 		}
 
 		// Randomly select an author to tweet about the paper

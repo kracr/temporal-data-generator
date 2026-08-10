@@ -52,6 +52,11 @@ public class CreatePartitions {
 		String queryDirectory = directoryPath + "/SparqlQueriesForPartition/" + sequence;
 		File sequencesDirectory = new File(directoryPath + "/SequenceData/");
 		System.out.println("Started");
+		System.out.println("DEBUG sequence=" + sequence + " type=" + type + " directoryPath=" + directoryPath);
+		System.out.println("DEBUG metadataDirectory=" + metadataDirectory.getAbsolutePath() + " exists=" + metadataDirectory.exists());
+		File[] dbgList = metadataDirectory.listFiles();
+		System.out.println("DEBUG metadataDirectory subdirs count=" + (dbgList == null ? "null" : dbgList.length));
+		System.out.println("DEBUG queryDirectory=" + queryDirectory + " exists=" + new File(queryDirectory).exists());
 		if (sequencesDirectory.exists()) {
 			deleteDirectory(sequencesDirectory);
 		}

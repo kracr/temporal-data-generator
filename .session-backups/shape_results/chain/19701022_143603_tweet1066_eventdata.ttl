@@ -1,0 +1,21 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:Conference  ace:hasPresentedPaper  ace:paper4295 .
+
+ace:paper4295  a            ace:ConferencePaper ;
+        ace:hasAuthor       ace:user29981 , ace:user78643 ;
+        ace:hasPaperDomain  ace:dataScience , ace:neurology ;
+        ace:hasPaperTrack   "resourcesTrack" ;
+        ace:hasTitle        "Embracing collisions: enabling parallel channel estimation with COTS passive backscatter tags." ;
+        ace:isAcceptedAt    ace:conf1_1970 ;
+        ace:isPresentedAt   ace:paperPresentationSession .
+
+ace:user29981  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:user78643  a  <http://xmlns.com/foaf/0.1/Person> .
+
+ace:paperPresentationSession
+        ace:isPartOf  ace:conf1_1970 .
+
+ace:conf1_1970  ace:hasSession  ace:paperPresentationSession .

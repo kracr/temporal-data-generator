@@ -1,0 +1,23 @@
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf0_1970" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf0_1970.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user88041>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/Twitter#hasAffiliation>
+                <https://anonymous.com/OWL2Bench#U43C4RG4> .
+
+<city_name>  a  <https://anonymous.com/Location#City> .

@@ -1,0 +1,36 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user9753  ace:attends  ace:conf0_1970 .
+
+ace:user15029  ace:attends  ace:conf0_1970 .
+
+ace:conf0_1970  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf0_1970" ;
+        ace:hasEdition         "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ace:hasEventMode       ace:online ;
+        ace:hasGeneralChair    ace:user13756 , ace:user6456 ;
+        ace:hasLocalChair      ace:user12701 ;
+        ace:hasPaperTrack      ace:posterTrack , ace:doctoralConsortiumTrack , ace:resourcesTrack , ace:applicationsTrack , ace:demoTrack , ace:researchTrack , ace:tutorialTrack , ace:workshopTrack ;
+        ace:hasWebsiteURL      "www.conf0_1970.com" .
+
+ace:user6456  ace:attends  ace:conf0_1970 ;
+        ace:hasRole  ace:generalChair .
+
+ace:user13412  ace:attends  ace:conf0_1970 .
+
+ace:user4440  ace:attends  ace:conf0_1970 .
+
+ace:user11682  ace:attends  ace:conf0_1970 .
+
+ace:user8494  ace:attends  ace:conf0_1970 .
+
+ace:user12701  ace:attends  ace:conf0_1970 ;
+        ace:hasRole  ace:localChair .
+
+ace:user15453  ace:attends  ace:conf0_1970 .
+
+ace:user13756  ace:attends  ace:conf0_1970 ;
+        ace:hasRole  ace:generalChair .
+
+ace:user9781  ace:attends  ace:conf0_1970 .

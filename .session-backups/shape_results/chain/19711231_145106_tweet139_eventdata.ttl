@@ -1,0 +1,36 @@
+@prefix ace:   <https://anonymous.com/AcademicConferenceEvent#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ace:user47764  ace:attends  ace:conf0_1972 .
+
+ace:user25495  ace:attends  ace:conf0_1972 .
+
+ace:user3645  ace:attends  ace:conf0_1972 .
+
+ace:user1650  ace:attends  ace:conf0_1972 ;
+        ace:hasRole  ace:generalChair .
+
+ace:user19345  ace:attends  ace:conf0_1972 .
+
+ace:user22422  ace:attends  ace:conf0_1972 .
+
+ace:user9932  ace:attends  ace:conf0_1972 ;
+        ace:hasRole  ace:localChair .
+
+ace:user28505  ace:attends  ace:conf0_1972 ;
+        ace:hasRole  ace:localChair .
+
+ace:user29616  ace:attends  ace:conf0_1972 .
+
+ace:conf0_1972  a              ace:Conference ;
+        ace:hasConferenceName  "International Conference on conf0_1972" ;
+        ace:hasEdition         "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ace:hasEventMode       ace:online ;
+        ace:hasGeneralChair    ace:user1650 ;
+        ace:hasLocalChair      ace:user28505 , ace:user9932 ;
+        ace:hasPaperTrack      ace:doctoralConsortiumTrack , ace:applicationsTrack , ace:resourcesTrack , ace:posterTrack , ace:workshopTrack , ace:demoTrack , ace:researchTrack , ace:tutorialTrack ;
+        ace:hasWebsiteURL      "www.conf0_1972.com" .
+
+ace:user7389  ace:attends  ace:conf0_1972 .
+
+ace:user1744  ace:attends  ace:conf0_1972 .

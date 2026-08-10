@@ -199,7 +199,7 @@ public class DataGenerator {
 			this.researchGroupCount_min = Integer.parseInt(prop1.getProperty("researchGroupCount_min"));
 			this.researchGroupCount_max = Integer.parseInt(prop1.getProperty("researchGroupCount_max"));
 			this.nonAcadOrganizationCount_min = Integer.parseInt(prop1.getProperty("nonAcadOrganizationCount_min"));
-			this.nonAcadOrganizationCount_max = Integer.parseInt(prop1.getProperty("nonAcadOrganizationCount_min"));
+			this.nonAcadOrganizationCount_max = Integer.parseInt(prop1.getProperty("nonAcadOrganizationCount_max"));
 			this.conferenceDuration_min_months = Integer.parseInt(prop1.getProperty("conferenceDuration_min_months"));
 			this.conferenceDuration_max_months = Integer.parseInt(prop1.getProperty("conferenceDuration_max_months"));
 			this.cityCount_min = Integer.parseInt(prop1.getProperty("cityCount_min"));

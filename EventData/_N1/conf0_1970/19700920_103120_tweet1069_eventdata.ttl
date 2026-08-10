@@ -1,0 +1,44 @@
+<https://anonymous.com/AcademicConferenceEvent#Conference>
+        <https://anonymous.com/AcademicConferenceEvent#hasPresentedPaper>
+                <https://anonymous.com/AcademicConferenceEvent#paper10529> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf0_1970>
+        <https://anonymous.com/AcademicConferenceEvent#hasSession>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#user20603>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user22878>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user3988>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10529>
+        a       <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasAuthor>
+                <https://anonymous.com/AcademicConferenceEvent#user14757> , <https://anonymous.com/AcademicConferenceEvent#user23784> , <https://anonymous.com/AcademicConferenceEvent#user41488> , <https://anonymous.com/AcademicConferenceEvent#user22878> , <https://anonymous.com/AcademicConferenceEvent#user3988> , <https://anonymous.com/AcademicConferenceEvent#user20603> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>
+                <https://anonymous.com/AcademicConferenceEvent#cardiology> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                "applicationsTrack" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasTitle>
+                "Paid placement strategies for internet search engines." ;
+        <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> ;
+        <https://anonymous.com/AcademicConferenceEvent#isPresentedAt>
+                <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> .
+
+<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>
+        <https://anonymous.com/AcademicConferenceEvent#isPartOf>
+                <https://anonymous.com/AcademicConferenceEvent#conf0_1970> .
+
+<https://anonymous.com/AcademicConferenceEvent#user14757>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user23784>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<https://anonymous.com/AcademicConferenceEvent#user41488>
+        a       <http://xmlns.com/foaf/0.1/Person> .
