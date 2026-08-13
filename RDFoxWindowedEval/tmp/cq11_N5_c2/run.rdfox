@@ -1,0 +1,135 @@
+set output out
+set reason.monitor summary
+dstore create cq11
+active cq11
+import D:/temporal-data-generator/RDFoxWindowedEval/tbox/organization-func.owl
+import D:/temporal-data-generator/RDFoxWindowedEval/tbox/ace-rl-func.owl
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add0.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add1.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add2.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add3.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add4.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add5.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add9.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add10.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add11.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add12.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add13.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add14.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add15.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add16.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add17.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add18.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add19.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add20.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq11_N5_c2/add21.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?paper ?author1 ?author2 ?parentOrg where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author1 . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author2 . ?author2 <https://anonymous.com/Tweet#hasAffiliation> ?subOrg . ?parentOrg <https://kracr.iiitd.edu.in/OWL2Bench#isPartOf> ?subOrg . ?parentOrg a <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> . FILTER(?author1 != ?author2) }

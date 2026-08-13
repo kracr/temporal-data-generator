@@ -1,0 +1,20 @@
+[
+  {
+    "cqId": "cq3",
+    "N": 2,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N2\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp\\cq3_N2_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 5.448
+  },
+  {
+    "cqId": "cq3",
+    "N": 2,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N2\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp\\cq3_N2_c1\\out.txt",
+    "windows": 59,
+    "elapsed": 5.448
+  }
+]

@@ -1,0 +1,121 @@
+set output out
+set reason.monitor summary
+dstore create cq4
+active cq4
+import D:/temporal-data-generator/RDFoxWindowedEval/tbox/ace-rl-func.owl
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add0.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add1.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add2.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add3.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add8.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add9.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add10.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add11.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add12.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add13.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add14.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add15.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add16.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add17.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add18.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq4_N5_c4/add19.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?author ?domain ?conference where { ?paper a <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> . ?paper <https://anonymous.com/AcademicConferenceEvent#hasAuthor> ?author . ?paper <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> ?domain . ?paper <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> ?conference . }

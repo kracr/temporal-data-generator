@@ -3,7 +3,7 @@
     "cq1": {
       "windows": 59,
       "nonEmptyPct": 59.32203389830509,
-      "avgLatencyMs": 15.406779661016953,
+      "avgLatencyMs": 17.50847457627119,
       "totalBindings": 70659,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -11,7 +11,7 @@
     "cq2": {
       "windows": 59,
       "nonEmptyPct": 72.88135593220339,
-      "avgLatencyMs": 5.7457627118644075,
+      "avgLatencyMs": 6.559322033898307,
       "totalBindings": 26355,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -27,7 +27,7 @@
     "cq4": {
       "windows": 20,
       "nonEmptyPct": 60,
-      "avgLatencyMs": 0.6,
+      "avgLatencyMs": 0.8,
       "totalBindings": 1136,
       "finalAsserted": 57382,
       "finalMaterialised": 57974
@@ -35,7 +35,7 @@
     "cq5": {
       "windows": 59,
       "nonEmptyPct": 57.6271186440678,
-      "avgLatencyMs": 0.593220338983051,
+      "avgLatencyMs": 0.7627118644067802,
       "totalBindings": 3666,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -51,7 +51,7 @@
     "cq7": {
       "windows": 59,
       "nonEmptyPct": 30.508474576271187,
-      "avgLatencyMs": 0,
+      "avgLatencyMs": 0.03389830508474576,
       "totalBindings": 411,
       "finalAsserted": 47122,
       "finalMaterialised": 82818
@@ -75,7 +75,7 @@
     "cq10": {
       "windows": 59,
       "nonEmptyPct": 57.6271186440678,
-      "avgLatencyMs": 0.593220338983051,
+      "avgLatencyMs": 0.8474576271186446,
       "totalBindings": 3744,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -91,7 +91,7 @@
     "cq12": {
       "windows": 59,
       "nonEmptyPct": 72.88135593220339,
-      "avgLatencyMs": 26.6271186440678,
+      "avgLatencyMs": 26.06779661016949,
       "totalBindings": 127530,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -99,7 +99,7 @@
     "cq13": {
       "windows": 59,
       "nonEmptyPct": 59.32203389830509,
-      "avgLatencyMs": 15.881355932203398,
+      "avgLatencyMs": 15.779661016949161,
       "totalBindings": 70659,
       "finalAsserted": 47122,
       "finalMaterialised": 47518
@@ -109,7 +109,7 @@
     "cq1": {
       "windows": 118,
       "nonEmptyPct": 59.32203389830509,
-      "avgLatencyMs": 13.652542372881355,
+      "avgLatencyMs": 17.779661016949145,
       "totalBindings": 129904,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -117,7 +117,7 @@
     "cq2": {
       "windows": 118,
       "nonEmptyPct": 72.88135593220339,
-      "avgLatencyMs": 5.813559322033902,
+      "avgLatencyMs": 7.237288135593224,
       "totalBindings": 52674,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -125,7 +125,7 @@
     "cq3": {
       "windows": 118,
       "nonEmptyPct": 30.508474576271187,
-      "avgLatencyMs": 0.00847457627118644,
+      "avgLatencyMs": 0.0423728813559322,
       "totalBindings": 871,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -133,7 +133,7 @@
     "cq4": {
       "windows": 40,
       "nonEmptyPct": 60,
-      "avgLatencyMs": 0.4,
+      "avgLatencyMs": 0.6500000000000002,
       "totalBindings": 2160,
       "finalAsserted": 111664,
       "finalMaterialised": 112871
@@ -141,7 +141,7 @@
     "cq5": {
       "windows": 118,
       "nonEmptyPct": 56.779661016949156,
-      "avgLatencyMs": 0.5254237288135597,
+      "avgLatencyMs": 0.5932203389830512,
       "totalBindings": 5972,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -149,7 +149,7 @@
     "cq6": {
       "windows": 118,
       "nonEmptyPct": 16.949152542372882,
-      "avgLatencyMs": 0.00847457627118644,
+      "avgLatencyMs": 0,
       "totalBindings": 178,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -157,7 +157,7 @@
     "cq7": {
       "windows": 118,
       "nonEmptyPct": 30.508474576271187,
-      "avgLatencyMs": 0,
+      "avgLatencyMs": 0.06779661016949153,
       "totalBindings": 871,
       "finalAsserted": 91727,
       "finalMaterialised": 163140
@@ -181,7 +181,7 @@
     "cq10": {
       "windows": 118,
       "nonEmptyPct": 57.6271186440678,
-      "avgLatencyMs": 0.7881355932203395,
+      "avgLatencyMs": 0.949152542372882,
       "totalBindings": 8466,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -197,7 +197,7 @@
     "cq12": {
       "windows": 118,
       "nonEmptyPct": 72.88135593220339,
-      "avgLatencyMs": 27.74576271186441,
+      "avgLatencyMs": 45.881355932203384,
       "totalBindings": 270669,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -205,7 +205,7 @@
     "cq13": {
       "windows": 118,
       "nonEmptyPct": 59.32203389830509,
-      "avgLatencyMs": 13.754237288135588,
+      "avgLatencyMs": 19.483050847457612,
       "totalBindings": 129904,
       "finalAsserted": 91727,
       "finalMaterialised": 92540
@@ -215,7 +215,7 @@
     "cq1": {
       "windows": 307,
       "nonEmptyPct": 58.957654723127035,
-      "avgLatencyMs": 12.977198697068392,
+      "avgLatencyMs": 18.465798045602597,
       "totalBindings": 326442,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -223,7 +223,7 @@
     "cq2": {
       "windows": 307,
       "nonEmptyPct": 70.03257328990227,
-      "avgLatencyMs": 4.596091205211721,
+      "avgLatencyMs": 5.465798045602597,
       "totalBindings": 115528,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -231,7 +231,7 @@
     "cq3": {
       "windows": 307,
       "nonEmptyPct": 25.732899022801302,
-      "avgLatencyMs": 0.016286644951140065,
+      "avgLatencyMs": 0.009771986970684038,
       "totalBindings": 1736,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -239,7 +239,7 @@
     "cq4": {
       "windows": 104,
       "nonEmptyPct": 59.61538461538461,
-      "avgLatencyMs": 0.5576923076923079,
+      "avgLatencyMs": 0.7692307692307698,
       "totalBindings": 5598,
       "finalAsserted": 269883,
       "finalMaterialised": 272908
@@ -247,7 +247,7 @@
     "cq5": {
       "windows": 307,
       "nonEmptyPct": 54.72312703583062,
-      "avgLatencyMs": 0.439739413680782,
+      "avgLatencyMs": 0.6449511400651471,
       "totalBindings": 15264,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -255,7 +255,7 @@
     "cq6": {
       "windows": 307,
       "nonEmptyPct": 16.286644951140065,
-      "avgLatencyMs": 0.006514657980456026,
+      "avgLatencyMs": 0,
       "totalBindings": 441,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -263,7 +263,7 @@
     "cq7": {
       "windows": 307,
       "nonEmptyPct": 25.732899022801302,
-      "avgLatencyMs": 0.003257328990228013,
+      "avgLatencyMs": 0.05211726384364821,
       "totalBindings": 1736,
       "finalAsserted": 216594,
       "finalMaterialised": 395021
@@ -287,7 +287,7 @@
     "cq10": {
       "windows": 307,
       "nonEmptyPct": 55.700325732899024,
-      "avgLatencyMs": 0.6644951140065152,
+      "avgLatencyMs": 0.846905537459284,
       "totalBindings": 20498,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -295,7 +295,7 @@
     "cq11": {
       "windows": 104,
       "nonEmptyPct": 59.61538461538461,
-      "avgLatencyMs": 0,
+      "avgLatencyMs": 0.057692307692307696,
       "totalBindings": 348,
       "finalAsserted": 269883,
       "finalMaterialised": 449408
@@ -303,7 +303,7 @@
     "cq12": {
       "windows": 307,
       "nonEmptyPct": 70.03257328990227,
-      "avgLatencyMs": 24.38110749185667,
+      "avgLatencyMs": 32.13355048859934,
       "totalBindings": 641176,
       "finalAsserted": 216594,
       "finalMaterialised": 218521
@@ -311,7 +311,7 @@
     "cq13": {
       "windows": 307,
       "nonEmptyPct": 58.957654723127035,
-      "avgLatencyMs": 14.293159609120503,
+      "avgLatencyMs": 13.097719869706829,
       "totalBindings": 326442,
       "finalAsserted": 216594,
       "finalMaterialised": 218521

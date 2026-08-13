@@ -1,0 +1,122 @@
+set output out
+set reason.monitor summary
+dstore create cq8
+active cq8
+import D:/temporal-data-generator/RDFoxWindowedEval/tbox/ace-rl-func.owl
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add0.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add1.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add2.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add3.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add4.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add8.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add9.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add10.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add11.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add12.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add13.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add14.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add15.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add16.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add17.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add18.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }
+import D:/temporal-data-generator/RDFoxWindowedEval/tmp/cq8_N2_c1/add19.ttl
+set query.fact-domain explicit
+select (COUNT(*) as ?asserted) where { ?s ?p ?o }
+set query.fact-domain all
+select (COUNT(*) as ?materialised) where { ?s ?p ?o }
+select ?student ?organization ?conference where { ?student <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> ?organization . ?student <https://anonymous.com/AcademicConferenceEvent#attends> ?conference . }

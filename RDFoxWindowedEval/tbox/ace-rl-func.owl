@@ -1,0 +1,1126 @@
+Prefix(:=<https://anonymous.com/AcademicConferenceEvent#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://anonymous.com/AcademicConferenceEvent>
+<https://anonymous.com/AcademicConferenceEvent/1.0.0>
+Annotation(rdfs:comment "05/05/2023 16:33")
+Annotation(rdfs:comment "Academic Conference Event Ontology")
+
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#College>))
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>))
+Declaration(Class(<http://kracr.iiitd.edu.in/OWL2Bench#University>))
+Declaration(Class(<http://purl.org/ontology/bibo/Manuscript>))
+Declaration(Class(<http://w3id.org/daselab/onto/event#Event>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(:AcademicEvent))
+Declaration(Class(:AcademicEventPhases))
+Declaration(Class(:AcademicEventTrack))
+Declaration(Class(:AcademicManuscript))
+Declaration(Class(:AcademicOrganization))
+Declaration(Class(:AcceptedPapersNotificationPhase))
+Declaration(Class(:AnnouncementPhase))
+Declaration(Class(:Attendee))
+Declaration(Class(:Author))
+Declaration(Class(:Awardee))
+Declaration(Class(:BestPaperAwardee))
+Declaration(Class(:BioTechnologyDomain))
+Declaration(Class(:CallForPapersAnnouncementPhase))
+Declaration(Class(:ChairRole))
+Declaration(Class(:ComputerScienceDomain))
+Declaration(Class(:Conference))
+Declaration(Class(:ConferenceEventPhases))
+Declaration(Class(:ConferencePaper))
+Declaration(Class(:ConferenceTrack))
+Declaration(Class(:DemoPaper))
+Declaration(Class(:EarlyAnnouncementPhase))
+Declaration(Class(:EarlyRegistrationReminderPhase))
+Declaration(Class(:EditorRole))
+Declaration(Class(:EventMode))
+Declaration(Class(:EventPhases))
+Declaration(Class(:InvitedTalkSpeaker))
+Declaration(Class(:InvitedTalkSpeakerRole))
+Declaration(Class(:InvitedTalks))
+Declaration(Class(:JournalArticle))
+Declaration(Class(:KeynoteSession))
+Declaration(Class(:KeynoteSpeaker))
+Declaration(Class(:KeynoteTalks))
+Declaration(Class(:LightningTalks))
+Declaration(Class(:MainConferenceAnnouncementPhase))
+Declaration(Class(:ManuscriptDomain))
+Declaration(Class(:MedicalDomain))
+Declaration(Class(:NonAcademicOrganization))
+Declaration(Class(:NonAuthor))
+Declaration(Class(:NotificationPhase))
+Declaration(Class(:Organizer))
+Declaration(Class(:OrganizingCommittee))
+Declaration(Class(:PaperSubmissionReminderPhase))
+Declaration(Class(:Participant))
+Declaration(Class(:PhDStudent))
+Declaration(Class(:PosterPaper))
+Declaration(Class(:PresentationSession))
+Declaration(Class(:Presentations))
+Declaration(Class(:RegistrationReminderPhase))
+Declaration(Class(:ReminderPhase))
+Declaration(Class(:ResearchPaper))
+Declaration(Class(:ResourcePaper))
+Declaration(Class(:Session))
+Declaration(Class(:SingleAuthorPaper))
+Declaration(Class(:Speaker))
+Declaration(Class(:SpeakerRole))
+Declaration(Class(:Student))
+Declaration(Class(:StudentAuthor))
+Declaration(Class(:StudentGrantAwardee))
+Declaration(Class(:Talks))
+Declaration(Class(:Volunteer))
+Declaration(Class(:Workshop))
+Declaration(Class(:WorkshopPaper))
+Declaration(ObjectProperty(<http://anonymous.com/Location#hasLocation>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>))
+Declaration(ObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>))
+Declaration(ObjectProperty(:attends))
+Declaration(ObjectProperty(:getsAward))
+Declaration(ObjectProperty(:getsBestPaperAward))
+Declaration(ObjectProperty(:getsStudentGrant))
+Declaration(ObjectProperty(:givesInvitedTalkAt))
+Declaration(ObjectProperty(:givesKeynoteTalkAt))
+Declaration(ObjectProperty(:givesTalkAt))
+Declaration(ObjectProperty(:hasAcceptedPaper))
+Declaration(ObjectProperty(:hasAccount))
+Declaration(ObjectProperty(:hasAdvisor))
+Declaration(ObjectProperty(:hasAffiliation))
+Declaration(ObjectProperty(:hasAttendee))
+Declaration(ObjectProperty(:hasAuthor))
+Declaration(ObjectProperty(:hasChair))
+Declaration(ObjectProperty(:hasChairRoleAt))
+Declaration(ObjectProperty(:hasCoAuthor))
+Declaration(ObjectProperty(:hasCollaborator))
+Declaration(ObjectProperty(:hasDemoTrackChair))
+Declaration(ObjectProperty(:hasDomain))
+Declaration(ObjectProperty(:hasEventMode))
+Declaration(ObjectProperty(:hasGeneralChair))
+Declaration(ObjectProperty(:hasGeneralChairRoleAt))
+Declaration(ObjectProperty(:hasInvitedTalk))
+Declaration(ObjectProperty(:hasInvitedTalkSpeaker))
+Declaration(ObjectProperty(:hasKeynoteSpeaker))
+Declaration(ObjectProperty(:hasKeynoteTalk))
+Declaration(ObjectProperty(:hasLocalChair))
+Declaration(ObjectProperty(:hasMode))
+Declaration(ObjectProperty(:hasOrganizer))
+Declaration(ObjectProperty(:hasOrganizerRoleAt))
+Declaration(ObjectProperty(:hasOrganizingCommittee))
+Declaration(ObjectProperty(:hasOrganizingCommitteeMember))
+Declaration(ObjectProperty(:hasPaper))
+Declaration(ObjectProperty(:hasPaperDomain))
+Declaration(ObjectProperty(:hasPaperTrack))
+Declaration(ObjectProperty(:hasParticipant))
+Declaration(ObjectProperty(:hasPosterTrackChair))
+Declaration(ObjectProperty(:hasPresentedPaper))
+Declaration(ObjectProperty(:hasProject))
+Declaration(ObjectProperty(:hasResearchTrackChair))
+Declaration(ObjectProperty(:hasResourceTrackChair))
+Declaration(ObjectProperty(:hasSession))
+Declaration(ObjectProperty(:hasSocialMediaAccount))
+Declaration(ObjectProperty(:hasSpeaker))
+Declaration(ObjectProperty(:hasTalk))
+Declaration(ObjectProperty(:hasTwitterAccount))
+Declaration(ObjectProperty(:hasVolunteer))
+Declaration(ObjectProperty(:hasWorkshopAndTutorialChair))
+Declaration(ObjectProperty(:invitedTalkGivenBy))
+Declaration(ObjectProperty(:isAcceptedAt))
+Declaration(ObjectProperty(:isAuthorOf))
+Declaration(ObjectProperty(:isChairOf))
+Declaration(ObjectProperty(:isOrganizerOf))
+Declaration(ObjectProperty(:isPresentedAt))
+Declaration(ObjectProperty(:isPresentedBy))
+Declaration(ObjectProperty(:keynoteTalkGivenBy))
+Declaration(ObjectProperty(:organizes))
+Declaration(ObjectProperty(:presents))
+Declaration(ObjectProperty(:talkGivenBy))
+Declaration(ObjectProperty(:volunteersFor))
+Declaration(DataProperty(:givesInvitedTalkOn))
+Declaration(DataProperty(:givesKeynoteTalkOn))
+Declaration(DataProperty(:givesTalkOn))
+Declaration(DataProperty(:hasAuthorId))
+Declaration(DataProperty(:hasConferenceName))
+Declaration(DataProperty(:hasDeadline))
+Declaration(DataProperty(:hasDuration))
+Declaration(DataProperty(:hasEarlyRegistrationDeadline))
+Declaration(DataProperty(:hasEdition))
+Declaration(DataProperty(:hasEndDate))
+Declaration(DataProperty(:hasId))
+Declaration(DataProperty(:hasLocation))
+Declaration(DataProperty(:hasName))
+Declaration(DataProperty(:hasPaperId))
+Declaration(DataProperty(:hasRegistrationDeadline))
+Declaration(DataProperty(:hasStartDate))
+Declaration(DataProperty(:hasStatus))
+Declaration(DataProperty(:hasSubmissionDeadline))
+Declaration(DataProperty(:hasTheme))
+Declaration(DataProperty(:hasTitle))
+Declaration(DataProperty(:hasVenue))
+Declaration(DataProperty(:hasWebsiteURL))
+Declaration(DataProperty(:isRelatedTo))
+Declaration(NamedIndividual(:aiForSocialGood))
+Declaration(NamedIndividual(:announcement))
+Declaration(NamedIndividual(:applicationsTrack))
+Declaration(NamedIndividual(:artificialIntelligence))
+Declaration(NamedIndividual(:bigData))
+Declaration(NamedIndividual(:bioTech))
+Declaration(NamedIndividual(:blockChain))
+Declaration(NamedIndividual(:cardiology))
+Declaration(NamedIndividual(:cloudComputing))
+Declaration(NamedIndividual(:computerVision))
+Declaration(NamedIndividual(:dataScience))
+Declaration(NamedIndividual(:deepLearning))
+Declaration(NamedIndividual(:demoTrack))
+Declaration(NamedIndividual(:doctoralConsortiumTrack))
+Declaration(NamedIndividual(:generalChair))
+Declaration(NamedIndividual(:hybrid))
+Declaration(NamedIndividual(:insights))
+Declaration(NamedIndividual(:internetOfThings))
+Declaration(NamedIndividual(:invitedKeynote))
+Declaration(NamedIndividual(:journalSpecialIssue))
+Declaration(NamedIndividual(:knowledgeGraph))
+Declaration(NamedIndividual(:linkedData))
+Declaration(NamedIndividual(:localChair))
+Declaration(NamedIndividual(:machineLearning))
+Declaration(NamedIndividual(:ml))
+Declaration(NamedIndividual(:naturalLanguageProcessing))
+Declaration(NamedIndividual(:neuralNetworks))
+Declaration(NamedIndividual(:neurology))
+Declaration(NamedIndividual(:nlp))
+Declaration(NamedIndividual(:notification))
+Declaration(NamedIndividual(:offline))
+Declaration(NamedIndividual(:oncology))
+Declaration(NamedIndividual(:online))
+Declaration(NamedIndividual(:ontology))
+Declaration(NamedIndividual(:paperPresentationSession))
+Declaration(NamedIndividual(:pediatrics))
+Declaration(NamedIndividual(:plenaryKeynote))
+Declaration(NamedIndividual(:posterSession))
+Declaration(NamedIndividual(:posterTrack))
+Declaration(NamedIndividual(:quantumComputing))
+Declaration(NamedIndividual(:randomCategory))
+Declaration(NamedIndividual(:reminder))
+Declaration(NamedIndividual(:remote))
+Declaration(NamedIndividual(:researchTrack))
+Declaration(NamedIndividual(:researchTrackChair))
+Declaration(NamedIndividual(:resourcesTrack))
+Declaration(NamedIndividual(:resourcesTrackChair))
+Declaration(NamedIndividual(:semanticWeb))
+Declaration(NamedIndividual(:trackChair))
+Declaration(NamedIndividual(:tutorialTrack))
+Declaration(NamedIndividual(:tutorialTrackChair))
+Declaration(NamedIndividual(:workshopTrack))
+Declaration(NamedIndividual(:workshopTrackChair))
+Declaration(AnnotationProperty(:isInstantaneous))
+Declaration(AnnotationProperty(:isStatic))
+Declaration(AnnotationProperty(:isTimeVarying))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
+
+AnnotationAssertion(rdfs:comment <http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf> "linked with OWL2Bench")
+IrreflexiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isAffiliatedOrganizationOf>)
+
+# Object Property: <http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> (<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
+
+TransitiveObjectProperty(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> (<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
+
+# Object Property: owl:topObjectProperty (owl:topObjectProperty)
+
+ObjectPropertyRange(owl:topObjectProperty :AcademicManuscript)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#attends> (<https://anonymous.com/AcademicConferenceEvent#attends>)
+
+InverseObjectProperties(:attends :hasAttendee)
+ObjectPropertyRange(:attends <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#getsBestPaperAward> (<https://anonymous.com/AcademicConferenceEvent#getsBestPaperAward>)
+
+SubObjectPropertyOf(:getsBestPaperAward :getsAward)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#getsStudentGrant> (<https://anonymous.com/AcademicConferenceEvent#getsStudentGrant>)
+
+SubObjectPropertyOf(:getsStudentGrant :getsAward)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt> (<https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkAt>)
+
+SubObjectPropertyOf(:givesInvitedTalkAt :givesTalkAt)
+InverseObjectProperties(:givesInvitedTalkAt :hasInvitedTalkSpeaker)
+ObjectPropertyDomain(:givesInvitedTalkAt :InvitedTalkSpeaker)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt> (<https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkAt>)
+
+SubObjectPropertyOf(:givesKeynoteTalkAt :givesTalkAt)
+InverseObjectProperties(:givesKeynoteTalkAt :hasKeynoteSpeaker)
+ObjectPropertyDomain(:givesKeynoteTalkAt :KeynoteSpeaker)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#givesTalkAt> (<https://anonymous.com/AcademicConferenceEvent#givesTalkAt>)
+
+InverseObjectProperties(:givesTalkAt :hasSpeaker)
+ObjectPropertyRange(:givesTalkAt <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper> (<https://anonymous.com/AcademicConferenceEvent#hasAcceptedPaper>)
+
+SubObjectPropertyOf(:hasAcceptedPaper :isAuthorOf)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasAdvisor> (<https://anonymous.com/AcademicConferenceEvent#hasAdvisor>)
+
+AsymmetricObjectProperty(:hasAdvisor)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasAffiliation> (<https://anonymous.com/AcademicConferenceEvent#hasAffiliation>)
+
+ObjectPropertyRange(:hasAffiliation <http://xmlns.com/foaf/0.1/Organization>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasAttendee> (<https://anonymous.com/AcademicConferenceEvent#hasAttendee>)
+
+EquivalentObjectProperties(:hasAttendee :hasParticipant)
+ObjectPropertyDomain(:hasAttendee <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasAuthor> (<https://anonymous.com/AcademicConferenceEvent#hasAuthor>)
+
+SubObjectPropertyOf(:hasAuthor owl:topObjectProperty)
+InverseObjectProperties(:hasAuthor :isAuthorOf)
+ObjectPropertyDomain(:hasAuthor :AcademicManuscript)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasChair> (<https://anonymous.com/AcademicConferenceEvent#hasChair>)
+
+SubObjectPropertyOf(:hasChair owl:topObjectProperty)
+InverseObjectProperties(:hasChair :isChairOf)
+DisjointObjectProperties(:hasChair :hasVolunteer)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasChairRoleAt> (<https://anonymous.com/AcademicConferenceEvent#hasChairRoleAt>)
+
+SubObjectPropertyOf(:hasChairRoleAt :hasOrganizerRoleAt)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasCoAuthor> (<https://anonymous.com/AcademicConferenceEvent#hasCoAuthor>)
+
+SubObjectPropertyOf(:hasCoAuthor :hasCollaborator)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasCollaborator> (<https://anonymous.com/AcademicConferenceEvent#hasCollaborator>)
+
+SymmetricObjectProperty(:hasCollaborator)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair> (<https://anonymous.com/AcademicConferenceEvent#hasDemoTrackChair>)
+
+SubObjectPropertyOf(:hasDemoTrackChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasEventMode> (<https://anonymous.com/AcademicConferenceEvent#hasEventMode>)
+
+SubObjectPropertyOf(:hasEventMode :hasMode)
+ObjectPropertyDomain(:hasEventMode <http://w3id.org/daselab/onto/event#Event>)
+ObjectPropertyRange(:hasEventMode :EventMode)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasGeneralChair> (<https://anonymous.com/AcademicConferenceEvent#hasGeneralChair>)
+
+SubObjectPropertyOf(:hasGeneralChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt> (<https://anonymous.com/AcademicConferenceEvent#hasGeneralChairRoleAt>)
+
+SubObjectPropertyOf(:hasGeneralChairRoleAt :hasChairRoleAt)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasInvitedTalk> (<https://anonymous.com/AcademicConferenceEvent#hasInvitedTalk>)
+
+SubObjectPropertyOf(:hasInvitedTalk :hasTalk)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker> (<https://anonymous.com/AcademicConferenceEvent#hasInvitedTalkSpeaker>)
+
+SubObjectPropertyOf(:hasInvitedTalkSpeaker :hasSpeaker)
+ObjectPropertyDomain(:hasInvitedTalkSpeaker <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker> (<https://anonymous.com/AcademicConferenceEvent#hasKeynoteSpeaker>)
+
+SubObjectPropertyOf(:hasKeynoteSpeaker :hasSpeaker)
+ObjectPropertyDomain(:hasKeynoteSpeaker <http://w3id.org/daselab/onto/event#Event>)
+ObjectPropertyRange(:hasKeynoteSpeaker :KeynoteSpeaker)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk> (<https://anonymous.com/AcademicConferenceEvent#hasKeynoteTalk>)
+
+SubObjectPropertyOf(:hasKeynoteTalk :hasTalk)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasLocalChair> (<https://anonymous.com/AcademicConferenceEvent#hasLocalChair>)
+
+SubObjectPropertyOf(:hasLocalChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasOrganizer> (<https://anonymous.com/AcademicConferenceEvent#hasOrganizer>)
+
+InverseObjectProperties(:hasOrganizer :isOrganizerOf)
+ObjectPropertyDomain(:hasOrganizer <http://w3id.org/daselab/onto/event#Event>)
+ObjectPropertyRange(:hasOrganizer :Organizer)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt> (<https://anonymous.com/AcademicConferenceEvent#hasOrganizerRoleAt>)
+
+EquivalentObjectProperties(:hasOrganizerRoleAt :isOrganizerOf)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee> (<https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommittee>)
+
+AnnotationAssertion(rdfs:comment :hasOrganizingCommittee "Example:
+ISWC hasOrganizingCommitte ISWCOrganizationCommittee 
+ISWCOrganizationCommittee hasOrganizationCommitteeMember some Organizer")
+ObjectPropertyDomain(:hasOrganizingCommittee <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember> (<https://anonymous.com/AcademicConferenceEvent#hasOrganizingCommitteeMember>)
+
+ObjectPropertyDomain(:hasOrganizingCommitteeMember <http://w3id.org/daselab/onto/event#Event>)
+ObjectPropertyRange(:hasOrganizingCommitteeMember :Organizer)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasPaper> (<https://anonymous.com/AcademicConferenceEvent#hasPaper>)
+
+EquivalentObjectProperties(:hasPaper :isAuthorOf)
+ObjectPropertyRange(:hasPaper :AcademicManuscript)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasPaperDomain> (<https://anonymous.com/AcademicConferenceEvent#hasPaperDomain>)
+
+SubObjectPropertyOf(:hasPaperDomain :hasDomain)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack> (<https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>)
+
+SubObjectPropertyOf(:hasPaperTrack owl:topObjectProperty)
+ObjectPropertyRange(:hasPaperTrack :ConferenceTrack)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair> (<https://anonymous.com/AcademicConferenceEvent#hasPosterTrackChair>)
+
+SubObjectPropertyOf(:hasPosterTrackChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasProject> (<https://anonymous.com/AcademicConferenceEvent#hasProject>)
+
+ObjectPropertyDomain(:hasProject <http://xmlns.com/foaf/0.1/Organization>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair> (<https://anonymous.com/AcademicConferenceEvent#hasResearchTrackChair>)
+
+SubObjectPropertyOf(:hasResearchTrackChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair> (<https://anonymous.com/AcademicConferenceEvent#hasResourceTrackChair>)
+
+SubObjectPropertyOf(:hasResourceTrackChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasSession> (<https://anonymous.com/AcademicConferenceEvent#hasSession>)
+
+ObjectPropertyDomain(:hasSession <http://w3id.org/daselab/onto/event#Event>)
+ObjectPropertyRange(:hasSession :Session)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount> (<https://anonymous.com/AcademicConferenceEvent#hasSocialMediaAccount>)
+
+SubObjectPropertyOf(:hasSocialMediaAccount :hasAccount)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasSpeaker> (<https://anonymous.com/AcademicConferenceEvent#hasSpeaker>)
+
+SubObjectPropertyOf(:hasSpeaker owl:topObjectProperty)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasTwitterAccount> (<https://anonymous.com/AcademicConferenceEvent#hasTwitterAccount>)
+
+SubObjectPropertyOf(:hasTwitterAccount :hasSocialMediaAccount)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair> (<https://anonymous.com/AcademicConferenceEvent#hasWorkshopAndTutorialChair>)
+
+SubObjectPropertyOf(:hasWorkshopAndTutorialChair :hasOrganizingCommitteeMember)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy> (<https://anonymous.com/AcademicConferenceEvent#invitedTalkGivenBy>)
+
+SubObjectPropertyOf(:invitedTalkGivenBy :talkGivenBy)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isAcceptedAt> (<https://anonymous.com/AcademicConferenceEvent#isAcceptedAt>)
+
+EquivalentObjectProperties(:isAcceptedAt :isPresentedAt)
+ObjectPropertyDomain(:isAcceptedAt :AcademicManuscript)
+ObjectPropertyRange(:isAcceptedAt :AcademicEvent)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isAuthorOf> (<https://anonymous.com/AcademicConferenceEvent#isAuthorOf>)
+
+ObjectPropertyDomain(:isAuthorOf <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(:isAuthorOf :AcademicManuscript)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isChairOf> (<https://anonymous.com/AcademicConferenceEvent#isChairOf>)
+
+InverseFunctionalObjectProperty(:isChairOf)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isOrganizerOf> (<https://anonymous.com/AcademicConferenceEvent#isOrganizerOf>)
+
+SubObjectPropertyOf(:isOrganizerOf owl:topObjectProperty)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isPresentedAt> (<https://anonymous.com/AcademicConferenceEvent#isPresentedAt>)
+
+AnnotationAssertion(rdfs:comment :isPresentedAt "what could be the inverse property of isPresentedAt?")
+SubObjectPropertyOf(:isPresentedAt :isAcceptedAt)
+FunctionalObjectProperty(:isPresentedAt)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#isPresentedBy> (<https://anonymous.com/AcademicConferenceEvent#isPresentedBy>)
+
+InverseObjectProperties(:isPresentedBy :presents)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy> (<https://anonymous.com/AcademicConferenceEvent#keynoteTalkGivenBy>)
+
+SubObjectPropertyOf(:keynoteTalkGivenBy :talkGivenBy)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#organizes> (<https://anonymous.com/AcademicConferenceEvent#organizes>)
+
+ObjectPropertyRange(:organizes <http://w3id.org/daselab/onto/event#Event>)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#presents> (<https://anonymous.com/AcademicConferenceEvent#presents>)
+
+SubObjectPropertyOf(:presents :hasAcceptedPaper)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#talkGivenBy> (<https://anonymous.com/AcademicConferenceEvent#talkGivenBy>)
+
+ObjectPropertyDomain(:talkGivenBy :Talks)
+
+# Object Property: <https://anonymous.com/AcademicConferenceEvent#volunteersFor> (<https://anonymous.com/AcademicConferenceEvent#volunteersFor>)
+
+ObjectPropertyRange(:volunteersFor <http://w3id.org/daselab/onto/event#Event>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn> (<https://anonymous.com/AcademicConferenceEvent#givesInvitedTalkOn>)
+
+SubDataPropertyOf(:givesInvitedTalkOn :givesTalkOn)
+DataPropertyDomain(:givesInvitedTalkOn :InvitedTalkSpeaker)
+DataPropertyRange(:givesInvitedTalkOn xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn> (<https://anonymous.com/AcademicConferenceEvent#givesKeynoteTalkOn>)
+
+SubDataPropertyOf(:givesKeynoteTalkOn :givesTalkOn)
+DataPropertyDomain(:givesKeynoteTalkOn :KeynoteSpeaker)
+DataPropertyRange(:givesKeynoteTalkOn xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#givesTalkOn> (<https://anonymous.com/AcademicConferenceEvent#givesTalkOn>)
+
+DataPropertyDomain(:givesTalkOn <http://xmlns.com/foaf/0.1/Person>)
+DataPropertyRange(:givesTalkOn xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasAuthorId> (<https://anonymous.com/AcademicConferenceEvent#hasAuthorId>)
+
+SubDataPropertyOf(:hasAuthorId :hasId)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasConferenceName> (<https://anonymous.com/AcademicConferenceEvent#hasConferenceName>)
+
+SubDataPropertyOf(:hasConferenceName :hasName)
+DataPropertyDomain(:hasConferenceName :Conference)
+DataPropertyRange(:hasConferenceName xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasDeadline> (<https://anonymous.com/AcademicConferenceEvent#hasDeadline>)
+
+DataPropertyDomain(:hasDeadline :AcademicEvent)
+DataPropertyRange(:hasDeadline xsd:dateTimeStamp)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasDuration> (<https://anonymous.com/AcademicConferenceEvent#hasDuration>)
+
+AnnotationAssertion(rdfs:comment :hasDuration "An event can go for days, hours, or months.")
+FunctionalDataProperty(:hasDuration)
+DataPropertyDomain(:hasDuration <http://w3id.org/daselab/onto/event#Event>)
+DataPropertyRange(:hasDuration xsd:string)
+DisjointDataProperties(:hasDuration :hasLocation)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline> (<https://anonymous.com/AcademicConferenceEvent#hasEarlyRegistrationDeadline>)
+
+SubDataPropertyOf(:hasEarlyRegistrationDeadline :hasRegistrationDeadline)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasEdition> (<https://anonymous.com/AcademicConferenceEvent#hasEdition>)
+
+AnnotationAssertion(rdfs:comment :hasEdition "3rd or third")
+DataPropertyDomain(:hasEdition :AcademicEvent)
+DataPropertyRange(:hasEdition xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasId> (<https://anonymous.com/AcademicConferenceEvent#hasId>)
+
+DataPropertyRange(:hasId xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasLocation> (<https://anonymous.com/AcademicConferenceEvent#hasLocation>)
+
+EquivalentDataProperties(:hasLocation :hasVenue)
+DataPropertyRange(:hasLocation xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasName> (<https://anonymous.com/AcademicConferenceEvent#hasName>)
+
+DataPropertyRange(:hasName xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasPaperId> (<https://anonymous.com/AcademicConferenceEvent#hasPaperId>)
+
+SubDataPropertyOf(:hasPaperId :hasId)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline> (<https://anonymous.com/AcademicConferenceEvent#hasRegistrationDeadline>)
+
+SubDataPropertyOf(:hasRegistrationDeadline :hasDeadline)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasStartDate> (<https://anonymous.com/AcademicConferenceEvent#hasStartDate>)
+
+DataPropertyDomain(:hasStartDate <http://w3id.org/daselab/onto/event#Event>)
+DataPropertyRange(:hasStartDate xsd:dateTimeStamp)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasStatus> (<https://anonymous.com/AcademicConferenceEvent#hasStatus>)
+
+AnnotationAssertion(rdfs:comment :hasStatus "Announced, Approaching, TakingPlace, Over")
+DataPropertyDomain(:hasStatus :AcademicEvent)
+DataPropertyRange(:hasStatus xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline> (<https://anonymous.com/AcademicConferenceEvent#hasSubmissionDeadline>)
+
+SubDataPropertyOf(:hasSubmissionDeadline :hasDeadline)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasTheme> (<https://anonymous.com/AcademicConferenceEvent#hasTheme>)
+
+DataPropertyRange(:hasTheme xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasTitle> (<https://anonymous.com/AcademicConferenceEvent#hasTitle>)
+
+DataPropertyRange(:hasTitle xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasVenue> (<https://anonymous.com/AcademicConferenceEvent#hasVenue>)
+
+SubDataPropertyOf(:hasVenue owl:topDataProperty)
+DataPropertyRange(:hasVenue xsd:string)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL> (<https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>)
+
+DataPropertyRange(:hasWebsiteURL xsd:anyURI)
+
+# Data Property: <https://anonymous.com/AcademicConferenceEvent#isRelatedTo> (<https://anonymous.com/AcademicConferenceEvent#isRelatedTo>)
+
+AnnotationAssertion(rdfs:comment :isRelatedTo "Every aacdemic manuscript is related to some topic. For example AI")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#College> (<http://kracr.iiitd.edu.in/OWL2Bench#College>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#College> :AcademicOrganization)
+
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> (<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#ResearchGroup> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Class: <http://kracr.iiitd.edu.in/OWL2Bench#University> (<http://kracr.iiitd.edu.in/OWL2Bench#University>)
+
+SubClassOf(<http://kracr.iiitd.edu.in/OWL2Bench#University> :AcademicOrganization)
+
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> (Role)
+
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> "Role")
+
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> (KeyNoteSpeakerRole)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl>)
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> "KeyNoteSpeakerRole"@en)
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole> :SpeakerRole)
+
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> (OrganizerRole)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl>)
+AnnotationAssertion(rdfs:label <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> "OrganizerRole"@en)
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
+
+# Class: <http://xmlns.com/foaf/0.1/Organization> (<http://xmlns.com/foaf/0.1/Organization>)
+
+AnnotationAssertion(:isStatic <http://xmlns.com/foaf/0.1/Organization> "")
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> ObjectAllValuesFrom(:hasAffiliation <http://xmlns.com/foaf/0.1/Organization>))
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AcademicEvent> (<https://anonymous.com/AcademicConferenceEvent#AcademicEvent>)
+
+AnnotationAssertion(rdfs:comment :AcademicEvent "Every academic event has a track")
+SubClassOf(:AcademicEvent <http://w3id.org/daselab/onto/event#Event>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AcademicEventPhases> (<https://anonymous.com/AcademicConferenceEvent#AcademicEventPhases>)
+
+SubClassOf(:AcademicEventPhases :EventPhases)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AcademicManuscript> (<https://anonymous.com/AcademicConferenceEvent#AcademicManuscript>)
+
+AnnotationAssertion(:isInstantaneous :AcademicManuscript "")
+SubClassOf(:AcademicManuscript <http://purl.org/ontology/bibo/Manuscript>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AcademicOrganization> (<https://anonymous.com/AcademicConferenceEvent#AcademicOrganization>)
+
+AnnotationAssertion(rdfs:comment :AcademicOrganization "Can be linked to OWL2Bench?")
+SubClassOf(:AcademicOrganization <http://xmlns.com/foaf/0.1/Organization>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase> (<https://anonymous.com/AcademicConferenceEvent#AcceptedPapersNotificationPhase>)
+
+SubClassOf(:AcceptedPapersNotificationPhase :NotificationPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#AnnouncementPhase> (<https://anonymous.com/AcademicConferenceEvent#AnnouncementPhase>)
+
+SubClassOf(:AnnouncementPhase :ConferenceEventPhases)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Attendee> (<https://anonymous.com/AcademicConferenceEvent#Attendee>)
+
+EquivalentClasses(:Attendee :Participant)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Author> (<https://anonymous.com/AcademicConferenceEvent#Author>)
+
+SubClassOf(:Author <http://xmlns.com/foaf/0.1/Person>)
+DisjointClasses(:Author :NonAuthor)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Awardee> (<https://anonymous.com/AcademicConferenceEvent#Awardee>)
+
+SubClassOf(:Awardee <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#BestPaperAwardee> (<https://anonymous.com/AcademicConferenceEvent#BestPaperAwardee>)
+
+SubClassOf(:BestPaperAwardee :Awardee)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain> (<https://anonymous.com/AcademicConferenceEvent#BioTechnologyDomain>)
+
+SubClassOf(:BioTechnologyDomain :ManuscriptDomain)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase> (<https://anonymous.com/AcademicConferenceEvent#CallForPapersAnnouncementPhase>)
+
+SubClassOf(:CallForPapersAnnouncementPhase :EarlyAnnouncementPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ChairRole> (<https://anonymous.com/AcademicConferenceEvent#ChairRole>)
+
+AnnotationAssertion(rdfs:comment :ChairRole "Each track will have a chair")
+SubClassOf(:ChairRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain> (<https://anonymous.com/AcademicConferenceEvent#ComputerScienceDomain>)
+
+SubClassOf(:ComputerScienceDomain :ManuscriptDomain)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Conference> (<https://anonymous.com/AcademicConferenceEvent#Conference>)
+
+AnnotationAssertion(:isStatic :Conference "")
+SubClassOf(:Conference :AcademicEvent)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases> (<https://anonymous.com/AcademicConferenceEvent#ConferenceEventPhases>)
+
+SubClassOf(:ConferenceEventPhases :AcademicEventPhases)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ConferencePaper> (<https://anonymous.com/AcademicConferenceEvent#ConferencePaper>)
+
+AnnotationAssertion(:isInstantaneous :ConferencePaper "")
+SubClassOf(:ConferencePaper :AcademicManuscript)
+SubClassOf(:ConferencePaper ObjectMaxCardinality(1 :isAcceptedAt :Conference))
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ConferenceTrack> (<https://anonymous.com/AcademicConferenceEvent#ConferenceTrack>)
+
+AnnotationAssertion(rdfs:comment :ConferenceTrack "Every Academic Event Track is a subevent of  Academic Event")
+SubClassOf(:ConferenceTrack :AcademicEventTrack)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#DemoPaper> (<https://anonymous.com/AcademicConferenceEvent#DemoPaper>)
+
+AnnotationAssertion(:isInstantaneous :DemoPaper "")
+SubClassOf(:DemoPaper :ConferencePaper)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase> (<https://anonymous.com/AcademicConferenceEvent#EarlyAnnouncementPhase>)
+
+SubClassOf(:EarlyAnnouncementPhase :AnnouncementPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase> (<https://anonymous.com/AcademicConferenceEvent#EarlyRegistrationReminderPhase>)
+
+SubClassOf(:EarlyRegistrationReminderPhase :RegistrationReminderPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#EditorRole> (<https://anonymous.com/AcademicConferenceEvent#EditorRole>)
+
+SubClassOf(:EditorRole <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker> (<https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeaker>)
+
+SubClassOf(:InvitedTalkSpeaker :Speaker)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole> (<https://anonymous.com/AcademicConferenceEvent#InvitedTalkSpeakerRole>)
+
+SubClassOf(:InvitedTalkSpeakerRole :SpeakerRole)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#InvitedTalks> (<https://anonymous.com/AcademicConferenceEvent#InvitedTalks>)
+
+SubClassOf(:InvitedTalks :Talks)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#JournalArticle> (<https://anonymous.com/AcademicConferenceEvent#JournalArticle>)
+
+AnnotationAssertion(:isInstantaneous :JournalArticle "")
+SubClassOf(:JournalArticle :AcademicManuscript)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#KeynoteSession> (<https://anonymous.com/AcademicConferenceEvent#KeynoteSession>)
+
+SubClassOf(:KeynoteSession :Session)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker> (<https://anonymous.com/AcademicConferenceEvent#KeynoteSpeaker>)
+
+SubClassOf(:KeynoteSpeaker :Speaker)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#KeynoteTalks> (<https://anonymous.com/AcademicConferenceEvent#KeynoteTalks>)
+
+SubClassOf(:KeynoteTalks :Talks)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#LightningTalks> (<https://anonymous.com/AcademicConferenceEvent#LightningTalks>)
+
+SubClassOf(:LightningTalks :Talks)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase> (<https://anonymous.com/AcademicConferenceEvent#MainConferenceAnnouncementPhase>)
+
+SubClassOf(:MainConferenceAnnouncementPhase :EarlyAnnouncementPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#MedicalDomain> (<https://anonymous.com/AcademicConferenceEvent#MedicalDomain>)
+
+SubClassOf(:MedicalDomain :ManuscriptDomain)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization> (<https://anonymous.com/AcademicConferenceEvent#NonAcademicOrganization>)
+
+SubClassOf(:NonAcademicOrganization <http://xmlns.com/foaf/0.1/Organization>)
+SubClassOf(:NonAcademicOrganization ObjectComplementOf(:AcademicOrganization))
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#NonAuthor> (<https://anonymous.com/AcademicConferenceEvent#NonAuthor>)
+
+SubClassOf(:NonAuthor <http://xmlns.com/foaf/0.1/Person>)
+SubClassOf(:NonAuthor ObjectComplementOf(:Author))
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#NotificationPhase> (<https://anonymous.com/AcademicConferenceEvent#NotificationPhase>)
+
+SubClassOf(:NotificationPhase :ConferenceEventPhases)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Organizer> (<https://anonymous.com/AcademicConferenceEvent#Organizer>)
+
+AnnotationAssertion(rdfs:comment :Organizer "I have added")
+SubClassOf(:Organizer <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#OrganizingCommittee> (<https://anonymous.com/AcademicConferenceEvent#OrganizingCommittee>)
+
+AnnotationAssertion(rdfs:comment :OrganizingCommittee "Can be removed")
+SubClassOf(:OrganizingCommittee ObjectAllValuesFrom(:hasOrganizingCommitteeMember :Organizer))
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase> (<https://anonymous.com/AcademicConferenceEvent#PaperSubmissionReminderPhase>)
+
+SubClassOf(:PaperSubmissionReminderPhase :ReminderPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Participant> (<https://anonymous.com/AcademicConferenceEvent#Participant>)
+
+AnnotationAssertion(rdfs:comment :Participant "Attendee could be an equivalent class?")
+SubClassOf(:Participant <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#PhDStudent> (<https://anonymous.com/AcademicConferenceEvent#PhDStudent>)
+
+AnnotationAssertion(rdfs:comment :PhDStudent "Define this and include in the table")
+SubClassOf(:PhDStudent :StudentAuthor)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#PosterPaper> (<https://anonymous.com/AcademicConferenceEvent#PosterPaper>)
+
+AnnotationAssertion(:isInstantaneous :PosterPaper "")
+SubClassOf(:PosterPaper :ConferencePaper)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#PresentationSession> (<https://anonymous.com/AcademicConferenceEvent#PresentationSession>)
+
+SubClassOf(:PresentationSession :Session)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Presentations> (<https://anonymous.com/AcademicConferenceEvent#Presentations>)
+
+SubClassOf(:Presentations :Talks)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase> (<https://anonymous.com/AcademicConferenceEvent#RegistrationReminderPhase>)
+
+SubClassOf(:RegistrationReminderPhase :ReminderPhase)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ReminderPhase> (<https://anonymous.com/AcademicConferenceEvent#ReminderPhase>)
+
+SubClassOf(:ReminderPhase :ConferenceEventPhases)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ResearchPaper> (<https://anonymous.com/AcademicConferenceEvent#ResearchPaper>)
+
+EquivalentClasses(:ResearchPaper ObjectHasValue(:hasPaperTrack :researchTrack))
+SubClassOf(:ResearchPaper :ConferencePaper)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#ResourcePaper> (<https://anonymous.com/AcademicConferenceEvent#ResourcePaper>)
+
+EquivalentClasses(:ResourcePaper ObjectHasValue(:hasPaperTrack :researchTrack))
+SubClassOf(:ResourcePaper :ConferencePaper)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper> (<https://anonymous.com/AcademicConferenceEvent#SingleAuthorPaper>)
+
+SubClassOf(:SingleAuthorPaper :AcademicManuscript)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Speaker> (<https://anonymous.com/AcademicConferenceEvent#Speaker>)
+
+SubClassOf(:Speaker <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#SpeakerRole> (<https://anonymous.com/AcademicConferenceEvent#SpeakerRole>)
+
+SubClassOf(:SpeakerRole <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Student> (<https://anonymous.com/AcademicConferenceEvent#Student>)
+
+AnnotationAssertion(rdfs:comment :Student "Student may particiate in DC")
+AnnotationAssertion(:isTimeVarying :Student "")
+SubClassOf(:Student <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#StudentAuthor> (<https://anonymous.com/AcademicConferenceEvent#StudentAuthor>)
+
+SubClassOf(:StudentAuthor <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee> (<https://anonymous.com/AcademicConferenceEvent#StudentGrantAwardee>)
+
+SubClassOf(:StudentGrantAwardee :Awardee)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Volunteer> (<https://anonymous.com/AcademicConferenceEvent#Volunteer>)
+
+AnnotationAssertion(rdfs:comment :Volunteer "is volunteer part of organizing team? or 'has role'?")
+SubClassOf(:Volunteer :Participant)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#Workshop> (<https://anonymous.com/AcademicConferenceEvent#Workshop>)
+
+AnnotationAssertion(:isStatic :Workshop "")
+SubClassOf(:Workshop :AcademicEvent)
+
+# Class: <https://anonymous.com/AcademicConferenceEvent#WorkshopPaper> (<https://anonymous.com/AcademicConferenceEvent#WorkshopPaper>)
+
+AnnotationAssertion(:isInstantaneous :WorkshopPaper "")
+SubClassOf(:WorkshopPaper :ConferencePaper)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> (<https://anonymous.com/AcademicConferenceEvent#aiForSocialGood>)
+
+ClassAssertion(:ComputerScienceDomain :aiForSocialGood)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> (<https://anonymous.com/AcademicConferenceEvent#applicationsTrack>)
+
+ClassAssertion(:ConferenceTrack :applicationsTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> (<https://anonymous.com/AcademicConferenceEvent#artificialIntelligence>)
+
+ClassAssertion(:ComputerScienceDomain :artificialIntelligence)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#bigData> (<https://anonymous.com/AcademicConferenceEvent#bigData>)
+
+ClassAssertion(:ComputerScienceDomain :bigData)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#bioTech> (<https://anonymous.com/AcademicConferenceEvent#bioTech>)
+
+ClassAssertion(:BioTechnologyDomain :bioTech)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#blockChain> (<https://anonymous.com/AcademicConferenceEvent#blockChain>)
+
+ClassAssertion(:ComputerScienceDomain :blockChain)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#cardiology> (<https://anonymous.com/AcademicConferenceEvent#cardiology>)
+
+ClassAssertion(:MedicalDomain :cardiology)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#cloudComputing> (<https://anonymous.com/AcademicConferenceEvent#cloudComputing>)
+
+ClassAssertion(:ComputerScienceDomain :cloudComputing)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#computerVision> (<https://anonymous.com/AcademicConferenceEvent#computerVision>)
+
+ClassAssertion(:ComputerScienceDomain :computerVision)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#dataScience> (<https://anonymous.com/AcademicConferenceEvent#dataScience>)
+
+ClassAssertion(:ComputerScienceDomain :dataScience)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#deepLearning> (<https://anonymous.com/AcademicConferenceEvent#deepLearning>)
+
+ClassAssertion(:ComputerScienceDomain :deepLearning)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#demoTrack> (<https://anonymous.com/AcademicConferenceEvent#demoTrack>)
+
+ClassAssertion(:ConferenceTrack :demoTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> (<https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack>)
+
+ClassAssertion(:ConferenceTrack :doctoralConsortiumTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#generalChair> (<https://anonymous.com/AcademicConferenceEvent#generalChair>)
+
+ClassAssertion(:ChairRole :generalChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#hybrid> (<https://anonymous.com/AcademicConferenceEvent#hybrid>)
+
+ClassAssertion(:EventMode :hybrid)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#internetOfThings> (<https://anonymous.com/AcademicConferenceEvent#internetOfThings>)
+
+ClassAssertion(:ComputerScienceDomain :internetOfThings)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#invitedKeynote> (<https://anonymous.com/AcademicConferenceEvent#invitedKeynote>)
+
+ClassAssertion(:KeynoteSession :invitedKeynote)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#journalSpecialIssue> (<https://anonymous.com/AcademicConferenceEvent#journalSpecialIssue>)
+
+ClassAssertion(:ConferenceTrack :journalSpecialIssue)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#knowledgeGraph> (<https://anonymous.com/AcademicConferenceEvent#knowledgeGraph>)
+
+ClassAssertion(:ComputerScienceDomain :knowledgeGraph)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#linkedData> (<https://anonymous.com/AcademicConferenceEvent#linkedData>)
+
+ClassAssertion(:ComputerScienceDomain :linkedData)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#localChair> (<https://anonymous.com/AcademicConferenceEvent#localChair>)
+
+ClassAssertion(:ChairRole :localChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#machineLearning> (<https://anonymous.com/AcademicConferenceEvent#machineLearning>)
+
+ClassAssertion(:ComputerScienceDomain :machineLearning)
+SameIndividual(:machineLearning :ml)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#ml> (<https://anonymous.com/AcademicConferenceEvent#ml>)
+
+ClassAssertion(:ComputerScienceDomain :ml)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> (<https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing>)
+
+ClassAssertion(:ComputerScienceDomain :naturalLanguageProcessing)
+SameIndividual(:naturalLanguageProcessing :nlp)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#neuralNetworks> (<https://anonymous.com/AcademicConferenceEvent#neuralNetworks>)
+
+ClassAssertion(:ComputerScienceDomain :neuralNetworks)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#neurology> (<https://anonymous.com/AcademicConferenceEvent#neurology>)
+
+ClassAssertion(:MedicalDomain :neurology)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#nlp> (<https://anonymous.com/AcademicConferenceEvent#nlp>)
+
+ClassAssertion(:ComputerScienceDomain :nlp)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#offline> (<https://anonymous.com/AcademicConferenceEvent#offline>)
+
+ClassAssertion(:EventMode :offline)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#oncology> (<https://anonymous.com/AcademicConferenceEvent#oncology>)
+
+ClassAssertion(:MedicalDomain :oncology)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#online> (<https://anonymous.com/AcademicConferenceEvent#online>)
+
+ClassAssertion(:EventMode :online)
+SameIndividual(:online :remote)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#ontology> (<https://anonymous.com/AcademicConferenceEvent#ontology>)
+
+ClassAssertion(:ComputerScienceDomain :ontology)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#paperPresentationSession> (<https://anonymous.com/AcademicConferenceEvent#paperPresentationSession>)
+
+ClassAssertion(:PresentationSession :paperPresentationSession)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#pediatrics> (<https://anonymous.com/AcademicConferenceEvent#pediatrics>)
+
+ClassAssertion(:MedicalDomain :pediatrics)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#plenaryKeynote> (<https://anonymous.com/AcademicConferenceEvent#plenaryKeynote>)
+
+ClassAssertion(:KeynoteSession :plenaryKeynote)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#posterTrack> (<https://anonymous.com/AcademicConferenceEvent#posterTrack>)
+
+ClassAssertion(:ConferenceTrack :posterTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#quantumComputing> (<https://anonymous.com/AcademicConferenceEvent#quantumComputing>)
+
+ClassAssertion(:ComputerScienceDomain :quantumComputing)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#researchTrack> (<https://anonymous.com/AcademicConferenceEvent#researchTrack>)
+
+ClassAssertion(:ConferenceTrack :researchTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> (<https://anonymous.com/AcademicConferenceEvent#researchTrackChair>)
+
+ClassAssertion(:ChairRole :researchTrackChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> (<https://anonymous.com/AcademicConferenceEvent#resourcesTrack>)
+
+ClassAssertion(:ConferenceTrack :resourcesTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> (<https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair>)
+
+ClassAssertion(:ChairRole :resourcesTrackChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#semanticWeb> (<https://anonymous.com/AcademicConferenceEvent#semanticWeb>)
+
+ClassAssertion(:ComputerScienceDomain :semanticWeb)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#trackChair> (<https://anonymous.com/AcademicConferenceEvent#trackChair>)
+
+ClassAssertion(:ChairRole :trackChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> (<https://anonymous.com/AcademicConferenceEvent#tutorialTrack>)
+
+ClassAssertion(:ConferenceTrack :tutorialTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> (<https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair>)
+
+ClassAssertion(:ChairRole :tutorialTrackChair)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#workshopTrack> (<https://anonymous.com/AcademicConferenceEvent#workshopTrack>)
+
+ClassAssertion(:ConferenceTrack :workshopTrack)
+
+# Individual: <https://anonymous.com/AcademicConferenceEvent#workshopTrackChair> (<https://anonymous.com/AcademicConferenceEvent#workshopTrackChair>)
+
+ClassAssertion(:ChairRole :workshopTrackChair)
+
+
+SubClassOf(ObjectIntersectionOf(:Author :Student) :StudentAuthor)
+SubClassOf(ObjectUnionOf(:InvitedTalks :KeynoteTalks :LightningTalks :Presentations) :Talks)
+SubClassOf(ObjectOneOf(:hybrid :offline :online) :EventMode)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#KeynoteSpeakerRole>) :KeynoteSpeaker)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Organizer>) :Organizer)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> :InvitedTalkSpeakerRole) :InvitedTalkSpeaker)
+SubClassOf(ObjectSomeValuesFrom(:attends :AcademicEvent) :Participant)
+SubClassOf(ObjectSomeValuesFrom(:getsBestPaperAward owl:Thing) :BestPaperAwardee)
+SubClassOf(ObjectSomeValuesFrom(:getsStudentGrant owl:Thing) :StudentGrantAwardee)
+SubClassOf(ObjectSomeValuesFrom(:hasAcceptedPaper :AcademicManuscript) :Author)
+SubClassOf(ObjectSomeValuesFrom(:hasAuthor :Author) <http://purl.org/ontology/bibo/Manuscript>)
+SubClassOf(ObjectSomeValuesFrom(:hasAuthor :Author) :AcademicManuscript)
+SubClassOf(ObjectSomeValuesFrom(:hasEventMode :EventMode) <http://w3id.org/daselab/onto/event#Event>)
+SubClassOf(ObjectSomeValuesFrom(:hasOrganizingCommittee :OrganizingCommittee) <http://w3id.org/daselab/onto/event#Event>)
+SubClassOf(ObjectSomeValuesFrom(:hasPaperTrack :ConferenceTrack) :AcademicEvent)
+SubClassOf(ObjectSomeValuesFrom(:hasTalk :Talks) :AcademicEvent)
+SubClassOf(ObjectSomeValuesFrom(:invitedTalkGivenBy :InvitedTalkSpeaker) :InvitedTalks)
+SubClassOf(ObjectSomeValuesFrom(:keynoteTalkGivenBy :KeynoteSpeaker) :KeynoteTalks)
+SubClassOf(ObjectSomeValuesFrom(:presents ObjectHasValue(:hasPaperTrack :doctoralConsortiumTrack)) :PhDStudent)
+SubClassOf(ObjectSomeValuesFrom(:volunteersFor :AcademicEvent) :Volunteer)
+SubClassOf(DataSomeValuesFrom(:hasLocation xsd:string) <http://w3id.org/daselab/onto/event#Event>)
+SubClassOf(DataSomeValuesFrom(:hasTitle xsd:string) <http://w3id.org/daselab/onto/event#Event>)
+SubClassOf(DataSomeValuesFrom(:hasWebsiteURL xsd:anyURI) :AcademicEvent)
+DifferentIndividuals(:offline :online)
+SubObjectPropertyOf(ObjectPropertyChain(<http://kracr.iiitd.edu.in/OWL2Bench#isPartOf> <http://anonymous.com/Location#hasLocation>) <http://anonymous.com/Location#hasLocation>)
+SubObjectPropertyOf(ObjectPropertyChain(:hasAcceptedPaper :hasAuthor) :hasCoAuthor)
+SubObjectPropertyOf(ObjectPropertyChain(:hasInvitedTalk :invitedTalkGivenBy) :hasInvitedTalkSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(:hasKeynoteTalk :keynoteTalkGivenBy) :hasKeynoteSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(:hasOrganizingCommittee :hasOrganizingCommitteeMember) :hasOrganizingCommittee)
+SubObjectPropertyOf(ObjectPropertyChain(:hasPaperTrack :hasChair) :hasOrganizer)
+SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :invitedTalkGivenBy) :invitedTalkGivenBy)
+SubObjectPropertyOf(ObjectPropertyChain(:hasTalk :talkGivenBy) :hasSpeaker)
+SubObjectPropertyOf(ObjectPropertyChain(:presents :hasAuthor) :hasCoAuthor)
+SubObjectPropertyOf(ObjectPropertyChain(:presents :isPresentedAt) :attends)
+HasKey(:AcademicManuscript () (:hasId))
+HasKey(:ConferencePaper () (:hasPaperId))
+HasKey(:DemoPaper () (:hasPaperId))
+HasKey(:PosterPaper () (:hasPaperId))
+HasKey(:ResearchPaper () (:hasPaperId))
+HasKey(:WorkshopPaper () (:hasPaperId))
+)
