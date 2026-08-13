@@ -37,13 +37,13 @@ constraints, historical data, and temporal dependencies, and consider scalabilit
 GenACT also includes four Academic Conference Ontologies based on different OWL 2 profiles, presenting diverse reasoning challenges and additional Twitter ontology to handle the twitter metadata. 
 
 
-OWL 2 DL : [Academic-Conference-Event-DL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/Academic-Conference-Event-DL.owl)
+OWL 2 DL : [Academic-Conference-Event-DL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/ACE/Academic-Conference-Event-DL.owl)
 
-OWL 2 RL : [Academic-Conference-Event-RL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/Academic-Conference-Event-RL.owl)
+OWL 2 RL : [Academic-Conference-Event-RL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/ACE/Academic-Conference-Event-RL.owl)
 
-OWL 2 QL : [Academic-Conference-Event-QL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/Academic-Conference-Event-QL.owl)
+OWL 2 QL : [Academic-Conference-Event-QL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/ACE/Academic-Conference-Event-QL.owl)
 
-OWL 2 EL : [Academic-Conference-Event-EL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/Academic-Conference-Event-EL.owl)
+OWL 2 EL : [Academic-Conference-Event-EL.owl](https://github.com/kracr/temporal-data-generator/blob/main/Ontology/ACE/Academic-Conference-Event-EL.owl)
 
 <a name="abox"></a>
 ## 1.2 Data Generation
@@ -55,17 +55,17 @@ As shown in [Figure](https://github.com/kracr/temporal-data-generator/blob/main/
 ## 2. About the Repository
 The project repository consists of the following directories:
 
-[Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABox%20Generator): Java source code directory of our GenACT that generates the data  (see section [ 3 ](#code) for source-code usage instructions). 
+[Generator](https://github.com/kracr/temporal-data-generator/tree/main/ABoxGenerator): Java source code directory of our GenACT that generates the data  (see section [ 3 ](#code) for source-code usage instructions). 
 
-[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of four Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile, 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners, 1 Tweet Ontology (consisting axioms describing Tweet metadata). Tweet ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
+[Ontology](https://github.com/kracr/temporal-data-generator/tree/main/Ontology): Consists of four Academic Conference Event Ontologies (describing an Academic conference event) one for each OWL 2 profile (under `ACE/`), 4 University Ontologies from exisitng OWL2Bench benchmark for OWL 2 reasoners (under `OWL2Bench/`), 1 Tweet Ontology (consisting axioms describing Tweet metadata). Tweet ontology is kept separately from Academic Conference Ontology because this allows to expand the generator to other social media platforms in future. 
 
-[Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of template.yaml and mapping.yaml files that serve as the starting point for our data generator. Mapping files is used to generate RDF triples according to the placeholders in each template file. 
+[Mappings](https://github.com/kracr/temporal-data-generator/tree/main/Mappings): Consists of templates.yaml and mapping.yaml files that serve as the starting point for our data generator. Mapping files is used to generate RDF triples according to the placeholders in each template file. 
 
 [StaticData](https://github.com/kracr/temporal-data-generator/tree/main/StaticData): Ontologies Location.owl (real data for cities mapped with latitude, longitude and Country information) and Organization.owl (synthetically generated research groups mapped with instances (cities) from Location ontology). 
 
 [RunnableJars](https://drive.google.com/drive/folders/1xWfHi9lOZ_OhOmD_VVQuDXW976R4c2HQ?usp=sharing) (#usage) for usage instructions. 
 
-[EventData](https://github.com/kracr/temporal-data-generator/tree/main/EventData) Consists of event data generated in separate directories for each conference and each conference cycle: such as ESWC_2023, ESWC_2024. Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
+[EventData](https://github.com/kracr/temporal-data-generator/tree/main/EventData) Consists of event data generated in separate directories for each conference and each conference cycle, named `conf<N>_<year>` (e.g. `conf0_1970`, `conf1_1970`). Inside each directory two files tweetMetadata and eventData are created for each tweet. Each file is named as timestamp_tweetid_metadata.ttl and timestamp_tweetid_eventdata.ttl
 
 [SequenceData](https://github.com/kracr/temporal-data-generator/tree/main/SequenceData) The segments generated after partitioning goes to this directory. The files generated are the RDF triple files with associated timestamps hence these files
  can be streamed as per user requirements. 
@@ -73,10 +73,14 @@ The project repository consists of the following directories:
 [SparqlQueriesForPartition](https://github.com/kracr/temporal-data-generator/tree/main/SparqlQueriesForPartition) This directory consists of two subdirectories: ByAttribute and ByShape. Each of these consists of sparql queries that are
 required for segmenting the event data. Users can add more sparql queries to 'ByShape' folder and generate the partitions as per their requirements.
 
+[TBoxAwareGenerator](https://github.com/kracr/temporal-data-generator/tree/main/TBoxAwareGenerator): a second, declarative data generator, separate from `ABoxGenerator`, that validates every template's asserted classes/properties against the real ACE and Tweet ontologies before generating anything. See [EXPERIMENTS.md](EXPERIMENTS.md) for details.
+
+[CSparqlEval](https://github.com/kracr/temporal-data-generator/tree/main/CSparqlEval) / [RDFoxWindowedEval](https://github.com/kracr/temporal-data-generator/tree/main/RDFoxWindowedEval): evaluation pipelines used to benchmark the generated data against the C-SPARQL2 and RDFox stream/rule reasoners. See [EXPERIMENTS.md](EXPERIMENTS.md).
+
 <a name="usage"></a>
 ## 3. Instructions to generate the data
 
-Requirements: The user must have *java 1.7 and maven* installed in the system. 
+Requirements: The user must have *Java 17 and Maven* installed in the system. 
 
 <a name="edgexe"></a>
 ## 3.1. Event Data Generation (Direct execution using executable jar)
