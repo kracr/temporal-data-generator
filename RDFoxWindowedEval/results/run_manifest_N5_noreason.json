@@ -1,0 +1,587 @@
+[
+  {
+    "cqId": "cq1",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq1_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 32.543
+  },
+  {
+    "cqId": "cq1",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq1_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 32.543
+  },
+  {
+    "cqId": "cq1",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq1_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 32.543
+  },
+  {
+    "cqId": "cq1",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq1_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 32.543
+  },
+  {
+    "cqId": "cq1",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq1_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 32.543
+  },
+  {
+    "cqId": "cq2",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq2_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 33.924
+  },
+  {
+    "cqId": "cq2",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq2_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 33.924
+  },
+  {
+    "cqId": "cq2",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq2_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 33.924
+  },
+  {
+    "cqId": "cq2",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq2_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 33.924
+  },
+  {
+    "cqId": "cq2",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq2_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 33.924
+  },
+  {
+    "cqId": "cq3",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq3_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 31.693
+  },
+  {
+    "cqId": "cq3",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq3_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 31.693
+  },
+  {
+    "cqId": "cq3",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq3_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 31.693
+  },
+  {
+    "cqId": "cq3",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq3_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 31.693
+  },
+  {
+    "cqId": "cq3",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq3_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 31.693
+  },
+  {
+    "cqId": "cq4",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq4_N5_c0\\out.txt",
+    "windows": 20,
+    "elapsed": 24.4
+  },
+  {
+    "cqId": "cq4",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq4_N5_c1\\out.txt",
+    "windows": 22,
+    "elapsed": 24.4
+  },
+  {
+    "cqId": "cq4",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq4_N5_c2\\out.txt",
+    "windows": 22,
+    "elapsed": 24.4
+  },
+  {
+    "cqId": "cq4",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq4_N5_c3\\out.txt",
+    "windows": 20,
+    "elapsed": 24.4
+  },
+  {
+    "cqId": "cq4",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq4_N5_c4\\out.txt",
+    "windows": 20,
+    "elapsed": 24.4
+  },
+  {
+    "cqId": "cq5",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq5_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 30.916
+  },
+  {
+    "cqId": "cq5",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq5_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 30.916
+  },
+  {
+    "cqId": "cq5",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq5_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 30.916
+  },
+  {
+    "cqId": "cq5",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq5_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 30.916
+  },
+  {
+    "cqId": "cq5",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq5_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 30.916
+  },
+  {
+    "cqId": "cq6",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq6_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 27.605
+  },
+  {
+    "cqId": "cq6",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq6_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 27.605
+  },
+  {
+    "cqId": "cq6",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq6_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 27.605
+  },
+  {
+    "cqId": "cq6",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq6_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 27.605
+  },
+  {
+    "cqId": "cq6",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq6_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 27.605
+  },
+  {
+    "cqId": "cq7",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 27.331
+  },
+  {
+    "cqId": "cq7",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 27.331
+  },
+  {
+    "cqId": "cq7",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 27.331
+  },
+  {
+    "cqId": "cq7",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 27.331
+  },
+  {
+    "cqId": "cq7",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 27.331
+  },
+  {
+    "cqId": "cq8",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq8_N5_c0\\out.txt",
+    "windows": 20,
+    "elapsed": 20.915
+  },
+  {
+    "cqId": "cq8",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq8_N5_c1\\out.txt",
+    "windows": 22,
+    "elapsed": 20.915
+  },
+  {
+    "cqId": "cq8",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq8_N5_c2\\out.txt",
+    "windows": 22,
+    "elapsed": 20.915
+  },
+  {
+    "cqId": "cq8",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq8_N5_c3\\out.txt",
+    "windows": 20,
+    "elapsed": 20.915
+  },
+  {
+    "cqId": "cq8",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq8_N5_c4\\out.txt",
+    "windows": 20,
+    "elapsed": 20.915
+  },
+  {
+    "cqId": "cq9",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq9_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 26.866
+  },
+  {
+    "cqId": "cq9",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq9_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 26.866
+  },
+  {
+    "cqId": "cq9",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq9_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 26.866
+  },
+  {
+    "cqId": "cq9",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq9_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 26.866
+  },
+  {
+    "cqId": "cq9",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq9_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 26.866
+  },
+  {
+    "cqId": "cq10",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq10_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 26.668
+  },
+  {
+    "cqId": "cq10",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq10_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 26.668
+  },
+  {
+    "cqId": "cq10",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq10_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 26.668
+  },
+  {
+    "cqId": "cq10",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq10_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 26.668
+  },
+  {
+    "cqId": "cq10",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq10_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 26.668
+  },
+  {
+    "cqId": "cq11",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq11_N5_c0\\out.txt",
+    "windows": 20,
+    "elapsed": 19.949
+  },
+  {
+    "cqId": "cq11",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq11_N5_c1\\out.txt",
+    "windows": 22,
+    "elapsed": 19.949
+  },
+  {
+    "cqId": "cq11",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq11_N5_c2\\out.txt",
+    "windows": 22,
+    "elapsed": 19.949
+  },
+  {
+    "cqId": "cq11",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq11_N5_c3\\out.txt",
+    "windows": 20,
+    "elapsed": 19.949
+  },
+  {
+    "cqId": "cq11",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq11_N5_c4\\out.txt",
+    "windows": 20,
+    "elapsed": 19.949
+  },
+  {
+    "cqId": "cq12",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq12_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 32.609
+  },
+  {
+    "cqId": "cq12",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq12_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 32.609
+  },
+  {
+    "cqId": "cq12",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq12_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 32.609
+  },
+  {
+    "cqId": "cq12",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq12_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 32.609
+  },
+  {
+    "cqId": "cq12",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq12_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 32.609
+  },
+  {
+    "cqId": "cq13",
+    "N": 5,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq13_N5_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 29.106
+  },
+  {
+    "cqId": "cq13",
+    "N": 5,
+    "conf": 1,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq13_N5_c1\\out.txt",
+    "windows": 65,
+    "elapsed": 29.106
+  },
+  {
+    "cqId": "cq13",
+    "N": 5,
+    "conf": 2,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf0_1972",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq13_N5_c2\\out.txt",
+    "windows": 65,
+    "elapsed": 29.106
+  },
+  {
+    "cqId": "cq13",
+    "N": 5,
+    "conf": 3,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq13_N5_c3\\out.txt",
+    "windows": 59,
+    "elapsed": 29.106
+  },
+  {
+    "cqId": "cq13",
+    "N": 5,
+    "conf": 4,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N5\\conf1_1971",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq13_N5_c4\\out.txt",
+    "windows": 59,
+    "elapsed": 29.106
+  }
+]

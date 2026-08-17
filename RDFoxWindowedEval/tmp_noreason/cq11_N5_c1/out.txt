@@ -1,0 +1,1251 @@
+Source code for RDFox v1.0 Copyright 2013 Oxford University Innovation Limited and subsequent improvements Copyright 2017-2026 by Oxford Semantic Technologies Limited.
+
+This system is equipped with 16.8 GB of RAM, and RDFox is configured to use at most 15.1 GB (89.9% of the total).
+Currently, 1.2 GB (8.2% of the amount allocated to RDFox) appear to be available on the system.
+Since RDFox is a RAM-based system, its performance can suffer when other running processes use a lot of memory.
+
+Access control has been initialized by creating the first role with name "guest".
+This copy of RDFox is licensed for Evaluation use to Gunjan Singh (gunjan.singh@fiz-karlsruhe.de) of fiz until 07-Sep-2026 02:00:00.
+
+A new server connection was opened as role 'guest' and stored with name 'sc1'.
+output = "out"
+reason.monitor = "summary"
+A new data store 'cq11' was created and initialized.
+Data store connection 'cq11' is active.
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tbox/organization-plain.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------
+Table           |  Entries           |  Explicit     |  All        
+---------------------------------------------------------------------
+DefaultTriples  |  70,401 -> 70,401  |  0 -> 55,934  |  0 -> 55,934
+Quads           |       1 ->      1  |  0 ->      0  |  0 ->      0
+---------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.038 s.
+Processed 55934 facts, of which 55934 were updated.
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add0.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  74,241 -> 74,241  |  55,934 -> 62,167  |  55,934 -> 62,167
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.021 s.
+Processed 44033 facts, of which 6233 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62167 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62167 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add1.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  75,521 -> 75,521  |  62,167 -> 62,715  |  62,167 -> 62,715
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.006 s.
+Processed 4022 facts, of which 548 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62715 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62715 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add2.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  75,521 -> 75,521  |  62,715 -> 62,733  |  62,715 -> 62,733
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 105 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62733 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62733 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add3.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  75,521 -> 75,521  |  62,733 -> 62,752  |  62,733 -> 62,752
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 106 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62752 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62752 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add4.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.003 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  75,521 -> 75,521  |  62,752 -> 62,771  |  62,752 -> 62,771
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.004 s.
+Processed 105 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62771 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62771 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add5.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  75,521 -> 75,521  |  62,771 -> 62,790  |  62,771 -> 62,790
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 105 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+62790 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add9.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  62,790 -> 67,396  |  62,790 -> 67,396
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.015 s.
+Processed 22621 facts, of which 4606 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67396 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67396 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add10.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,396 -> 67,414  |  67,396 -> 67,414
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 105 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67414 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67414 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add11.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,414 -> 67,433  |  67,414 -> 67,433
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 105 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67433 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67433 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add12.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,433 -> 67,471  |  67,433 -> 67,471
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 211 facts, of which 38 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67471 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67471 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add13.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,471 -> 67,490  |  67,471 -> 67,490
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 106 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67490 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67490 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add14.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,490 -> 67,528  |  67,490 -> 67,528
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 210 facts, of which 38 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67528 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67528 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add15.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,528 -> 67,547  |  67,528 -> 67,547
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.004 s.
+Processed 106 facts, of which 19 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67547 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67547 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add16.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,547 -> 67,583  |  67,547 -> 67,583
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 210 facts, of which 36 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67583 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67583 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add17.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  81,921 -> 81,921  |  67,583 -> 67,715  |  67,583 -> 67,715
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 587 facts, of which 132 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67715 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+67715 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add18.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  92,161 -> 92,161  |  67,715 -> 76,435  |  67,715 -> 76,435
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.025 s.
+Processed 49332 facts, of which 8720 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+76435 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+76435 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add19.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-----------------------------------------------------------------------------------
+Table           |  Entries             |  Explicit           |  All              
+-----------------------------------------------------------------------------------
+DefaultTriples  |  125,441 -> 125,441  |  76,435 -> 109,090  |  76,435 -> 109,090
+Quads           |        1 ->       1  |       0 ->       0  |       0 ->       0
+-----------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.075 s.
+Processed 186193 facts, of which 32655 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109090 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109090 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add20.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------------
+Table           |  Entries             |  Explicit            |  All               
+-------------------------------------------------------------------------------------
+DefaultTriples  |  125,441 -> 125,441  |  109,090 -> 109,110  |  109,090 -> 109,110
+Quads           |        1 ->       1  |        0 ->       0  |        0 ->       0
+-------------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 115 facts, of which 20 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109110 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.001 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109110 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq11_N5_c1/add21.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------------
+Table           |  Entries             |  Explicit            |  All               
+-------------------------------------------------------------------------------------
+DefaultTriples  |  125,441 -> 125,441  |  109,110 -> 109,117  |  109,110 -> 109,117
+Quads           |        1 ->       1  |        0 ->       0  |        0 ->       0
+-------------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.004 s.
+Processed 29 facts, of which 7 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109117 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.001 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user812> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user82127> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user39133> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user6634> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper10528> <https://anonymous.com/AcademicConferenceEvent#user33753> <https://anonymous.com/AcademicConferenceEvent#user12260> <https://anonymous.com/AcademicConferenceEvent#NAO8> .
+<https://anonymous.com/AcademicConferenceEvent#paper11858> <https://anonymous.com/AcademicConferenceEvent#user46838> <https://anonymous.com/AcademicConferenceEvent#user90564> <https://anonymous.com/AcademicConferenceEvent#NAO15> .
+Number of query answers:        6
+Total number of query answers:  6
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+109117 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s

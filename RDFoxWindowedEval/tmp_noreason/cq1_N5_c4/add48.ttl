@@ -1,0 +1,959 @@
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U63C3RG10> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet1035>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-29T08:00:14.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1035> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U63C3RG10> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Marton Havasi" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user43505> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1035> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user42097>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U98C7RG2> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user42097>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U98C7RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Antonio Barbalace" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user42097> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1012> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet1012>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-29T08:53:33.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1012> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43852>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#localChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19158>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#trackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasGeneralChair>
+                <https://anonymous.com/AcademicConferenceEvent#user17778> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasLocalChair>
+                <https://anonymous.com/AcademicConferenceEvent#user43852> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" , "https://anonymous.com/conf1_1971.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user44344>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/Location#alovera>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13499>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user45541>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#trackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19679>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47277>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4551>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31996>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#workshopTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user17778>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#generalChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43852>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U77C3RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Chunyuan Zhou" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user43852" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19158>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO17RG8> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Eric Portman" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19158" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44344>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U22C6RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Goichiro Hanaoka" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user44344" .
+
+<https://anonymous.com/Tweet#tweet1006>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-29T19:30:00.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1006> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#reminder" ;
+        <https://anonymous.com/Tweet#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user19158> , <https://anonymous.com/AcademicConferenceEvent#user19679> , <https://anonymous.com/AcademicConferenceEvent#user13499> , <https://anonymous.com/AcademicConferenceEvent#user17778> , <https://anonymous.com/AcademicConferenceEvent#user47277> , <https://anonymous.com/AcademicConferenceEvent#user45541> , <https://anonymous.com/AcademicConferenceEvent#user4551> , <https://anonymous.com/AcademicConferenceEvent#user43852> , <https://anonymous.com/AcademicConferenceEvent#user44344> , <https://anonymous.com/AcademicConferenceEvent#user31996> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13499>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C4RG1> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Akshay Asthana" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user13499" .
+
+<https://anonymous.com/AcademicConferenceEvent#user45541>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U51C7RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Antoine Joux" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user45541" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19679>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C8RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Junjie Lin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19679" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1>
+        a       <https://anonymous.com/Tweet#ConferenceAccount> ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1006> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47277>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U100C5RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Luca Breveglieri" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user47277" .
+
+<https://anonymous.com/AcademicConferenceEvent#user4551>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U69C5RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Shojiro Nishio" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user4551" .
+
+<https://anonymous.com/AcademicConferenceEvent#user31996>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U76C3RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Stefano Fumeo" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user31996" .
+
+<https://anonymous.com/AcademicConferenceEvent#user17778>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U88C9RG3> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Xuefan Jin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user17778" .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user29981>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U81C6RG9> .
+
+<https://anonymous.com/Tweet#tweet1027>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-30T07:42:22.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1027> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user29981>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U81C6RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Hadi Esmaeilzadeh" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user29981> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1027> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31676>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U46C2RG6> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet1010>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-30T20:58:38.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1010> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31676>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U46C2RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Anastasios Noulas" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user31676> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1010> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user96199>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U13C2RG2> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user96199>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U13C2RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Jean-Philippe MÃ©tivier" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user96199> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1014> .
+
+<https://anonymous.com/Tweet#tweet1014>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-09-30T22:40:47.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1014> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46411>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U59C6RG3> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#hybrid> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/Tweet#tweet1015>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-01T06:06:58.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1015> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user46411>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U59C6RG3> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Mark van Gastel" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user46411> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1015> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#hybrid> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5877>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO61RG9> .
+
+<https://anonymous.com/Tweet#tweet1042>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-01T12:41:38.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1042> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user5877>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO61RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Liang Zhang 0010" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user5877> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1042> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user13175>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U54C2RG10> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13175>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U54C2RG10> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Dengxin Dai" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user13175> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1040> .
+
+<https://anonymous.com/Tweet#tweet1040>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-01T17:28:30.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1040> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#hybrid> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user78643>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U48C9RG6> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet1020>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-01T18:17:34.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1020> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user78643>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U48C9RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Student" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Song Chun Zhu" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user78643> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1020> .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#online> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19629>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U47C5RG4> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/Tweet#tweet1039>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-02T04:23:52.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1039> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19629>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U47C5RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Dimitris Zeginis" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user19629> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1039> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43852>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#localChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19158>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#trackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#hybrid> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasGeneralChair>
+                <https://anonymous.com/AcademicConferenceEvent#user17778> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasLocalChair>
+                <https://anonymous.com/AcademicConferenceEvent#user43852> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" , "https://anonymous.com/conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/Location#archena> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44344>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user13499>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user45541>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#trackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user19679>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#tutorialTrackChair> .
+
+<https://anonymous.com/Location#archena>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47277>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#resourcesTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4551>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#researchTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user31996>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#workshopTrackChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user17778>
+        <https://anonymous.com/AcademicConferenceEvent#hasRole>
+                <https://anonymous.com/AcademicConferenceEvent#generalChair> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43852>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U77C3RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Chunyuan Zhou" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user43852" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19158>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://anonymous.com/AcademicConferenceEvent#NAO17RG8> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Eric Portman" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19158" .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user44344>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U22C6RG2> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Goichiro Hanaoka" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user44344" .
+
+<https://anonymous.com/AcademicConferenceEvent#user13499>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C4RG1> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Akshay Asthana" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user13499" .
+
+<https://anonymous.com/AcademicConferenceEvent#user45541>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U51C7RG6> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Antoine Joux" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user45541" .
+
+<https://anonymous.com/AcademicConferenceEvent#user19679>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U34C8RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Junjie Lin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user19679" .
+
+<https://anonymous.com/Tweet#tweet1046>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-02T17:13:21.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1046> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#mentionsConference>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#mentionsPerson>
+                <https://anonymous.com/AcademicConferenceEvent#user43852> , <https://anonymous.com/AcademicConferenceEvent#user44344> , <https://anonymous.com/AcademicConferenceEvent#user45541> , <https://anonymous.com/AcademicConferenceEvent#user31996> , <https://anonymous.com/AcademicConferenceEvent#user13499> , <https://anonymous.com/AcademicConferenceEvent#user47277> , <https://anonymous.com/AcademicConferenceEvent#user4551> , <https://anonymous.com/AcademicConferenceEvent#user17778> , <https://anonymous.com/AcademicConferenceEvent#user19158> , <https://anonymous.com/AcademicConferenceEvent#user19679> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1>
+        a       <https://anonymous.com/Tweet#ConferenceAccount> ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#conf1> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1046> .
+
+<https://anonymous.com/AcademicConferenceEvent#user47277>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U100C5RG5> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Luca Breveglieri" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user47277" .
+
+<https://anonymous.com/AcademicConferenceEvent#user4551>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U69C5RG9> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Researcher" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Shojiro Nishio" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user4551" .
+
+<https://anonymous.com/AcademicConferenceEvent#user31996>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U76C3RG4> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Stefano Fumeo" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user31996" .
+
+<https://anonymous.com/AcademicConferenceEvent#user17778>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U88C9RG3> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Faculty" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Xuefan Jin" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                "user17778" .
+
+<https://anonymous.com/AcademicConferenceEvent#city_name>
+        a       <https://anonymous.com/Location#City> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasConferenceName>
+                "International Conference on conf1_1971" ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEdition>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasEventMode>
+                <https://anonymous.com/AcademicConferenceEvent#offline> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasPaperTrack>
+                <https://anonymous.com/AcademicConferenceEvent#posterTrack> , <https://anonymous.com/AcademicConferenceEvent#workshopTrack> , <https://anonymous.com/AcademicConferenceEvent#applicationsTrack> , <https://anonymous.com/AcademicConferenceEvent#demoTrack> , <https://anonymous.com/AcademicConferenceEvent#tutorialTrack> , <https://anonymous.com/AcademicConferenceEvent#doctoralConsortiumTrack> , <https://anonymous.com/AcademicConferenceEvent#researchTrack> , <https://anonymous.com/AcademicConferenceEvent#resourcesTrack> ;
+        <https://anonymous.com/AcademicConferenceEvent#hasWebsiteURL>
+                "www.conf1_1971.com" ;
+        <https://anonymous.com/Location#hasLocation>
+                <https://anonymous.com/AcademicConferenceEvent#city_name> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <http://xmlns.com/foaf/0.1/Person> ;
+        <https://anonymous.com/AcademicConferenceEvent#attends>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U63C3RG10> .
+
+<https://anonymous.com/AcademicConferenceEvent#conf1_1971>
+        a       <https://anonymous.com/AcademicConferenceEvent#Conference> .
+
+<https://anonymous.com/AcademicConferenceEvent#user43505>
+        a       <https://anonymous.com/Tweet#PersonAccount> ;
+        <https://anonymous.com/Tweet#hasAffiliation>
+                <https://kracr.iiitd.edu.in/OWL2Bench#U63C3RG10> ;
+        <https://anonymous.com/Tweet#hasDesignation>
+                "Professor" ;
+        <https://anonymous.com/Tweet#hasDisplayName>
+                "Marton Havasi" ;
+        <https://anonymous.com/Tweet#hasUserID>
+                <https://anonymous.com/AcademicConferenceEvent#user43505> ;
+        <https://anonymous.com/Tweet#posts>
+                <https://anonymous.com/Tweet#tweet1025> .
+
+<https://anonymous.com/Tweet#tweet1025>
+        a       <https://anonymous.com/Tweet#Tweet> ;
+        <https://anonymous.com/Tweet#hasDateTimestamp>
+                "1971-10-03T04:45:30.004"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://anonymous.com/Tweet#hasTweetID>
+                <https://anonymous.com/Tweet#tweet1025> ;
+        <https://anonymous.com/Tweet#isAbout>
+                "https://anonymous.com/AcademicConferenceEvent#announcement" ;
+        <https://anonymous.com/Tweet#isAbout>
+                <https://anonymous.com/AcademicConferenceEvent#conf1_1971> .

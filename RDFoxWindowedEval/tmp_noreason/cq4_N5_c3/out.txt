@@ -1,0 +1,1819 @@
+Source code for RDFox v1.0 Copyright 2013 Oxford University Innovation Limited and subsequent improvements Copyright 2017-2026 by Oxford Semantic Technologies Limited.
+
+This system is equipped with 16.8 GB of RAM, and RDFox is configured to use at most 15.1 GB (89.9% of the total).
+Currently, 691.9 MB (4.5% of the amount allocated to RDFox) appear to be available on the system.
+Since RDFox is a RAM-based system, its performance can suffer when other running processes use a lot of memory.
+
+Access control has been initialized by creating the first role with name "guest".
+This copy of RDFox is licensed for Evaluation use to Gunjan Singh (gunjan.singh@fiz-karlsruhe.de) of fiz until 07-Sep-2026 02:00:00.
+
+A new server connection was opened as role 'guest' and stored with name 'sc1'.
+output = "out"
+reason.monitor = "summary"
+A new data store 'cq4' was created and initialized.
+Data store connection 'cq4' is active.
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add0.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------
+Table           |  Entries           |  Explicit    |  All       
+-------------------------------------------------------------------
+DefaultTriples  |  29,441 -> 29,441  |  0 -> 5,503  |  0 -> 5,503
+Quads           |       1 ->      1  |  0 ->     0  |  0 ->     0
+-------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.055 s.
+Processed 37950 facts, of which 5503 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5503 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.004 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5503 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add1.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  11,904 -> 11,904  |  5,503 -> 5,956  |  5,503 -> 5,956
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.005 s.
+Processed 3276 facts, of which 453 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5956 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5956 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add2.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.003 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  11,904 -> 11,904  |  5,956 -> 5,988  |  5,956 -> 5,988
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.005 s.
+Processed 207 facts, of which 32 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5988 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+5988 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add3.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  11,904 -> 11,904  |  5,988 -> 6,006  |  5,988 -> 6,006
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 97 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6006 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6006 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add4.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  11,904 -> 11,904  |  6,006 -> 6,024  |  6,006 -> 6,024
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 98 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Number of query answers:        0
+Total number of query answers:  0
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+6024 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add8.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.004 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  34,944 -> 34,944  |  6,024 -> 9,814  |  6,024 -> 9,814
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.014 s.
+Processed 20777 facts, of which 3790 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9814 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9814 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add9.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  11,095 -> 11,095  |  9,814 -> 9,831  |  9,814 -> 9,831
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 97 facts, of which 17 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9831 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9831 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add10.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  12,375 -> 12,375  |  9,831 -> 9,849  |  9,831 -> 9,849
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.002 s.
+Processed 98 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9849 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9849 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add11.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  12,375 -> 12,375  |  9,849 -> 9,884  |  9,849 -> 9,884
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 194 facts, of which 35 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9884 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9884 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add12.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  13,655 -> 13,655  |  9,884 -> 9,920  |  9,884 -> 9,920
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 196 facts, of which 36 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9920 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9920 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add13.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  14,935 -> 14,935  |  9,920 -> 9,937  |  9,920 -> 9,937
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.002 s.
+Processed 97 facts, of which 17 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9937 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.000 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9937 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add14.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.003 s.
+---------------------------------------------------------------------------
+Table           |  Entries           |  Explicit        |  All           
+---------------------------------------------------------------------------
+DefaultTriples  |  14,935 -> 14,935  |  9,937 -> 9,972  |  9,937 -> 9,972
+Quads           |       1 ->      1  |      0 ->     0  |      0 ->     0
+---------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.005 s.
+Processed 194 facts, of which 35 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9972 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+9972 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add15.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-----------------------------------------------------------------------------
+Table           |  Entries           |  Explicit         |  All            
+-----------------------------------------------------------------------------
+DefaultTriples  |  17,495 -> 17,495  |  9,972 -> 10,132  |  9,972 -> 10,132
+Quads           |       1 ->      1  |      0 ->      0  |      0 ->      0
+-----------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 682 facts, of which 160 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+10132 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+10132 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add16.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  40,535 -> 40,535  |  10,132 -> 27,364  |  10,132 -> 27,364
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.041 s.
+Processed 102078 facts, of which 17232 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+27364 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+27364 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add17.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.003 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  69,975 -> 69,975  |  27,364 -> 54,249  |  27,364 -> 54,249
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.058 s.
+Processed 153502 facts, of which 26885 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54249 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54249 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add18.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.001 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  69,975 -> 69,975  |  54,249 -> 54,267  |  54,249 -> 54,267
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.002 s.
+Processed 129 facts, of which 18 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54267 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54267 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+Adding data in file 'D:/temporal-data-generator/RDFoxWindowedEval/tmp_noreason/cq4_N5_c3/add19.ttl'.
+# Reasoning Summary Monitor Started
+Evaluating rules incrementally.
+Maximum depth of backward chaining is unbounded.
+Reasoning finished after 0.002 s.
+-------------------------------------------------------------------------------
+Table           |  Entries           |  Explicit          |  All             
+-------------------------------------------------------------------------------
+DefaultTriples  |  69,975 -> 69,975  |  54,267 -> 54,282  |  54,267 -> 54,282
+Quads           |       1 ->      1  |       0 ->      0  |       0 ->      0
+-------------------------------------------------------------------------------
+# Reasoning Summary Monitor Finished
+Import operation took 0.003 s.
+Processed 114 facts, of which 15 were updated.
+query.fact-domain = "explicit"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54282 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://anonymous.com/AcademicConferenceEvent#user4190> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user19629> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44099> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66304> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46411> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#bigData> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user45561> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user95981> <https://anonymous.com/AcademicConferenceEvent#aiForSocialGood> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#dataScience> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user29981> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user78643> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#bioTech> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4451> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user24964> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6035> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user13175> <https://anonymous.com/AcademicConferenceEvent#neurology> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43505> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user96199> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#semanticWeb> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user11878> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user15067> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user31676> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user2474> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44315> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user66470> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user42097> <https://anonymous.com/AcademicConferenceEvent#naturalLanguageProcessing> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user44836> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user30243> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user4666> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user46809> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user6264> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user91599> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user32995> <https://anonymous.com/AcademicConferenceEvent#ai> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#deepLearning> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#ml> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user5877> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user16890> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user8723> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user43069> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user40236> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+<https://anonymous.com/AcademicConferenceEvent#user111576> <https://anonymous.com/AcademicConferenceEvent#artificialIntelligence> <https://anonymous.com/AcademicConferenceEvent#conf1_1970> .
+Number of query answers:        64
+Total number of query answers:  64
+Total statement evaluation time: 0.001 s
+query.fact-domain = "all"
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfox: <https://rdfox.com/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+54282 .
+Number of query answers:        1
+Total number of query answers:  1
+Total statement evaluation time: 0.000 s

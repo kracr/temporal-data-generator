@@ -1046,8 +1046,13 @@ which competency questions are selective (CQ6, CQ8 sparse; CQ2, CQ9 dense),
 which is expected since both evaluate the same triple patterns against the
 same underlying corpus -- the exact percentages differ because the two
 systems compute window membership differently (live TCP arrival time for
-C-SPARQL2 versus the files' own embedded timestamps here) and because RDFox
-is additionally answering over RL-entailed facts, not only asserted ones.
+C-SPARQL2 versus the files' own embedded timestamps here). A companion
+reasoning-free run (Section~\ref{subsubsec:genact-rdfox-vs-csparql}) rules out
+RL entailment as a contributing factor here: with the ACE-RL TBox removed
+entirely, every one of the 39 non-empty percentages above (thirteen
+competency questions times three stream counts) reproduces bit-for-bit, so
+the gap against C-SPARQL2 is attributable entirely to the window-computation
+difference, not to RDFox answering over additional entailed facts.
 
 The purpose of the RDFox evaluation is not to establish that one system is
 faster than the other -- the two use fundamentally different execution models,
@@ -1056,6 +1061,211 @@ C-SPARQL2's own table, not as a claim of superiority. What the RDFox
 experiments add that C-SPARQL2 cannot is the ontology-mediated dimension: the
 same generated conference data, evaluated under real OWL~2~RL materialisation,
 with results reflecting both explicitly asserted and inferred knowledge.
+
+\subsubsection{RDFox vs.\ C-SPARQL2: A Reasoning-Free Comparison}
+\label{subsubsec:genact-rdfox-vs-csparql}
+
+The windowed comparison above still leaves one confound in place: RDFox is
+doing strictly more work than C-SPARQL2 in that table, since it additionally
+materialises the ACE-RL TBox on every window while C-SPARQL2 never reasons at
+all. To isolate the two systems' raw stream-processing performance from that
+confound, all thirteen competency questions were re-evaluated against RDFox
+with the ACE-RL TBox never imported at all -- no rules loaded, so RDFox
+answers plain SPARQL directly over the asserted RDF stream, exactly the
+workload C-SPARQL2 itself executes. The static organisation background data
+used by CQ7 and CQ11 (Section~\ref{subsubsec:genact-rdfox-windowed}) is still
+loaded, since C-SPARQL2's own runs also load it as plain background facts
+needed to make the join possible at all -- that is not an ontology-reasoning
+step. Getting this genuinely reasoning-free required one fix beyond simply
+omitting the TBox import: RDFox's OWL-functional-syntax import path files
+some of a \texttt{.owl} file's content under \texttt{fact-domain=all} rather
+than \texttt{=explicit} even with zero rules loaded, purely as an artifact of
+that import path (confirmed by checking the source file itself contains no
+class or property axioms at all, only declarations and instance data). The
+static organisation file was therefore re-serialised as plain Turtle for this
+run and every query executed strictly under \texttt{fact-domain=explicit}, so
+these numbers reflect asserted data only, with no ambiguity.
+
+\begin{table*}[htbp]
+\centering
+\caption{RDFox (no ontology loaded) versus C-SPARQL2, same thirteen GenACT
+competency questions, same $N\in\{1,2,5\}$ parallel conference streams.
+Latency is real per-window query evaluation time; \emph{$<$1\,ms} values for
+RDFox round to 0.000\,s at RDFox's own reporting precision (Sub-millisecond
+values are discussed in prose below).}
+\label{tab:genact-rdfox-vs-csparql}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cl l rrr rrr}
+\toprule
+& & & \multicolumn{3}{c}{\textbf{Latency (ms)}} & \multicolumn{3}{c}{\textbf{Non-empty (\%)}} \\
+\cmidrule(lr){4-6}
+\cmidrule(lr){7-9}
+\# & \textbf{Competency Question} & \textbf{Engine} & $N=1$ & $N=2$ & $N=5$ & $N=1$ & $N=2$ & $N=5$ \\
+\midrule
+1  & Trending Topics            & RDFox     & 15.7 & 13.8 & 13.9 & 59.3 & 59.3 & 59.0 \\
+   &                            & C-SPARQL2 & 814.3 & 683.4 & 1{,}739.2 & 74.0 & 86.2 & 79.1 \\
+2  & Active Research Groups     & RDFox     & 5.9  & 6.2  & 4.8  & 72.9 & 72.9 & 70.0 \\
+   &                            & C-SPARQL2 & 342.4 & 922.3 & 3{,}644.0 & 100.0 & 100.0 & 100.0 \\
+3  & Publication Activities     & RDFox     & $<$1 & $<$1 & $<$1 & 30.5 & 30.5 & 25.7 \\
+   &                            & C-SPARQL2 & 880.6 & 976.7 & 3{,}823.1 & 74.5 & 68.2 & 51.4 \\
+4  & Conference Match           & RDFox     & $<$1 & $<$1 & $<$1 & 60.0 & 60.0 & 59.6 \\
+   &                            & C-SPARQL2 & 1{,}194.1 & 1{,}671.7 & 5{,}330.7 & 75.0 & 73.3 & 60.0 \\
+5  & Interdisciplinary Authors  & RDFox     & $<$1 & $<$1 & $<$1 & 57.6 & 56.8 & 54.7 \\
+   &                            & C-SPARQL2 & 1{,}032.6 & 1{,}212.6 & 5{,}933.2 & 72.9 & 66.7 & 45.5 \\
+6  & Session Popularity         & RDFox     & $<$1 & $<$1 & $<$1 & 16.9 & 16.9 & 16.3 \\
+   &                            & C-SPARQL2 & 802.3 & 925.7 & 3{,}355.2 & 24.0 & 11.6 & 20.0 \\
+7  & Global Research Focus      & RDFox     & $<$1 & $<$1 & $<$1 & 30.5 & 30.5 & 25.7 \\
+   &                            & C-SPARQL2 & 1{,}000.2 & 1{,}108.6 & 3{,}652.7 & 73.5 & 68.2 & 55.6 \\
+8  & Funding Organizations      & RDFox     & $<$1 & $<$1 & $<$1 & 25.0 & 25.0 & 23.1 \\
+   &                            & C-SPARQL2 & 1{,}026.5 & 1{,}535.7 & 3{,}896.3 & 25.0 & 20.0 & 20.6 \\
+9  & Networking Opportunities   & RDFox     & $<$1 & $<$1 & $<$1 & 72.9 & 72.9 & 70.0 \\
+   &                            & C-SPARQL2 & 815.5 & 919.1 & 3{,}209.1 & 100.0 & 100.0 & 97.7 \\
+10 & Collaboration Networks     & RDFox     & $<$1 & $<$1 & $<$1 & 57.6 & 57.6 & 55.7 \\
+   &                            & C-SPARQL2 & 954.4 & 1{,}050.3 & 2{,}395.8 & 73.5 & 69.4 & 56.0 \\
+11 & Non-academic Collaborators & RDFox     & $<$1 & $<$1 & $<$1 & 60.0 & 60.0 & 59.6 \\
+   &                            & C-SPARQL2 & 3{,}034.7 & 3{,}663.1 & 10{,}814.0 & 76.5 & 66.7 & 68.8 \\
+12 & Geographical Distribution  & RDFox     & 27.5 & 30.0 & 26.6 & 72.9 & 72.9 & 70.0 \\
+   &                            & C-SPARQL2 & 831.0 & 1{,}530.7 & 1{,}802.5 & 100.0 & 100.0 & 90.8 \\
+13 & Platform Impact            & RDFox     & 15.4 & 14.9 & 15.0 & 59.3 & 59.3 & 59.0 \\
+   &                            & C-SPARQL2 & 796.7 & 1{,}528.4 & 1{,}857.8 & 74.0 & 67.1 & 59.4 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=5.0cm,
+    ymode=log,
+    ylabel={Latency (ms), log scale},
+    symbolic x coords={CQ1,CQ2,CQ3,CQ4,CQ5,CQ6,CQ7,CQ8,CQ9,CQ10,CQ11,CQ12,CQ13},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east, font=\scriptsize},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    legend style={at={(0.5,1.05)}, anchor=south, legend columns=2, font=\small},
+    enlarge x limits=0.03,
+    ymajorgrids=true,
+    title={$N=1$}, title style={font=\small}
+]
+\addplot[mark=*, thick, color=blue] coordinates {
+(CQ1,15.7) (CQ2,5.9) (CQ3,0.017) (CQ4,0.550) (CQ5,0.915) (CQ6,0.186)
+(CQ7,0.001) (CQ8,0.001) (CQ9,0.001) (CQ10,0.780) (CQ11,0.001) (CQ12,27.5) (CQ13,15.4)
+};
+\addplot[mark=square*, thick, color=red] coordinates {
+(CQ1,814.3) (CQ2,342.4) (CQ3,880.6) (CQ4,1194.1) (CQ5,1032.6) (CQ6,802.3)
+(CQ7,1000.2) (CQ8,1026.5) (CQ9,815.5) (CQ10,954.4) (CQ11,3034.7) (CQ12,831.0) (CQ13,796.7)
+};
+\legend{RDFox (no ontology), C-SPARQL2}
+\end{axis}
+\end{tikzpicture}
+
+\vspace{0.6em}
+
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=5.0cm,
+    ymode=log,
+    ylabel={Latency (ms), log scale},
+    symbolic x coords={CQ1,CQ2,CQ3,CQ4,CQ5,CQ6,CQ7,CQ8,CQ9,CQ10,CQ11,CQ12,CQ13},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east, font=\scriptsize},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    enlarge x limits=0.03,
+    ymajorgrids=true,
+    title={$N=2$}, title style={font=\small}
+]
+\addplot[mark=*, thick, color=blue] coordinates {
+(CQ1,13.8) (CQ2,6.2) (CQ3,0.001) (CQ4,0.450) (CQ5,0.703) (CQ6,0.001)
+(CQ7,0.001) (CQ8,0.001) (CQ9,0.017) (CQ10,0.932) (CQ11,0.001) (CQ12,30.0) (CQ13,14.9)
+};
+\addplot[mark=square*, thick, color=red] coordinates {
+(CQ1,683.4) (CQ2,922.3) (CQ3,976.7) (CQ4,1671.7) (CQ5,1212.6) (CQ6,925.7)
+(CQ7,1108.6) (CQ8,1535.7) (CQ9,919.1) (CQ10,1050.3) (CQ11,3663.1) (CQ12,1530.7) (CQ13,1528.4)
+};
+\end{axis}
+\end{tikzpicture}
+
+\vspace{0.6em}
+
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=5.0cm,
+    ymode=log,
+    ylabel={Latency (ms), log scale},
+    xlabel={Competency question},
+    symbolic x coords={CQ1,CQ2,CQ3,CQ4,CQ5,CQ6,CQ7,CQ8,CQ9,CQ10,CQ11,CQ12,CQ13},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east, font=\scriptsize},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    enlarge x limits=0.03,
+    ymajorgrids=true,
+    title={$N=5$}, title style={font=\small}
+]
+\addplot[mark=*, thick, color=blue] coordinates {
+(CQ1,13.9) (CQ2,4.8) (CQ3,0.023) (CQ4,0.606) (CQ5,0.752) (CQ6,0.001)
+(CQ7,0.013) (CQ8,0.001) (CQ9,0.001) (CQ10,0.906) (CQ11,0.038) (CQ12,26.6) (CQ13,15.0)
+};
+\addplot[mark=square*, thick, color=red] coordinates {
+(CQ1,1739.2) (CQ2,3644.0) (CQ3,3823.1) (CQ4,5330.7) (CQ5,5933.2) (CQ6,3355.2)
+(CQ7,3652.7) (CQ8,3896.3) (CQ9,3209.1) (CQ10,2395.8) (CQ11,10814.0) (CQ12,1802.5) (CQ13,1857.8)
+};
+\end{axis}
+\end{tikzpicture}
+
+\caption{Per-window query latency, RDFox (no ontology loaded) versus
+C-SPARQL2, across all thirteen competency questions at $N=1$, $N=2$, and
+$N=5$ parallel conference streams (log-scale $y$-axis). RDFox latencies
+recorded as 0.000\,ms at RDFox's own reporting precision are plotted at a
+nominal floor of 0.001\,ms so they remain visible on the log scale --
+treat those points as ``at or below one microsecond'', not as a literal
+measurement.}
+\label{fig:genact-rdfox-vs-csparql-latency}
+\end{figure}
+
+Two findings stand out. First, on latency, RDFox wins on every single
+competency question at every stream count, by one to three orders of
+magnitude, with no exceptions -- e.g.\ CQ2 at $N=1$: 5.9\,ms versus
+342.4\,ms ($58\times$); CQ13 at $N=1$: 15.4\,ms versus 796.7\,ms
+($52\times$); most CQs at $N=1$ resolve in under one millisecond for RDFox
+against 800--3{,}000\,ms for C-SPARQL2. This gap is architectural, not a
+reasoning artifact: comparing these no-ontology latencies against the
+with-materialisation ones in
+Table~\ref{tab:genact-rdfox-windowed} shows they sit in the same order of
+magnitude either way (e.g.\ CQ1: 15.7--18.5\,ms with or without the TBox;
+CQ12: 26.6--45.9\,ms with or without), consistent with the earlier finding
+that this corpus is small enough for materialisation cost to be negligible.
+RDFox is not fast here because it skips reasoning; it is simply a much
+lower-overhead execution engine than a JVM-hosted continuous query processor
+for this kind of repeated windowed evaluation.
+
+Second, and less favourable to RDFox: on non-empty rate, C-SPARQL2 is ahead
+on almost every competency question, often substantially --
+CQ2 (72.9--70.0\,\% versus a flat 100\,\%), CQ9 (72.9--70.0\,\% versus
+97.7--100\,\%), and CQ12 (72.9--70.0\,\% versus 90.8--100\,\%) are the
+clearest cases. The two exceptions run the other way: CQ8 at $N=2$ and $N=5$
+(RDFox 25.0/23.1\,\% versus C-SPARQL2 20.0/20.6\,\%) and CQ6 at $N=2$ (RDFox
+16.9\,\% versus C-SPARQL2 11.6\,\%). As established above, this is not a
+reasoning effect -- the non-empty percentages here are identical to
+Table~\ref{tab:genact-rdfox-windowed}'s materialisation-inclusive ones, CQ
+for CQ, $N$ for $N$, with the TBox removed entirely. The remaining
+explanation is the one already offered for the windowed table: the two
+systems compute window membership differently (C-SPARQL2 from live TCP
+arrival time during real streaming, RDFox from the files' own embedded
+timestamps), and that difference alone is now shown to fully account for the
+gap. Neither system is unconditionally ``better'': RDFox answers each window
+far faster, but C-SPARQL2's windows more often contain an answer at all. A
+system that needs both properties together is not something either engine
+provides out of the box on this workload.
 
 
 % ============================================================

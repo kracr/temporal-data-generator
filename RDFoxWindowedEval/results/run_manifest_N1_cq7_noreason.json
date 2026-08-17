@@ -1,0 +1,11 @@
+[
+  {
+    "cqId": "cq7",
+    "N": 1,
+    "conf": 0,
+    "confDir": "D:\\temporal-data-generator\\EventData\\_N1\\conf0_1970",
+    "outPath": "D:\\temporal-data-generator\\RDFoxWindowedEval\\tmp_noreason\\cq7_N1_c0\\out.txt",
+    "windows": 59,
+    "elapsed": 10.815
+  }
+]
